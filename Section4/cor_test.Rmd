@@ -1,0 +1,339 @@
+---
+title: "Statistical Analysis of Short-Read vs. Long-Read Correlation Factors"
+author: "Antigravity Pair Programmer"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r libraries}
+library(tidyverse)
+library(lme4)
+library(lmerTest)
+
+# Helper function to compute pseudo-R2 (Nakagawa's R2) when MuMIn is not available
+get_r2 <- function(model) {
+  if (requireNamespace("MuMIn", quietly = TRUE)) {
+    return(MuMIn::r.squaredGLMM(model))
+  } else {
+    # Manual Nakagawa's pseudo-R2 calculation for random intercept models
+    fix_var <- var(predict(model, re.form = NA))
+    vc <- as.data.frame(VarCorr(model))
+    rand_var <- sum(vc$vcov[vc$grp != "Residual"])
+    resid_var <- vc$vcov[vc$grp == "Residual"]
+    total_var <- fix_var + rand_var + resid_var
+    r2_marginal <- fix_var / total_var
+    r2_conditional <- (fix_var + rand_var) / total_var
+    
+    res <- matrix(c(r2_marginal, r2_conditional), nrow = 1)
+    colnames(res) <- c("R2m", "R2c")
+    rownames(res) <- "theoretical"
+    return(res)
+  }
+}
+```
+
+# Introduction
+
+We analyze the factors that impact the Spearman correlation between short-read (Illumina) and long-read expression estimates at the transcript level. Following the approach developed for the Mouse dataset, we model the Fisher-z transformed correlation coefficients as a function of processing tool (`Tool`), normalization method (`Normalization`), and sequencing technology (`Technology`), with individual samples modeled as a random effect to account for replicate and sample-specific correlations:
+
+$$ \text{Correlation}_z \sim \text{Tool} \times \text{Normalization} + \text{Tool} \times \text{Technology} + \text{Normalization} \times \text{Technology} + (1 \mid \text{Sample}) $$
+
+---
+
+# 1. Mouse (NIH) Dataset Analysis
+
+```{r mouse_analysis}
+# Load mouse correlation dataset
+mouse_dat <- readRDS("/home/alejandro/Desktop/bias_paper/LMM/sr_vs_lr/mouse_sr_correlations.rds")
+
+# Prepare factors
+mouse_dat$Technology <- as.factor(mouse_dat$Dataset)
+mouse_dat$Technology <- relevel(mouse_dat$Technology, ref = "ont")
+mouse_dat$Tool <- as.factor(mouse_dat$Tool)
+mouse_dat$Tool <- relevel(mouse_dat$Tool, ref = "bambu")
+mouse_dat$Normalization <- as.factor(mouse_dat$Normalization)
+mouse_dat$Normalization <- relevel(mouse_dat$Normalization, ref = "CPM")
+mouse_dat$Correlation_z <- atanh(mouse_dat$Correlation)
+
+# Fit mixed-effects model
+model_mouse <- lmer(Correlation_z ~ Tool * Normalization + Tool * Technology + Normalization * Technology + 
+                     (1 | Sample), data = mouse_dat)
+
+# ANOVA (Type III)
+anova(model_mouse, type = 3)
+
+# Model summary (coefficients)
+summary(model_mouse)
+
+# Variance explained (R2)
+get_r2(model_mouse)
+```
+
+---
+
+# 2. Human Induced Neurons (Neuron) Dataset Analysis
+
+```{r neuron_analysis}
+# Load neuron correlation dataset
+neuron_dat <- readRDS("/home/alejandro/Desktop/bias_paper/LMM/sr_vs_lr/neuron_sr_correlations.rds")
+
+# Prepare factors
+neuron_dat$Technology <- as.factor(neuron_dat$Dataset)
+neuron_dat$Technology <- relevel(neuron_dat$Technology, ref = "ont")
+neuron_dat$Tool <- as.factor(neuron_dat$Tool)
+neuron_dat$Tool <- relevel(neuron_dat$Tool, ref = "bambu")
+neuron_dat$Normalization <- as.factor(neuron_dat$Normalization)
+neuron_dat$Normalization <- relevel(neuron_dat$Normalization, ref = "CPM")
+neuron_dat$Correlation_z <- atanh(neuron_dat$Correlation)
+
+# Fit mixed-effects model
+model_neuron <- lmer(Correlation_z ~ Tool * Normalization + Tool * Technology + Normalization * Technology + 
+                      (1 | Sample), data = neuron_dat)
+
+# ANOVA (Type III)
+anova(model_neuron, type = 3)
+
+# Model summary (coefficients)
+summary(model_neuron)
+
+# Variance explained (R2)
+get_r2(model_neuron)
+```
+
+---
+
+# 3. LongBench Dataset Analysis
+
+```{r longbench_analysis}
+# Load longbench correlation dataset
+longbench_dat <- readRDS("/home/alejandro/Desktop/bias_paper/LMM/sr_vs_lr/longbench_sr_correlations.rds")
+
+# Prepare factors
+longbench_dat$Technology <- as.factor(longbench_dat$Dataset)
+longbench_dat$Technology <- relevel(longbench_dat$Technology, ref = "ont")
+longbench_dat$Tool <- as.factor(longbench_dat$Tool)
+longbench_dat$Tool <- relevel(longbench_dat$Tool, ref = "bambu")
+longbench_dat$Normalization <- as.factor(longbench_dat$Normalization)
+longbench_dat$Normalization <- relevel(longbench_dat$Normalization, ref = "CPM")
+longbench_dat$Correlation_z <- atanh(longbench_dat$Correlation)
+
+# Fit mixed-effects model
+model_longbench <- lmer(Correlation_z ~ Tool * Normalization + Tool * Technology + Normalization * Technology + 
+                         (1 | Sample), data = longbench_dat)
+
+# ANOVA (Type III)
+anova(model_longbench, type = 3)
+
+# Model summary (coefficients)
+summary(model_longbench)
+
+# Variance explained (R2)
+get_r2(model_longbench)
+```
+
+---
+
+# 4. Combined Coefficient Heatmap
+
+We summarize the regression coefficients and statistical significance from all three models. 
+The colors represent the p-value classification, and the values within the cells show the regression coefficient (Estimate).
+
+```{r combined_heatmap, fig.width=7, fig.height=10}
+# Clean term names helper
+clean_term <- function(term) {
+  term <- gsub("^Toolflair$", "flair (vs. bambu)", term)
+  term <- gsub("^Toolisoquant$", "isoquant (vs. bambu)", term)
+  term <- gsub("^Toolkallisto$", "kallisto (vs. bambu)", term)
+  term <- gsub("^Tooloarfish$", "oarfish (vs. bambu)", term)
+  
+  term <- gsub("^Normalizationcqn$", "cqn (vs. CPM)", term)
+  term <- gsub("^NormalizationEDA$", "EDA (vs. CPM)", term)
+  term <- gsub("^Normalizationratio_counts$", "SMR (vs. CPM)", term)
+  term <- gsub("^NormalizationTPM$", "TPM (vs. CPM)", term)
+  
+  term <- gsub("^Technologyisoseq$", "IsoSeq (vs. cDNA ONT)", term)
+  term <- gsub("^Technologykinnex$", "Kinnex (vs. cDNA ONT)", term)
+  term <- gsub("^Technologyont_drna$", "dRNA ONT (vs. cDNA ONT)", term)
+  
+  if (grepl(":", term)) {
+    parts <- strsplit(term, ":")[[1]]
+    clean_parts <- sapply(parts, function(p) {
+      p <- gsub("^Tool", "", p)
+      p <- gsub("^Normalization", "", p)
+      p <- gsub("^Technology", "", p)
+      if (p == "ratio_counts") p <- "SMR"
+      if (p == "ont_drna") p <- "dRNA ONT"
+      if (p == "isoseq") p <- "IsoSeq"
+      if (p == "kinnex") p <- "Kinnex"
+      p
+    })
+    return(paste(clean_parts, collapse = " \u00D7 "))
+  }
+  return(term)
+}
+
+# Assign term types helper
+get_term_type <- function(term) {
+  if (!grepl(":", term)) {
+    if (grepl("^Tool", term)) return("Tool Effects")
+    if (grepl("^Normalization", term)) return("Normalization Effects")
+    if (grepl("^Technology", term)) return("Technology Effects")
+    return("Main Effects")
+  } else {
+    parts <- strsplit(term, ":")[[1]]
+    has_tool <- any(grepl("^Tool", parts))
+    has_norm <- any(grepl("^Normalization", parts))
+    has_tech <- any(grepl("^Technology", parts))
+    
+    if (has_tool && has_norm) return("Tool \u00D7 Normalization")
+    if (has_tool && has_tech) return("Tool \u00D7 Technology")
+    if (has_norm && has_tech) return("Normalization \u00D7 Technology")
+    return("Interactions")
+  }
+}
+
+# Extract coefs function
+get_model_coefs <- function(model, dataset_name) {
+  coefs <- summary(model)$coefficients
+  df <- data.frame(
+    Term = rownames(coefs),
+    Estimate = coefs[, "Estimate"],
+    PValue = coefs[, "Pr(>|t|)"],
+    DatasetName = dataset_name,
+    stringsAsFactors = FALSE
+  )
+  return(df)
+}
+
+# Extract coefficients for all three models
+coefs_mouse <- get_model_coefs(model_mouse, "Mouse")
+coefs_neuron <- get_model_coefs(model_neuron, "iNeuron")
+coefs_longbench <- get_model_coefs(model_longbench, "LongBench")
+
+# Combine and process
+all_coefs <- rbind(coefs_mouse, coefs_neuron, coefs_longbench) %>%
+  filter(Term != "(Intercept)")
+
+all_coefs$CleanTerm <- sapply(all_coefs$Term, clean_term)
+all_coefs$TermType <- sapply(all_coefs$Term, get_term_type)
+
+term_type_order <- c(
+  "Tool Effects",
+  "Normalization Effects",
+  "Technology Effects",
+  "Tool \u00D7 Normalization",
+  "Tool \u00D7 Technology",
+  "Normalization \u00D7 Technology"
+)
+all_coefs$TermType <- factor(all_coefs$TermType, levels = term_type_order)
+all_coefs$DatasetName <- factor(all_coefs$DatasetName, levels = c("Mouse", "LongBench", "iNeuron"))
+
+all_coefs <- all_coefs %>%
+  mutate(
+    PValCat = case_when(
+      PValue < 0.05 & Estimate > 0 ~ "Significant (Positive)",
+      PValue < 0.05 & Estimate < 0 ~ "Significant (Negative)",
+      TRUE                         ~ "NS (p \u2265 0.05)"
+    ),
+    PValCat = factor(PValCat, levels = c("Significant (Positive)", "NS (p \u2265 0.05)", "Significant (Negative)"))
+  )
+
+# Expand combinations to ensure complete grid with grey placeholder for missing levels
+all_combinations <- expand.grid(
+  CleanTerm = unique(all_coefs$CleanTerm),
+  DatasetName = c("Mouse", "LongBench", "iNeuron"),
+  stringsAsFactors = FALSE
+)
+
+term_details <- all_coefs %>% select(CleanTerm, TermType) %>% distinct()
+all_combinations <- all_combinations %>% left_join(term_details, by = "CleanTerm")
+
+heatmap_data <- all_combinations %>%
+  left_join(all_coefs %>% select(CleanTerm, DatasetName, Estimate, PValue, PValCat), by = c("CleanTerm", "DatasetName"))
+
+heatmap_data$DatasetName <- factor(heatmap_data$DatasetName, levels = c("Mouse", "LongBench", "iNeuron"))
+heatmap_data$PValCat[is.na(heatmap_data$PValCat)] <- "NS (p \u2265 0.05)"
+
+heatmap_data <- heatmap_data %>%
+  mutate(
+    EstimateText = ifelse(is.na(Estimate), "", sprintf("%.3f", Estimate))
+  )
+
+# Diverging color palette mapping (Red for Positive, Blue for Negative significance)
+colors_signif <- c(
+  "Significant (Positive)" = "#DE2D26", 
+  "NS (p \u2265 0.05)"       = "#F0F0F0",
+  "Significant (Negative)" = "#3182BD"
+)
+
+# theme_nature from fig1.Rmd
+theme_nature <- function(base_size = 6.5, base_family = "sans") {
+  theme_classic(base_size = base_size, base_family = base_family) +
+    theme(
+      axis.line = element_line(linewidth = 0.35, colour = "black"),
+      axis.ticks = element_line(linewidth = 0.35, colour = "black"),
+      axis.title = element_text(size = base_size),
+      axis.text = element_text(size = base_size - 0.5, color = "black"),
+      legend.title = element_text(size = base_size - 0.3),
+      legend.text = element_text(size = base_size - 0.7),
+      strip.text = element_text(size = base_size - 0.3, face = "bold"),
+      plot.title = element_text(size = base_size + 0.5, face = "bold"),
+      panel.grid = element_blank()
+    )
+}
+
+p_heatmap <- ggplot(heatmap_data, aes(x = DatasetName, y = CleanTerm, fill = PValCat)) +
+  geom_tile(color = "white", linewidth = 0.3) +
+  geom_text(aes(label = EstimateText), size = 1.8, color = "black") +
+  facet_grid(TermType ~ ., scales = "free_y", space = "free_y") +
+  scale_fill_manual(
+    values = colors_signif,
+    name = "Significance",
+    na.value = "#F0F0F0"
+  ) +
+  labs(
+    x = "Dataset",
+    y = "Regression Coefficient (Effect on Correlation)"
+  ) +
+  theme_nature() +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.title = element_text(size = 7, face = "bold"),
+    strip.text.y = element_text(angle = 0, face = "bold", hjust = 0, size = 6.5),
+    legend.position = "right",
+    legend.title = element_text(size = 6.5, face = "bold"),
+    legend.text = element_text(size = 5.8),
+    legend.key.size = unit(3, "mm")
+  )
+
+# Display in Rmd
+p_heatmap
+
+# Export publication-quality figures
+save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 240, dpi = 600) {
+  w <- width_mm / 25.4
+  h <- height_mm / 25.4
+  
+  svglite::svglite(paste0(filename, ".svg"), width = w, height = h)
+  print(plot)
+  dev.off()
+  
+  grDevices::cairo_pdf(paste0(filename, ".pdf"), width = w, height = h, family = "sans")
+  print(plot)
+  dev.off()
+  
+  ragg::agg_tiff(paste0(filename, ".tiff"), width = w, height = h, units = "in", res = dpi)
+  print(plot)
+  dev.off()
+  
+  ggsave(paste0(filename, ".png"), plot, width = w, height = h, dpi = 150)
+}
+
+save_pub_r(p_heatmap, "regression_coefficients_heatmap", height_mm = 240)
+```
+

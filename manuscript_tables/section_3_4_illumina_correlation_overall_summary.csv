@@ -1,0 +1,41 @@
+Tech,Level,Normalization,Overall_Sample_Median,Overall_Sample_Mean,Sample_Count
+Iso-Seq,Gene,CPM,0.723,0.723,100
+Iso-Seq,Gene,CQN,0.705,0.701,100
+Iso-Seq,Gene,EDASeq,0.703,0.698,100
+Iso-Seq,Gene,SMR,0.756,0.733,100
+Iso-Seq,Gene,TPM,0.816,0.816,100
+Iso-Seq,Transcript,CPM,0.684,0.682,100
+Iso-Seq,Transcript,CQN,0.677,0.676,100
+Iso-Seq,Transcript,EDASeq,0.653,0.654,100
+Iso-Seq,Transcript,SMR,0.627,0.614,100
+Iso-Seq,Transcript,TPM,0.766,0.77,100
+Kinnex,Gene,CPM,0.828,0.805,105
+Kinnex,Gene,CQN,0.798,0.783,105
+Kinnex,Gene,EDASeq,0.82,0.802,105
+Kinnex,Gene,SMR,0.777,0.732,105
+Kinnex,Gene,TPM,0.858,0.839,105
+Kinnex,Transcript,CPM,0.688,0.681,105
+Kinnex,Transcript,CQN,0.682,0.669,105
+Kinnex,Transcript,EDASeq,0.674,0.677,105
+Kinnex,Transcript,SMR,0.604,0.567,105
+Kinnex,Transcript,TPM,0.734,0.724,105
+ONT cDNA,Gene,CPM,0.77,0.766,160
+ONT cDNA,Gene,CQN,0.788,0.768,160
+ONT cDNA,Gene,EDASeq,0.763,0.76,160
+ONT cDNA,Gene,SMR,0.668,0.654,160
+ONT cDNA,Gene,TPM,0.681,0.683,160
+ONT cDNA,Transcript,CPM,0.654,0.659,160
+ONT cDNA,Transcript,CQN,0.654,0.657,160
+ONT cDNA,Transcript,EDASeq,0.642,0.641,160
+ONT cDNA,Transcript,SMR,0.565,0.551,160
+ONT cDNA,Transcript,TPM,0.609,0.614,160
+ONT dRNA,Gene,CPM,0.913,0.899,30
+ONT dRNA,Gene,CQN,0.909,0.895,30
+ONT dRNA,Gene,EDASeq,0.911,0.896,30
+ONT dRNA,Gene,SMR,0.864,0.855,30
+ONT dRNA,Gene,TPM,0.867,0.847,30
+ONT dRNA,Transcript,CPM,0.785,0.773,30
+ONT dRNA,Transcript,CQN,0.766,0.76,30
+ONT dRNA,Transcript,EDASeq,0.767,0.766,30
+ONT dRNA,Transcript,SMR,0.709,0.706,30
+ONT dRNA,Transcript,TPM,0.772,0.755,30

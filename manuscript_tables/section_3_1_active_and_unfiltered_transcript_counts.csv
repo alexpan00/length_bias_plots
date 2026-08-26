@@ -1,0 +1,41 @@
+Dataset,Technology,Tool,Unfiltered_Transcripts,Filtered_Transcripts,Percent_Retained
+Mouse,Kinnex,FLAIR,562016,259445,46.16
+Mouse,Kinnex,IsoQuant,131827,61444,46.61
+Mouse,Kinnex,Kallisto,98207,49700,50.61
+Mouse,Kinnex,Oarfish,109610,63184,57.64
+Mouse,Kinnex,bambu,101514,51268,50.5
+Mouse,ONT cDNA,FLAIR,137460,49735,36.18
+Mouse,ONT cDNA,IsoQuant,58276,17071,29.29
+Mouse,ONT cDNA,Kallisto,103071,14541,14.11
+Mouse,ONT cDNA,Oarfish,102737,20135,19.6
+Mouse,ONT cDNA,bambu,95004,18081,19.03
+Mouse,Iso-Seq,FLAIR,189723,53093,27.98
+Mouse,Iso-Seq,IsoQuant,109258,27043,24.75
+Mouse,Iso-Seq,Kallisto,87532,24144,27.58
+Mouse,Iso-Seq,Oarfish,101434,29387,28.97
+Mouse,Iso-Seq,bambu,93844,25913,27.61
+iNeuron,Kinnex,FLAIR,588811,269589,45.79
+iNeuron,Kinnex,IsoQuant,103538,46903,45.3
+iNeuron,Kinnex,Kallisto,109300,39344,36.0
+iNeuron,Kinnex,Oarfish,134878,60225,44.65
+iNeuron,Kinnex,bambu,119022,43513,36.56
+iNeuron,ONT cDNA,FLAIR,282011,142216,50.43
+iNeuron,ONT cDNA,IsoQuant,91228,41842,45.87
+iNeuron,ONT cDNA,Kallisto,123754,38884,31.42
+iNeuron,ONT cDNA,Oarfish,137304,53474,38.95
+iNeuron,ONT cDNA,bambu,114841,39426,34.33
+LongBench,Kinnex,FLAIR,1401779,481731,34.37
+LongBench,Kinnex,IsoQuant,400883,92245,23.01
+LongBench,Kinnex,Kallisto,139976,47631,34.03
+LongBench,Kinnex,Oarfish,161639,74887,46.33
+LongBench,Kinnex,bambu,148928,52577,35.3
+LongBench,ONT cDNA,FLAIR,345476,105942,30.67
+LongBench,ONT cDNA,IsoQuant,87970,29903,33.99
+LongBench,ONT cDNA,Kallisto,136621,29783,21.8
+LongBench,ONT cDNA,Oarfish,154395,44826,29.03
+LongBench,ONT cDNA,bambu,132154,31731,24.01
+LongBench,ONT dRNA,FLAIR,316835,160467,50.65
+LongBench,ONT dRNA,IsoQuant,105018,37715,35.91
+LongBench,ONT dRNA,Kallisto,134160,35812,26.69
+LongBench,ONT dRNA,Oarfish,157583,59423,37.71
+LongBench,ONT dRNA,bambu,141689,43451,30.67

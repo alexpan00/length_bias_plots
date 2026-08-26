@@ -1,0 +1,92 @@
+---
+title: "Supplementary Table S4 - LMM ANOVA"
+author: "Alejandro Paniagua"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r libraries}
+library(lme4)
+library(lmerTest)
+library(dplyr)
+library(readr)
+
+# Repository root. When knitted, the working directory is the folder containing
+# this Rmd (the repo root), so these project-relative paths resolve directly.
+BASE_DIR <- getwd()
+DATA_DIR <- file.path(BASE_DIR, "Section4/data")
+```
+
+```{r load_data}
+# Fixed input datasets
+datasets <- list(
+  Mouse     = file.path(DATA_DIR, "mouse_sr_correlations.rds"),
+  LongBench = file.path(DATA_DIR, "longbench_sr_correlations.rds"),
+  iNeuron   = file.path(DATA_DIR, "neuron_sr_correlations.rds")
+)
+```
+
+```{r fit_models}
+anova_rows <- list()
+
+for (name in names(datasets)) {
+  dat <- readRDS(datasets[[name]])
+  dat$Technology <- as.factor(dat$Dataset)
+  dat$Technology <- relevel(dat$Technology, ref = 'ont')
+  dat$Tool <- as.factor(dat$Tool)
+  dat$Tool <- relevel(dat$Tool, ref = 'bambu')
+  dat$Normalization <- as.factor(dat$Normalization)
+  dat$Normalization <- relevel(dat$Normalization, ref = 'CPM')
+  dat$Correlation_z <- atanh(dat$Correlation)
+
+  model <- lmer(Correlation_z ~ Tool * Normalization + Tool * Technology + Normalization * Technology + (1 | Sample), data = dat)
+
+  an <- as.data.frame(anova(model, type = 3))
+  an$Factor <- rownames(an)
+  an$Dataset <- name
+
+  # Calculate R2 (Nakagawa formulation)
+  fix_var <- var(predict(model, re.form = NA))
+  vc <- as.data.frame(VarCorr(model))
+  rand_var <- sum(vc$vcov[vc$grp != "Residual"])
+  resid_var <- vc$vcov[vc$grp == "Residual"]
+  total_var <- fix_var + rand_var + resid_var
+
+  an$R2_marginal <- round(fix_var / total_var, 4)
+  an$R2_conditional <- round((fix_var + rand_var) / total_var, 4)
+
+  # Rename columns properly
+  colnames(an)[1:6] <- c("Sum_Sq", "Mean_Sq", "NumDF", "DenDF", "F_value", "P_value")
+
+  anova_rows[[name]] <- an
+}
+
+all_anova <- bind_rows(anova_rows)
+
+all_anova <- all_anova %>%
+  select(Dataset, Factor, Sum_Sq, Mean_Sq, NumDF, DenDF, F_value, P_value, R2_marginal, R2_conditional)
+
+# Round numeric values for presentation
+all_anova$Sum_Sq <- round(all_anova$Sum_Sq, 4)
+all_anova$Mean_Sq <- round(all_anova$Mean_Sq, 4)
+all_anova$NumDF <- round(all_anova$NumDF, 0)
+all_anova$DenDF <- round(all_anova$DenDF, 1)
+all_anova$F_value <- round(all_anova$F_value, 2)
+all_anova$P_value_formatted <- ifelse(all_anova$P_value < 2.2e-16, "< 2.2e-16", sprintf("%.3e", all_anova$P_value))
+```
+
+```{r export}
+out_dir <- file.path(BASE_DIR, "manuscript_tables")
+dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
+out_path <- file.path(out_dir, "supplementary_table_s4_lmm_anova.csv")
+write.csv(all_anova, out_path, row.names = FALSE)
+cat('Successfully exported:', out_path, '\n')
+```
+
+```{r display}
+knitr::kable(all_anova)
+```

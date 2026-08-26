@@ -1,0 +1,255 @@
+---
+title: "Delta in Known Transcript Proportions"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r libraries}
+library(tidyverse)
+library(ggplot2)
+library(deeptime)
+library(svglite)
+library(ragg)
+```
+
+```{r generate_summary_csv}
+# Build the proportions comparison summary from the raw SQANTI files and
+# write it to data/sqanti_proportions_comparison.csv
+files_map <- data.frame(
+  path = c(
+    "data/sqanti_new/kinnex_norm_sqanti_summary_global.csv",
+    "data/sqanti_new/cDNA_norm_sqanti_summary_global.csv",
+    "data/sqanti_new/drna_norm_sqanti_summary_global.csv",
+    "data/sqanti_new/neuron_pb_sqanti_summary_global.csv",
+    "data/sqanti_new/neuron_ont_sqanti_summary_global.csv",
+    "data/sqanti_new/masseq_sqanti_summary_global.csv",
+    "data/sqanti_new/isoseq_sqanti_summary_global.csv",
+    "data/sqanti_new/ont_sqanti_summary_global.csv"
+  ),
+  Dataset = c("LongBench", "LongBench", "LongBench", "iNeuron", "iNeuron", "Mouse", "Mouse", "Mouse"),
+  Platform = c("PacBio", "ONT", "ONT", "PacBio", "ONT", "PacBio", "PacBio", "ONT"),
+  LibType = c("Kinnex", "ONT cDNA", "ONT dRNA", "Kinnex", "ONT cDNA", "Kinnex", "Iso-Seq", "ONT cDNA"),
+  stringsAsFactors = FALSE
+)
+
+# Load, clean, and filter
+all_data <- list()
+for (i in 1:nrow(files_map)) {
+  if (file.exists(files_map$path[i])) {
+    df <- read_csv(files_map$path[i], show_col_types = FALSE)
+    df <- df %>% filter(Tool != "isoseq")
+    df$Biotype <- gsub("\n", " ", df$Biotype)
+    df$Biotype[df$Biotype == "Genic Genomic"] <- "Genic\nGenomic"
+    df$Biotype[df$Biotype == "Genic Intron"] <- "Genic\nIntron"
+    df$Dataset <- files_map$Dataset[i]
+    df$Platform <- files_map$Platform[i]
+    df$LibType <- files_map$LibType[i]
+    all_data[[i]] <- df
+  } else {
+    warning(paste("File missing:", files_map$path[i]))
+  }
+}
+
+full_df <- bind_rows(all_data)
+
+# Classify Known (FSM) vs Novel
+summary_df <- full_df %>%
+  mutate(
+    IsoformClass = factor(if_else(Biotype == "FSM", "Known (FSM)", "Novel"), levels = c("Novel", "Known (FSM)")),
+    FilteredLabel = factor(if_else(Filtered, "After\nFiltering", "Before\nFiltering"), levels = c("Before\nFiltering", "After\nFiltering"))
+  ) %>%
+  group_by(Dataset, LibType, Tool, FilteredLabel, IsoformClass) %>%
+  summarize(Count = sum(n_trans), .groups = "drop") %>%
+  group_by(Dataset, LibType, Tool, FilteredLabel) %>%
+  mutate(
+    Total = sum(Count),
+    Percentage = if_else(Total > 0, Count / Total * 100, 0)
+  ) %>%
+  ungroup()
+
+# Write the summary table to a CSV file
+write.csv(summary_df, "data/sqanti_proportions_comparison.csv", row.names = FALSE)
+```
+
+```{r load_data}
+summary_df <- summary_df %>%
+  mutate(
+    Tool = case_when(
+      Tool == "flair"    ~ "FLAIR",
+      Tool == "isoquant" ~ "IsoQuant",
+      Tool == "bambu"    ~ "bambu",
+      TRUE               ~ as.character(Tool)
+    )
+  ) %>%
+  filter(Tool %in% c("FLAIR", "bambu", "IsoQuant"))
+
+# Pivot wide to calculate pct before and after filtering
+pct_wide <- summary_df %>%
+  select(Dataset, LibType, Tool, FilteredLabel, IsoformClass, Count) %>%
+  group_by(Dataset, LibType, Tool, FilteredLabel) %>%
+  mutate(Total = sum(Count)) %>%
+  filter(IsoformClass == "Known (FSM)") %>%
+  mutate(PctKnown = Count / Total * 100) %>%
+  ungroup() %>%
+  select(Dataset, LibType, Tool, FilteredLabel, PctKnown) %>%
+  pivot_wider(names_from = FilteredLabel, values_from = PctKnown, values_fill = 0)
+
+colnames(pct_wide)[colnames(pct_wide) == "Before\nFiltering"] <- "Before"
+colnames(pct_wide)[colnames(pct_wide) == "After\nFiltering"] <- "After"
+
+pct_wide <- pct_wide %>%
+  mutate(Delta = After - Before)
+
+# Calculate significance p-value using independent contingency tables
+sig_data <- summary_df %>%
+  group_by(Dataset, LibType, Tool) %>%
+  do({
+    sub_df <- .
+    wide <- sub_df %>%
+      select(FilteredLabel, IsoformClass, Count) %>%
+      pivot_wider(names_from = FilteredLabel, values_from = Count, values_fill = 0)
+
+    colnames(wide)[colnames(wide) == "Before\nFiltering"] <- "Before"
+    colnames(wide)[colnames(wide) == "After\nFiltering"] <- "After"
+
+    if (!"Before" %in% colnames(wide)) wide[["Before"]] <- 0
+    if (!"After" %in% colnames(wide)) wide[["After"]] <- 0
+
+    wide <- wide %>%
+      mutate(
+        Passed = After,
+        Failed = Before - After
+      )
+
+    mat <- as.matrix(wide %>% select(Passed, Failed))
+
+    p_val <- NA
+    if (sum(mat) > 0) {
+      test_res <- tryCatch(chisq.test(mat), error = function(e) NA)
+      if (is.list(test_res)) p_val <- test_res$p.value
+    }
+
+    data.frame(p_value = p_val)
+  }) %>%
+  ungroup()
+
+# Apply Bonferroni correction for multiple hypothesis testing (24 tests)
+sig_data <- sig_data %>%
+  mutate(
+    p_value_adj = p.adjust(p_value, method = "bonferroni"),
+    log_p = if_else(is.na(p_value_adj), 0, -log10(p_value_adj)),
+    log_p = if_else(is.infinite(log_p) | log_p > 300, 300, log_p),
+    label = case_when(
+      p_value_adj < 0.001 ~ "***",
+      p_value_adj < 0.01  ~ "**",
+      p_value_adj < 0.05  ~ "*",
+      TRUE                ~ "ns"
+    )
+  )
+
+plot_data <- inner_join(pct_wide, sig_data, by = c("Dataset", "LibType", "Tool"))
+
+# Factors
+plot_data$Dataset <- factor(plot_data$Dataset, levels = c("Mouse", "iNeuron", "LongBench"))
+plot_data$LibType <- factor(plot_data$LibType, levels = c("Iso-Seq", "Kinnex", "ONT cDNA", "ONT dRNA"))
+plot_data$Tool <- factor(plot_data$Tool, levels = c("FLAIR", "bambu", "IsoQuant"))
+```
+
+```{r colors_and_theme}
+# Color maps matching unified technology colors and white background for column facets (datasets)
+color_palette <- c(
+  "ONT dRNA" = "#56B4E9",  # Soft Blue
+  "ONT cDNA" = "#D1B490",  # Sandy gold
+  "Iso-Seq"   = "#EE7B30",  # Soft Orange
+  "Kinnex"   = "#e31c93",  # PacBio pink
+  "Mouse"    = "#FFFFFF",  # Pure White
+  "iNeuron"   = "#FFFFFF",
+  "LongBench"= "#FFFFFF"
+)
+
+# Text colors for facet labels (white for colored technology row strips, black for white dataset column strips)
+lab_text_palette <- data.frame(
+  name = c("ONT dRNA", "ONT cDNA", "Iso-Seq", "Kinnex", "Mouse", "iNeuron", "LongBench"),
+  lab_color = c("#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#000000", "#000000", "#000000"),
+  stringsAsFactors = FALSE
+)
+
+# Theme Nature Clean
+theme_nature_clean <- function(base_size = 6.5, base_family = "sans") {
+  theme_classic(base_size = base_size, base_family = base_family) +
+    theme(
+      axis.line = element_line(linewidth = 0.35, colour = "black"),
+      axis.ticks = element_line(linewidth = 0.35, colour = "black"),
+      axis.title = element_text(size = base_size),
+      axis.text = element_text(size = base_size - 0.5, color = "black"),
+      legend.title = element_text(size = base_size - 0.3),
+      legend.text = element_text(size = base_size - 0.7),
+      strip.text = element_text(size = base_size - 0.5, face = "bold"),
+      strip.text.y = element_text(size = base_size - 0.5, face = "bold"),
+      panel.grid = element_blank(),
+      legend.position = "bottom",
+      plot.title = element_text(size = base_size + 0.5, face = "bold", hjust = 0.5),
+      panel.spacing = unit(5, "pt"),
+      legend.margin = margin(t = 2, b = 2, r = 2, l = 2),
+      legend.box.spacing = unit(4, "pt")
+    )
+}
+```
+
+```{r plot}
+# Main plot
+log_p_max <- max(plot_data$log_p, na.rm = TRUE)
+if (is.na(log_p_max) || log_p_max < 1.302) {
+  log_p_max <- 1.302
+}
+break_val <- -log10(0.05)
+
+p_delta <- ggplot(plot_data, aes(x = Delta, y = Tool)) +
+  # Draw vertical grey dashed line at Delta = 0 behind the bars
+  geom_vline(xintercept = 0, linetype = "dashed", color = "grey", linewidth = 0.35) +
+  geom_bar(aes(fill = log_p), stat = "identity", color = "black", linewidth = 0.2, width = 0.6) +
+  scale_fill_gradientn(
+    colors = c("#f7fcb9", "#addd8e", "#d8daeb", "#54278f"),
+    values = c(0, break_val, break_val + 1e-5, log_p_max) / log_p_max,
+    name = expression(-log[10]*"(adj p-value)"),
+    limits = c(0, log_p_max)
+  ) +
+  # Grid faceting: LibType as rows, Dataset as columns, with colorized technology strips and custom text colors
+  facet_grid_color(LibType ~ Dataset, colors = color_palette, lab_colors = lab_text_palette) +
+  # Add small buffer to x-axis limits to prevent text clipping
+  scale_x_continuous(expand = expansion(mult = c(0.1, 0.1))) +
+  labs(
+    x = "Delta in % of Known Transcripts (After - Before)",
+    y = "Tool",
+    title = NULL
+  ) +
+  theme_nature_clean()
+```
+
+```{r export}
+# Export function
+save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 130, dpi = 600) {
+  w <- width_mm / 25.4
+  h <- height_mm / 25.4
+
+  svglite::svglite(paste0(filename, ".svg"), width = w, height = h)
+  print(plot)
+  dev.off()
+
+  grDevices::cairo_pdf(paste0(filename, ".pdf"), width = w, height = h, family = "sans")
+  print(plot)
+  dev.off()
+
+  ragg::agg_tiff(paste0(filename, ".tiff"), width = w, height = h, units = "in", res = dpi)
+  print(plot)
+  dev.off()
+
+  ggsave(paste0(filename, ".png"), plot, width = w, height = h, dpi = 150)
+}
+
+save_pub_r(p_delta, "plots/Supplementary_Figure_5", width_mm = 180, height_mm = 130)
+message("Delta comparison plot generated successfully.")
+```

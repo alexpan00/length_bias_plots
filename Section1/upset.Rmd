@@ -1,0 +1,334 @@
+---
+title: "UJC upset plot"
+author: "Alejandro paniaguar"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r libraries}
+library(ggplot2)
+library(patchwork)
+library(dplyr)
+library(tidyr)
+library(readr)
+library(ComplexUpset)
+```
+
+```{r theme_and_colors}
+# Unified colorblind-friendly Technology Color Palette (ONT associated with Blue, PacBio with Orange)
+color_palette <- c(
+  "ONT_dRNA" = "#56B4E9",  # Soft Blue
+  "dRNA_ONT" = "#56B4E9",  
+  "Illumina" = "#252525",  # Neutral Dark Charcoal
+  "ONT_cDNA" = "#D1B490",  # Sandy gold
+  "cDNA_ONT" = "#D1B490",  
+  "Iso-Seq"   = "#EE7B30",  # Orange
+  "Kinnex"   = "#e31c93"   # PacBio pink
+)
+
+
+# Unified Nature-style theme for high-impact journals
+theme_nature <- function(base_size = 6.5, base_family = "sans") {
+  theme_classic(base_size = base_size, base_family = base_family) +
+    theme(
+      axis.line = element_line(linewidth = 0.35, colour = "black"),
+      axis.ticks = element_line(linewidth = 0.35, colour = "black"),
+      axis.title = element_text(size = base_size),
+      axis.text = element_text(size = base_size - 0.7, color = "black"),
+      legend.title = element_text(size = base_size - 0.3, face = "bold"),
+      legend.text = element_text(size = base_size - 0.8),
+      legend.key.size = unit(2.5, "mm"),
+      legend.spacing.y = unit(0.5, "mm"),
+      strip.text = element_text(size = base_size - 0.5, face = "bold", margin = margin(t = 2, b = 2)),
+      plot.title = element_text(size = base_size + 0.5, face = "bold"),
+      panel.grid = element_blank(),
+      legend.position = "right",
+      plot.tag = element_text(size = 8, face = "bold")
+    )
+}
+
+theme_set(theme_nature())
+```
+
+```{r read_dataset_func}
+read_dataset <- function(manifest_file, mapping_rules){
+  input_files <- readLines(manifest_file, warn = FALSE)
+  input_files <- trimws(input_files)
+  input_files <- input_files[nzchar(input_files)]
+  input_files <- input_files[!startsWith(input_files, "#")]
+  print(input_files)
+  if (length(input_files) == 0) {
+    stop(paste("No input files found in manifest:", manifest_file))
+  }
+  
+  missing_files <- input_files[!file.exists(input_files)]
+  if (length(missing_files) > 0) {
+    stop(paste("The following input files do not exist:\n", paste(missing_files, collapse = "\n")))
+  }
+  
+  read_ujc_summary <- function(path) {
+    data <- read.delim(path, sep = "\t", header = TRUE, stringsAsFactors = FALSE)
+    required_columns <- c("experiment", "tool", "UJC", "n_transcripts")
+    missing_columns <- setdiff(required_columns, colnames(data))
+    if (length(missing_columns) > 0) {
+      stop(paste("Missing columns in", path, ":", paste(missing_columns, collapse = ", ")))
+    }
+  
+    data <- data[!is.na(data$UJC) & data$UJC != "", , drop = FALSE]
+    data$experiment <- mapping_rules[data$experiment]
+    data$tool <- case_when(
+      data$tool == "flair"    ~ "FLAIR",
+      data$tool == "isoquant" ~ "IsoQuant",
+      data$tool == "kallisto" ~ "Kallisto",
+      data$tool == "oarfish"  ~ "Oarfish",
+      data$tool == "bambu"    ~ "bambu",
+      TRUE                    ~ as.character(data$tool)
+    )
+    data$group <- paste(data$experiment, data$tool, sep = "_")
+
+    data
+  }
+  
+  all_data <- do.call(rbind, lapply(input_files, read_ujc_summary))
+  
+  if (nrow(all_data) == 0) {
+    stop("No UJC rows found across the provided files")
+  }
+  summary_table <- aggregate(
+    n_transcripts ~ experiment + tool + group + UJC,
+    data = all_data,
+    FUN = sum
+  )
+
+  group_metadata <- data.frame(
+    tool = unique(summary_table$tool), 
+    technology = rep(unique(summary_table$experiment), each = 5)
+  )
+  group_metadata$set <- paste(group_metadata$technology, group_metadata$tool, sep = "_")
+  group_to_cat = setNames(group_metadata$technology, group_metadata$set)
+  summary_table <- summary_table[order(summary_table$experiment, summary_table$tool, summary_table$UJC), ]
+  ujcs <- sort(unique(summary_table$UJC))
+  
+  presence <- data.frame(UJC = ujcs, stringsAsFactors = FALSE, check.names = FALSE)
+  groups <- sort(unique(summary_table$group))
+  
+  for (group_name in groups) {
+    presence[[group_name]] <- presence$UJC %in% summary_table$UJC[summary_table$group == group_name]
+  }
+  return(list(presence = presence, group_metadata = group_metadata))
+}
+
+get_upset_queries <- function(group_metadata, color_palette) {
+  lapply(1:nrow(group_metadata), function(i) {
+    set_name <- group_metadata$set[i]
+    tech <- group_metadata$technology[i]
+    color_val <- color_palette[[tech]]
+    upset_query(set = set_name, fill = color_val, color = color_val)
+  })
+}
+
+# Set-size axis ticks in scientific notation (e.g. 5e+04) to avoid overlapping labels
+set_size_scientific <- upset_set_size()
+set_size_scientific$scales$scales <- list(scale_y_reverse(labels = scales::label_scientific()))
+```
+
+```{r upset_nih}
+manifest_file <- "data/UJC/UJC_nih.fofn"
+mapping_rules <- c(
+  "ont"     = "cDNA_ONT",
+  "isoseq"  = "Iso-Seq",
+  "masseq"  = "Kinnex"
+)
+res <- read_dataset(manifest_file, mapping_rules)
+presence <- res$presence
+group_metadata <- res$group_metadata
+groups <- group_metadata$set
+
+p_nih <- ComplexUpset::upset(
+  presence,
+  intersect = groups,
+  name = "UJC",
+  height_ratio = 0.5,
+  width_ratio = 0.2,
+  min_size = 500, # Optimized min_size to 5000 for rapid plot generation
+  set_sizes = set_size_scientific,
+  matrix = intersection_matrix(
+    geom = geom_point(shape = "circle filled", size = 2.0),
+    segment = geom_segment(color = "black", linewidth = 0.3)
+  ),
+  queries = get_upset_queries(group_metadata, color_palette),
+  base_annotations = list(
+      'Intersection size' = intersection_size(counts = FALSE)
+  ),
+  themes = list(
+    'Intersection size' = theme_nature() + theme(
+      axis.text.x = element_blank(),
+      axis.ticks.x = element_blank(),
+      axis.title.x = element_blank()
+    ),
+    intersections_matrix = list(
+      theme_nature() + theme(
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank()        
+      )
+    ),
+    overall_sizes = list(
+      theme_nature() + theme(
+        axis.text.y = element_blank(),
+        axis.text.x = element_text(angle = 45, hjust = 1)
+      )
+    )
+  )
+)
+```
+
+```{r upset_neuron}
+manifest_file <- "data/UJC/UJC_neuron.fofn"
+mapping_rules <- c(
+  "neuron_ont" = "cDNA_ONT",
+  "neuron_pb"  = "Kinnex"
+)
+res <- read_dataset(manifest_file, mapping_rules)
+presence <- res$presence
+group_metadata <- res$group_metadata
+groups <- group_metadata$set
+
+p_neuron <- ComplexUpset::upset(
+  presence,
+  intersect = groups,
+  name = "UJC",
+  height_ratio = 0.5,
+  width_ratio = 0.2,
+  min_size = 500, # Optimized min_size to 5000
+  set_sizes = set_size_scientific,
+  matrix = intersection_matrix(
+    geom = geom_point(shape = "circle filled", size = 2.0),
+    segment = geom_segment(color = "black", linewidth = 0.3)
+  ),
+  queries = get_upset_queries(group_metadata, color_palette),
+  base_annotations = list(
+      'Intersection size' = intersection_size(counts = FALSE)
+  ),
+  themes = list(
+    'Intersection size' = theme_nature() + theme(
+      axis.text.x = element_blank(),
+      axis.ticks.x = element_blank(),
+      axis.title.x = element_blank()
+    ),
+    intersections_matrix = list(
+      theme_nature() + theme(
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank()        
+      )
+    ),
+    overall_sizes = list(
+      theme_nature() + theme(
+        axis.text.y = element_blank(),
+        axis.text.x = element_text(angle = 45, hjust = 1)
+      )
+    )
+  )
+)
+```
+
+```{r upset_longbench}
+manifest_file <- "data/UJC/UJC_longbench.fofn"
+mapping_rules <- c(
+  "cDNA_norm"    = "cDNA_ONT",
+  "kinnex_norm"  = "Kinnex",
+  "drna_norm"    = "dRNA_ONT"
+)
+res <- read_dataset(manifest_file, mapping_rules)
+presence <- res$presence
+group_metadata <- res$group_metadata
+groups <- group_metadata$set
+
+p_longbench <- ComplexUpset::upset(
+  presence,
+  intersect = groups,
+  name = "UJC",
+  height_ratio = 0.6,
+  width_ratio = 0.2,
+  min_size = 500, # Optimized min_size to 5000
+  set_sizes = set_size_scientific,
+  matrix = intersection_matrix(
+    geom = geom_point(shape = "circle filled", size = 2.0),
+    segment = geom_segment(color = "black", linewidth = 0.3)
+  ),
+  queries = get_upset_queries(group_metadata, color_palette),
+  base_annotations = list(
+      'Intersection size' = intersection_size(counts = FALSE)
+  ),
+  themes = list(
+    'Intersection size' = theme_nature() + theme(
+      axis.text.x = element_blank(),
+      axis.ticks.x = element_blank(),
+      axis.title.x = element_blank()
+    ),
+    intersections_matrix = list(
+      theme_nature() + theme(
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank()        
+      )
+    ),
+    overall_sizes = list(
+      theme_nature() + theme(
+        axis.text.y = element_blank(),
+        axis.text.x = element_text(angle = 45, hjust = 1)
+      )
+    )
+  )
+)
+```
+
+
+```{r assemble_all}
+# Stack the three UpSet plots vertically for supplementary figure
+p_nih_clean <- wrap_elements(p_nih + labs(title = "Mouse") & theme(legend.position = "none"))
+p_longbench_clean <- wrap_elements(p_longbench + labs(title = "LongBench") & theme(legend.position = "none"))
+p_neuron_clean <- wrap_elements(p_neuron + labs(title = "iNeuron") & theme(legend.position = "none"))
+
+# Stack UpSets vertically in dataset order: NIH / LongBench / Neuron
+fig_upset <- (p_nih_clean / p_longbench_clean / p_neuron_clean + 
+  plot_layout(heights = c(1, 1, 1))) +
+  plot_annotation(tag_levels = "a")
+```
+
+```{r export_fig2}
+# Professional high-impact export function
+save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 240, dpi = 600) {
+  w <- width_mm / 25.4
+  h <- height_mm / 25.4
+  
+  # Lossless Vector SVG
+  svglite::svglite(paste0(filename, ".svg"), width = w, height = h)
+  print(plot)
+  dev.off()
+  
+  # Vector PDF with embedded fonts
+  grDevices::cairo_pdf(paste0(filename, ".pdf"), width = w, height = h, family = "sans")
+  print(plot)
+  dev.off()
+  
+  # High-DPI TIFF for publication print
+  ragg::agg_tiff(paste0(filename, ".tiff"), width = w, height = h, units = "in", res = dpi)
+  print(plot)
+  dev.off()
+  
+  # PNG for rapid preview
+  ggsave(paste0(filename, ".png"), plot, width = w, height = h, dpi = 150)
+}
+
+save_pub_r(fig_upset, "plots/Supplementary_Figure_6", height_mm = 360)
+```
+

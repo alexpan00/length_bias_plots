@@ -1,0 +1,180 @@
+---
+title: "Supplementary Figure 9: Downstream Length Biases (Alternative conditions)"
+author: "Alejandro Paniagua"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r libraries}
+library(ggplot2)
+library(patchwork)
+library(dplyr)
+library(tidyr)
+library(deeptime)
+
+# Technology palette for facet strips
+technology_palette <- c(
+  "ONT dRNA" = "#56B4E9",  # Soft Blue
+  "ONT cDNA" = "#D1B490",  # Sandy gold
+  "Iso-Seq"   = "#EE7B30",  # Orange
+  "Kinnex"   = "#e31c93"   # PacBio pink
+)
+
+lab_text_palette <- c(
+  "ONT dRNA" = "#FFFFFF",
+  "ONT cDNA" = "#FFFFFF",
+  "Iso-Seq"   = "#FFFFFF",
+  "Kinnex"   = "#FFFFFF",
+  "bambu"    = "#000000",
+  "FLAIR"    = "#000000",
+  "IsoQuant" = "#000000",
+  "Kallisto" = "#000000",
+  "Oarfish"  = "#000000"
+)
+
+# Standard normalization color palette
+color_palette <- c(
+  "CPM" = "#767676",
+  "TPM" = "#33B5A5",
+  "cqn" = "#B64342",
+  "EDA" = "#E28E2C",
+  "ratio_counts" = "#7570B3"
+)
+
+# Strict Nature-style theme with optimized vertical strip margins to prevent clipping
+theme_nature <- function(base_size = 6.5, base_family = "sans") {
+  theme_classic(base_size = base_size, base_family = base_family) +
+    theme(
+      axis.line = element_line(linewidth = 0.35, colour = "black"),
+      axis.ticks = element_line(linewidth = 0.35, colour = "black"),
+      axis.title = element_text(size = base_size),
+      axis.text = element_text(size = base_size - 0.5, color = "black"),
+      legend.title = element_text(size = base_size - 0.3),
+      legend.text = element_text(size = base_size - 0.7),
+      strip.text = element_text(size = base_size - 0.3, face = "bold"),
+      strip.text.y = element_text(size = 5.5, face = "bold", margin = margin(t = 2, r = 2, b = 2, l = 2)),
+      panel.grid = element_blank(),
+      legend.position = "bottom"
+    )
+}
+
+theme_set(theme_nature())
+```
+
+```{r load_data}
+read_dataset <- function(manifest_file, dataset){
+  input_files <- read.delim(manifest_file, header = FALSE, stringsAsFactors = FALSE)
+  l_files <- list()
+  for (i in 1:nrow(input_files)){
+    input_path <- input_files[i,1]
+    technology <- input_files[i,2]
+    df <- read.csv(input_path, stringsAsFactors = FALSE)
+    df$dataset <- dataset
+    df$technology <- gsub("_", " ", technology)
+    l_files[[input_path]] <- df
+  }
+  all_data <- do.call(rbind, l_files)
+  return(all_data)
+}
+
+datasets <- c("NIH", "Neuron", "LongBench")
+l_data <- list()
+for (dataset in datasets){
+  manifest_file <- paste0("data/length_", dataset, ".fofn")
+  l_data[[dataset]] <- read_dataset(manifest_file, dataset)
+}
+all_data <- do.call(rbind, l_data)
+all_data$dataset[all_data$dataset == "NIH"] <- "Mouse"
+
+# Filter condition for supplementary Kidney analysis (Kidney, LUAD, E3)
+all_data <- all_data[all_data$Condition %in% c("Kidney", "LUAD", "E3"),]
+all_data$Length_bins <- factor(all_data$Length_bins, levels = unique(all_data$Length_bins))
+all_data <- all_data %>%
+  mutate(
+    Tool = case_when(
+      Tool == "flair"    ~ "FLAIR",
+      Tool == "isoquant" ~ "IsoQuant",
+      Tool == "kallisto" ~ "Kallisto",
+      Tool == "oarfish"  ~ "Oarfish",
+      Tool == "bambu"    ~ "bambu",
+      TRUE               ~ as.character(Tool)
+    ),
+    Tool = factor(Tool, levels = c("bambu", "FLAIR", "IsoQuant", "Kallisto", "Oarfish"))
+  )
+```
+
+```{r generate_plots}
+l_plots <- list()
+dataset_titles <- c("Mouse" = "Mouse (Kidney)", "LongBench" = "LongBench (LUAD)", "Neuron" = "iNeurons (E3)")
+datasets <- c("Mouse", "LongBench", "Neuron")
+
+for (my_dataset in datasets){
+  l_plots[[my_dataset]] <- all_data %>% 
+    filter(dataset == my_dataset) %>% 
+    ggplot(aes(x = Length_bins, y = mean_exp, color = Normalization, group = Normalization)) +
+    
+    # Elegant, delicate line width
+    geom_line(linewidth = 0.5, alpha = 0.9) +
+    
+    # Structuring by platform/technology and computational tool
+    facet_grid_color(technology ~ Tool, scales = "free", colors = technology_palette, lab_colors = lab_text_palette) +
+    
+    # Custom color palette and labels
+    scale_color_manual(
+      values = color_palette,
+      labels = c("CPM" = "CPM", "TPM" = "TPM", "cqn" = "CQN", "EDA" = "EDASeq", "ratio_counts" = "SMR")
+    ) +
+    labs(
+      x = "Transcript Length", 
+      y = "Mean Normalized Expression",
+      title = dataset_titles[my_dataset]
+    ) +
+    
+    theme_nature() +
+    theme(
+      axis.text.x = element_text(angle = 45, hjust = 1, size = 5.0), # Shrink x-labels to fit length bins
+      legend.key.size = unit(3, "mm"),
+      plot.title = element_text(size = 8, face = "plain", margin = margin(b = 2))
+    )
+}
+```
+
+```{r assemble}
+# Stacking all datasets vertically with patchwork (Nature tags)
+fig2_kidney <- (l_plots$Mouse / l_plots$LongBench / l_plots$Neuron + 
+  plot_layout(guides = "collect")) +
+  plot_annotation(tag_levels = "a") & 
+  theme(plot.tag = element_text(size = 8, face = "bold"))
+```
+
+```{r export}
+# Professional high-impact export function
+save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 220, dpi = 600) {
+  w <- width_mm / 25.4
+  h <- height_mm / 25.4
+  
+  # Lossless Vector SVG
+  svglite::svglite(paste0(filename, ".svg"), width = w, height = h)
+  print(plot)
+  dev.off()
+  
+  # Vector PDF with embedded fonts
+  grDevices::cairo_pdf(paste0(filename, ".pdf"), width = w, height = h, family = "sans")
+  print(plot)
+  dev.off()
+  
+  # High-DPI TIFF for publication print
+  ragg::agg_tiff(paste0(filename, ".tiff"), width = w, height = h, units = "in", res = dpi)
+  print(plot)
+  dev.off()
+  
+  # PNG for rapid preview
+  ggsave(paste0(filename, ".png"), plot, width = w, height = h, dpi = 150)
+}
+
+save_pub_r(fig2_kidney, "plots/Supplementary_Figure_9", height_mm = 220)
+```

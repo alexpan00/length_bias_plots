@@ -1,0 +1,28 @@
+# ------------------------------------------------------------------
+# .gitignore — lrRNA-seq normalization benchmark
+#
+# Versioning policy:
+#   - KEEP: scripts (.Rmd/.py/.sh), manifests (.fofn), small analysis
+#           summary CSVs/TSVs, PNGs, and lightweight configs.
+#   - EXCLUDE: non-PNG plot outputs (.tiff/.svg/.pdf), R session
+#              artifacts, and the large analysis data that is hosted
+#              externally (see README.md for how to fetch it).
+# ------------------------------------------------------------------
+
+# ---- Plot outputs: keep only PNG in the repo ----
+*.tiff
+*.svg
+*.pdf
+
+# ---- R session / editor artifacts ----
+.Rhistory
+*.Rhistory
+.RData
+.Rproj.user
+
+# ---- Large analysis data (hosted externally; see README) ----
+# Per-sample metagene coverage profiles (multi-GB)
+Section1/data/metagene_coverage/metagenes_transcripts/
+# UJC transcript summary tables (hundreds of MB); the small .fofn
+# manifests in data/UJC/ are kept in the repo.
+Section1/data/UJC/*_UJC_summary.tsv

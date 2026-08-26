@@ -1,0 +1,68 @@
+---
+title: "Prepare All Datasets for LMM Analysis"
+author: "Alejandro Paniagua"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r libraries}
+library(tidyverse)
+```
+
+```{r function}
+# Function to build and save rds for a dataset
+build_and_save_rds <- function(manifest_file, output_rds, clean_samples = FALSE) {
+  fofn <- read.table(manifest_file, header=FALSE, sep="\t", col.names=c("Path", "Tech"))
+  dfs <- list()
+  for (i in 1:nrow(fofn)) {
+    path <- fofn$Path[i]
+    df <- read.csv(path, stringsAsFactors = FALSE)
+    df <- df %>% filter(LengthQuantile == "All")
+    df$Dataset <- case_when(
+      fofn$Tech[i] == "Iso-Seq" ~ "isoseq",
+      fofn$Tech[i] == "Kinnex" ~ "kinnex",
+      fofn$Tech[i] == "ONT_cDNA" ~ "ont",
+      fofn$Tech[i] == "ONT_dRNA" ~ "ont_drna",
+      TRUE ~ tolower(fofn$Tech[i])
+    )
+    if (clean_samples && fofn$Tech[i] == "ONT_cDNA") {
+      # Standardize sample names for ONT cDNA in Mouse dataset to match Iso-Seq/Kinnex names
+      df$Sample <- gsub("^BK2080([1-5])$", "B20K80_\\1", df$Sample)
+      df$Sample <- gsub("^BK8020([1-5])$", "B80K20_\\1", df$Sample)
+    }
+    dfs[[i]] <- df
+  }
+  reconstructed <- bind_rows(dfs)
+  saveRDS(reconstructed, output_rds)
+  print(paste("Saved", output_rds, "with", nrow(reconstructed), "rows."))
+}
+```
+
+```{r mouse}
+# 1. Build Mouse (NIH)
+build_and_save_rds(
+  "data/sr_trans_NIH.fofn",
+  "data/mouse_sr_correlations.rds",
+  clean_samples = TRUE
+)
+```
+
+```{r neuron}
+# 2. Build Neuron
+build_and_save_rds(
+  "data/sr_trans_Neuron.fofn",
+  "data/neuron_sr_correlations.rds"
+)
+```
+
+```{r longbench}
+# 3. Build LongBench
+build_and_save_rds(
+  "data/sr_trans_LongBench.fofn",
+  "data/longbench_sr_correlations.rds"
+)
+```

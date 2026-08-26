@@ -1,0 +1,397 @@
+---
+title: "Interaction Plots - TPM/Kinnex and Normalization Interactions"
+author: "Alejandro Paniagua"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r libraries}
+library(tidyverse)
+library(lme4)
+library(lmerTest)
+library(emmeans)
+library(patchwork)
+```
+
+```{r load_rds}
+# Define the RDS files produced by prepare_all_datasets.Rmd
+datasets <- list(
+  Mouse = "data/mouse_sr_correlations.rds",
+  iNeuron = "data/neuron_sr_correlations.rds",
+  LongBench = "data/longbench_sr_correlations.rds"
+)
+```
+
+```{r fit_models}
+# ------------------------------------------------------------------
+# Fit the mixed-effects models (per dataset), store them for downstream
+# use (EMMs + coefficient heatmap), and save the model results to disk.
+# ------------------------------------------------------------------
+models <- list()      # fitted model objects, keyed by dataset name
+emm_list <- list()    # estimated marginal means
+coef_list <- list()   # per-model coefficient tables (Estimate + p-value)
+anova_list <- list()  # per-model Type III ANOVA tables
+
+for (name in names(datasets)) {
+  dat <- readRDS(datasets[[name]])
+
+  # Prepare factors matching the Rmd
+  dat$Technology <- as.factor(dat$Dataset)
+  dat$Technology <- relevel(dat$Technology, ref = "ont")
+  dat$Tool <- as.factor(dat$Tool)
+  dat$Tool <- relevel(dat$Tool, ref = "bambu")
+  dat$Normalization <- as.factor(dat$Normalization)
+  dat$Normalization <- relevel(dat$Normalization, ref = "CPM")
+  dat$Correlation_z <- atanh(dat$Correlation)
+
+  # Fit mixed model
+  model <- lmer(Correlation_z ~ Tool * Normalization + Tool * Technology + Normalization * Technology +
+                 (1 | Sample), data = dat)
+
+  # Store the fitted model for downstream chunks (heatmap, EMMs)
+  models[[name]] <- model
+
+  # Save the model object to disk
+  saveRDS(model, file.path("data", paste0(name, "_lmer_model.rds")))
+
+  # Coefficient table (Estimate, SE, t, p) for the combined heatmap
+  cf <- as.data.frame(summary(model)$coefficients)
+  cf$Term <- rownames(cf)
+  cf$PValue <- cf[["Pr(>|t|)"]]
+  cf$DatasetName <- name
+  coef_list[[name]] <- cf
+
+  # Type III ANOVA table
+  ao <- as.data.frame(anova(model, type = 3))
+  ao$Term <- rownames(ao)
+  ao$DatasetName <- name
+  anova_list[[name]] <- ao
+
+  # Calculate EMMs
+  emm <- emmeans(model, ~ Normalization * Technology)
+  emm_df <- as.data.frame(emm)
+  emm_df$DatasetName <- name
+
+  emm_list[[name]] <- emm_df
+}
+
+# Combine EMMs
+all_emms <- bind_rows(emm_list)
+
+# Combine and save the model results
+all_coefs_raw <- bind_rows(coef_list)
+all_anova_raw <- bind_rows(anova_list)
+write_csv(all_coefs_raw, file.path("data", "model_coefficients.csv"))
+write_csv(all_anova_raw, file.path("data", "model_anova.csv"))
+```
+
+```{r clean_labels}
+# Clean and rename factors for plotting
+all_emms <- all_emms %>%
+  mutate(
+    Technology_Clean = case_when(
+      Technology == "ont"      ~ "cDNA ONT",
+      Technology == "kinnex"   ~ "Kinnex",
+      Technology == "isoseq"   ~ "Iso-Seq",
+      Technology == "ont_drna" ~ "dRNA ONT",
+      TRUE                     ~ as.character(Technology)
+    ),
+    Technology_Clean = factor(Technology_Clean, levels = c("cDNA ONT", "Kinnex", "Iso-Seq", "dRNA ONT")),
+    Normalization_Clean = case_when(
+      Normalization == "CPM"          ~ "CPM",
+      Normalization == "cqn"          ~ "CQN",
+      Normalization == "EDA"          ~ "EDAseq",
+      Normalization == "ratio_counts" ~ "SMR",
+      Normalization == "TPM"          ~ "TPM",
+      TRUE                            ~ as.character(Normalization)
+    ),
+    Normalization_Clean = factor(Normalization_Clean, levels = c("CPM", "CQN", "EDAseq", "SMR", "TPM")),
+    DatasetName = factor(DatasetName, levels = c("Mouse", "iNeuron", "LongBench"))
+  )
+```
+
+
+
+```{r theme_and_colors}
+# Define Nature theme
+theme_nature <- function(base_size = 6.5, base_family = "sans") {
+  theme_classic(base_size = base_size, base_family = base_family) +
+    theme(
+      axis.line = element_line(linewidth = 0.35, colour = "black"),
+      axis.ticks = element_line(linewidth = 0.35, colour = "black"),
+      axis.title = element_text(size = base_size),
+      axis.text = element_text(size = base_size - 0.5, color = "black"),
+      legend.title = element_text(size = base_size - 0.3),
+      legend.text = element_text(size = base_size - 0.7),
+      strip.text = element_text(size = base_size - 0.3, face = "bold"),
+      plot.title = element_text(size = base_size + 0.5, face = "bold"),
+      panel.grid = element_blank(),
+      legend.position = "bottom",
+      legend.key.size = unit(3, "mm")
+    )
+}
+
+# Exact color palette matched from paper_plots/fig1/fig1.Rmd
+tech_colors <- c(
+  "cDNA ONT" = "#D1B490",  # Muted Gold/Tan
+  "Kinnex"   = "#e31c93",  # PacBio Pink/Magenta
+  "Iso-Seq"   = "#EE7B30",  # Soft Orange
+  "dRNA ONT" = "#56B4E9"   # Soft Blue
+)
+
+# Tech shapes
+tech_shapes <- c(
+  "cDNA ONT" = 16, # Circle
+  "Kinnex"   = 17, # Triangle
+  "Iso-Seq"   = 15, # Square
+  "dRNA ONT" = 18  # Diamond
+)
+```
+
+
+
+```{r plot1_cpm_tpm}
+# ----------------- PLOT 1: Focused CPM vs TPM -----------------
+# Filter for CPM and TPM
+cpm_tpm_emms <- all_emms %>%
+  filter(Normalization %in% c("CPM", "TPM")) %>%
+  mutate(Normalization_Clean = factor(Normalization_Clean, levels = c("CPM", "TPM")))
+
+p1 <- ggplot(cpm_tpm_emms, aes(x = Normalization_Clean, y = emmean, color = Technology_Clean, shape = Technology_Clean, group = Technology_Clean)) +
+  geom_line(linewidth = 0.6, alpha = 0.9) +
+  geom_errorbar(aes(ymin = lower.CL, ymax = upper.CL), width = 0.1, linewidth = 0.4, color = "black") +
+  geom_point(size = 2.0, fill = "white", stroke = 0.6) +
+  facet_wrap(~ DatasetName, scales = "free_y") +
+  scale_color_manual(values = tech_colors, name = "Technology") +
+  scale_shape_manual(values = tech_shapes, name = "Technology") +
+  labs(
+    x = NULL,
+    y = "EMM",
+    title = NULL
+  ) +
+  theme_nature()
+```
+
+
+
+
+```{r plot3_reversed}
+# ----------------- PLOT 2: Reversed Focused (CPM vs TPM in Legend, Tech on X-axis) -----------------
+p2 <- ggplot(cpm_tpm_emms, aes(x = Technology_Clean, y = emmean, color = Normalization_Clean, shape = Normalization_Clean, group = Normalization_Clean)) +
+  geom_line(linewidth = 0.6, alpha = 0.9) +
+  geom_errorbar(aes(ymin = lower.CL, ymax = upper.CL), width = 0.1, linewidth = 0.4, color = "black") +
+  geom_point(size = 2.0, fill = "white", stroke = 0.6) +
+  facet_wrap(~ DatasetName, scales = "free") +
+  scale_color_manual(values = c("CPM" = "#767676", "TPM" = "#33B5A5"), name = "Normalization") +
+  scale_shape_manual(values = c("CPM" = 16, "TPM" = 17), name = "Normalization") +
+  labs(
+    x = NULL,
+    y = "EMM",
+    title = NULL
+  ) +
+  theme_nature()
+```
+
+
+
+```{r plot3_cqn_eda}
+# ----------------- PLOT 3: Focused CPM vs CQN vs EDAseq -----------------
+cpm_cqn_eda_emms <- all_emms %>%
+  filter(Normalization %in% c("CPM", "cqn", "EDA")) %>%
+  mutate(Normalization_Clean = factor(Normalization_Clean, levels = c("CPM", "CQN", "EDAseq")))
+
+p3 <- ggplot(cpm_cqn_eda_emms, aes(x = Normalization_Clean, y = emmean, color = Technology_Clean, shape = Technology_Clean, group = Technology_Clean)) +
+  geom_line(linewidth = 0.6, alpha = 0.9) +
+  geom_errorbar(aes(ymin = lower.CL, ymax = upper.CL), width = 0.1, linewidth = 0.4, color = "black") +
+  geom_point(size = 2.0, fill = "white", stroke = 0.6) +
+  facet_wrap(~ DatasetName, scales = "free_y") +
+  scale_color_manual(values = tech_colors, name = "Technology") +
+  scale_shape_manual(values = tech_shapes, name = "Technology") +
+  labs(
+    x = NULL,
+    y = "EMM",
+    title = NULL
+  ) +
+  theme_nature()
+```
+
+
+
+```{r coefficient_heatmap}
+# ------------------------------------------------------------------
+# Combined regression-coefficient heatmap across all three datasets.
+# Rows = model terms, columns = dataset; cell fill = significance,
+# text = coefficient Estimate. Uses the models fitted in `fit_models`.
+# ------------------------------------------------------------------
+
+# Clean term names for display
+clean_term <- function(term) {
+  term <- gsub("^Toolflair$", "flair (vs. bambu)", term)
+  term <- gsub("^Toolisoquant$", "isoquant (vs. bambu)", term)
+  term <- gsub("^Toolkallisto$", "kallisto (vs. bambu)", term)
+  term <- gsub("^Tooloarfish$", "oarfish (vs. bambu)", term)
+
+  term <- gsub("^Normalizationcqn$", "cqn (vs. CPM)", term)
+  term <- gsub("^NormalizationEDA$", "EDA (vs. CPM)", term)
+  term <- gsub("^Normalizationratio_counts$", "SMR (vs. CPM)", term)
+  term <- gsub("^NormalizationTPM$", "TPM (vs. CPM)", term)
+
+  term <- gsub("^Technologyisoseq$", "Iso-Seq (vs. cDNA ONT)", term)
+  term <- gsub("^Technologykinnex$", "Kinnex (vs. cDNA ONT)", term)
+  term <- gsub("^Technologyont_drna$", "dRNA ONT (vs. cDNA ONT)", term)
+
+  if (grepl(":", term)) {
+    parts <- strsplit(term, ":")[[1]]
+    clean_parts <- sapply(parts, function(p) {
+      p <- gsub("^Tool", "", p)
+      p <- gsub("^Normalization", "", p)
+      p <- gsub("^Technology", "", p)
+      if (p == "ratio_counts") p <- "SMR"
+      if (p == "ont_drna") p <- "dRNA ONT"
+      if (p == "isoseq") p <- "Iso-Seq"
+      if (p == "kinnex") p <- "Kinnex"
+      p
+    })
+    return(paste(clean_parts, collapse = " \u00D7 "))
+  }
+  return(term)
+}
+
+# Assign term type (grouping for facet_grid)
+get_term_type <- function(term) {
+  if (!grepl(":", term)) {
+    if (grepl("^Tool", term)) return("Tool Effects")
+    if (grepl("^Normalization", term)) return("Normalization Effects")
+    if (grepl("^Technology", term)) return("Technology Effects")
+    return("Main Effects")
+  } else {
+    parts <- strsplit(term, ":")[[1]]
+    has_tool <- any(grepl("^Tool", parts))
+    has_norm <- any(grepl("^Normalization", parts))
+    has_tech <- any(grepl("^Technology", parts))
+
+    if (has_tool && has_norm) return("Tool \u00D7 Normalization")
+    if (has_tool && has_tech) return("Tool \u00D7 Technology")
+    if (has_norm && has_tech) return("Normalization \u00D7 Technology")
+    return("Interactions")
+  }
+}
+
+# Build heatmap data from the saved coefficient table
+all_coefs <- all_coefs_raw %>%
+  filter(Term != "(Intercept)")
+
+all_coefs$CleanTerm <- sapply(all_coefs$Term, clean_term)
+all_coefs$TermType <- sapply(all_coefs$Term, get_term_type)
+
+term_type_order <- c(
+  "Tool Effects",
+  "Normalization Effects",
+  "Technology Effects",
+  "Tool \u00D7 Normalization",
+  "Tool \u00D7 Technology",
+  "Normalization \u00D7 Technology"
+)
+all_coefs$TermType <- factor(all_coefs$TermType, levels = term_type_order)
+all_coefs$DatasetName <- factor(all_coefs$DatasetName, levels = c("Mouse", "LongBench", "iNeuron"))
+
+all_coefs <- all_coefs %>%
+  mutate(
+    PValCat = case_when(
+      PValue < 0.05 & Estimate > 0 ~ "Significant (Positive)",
+      PValue < 0.05 & Estimate < 0 ~ "Significant (Negative)",
+      TRUE                         ~ "NS (p \u2265 0.05)"
+    ),
+    PValCat = factor(PValCat, levels = c("Significant (Positive)", "NS (p \u2265 0.05)", "Significant (Negative)"))
+  )
+
+# Expand to a complete grid so missing terms show as grey placeholders
+all_combinations <- expand.grid(
+  CleanTerm = unique(all_coefs$CleanTerm),
+  DatasetName = c("Mouse", "LongBench", "iNeuron"),
+  stringsAsFactors = FALSE
+)
+
+term_details <- all_coefs %>% select(CleanTerm, TermType) %>% distinct()
+all_combinations <- all_combinations %>% left_join(term_details, by = "CleanTerm")
+
+heatmap_data <- all_combinations %>%
+  left_join(all_coefs %>% select(CleanTerm, DatasetName, Estimate, PValue, PValCat), by = c("CleanTerm", "DatasetName"))
+
+heatmap_data$DatasetName <- factor(heatmap_data$DatasetName, levels = c("Mouse", "LongBench", "iNeuron"))
+heatmap_data$PValCat[is.na(heatmap_data$PValCat)] <- "NS (p \u2265 0.05)"
+
+heatmap_data <- heatmap_data %>%
+  mutate(
+    EstimateText = ifelse(is.na(Estimate), "", sprintf("%.3f", Estimate))
+  )
+
+# Significance colors (Red = positive sig, Blue = negative sig, grey = NS)
+colors_signif <- c(
+  "Significant (Positive)" = "#DE2D26",
+  "NS (p \u2265 0.05)"       = "#F0F0F0",
+  "Significant (Negative)" = "#3182BD"
+)
+
+p_heatmap <- ggplot(heatmap_data, aes(x = DatasetName, y = CleanTerm, fill = PValCat)) +
+  geom_tile(color = "white", linewidth = 0.3) +
+  geom_text(aes(label = EstimateText), size = 1.8, color = "black") +
+  facet_grid(TermType ~ ., scales = "free_y", space = "free_y") +
+  scale_fill_manual(
+    values = colors_signif,
+    name = "Significance",
+    na.value = "#F0F0F0"
+  ) +
+  labs(
+    x = "Dataset",
+    y = "Regression Coefficient (Effect on Correlation)"
+  ) +
+  theme_nature() +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.title = element_text(size = 7, face = "bold"),
+    strip.text.y = element_text(angle = 0, face = "bold", hjust = 0, size = 6.5),
+    legend.position = "right",
+    legend.title = element_text(size = 6.5, face = "bold"),
+    legend.text = element_text(size = 5.8),
+    legend.key.size = unit(3, "mm")
+  )
+```
+
+
+```{r export}
+# Save publication functions
+save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 80, dpi = 600) {
+  w <- width_mm / 25.4
+  h <- height_mm / 25.4
+
+  # Save PNG
+  ggsave(file.path("plots", paste0(filename, ".png")), plot, width = w, height = h, dpi = 150)
+
+  # Save SVG
+  svglite::svglite(file.path("plots", paste0(filename, ".svg")), width = w, height = h)
+  print(plot)
+  dev.off()
+
+  # Save PDF
+  grDevices::cairo_pdf(file.path("plots", paste0(filename, ".pdf")), width = w, height = h, family = "sans")
+  print(plot)
+  dev.off()
+
+  # Save TIFF
+  ragg::agg_tiff(file.path("plots", paste0(filename, ".tiff")), width = w, height = h, units = "in", res = dpi)
+  print(plot)
+  dev.off()
+}
+
+# Export plots
+save_pub_r(p1, "Supplementary_Figure_15", width_mm = 180, height_mm = 85)
+save_pub_r(p2, "tpm_kinnex_interaction_focused", width_mm = 180, height_mm = 85)
+save_pub_r(p3, "Supplementary_Figure_16", width_mm = 180, height_mm = 85)
+save_pub_r(p_heatmap, "Supplementary_Figure_14", height_mm = 240)
+```

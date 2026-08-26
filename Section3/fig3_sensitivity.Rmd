@@ -1,0 +1,188 @@
+---
+title: "Detection Sensitivity of SIRVs and ERCCs"
+author: "Alejandro Paniagua"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r libraries}
+library(ggplot2)
+library(patchwork)
+library(dplyr)
+library(tidyr)
+library(deeptime)
+
+# Define technology color palette matching Figure 5
+technology_palette <- c(
+  "ONT dRNA" = "#56B4E9",  # Soft Blue
+  "ONT cDNA" = "#D1B490",  # Sandy gold
+  "Iso-Seq"   = "#EE7B30",  # Orange
+  "Kinnex"   = "#e31c93"   # PacBio pink
+)
+
+lab_text_palette <- c(
+  "ONT dRNA" = "#FFFFFF",  # Soft Blue
+  "ONT cDNA" = "#FFFFFF",  # Deep Blue
+  "Iso-Seq"   = "#FFFFFF",  # Soft Orange
+  "Kinnex"   = "#FFFFFF"   # Vermilion/Orange-Red
+)
+```
+
+```{r load_data}
+# Read sensitivity data files
+read_sensitivity <- function(file_path, dataset, technology, spike_in) {
+  df <- read.csv(file_path, stringsAsFactors = FALSE)
+  df$dataset <- dataset
+  df$technology <- technology
+  df$spike_in <- spike_in
+  return(df)
+}
+
+sensitivity_data_list <- list()
+
+# 1. Mouse SIRVs (NIH dataset has no ERCC)
+sensitivity_data_list[[1]] <- read_sensitivity("data/nih/ont_sensitivity_sirv_summary.csv", "Mouse", "ONT cDNA", "SIRV")
+sensitivity_data_list[[2]] <- read_sensitivity("data/nih/isoseq_sensitivity_sirv_summary.csv", "Mouse", "Iso-Seq", "SIRV")
+sensitivity_data_list[[3]] <- read_sensitivity("data/nih/masseq_sensitivity_sirv_summary.csv", "Mouse", "Kinnex", "SIRV")
+
+# 2. iNeurons SIRVs
+sensitivity_data_list[[4]] <- read_sensitivity("data/neuron/ont_sensitivity_sirv_summary.csv", "iNeuron", "ONT cDNA", "SIRV")
+sensitivity_data_list[[5]] <- read_sensitivity("data/neuron/kinnex_sensitivity_sirv_summary.csv", "iNeuron", "Kinnex", "SIRV")
+
+# 3. LongBench SIRVs
+sensitivity_data_list[[6]] <- read_sensitivity("data/longbench/cDNA_norm_sensitivity_sirv_summary.csv", "LongBench", "ONT cDNA", "SIRV")
+sensitivity_data_list[[7]] <- read_sensitivity("data/longbench/drna_sensitivity_sirv_summary.csv", "LongBench", "ONT dRNA", "SIRV")
+sensitivity_data_list[[8]] <- read_sensitivity("data/longbench/kinnex_sensitivity_sirv_summary.csv", "LongBench", "Kinnex", "SIRV")
+
+# 4. iNeurons ERCCs
+sensitivity_data_list[[9]] <- read_sensitivity("data/neuron/neuron_ont_sensitivity_ercc_summary.csv", "iNeuron", "ONT cDNA", "ERCC")
+sensitivity_data_list[[10]] <- read_sensitivity("data/neuron/neuron_pb_sensitivity_ercc_summary.csv", "iNeuron", "Kinnex", "ERCC")
+
+# 5. LongBench ERCCs
+sensitivity_data_list[[11]] <- read_sensitivity("data/longbench/cDNA_norm_sensitivity_ercc_summary.csv", "LongBench", "ONT cDNA", "ERCC")
+sensitivity_data_list[[12]] <- read_sensitivity("data/longbench/drna_norm_sensitivity_ercc_summary.csv", "LongBench", "ONT dRNA", "ERCC")
+sensitivity_data_list[[13]] <- read_sensitivity("data/longbench/kinnex_norm_sensitivity_ercc_summary.csv", "LongBench", "Kinnex", "ERCC")
+
+# Combine datasets
+combined_sensitivity <- do.call(rbind, sensitivity_data_list)
+
+# Add dummy ERCC row for Mouse to preserve ERCC column in facet_grid layout
+dummy_row <- data.frame(
+  Sample = "dummy",
+  Detected_SIRVs = NA,
+  Sensitivity = NA,
+  Tool = "bambu",
+  dataset = "Mouse",
+  technology = "ONT cDNA",
+  spike_in = "ERCC",
+  stringsAsFactors = FALSE
+)
+combined_sensitivity <- rbind(combined_sensitivity, dummy_row)
+```
+
+```{r summarize}
+# Summarize data by calculating mean and standard deviation
+sensitivity_summary <- combined_sensitivity %>%
+  group_by(dataset, technology, spike_in, Tool) %>%
+  summarize(
+    mean_sens = mean(Sensitivity, na.rm = TRUE),
+    sd_sens = sd(Sensitivity, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# Replace NaN mean with NA (for the dummy Mouse ERCC row)
+sensitivity_summary$mean_sens[is.nan(sensitivity_summary$mean_sens)] <- NA
+
+# Set factors for ordering and consistency
+sensitivity_summary <- sensitivity_summary %>%
+  mutate(
+    Tool = case_when(
+      Tool == "flair"    ~ "FLAIR",
+      Tool == "isoquant" ~ "IsoQuant",
+      Tool == "kallisto" ~ "Kallisto",
+      Tool == "oarfish"  ~ "Oarfish",
+      Tool == "bambu"    ~ "bambu",
+      TRUE               ~ as.character(Tool)
+    ),
+    Tool = factor(Tool, levels = c("bambu", "FLAIR", "IsoQuant", "Kallisto", "Oarfish"))
+  )
+sensitivity_summary$spike_in <- factor(sensitivity_summary$spike_in, levels = c("SIRV", "ERCC"))
+```
+
+```{r theme_and_colors}
+# Strict Nature-style theme
+theme_nature <- function(base_size = 6.5, base_family = "sans") {
+  theme_classic(base_size = base_size, base_family = base_family) +
+    theme(
+      axis.line = element_line(linewidth = 0.35, colour = "black"),
+      axis.ticks = element_line(linewidth = 0.35, colour = "black"),
+      axis.title = element_text(size = base_size),
+      axis.text = element_text(size = base_size - 0.5, color = "black"),
+      legend.title = element_text(size = base_size - 0.3),
+      legend.text = element_text(size = base_size - 0.7),
+      strip.text = element_text(size = base_size - 0.3, face = "bold"),
+      strip.text.y = element_text(size = 5.5, face = "bold", margin = margin(t = 2, r = 2, b = 2, l = 2)),
+      panel.grid = element_blank(),
+      legend.position = "none" # No color legend since fill is neutral
+    )
+}
+```
+
+```{r generate_plots}
+# Generate plots for each dataset
+datasets <- c("Mouse", "iNeuron", "LongBench")
+l_plots <- list()
+dataset_titles <- c("Mouse" = "Mouse", "iNeuron" = "iNeuron", "LongBench" = "LongBench")
+
+for (my_dataset in datasets) {
+  l_plots[[my_dataset]] <- sensitivity_summary %>%
+    filter(dataset == my_dataset) %>%
+    ggplot(aes(x = Tool, y = mean_sens)) +
+    geom_bar(stat = "identity", fill = "grey75", color = "black", linewidth = 0.25, width = 0.6) +
+    geom_errorbar(aes(ymin = pmax(0, mean_sens - sd_sens), ymax = pmin(1, mean_sens + sd_sens)), width = 0.2, linewidth = 0.25, color = "black") +
+    facet_grid_color(technology ~ spike_in, colors = technology_palette, lab_colors = lab_text_palette) +
+    labs(x = NULL, y = "Sensitivity", title = dataset_titles[my_dataset]) +
+    theme_nature() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 5.0))
+}
+```
+
+```{r assemble}
+# Combine the three dataset plots using patchwork
+fig3_sensitivity <- l_plots$Mouse / l_plots$LongBench / l_plots$iNeuron +
+  plot_layout(guides = "collect") +
+  plot_annotation(tag_levels = "a") &
+  theme(plot.tag = element_text(size = 8, face = "bold"))
+```
+
+```{r export}
+# Save function
+save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 240, dpi = 600) {
+  w <- width_mm / 25.4
+  h <- height_mm / 25.4
+
+  # Lossless Vector SVG
+  svglite::svglite(paste0(filename, ".svg"), width = w, height = h)
+  print(plot)
+  dev.off()
+
+  # Vector PDF with embedded fonts
+  grDevices::cairo_pdf(paste0(filename, ".pdf"), width = w, height = h, family = "sans")
+  print(plot)
+  dev.off()
+
+  # High-DPI TIFF for publication print
+  ragg::agg_tiff(paste0(filename, ".tiff"), width = w, height = h, units = "in", res = dpi)
+  print(plot)
+  dev.off()
+
+  # PNG for rapid preview
+  ggsave(paste0(filename, ".png"), plot, width = w, height = h, dpi = 150)
+}
+
+save_pub_r(fig3_sensitivity, "plots/Supplementary_Figure_13", width_mm = 135, height_mm = 190)
+```

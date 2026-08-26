@@ -1,0 +1,294 @@
+---
+title: "Combined Supplementary Heatmaps"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r libraries}
+library(tidyverse)
+library(patchwork)
+library(svglite)
+library(ragg)
+library(data.table)
+```
+
+```{r functions}
+# Define Nature theme function
+theme_nature_contract <- function(base_size = 6.0, base_family = "Arial") {
+  theme_classic(base_size = base_size, base_family = base_family) +
+    theme(
+      axis.line = element_line(linewidth = 0.35, colour = "black"),
+      axis.ticks = element_line(linewidth = 0.35, colour = "black"),
+      axis.title = element_text(size = base_size),
+      axis.text = element_text(size = base_size - 0.5, color = "black"),
+      legend.title = element_text(size = base_size - 0.3, face = "bold"),
+      legend.text = element_text(size = base_size - 0.8),
+      strip.text = element_text(size = base_size - 0.5, face = "bold"),
+      plot.title = element_text(size = base_size + 0.5, face = "bold"),
+      panel.grid = element_blank()
+    )
+}
+
+# Define publication saver
+save_publication_figure <- function(plot, filename, width_mm = 180, height_mm = 160, dpi = 300) {
+  w <- width_mm / 25.4
+  h <- height_mm / 25.4
+
+  # PNG
+  ragg::agg_png(paste0(filename, ".png"), width = w, height = h, units = "in", res = dpi)
+  print(plot)
+  dev.off()
+}
+```
+
+```{r config}
+# Output directory for the plots
+out_dir <- "plots"
+dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
+
+# Base directory for metagene profiles
+base_dir <- "data/metagene_coverage/metagenes_transcripts"
+```
+
+```{r process_technology}
+# Function to process a single folder and return the line and heatmap plots
+process_technology <- function(fld_path, dataset_title, tech_title, show_y_label = TRUE) {
+  profile_files <- list.files(fld_path, pattern = "_profiles\\.csv$", full.names = TRUE)
+  if (length(profile_files) == 0) {
+    stop(paste("No profile CSV files found in:", fld_path))
+  }
+
+  # Read and pool all profiles using data.table for speed
+  pooled_list <- list()
+  for (i in seq_along(profile_files)) {
+    pooled_list[[i]] <- fread(profile_files[i])
+  }
+  pooled_dt <- rbindlist(pooled_list)
+
+  # Filter length >= 100
+  pooled_dt <- pooled_dt[length >= 100]
+
+  if (nrow(pooled_dt) == 0) {
+    stop(paste("No transcripts with length >= 100 found in:", fld_path))
+  }
+
+  # Average across samples for each transcript_id
+  bin_cols <- grep("^bin_", names(pooled_dt), value = TRUE)
+  sd_cols <- c("length", bin_cols)
+
+  averaged_dt <- pooled_dt[, lapply(.SD, mean, na.rm = TRUE), by = transcript_id, .SDcols = sd_cols]
+  averaged_df <- as_tibble(averaged_dt)
+
+  # Classify into 3 groups
+  averaged_df <- averaged_df %>%
+    mutate(
+      LengthGroup = case_when(
+        length <= 3000 ~ "<= 3 kb",
+        length <= 6000 ~ "3-6 kb",
+        TRUE ~ "> 6 kb"
+      ),
+      LengthGroup = factor(LengthGroup, levels = c("<= 3 kb", "3-6 kb", "> 6 kb"))
+    )
+
+  # Calculate unique counts and create labels dynamically
+  counts <- averaged_df %>%
+    count(LengthGroup)
+
+  label_map <- counts %>%
+    mutate(
+      Label = paste0(LengthGroup, "\n(n = ", format(n, big.mark = ","), ")")
+    ) %>%
+    select(LengthGroup, Label) %>%
+    deframe()
+
+  # Update factor levels in averaged_df
+  averaged_df <- averaged_df %>%
+    mutate(
+      GroupLabel = factor(label_map[as.character(LengthGroup)],
+                          levels = as.character(label_map[c("<= 3 kb", "3-6 kb", "> 6 kb")]))
+    )
+
+  # Calculate average metagene profile per length group (top panel)
+  metagene_profile <- averaged_df %>%
+    group_by(LengthGroup) %>%
+    select(LengthGroup, starts_with("bin_")) %>%
+    summarise(across(everything(), mean, na.rm = TRUE), .groups = "drop") %>%
+    pivot_longer(
+      cols = starts_with("bin_"),
+      names_to = "Percentile",
+      names_prefix = "bin_",
+      values_to = "Coverage"
+    ) %>%
+    mutate(Percentile = as.numeric(Percentile))
+
+  # Prepare heatmap data (bottom panel) with hierarchical clustering within each length group
+  heatmap_data_list <- list()
+  for (g in unique(averaged_df$GroupLabel)) {
+    group_df <- averaged_df %>% filter(GroupLabel == g)
+    n_g <- nrow(group_df)
+    if (n_g > 1) {
+      bin_cols_ordered <- paste0("bin_", 1:100)
+      mat <- as.matrix(group_df[, bin_cols_ordered, drop = FALSE])
+      mat[is.na(mat)] <- 0
+
+      if (n_g <= 1500) {
+        # Perform standard hierarchical clustering
+        d <- dist(mat)
+        hc <- hclust(d, method = "ward.D2")
+        group_df <- group_df[hc$order, ]
+      } else {
+        # Perform fast hybrid clustering (kmeans + hclust on centers)
+        set.seed(42)
+        k_centers <- 1000
+        km <- kmeans(mat, centers = k_centers, iter.max = 10, nstart = 1)
+
+        # Cluster centers
+        d_centers <- dist(km$centers)
+        hc_centers <- hclust(d_centers, method = "ward.D2")
+
+        # Order clusters
+        cluster_order <- hc_centers$order
+        group_df$Cluster <- km$cluster
+        group_df$ClusterOrder <- match(group_df$Cluster, cluster_order)
+
+        # Compute centroids for ordering within clusters
+        centroids <- rowSums(mat * 1:100) / (rowSums(mat) + 1e-5)
+        group_df$Centroid <- centroids
+
+        # Arrange by cluster order and then by centroid
+        group_df <- group_df %>% arrange(ClusterOrder, Centroid)
+      }
+    }
+    group_df$RowIndex <- 1:nrow(group_df)
+
+    heatmap_data_list[[g]] <- group_df
+  }
+
+  heatmap_data <- bind_rows(heatmap_data_list) %>%
+    pivot_longer(
+      cols = starts_with("bin_"),
+      names_to = "Percentile",
+      names_prefix = "bin_",
+      values_to = "Coverage"
+    ) %>%
+    mutate(Percentile = as.numeric(Percentile))
+
+  # Build top panel plot
+  p_line <- ggplot(metagene_profile, aes(x = Percentile, y = Coverage, color = LengthGroup)) +
+    geom_line(linewidth = 0.45) +
+    scale_x_continuous(breaks = c(0, 50, 100), limits = c(0, 100), expand = c(0, 0)) +
+    scale_y_continuous(breaks = c(0, 0.5, 1.0), limits = c(0, 1.05)) +
+    scale_color_manual(values = c(
+      "<= 3 kb" = "#3182BD",
+      "3-6 kb" = "#E28E2C",
+      "> 6 kb" = "#D24B40"
+    )) +
+    labs(
+      title = tech_title,
+      x = NULL,
+      y = "Mean coverage",
+      color = "Transcript length"
+    ) +
+    theme_nature_contract() +
+    theme(
+      axis.text.x = element_blank(),
+      axis.ticks.x = element_blank(),
+      plot.title = element_text(face = "bold", size = 7, hjust = 0.5),
+      legend.key.size = unit(2.5, "mm")
+    )
+
+  # Build bottom panel heatmap
+  p_heatmap <- ggplot(heatmap_data, aes(x = Percentile, y = RowIndex, fill = Coverage)) +
+    geom_raster(interpolate = TRUE) +
+    facet_grid(GroupLabel ~ ., scales = "free_y", space = "free_y") +
+    scale_x_continuous(breaks = c(0, 50, 100), limits = c(0, 100), expand = c(0, 0)) +
+    scale_y_reverse(expand = c(0, 0)) +
+    scale_fill_viridis_c(
+      option = "D",
+      direction = -1,
+      limits = c(0, 1),
+      na.value = "grey80",
+      name = "Norm. cov"
+    ) +
+    labs(
+      x = "Transcript percentile (5' to 3')",
+      y = if (show_y_label) "Transcripts (clustered by profile)" else NULL
+    ) +
+    theme_nature_contract() +
+    theme(
+      axis.text.y = element_blank(),
+      axis.ticks.y = element_blank(),
+      strip.text = element_text(face = "bold", size = 4.8),
+      strip.background = element_rect(fill = "#F2F2F2", colour = NA),
+      legend.key.size = unit(2.5, "mm")
+    )
+
+  if (!show_y_label) {
+    p_heatmap <- p_heatmap + theme(axis.title.y = element_blank())
+  }
+
+  return(list(line = p_line, heatmap = p_heatmap))
+}
+```
+
+```{r generate_figures}
+# ── 1. GENERATE MOUSE FIGURE (Iso-Seq | Kinnex | ONT cDNA) ────────────────
+res_isoseq <- process_technology(file.path(base_dir, "isoseq_nih"), "Mouse", "Iso-Seq", show_y_label = TRUE)
+res_kinnex <- process_technology(file.path(base_dir, "kinnex_nih"), "Mouse", "Kinnex", show_y_label = FALSE)
+res_ont    <- process_technology(file.path(base_dir, "ont_nih"), "Mouse", "ONT cDNA", show_y_label = FALSE)
+
+res_isoseq$line <- res_isoseq$line + labs(tag = "a")
+res_kinnex$line <- res_kinnex$line + labs(tag = "b")
+res_ont$line    <- res_ont$line + labs(tag = "c")
+
+col1 <- wrap_plots(res_isoseq$line, res_isoseq$heatmap, ncol = 1, heights = c(1, 3.2))
+col2 <- wrap_plots(res_kinnex$line, res_kinnex$heatmap, ncol = 1, heights = c(1, 3.2))
+col3 <- wrap_plots(res_ont$line, res_ont$heatmap, ncol = 1, heights = c(1, 3.2))
+
+fig_mouse <- (col1 | col2 | col3) +
+  plot_layout(guides = "collect") &
+  theme(plot.tag = element_text(size = 8, face = "bold", family = "Arial"))
+
+save_publication_figure(fig_mouse, file.path(out_dir, "Supplementary_Figure_1"), width_mm = 135, height_mm = 128)
+message("Saved Mouse figure.")
+
+# ── 2. GENERATE NEURON FIGURE (Kinnex | ONT cDNA) ───────────────────────
+res_kinnex_neu <- process_technology(file.path(base_dir, "kinnex_neuron"), "Neuron", "Kinnex", show_y_label = TRUE)
+res_ont_neu    <- process_technology(file.path(base_dir, "ont_neuron"), "Neuron", "ONT cDNA", show_y_label = FALSE)
+
+res_kinnex_neu$line <- res_kinnex_neu$line + labs(tag = "a")
+res_ont_neu$line    <- res_ont_neu$line + labs(tag = "b")
+
+col1_neu <- wrap_plots(res_kinnex_neu$line, res_kinnex_neu$heatmap, ncol = 1, heights = c(1, 3.2))
+col2_neu <- wrap_plots(res_ont_neu$line, res_ont_neu$heatmap, ncol = 1, heights = c(1, 3.2))
+
+fig_neuron <- (col1_neu | col2_neu) +
+  plot_layout(guides = "collect") &
+  theme(plot.tag = element_text(size = 8, face = "bold", family = "Arial"))
+
+save_publication_figure(fig_neuron, file.path(out_dir, "Supplementary_Figure_2"), width_mm = 120, height_mm = 128)
+message("Saved Neuron figure.")
+
+# ── 3. GENERATE LONGBENCH FIGURE (Kinnex | ONT cDNA | ONT dRNA) ─────────
+res_kinnex_lb <- process_technology(file.path(base_dir, "kinnex_longbench"), "LongBench", "Kinnex", show_y_label = TRUE)
+res_ont_lb    <- process_technology(file.path(base_dir, "ont_longbench"), "LongBench", "ONT cDNA", show_y_label = FALSE)
+res_drna_lb   <- process_technology(file.path(base_dir, "drna_longbench"), "LongBench", "ONT dRNA", show_y_label = FALSE)
+
+res_kinnex_lb$line <- res_kinnex_lb$line + labs(tag = "a")
+res_ont_lb$line    <- res_ont_lb$line + labs(tag = "b")
+res_drna_lb$line   <- res_drna_lb$line + labs(tag = "c")
+
+col1_lb <- wrap_plots(res_kinnex_lb$line, res_kinnex_lb$heatmap, ncol = 1, heights = c(1, 3.2))
+col2_lb <- wrap_plots(res_ont_lb$line, res_ont_lb$heatmap, ncol = 1, heights = c(1, 3.2))
+col3_lb <- wrap_plots(res_drna_lb$line, res_drna_lb$heatmap, ncol = 1, heights = c(1, 3.2))
+
+fig_longbench <- (col1_lb | col2_lb | col3_lb) +
+  plot_layout(guides = "collect") &
+  theme(plot.tag = element_text(size = 8, face = "bold", family = "Arial"))
+
+save_publication_figure(fig_longbench, file.path(out_dir, "Supplementary_Figure_3"), width_mm = 135, height_mm = 128)
+message("Saved LongBench figure.")
+```

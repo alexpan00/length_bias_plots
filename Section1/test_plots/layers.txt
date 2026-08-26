@@ -1,0 +1,7 @@
+N layers: 6
+layer 1 names: x,y,xend,yend,PANEL,group,colour,linewidth,linetype,alpha
+layer 2 names: x,y,PANEL,group,shape,colour,fill,size,alpha,stroke
+layer 3 names: colour,x,y,PANEL,group,shape,fill,size,alpha,stroke
+layer 4 names: x,y,xend,yend,PANEL,group,colour,linewidth,linetype,alpha
+layer 5 names: x,y,xend,yend,PANEL,group,colour,linewidth,linetype,alpha
+layer 6 names: x,y,PANEL,group,shape,colour,fill,size,alpha,stroke

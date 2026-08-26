@@ -1,0 +1,3 @@
+data/longbench/cDNA_norm_normalization_length_summary.csv	ONT_cDNA
+data/longbench/drna_norm_normalization_length_summary.csv	ONT_dRNA
+data/longbench/kinnex_norm_normalization_length_summary.csv	Kinnex

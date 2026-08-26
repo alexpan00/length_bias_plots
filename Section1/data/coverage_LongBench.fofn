@@ -1,0 +1,3 @@
+data/metagene_coverage/drna_longbench.csv	ONT_dRNA
+data/metagene_coverage/kinnex_longbench.csv	Kinnex
+data/metagene_coverage/ont_longbench.csv	ONT_cDNA

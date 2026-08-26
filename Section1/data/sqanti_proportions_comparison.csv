@@ -1,0 +1,257 @@
+"Dataset","LibType","Tool","FilteredLabel","IsoformClass","Count","Total","Percentage"
+"LongBench","Kinnex","bambu","Before
+Filtering","Novel",1259,148928,0.845374946282768
+"LongBench","Kinnex","bambu","Before
+Filtering","Known (FSM)",147669,148928,99.1546250537172
+"LongBench","Kinnex","bambu","After
+Filtering","Novel",685,52577,1.30285105654564
+"LongBench","Kinnex","bambu","After
+Filtering","Known (FSM)",51892,52577,98.6971489434544
+"LongBench","Kinnex","flair","Before
+Filtering","Novel",1303888,1401779,93.0166595447642
+"LongBench","Kinnex","flair","Before
+Filtering","Known (FSM)",97891,1401779,6.98334045523581
+"LongBench","Kinnex","flair","After
+Filtering","Novel",420344,481731,87.2569961243931
+"LongBench","Kinnex","flair","After
+Filtering","Known (FSM)",61387,481731,12.7430038756069
+"LongBench","Kinnex","isoquant","Before
+Filtering","Novel",328852,400883,82.0319145486339
+"LongBench","Kinnex","isoquant","Before
+Filtering","Known (FSM)",72031,400883,17.9680854513661
+"LongBench","Kinnex","isoquant","After
+Filtering","Novel",68502,92245,74.2609355520624
+"LongBench","Kinnex","isoquant","After
+Filtering","Known (FSM)",23743,92245,25.7390644479376
+"LongBench","Kinnex","kallisto","Before
+Filtering","Known (FSM)",139976,139976,100
+"LongBench","Kinnex","kallisto","After
+Filtering","Known (FSM)",47631,47631,100
+"LongBench","Kinnex","oarfish","Before
+Filtering","Known (FSM)",161639,161639,100
+"LongBench","Kinnex","oarfish","After
+Filtering","Known (FSM)",74887,74887,100
+"LongBench","ONT cDNA","bambu","Before
+Filtering","Novel",3387,132154,2.56291901872058
+"LongBench","ONT cDNA","bambu","Before
+Filtering","Known (FSM)",128767,132154,97.4370809812794
+"LongBench","ONT cDNA","bambu","After
+Filtering","Novel",1454,31731,4.58226970470518
+"LongBench","ONT cDNA","bambu","After
+Filtering","Known (FSM)",30277,31731,95.4177302952948
+"LongBench","ONT cDNA","flair","Before
+Filtering","Novel",294889,345476,85.3573041253227
+"LongBench","ONT cDNA","flair","Before
+Filtering","Known (FSM)",50587,345476,14.6426958746773
+"LongBench","ONT cDNA","flair","After
+Filtering","Novel",72701,105942,68.62339770818
+"LongBench","ONT cDNA","flair","After
+Filtering","Known (FSM)",33241,105942,31.3766022918201
+"LongBench","ONT cDNA","isoquant","Before
+Filtering","Novel",44284,87970,50.3398885983858
+"LongBench","ONT cDNA","isoquant","Before
+Filtering","Known (FSM)",43686,87970,49.6601114016142
+"LongBench","ONT cDNA","isoquant","After
+Filtering","Novel",13643,29903,45.6241848643949
+"LongBench","ONT cDNA","isoquant","After
+Filtering","Known (FSM)",16260,29903,54.3758151356051
+"LongBench","ONT cDNA","kallisto","Before
+Filtering","Known (FSM)",136621,136621,100
+"LongBench","ONT cDNA","kallisto","After
+Filtering","Known (FSM)",29783,29783,100
+"LongBench","ONT cDNA","oarfish","Before
+Filtering","Known (FSM)",154395,154395,100
+"LongBench","ONT cDNA","oarfish","After
+Filtering","Known (FSM)",44826,44826,100
+"LongBench","ONT dRNA","bambu","Before
+Filtering","Novel",1310,141689,0.92456012816803
+"LongBench","ONT dRNA","bambu","Before
+Filtering","Known (FSM)",140379,141689,99.075439871832
+"LongBench","ONT dRNA","bambu","After
+Filtering","Novel",662,43451,1.52355526915376
+"LongBench","ONT dRNA","bambu","After
+Filtering","Known (FSM)",42789,43451,98.4764447308462
+"LongBench","ONT dRNA","flair","Before
+Filtering","Novel",231535,316835,73.0774693452428
+"LongBench","ONT dRNA","flair","Before
+Filtering","Known (FSM)",85300,316835,26.9225306547572
+"LongBench","ONT dRNA","flair","After
+Filtering","Novel",103773,160467,64.6693712725981
+"LongBench","ONT dRNA","flair","After
+Filtering","Known (FSM)",56694,160467,35.3306287274019
+"LongBench","ONT dRNA","isoquant","Before
+Filtering","Novel",32286,105018,30.7433011483746
+"LongBench","ONT dRNA","isoquant","Before
+Filtering","Known (FSM)",72732,105018,69.2566988516254
+"LongBench","ONT dRNA","isoquant","After
+Filtering","Novel",11258,37715,29.8501922312077
+"LongBench","ONT dRNA","isoquant","After
+Filtering","Known (FSM)",26457,37715,70.1498077687923
+"LongBench","ONT dRNA","kallisto","Before
+Filtering","Known (FSM)",134160,134160,100
+"LongBench","ONT dRNA","kallisto","After
+Filtering","Known (FSM)",35812,35812,100
+"LongBench","ONT dRNA","oarfish","Before
+Filtering","Known (FSM)",157583,157583,100
+"LongBench","ONT dRNA","oarfish","After
+Filtering","Known (FSM)",59423,59423,100
+"Mouse","Iso-Seq","bambu","Before
+Filtering","Novel",2274,93844,2.42317036784451
+"Mouse","Iso-Seq","bambu","Before
+Filtering","Known (FSM)",91570,93844,97.5768296321555
+"Mouse","Iso-Seq","bambu","After
+Filtering","Novel",1069,25913,4.12534249218539
+"Mouse","Iso-Seq","bambu","After
+Filtering","Known (FSM)",24844,25913,95.8746575078146
+"Mouse","Iso-Seq","flair","Before
+Filtering","Novel",129034,189723,68.0117856032215
+"Mouse","Iso-Seq","flair","Before
+Filtering","Known (FSM)",60689,189723,31.9882143967785
+"Mouse","Iso-Seq","flair","After
+Filtering","Novel",20821,53093,39.2160925169043
+"Mouse","Iso-Seq","flair","After
+Filtering","Known (FSM)",32272,53093,60.7839074830957
+"Mouse","Iso-Seq","isoquant","Before
+Filtering","Novel",58329,109258,53.3864797085797
+"Mouse","Iso-Seq","isoquant","Before
+Filtering","Known (FSM)",50929,109258,46.6135202914203
+"Mouse","Iso-Seq","isoquant","After
+Filtering","Novel",7815,27043,28.8984210331694
+"Mouse","Iso-Seq","isoquant","After
+Filtering","Known (FSM)",19228,27043,71.1015789668306
+"Mouse","Iso-Seq","kallisto","Before
+Filtering","Known (FSM)",87532,87532,100
+"Mouse","Iso-Seq","kallisto","After
+Filtering","Known (FSM)",24144,24144,100
+"Mouse","Iso-Seq","oarfish","Before
+Filtering","Known (FSM)",101434,101434,100
+"Mouse","Iso-Seq","oarfish","After
+Filtering","Known (FSM)",29387,29387,100
+"Mouse","Kinnex","bambu","Before
+Filtering","Novel",528,101514,0.520125302913884
+"Mouse","Kinnex","bambu","Before
+Filtering","Known (FSM)",100986,101514,99.4798746970861
+"Mouse","Kinnex","bambu","After
+Filtering","Novel",494,51268,0.963564016540532
+"Mouse","Kinnex","bambu","After
+Filtering","Known (FSM)",50774,51268,99.0364359834595
+"Mouse","Kinnex","flair","Before
+Filtering","Novel",483181,562016,85.9728192791664
+"Mouse","Kinnex","flair","Before
+Filtering","Known (FSM)",78835,562016,14.0271807208336
+"Mouse","Kinnex","flair","After
+Filtering","Novel",196674,259445,75.8056620863767
+"Mouse","Kinnex","flair","After
+Filtering","Known (FSM)",62771,259445,24.1943379136233
+"Mouse","Kinnex","isoquant","Before
+Filtering","Novel",78626,131827,59.6433204123586
+"Mouse","Kinnex","isoquant","Before
+Filtering","Known (FSM)",53201,131827,40.3566795876414
+"Mouse","Kinnex","isoquant","After
+Filtering","Novel",27883,61444,45.3795325825142
+"Mouse","Kinnex","isoquant","After
+Filtering","Known (FSM)",33561,61444,54.6204674174858
+"Mouse","Kinnex","kallisto","Before
+Filtering","Known (FSM)",98207,98207,100
+"Mouse","Kinnex","kallisto","After
+Filtering","Known (FSM)",49700,49700,100
+"Mouse","Kinnex","oarfish","Before
+Filtering","Known (FSM)",109610,109610,100
+"Mouse","Kinnex","oarfish","After
+Filtering","Known (FSM)",63184,63184,100
+"Mouse","ONT cDNA","bambu","Before
+Filtering","Novel",1686,95004,1.77466211948971
+"Mouse","ONT cDNA","bambu","Before
+Filtering","Known (FSM)",93318,95004,98.2253378805103
+"Mouse","ONT cDNA","bambu","After
+Filtering","Novel",754,18081,4.1701233338864
+"Mouse","ONT cDNA","bambu","After
+Filtering","Known (FSM)",17327,18081,95.8298766661136
+"Mouse","ONT cDNA","flair","Before
+Filtering","Novel",110278,137460,80.2255201513167
+"Mouse","ONT cDNA","flair","Before
+Filtering","Known (FSM)",27182,137460,19.7744798486833
+"Mouse","ONT cDNA","flair","After
+Filtering","Novel",31749,49735,63.8363325625817
+"Mouse","ONT cDNA","flair","After
+Filtering","Known (FSM)",17986,49735,36.1636674374183
+"Mouse","ONT cDNA","isoquant","Before
+Filtering","Novel",24637,58276,42.2764088132336
+"Mouse","ONT cDNA","isoquant","Before
+Filtering","Known (FSM)",33639,58276,57.7235911867664
+"Mouse","ONT cDNA","isoquant","After
+Filtering","Novel",5762,17071,33.7531486146096
+"Mouse","ONT cDNA","isoquant","After
+Filtering","Known (FSM)",11309,17071,66.2468513853904
+"Mouse","ONT cDNA","kallisto","Before
+Filtering","Known (FSM)",103071,103071,100
+"Mouse","ONT cDNA","kallisto","After
+Filtering","Known (FSM)",14541,14541,100
+"Mouse","ONT cDNA","oarfish","Before
+Filtering","Known (FSM)",102737,102737,100
+"Mouse","ONT cDNA","oarfish","After
+Filtering","Known (FSM)",20135,20135,100
+"iNeuron","Kinnex","bambu","Before
+Filtering","Novel",645,119022,0.541916620456722
+"iNeuron","Kinnex","bambu","Before
+Filtering","Known (FSM)",118377,119022,99.4580833795433
+"iNeuron","Kinnex","bambu","After
+Filtering","Novel",590,43513,1.35591662261853
+"iNeuron","Kinnex","bambu","After
+Filtering","Known (FSM)",42923,43513,98.6440833773815
+"iNeuron","Kinnex","flair","Before
+Filtering","Novel",522788,588811,88.787064100365
+"iNeuron","Kinnex","flair","Before
+Filtering","Known (FSM)",66023,588811,11.212935899635
+"iNeuron","Kinnex","flair","After
+Filtering","Novel",221042,269589,81.9922177833665
+"iNeuron","Kinnex","flair","After
+Filtering","Known (FSM)",48547,269589,18.0077822166335
+"iNeuron","Kinnex","isoquant","Before
+Filtering","Novel",54147,103538,52.2967412930518
+"iNeuron","Kinnex","isoquant","Before
+Filtering","Known (FSM)",49391,103538,47.7032587069482
+"iNeuron","Kinnex","isoquant","After
+Filtering","Novel",21929,46903,46.753938980449
+"iNeuron","Kinnex","isoquant","After
+Filtering","Known (FSM)",24974,46903,53.246061019551
+"iNeuron","Kinnex","kallisto","Before
+Filtering","Known (FSM)",109300,109300,100
+"iNeuron","Kinnex","kallisto","After
+Filtering","Known (FSM)",39344,39344,100
+"iNeuron","Kinnex","oarfish","Before
+Filtering","Known (FSM)",134878,134878,100
+"iNeuron","Kinnex","oarfish","After
+Filtering","Known (FSM)",60225,60225,100
+"iNeuron","ONT cDNA","bambu","Before
+Filtering","Novel",1676,114841,1.45940909605454
+"iNeuron","ONT cDNA","bambu","Before
+Filtering","Known (FSM)",113165,114841,98.5405909039455
+"iNeuron","ONT cDNA","bambu","After
+Filtering","Novel",1534,39426,3.8908334601532
+"iNeuron","ONT cDNA","bambu","After
+Filtering","Known (FSM)",37892,39426,96.1091665398468
+"iNeuron","ONT cDNA","flair","Before
+Filtering","Novel",226080,282011,80.167085681055
+"iNeuron","ONT cDNA","flair","Before
+Filtering","Known (FSM)",55931,282011,19.832914318945
+"iNeuron","ONT cDNA","flair","After
+Filtering","Novel",97707,142216,68.7032401417562
+"iNeuron","ONT cDNA","flair","After
+Filtering","Known (FSM)",44509,142216,31.2967598582438
+"iNeuron","ONT cDNA","isoquant","Before
+Filtering","Novel",45581,91228,49.9638268952515
+"iNeuron","ONT cDNA","isoquant","Before
+Filtering","Known (FSM)",45647,91228,50.0361731047485
+"iNeuron","ONT cDNA","isoquant","After
+Filtering","Novel",19796,41842,47.311313990727
+"iNeuron","ONT cDNA","isoquant","After
+Filtering","Known (FSM)",22046,41842,52.688686009273
+"iNeuron","ONT cDNA","kallisto","Before
+Filtering","Known (FSM)",123754,123754,100
+"iNeuron","ONT cDNA","kallisto","After
+Filtering","Known (FSM)",38884,38884,100
+"iNeuron","ONT cDNA","oarfish","Before
+Filtering","Known (FSM)",137304,137304,100
+"iNeuron","ONT cDNA","oarfish","After
+Filtering","Known (FSM)",53474,53474,100

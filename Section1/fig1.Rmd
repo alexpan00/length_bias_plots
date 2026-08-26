@@ -1,0 +1,498 @@
+---
+title: "Figure 1: Baseline Sequencing Performance"
+author: "Alejandro Paniagua"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r libraries}
+library(ggplot2)
+library(dplyr)
+library(patchwork)
+library(tidyr)
+library(readr)
+library(deeptime)
+technology_palette <- c(
+  "ONT dRNA" = "#56B4E9",  # Soft Blue
+  "ONT cDNA" = "#D1B490",  # Purple
+  "Iso-Seq"   = "#EE7B30",  # Old PacBio color
+  "Kinnex"   = "#e31c93"   # PacBio pink
+)
+lab_text_palette <- data.frame(
+  name = c("ONT dRNA", "ONT cDNA", "Iso-Seq", "Kinnex", "Mouse", "iNeuron", "LongBench"),
+  lab_color = c("#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#000000", "#000000", "#000000"),
+  stringsAsFactors = FALSE
+)
+```
+
+```{r load_data}
+# Read summary reads data
+summary_reads <- read.csv("data/sequencing_performance_summary.csv")
+
+# Divide Illumina read counts by 2 to represent fragments instead of reads
+summary_reads <- summary_reads %>%
+  mutate(
+    Technology = gsub("_", " ", Technology),
+    Total_Reads = if_else(Technology == "Illumina", Total_Reads / 2, Total_Reads),
+    Dataset = case_when(Dataset == "NIH" ~ "Mouse", Dataset == "Neuron" ~ "iNeuron", TRUE ~ Dataset)
+  )
+
+# Read metagene coverage data using manifests
+load_coverage <- function(manifest_file, dataset) {
+  input_files <- read.delim(manifest_file, header = FALSE, stringsAsFactors = FALSE)
+  l_files <- list()
+  for (i in 1:nrow(input_files)){
+    file_path <- input_files[i,1]
+    tech <- input_files[i,2]
+    df <- read.csv(file_path, stringsAsFactors = FALSE)
+    df$technology <- gsub("_", " ", tech)
+    df$dataset <- dataset
+    l_files[[i]] <- df
+  }
+  do.call(rbind, l_files)
+}
+
+l_all <- list()
+for (ds in c("NIH", "Neuron", "LongBench")) {
+  print(ds)
+  l_all[[ds]] <- load_coverage(paste0("data/coverage_", ds, ".fofn"), ds)
+}
+combined_cov <- do.call(rbind, l_all)
+combined_cov$dataset[combined_cov$dataset == "NIH"] <- "Mouse"
+combined_cov$dataset[combined_cov$dataset == "Neuron"] <- "iNeuron"
+
+# Pivot coverage data into long format
+combined_cov_long <- combined_cov %>%
+  pivot_longer(
+    cols = starts_with("bin_"),
+    names_to = "Percentile",
+    names_prefix = "bin_",
+    values_to = "Coverage"
+  ) %>%
+  mutate(
+    Percentile = as.numeric(Percentile),
+    LengthGroup = factor(
+      length_bin,
+      levels = c("0-1000", "1000-2000", "2000-3000", "3000-6000", ">=6000"),
+      labels = c("<= 1 kb", "(1 kb, 2 kb]", "(2 kb, 3 kb]", "(3 kb, 6 kb]", "> 6 kb")
+    ),
+    dataset = factor(dataset, levels = c("Mouse", "LongBench", "iNeuron"))
+  )
+```
+
+```{r load_sqanti_data}
+# Map files to metadata
+files_map <- data.frame(
+  path = c(
+    "data/sqanti_new/kinnex_norm_sqanti_summary_global.csv",
+    "data/sqanti_new/cDNA_norm_sqanti_summary_global.csv",
+    "data/sqanti_new/drna_norm_sqanti_summary_global.csv",
+    "data/sqanti_new/neuron_pb_sqanti_summary_global.csv",
+    "data/sqanti_new/neuron_ont_sqanti_summary_global.csv",
+    "data/sqanti_new/masseq_sqanti_summary_global.csv",
+    "data/sqanti_new/isoseq_sqanti_summary_global.csv",
+    "data/sqanti_new/ont_sqanti_summary_global.csv"
+  ),
+  Dataset = c("LongBench", "LongBench", "LongBench", "iNeuron", "iNeuron", "Mouse", "Mouse", "Mouse"),
+  Platform = c("PacBio", "ONT", "ONT", "PacBio", "ONT", "PacBio", "PacBio", "ONT"),
+  LibType = c("Kinnex", "ONT cDNA", "ONT dRNA", "Kinnex", "ONT cDNA", "Kinnex", "Iso-Seq", "ONT cDNA"),
+  stringsAsFactors = FALSE
+)
+
+# Load, clean, and filter
+all_data <- list()
+for (i in 1:nrow(files_map)) {
+  if (file.exists(files_map$path[i])) {
+    df <- read_csv(files_map$path[i], show_col_types = FALSE)
+    
+    # Exclude "isoseq" tool as requested
+    df <- df %>% filter(Tool != "isoseq")
+    
+    # Handle multiline and normalize Biotype names
+    df$Biotype <- gsub("\n", " ", df$Biotype)
+    df$Biotype[df$Biotype == "Genic Genomic"] <- "Genic\nGenomic"
+    df$Biotype[df$Biotype == "Genic Intron"] <- "Genic\nIntron"
+    
+    df$Dataset <- files_map$Dataset[i]
+    df$Platform <- files_map$Platform[i]
+    df$LibType <- files_map$LibType[i]
+    all_data[[i]] <- df
+  } else {
+    warning(paste("File missing:", files_map$path[i]))
+  }
+}
+
+full_df <- bind_rows(all_data)
+
+# Capitalize tool names correctly
+full_df <- full_df %>%
+  mutate(
+    Tool = case_when(
+      Tool == "flair"    ~ "FLAIR",
+      Tool == "isoquant" ~ "IsoQuant",
+      Tool == "kallisto" ~ "Kallisto",
+      Tool == "oarfish"  ~ "Oarfish",
+      Tool == "bambu"    ~ "bambu",
+      TRUE               ~ as.character(Tool)
+    )
+  )
+
+# Ensure consistent dataset order
+datasets_order <- c("Mouse", "LongBench", "iNeuron")
+full_df$Dataset <- factor(full_df$Dataset, levels = datasets_order)
+
+# 1. Dataset for Panel E (SQANTI3 classification percentages for representative filtered samples)
+plot_df <- full_df %>%
+  filter(Filtered == TRUE) %>%
+  group_by(Dataset, LibType, Tool) %>%
+  mutate(
+    Total_n = sum(n_trans),
+    Percentage = if_else(Total_n > 0, n_trans / Total_n * 100, 0)
+  ) %>%
+  ungroup()
+
+# Ensure Tool and Category order
+tools <- c("FLAIR", "Oarfish", "bambu", "Kallisto", "IsoQuant")
+plot_df$Tool <- factor(plot_df$Tool, levels = tools)
+categories <- c("FSM", "ISM", "NIC", "NNC", "Genic\nGenomic", "Antisense", "Fusion", "Intergenic", "Genic\nIntron")
+plot_df$Biotype <- factor(plot_df$Biotype, levels = categories)
+
+# 2. Dataset for Panel D (Total discovery before/after filtering across all samples)
+plot_df_pd <- full_df %>%
+  group_by(Tool, Filtered, Dataset, LibType) %>%
+  summarise(
+    Count = sum(n_trans),
+    .groups = "drop"
+  )
+plot_df_pd$Tool <- factor(plot_df_pd$Tool, levels = tools)
+full_df$Tool <- factor(full_df$Tool, levels = tools)
+```
+
+```{r theme_and_colors}
+# Swapped colorblind-friendly Technology Color Palette (ONT associated with Blue, PacBio with Orange)
+color_palette <- c(
+  "ONT dRNA" = "#56B4E9",  # Soft Blue
+  "dRNA ONT" = "#56B4E9",  
+  "Illumina" = "#252525",  # Neutral Dark Charcoal
+  "ONT cDNA" = "#D1B490",  # Deep Blue
+  "cDNA ONT" = "#D1B490",  
+  "Iso-Seq"   = "#EE7B30",  # Soft Orange
+  "Kinnex"   = "#e31c93"   # Vermilion/Orange-Red
+)
+
+
+# SQANTI-colors
+cat_palette = c("FSM"="#6BAED6", "ISM"="#FC8D59", "NIC"="#78C679", 
+                "NNC"="#EE6A50", "Genic\nGenomic"="#969696", "Antisense"="#66C2A4", "Fusion"="goldenrod1",
+                "Intergenic" = "darksalmon", "Genic\nIntron"="#41B6C4")
+
+# Strict Nature-style theme for high-impact journals
+theme_nature <- function(base_size = 6.5, base_family = "sans") {
+  theme_classic(base_size = base_size, base_family = base_family) +
+    theme(
+      axis.line = element_line(linewidth = 0.35, colour = "black"),
+      axis.ticks = element_line(linewidth = 0.35, colour = "black"),
+      axis.title = element_text(size = base_size),
+      axis.text = element_text(size = base_size - 0.5, color = "black"),
+      legend.title = element_text(size = base_size - 0.3),
+      legend.text = element_text(size = base_size - 0.7),
+      strip.text = element_text(size = base_size - 0.3, face = "bold"),
+      plot.title = element_text(size = base_size + 0.5, face = "bold"),
+      panel.grid = element_blank()
+    )
+}
+
+theme_set(theme_nature())
+```
+
+```{r plot_pa}
+# Panel A: Total Reads (scaled to 10^6)
+pa <- ggplot(summary_reads, aes(x = Technology, y = Total_Reads, color = Technology, fill = Technology)) +
+  
+  # 1. Clean, delicate jittered points for individual samples
+  geom_jitter(
+    aes(shape = Dataset),
+    size = 1.0, 
+    stroke = 0.4,
+    width = 0.25,
+    alpha = 0.8
+  ) +
+  
+  # 2. Desaturated soft violin plot for distribution
+  geom_violin(
+    width = 0.4,
+    alpha = 0.4,         
+    color = NA,          
+    scale = "width"      
+  ) +
+  
+  # 3. Center: Delicate boxplot for quartiles and median
+  geom_boxplot(
+    width = 0.06, 
+    outlier.shape = NA,  
+    color = "#272727", 
+    fill = "white",
+    alpha = 0.9,
+    linewidth = 0.3
+  ) +
+  
+  # Professional shapes for datasets
+  scale_shape_manual(
+    name = "Dataset", 
+    values = c("Mouse" = 16, "LongBench" = 15, "iNeuron" = 17)
+  ) +
+  
+  # Apply the custom colorblind-friendly colors
+  scale_color_manual(values = color_palette, guide = "none") +
+  scale_fill_manual(values = color_palette, guide = "none") +
+  
+  # Logarithmic y-axis with publication-ready breaks
+  scale_y_log10(
+    breaks = c(0.01, 0.1, 0.5, 1, 3, 5, 10, 20, 40, 100) * 1e6,
+    labels = c("0.01", "0.1", "0.5", "1", "3", "5", "10", "20", "40", "100")
+  ) +
+  
+  # Labels and Clean Theme
+  labs(
+    y = expression("Number of reads (10"^6*")"),
+    x = NULL
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = c(0.98, 0.98),
+    legend.justification = c("right", "top"),
+    legend.background = element_blank(),
+    legend.key = element_blank(),
+    legend.key.size = unit(3, "mm")
+  )
+```
+
+```{r plot_pb}
+# Panel B: Mean Read Length
+pb <- ggplot(summary_reads, aes(x = Technology, y = Average_Mapped_Read_Length, color = Technology, fill = Technology)) +
+  
+  # 1. Clean, delicate jittered points
+  geom_jitter(
+    aes(shape = Dataset),
+    size = 1.0, 
+    stroke = 0.4,
+    width = 0.25,
+    alpha = 0.8
+  ) +
+  
+  # 2. Desaturated violin plot
+  geom_violin(
+    width = 0.4,
+    alpha = 0.4,         
+    color = NA,          
+    scale = "width"      
+  ) +
+  
+  # 3. Center: Narrow boxplot
+  geom_boxplot(
+    width = 0.06, 
+    outlier.shape = NA,  
+    color = "#272727", 
+    fill = "white",
+    alpha = 0.9,
+    linewidth = 0.3
+  ) +
+  
+  # Professional shapes for datasets
+  scale_shape_manual(
+    name = "Dataset", 
+    values = c("Mouse" = 16, "LongBench" = 15, "iNeuron" = 17)
+  ) +
+  
+  # Apply custom colors
+  scale_color_manual(values = color_palette, guide = "none") +
+  scale_fill_manual(values = color_palette, guide = "none") +
+  
+  # Linear y-axis with custom limits
+  scale_y_continuous(
+    breaks = seq(0, 3000, 500),
+    labels = c("0", "500", "1,000", "1,500", "2,000", "2,500", "3,000"),
+    limits = c(0, 3100)
+  ) +
+  
+  # Labels and Clean Theme
+  labs(
+    y = "Mean mapped read length (bp)",
+    x = NULL
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = "none" # Omit legend since it is shared with Panel A
+  )
+
+# Panel C: Metagene Coverage Curve (Faceted horizontally by LengthGroup and vertically by dataset)
+pc <- combined_cov_long %>%
+  filter(technology != "Illumina") %>%
+  ggplot(aes(x = Percentile, y = Coverage, color = technology)) +
+  geom_line(linewidth = 0.5) +
+  facet_grid(dataset ~ LengthGroup) +
+  scale_color_manual(
+    values = color_palette, 
+    name = "Platform/Tech", 
+    labels = c("ONT dRNA" = "ONT dRNA", "Illumina" = "Illumina", 
+               "ONT cDNA" = "ONT cDNA", "Iso-Seq" = "Iso-Seq", 
+               "Kinnex" = "Kinnex")
+  ) +
+  scale_x_continuous(breaks = c(0, 25, 50, 75, 100), limits = c(0, 100)) +
+  scale_y_continuous(breaks = c(0, 0.25, 0.50, 0.75, 1.00), limits = c(0, 1.05)) +
+  labs(x = "Transcript percentile (5' to 3')", y = "Normalized coverage") +
+  theme_nature() +
+  theme(
+    strip.text = element_text(size = 6.2, face = "bold"),
+    legend.key.size = unit(3, "mm"),
+    legend.spacing.y = unit(0.5, "mm"),
+    plot.margin = margin(t = 2, r = 2, b = 2, l = 2)
+  )
+```
+
+```{r plot_pd}
+# Panel D: Total Discovery (Faceted horizontally side-by-side)
+# 1. Prepare data, calculate discarded transcripts (Total - Passed), and offsets
+plot_df_mod <- plot_df_pd %>%
+  # Reshape to calculate discarded transcripts
+  pivot_wider(names_from = Filtered, values_from = Count, values_fill = 0) %>%
+  mutate(
+    # FALSE becomes the count of filtered-out transcripts (Total - Passed)
+    `FALSE` = pmax(0, `FALSE` - `TRUE`)
+  ) %>%
+  pivot_longer(cols = c(`TRUE`, `FALSE`), names_to = "Filtered", values_to = "Count") %>%
+  # Set Filtered as factor: FALSE first (which puts TRUE at the bottom in stacking), TRUE last (at the top)
+  mutate(Filtered = factor(as.character(Filtered), levels = c("FALSE", "TRUE"))) %>%
+  # Group by Dataset to compute offsets locally based on available LibTypes
+  group_by(Dataset) %>%
+  mutate(
+    Tool_num = as.numeric(as.factor(Tool)),
+    # Unique LibTypes in this dataset
+    N_Lib = n_distinct(LibType),
+    LibType_idx = as.numeric(factor(LibType, levels = unique(LibType)))
+  ) %>%
+  ungroup() %>%
+  mutate(
+    bar_width = 0.29,
+    X_pos = Tool_num + (LibType_idx - (N_Lib + 1) / 2) * bar_width
+  )
+
+# 2. Plot using calculated X_pos and position = "stack"
+pd <- ggplot(plot_df_mod, aes(x = X_pos, y = Count, fill = LibType, alpha = Filtered, group = interaction(LibType, Filtered))) +
+  geom_bar(stat = "identity", position = "stack", color = "black", linewidth = 0.2, width = 0.27) +
+  facet_wrap(~Dataset, ncol = 1, scales = "free_y") +
+  scale_fill_manual(values = color_palette, name = "Platform") +
+  scale_alpha_manual(values = c("FALSE" = 0.55, "TRUE" = 1.0), name = "Filtered", labels = c("FALSE" = "Filtered Out", "TRUE" = "Passed Filter")) +
+  # Map the text labels back to original discrete tool names
+  scale_x_continuous(breaks = 1:length(levels(plot_df_pd$Tool)), labels = levels(plot_df_pd$Tool)) +
+  labs(y = "Total Transcripts", x = NULL) +
+  theme_nature() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 5.2),
+    legend.key.size = unit(2.5, "mm"),
+    legend.position = "bottom",
+    legend.box = "vertical"
+  )
+```
+
+```{r plot_pe}
+# Panel E: Structural Classification (Faceted grid: LibType as rows, Dataset as columns)
+pe <- full_df %>% 
+  filter(Tool %in% c("FLAIR", "bambu", "IsoQuant") & Filtered == TRUE) %>% 
+  ggplot(aes(x = Tool, y = n_trans, fill = Biotype)) +
+    geom_bar(stat = "identity", position = "fill", color = "black", linewidth = 0.2) +
+    facet_grid_color(LibType ~ Dataset, scales = "free_y", color = color_palette, lab_colors = lab_text_palette) +
+    scale_fill_manual(values = cat_palette, name = "SQANTI3\nCategory") +
+    scale_y_continuous(labels = function(x) x * 100) +
+    labs(y = "Percentage (%)", x = NULL) +
+    theme_nature() +
+    theme(
+      axis.text.x = element_text(angle = 45, hjust = 1, size = 5.2),
+      strip.text.y = element_text(size = 5.2, face = "bold"),
+      legend.key.size = unit(2.5, "mm"),
+      legend.position = "bottom"
+    )
+```
+
+```{r assemble}
+# Assemble panels with patchwork
+part_abc <- wrap_plots(
+  pa, pb, guide_area(), pc,
+  design = "
+  AABBC
+  DDDDD
+  ",
+  heights = c(1, 1.8),
+  guides = "collect"
+)
+
+part_de <- wrap_plots(
+  pd, pe,
+  ncol = 2,
+  widths = c(1, 1.35)
+)
+
+fig1 <- wrap_plots(
+  part_abc, part_de,
+  ncol = 1,
+  heights = c(2.8, 2)
+) + 
+  plot_annotation(tag_levels = "a") & 
+  theme(plot.tag = element_text(size = 8, face = "bold"))
+```
+
+```{r export}
+# Professional high-impact export function
+save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 70, dpi = 600) {
+  w <- width_mm / 25.4
+  h <- height_mm / 25.4
+  
+  # Lossless Vector SVG
+  svglite::svglite(paste0(filename, ".svg"), width = w, height = h)
+  print(plot)
+  dev.off()
+  
+  # Vector PDF with embedded fonts
+  grDevices::cairo_pdf(paste0(filename, ".pdf"), width = w, height = h, family = "sans")
+  print(plot)
+  dev.off()
+  
+  # High-DPI TIFF for publication print
+  ragg::agg_tiff(paste0(filename, ".tiff"), width = w, height = h, units = "in", res = dpi)
+  print(plot)
+  dev.off()
+  
+  # PNG for rapid preview
+  ggsave(paste0(filename, ".png"), plot, width = w, height = h, dpi = 150)
+}
+
+save_pub_r(fig1, "plots/Figure_1", height_mm = 260)
+```
+
+```{r Supplementary fig, sqanti-categories before filter}
+p_supp <- full_df %>% 
+  filter(Tool %in% c("FLAIR", "bambu", "IsoQuant") & Filtered == FALSE) %>% 
+  ggplot(aes(x = Tool, y = n_trans, fill = Biotype)) +
+    geom_bar(stat = "identity", position = "fill", color = "black", linewidth = 0.2) +
+    facet_grid_color(LibType ~ Dataset, scales = "free_y", color = color_palette, lab_colors = lab_text_palette) +
+    scale_fill_manual(values = cat_palette, name = "SQANTI3\nCategory") +
+    scale_y_continuous(labels = function(x) x * 100) +
+    labs(y = "Percentage (%)", x = NULL) +
+    theme_nature() +
+    theme(
+      axis.text.x = element_text(angle = 45, hjust = 1, size = 5.2),
+      strip.text.y = element_text(size = 5.2, face = "bold"),
+      legend.key.size = unit(2.5, "mm"),
+      legend.position = "bottom"
+    )
+```
+
+```{r save supp figure}
+save_pub_r(p_supp, "plots/Supplementary_Figure_4", height_mm = 130)
+```
+
+
