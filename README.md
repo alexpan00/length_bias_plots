@@ -1,6 +1,6 @@
 # Systematic evaluation of transcript normalization methods and quantification pipelines across long-read sequencing platforms
 
-Code and analysis for the manuscript **"Systematic evaluation of transcript normalization methods and quantification pipelines across long-read sequencing platforms"** (Paniagua, Tarazona & Conesa).
+Code for plots in **"Systematic evaluation of transcript normalization methods and quantification pipelines across long-read sequencing platforms"**.
 
 This repository contains the scripts, manifests, PNG figures, and small analysis inputs needed to reproduce every figure and table in the paper. Large input data is **not** committed to this repository — it is hosted externally and must be fetched before running (see [Data](#data)).
 
@@ -10,14 +10,14 @@ The analysis is organized in four sections, matching the results:
 
 | Folder | Contents |
 |---|---|
-| `Section1/` | Figures 1–2: sequencing throughput, read lengths, metagene coverage, transcript discovery, SQANTI3 classifications, UJC overlap (upset) plots |
-| `Section2/` | Figure 3 + supplements: length-expression relationship under different normalizations, coefficient-of-variation (CV) analyses |
-| `Section3/` | Figure 4 + supplements: SIRV/ERCC spike-in absolute quantification (RMSE) and sensitivity |
-| `Section4/` | Figure 5 + supplements: orthogonal validation against Illumina short reads, linear mixed model (LMM) and coefficients heatmap |
+| `Section1/` | Figure 1 + supplementary: sequencing throughput, read lengths, metagene coverage, transcript discovery, SQANTI3 classifications, UJC overlap (upset) plots |
+| `Section2/` | Figure 2 + supplementary: length-expression relationship under different normalizations, coefficient-of-variation (CV) analyses |
+| `Section3/` | Figure 3 + supplementary: SIRV/ERCC spike-in absolute quantification (RMSE) and sensitivity |
+| `Section4/` | Figure 4 + supplementary: orthogonal validation against Illumina short reads, linear mixed model (LMM) and coefficients heatmap |
 | `manuscript_tables/` | Regenerated statistics tables referenced by the manuscript draft |
 | `generate_manuscript_tables.py` | Reproduces all manuscript statistics (Sections 3.1–3.4) into `manuscript_tables/` |
 | `export_supplementary_table_s4.Rmd` | Fits the LMM ANOVAs and exports Supplementary Table S4 |
-| `figure_captions.md` | Captions for the generated figures |
+
 
 Each `SectionN/` folder contains `.Rmd` (or `.py`/`.sh`) scripts that read data from `SectionN/data/` and write figures/tables.
 
@@ -32,9 +32,7 @@ The following large analysis inputs are **excluded** from Git (see `.gitignore`)
 | Archive (from Zenodo) | Zip size | Restore to | Unzipped | Used by |
 |---|---|---|---|---|
 | `metagenes_transcripts.zip` | ~1.2 GB | `Section1/data/metagene_coverage/` | ~4.5 GB | `Section1/supplementary_metagenes.Rmd` |
-| `UJC.zip` | ~20 MB | `Section1/data/` | ~405 MB (only the `*_UJC_summary.tsv`) | `Section1/upset.Rmd` |
-
-> The small `.fofn` manifests inside `Section1/data/UJC/` **are** committed; only the large `*_UJC_summary.tsv` tables are inside `UJC.zip`.
+| `UJC.zip` | ~20 MB | `Section1/data/` | ~405 MB (UJC `.fofn` manifests + `*_UJC_summary.tsv`) | `Section1/upset.Rmd` |
 
 **To reproduce:**
 
@@ -42,7 +40,7 @@ The following large analysis inputs are **excluded** from Git (see `.gitignore`)
 # 1. Download the two archives from Zenodo (doi.org/10.5281/zenodo.22109031)
 # 2. Extract them preserving their internal folder structure:
 cd Section1/data/metagene_coverage && unzip metagenes_transcripts.zip   # creates metagenes_transcripts/
-cd Section1/data                      && unzip UJC.zip                 # creates the *_UJC_summary.tsv files
+cd Section1/data                      && unzip UJC.zip                 # creates the UJC/*.fofn and *_UJC_summary.tsv files
 ```
 
 The archives preserve the original internal structure, so extracting them at the locations above populates the exact paths the scripts expect. Keep the rest of the repository untouched.
@@ -74,6 +72,4 @@ Each `.Rmd` knits to its `SectionN/plots/` folder and prints named figure files.
 
 Only **PNG** versions of the figures are versioned to keep the repository lightweight. `*.tiff`, `*.svg`, and `*.pdf` plot outputs are generated on rendering but ignored by Git (see `.gitignore`).
 
-## License
 
-To be added.

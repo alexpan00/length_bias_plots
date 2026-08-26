@@ -20,9 +20,10 @@
 .RData
 .Rproj.user
 
-# ---- Large analysis data (hosted externally; see README) ----
-# Per-sample metagene coverage profiles (multi-GB)
+# ---- Large analysis data (hosted externally on Zenodo; see README) ----
+# All UJC data (fofn manifests + summary tables) and the per-sample
+# metagene coverage profiles, plus their zip archives, are external.
+Section1/data/UJC/
+Section1/data/UJC.zip
 Section1/data/metagene_coverage/metagenes_transcripts/
-# UJC transcript summary tables (hundreds of MB); the small .fofn
-# manifests in data/UJC/ are kept in the repo.
-Section1/data/UJC/*_UJC_summary.tsv
+Section1/data/metagene_coverage/metagenes_transcripts.zip
