@@ -27,16 +27,25 @@ Each `SectionN/` folder contains `.Rmd` (or `.py`/`.sh`) scripts that read data 
 All `.fofn` manifests, small summary CSVs, and the light analysis inputs are included in the repository.
 
 ### Large data (externally hosted — fetch before running)
-The following large analysis inputs are **excluded** from Git (see `.gitignore`) because they exceed GitHub's practical limits. They are hosted externally (DOI to be added) and must be restored into the paths shown before the corresponding scripts will run:
+The following large analysis inputs are **excluded** from Git (see `.gitignore`) because they exceed GitHub's practical limits. They are hosted on Zenodo ([10.5281/zenodo.22109031](https://doi.org/10.5281/zenodo.22109031)) as two compressed archives and must be restored into the paths shown before the corresponding scripts will run:
 
-| Path to restore | Size | Used by |
-|---|---|---|
-| `Section1/data/metagene_coverage/metagenes_transcripts/` | ~4.5 GB | `Section1/supplementary_metagenes.Rmd` |
-| `Section1/data/UJC/*_UJC_summary.tsv` | ~405 MB | `Section1/upset.Rmd` |
+| Archive (from Zenodo) | Zip size | Restore to | Unzipped | Used by |
+|---|---|---|---|---|
+| `metagenes_transcripts.zip` | ~1.2 GB | `Section1/data/metagene_coverage/` | ~4.5 GB | `Section1/supplementary_metagenes.Rmd` |
+| `UJC.zip` | ~20 MB | `Section1/data/` | ~405 MB (only the `*_UJC_summary.tsv`) | `Section1/upset.Rmd` |
 
-> The small `.fofn` manifests inside `Section1/data/UJC/` **are** committed; only the large `*_UJC_summary.tsv` tables need to be downloaded.
+> The small `.fofn` manifests inside `Section1/data/UJC/` **are** committed; only the large `*_UJC_summary.tsv` tables are inside `UJC.zip`.
 
-**To reproduce:** download the data archive (DOI placeholder) and extract it such that the folders above are populated. Keep the rest of the repository untouched.
+**To reproduce:**
+
+```bash
+# 1. Download the two archives from Zenodo (doi.org/10.5281/zenodo.22109031)
+# 2. Extract them preserving their internal folder structure:
+cd Section1/data/metagene_coverage && unzip metagenes_transcripts.zip   # creates metagenes_transcripts/
+cd Section1/data                      && unzip UJC.zip                 # creates the *_UJC_summary.tsv files
+```
+
+The archives preserve the original internal structure, so extracting them at the locations above populates the exact paths the scripts expect. Keep the rest of the repository untouched.
 
 ## Reproducing the results
 
