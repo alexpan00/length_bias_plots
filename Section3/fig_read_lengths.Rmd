@@ -20,12 +20,14 @@ library(readr)
 # all other figures, plus a single shared grey for all spike-in groups.
 color_palette <- c(
   "ONT dRNA"  = "#56B4E9",  # Soft Blue
-  "ONT cDNA"  = "#D1B490",  # Sandy gold
+  "ONT cDNA"  = "#4A5899",  # Sandy gold
   "Iso-Seq"   = "#EE7B30",  # Orange
   "Kinnex"    = "#e31c93",  # PacBio pink
   "Short SIRV" = "#969696", # Grey (shared with all spike-ins)
   "Long SIRV"  = "#969696", # Grey (shared with all spike-ins)
-  "ERCC"       = "#969696"  # Grey (shared with all spike-ins)
+  "ERCC"       = "#969696", # Grey (shared with all spike-ins)
+  "GCF_000001405.40" = "#969696", # Grey (reference)
+  "GCF_000001635.27" = "#969696"  # Grey (reference)
 )
 ```
 
@@ -105,6 +107,22 @@ spikein_lengths <- bind_rows(
 )
 ```
 
+```{r load_reference_lengths}
+# Reference transcript lengths from GENCODE/RefSeq stats files (one per genome).
+#   Tab-delimited: #id <tab> length <tab> GC (the `#id` first line is a comment
+#   header). Shown as a single "Reference" panel to the right of the others, with
+#   the human genome (GRCh38, GCF_000001405.40) and mouse genome (GRCm39,
+#   GCF_000001635.27) as the x labels. The accession is stored in `technology`.
+reference_lengths <- bind_rows(
+  read_tsv("data/lengths/human_stats.tsv", skip = 1, col_names = c("id", "length", "GC")) |>
+    transmute(length_bp = .data$length,
+              dataset = "Reference", technology = "GCF_000001405.40"),
+  read_tsv("data/lengths/mouse_stats.tsv", skip = 1, col_names = c("id", "length", "GC")) |>
+    transmute(length_bp = .data$length,
+              dataset = "Reference", technology = "GCF_000001635.27")
+)
+```
+
 ```{r combine}
 # Reads panel data: facet = "Reads", x = dataset, technology = actual technology
 read_lengths$facet <- "Reads"
@@ -124,7 +142,9 @@ spikein_lengths <- spikein_lengths %>%
     dataset = "spike-ins"
   )
 
-all_lengths <- bind_rows(read_lengths, spikein_lengths)
+reference_lengths$facet <- "Reference"
+
+all_lengths <- bind_rows(read_lengths, spikein_lengths, reference_lengths)
 
 # Explicit, unique group id per (facet, dataset, technology) so dodge works even
 # when the boxplot fill is a constant ("white") - this keeps all spike groups
@@ -132,17 +152,19 @@ all_lengths <- bind_rows(read_lengths, spikein_lengths)
 all_lengths$grp <- as.integer(factor(interaction(all_lengths$facet, all_lengths$dataset, all_lengths$technology)))
 
 # Factor levels for clean ordering
-all_lengths$facet <- factor(all_lengths$facet, levels = c("Reads", "Spike-ins"))
-all_lengths$dataset <- factor(all_lengths$dataset, levels = c("Mouse", "iNeuron", "LongBench", "spike-ins"))
+all_lengths$facet <- factor(all_lengths$facet, levels = c("Reads", "Spike-ins", "Reference"))
+all_lengths$dataset <- factor(all_lengths$dataset, levels = c("Mouse", "iNeuron", "LongBench", "spike-ins", "Reference"))
 all_lengths$technology <- factor(all_lengths$technology,
                                 levels = c("ONT dRNA", "ONT cDNA", "Iso-Seq", "Kinnex",
-                                           "Short SIRV", "Long SIRV", "ERCC"))
+                                           "Short SIRV", "Long SIRV", "ERCC",
+                                           "GCF_000001405.40", "GCF_000001635.27"))
 ```
 
 ```{r generate_plots}
 # Boxplot + violin (no points), faceted between Reads and Spike-ins.
 # Reads:     x = dataset, dodged by technology, colored by technology.
 # Spike-ins: x = "spike-ins", dodged by spike group (Short/Long SIRV, ERCC).
+# Reference: x = "Reference", dodged by genome accession (human/mouse GCF).
 p <- ggplot(all_lengths, aes(x = technology, y = length_bp)) +
   # 1. Desaturated soft violin plot for the distribution (fill = technology)
   geom_violin(
@@ -164,7 +186,7 @@ p <- ggplot(all_lengths, aes(x = technology, y = length_bp)) +
     linewidth = 0.3,
     position = position_dodge(width = 0.9)
   ) +
-  facet_wrap(~ dataset, scales = "free_x", ncol = 4) +
+  facet_wrap(~ dataset, scales = "free_x", ncol = 5) +
   scale_fill_manual(values = color_palette, guide = "none") +
   scale_y_log10() +
   labs(x = NULL, y = "Length (bp)") +
