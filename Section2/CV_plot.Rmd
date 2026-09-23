@@ -19,7 +19,7 @@ library(deeptime)
 # Technology palette for facet strips
 technology_palette <- c(
   "ONT dRNA" = "#56B4E9",  # Soft Blue
-  "ONT cDNA" = "#D1B490",  # Sandy gold
+  "ONT cDNA" = "#4A5899",  # Sandy gold
   "Iso-Seq"   = "#EE7B30",  # Old PacBio color
   "Kinnex"   = "#e31c93"   # PacBio pink
 )
@@ -29,7 +29,7 @@ lab_text_palette <- c(
   "ONT cDNA" = "#FFFFFF",  # Deep Blue
   "Iso-Seq"   = "#FFFFFF",  # Soft Orange
   "Kinnex"   = "#FFFFFF",   # Vermilion/Orange-Red
-  "bambu" = "#000000",
+  "Bambu" = "#000000",
   "FLAIR" = "#000000",
   "IsoQuant" =  "#000000",
   "Kallisto" = "#000000",
@@ -118,11 +118,11 @@ cv_results <- cv_results %>%
       Tool == "isoquant" ~ "IsoQuant",
       Tool == "kallisto" ~ "Kallisto",
       Tool == "oarfish"  ~ "Oarfish",
-      Tool == "bambu"    ~ "bambu",
+      Tool == "bambu"    ~ "Bambu",
       TRUE               ~ as.character(Tool)
     )
   )
-cv_results$Tool <- factor(cv_results$Tool, levels = c("bambu", "FLAIR", "IsoQuant", "Kallisto", "Oarfish"))
+cv_results$Tool <- factor(cv_results$Tool, levels = c("Bambu", "FLAIR", "IsoQuant", "Kallisto", "Oarfish"))
 cv_results$Normalization <- factor(cv_results$Normalization, levels = c("CPM", "TPM", "cqn", "EDA", "ratio_counts"))
 ```
 

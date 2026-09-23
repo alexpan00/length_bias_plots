@@ -137,7 +137,7 @@ theme_nature <- function(base_size = 6.5, base_family = "sans") {
 
 # Exact color palette matched from paper_plots/fig1/fig1.Rmd
 tech_colors <- c(
-  "cDNA ONT" = "#D1B490",  # Muted Gold/Tan
+  "cDNA ONT" = "#4A5899",  # Muted Gold/Tan
   "Kinnex"   = "#e31c93",  # PacBio Pink/Magenta
   "Iso-Seq"   = "#EE7B30",  # Soft Orange
   "dRNA ONT" = "#56B4E9"   # Soft Blue
@@ -230,10 +230,10 @@ p3 <- ggplot(cpm_cqn_eda_emms, aes(x = Normalization_Clean, y = emmean, color = 
 
 # Clean term names for display
 clean_term <- function(term) {
-  term <- gsub("^Toolflair$", "flair (vs. bambu)", term)
-  term <- gsub("^Toolisoquant$", "isoquant (vs. bambu)", term)
-  term <- gsub("^Toolkallisto$", "kallisto (vs. bambu)", term)
-  term <- gsub("^Tooloarfish$", "oarfish (vs. bambu)", term)
+  term <- gsub("^Toolflair$", "flair (vs. Bambu)", term)
+  term <- gsub("^Toolisoquant$", "isoquant (vs. Bambu)", term)
+  term <- gsub("^Toolkallisto$", "kallisto (vs. Bambu)", term)
+  term <- gsub("^Tooloarfish$", "oarfish (vs. Bambu)", term)
 
   term <- gsub("^Normalizationcqn$", "cqn (vs. CPM)", term)
   term <- gsub("^NormalizationEDA$", "EDA (vs. CPM)", term)

@@ -80,11 +80,11 @@ summary_df <- summary_df %>%
     Tool = case_when(
       Tool == "flair"    ~ "FLAIR",
       Tool == "isoquant" ~ "IsoQuant",
-      Tool == "bambu"    ~ "bambu",
+      Tool == "bambu"    ~ "Bambu",
       TRUE               ~ as.character(Tool)
     )
   ) %>%
-  filter(Tool %in% c("FLAIR", "bambu", "IsoQuant"))
+  filter(Tool %in% c("FLAIR", "Bambu", "IsoQuant"))
 
 # Pivot wide to calculate pct before and after filtering
 pct_wide <- summary_df %>%
@@ -155,14 +155,14 @@ plot_data <- inner_join(pct_wide, sig_data, by = c("Dataset", "LibType", "Tool")
 # Factors
 plot_data$Dataset <- factor(plot_data$Dataset, levels = c("Mouse", "iNeuron", "LongBench"))
 plot_data$LibType <- factor(plot_data$LibType, levels = c("Iso-Seq", "Kinnex", "ONT cDNA", "ONT dRNA"))
-plot_data$Tool <- factor(plot_data$Tool, levels = c("FLAIR", "bambu", "IsoQuant"))
+plot_data$Tool <- factor(plot_data$Tool, levels = c("FLAIR", "Bambu", "IsoQuant"))
 ```
 
 ```{r colors_and_theme}
 # Color maps matching unified technology colors and white background for column facets (datasets)
 color_palette <- c(
   "ONT dRNA" = "#56B4E9",  # Soft Blue
-  "ONT cDNA" = "#D1B490",  # Sandy gold
+  "ONT cDNA" = "#4A5899",  # Sandy gold
   "Iso-Seq"   = "#EE7B30",  # Soft Orange
   "Kinnex"   = "#e31c93",  # PacBio pink
   "Mouse"    = "#FFFFFF",  # Pure White

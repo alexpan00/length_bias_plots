@@ -18,7 +18,7 @@ library(readr)
 library(deeptime)
 technology_palette <- c(
   "ONT dRNA" = "#56B4E9",  # Soft Blue
-  "ONT cDNA" = "#D1B490",  # Purple
+  "ONT cDNA" = "#4A5899",  # Purple # backup 87B38D
   "Iso-Seq"   = "#EE7B30",  # Old PacBio color
   "Kinnex"   = "#e31c93"   # PacBio pink
 )
@@ -136,7 +136,7 @@ full_df <- full_df %>%
       Tool == "isoquant" ~ "IsoQuant",
       Tool == "kallisto" ~ "Kallisto",
       Tool == "oarfish"  ~ "Oarfish",
-      Tool == "bambu"    ~ "bambu",
+      Tool == "bambu"    ~ "Bambu",
       TRUE               ~ as.character(Tool)
     )
   )
@@ -156,7 +156,7 @@ plot_df <- full_df %>%
   ungroup()
 
 # Ensure Tool and Category order
-tools <- c("FLAIR", "Oarfish", "bambu", "Kallisto", "IsoQuant")
+tools <- c("FLAIR", "Oarfish", "Bambu", "Kallisto", "IsoQuant")
 plot_df$Tool <- factor(plot_df$Tool, levels = tools)
 categories <- c("FSM", "ISM", "NIC", "NNC", "Genic\nGenomic", "Antisense", "Fusion", "Intergenic", "Genic\nIntron")
 plot_df$Biotype <- factor(plot_df$Biotype, levels = categories)
@@ -178,8 +178,8 @@ color_palette <- c(
   "ONT dRNA" = "#56B4E9",  # Soft Blue
   "dRNA ONT" = "#56B4E9",  
   "Illumina" = "#252525",  # Neutral Dark Charcoal
-  "ONT cDNA" = "#D1B490",  # Deep Blue
-  "cDNA ONT" = "#D1B490",  
+  "ONT cDNA" = "#4A5899",  # Deep Blue
+  "cDNA ONT" = "#4A5899",  
   "Iso-Seq"   = "#EE7B30",  # Soft Orange
   "Kinnex"   = "#e31c93"   # Vermilion/Orange-Red
 )
@@ -402,7 +402,7 @@ pd <- ggplot(plot_df_mod, aes(x = X_pos, y = Count, fill = LibType, alpha = Filt
 ```{r plot_pe}
 # Panel E: Structural Classification (Faceted grid: LibType as rows, Dataset as columns)
 pe <- full_df %>% 
-  filter(Tool %in% c("FLAIR", "bambu", "IsoQuant") & Filtered == TRUE) %>% 
+  filter(Tool %in% c("FLAIR", "Bambu", "IsoQuant") & Filtered == TRUE) %>% 
   ggplot(aes(x = Tool, y = n_trans, fill = Biotype)) +
     geom_bar(stat = "identity", position = "fill", color = "black", linewidth = 0.2) +
     facet_grid_color(LibType ~ Dataset, scales = "free_y", color = color_palette, lab_colors = lab_text_palette) +
@@ -470,12 +470,12 @@ save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 70, dpi = 600
   ggsave(paste0(filename, ".png"), plot, width = w, height = h, dpi = 150)
 }
 
-save_pub_r(fig1, "plots/Figure_1", height_mm = 260)
+save_pub_r(fig1, "plots/Figure_2", height_mm = 260)
 ```
 
 ```{r Supplementary fig, sqanti-categories before filter}
 p_supp <- full_df %>% 
-  filter(Tool %in% c("FLAIR", "bambu", "IsoQuant") & Filtered == FALSE) %>% 
+  filter(Tool %in% c("FLAIR", "Bambu", "IsoQuant") & Filtered == FALSE) %>% 
   ggplot(aes(x = Tool, y = n_trans, fill = Biotype)) +
     geom_bar(stat = "identity", position = "fill", color = "black", linewidth = 0.2) +
     facet_grid_color(LibType ~ Dataset, scales = "free_y", color = color_palette, lab_colors = lab_text_palette) +

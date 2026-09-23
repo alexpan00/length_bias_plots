@@ -24,8 +24,8 @@ color_palette <- c(
   "ONT_dRNA" = "#56B4E9",  # Soft Blue
   "dRNA_ONT" = "#56B4E9",  
   "Illumina" = "#252525",  # Neutral Dark Charcoal
-  "ONT_cDNA" = "#D1B490",  # Sandy gold
-  "cDNA_ONT" = "#D1B490",  
+  "ONT_cDNA" = "#4A5899",  # Sandy gold
+  "cDNA_ONT" = "#4A5899",  
   "Iso-Seq"   = "#EE7B30",  # Orange
   "Kinnex"   = "#e31c93"   # PacBio pink
 )
@@ -85,7 +85,7 @@ read_dataset <- function(manifest_file, mapping_rules){
       data$tool == "isoquant" ~ "IsoQuant",
       data$tool == "kallisto" ~ "Kallisto",
       data$tool == "oarfish"  ~ "Oarfish",
-      data$tool == "bambu"    ~ "bambu",
+      data$tool == "bambu"    ~ "Bambu",
       TRUE                    ~ as.character(data$tool)
     )
     data$group <- paste(data$experiment, data$tool, sep = "_")

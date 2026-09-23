@@ -19,7 +19,7 @@ library(deeptime)
 # Define technology color palette matching Figure 5
 technology_palette <- c(
   "ONT dRNA" = "#56B4E9",  # Soft Blue
-  "ONT cDNA" = "#D1B490",  # Sandy gold
+  "ONT cDNA" = "#4A5899",  # Sandy gold
   "Iso-Seq"   = "#EE7B30",  # Orange
   "Kinnex"   = "#e31c93"   # PacBio pink
 )
@@ -105,10 +105,10 @@ sensitivity_summary <- sensitivity_summary %>%
       Tool == "isoquant" ~ "IsoQuant",
       Tool == "kallisto" ~ "Kallisto",
       Tool == "oarfish"  ~ "Oarfish",
-      Tool == "bambu"    ~ "bambu",
+      Tool == "bambu"    ~ "Bambu",
       TRUE               ~ as.character(Tool)
     ),
-    Tool = factor(Tool, levels = c("bambu", "FLAIR", "IsoQuant", "Kallisto", "Oarfish"))
+    Tool = factor(Tool, levels = c("Bambu", "FLAIR", "IsoQuant", "Kallisto", "Oarfish"))
   )
 sensitivity_summary$spike_in <- factor(sensitivity_summary$spike_in, levels = c("SIRV", "ERCC"))
 ```

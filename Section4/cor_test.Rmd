@@ -145,10 +145,10 @@ The colors represent the p-value classification, and the values within the cells
 ```{r combined_heatmap, fig.width=7, fig.height=10}
 # Clean term names helper
 clean_term <- function(term) {
-  term <- gsub("^Toolflair$", "flair (vs. bambu)", term)
-  term <- gsub("^Toolisoquant$", "isoquant (vs. bambu)", term)
-  term <- gsub("^Toolkallisto$", "kallisto (vs. bambu)", term)
-  term <- gsub("^Tooloarfish$", "oarfish (vs. bambu)", term)
+  term <- gsub("^Toolflair$", "flair (vs. Bambu)", term)
+  term <- gsub("^Toolisoquant$", "isoquant (vs. Bambu)", term)
+  term <- gsub("^Toolkallisto$", "kallisto (vs. Bambu)", term)
+  term <- gsub("^Tooloarfish$", "oarfish (vs. Bambu)", term)
   
   term <- gsub("^Normalizationcqn$", "cqn (vs. CPM)", term)
   term <- gsub("^NormalizationEDA$", "EDA (vs. CPM)", term)

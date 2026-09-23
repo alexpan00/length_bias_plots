@@ -17,7 +17,7 @@ library(tidyr)
 library(deeptime)
 technology_palette <- c(
   "ONT dRNA" = "#56B4E9",  # Soft Blue
-  "ONT cDNA" = "#D1B490",  # Sandy gold
+  "ONT cDNA" = "#4A5899",  # Sandy gold
   "Iso-Seq"   = "#EE7B30",  # Orange
   "Kinnex"   = "#e31c93"   # PacBio pink
 )
@@ -26,7 +26,7 @@ lab_text_palette <- c(
   "ONT cDNA" = "#FFFFFF",  # Deep Blue
   "Iso-Seq"   = "#FFFFFF",  # Soft Orange
   "Kinnex"   = "#FFFFFF",   # Vermilion/Orange-Red
-  "bambu" = "#000000",
+  "Bambu" = "#000000",
   "FLAIR" = "#000000",
   "IsoQuant" =  "#000000",
   "Kallisto" = "#000000",
@@ -71,10 +71,10 @@ all_data <- all_data %>%
       Tool == "isoquant" ~ "IsoQuant",
       Tool == "kallisto" ~ "Kallisto",
       Tool == "oarfish"  ~ "Oarfish",
-      Tool == "bambu"    ~ "bambu",
+      Tool == "bambu"    ~ "Bambu",
       TRUE               ~ as.character(Tool)
     ),
-    Tool = factor(Tool, levels = c("bambu", "FLAIR", "IsoQuant", "Kallisto", "Oarfish"))
+    Tool = factor(Tool, levels = c("Bambu", "FLAIR", "IsoQuant", "Kallisto", "Oarfish"))
   )
 ```
 
@@ -175,5 +175,5 @@ save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 220, dpi = 60
   ggsave(paste0(filename, ".png"), plot, width = w, height = h, dpi = 150)
 }
 
-save_pub_r(fig2, "plots/Figure_2", height_mm = 220)
+save_pub_r(fig2, "plots/Figure_3", height_mm = 220)
 ```

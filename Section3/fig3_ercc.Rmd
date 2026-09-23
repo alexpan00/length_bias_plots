@@ -19,7 +19,7 @@ library(deeptime)
 # Color palettes matching Figure 5 (SIRV)
 technology_palette <- c(
   "ONT dRNA" = "#56B4E9",  # Soft Blue
-  "ONT cDNA" = "#D1B490",  # Sandy gold
+  "ONT cDNA" = "#4A5899",  # Sandy gold
   "Iso-Seq"   = "#EE7B30",  # Orange
   "Kinnex"   = "#e31c93"   # PacBio pink
 )
@@ -28,7 +28,7 @@ lab_text_palette <- c(
   "ONT cDNA" = "#FFFFFF",  # Deep Blue
   "Iso-Seq"   = "#FFFFFF",  # Soft Orange
   "Kinnex"   = "#FFFFFF",   # Vermilion/Orange-Red
-  "bambu" = "#000000",
+  "Bambu" = "#000000",
   "flair" = "#000000",
   "isoquant" =  "#000000",
   "kallisto" = "#000000",
@@ -95,10 +95,10 @@ all_trans <- all_trans %>%
       Tool == "isoquant" ~ "IsoQuant",
       Tool == "kallisto" ~ "Kallisto",
       Tool == "oarfish"  ~ "Oarfish",
-      Tool == "bambu"    ~ "bambu",
+      Tool == "bambu"    ~ "Bambu",
       TRUE               ~ as.character(Tool)
     ),
-    Tool = factor(Tool, levels = c("bambu", "FLAIR", "IsoQuant", "Kallisto", "Oarfish"))
+    Tool = factor(Tool, levels = c("Bambu", "FLAIR", "IsoQuant", "Kallisto", "Oarfish"))
   )
 
 # Clamp non-finite (-Inf from division by zero range) and NA values to 0
