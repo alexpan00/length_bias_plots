@@ -27,3 +27,7 @@ Section1/data/UJC/
 Section1/data/UJC.zip
 Section1/data/metagene_coverage/metagenes_transcripts/
 Section1/data/metagene_coverage/metagenes_transcripts.zip
+
+# ---- Local-only / superseded working files (kept out of the repo) ----
+generate_manuscript_tables_mod.py
+AGENTS.md
