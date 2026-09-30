@@ -9,11 +9,12 @@ normalization naming, and generates complete metrics for Sections 3.1 - 3.5.
 """
 
 import os
+import glob
 import pandas as pd
 import numpy as np
 
-# Define paths relative to the repository root (this script lives at the repo root)
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Define paths relative to the repository root
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TABLES_OUT_DIR = os.path.join(BASE_DIR, "manuscript_tables")
 
 os.makedirs(TABLES_OUT_DIR, exist_ok=True)
@@ -40,17 +41,6 @@ NORM_NAME_MAP = {
     'ratio_counts': 'SMR'
 }
 
-def write_csv_with_comment(comment, df, out_path):
-    """
-    Writes a dataframe to CSV, prepending a '#' comment line that explains
-    how the metrics in the table were computed. The comment documents the
-    aggregation/summary operation applied to the underlying sample-level data.
-    """
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    with open(out_path, 'w') as f:
-        f.write(f"# {comment}\n")
-    df.to_csv(out_path, mode='a', index=False)
-
 # ==============================================================================
 # SECTION 3.1: BASELINE SEQUENCING THROUGHPUT, READ LENGTHS & TRANSCRIPT COUNTS
 # ==============================================================================
@@ -61,7 +51,7 @@ def calculate_section_3_1_throughput():
     read numbers, fragment numbers, and read lengths reported in Section 3.1.
     """
     print("Calculating metrics for Section 3.1 (Throughput & Read Lengths)...")
-    csv_path = os.path.join(BASE_DIR, "Section1/data/sequencing_performance_summary.csv")
+    csv_path = os.path.join(BASE_DIR, "paper_plots/fig1/data/sequencing_performance_summary.csv")
     if not os.path.exists(csv_path):
         print(f"Warning: Sequencing summary file not found at {csv_path}")
         return
@@ -86,13 +76,7 @@ def calculate_section_3_1_throughput():
     ).reset_index()
     
     out_path = os.path.join(TABLES_OUT_DIR, "section_3_1_sequencing_throughput_statistics.csv")
-    write_csv_with_comment(
-        "Metrics computed by grouping the per-sample sequencing performance summary by "
-        "Dataset and Technology, then taking the median (min/max where noted) of Total_Reads, "
-        "Total_Fragments (Illumina reads halved to fragments), Total_Gb, Mapped_Reads_Pct, and "
-        "Average_Mapped_Read_Length. Sample_Count = number of samples in each group.",
-        stats, out_path
-    )
+    stats.to_csv(out_path, index=False)
     print(f" - Saved: {out_path}")
 
 def calculate_section_3_1_transcript_counts():
@@ -102,14 +86,14 @@ def calculate_section_3_1_transcript_counts():
     """
     print("Calculating transcript model counts for Section 3.1 (Unfiltered vs Filtered)...")
     files_map = [
-        ('Section1/data/sqanti_new/masseq_sqanti_summary_global.csv', 'Mouse', 'Kinnex'),
-        ('Section1/data/sqanti_new/ont_sqanti_summary_global.csv', 'Mouse', 'ONT cDNA'),
-        ('Section1/data/sqanti_new/isoseq_sqanti_summary_global.csv', 'Mouse', 'Iso-Seq'),
-        ('Section1/data/sqanti_new/neuron_pb_sqanti_summary_global.csv', 'iNeuron', 'Kinnex'),
-        ('Section1/data/sqanti_new/neuron_ont_sqanti_summary_global.csv', 'iNeuron', 'ONT cDNA'),
-        ('Section1/data/sqanti_new/kinnex_norm_sqanti_summary_global.csv', 'LongBench', 'Kinnex'),
-        ('Section1/data/sqanti_new/cDNA_norm_sqanti_summary_global.csv', 'LongBench', 'ONT cDNA'),
-        ('Section1/data/sqanti_new/drna_norm_sqanti_summary_global.csv', 'LongBench', 'ONT dRNA')
+        ('paper_plots/fig1/data/sqanti_new/masseq_sqanti_summary_global.csv', 'Mouse', 'Kinnex'),
+        ('paper_plots/fig1/data/sqanti_new/ont_sqanti_summary_global.csv', 'Mouse', 'ONT cDNA'),
+        ('paper_plots/fig1/data/sqanti_new/isoseq_sqanti_summary_global.csv', 'Mouse', 'IsoSeq'),
+        ('paper_plots/fig1/data/sqanti_new/neuron_pb_sqanti_summary_global.csv', 'iNeuron', 'Kinnex'),
+        ('paper_plots/fig1/data/sqanti_new/neuron_ont_sqanti_summary_global.csv', 'iNeuron', 'ONT cDNA'),
+        ('paper_plots/fig1/data/sqanti_new/kinnex_norm_sqanti_summary_global.csv', 'LongBench', 'Kinnex'),
+        ('paper_plots/fig1/data/sqanti_new/cDNA_norm_sqanti_summary_global.csv', 'LongBench', 'ONT cDNA'),
+        ('paper_plots/fig1/data/sqanti_new/drna_norm_sqanti_summary_global.csv', 'LongBench', 'ONT dRNA')
     ]
 
     records = []
@@ -117,6 +101,7 @@ def calculate_section_3_1_transcript_counts():
         full_path = os.path.join(BASE_DIR, rel_path)
         if os.path.exists(full_path):
             df = pd.read_csv(full_path)
+            df = df[df['Tool'] != 'isoseq']
             df['Tool'] = df['Tool'].map(lambda x: TOOL_NAME_MAP.get(x, x))
             
             grouped = df.groupby(['Tool', 'Filtered'])['n_trans'].sum().reset_index()
@@ -137,12 +122,7 @@ def calculate_section_3_1_transcript_counts():
 
     out_df = pd.DataFrame(records)
     out_path = os.path.join(TABLES_OUT_DIR, "section_3_1_active_and_unfiltered_transcript_counts.csv")
-    write_csv_with_comment(
-        "Per SQANTI summary file, transcript model counts (n_trans) were summed across samples "
-        "and split into Unfiltered (pre-expression filter) vs Filtered (post-filter) columns. "
-        "Percent_Retained = Filtered_Transcripts / Unfiltered_Transcripts * 100.",
-        out_df, out_path
-    )
+    out_df.to_csv(out_path, index=False)
     print(f" - Saved: {out_path}")
 
 def calculate_section_3_1_sqanti_novel_proportions():
@@ -151,7 +131,7 @@ def calculate_section_3_1_sqanti_novel_proportions():
     transcript models before and after expression-based filtering for Section 3.1.
     """
     print("Calculating novel transcript model proportions for Section 3.1...")
-    csv_path = os.path.join(BASE_DIR, "Section1/data/sqanti_proportions_comparison.csv")
+    csv_path = os.path.join(BASE_DIR, "paper_plots/fig1/data/sqanti_proportions_comparison.csv")
     if not os.path.exists(csv_path):
         print(f"Warning: SQANTI proportions file not found at {csv_path}")
         return
@@ -215,12 +195,7 @@ def calculate_section_3_1_sqanti_novel_proportions():
     combined_novel = combined_novel.sort_values(by=['Dataset', 'Technology', 'Tool']).reset_index(drop=True)
 
     out_path = os.path.join(TABLES_OUT_DIR, "section_3_1_sqanti_novel_transcript_proportions.csv")
-    write_csv_with_comment(
-        "Novel (SQANTI class == Novel) transcript proportion before vs after expression filtering, "
-        "joined by Dataset/Technology/Tool. Unfiltered_Novel_Pct and Filtered_Novel_Pct are the "
-        "reported percentages; Delta_Novel_Pct = Filtered - Unfiltered. Metrics rounded to 2 decimals.",
-        combined_novel, out_path
-    )
+    combined_novel.to_csv(out_path, index=False)
     print(f" - Saved: {out_path}")
 
 # ==============================================================================
@@ -237,7 +212,7 @@ def calculate_section_3_3_spike_ins():
     all_data_list = []
     
     for ds in datasets:
-        fofn_path = os.path.join(BASE_DIR, f"Section3/data/sirv_trans_{ds}.fofn")
+        fofn_path = os.path.join(BASE_DIR, f"paper_plots/fig5/data/sirv_trans_{ds}.fofn")
         if not os.path.exists(fofn_path):
             continue
             
@@ -249,9 +224,10 @@ def calculate_section_3_3_spike_ins():
                 parts = line.split('\t')
                 if len(parts) == 2:
                     rel_path, tech = parts
-                    csv_path = os.path.join(BASE_DIR, "Section3", rel_path)
+                    csv_path = os.path.join(BASE_DIR, "paper_plots/fig5", rel_path)
                     if os.path.exists(csv_path):
                         df = pd.read_csv(csv_path)
+                        df = df[df['Tool'] != 'isoseq']
                         df_all = df[df['LengthQuantile'] == 'All'].copy()
                         df_all['Dataset'] = "Mouse" if ds == "NIH" else ds
                         df_all['Tech'] = tech.replace('_', ' ')
@@ -273,12 +249,7 @@ def calculate_section_3_3_spike_ins():
         # Table A: Mean Similarity & RMSE by Dataset, Technology, and Normalization
         table_norm = combined.groupby(['Dataset', 'Tech', 'Normalization'])[['Similarity', 'RMSE']].mean().reset_index()
         norm_out_path = os.path.join(TABLES_OUT_DIR, "section_3_3_sirv_similarity_rmse_by_normalization.csv")
-        write_csv_with_comment(
-            "SIRV spike-in Similarity and RMSE computed per sample as NRMSE = RMSE / abs(mean_expected) "
-            "and Similarity = 1 - NRMSE. "
-            "Values are the mean across samples, grouped by Dataset, Technology, and Normalization.",
-            table_norm, norm_out_path
-        )
+        table_norm.to_csv(norm_out_path, index=False)
         print(f" - Saved: {norm_out_path}")
         
         # Table B: Mean Similarity & RMSE by Tool (excluding SMR)
@@ -286,26 +257,23 @@ def calculate_section_3_3_spike_ins():
         table_tool = df_no_smr.groupby(['Dataset', 'Tool'])[['Similarity', 'RMSE']].mean().reset_index()
         table_tool = table_tool.sort_values(by=['Dataset', 'Similarity'], ascending=[True, False])
         tool_out_path = os.path.join(TABLES_OUT_DIR, "section_3_3_sirv_similarity_rmse_by_tool.csv")
-        write_csv_with_comment(
-            "SIRV Similarity and RMSE (computed as above), averaged across samples and pooled over "
-            "non-SMR normalizations, grouped by Dataset and Tool. Rows sorted by descending Similarity.",
-            table_tool, tool_out_path
-        )
+        table_tool.to_csv(tool_out_path, index=False)
         print(f" - Saved: {tool_out_path}")
 
     # Export ERCC Accuracy Metrics by Normalization and by Tool
     ercc_files = [
-        ("Section3/data/neuron/neuron_ont_normalization_ercc_summary.csv", "ONT cDNA", "Neuron"),
-        ("Section3/data/neuron/neuron_pb_normalization_ercc_summary.csv", "Kinnex", "Neuron"),
-        ("Section3/data/longbench/cDNA_norm_normalization_ercc_summary.csv", "ONT cDNA", "LongBench"),
-        ("Section3/data/longbench/drna_norm_normalization_ercc_summary.csv", "ONT dRNA", "LongBench"),
-        ("Section3/data/longbench/kinnex_norm_normalization_ercc_summary.csv", "Kinnex", "LongBench")
+        ("results/neuron/ont/neuron_ont_normalization_ercc_summary.csv", "ONT cDNA", "Neuron"),
+        ("results/neuron/kinnex/neuron_pb_normalization_ercc_summary.csv", "Kinnex", "Neuron"),
+        ("results/longbench_ncbi/cDNA/cDNA_norm_normalization_ercc_summary.csv", "ONT cDNA", "LongBench"),
+        ("results/longbench_ncbi/dRNA/drna_norm_normalization_ercc_summary.csv", "ONT dRNA", "LongBench"),
+        ("results/longbench_ncbi/Kinnex/kinnex_norm_normalization_ercc_summary.csv", "Kinnex", "LongBench")
     ]
     ercc_list = []
     for rel_path, tech, ds in ercc_files:
         csv_path = os.path.join(BASE_DIR, rel_path)
         if os.path.exists(csv_path):
             df = pd.read_csv(csv_path)
+            df = df[df['Tool'] != 'isoseq']
             df_all = df[df['LengthQuantile'] == 'All'].copy()
             df_all['Tech'] = tech
             df_all['Dataset'] = ds
@@ -322,22 +290,13 @@ def calculate_section_3_3_spike_ins():
         
         ercc_table = combined_ercc.groupby(['Dataset', 'Tech', 'Normalization'])[['Similarity', 'RMSE']].mean().reset_index()
         ercc_out_path = os.path.join(TABLES_OUT_DIR, "section_3_3_ercc_similarity_rmse.csv")
-        write_csv_with_comment(
-            "ERCC spike-in Similarity and RMSE computed per sample as NRMSE = RMSE / abs(mean_expected) "
-            "and Similarity = 1 - NRMSE. Values are the mean "
-            "across samples, grouped by Dataset, Technology, and Normalization.",
-            ercc_table, ercc_out_path
-        )
+        ercc_table.to_csv(ercc_out_path, index=False)
         print(f" - Saved: {ercc_out_path}")
 
         ercc_tool_df = combined_ercc[combined_ercc['Normalization'] != 'SMR'].groupby(['Dataset', 'Tech', 'Tool'])[['Similarity', 'RMSE']].mean().reset_index()
         ercc_tool_df = ercc_tool_df.sort_values(by=['Dataset', 'Tech', 'RMSE'], ascending=[True, True, True])
         ercc_tool_out_path = os.path.join(TABLES_OUT_DIR, "section_3_3_ercc_similarity_rmse_by_tool.csv")
-        write_csv_with_comment(
-            "ERCC Similarity and RMSE (computed as above), averaged across samples and pooled over "
-            "non-SMR normalizations, grouped by Dataset, Technology, and Tool. Sorted by ascending RMSE.",
-            ercc_tool_df, ercc_tool_out_path
-        )
+        ercc_tool_df.to_csv(ercc_tool_out_path, index=False)
         print(f" - Saved: {ercc_tool_out_path}")
 
         # Same metrics pooled ACROSS technologies: the Dataset x Tool means quoted in the
@@ -352,36 +311,31 @@ def calculate_section_3_3_spike_ins():
         ).reset_index()
         ercc_pooled_df = ercc_pooled_df.sort_values(by=['Dataset', 'RMSE'], ascending=[True, True])
         ercc_pooled_out_path = os.path.join(TABLES_OUT_DIR, "section_3_3_ercc_similarity_rmse_by_tool_pooled.csv")
-        write_csv_with_comment(
-            "ERCC Similarity and RMSE pooled across technologies for the Section 3.3 prose: mean of the "
-            "per-sample values over non-SMR normalizations and all technologies, grouped by Dataset and "
-            "Tool. Tech_Count = number of technologies contributing; Row_Count = number of pooled rows. "
-            "Because the design is balanced, this equals averaging the per-technology means.",
-            ercc_pooled_df, ercc_pooled_out_path
-        )
+        ercc_pooled_df.to_csv(ercc_pooled_out_path, index=False)
         print(f" - Saved: {ercc_pooled_out_path}")
 
     # Export Spike-in Detection Sensitivity Metrics
     sensitivity_files = [
-        ("Section3/data/nih/ont_sensitivity_sirv_summary.csv", "ONT cDNA", "Mouse", "SIRV"),
-        ("Section3/data/nih/isoseq_sensitivity_sirv_summary.csv", "Iso-Seq", "Mouse", "SIRV"),
-        ("Section3/data/nih/masseq_sensitivity_sirv_summary.csv", "Kinnex", "Mouse", "SIRV"),
-        ("Section3/data/neuron/ont_sensitivity_sirv_summary.csv", "ONT cDNA", "Neuron", "SIRV"),
-        ("Section3/data/neuron/kinnex_sensitivity_sirv_summary.csv", "Kinnex", "Neuron", "SIRV"),
-        ("Section3/data/longbench/cDNA_norm_sensitivity_sirv_summary.csv", "ONT cDNA", "LongBench", "SIRV"),
-        ("Section3/data/longbench/drna_sensitivity_sirv_summary.csv", "ONT dRNA", "LongBench", "SIRV"),
-        ("Section3/data/longbench/kinnex_sensitivity_sirv_summary.csv", "Kinnex", "LongBench", "SIRV"),
-        ("Section3/data/neuron/neuron_ont_sensitivity_ercc_summary.csv", "ONT cDNA", "Neuron", "ERCC"),
-        ("Section3/data/neuron/neuron_pb_sensitivity_ercc_summary.csv", "Kinnex", "Neuron", "ERCC"),
-        ("Section3/data/longbench/cDNA_norm_sensitivity_ercc_summary.csv", "ONT cDNA", "LongBench", "ERCC"),
-        ("Section3/data/longbench/drna_norm_sensitivity_ercc_summary.csv", "ONT dRNA", "LongBench", "ERCC"),
-        ("Section3/data/longbench/kinnex_norm_sensitivity_ercc_summary.csv", "Kinnex", "LongBench", "ERCC")
+        ("paper_plots/fig5/data/nih/ont_sensitivity_sirv_summary.csv", "ONT cDNA", "Mouse", "SIRV"),
+        ("paper_plots/fig5/data/nih/isoseq_sensitivity_sirv_summary.csv", "IsoSeq", "Mouse", "SIRV"),
+        ("paper_plots/fig5/data/nih/masseq_sensitivity_sirv_summary.csv", "Kinnex", "Mouse", "SIRV"),
+        ("paper_plots/fig5/data/neuron/ont_sensitivity_sirv_summary.csv", "ONT cDNA", "Neuron", "SIRV"),
+        ("paper_plots/fig5/data/neuron/kinnex_sensitivity_sirv_summary.csv", "Kinnex", "Neuron", "SIRV"),
+        ("paper_plots/fig5/data/longbench/cDNA_norm_sensitivity_sirv_summary.csv", "ONT cDNA", "LongBench", "SIRV"),
+        ("paper_plots/fig5/data/longbench/drna_sensitivity_sirv_summary.csv", "ONT dRNA", "LongBench", "SIRV"),
+        ("paper_plots/fig5/data/longbench/kinnex_sensitivity_sirv_summary.csv", "Kinnex", "LongBench", "SIRV"),
+        ("results/neuron/ont/neuron_ont_sensitivity_ercc_summary.csv", "ONT cDNA", "Neuron", "ERCC"),
+        ("results/neuron/kinnex/neuron_pb_sensitivity_ercc_summary.csv", "Kinnex", "Neuron", "ERCC"),
+        ("results/longbench_ncbi/cDNA/cDNA_norm_sensitivity_ercc_summary.csv", "ONT cDNA", "LongBench", "ERCC"),
+        ("results/longbench_ncbi/dRNA/drna_norm_sensitivity_ercc_summary.csv", "ONT dRNA", "LongBench", "ERCC"),
+        ("results/longbench_ncbi/Kinnex/kinnex_norm_sensitivity_ercc_summary.csv", "Kinnex", "LongBench", "ERCC")
     ]
     sens_list = []
     for rel_path, tech, ds, spike_in in sensitivity_files:
         csv_path = os.path.join(BASE_DIR, rel_path)
         if os.path.exists(csv_path):
             df = pd.read_csv(csv_path)
+            df = df[df['Tool'] != 'isoseq']
             df['Tech'] = tech
             df['Dataset'] = ds
             df['SpikeIn'] = spike_in
@@ -392,11 +346,7 @@ def calculate_section_3_3_spike_ins():
         combined_sens['Tool'] = combined_sens['Tool'].map(lambda x: TOOL_NAME_MAP.get(x, x))
         sens_summary = combined_sens.groupby(['Dataset', 'Tech', 'SpikeIn', 'Tool'])['Sensitivity'].mean().reset_index()
         sens_out_path = os.path.join(TABLES_OUT_DIR, "section_3_3_spikein_detection_sensitivity.csv")
-        write_csv_with_comment(
-            "Spike-in detection Sensitivity per sample averaged and grouped by Dataset, Technology, "
-            "SpikeIn (SIRV/ERCC), and Tool. Only unfiltered summary rows are used.",
-            sens_summary, sens_out_path
-        )
+        sens_summary.to_csv(sens_out_path, index=False)
         print(f" - Saved: {sens_out_path}")
 
 # ==============================================================================
@@ -415,7 +365,7 @@ def calculate_section_3_4_illumina_correlations():
     
     for ds in datasets:
         for lvl in levels:
-            fofn_path = os.path.join(BASE_DIR, f"Section4/data/sr_{lvl}_{ds}.fofn")
+            fofn_path = os.path.join(BASE_DIR, f"paper_plots/fig4/data/sr_{lvl}_{ds}.fofn")
             if not os.path.exists(fofn_path):
                 continue
                 
@@ -427,9 +377,10 @@ def calculate_section_3_4_illumina_correlations():
                     parts = line.split('\t')
                     if len(parts) == 2:
                         rel_path, tech = parts
-                        csv_path = os.path.join(BASE_DIR, "Section4", rel_path)
+                        csv_path = os.path.join(BASE_DIR, "paper_plots/fig4", rel_path)
                         if os.path.exists(csv_path):
                             df = pd.read_csv(csv_path)
+                            df = df[df['Tool'] != 'isoseq']
                             df_all = df[df['LengthQuantile'] == 'All'].copy()
                             df_all['Dataset'] = "Mouse" if ds == "NIH" else ds
                             df_all['Level'] = "Gene" if lvl == "gene" else "Transcript"
@@ -447,12 +398,7 @@ def calculate_section_3_4_illumina_correlations():
     # Table A: Median Spearman Correlation by Dataset, Technology, Level, and Normalization
     table_normalization = combined.groupby(['Dataset', 'Tech', 'Level', 'Normalization'])['Correlation'].median().reset_index()
     norm_out_path = os.path.join(TABLES_OUT_DIR, "section_3_4_illumina_correlation_by_normalization.csv")
-    write_csv_with_comment(
-        "Spearman Correlation between long-read quantification and Illumina short-read reference. "
-        "Values are the median across "
-        "samples, grouped by Dataset, Technology, Level (Gene/Transcript), and Normalization.",
-        table_normalization, norm_out_path
-    )
+    table_normalization.to_csv(norm_out_path, index=False)
     print(f" - Saved: {norm_out_path}")
     
     # Table B: Median Spearman Correlation by Tool (excluding SMR)
@@ -460,11 +406,7 @@ def calculate_section_3_4_illumina_correlations():
     table_tool = df_no_smr.groupby(['Dataset', 'Tech', 'Level', 'Tool'])['Correlation'].median().reset_index()
     table_tool = table_tool.sort_values(by=['Dataset', 'Tech', 'Level', 'Correlation'], ascending=[True, True, True, False])
     tool_out_path = os.path.join(TABLES_OUT_DIR, "section_3_4_illumina_correlation_by_tool.csv")
-    write_csv_with_comment(
-        "Median Spearman Correlation (as above) pooled over non-SMR normalizations, grouped by Dataset, "
-        "Technology, Level, and Tool. Sorted by descending median correlation.",
-        table_tool, tool_out_path
-    )
+    table_tool.to_csv(tool_out_path, index=False)
     print(f" - Saved: {tool_out_path}")
     
     # Table C: Overall Sample Median & Mean Correlation across ALL samples combined
@@ -477,11 +419,7 @@ def calculate_section_3_4_illumina_correlations():
     overall_summary['Overall_Sample_Mean'] = overall_summary['Overall_Sample_Mean'].round(3)
     
     overall_out_path = os.path.join(TABLES_OUT_DIR, "section_3_4_illumina_correlation_overall_summary.csv")
-    write_csv_with_comment(
-        "Median and mean Spearman Correlation across ALL samples combined, grouped by Technology, Level, "
-        "and Normalization. Sample_Count = number of sample-level correlations in each group.",
-        overall_summary, overall_out_path
-    )
+    overall_summary.to_csv(overall_out_path, index=False)
     print(f" - Saved: {overall_out_path}")
 
     # Table D: Median & Mean Correlation by Dataset, Technology, Level, Tool, AND Normalization
@@ -501,13 +439,10 @@ def calculate_section_3_4_illumina_correlations():
         ascending=[True, True, True, True, False]
     )
     tool_norm_out_path = os.path.join(TABLES_OUT_DIR, "section_3_4_illumina_correlation_by_tool_and_normalization.csv")
-    write_csv_with_comment(
-        "Median, mean, and count of Spearman Correlation grouped simultaneously by Dataset, Technology, "
-        "Level, Tool, AND Normalization (the tool-by-normalization breakdown quoted in the Section 3.4 "
-        "prose). Metrics rounded to 4 decimals; sorted by descending median within each grouping.",
-        table_tool_norm, tool_norm_out_path
-    )
+    table_tool_norm.to_csv(tool_norm_out_path, index=False)
     print(f" - Saved: {tool_norm_out_path}")
+
+
 
 def main():
     calculate_section_3_1_throughput()

@@ -1,3 +1,4 @@
+# Novel (SQANTI class == Novel) transcript proportion before vs after expression filtering, joined by Dataset/Technology/Tool. Unfiltered_Novel_Pct and Filtered_Novel_Pct are the reported percentages; Delta_Novel_Pct = Filtered - Unfiltered. Metrics rounded to 2 decimals.
 Dataset,Technology,Tool,Unfiltered_Novel_Count,Unfiltered_Total,Unfiltered_Novel_Pct,Filtered_Novel_Count,Filtered_Total,Filtered_Novel_Pct,Delta_Novel_Pct
 LongBench,Kinnex,FLAIR,1303888,1401779,93.02,420344,481731,87.26,-5.76
 LongBench,Kinnex,IsoQuant,328852,400883,82.03,68502,92245,74.26,-7.77

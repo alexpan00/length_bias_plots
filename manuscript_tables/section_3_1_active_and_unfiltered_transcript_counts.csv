@@ -1,3 +1,4 @@
+# Per SQANTI summary file, transcript model counts (n_trans) were summed across samples and split into Unfiltered (pre-expression filter) vs Filtered (post-filter) columns. Percent_Retained = Filtered_Transcripts / Unfiltered_Transcripts * 100.
 Dataset,Technology,Tool,Unfiltered_Transcripts,Filtered_Transcripts,Percent_Retained
 Mouse,Kinnex,FLAIR,562016,259445,46.16
 Mouse,Kinnex,IsoQuant,131827,61444,46.61

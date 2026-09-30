@@ -109,9 +109,6 @@ for (i in 1:nrow(files_map)) {
   if (file.exists(files_map$path[i])) {
     df <- read_csv(files_map$path[i], show_col_types = FALSE)
     
-    # Exclude "isoseq" tool as requested
-    df <- df %>% filter(Tool != "isoseq")
-    
     # Handle multiline and normalize Biotype names
     df$Biotype <- gsub("\n", " ", df$Biotype)
     df$Biotype[df$Biotype == "Genic Genomic"] <- "Genic\nGenomic"

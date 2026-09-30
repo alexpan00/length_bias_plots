@@ -1,3 +1,4 @@
+# Spike-in detection Sensitivity per sample averaged and grouped by Dataset, Technology, SpikeIn (SIRV/ERCC), and Tool. Only unfiltered summary rows are used.
 Dataset,Tech,SpikeIn,Tool,Sensitivity
 LongBench,Kinnex,ERCC,FLAIR,0.326086956521739
 LongBench,Kinnex,ERCC,IsoQuant,0.326086956521739

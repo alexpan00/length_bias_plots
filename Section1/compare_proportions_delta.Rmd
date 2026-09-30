@@ -40,7 +40,6 @@ all_data <- list()
 for (i in 1:nrow(files_map)) {
   if (file.exists(files_map$path[i])) {
     df <- read_csv(files_map$path[i], show_col_types = FALSE)
-    df <- df %>% filter(Tool != "isoseq")
     df$Biotype <- gsub("\n", " ", df$Biotype)
     df$Biotype[df$Biotype == "Genic Genomic"] <- "Genic\nGenomic"
     df$Biotype[df$Biotype == "Genic Intron"] <- "Genic\nIntron"

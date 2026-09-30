@@ -1,11 +1,11 @@
 "platform_type","Normalization","Mean_CV","Median_CV"
 "ONT (cDNA and dRNA combined)","CPM",0.980056031032041,1.0919027364054
 "ONT (cDNA and dRNA combined)","TPM",2.00717380407163,2.13419163620907
-"ONT (cDNA and dRNA combined)","cqn",0.486019672914479,0.462089454046475
+"ONT (cDNA and dRNA combined)","cqn",0.601196672329612,0.535357826224717
 "ONT (cDNA and dRNA combined)","EDA",0.777371043831916,0.794142165669689
 "ONT (cDNA and dRNA combined)","ratio_counts",0.106870694101593,0.0931564148520672
 "PacBio (Iso-Seq and Kinnex combined)","CPM",0.435850728536511,0.450667101879485
 "PacBio (Iso-Seq and Kinnex combined)","TPM",0.746472066890447,0.744985821958442
-"PacBio (Iso-Seq and Kinnex combined)","cqn",0.366672458268734,0.288541813841637
+"PacBio (Iso-Seq and Kinnex combined)","cqn",0.301827413392331,0.285617369098571
 "PacBio (Iso-Seq and Kinnex combined)","EDA",0.315645368577493,0.325665669631953
 "PacBio (Iso-Seq and Kinnex combined)","ratio_counts",0.226643956545657,0.215006976079033

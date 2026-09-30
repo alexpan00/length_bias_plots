@@ -1,81 +1,82 @@
+# Median Spearman Correlation (as above) pooled over non-SMR normalizations, grouped by Dataset, Technology, Level, and Tool. Sorted by descending median correlation.
 Dataset,Tech,Level,Tool,Correlation
-LongBench,Kinnex,Gene,Oarfish,0.8584805096877435
-LongBench,Kinnex,Gene,bambu,0.83740994718229
-LongBench,Kinnex,Gene,FLAIR,0.8329322528929045
-LongBench,Kinnex,Gene,Kallisto,0.8257778370413524
-LongBench,Kinnex,Gene,IsoQuant,0.662533468126886
-LongBench,Kinnex,Transcript,Oarfish,0.7014938784387894
-LongBench,Kinnex,Transcript,Kallisto,0.696319938617163
-LongBench,Kinnex,Transcript,bambu,0.6934545563005046
-LongBench,Kinnex,Transcript,FLAIR,0.6509022034477541
-LongBench,Kinnex,Transcript,IsoQuant,0.62122189796242
-LongBench,ONT cDNA,Gene,Oarfish,0.7819625430375481
+LongBench,Kinnex,Gene,Oarfish,0.8612611330168389
+LongBench,Kinnex,Gene,bambu,0.840356488031841
+LongBench,Kinnex,Gene,FLAIR,0.838629531049734
+LongBench,Kinnex,Gene,Kallisto,0.828177350018388
+LongBench,Kinnex,Gene,IsoQuant,0.6594424821821695
+LongBench,Kinnex,Transcript,Oarfish,0.701867449313679
+LongBench,Kinnex,Transcript,Kallisto,0.697203299589491
+LongBench,Kinnex,Transcript,bambu,0.6944142462752625
+LongBench,Kinnex,Transcript,FLAIR,0.6505692978199785
+LongBench,Kinnex,Transcript,IsoQuant,0.6172120021369996
+LongBench,ONT cDNA,Gene,Oarfish,0.7815472373252881
 LongBench,ONT cDNA,Gene,Kallisto,0.7813919785670744
-LongBench,ONT cDNA,Gene,bambu,0.7651585443460349
-LongBench,ONT cDNA,Gene,FLAIR,0.7385175492630589
-LongBench,ONT cDNA,Gene,IsoQuant,0.644642616330575
-LongBench,ONT cDNA,Transcript,Kallisto,0.7090976814307695
+LongBench,ONT cDNA,Gene,bambu,0.765723777230285
+LongBench,ONT cDNA,Gene,FLAIR,0.7386794662288501
+LongBench,ONT cDNA,Gene,IsoQuant,0.6424838683470595
+LongBench,ONT cDNA,Transcript,Kallisto,0.7095150628420915
 LongBench,ONT cDNA,Transcript,bambu,0.669117251367501
 LongBench,ONT cDNA,Transcript,Oarfish,0.6601070065103409
-LongBench,ONT cDNA,Transcript,IsoQuant,0.626822201586933
-LongBench,ONT cDNA,Transcript,FLAIR,0.6009311681191065
-LongBench,ONT dRNA,Gene,Oarfish,0.9227100455019299
-LongBench,ONT dRNA,Gene,bambu,0.9128569570756555
-LongBench,ONT dRNA,Gene,FLAIR,0.9076638406454229
-LongBench,ONT dRNA,Gene,Kallisto,0.8954712690096756
-LongBench,ONT dRNA,Gene,IsoQuant,0.8268955559418635
-LongBench,ONT dRNA,Transcript,Kallisto,0.79611404585811
-LongBench,ONT dRNA,Transcript,IsoQuant,0.782180174165828
+LongBench,ONT cDNA,Transcript,IsoQuant,0.620138885146531
+LongBench,ONT cDNA,Transcript,FLAIR,0.5997654493269919
+LongBench,ONT dRNA,Gene,Oarfish,0.9232331842216
+LongBench,ONT dRNA,Gene,bambu,0.913605735964689
+LongBench,ONT dRNA,Gene,FLAIR,0.909984876451036
+LongBench,ONT dRNA,Gene,Kallisto,0.8958724540516989
+LongBench,ONT dRNA,Gene,IsoQuant,0.824164718843647
+LongBench,ONT dRNA,Transcript,Kallisto,0.7954696645740711
+LongBench,ONT dRNA,Transcript,IsoQuant,0.78182431391319
 LongBench,ONT dRNA,Transcript,Oarfish,0.771642179666385
-LongBench,ONT dRNA,Transcript,bambu,0.7680808724506305
-LongBench,ONT dRNA,Transcript,FLAIR,0.7110582150285609
-Mouse,Iso-Seq,Gene,Oarfish,0.7622494714326931
-Mouse,Iso-Seq,Gene,bambu,0.7436532556842954
-Mouse,Iso-Seq,Gene,FLAIR,0.742462302470168
-Mouse,Iso-Seq,Gene,Kallisto,0.7043925522534196
-Mouse,Iso-Seq,Gene,IsoQuant,0.6835077891500835
-Mouse,Iso-Seq,Transcript,Oarfish,0.7132774382923626
-Mouse,Iso-Seq,Transcript,bambu,0.6994233456234245
-Mouse,Iso-Seq,Transcript,FLAIR,0.6849462923709795
-Mouse,Iso-Seq,Transcript,IsoQuant,0.675535272290035
-Mouse,Iso-Seq,Transcript,Kallisto,0.668595120490865
-Mouse,Kinnex,Gene,Oarfish,0.889919592284381
-Mouse,Kinnex,Gene,FLAIR,0.8876954223148426
-Mouse,Kinnex,Gene,bambu,0.8740429168243845
-Mouse,Kinnex,Gene,Kallisto,0.8570820710497205
-Mouse,Kinnex,Gene,IsoQuant,0.8219430692709679
-Mouse,Kinnex,Transcript,Oarfish,0.746164260461909
+LongBench,ONT dRNA,Transcript,bambu,0.7689153855957135
+LongBench,ONT dRNA,Transcript,FLAIR,0.7117998262693765
+Mouse,Iso-Seq,Gene,Oarfish,0.7617485036547691
+Mouse,Iso-Seq,Gene,FLAIR,0.7490234663854936
+Mouse,Iso-Seq,Gene,bambu,0.74483463371106
+Mouse,Iso-Seq,Gene,Kallisto,0.704112109231123
+Mouse,Iso-Seq,Gene,IsoQuant,0.6813741554216385
+Mouse,Iso-Seq,Transcript,Oarfish,0.707206256638906
+Mouse,Iso-Seq,Transcript,bambu,0.6963048269149585
+Mouse,Iso-Seq,Transcript,FLAIR,0.683216835840764
+Mouse,Iso-Seq,Transcript,IsoQuant,0.6742541095537316
+Mouse,Iso-Seq,Transcript,Kallisto,0.6686625778312596
+Mouse,Kinnex,Gene,Oarfish,0.8882956991582021
+Mouse,Kinnex,Gene,FLAIR,0.88490922397965
+Mouse,Kinnex,Gene,bambu,0.8739028880469746
+Mouse,Kinnex,Gene,Kallisto,0.852914690450805
+Mouse,Kinnex,Gene,IsoQuant,0.814182034525621
+Mouse,Kinnex,Transcript,Oarfish,0.7408261272095511
 Mouse,Kinnex,Transcript,IsoQuant,0.7358730842217724
-Mouse,Kinnex,Transcript,FLAIR,0.7299059638586956
-Mouse,Kinnex,Transcript,Kallisto,0.7222161265320131
-Mouse,Kinnex,Transcript,bambu,0.7172299828702611
-Mouse,ONT cDNA,Gene,FLAIR,0.8004650326405645
-Mouse,ONT cDNA,Gene,bambu,0.7830492385479131
-Mouse,ONT cDNA,Gene,Oarfish,0.7614316565592749
-Mouse,ONT cDNA,Gene,Kallisto,0.7508091653916604
+Mouse,Kinnex,Transcript,FLAIR,0.7259331561293405
+Mouse,Kinnex,Transcript,bambu,0.7143131951613515
+Mouse,Kinnex,Transcript,Kallisto,0.7135986176906135
+Mouse,ONT cDNA,Gene,FLAIR,0.8015483524521575
+Mouse,ONT cDNA,Gene,bambu,0.7706911684667499
+Mouse,ONT cDNA,Gene,Oarfish,0.758908827102694
+Mouse,ONT cDNA,Gene,Kallisto,0.749986592921573
 Mouse,ONT cDNA,Gene,IsoQuant,0.667482759939331
-Mouse,ONT cDNA,Transcript,bambu,0.6541791070445555
 Mouse,ONT cDNA,Transcript,FLAIR,0.6502722533916635
-Mouse,ONT cDNA,Transcript,Oarfish,0.650097119004166
-Mouse,ONT cDNA,Transcript,Kallisto,0.6385893157267475
+Mouse,ONT cDNA,Transcript,bambu,0.648165004286153
+Mouse,ONT cDNA,Transcript,Oarfish,0.6470431317231455
+Mouse,ONT cDNA,Transcript,Kallisto,0.6365492179654885
 Mouse,ONT cDNA,Transcript,IsoQuant,0.623427442182575
-Neuron,Kinnex,Gene,Oarfish,0.782128205683066
-Neuron,Kinnex,Gene,FLAIR,0.759928952404568
-Neuron,Kinnex,Gene,bambu,0.741766707281456
-Neuron,Kinnex,Gene,Kallisto,0.717166068154427
+Neuron,Kinnex,Gene,Oarfish,0.7851293491693205
+Neuron,Kinnex,Gene,FLAIR,0.764296495380892
+Neuron,Kinnex,Gene,bambu,0.7544461883003231
+Neuron,Kinnex,Gene,Kallisto,0.727147212492445
 Neuron,Kinnex,Gene,IsoQuant,0.653178778016692
 Neuron,Kinnex,Transcript,IsoQuant,0.6448786633842695
 Neuron,Kinnex,Transcript,Oarfish,0.641235996979606
-Neuron,Kinnex,Transcript,bambu,0.6202862661389266
-Neuron,Kinnex,Transcript,Kallisto,0.613431417472711
+Neuron,Kinnex,Transcript,bambu,0.63110757750041
+Neuron,Kinnex,Transcript,Kallisto,0.6174894562612929
 Neuron,Kinnex,Transcript,FLAIR,0.606648963689941
-Neuron,ONT cDNA,Gene,Oarfish,0.8296414414059594
-Neuron,ONT cDNA,Gene,Kallisto,0.8185723930389555
-Neuron,ONT cDNA,Gene,bambu,0.8004490645512645
-Neuron,ONT cDNA,Gene,FLAIR,0.789380588699272
-Neuron,ONT cDNA,Gene,IsoQuant,0.6727466692997746
-Neuron,ONT cDNA,Transcript,Kallisto,0.689228850306493
-Neuron,ONT cDNA,Transcript,Oarfish,0.652851489577951
-Neuron,ONT cDNA,Transcript,bambu,0.6513403931951345
-Neuron,ONT cDNA,Transcript,IsoQuant,0.6073056036173134
-Neuron,ONT cDNA,Transcript,FLAIR,0.5944117727392875
+Neuron,ONT cDNA,Gene,Oarfish,0.8314496933907309
+Neuron,ONT cDNA,Gene,Kallisto,0.819777163832337
+Neuron,ONT cDNA,Gene,bambu,0.8029460647600726
+Neuron,ONT cDNA,Gene,FLAIR,0.7890567009744505
+Neuron,ONT cDNA,Gene,IsoQuant,0.676536684501338
+Neuron,ONT cDNA,Transcript,Kallisto,0.6884627398689255
+Neuron,ONT cDNA,Transcript,bambu,0.653985901126631
+Neuron,ONT cDNA,Transcript,Oarfish,0.6521395289037135
+Neuron,ONT cDNA,Transcript,IsoQuant,0.6068907919968689
+Neuron,ONT cDNA,Transcript,FLAIR,0.5908527247907516

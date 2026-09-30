@@ -1,3 +1,4 @@
+# Metrics computed by grouping the per-sample sequencing performance summary by Dataset and Technology, then taking the median (min/max where noted) of Total_Reads, Total_Fragments (Illumina reads halved to fragments), Total_Gb, Mapped_Reads_Pct, and Average_Mapped_Read_Length. Sample_Count = number of samples in each group.
 Dataset,Technology,median_reads,min_reads,max_reads,median_fragments,median_gb,median_mapped_pct,median_mapped_len,min_mapped_len,max_mapped_len,sample_count
 LongBench,Illumina,128443862.0,111881066.0,141290580.0,64221931.0,12.972830062,93.29255862283097,100.57,100.53,100.58,6
 LongBench,Kinnex,53093819.5,31548302.0,66188045.0,53093819.5,97.247589157,99.99473387188456,1830.08,1666.68,1896.36,6

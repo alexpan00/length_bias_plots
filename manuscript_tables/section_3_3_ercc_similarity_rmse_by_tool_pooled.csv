@@ -1,0 +1,12 @@
+# ERCC Similarity and RMSE pooled across technologies for the Section 3.3 prose: mean of the per-sample values over non-SMR normalizations and all technologies, grouped by Dataset and Tool. Tech_Count = number of technologies contributing; Row_Count = number of pooled rows. Because the design is balanced, this equals averaging the per-technology means.
+Dataset,Tool,Similarity,RMSE,Tech_Count,Row_Count
+LongBench,Oarfish,0.3203710184785422,3.272309745652817,3,72
+LongBench,IsoQuant,0.3183778842096856,3.2819063827440917,3,72
+LongBench,Kallisto,0.315066454159747,3.297850412676723,3,72
+LongBench,bambu,0.19985921453568734,3.852555675756601,3,72
+LongBench,FLAIR,0.10031326973334345,4.331854196234193,3,72
+Neuron,Oarfish,0.48568400586371147,2.476352959801137,2,48
+Neuron,Kallisto,0.4853927242307618,2.4777554363760723,2,48
+Neuron,bambu,0.41733034536217084,2.805465395397254,2,48
+Neuron,IsoQuant,0.3104090557458157,3.3202750747109664,2,48
+Neuron,FLAIR,0.0811897217692214,4.423931158923989,2,48
