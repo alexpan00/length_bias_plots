@@ -1,0 +1,41 @@
+﻿"Cohort","Platform","Normalization","Tool","EMM (z′)","SE","EMM (r)","95% CI lower (r)","95% CI upper (r)"
+"Mouse","cDNA ONT","CPM","Bambu",0.8357,0.0193,0.684,0.662,0.704
+"Mouse","cDNA ONT","CPM","FLAIR",0.8,0.0193,0.664,0.642,0.685
+"Mouse","cDNA ONT","CPM","IsoQuant",0.7645,0.0193,0.644,0.621,0.666
+"Mouse","cDNA ONT","CPM","Kallisto",0.8083,0.0193,0.669,0.647,0.689
+"Mouse","cDNA ONT","CPM","Oarfish",0.8256,0.0193,0.678,0.657,0.698
+"Mouse","Iso-Seq","TPM","Bambu",1.0708,0.0193,0.79,0.775,0.804
+"Mouse","Iso-Seq","TPM","FLAIR",0.981,0.0193,0.753,0.736,0.77
+"Mouse","Iso-Seq","TPM","IsoQuant",0.9897,0.0193,0.757,0.74,0.773
+"Mouse","Iso-Seq","TPM","Kallisto",1.0148,0.0193,0.768,0.751,0.783
+"Mouse","Iso-Seq","TPM","Oarfish",1.0788,0.0193,0.793,0.778,0.807
+"Mouse","Kinnex","TPM","Bambu",1.0247,0.0224,0.772,0.753,0.789
+"Mouse","Kinnex","TPM","FLAIR",0.9787,0.0224,0.752,0.733,0.771
+"Mouse","Kinnex","TPM","IsoQuant",0.998,0.0224,0.761,0.741,0.779
+"Mouse","Kinnex","TPM","Kallisto",1.0149,0.0224,0.768,0.749,0.785
+"Mouse","Kinnex","TPM","Oarfish",1.0723,0.0224,0.79,0.773,0.806
+"iNeuron","cDNA ONT","CPM","Bambu",0.7757,0.0125,0.65,0.634,0.666
+"iNeuron","cDNA ONT","CPM","FLAIR",0.6954,0.0125,0.601,0.584,0.618
+"iNeuron","cDNA ONT","CPM","IsoQuant",0.7186,0.0125,0.616,0.599,0.633
+"iNeuron","cDNA ONT","CPM","Kallisto",0.8378,0.0125,0.685,0.67,0.699
+"iNeuron","cDNA ONT","CPM","Oarfish",0.7829,0.0125,0.654,0.639,0.67
+"iNeuron","Kinnex","TPM","Bambu",0.8598,0.0125,0.696,0.682,0.71
+"iNeuron","Kinnex","TPM","FLAIR",0.7759,0.0125,0.65,0.634,0.666
+"iNeuron","Kinnex","TPM","IsoQuant",0.8065,0.0125,0.668,0.652,0.682
+"iNeuron","Kinnex","TPM","Kallisto",0.8188,0.0125,0.674,0.659,0.689
+"iNeuron","Kinnex","TPM","Oarfish",0.8823,0.0125,0.708,0.694,0.721
+"LongBench","cDNA ONT","CPM","Bambu",0.8106,0.0155,0.67,0.652,0.687
+"LongBench","cDNA ONT","CPM","FLAIR",0.705,0.0155,0.608,0.587,0.627
+"LongBench","cDNA ONT","CPM","IsoQuant",0.7529,0.0155,0.637,0.618,0.655
+"LongBench","cDNA ONT","CPM","Kallisto",0.8967,0.0155,0.715,0.699,0.73
+"LongBench","cDNA ONT","CPM","Oarfish",0.8008,0.0155,0.664,0.646,0.682
+"LongBench","dRNA ONT","CPM","Bambu",1.0383,0.0155,0.777,0.764,0.79
+"LongBench","dRNA ONT","CPM","FLAIR",0.9031,0.0155,0.718,0.702,0.733
+"LongBench","dRNA ONT","CPM","IsoQuant",1.0703,0.0155,0.79,0.777,0.801
+"LongBench","dRNA ONT","CPM","Kallisto",1.1092,0.0155,0.804,0.792,0.815
+"LongBench","dRNA ONT","CPM","Oarfish",1.0424,0.0155,0.779,0.766,0.791
+"LongBench","Kinnex","TPM","Bambu",0.9301,0.0155,0.731,0.715,0.745
+"LongBench","Kinnex","TPM","FLAIR",0.8023,0.0155,0.665,0.647,0.683
+"LongBench","Kinnex","TPM","IsoQuant",0.6937,0.0155,0.6,0.58,0.62
+"LongBench","Kinnex","TPM","Kallisto",0.9094,0.0155,0.721,0.705,0.736
+"LongBench","Kinnex","TPM","Oarfish",0.97,0.0155,0.749,0.734,0.762

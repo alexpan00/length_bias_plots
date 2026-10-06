@@ -1,0 +1,41 @@
+﻿"Cohort","Platform","Normalization","Median","n"
+"LongBench","cDNA ONT","CPM",0.656,30
+"LongBench","cDNA ONT","CQN",0.667,30
+"LongBench","cDNA ONT","EDASeq",0.663,30
+"LongBench","cDNA ONT","SMR",0.584,30
+"LongBench","cDNA ONT","TPM",0.587,30
+"LongBench","Kinnex","CPM",0.667,30
+"LongBench","Kinnex","CQN",0.689,30
+"LongBench","Kinnex","EDASeq",0.679,30
+"LongBench","Kinnex","SMR",0.654,30
+"LongBench","Kinnex","TPM",0.719,30
+"LongBench","dRNA ONT","CPM",0.785,30
+"LongBench","dRNA ONT","CQN",0.765,30
+"LongBench","dRNA ONT","EDASeq",0.767,30
+"LongBench","dRNA ONT","SMR",0.709,30
+"LongBench","dRNA ONT","TPM",0.772,30
+"Mouse","cDNA ONT","CPM",0.655,100
+"Mouse","cDNA ONT","CQN",0.645,100
+"Mouse","cDNA ONT","EDASeq",0.632,100
+"Mouse","cDNA ONT","SMR",0.6,100
+"Mouse","cDNA ONT","TPM",0.624,100
+"Mouse","Iso-Seq","CPM",0.684,100
+"Mouse","Iso-Seq","CQN",0.661,100
+"Mouse","Iso-Seq","EDASeq",0.653,100
+"Mouse","Iso-Seq","SMR",0.627,100
+"Mouse","Iso-Seq","TPM",0.766,100
+"Mouse","Kinnex","CPM",0.74,45
+"Mouse","Kinnex","CQN",0.685,45
+"Mouse","Kinnex","EDASeq",0.714,45
+"Mouse","Kinnex","SMR",0.627,45
+"Mouse","Kinnex","TPM",0.769,45
+"iNeuron","cDNA ONT","CPM",0.647,30
+"iNeuron","cDNA ONT","CQN",0.654,30
+"iNeuron","cDNA ONT","EDASeq",0.652,30
+"iNeuron","cDNA ONT","SMR",0.404,30
+"iNeuron","cDNA ONT","TPM",0.59,30
+"iNeuron","Kinnex","CPM",0.616,30
+"iNeuron","Kinnex","CQN",0.616,30
+"iNeuron","Kinnex","EDASeq",0.631,30
+"iNeuron","Kinnex","SMR",0.433,30
+"iNeuron","Kinnex","TPM",0.681,30

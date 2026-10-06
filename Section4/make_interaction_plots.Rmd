@@ -1,5 +1,5 @@
 ---
-title: "Interaction Plots - TPM/Kinnex and Normalization Interactions"
+title: "LMM analysis of long-/short-read agreement"
 author: "Alejandro Paniagua"
 date: "`r Sys.Date()`"
 output: html_document
@@ -14,110 +14,254 @@ library(tidyverse)
 library(lme4)
 library(lmerTest)
 library(emmeans)
-library(patchwork)
 ```
 
-```{r load_rds}
-# Define the RDS files produced by prepare_all_datasets.Rmd
-datasets <- list(
-  Mouse = "data/mouse_sr_correlations.rds",
-  iNeuron = "data/neuron_sr_correlations.rds",
+# Settings
+
+```{r settings}
+# RDS files produced by prepare_all_datasets.Rmd
+datasets <- c(
+  Mouse     = "data/mouse_sr_correlations.rds",
+  iNeuron   = "data/neuron_sr_correlations.rds",
   LongBench = "data/longbench_sr_correlations.rds"
 )
+
+dir_data   <- "data"
+dir_plots  <- "plots"
+dir_tables <- "tables"   # supplementary tables and source data
+for (d in c(dir_data, dir_plots, dir_tables)) dir.create(d, showWarnings = FALSE)
+
+# Reference levels (treatment coding and trt.vs.ctrl contrasts)
+ref_tool <- "bambu"
+ref_norm <- "CPM"
+ref_tech <- "ont"
+
+# Recommended normalization per platform (tool-level analysis)
+rec_norm <- c(ont = "CPM", ont_drna = "CPM", kinnex = "TPM", isoseq = "TPM")
+
+# Tool groups for the quantifiers vs reconstruction contrast
+quant_tools <- c("kallisto", "oarfish")
+recon_tools <- c("bambu", "flair", "isoquant")
+
+# Column that separates gene- and transcript-level rows in the RDS, if any
+# (e.g. "Level"). NULL = descriptive medians are not split.
+level_col <- NULL
+
+alpha <- 0.05
+
+# Cohort order in figures
+cohort_order_emm     <- c("Mouse", "iNeuron", "LongBench")
+cohort_order_heatmap <- c("Mouse", "LongBench", "iNeuron")
+
+# Satterthwaite df (same as lmerTest); keep it for models > 3000 obs
+emm_options(lmer.df = "satterthwaite", lmerTest.limit = 1e5)
 ```
 
-```{r fit_models}
-# ------------------------------------------------------------------
-# Fit the mixed-effects models (per dataset), store them for downstream
-# use (EMMs + coefficient heatmap), and save the model results to disk.
-# ------------------------------------------------------------------
-models <- list()      # fitted model objects, keyed by dataset name
-emm_list <- list()    # estimated marginal means
-coef_list <- list()   # per-model coefficient tables (Estimate + p-value)
-anova_list <- list()  # per-model Type III ANOVA tables
+# Helpers
 
-for (name in names(datasets)) {
-  dat <- readRDS(datasets[[name]])
+```{r helpers}
+# ---- Display labels ----
+tool_labels <- c(bambu = "Bambu", flair = "FLAIR", isoquant = "IsoQuant",
+                 kallisto = "Kallisto", oarfish = "Oarfish")
+norm_labels <- c(CPM = "CPM", cqn = "CQN", EDA = "EDASeq",
+                 ratio_counts = "SMR", TPM = "TPM")
+tech_labels <- c(ont = "cDNA ONT", kinnex = "Kinnex",
+                 isoseq = "Iso-Seq", ont_drna = "dRNA ONT")
+all_labels  <- c(tool_labels, norm_labels, tech_labels)
 
-  # Prepare factors matching the Rmd
-  dat$Technology <- as.factor(dat$Dataset)
-  dat$Technology <- relevel(dat$Technology, ref = "ont")
-  dat$Tool <- as.factor(dat$Tool)
-  dat$Tool <- relevel(dat$Tool, ref = "bambu")
-  dat$Normalization <- as.factor(dat$Normalization)
-  dat$Normalization <- relevel(dat$Normalization, ref = "CPM")
-  dat$Correlation_z <- atanh(dat$Correlation)
-
-  # Fit mixed model
-  model <- lmer(Correlation_z ~ Tool * Normalization + Tool * Technology + Normalization * Technology +
-                 (1 | Sample), data = dat)
-
-  # Store the fitted model for downstream chunks (heatmap, EMMs)
-  models[[name]] <- model
-
-  # Save the model object to disk
-  saveRDS(model, file.path("data", paste0(name, "_lmer_model.rds")))
-
-  # Coefficient table (Estimate, SE, t, p) for the combined heatmap
-  cf <- as.data.frame(summary(model)$coefficients)
-  cf$Term <- rownames(cf)
-  cf$PValue <- cf[["Pr(>|t|)"]]
-  cf$DatasetName <- name
-  coef_list[[name]] <- cf
-
-  # Type III ANOVA table
-  ao <- as.data.frame(anova(model, type = 3))
-  ao$Term <- rownames(ao)
-  ao$DatasetName <- name
-  anova_list[[name]] <- ao
-
-  # Calculate EMMs
-  emm <- emmeans(model, ~ Normalization * Technology)
-  emm_df <- as.data.frame(emm)
-  emm_df$DatasetName <- name
-
-  emm_list[[name]] <- emm_df
+relabel <- function(x) {
+  x <- as.character(x)
+  out <- unname(all_labels[x])
+  ifelse(is.na(out), x, out)
 }
 
-# Combine EMMs
-all_emms <- bind_rows(emm_list)
+# ---- Contrast strings ----
+strip_par <- function(x) gsub("^\\(|\\)$", "", x)
 
-# Combine and save the model results
-all_coefs_raw <- bind_rows(coef_list)
-all_anova_raw <- bind_rows(anova_list)
-write_csv(all_coefs_raw, file.path("data", "model_coefficients.csv"))
-write_csv(all_anova_raw, file.path("data", "model_anova.csv"))
+# "A - B" -> level1 = A, level2 = B
+split_contrast <- function(ct) {
+  parts <- strsplit(as.character(ct), " - ", fixed = TRUE)
+  tibble(level1 = strip_par(sapply(parts, `[`, 1)),
+         level2 = strip_par(sapply(parts, `[`, 2)))
+}
+
+pretty_contrast <- function(ct) {
+  p <- split_contrast(ct)
+  ifelse(is.na(p$level2), as.character(ct),
+         paste(relabel(p$level1), "-", relabel(p$level2)))
+}
+
+# Add *_label columns for the factors present and for the contrast
+add_labels <- function(df) {
+  df <- df %>%
+    mutate(across(any_of(c("Technology", "Normalization", "Tool")),
+                  relabel, .names = "{.col}_label"))
+  if ("contrast" %in% names(df)) df$contrast_label <- pretty_contrast(df$contrast)
+  df
+}
+
+# emmeans summary -> tibble. Test statistic is called t.ratio (finite df)
+# or z.ratio (asymptotic df); rename both to `stat` so tables can be bound.
+tidy_ct <- function(ct, cohort) {
+  as.data.frame(summary(ct, infer = c(TRUE, TRUE))) %>%
+    as_tibble() %>%
+    rename(any_of(c(stat = "t.ratio", stat = "z.ratio"))) %>%
+    mutate(Cohort = cohort, .before = 1)
+}
+
+# Keep only the recommended normalization of each platform
+keep_rec <- function(df) {
+  df %>% filter(Normalization == rec_norm[as.character(Technology)])
+}
+
+# ---- Nakagawa R2 for a Gaussian random-intercept lmer ----
+r2_nakagawa_lmer <- function(m) {
+  var_f <- var(predict(m, re.form = NA))
+  var_r <- sum(sapply(VarCorr(m), function(v) sum(diag(v))))
+  var_e <- sigma(m)^2
+  tibble(R2_marginal    = var_f / (var_f + var_r + var_e),
+         R2_conditional = (var_f + var_r) / (var_f + var_r + var_e))
+}
+
+# ---- Marginal main effects and interaction contrasts (Supp. Fig. 14) ----
+# Term names follow lmer's coefficient names ("Toolflair",
+# "Normalizationcqn:Technologykinnex") so they can be matched to the betas.
+emm_main <- function(m, f, cohort) {
+  tidy_ct(contrast(emmeans(m, specs = f), method = "trt.vs.ctrl",
+                   adjust = "holm"), cohort) %>%
+    mutate(Term = paste0(f, split_contrast(contrast)$level1))
+}
+
+emm_int <- function(m, f1, f2, cohort) {
+  ct <- tidy_ct(contrast(emmeans(m, specs = c(f1, f2)),
+                         interaction = c("trt.vs.ctrl", "trt.vs.ctrl"),
+                         adjust = "holm"), cohort)
+  c1 <- grep(paste0("^", f1, "_"), names(ct), value = TRUE)
+  c2 <- grep(paste0("^", f2, "_"), names(ct), value = TRUE)
+  ct %>%
+    mutate(Term = paste0(f1, split_contrast(.data[[c1]])$level1, ":",
+                         f2, split_contrast(.data[[c2]])$level1)) %>%
+    select(-all_of(c(c1, c2)))
+}
 ```
 
-```{r clean_labels}
-# Clean and rename factors for plotting
-all_emms <- all_emms %>%
-  mutate(
-    Technology_Clean = case_when(
-      Technology == "ont"      ~ "cDNA ONT",
-      Technology == "kinnex"   ~ "Kinnex",
-      Technology == "isoseq"   ~ "Iso-Seq",
-      Technology == "ont_drna" ~ "dRNA ONT",
-      TRUE                     ~ as.character(Technology)
-    ),
-    Technology_Clean = factor(Technology_Clean, levels = c("cDNA ONT", "Kinnex", "Iso-Seq", "dRNA ONT")),
-    Normalization_Clean = case_when(
-      Normalization == "CPM"          ~ "CPM",
-      Normalization == "cqn"          ~ "CQN",
-      Normalization == "EDA"          ~ "EDAseq",
-      Normalization == "ratio_counts" ~ "SMR",
-      Normalization == "TPM"          ~ "TPM",
-      TRUE                            ~ as.character(Normalization)
-    ),
-    Normalization_Clean = factor(Normalization_Clean, levels = c("CPM", "CQN", "EDAseq", "SMR", "TPM")),
-    DatasetName = factor(DatasetName, levels = c("Mouse", "iNeuron", "LongBench"))
+# Fit models
+
+```{r fit_models}
+models <- list(); raw_list <- list()
+anova_list <- list(); r2_list <- list()
+
+for (name in names(datasets)) {
+  dat <- readRDS(datasets[[name]]) %>%
+    mutate(
+      Technology    = relevel(factor(Dataset), ref = ref_tech),
+      Tool          = relevel(factor(Tool), ref = ref_tool),
+      Normalization = relevel(factor(Normalization), ref = ref_norm),
+      Correlation_z = atanh(Correlation),
+      Cohort        = name
+    )
+  missing_rec <- setdiff(levels(dat$Technology), names(rec_norm))
+  if (length(missing_rec)) stop("No recommended normalization for: ", toString(missing_rec))
+  raw_list[[name]] <- dat
+
+  m <- lmer(Correlation_z ~ Tool * Normalization + Tool * Technology +
+              Normalization * Technology + (1 | Sample), data = dat)
+  models[[name]] <- m
+  saveRDS(m, file.path(dir_data, paste0(name, "_lmer_model.rds")))
+
+  anova_list[[name]] <- as.data.frame(anova(m, type = 3)) %>%
+    rownames_to_column("Term") %>% mutate(Cohort = name, .before = 1)
+  r2_list[[name]] <- r2_nakagawa_lmer(m) %>% mutate(Cohort = name, .before = 1)
+}
+
+model_r2 <- bind_rows(r2_list)
+
+# Type III ANOVA, terms ordered by F within cohort
+anova_table <- bind_rows(anova_list) %>%
+  arrange(factor(Cohort, levels = cohort_order_emm), desc(`F value`))
+
+anova_table
+model_r2
+```
+
+# emmeans contrasts
+
+```{r contrasts}
+res <- list(heatmap = list(), emm_nt = list(), norm_vs_cpm = list(),
+            norm_pairs = list(), tool_emm = list(), tool_pairs = list(),
+            tool_groups = list())
+
+for (name in names(models)) {
+  m <- models[[name]]
+
+  # Supp. Fig. 14: marginal main effects vs reference + interaction contrasts
+  # (Holm adjustment within each term type, i.e. each block of the heatmap)
+  res$heatmap[[name]] <- bind_rows(
+    emm_main(m, "Tool", name),
+    emm_main(m, "Normalization", name),
+    emm_main(m, "Technology", name),
+    emm_int(m, "Tool", "Normalization", name),
+    emm_int(m, "Tool", "Technology", name),
+    emm_int(m, "Normalization", "Technology", name)
   )
+
+  # Supp. Figs. 15-16: EMMs of each normalization x technology cell
+  res$emm_nt[[name]] <- as.data.frame(emmeans(m, ~ Normalization * Technology)) %>%
+    as_tibble() %>% mutate(Cohort = name, .before = 1)
+
+  # Normalization simple effects within each technology
+  emm_norm <- emmeans(m, ~ Normalization | Technology)
+  res$norm_vs_cpm[[name]] <- tidy_ct(contrast(emm_norm, method = "trt.vs.ctrl"), name) # Dunnett
+  res$norm_pairs[[name]]  <- tidy_ct(pairs(emm_norm), name)                            # Tukey
+
+  # Tools under the recommended normalization of each platform
+  emm_tool <- emmeans(m, ~ Tool | Technology * Normalization)
+  res$tool_emm[[name]] <- as.data.frame(emm_tool) %>% as_tibble() %>%
+    keep_rec() %>%
+    mutate(Cohort = name, .before = 1,
+           r = tanh(emmean), r_lower = tanh(lower.CL), r_upper = tanh(upper.CL))
+  res$tool_pairs[[name]] <- tidy_ct(pairs(emm_tool), name) %>% keep_rec()       # Tukey
+
+  # mean(quantifiers) - mean(reconstruction); single test per cell
+  lv <- levels(emm_tool)$Tool
+  w  <- ifelse(lv %in% quant_tools, 1 / sum(lv %in% quant_tools),
+        ifelse(lv %in% recon_tools, -1 / sum(lv %in% recon_tools), 0))
+  res$tool_groups[[name]] <- tidy_ct(
+    contrast(emm_tool, list(quant_vs_recon = w)), name) %>% keep_rec()
+}
+
+res <- lapply(res, function(x) add_labels(bind_rows(x)))
 ```
 
+# Descriptive medians (raw correlations)
 
+```{r medians}
+raw_all <- bind_rows(raw_list)
+
+# Per cohort, technology and normalization
+medians_norm <- raw_all %>%
+  group_by(across(all_of(c(level_col, "Cohort", "Technology", "Normalization")))) %>%
+  summarise(median = median(Correlation), n = n(), .groups = "drop")
+
+# Pooled across cohorts ("overall cross-cohort sample median")
+medians_norm_pooled <- raw_all %>%
+  group_by(across(all_of(c(level_col, "Technology", "Normalization")))) %>%
+  summarise(median = median(Correlation), n = n(), .groups = "drop")
+
+# Per tool under the recommended normalization
+medians_tool_rec <- raw_all %>%
+  keep_rec() %>%
+  group_by(across(all_of(c(level_col, "Cohort", "Technology", "Normalization", "Tool")))) %>%
+  summarise(median = median(Correlation), n = n(), .groups = "drop")
+
+medians_norm        <- add_labels(medians_norm)
+medians_norm_pooled <- add_labels(medians_norm_pooled)
+medians_tool_rec    <- add_labels(medians_tool_rec)
+```
+
+# Figures
 
 ```{r theme_and_colors}
-# Define Nature theme
 theme_nature <- function(base_size = 6.5, base_family = "sans") {
   theme_classic(base_size = base_size, base_family = base_family) +
     theme(
@@ -135,263 +279,272 @@ theme_nature <- function(base_size = 6.5, base_family = "sans") {
     )
 }
 
-# Exact color palette matched from paper_plots/fig1/fig1.Rmd
-tech_colors <- c(
-  "cDNA ONT" = "#4A5899",  # Muted Gold/Tan
-  "Kinnex"   = "#e31c93",  # PacBio Pink/Magenta
-  "Iso-Seq"   = "#EE7B30",  # Soft Orange
-  "dRNA ONT" = "#56B4E9"   # Soft Blue
-)
-
-# Tech shapes
-tech_shapes <- c(
-  "cDNA ONT" = 16, # Circle
-  "Kinnex"   = 17, # Triangle
-  "Iso-Seq"   = 15, # Square
-  "dRNA ONT" = 18  # Diamond
-)
+tech_colors <- c("cDNA ONT" = "#4A5899", "Kinnex" = "#e31c93",
+                 "Iso-Seq" = "#EE7B30", "dRNA ONT" = "#56B4E9")
+tech_shapes <- c("cDNA ONT" = 16, "Kinnex" = 17, "Iso-Seq" = 15, "dRNA ONT" = 18)
 ```
 
+```{r emm_plots}
+all_emms <- res$emm_nt %>%
+  mutate(
+    Technology_label    = factor(Technology_label, levels = unname(tech_labels)),
+    Normalization_label = factor(Normalization_label, levels = unname(norm_labels)),
+    Cohort              = factor(Cohort, levels = cohort_order_emm)
+  )
 
+plot_emm <- function(df) {
+  ggplot(df, aes(x = Normalization_label, y = emmean,
+                 color = Technology_label, shape = Technology_label,
+                 group = Technology_label)) +
+    geom_line(linewidth = 0.6, alpha = 0.9) +
+    geom_errorbar(aes(ymin = lower.CL, ymax = upper.CL),
+                  width = 0.1, linewidth = 0.4, color = "black") +
+    geom_point(size = 2.0, fill = "white", stroke = 0.6) +
+    facet_wrap(~ Cohort, scales = "free_y") +
+    scale_color_manual(values = tech_colors, name = "Technology") +
+    scale_shape_manual(values = tech_shapes, name = "Technology") +
+    labs(x = NULL, y = "EMM (Fisher z′)") +
+    theme_nature()
+}
 
-```{r plot1_cpm_tpm}
-# ----------------- PLOT 1: Focused CPM vs TPM -----------------
-# Filter for CPM and TPM
-cpm_tpm_emms <- all_emms %>%
+# Supplementary Fig. 15: CPM vs TPM
+p_supp15 <- all_emms %>%
   filter(Normalization %in% c("CPM", "TPM")) %>%
-  mutate(Normalization_Clean = factor(Normalization_Clean, levels = c("CPM", "TPM")))
+  mutate(Normalization_label = droplevels(Normalization_label)) %>%
+  plot_emm()
 
-p1 <- ggplot(cpm_tpm_emms, aes(x = Normalization_Clean, y = emmean, color = Technology_Clean, shape = Technology_Clean, group = Technology_Clean)) +
-  geom_line(linewidth = 0.6, alpha = 0.9) +
-  geom_errorbar(aes(ymin = lower.CL, ymax = upper.CL), width = 0.1, linewidth = 0.4, color = "black") +
-  geom_point(size = 2.0, fill = "white", stroke = 0.6) +
-  facet_wrap(~ DatasetName, scales = "free_y") +
-  scale_color_manual(values = tech_colors, name = "Technology") +
-  scale_shape_manual(values = tech_shapes, name = "Technology") +
-  labs(
-    x = NULL,
-    y = "EMM",
-    title = NULL
-  ) +
-  theme_nature()
-```
-
-
-
-
-```{r plot3_reversed}
-# ----------------- PLOT 2: Reversed Focused (CPM vs TPM in Legend, Tech on X-axis) -----------------
-p2 <- ggplot(cpm_tpm_emms, aes(x = Technology_Clean, y = emmean, color = Normalization_Clean, shape = Normalization_Clean, group = Normalization_Clean)) +
-  geom_line(linewidth = 0.6, alpha = 0.9) +
-  geom_errorbar(aes(ymin = lower.CL, ymax = upper.CL), width = 0.1, linewidth = 0.4, color = "black") +
-  geom_point(size = 2.0, fill = "white", stroke = 0.6) +
-  facet_wrap(~ DatasetName, scales = "free") +
-  scale_color_manual(values = c("CPM" = "#767676", "TPM" = "#33B5A5"), name = "Normalization") +
-  scale_shape_manual(values = c("CPM" = 16, "TPM" = 17), name = "Normalization") +
-  labs(
-    x = NULL,
-    y = "EMM",
-    title = NULL
-  ) +
-  theme_nature()
-```
-
-
-
-```{r plot3_cqn_eda}
-# ----------------- PLOT 3: Focused CPM vs CQN vs EDAseq -----------------
-cpm_cqn_eda_emms <- all_emms %>%
+# Supplementary Fig. 16: CPM vs CQN vs EDASeq
+p_supp16 <- all_emms %>%
   filter(Normalization %in% c("CPM", "cqn", "EDA")) %>%
-  mutate(Normalization_Clean = factor(Normalization_Clean, levels = c("CPM", "CQN", "EDAseq")))
-
-p3 <- ggplot(cpm_cqn_eda_emms, aes(x = Normalization_Clean, y = emmean, color = Technology_Clean, shape = Technology_Clean, group = Technology_Clean)) +
-  geom_line(linewidth = 0.6, alpha = 0.9) +
-  geom_errorbar(aes(ymin = lower.CL, ymax = upper.CL), width = 0.1, linewidth = 0.4, color = "black") +
-  geom_point(size = 2.0, fill = "white", stroke = 0.6) +
-  facet_wrap(~ DatasetName, scales = "free_y") +
-  scale_color_manual(values = tech_colors, name = "Technology") +
-  scale_shape_manual(values = tech_shapes, name = "Technology") +
-  labs(
-    x = NULL,
-    y = "EMM",
-    title = NULL
-  ) +
-  theme_nature()
+  mutate(Normalization_label = droplevels(Normalization_label)) %>%
+  plot_emm()
 ```
 
+```{r heatmap}
+factor_names <- c("Tool", "Normalization", "Technology")
+ref_of <- c(Tool = ref_tool, Normalization = ref_norm, Technology = ref_tech)
 
-
-```{r coefficient_heatmap}
-# ------------------------------------------------------------------
-# Combined regression-coefficient heatmap across all three datasets.
-# Rows = model terms, columns = dataset; cell fill = significance,
-# text = coefficient Estimate. Uses the models fitted in `fit_models`.
-# ------------------------------------------------------------------
-
-# Clean term names for display
-clean_term <- function(term) {
-  term <- gsub("^Toolflair$", "flair (vs. Bambu)", term)
-  term <- gsub("^Toolisoquant$", "isoquant (vs. Bambu)", term)
-  term <- gsub("^Toolkallisto$", "kallisto (vs. Bambu)", term)
-  term <- gsub("^Tooloarfish$", "oarfish (vs. Bambu)", term)
-
-  term <- gsub("^Normalizationcqn$", "cqn (vs. CPM)", term)
-  term <- gsub("^NormalizationEDA$", "EDA (vs. CPM)", term)
-  term <- gsub("^Normalizationratio_counts$", "SMR (vs. CPM)", term)
-  term <- gsub("^NormalizationTPM$", "TPM (vs. CPM)", term)
-
-  term <- gsub("^Technologyisoseq$", "Iso-Seq (vs. cDNA ONT)", term)
-  term <- gsub("^Technologykinnex$", "Kinnex (vs. cDNA ONT)", term)
-  term <- gsub("^Technologyont_drna$", "dRNA ONT (vs. cDNA ONT)", term)
-
-  if (grepl(":", term)) {
-    parts <- strsplit(term, ":")[[1]]
-    clean_parts <- sapply(parts, function(p) {
-      p <- gsub("^Tool", "", p)
-      p <- gsub("^Normalization", "", p)
-      p <- gsub("^Technology", "", p)
-      if (p == "ratio_counts") p <- "SMR"
-      if (p == "ont_drna") p <- "dRNA ONT"
-      if (p == "isoseq") p <- "Iso-Seq"
-      if (p == "kinnex") p <- "Kinnex"
-      p
-    })
-    return(paste(clean_parts, collapse = " \u00D7 "))
-  }
-  return(term)
+parse_term <- function(term) {
+  lapply(strsplit(term, ":", fixed = TRUE)[[1]], function(p) {
+    f <- factor_names[startsWith(p, factor_names)][1]
+    list(f = f, lvl = sub(paste0("^", f), "", p))
+  })
 }
 
-# Assign term type (grouping for facet_grid)
-get_term_type <- function(term) {
-  if (!grepl(":", term)) {
-    if (grepl("^Tool", term)) return("Tool Effects")
-    if (grepl("^Normalization", term)) return("Normalization Effects")
-    if (grepl("^Technology", term)) return("Technology Effects")
-    return("Main Effects")
+term_label <- function(term) {
+  pp <- parse_term(term)
+  if (length(pp) == 1) {
+    paste0(relabel(pp[[1]]$lvl), " (vs. ", relabel(ref_of[[pp[[1]]$f]]), ")")
   } else {
-    parts <- strsplit(term, ":")[[1]]
-    has_tool <- any(grepl("^Tool", parts))
-    has_norm <- any(grepl("^Normalization", parts))
-    has_tech <- any(grepl("^Technology", parts))
-
-    if (has_tool && has_norm) return("Tool \u00D7 Normalization")
-    if (has_tool && has_tech) return("Tool \u00D7 Technology")
-    if (has_norm && has_tech) return("Normalization \u00D7 Technology")
-    return("Interactions")
+    paste(sapply(pp, function(x) relabel(x$lvl)), collapse = " × ")
   }
 }
 
-# Build heatmap data from the saved coefficient table
-all_coefs <- all_coefs_raw %>%
-  filter(Term != "(Intercept)")
+term_type <- function(term) {
+  fs <- sapply(parse_term(term), `[[`, "f")
+  if (length(fs) == 1) paste(fs, "Effects") else paste(fs, collapse = " × ")
+}
 
-all_coefs$CleanTerm <- sapply(all_coefs$Term, clean_term)
-all_coefs$TermType <- sapply(all_coefs$Term, get_term_type)
+term_type_order <- c("Tool Effects", "Normalization Effects", "Technology Effects",
+                     "Tool × Normalization", "Tool × Technology",
+                     "Normalization × Technology")
 
-term_type_order <- c(
-  "Tool Effects",
-  "Normalization Effects",
-  "Technology Effects",
-  "Tool \u00D7 Normalization",
-  "Tool \u00D7 Technology",
-  "Normalization \u00D7 Technology"
-)
-all_coefs$TermType <- factor(all_coefs$TermType, levels = term_type_order)
-all_coefs$DatasetName <- factor(all_coefs$DatasetName, levels = c("Mouse", "LongBench", "iNeuron"))
+colors_signif <- c("Significant (Positive)" = "#DE2D26",
+                   "NS (adj. p ≥ 0.05)"       = "#F0F0F0",
+                   "Significant (Negative)" = "#3182BD")
 
-all_coefs <- all_coefs %>%
+heatmap_data <- res$heatmap %>%
   mutate(
-    PValCat = case_when(
-      PValue < 0.05 & Estimate > 0 ~ "Significant (Positive)",
-      PValue < 0.05 & Estimate < 0 ~ "Significant (Negative)",
-      TRUE                         ~ "NS (p \u2265 0.05)"
-    ),
-    PValCat = factor(PValCat, levels = c("Significant (Positive)", "NS (p \u2265 0.05)", "Significant (Negative)"))
+    TermLabel = sapply(Term, term_label),
+    TermType  = factor(sapply(Term, term_type), levels = term_type_order),
+    PValCat   = case_when(
+      p.value < alpha & estimate > 0 ~ "Significant (Positive)",
+      p.value < alpha & estimate < 0 ~ "Significant (Negative)",
+      TRUE                           ~ "NS (adj. p ≥ 0.05)"
+    )
+  ) %>%
+  select(Cohort, TermLabel, TermType, estimate, PValCat) %>%
+  # empty cells for terms absent in a cohort (e.g. Iso-Seq outside Mouse)
+  complete(Cohort = cohort_order_heatmap, nesting(TermLabel, TermType),
+           fill = list(PValCat = "NS (adj. p ≥ 0.05)")) %>%
+  mutate(
+    Cohort       = factor(Cohort, levels = cohort_order_heatmap),
+    PValCat      = factor(PValCat, levels = names(colors_signif)),
+    EstimateText = ifelse(is.na(estimate), "", sprintf("%.3f", estimate))
   )
 
-# Expand to a complete grid so missing terms show as grey placeholders
-all_combinations <- expand.grid(
-  CleanTerm = unique(all_coefs$CleanTerm),
-  DatasetName = c("Mouse", "LongBench", "iNeuron"),
-  stringsAsFactors = FALSE
-)
-
-term_details <- all_coefs %>% select(CleanTerm, TermType) %>% distinct()
-all_combinations <- all_combinations %>% left_join(term_details, by = "CleanTerm")
-
-heatmap_data <- all_combinations %>%
-  left_join(all_coefs %>% select(CleanTerm, DatasetName, Estimate, PValue, PValCat), by = c("CleanTerm", "DatasetName"))
-
-heatmap_data$DatasetName <- factor(heatmap_data$DatasetName, levels = c("Mouse", "LongBench", "iNeuron"))
-heatmap_data$PValCat[is.na(heatmap_data$PValCat)] <- "NS (p \u2265 0.05)"
-
-heatmap_data <- heatmap_data %>%
-  mutate(
-    EstimateText = ifelse(is.na(Estimate), "", sprintf("%.3f", Estimate))
-  )
-
-# Significance colors (Red = positive sig, Blue = negative sig, grey = NS)
-colors_signif <- c(
-  "Significant (Positive)" = "#DE2D26",
-  "NS (p \u2265 0.05)"       = "#F0F0F0",
-  "Significant (Negative)" = "#3182BD"
-)
-
-p_heatmap <- ggplot(heatmap_data, aes(x = DatasetName, y = CleanTerm, fill = PValCat)) +
+# Supplementary Fig. 14
+p_supp14 <- ggplot(heatmap_data, aes(x = Cohort, y = TermLabel, fill = PValCat)) +
   geom_tile(color = "white", linewidth = 0.3) +
   geom_text(aes(label = EstimateText), size = 1.8, color = "black") +
   facet_grid(TermType ~ ., scales = "free_y", space = "free_y") +
-  scale_fill_manual(
-    values = colors_signif,
-    name = "Significance",
-    na.value = "#F0F0F0"
-  ) +
-  labs(
-    x = "Dataset",
-    y = "Regression Coefficient (Effect on Correlation)"
-  ) +
+  scale_fill_manual(values = colors_signif, name = "Significance", drop = FALSE) +
+  labs(x = "Dataset", y = "emmeans contrast (Δz′)") +
   theme_nature() +
   theme(
     axis.line = element_blank(),
     axis.ticks = element_blank(),
     axis.title = element_text(size = 7, face = "bold"),
     strip.text.y = element_text(angle = 0, face = "bold", hjust = 0, size = 6.5),
-    legend.position = "right",
-    legend.title = element_text(size = 6.5, face = "bold"),
-    legend.text = element_text(size = 5.8),
+    legend.position = "bottom",
+    legend.title = element_text(size = 7, face = "bold"),
+    legend.text = element_text(size = 7),
     legend.key.size = unit(3, "mm")
   )
 ```
 
+# Supplementary tables and source data
 
-```{r export}
-# Save publication functions
+```{r export_tables}
+# ---- Formatting helpers ----
+# Tukey/Dunnett p-values below ~1e-12 are at the numerical floor, so they
+# are written as "< 1e-12" instead of an exact value
+fmt_p_col <- function(p, floor = 1e-12) {
+  ifelse(p < floor, paste0("< ", format(floor, scientific = TRUE)),
+         formatC(p, format = "g", digits = 3))
+}
+
+quant_label <- paste0("Quantifiers (", toString(relabel(quant_tools)), ") - ",
+                      "reconstruction (", toString(relabel(recon_tools)), ")")
+
+clean_contrasts <- function(x, adjustment) {
+  out <- tibble(Cohort = x$Cohort, Platform = relabel(x$Technology))
+  if ("Normalization" %in% names(x)) out$Normalization <- relabel(x$Normalization)
+  out %>%
+    mutate(
+      Contrast       = ifelse(x$contrast == "quant_vs_recon", quant_label, x$contrast_label),
+      `Δz′`          = round(x$estimate, 4),
+      SE             = round(x$SE, 4),
+      df             = round(x$df, 1),
+      `95% CI lower` = round(x$lower.CL, 4),
+      `95% CI upper` = round(x$upper.CL, 4),
+      t              = round(x$stat, 2),
+      `Adjusted p`   = fmt_p_col(x$p.value),
+      Adjustment     = adjustment
+    )
+}
+
+pretty_anova_term <- function(x) {
+  x <- gsub(":", " × ", x)
+  gsub("Technology", "Platform", x)
+}
+
+# ---- Supplementary Table 1: ANOVA and R2 ----
+supp_table_1 <- list(
+  `ANOVA (Type III)` = anova_table %>%
+    transmute(Cohort,
+              Term      = pretty_anova_term(Term),
+              `Sum Sq`  = signif(`Sum Sq`, 4),
+              `Mean Sq` = signif(`Mean Sq`, 4),
+              `Num df`  = NumDF,
+              `Den df`  = round(DenDF, 1),
+              F         = round(`F value`, 2),
+              p         = formatC(`Pr(>F)`, format = "g", digits = 3)),
+  `R2 (Nakagawa)` = model_r2 %>%
+    transmute(Cohort,
+              `Marginal R2`    = round(R2_marginal, 3),
+              `Conditional R2` = round(R2_conditional, 3))
+)
+
+# ---- Supplementary Table 2: normalization contrasts within each platform ----
+supp_table_2 <- list(
+  `vs CPM (Dunnett)` = clean_contrasts(res$norm_vs_cpm, "Dunnett"),
+  `Pairwise (Tukey)` = clean_contrasts(res$norm_pairs, "Tukey")
+)
+
+# ---- Supplementary Table 3: tools under the recommended normalization ----
+supp_table_3 <- list(
+  `Quant vs reconstruction` = clean_contrasts(res$tool_groups, "None (single test)"),
+  `Tool pairwise (Tukey)`   = clean_contrasts(res$tool_pairs, "Tukey")
+)
+
+# ---- Source data for figures and descriptive values in the text ----
+source_data <- list(
+  `Supp Fig 14` = res$heatmap %>%
+    transmute(Cohort,
+              `Term type`    = sapply(Term, term_type),
+              Term           = sapply(Term, term_label),
+              `Δz′`          = round(estimate, 4),
+              SE             = round(SE, 4),
+              df             = round(df, 1),
+              `95% CI lower` = round(lower.CL, 4),
+              `95% CI upper` = round(upper.CL, 4),
+              t              = round(stat, 2),
+              `Holm p`       = formatC(p.value, format = "g", digits = 3)),
+  `Supp Fig 15-16 EMMs` = res$emm_nt %>%
+    transmute(Cohort,
+              Platform       = Technology_label,
+              Normalization  = Normalization_label,
+              `EMM (z′)`     = round(emmean, 4),
+              SE             = round(SE, 4),
+              df             = round(df, 1),
+              `95% CI lower` = round(lower.CL, 4),
+              `95% CI upper` = round(upper.CL, 4),
+              `EMM (r)`      = round(tanh(emmean), 3)),
+  `Tool EMMs rec norm` = res$tool_emm %>%
+    transmute(Cohort,
+              Platform           = Technology_label,
+              Normalization      = Normalization_label,
+              Tool               = Tool_label,
+              `EMM (z′)`         = round(emmean, 4),
+              SE                 = round(SE, 4),
+              `EMM (r)`          = round(r, 3),
+              `95% CI lower (r)` = round(r_lower, 3),
+              `95% CI upper (r)` = round(r_upper, 3)),
+  `Medians by cohort` = medians_norm %>%
+    transmute(across(any_of(level_col)), Cohort,
+              Platform = Technology_label, Normalization = Normalization_label,
+              Median = round(median, 3), n),
+  `Medians pooled` = medians_norm_pooled %>%
+    transmute(across(any_of(level_col)),
+              Platform = Technology_label, Normalization = Normalization_label,
+              Median = round(median, 3), n),
+  `Medians tools rec norm` = medians_tool_rec %>%
+    transmute(across(any_of(level_col)), Cohort,
+              Platform = Technology_label, Normalization = Normalization_label,
+              Tool = Tool_label, Median = round(median, 3), n)
+)
+
+# ---- Write: one .xlsx per table (one sheet per panel) + one CSV per sheet ----
+write_table_set <- function(sheets, name) {
+  if (requireNamespace("writexl", quietly = TRUE)) {
+    writexl::write_xlsx(sheets, file.path(dir_tables, paste0(name, ".xlsx")))
+  }
+  for (sh in names(sheets)) {
+    csv_name <- gsub("_+", "_", paste0(name, "_", gsub("[^A-Za-z0-9]+", "_", sh)))
+    write_excel_csv(sheets[[sh]], file.path(dir_tables, paste0(sub("_$", "", csv_name), ".csv")))
+  }
+}
+
+write_table_set(supp_table_1, "Supplementary_Table_1")
+write_table_set(supp_table_2, "Supplementary_Table_2")
+write_table_set(supp_table_3, "Supplementary_Table_3")
+write_table_set(source_data,  "Source_Data")
+```
+
+```{r export_plots}
 save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 80, dpi = 600) {
   w <- width_mm / 25.4
   h <- height_mm / 25.4
+  f <- function(ext) file.path(dir_plots, paste0(filename, ext))
 
-  # Save PNG
-  ggsave(file.path("plots", paste0(filename, ".png")), plot, width = w, height = h, dpi = 150)
+  ggsave(f(".png"), plot, width = w, height = h, dpi = 150)
 
-  # Save SVG
-  svglite::svglite(file.path("plots", paste0(filename, ".svg")), width = w, height = h)
-  print(plot)
-  dev.off()
+  svglite::svglite(f(".svg"), width = w, height = h)
+  print(plot); dev.off()
 
-  # Save PDF
-  grDevices::cairo_pdf(file.path("plots", paste0(filename, ".pdf")), width = w, height = h, family = "sans")
-  print(plot)
-  dev.off()
+  grDevices::cairo_pdf(f(".pdf"), width = w, height = h, family = "sans")
+  print(plot); dev.off()
 
-  # Save TIFF
-  ragg::agg_tiff(file.path("plots", paste0(filename, ".tiff")), width = w, height = h, units = "in", res = dpi)
-  print(plot)
-  dev.off()
+  ragg::agg_tiff(f(".tiff"), width = w, height = h, units = "in", res = dpi)
+  print(plot); dev.off()
 }
 
-# Export plots
-save_pub_r(p1, "Supplementary_Figure_15", width_mm = 180, height_mm = 85)
-save_pub_r(p2, "tpm_kinnex_interaction_focused", width_mm = 180, height_mm = 85)
-save_pub_r(p3, "Supplementary_Figure_16", width_mm = 180, height_mm = 85)
-save_pub_r(p_heatmap, "Supplementary_Figure_14", height_mm = 240)
+save_pub_r(p_supp14, "Supplementary_Figure_14", height_mm = 240)
+save_pub_r(p_supp15, "Supplementary_Figure_15", height_mm = 85)
+save_pub_r(p_supp16, "Supplementary_Figure_16", height_mm = 85)
+```
+
+```{r session_info}
+sessionInfo()
 ```

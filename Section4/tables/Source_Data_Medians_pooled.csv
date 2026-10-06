@@ -1,0 +1,21 @@
+﻿"Platform","Normalization","Median","n"
+"cDNA ONT","CPM",0.654,160
+"cDNA ONT","CQN",0.648,160
+"cDNA ONT","EDASeq",0.642,160
+"cDNA ONT","SMR",0.565,160
+"cDNA ONT","TPM",0.609,160
+"Iso-Seq","CPM",0.684,100
+"Iso-Seq","CQN",0.661,100
+"Iso-Seq","EDASeq",0.653,100
+"Iso-Seq","SMR",0.627,100
+"Iso-Seq","TPM",0.766,100
+"Kinnex","CPM",0.688,105
+"Kinnex","CQN",0.661,105
+"Kinnex","EDASeq",0.674,105
+"Kinnex","SMR",0.604,105
+"Kinnex","TPM",0.734,105
+"dRNA ONT","CPM",0.785,30
+"dRNA ONT","CQN",0.765,30
+"dRNA ONT","EDASeq",0.767,30
+"dRNA ONT","SMR",0.709,30
+"dRNA ONT","TPM",0.772,30
