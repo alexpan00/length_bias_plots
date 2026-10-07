@@ -1,0 +1,331 @@
+﻿"Dataset","Condition","Direction","Platform","Tool","Length bin","SMR expression"
+"LongBench","LUAD","Downward Trend","ONT cDNA","IsoQuant","0k-0.5k",42.9105996312668
+"LongBench","LUAD","Downward Trend","ONT cDNA","IsoQuant","0.5k-1k",40.9300658713265
+"LongBench","LUAD","Downward Trend","ONT cDNA","IsoQuant","1k-1.5k",36.2505920095438
+"LongBench","LUAD","Downward Trend","ONT cDNA","IsoQuant","1.5k-2k",34.004025188541
+"LongBench","LUAD","Downward Trend","ONT cDNA","IsoQuant","2k-2.5k",32.7592022606518
+"LongBench","LUAD","Downward Trend","ONT cDNA","IsoQuant","2.5k-3k",32.6914663034751
+"LongBench","LUAD","Downward Trend","ONT cDNA","IsoQuant","3k-3.5k",31.9235095007587
+"LongBench","LUAD","Downward Trend","ONT cDNA","IsoQuant","3.5k-4k",33.8775858857098
+"LongBench","LUAD","Downward Trend","ONT cDNA","IsoQuant","4k-4.5k",36.1066452142482
+"LongBench","LUAD","Downward Trend","ONT cDNA","IsoQuant","4.5k-5k",38.1842029771536
+"LongBench","LUAD","Downward Trend","ONT cDNA","IsoQuant","5k+",38.5133413444309
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","IsoQuant","0k-0.5k",35.8213424715154
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","IsoQuant","0.5k-1k",37.3057523317274
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","IsoQuant","1k-1.5k",34.460921430947
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","IsoQuant","1.5k-2k",32.9310799184306
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","IsoQuant","2k-2.5k",31.0415397205536
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","IsoQuant","2.5k-3k",29.3314933735012
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","IsoQuant","3k-3.5k",29.7740083190091
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","IsoQuant","3.5k-4k",29.7811997009138
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","IsoQuant","4k-4.5k",29.8303769825843
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","IsoQuant","4.5k-5k",32.5476519158225
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","IsoQuant","5k+",31.9193942225658
+"LongBench","LUAD","Downward Trend","ONT cDNA","Bambu","0k-0.5k",35.0665279064017
+"LongBench","LUAD","Downward Trend","ONT cDNA","Bambu","0.5k-1k",33.4579459356754
+"LongBench","LUAD","Downward Trend","ONT cDNA","Bambu","1k-1.5k",29.0572265180186
+"LongBench","LUAD","Downward Trend","ONT cDNA","Bambu","1.5k-2k",27.8897777347554
+"LongBench","LUAD","Downward Trend","ONT cDNA","Bambu","2k-2.5k",27.0482590621671
+"LongBench","LUAD","Downward Trend","ONT cDNA","Bambu","2.5k-3k",27.7732896146519
+"LongBench","LUAD","Downward Trend","ONT cDNA","Bambu","3k-3.5k",26.4240160253726
+"LongBench","LUAD","Downward Trend","ONT cDNA","Bambu","3.5k-4k",26.5805872524901
+"LongBench","LUAD","Downward Trend","ONT cDNA","Bambu","4k-4.5k",27.217997273611
+"LongBench","LUAD","Downward Trend","ONT cDNA","Bambu","4.5k-5k",25.4645182166386
+"LongBench","LUAD","Downward Trend","ONT cDNA","Bambu","5k+",24.7923938193219
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Bambu","0k-0.5k",38.8525100010941
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Bambu","0.5k-1k",34.497403173326
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Bambu","1k-1.5k",30.2915564703969
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Bambu","1.5k-2k",27.0947667003835
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Bambu","2k-2.5k",24.9641225083241
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Bambu","2.5k-3k",23.0903137847251
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Bambu","3k-3.5k",22.8614378841908
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Bambu","3.5k-4k",21.7522996325615
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Bambu","4k-4.5k",21.5795476792136
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Bambu","4.5k-5k",21.6293479980453
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Bambu","5k+",21.6637635915226
+"LongBench","LUAD","Downward Trend","ONT cDNA","Kallisto","0k-0.5k",30.819595950842
+"LongBench","LUAD","Downward Trend","ONT cDNA","Kallisto","0.5k-1k",31.7488604778903
+"LongBench","LUAD","Downward Trend","ONT cDNA","Kallisto","1k-1.5k",29.6800022383563
+"LongBench","LUAD","Downward Trend","ONT cDNA","Kallisto","1.5k-2k",29.9182959991438
+"LongBench","LUAD","Downward Trend","ONT cDNA","Kallisto","2k-2.5k",28.8281737063817
+"LongBench","LUAD","Downward Trend","ONT cDNA","Kallisto","2.5k-3k",30.120252528821
+"LongBench","LUAD","Downward Trend","ONT cDNA","Kallisto","3k-3.5k",29.0133489404865
+"LongBench","LUAD","Downward Trend","ONT cDNA","Kallisto","3.5k-4k",29.7827954512879
+"LongBench","LUAD","Downward Trend","ONT cDNA","Kallisto","4k-4.5k",30.1259443673947
+"LongBench","LUAD","Downward Trend","ONT cDNA","Kallisto","4.5k-5k",29.6191225412816
+"LongBench","LUAD","Downward Trend","ONT cDNA","Kallisto","5k+",28.3462205542718
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Kallisto","0k-0.5k",33.0217869192245
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Kallisto","0.5k-1k",32.8035703659722
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Kallisto","1k-1.5k",30.9570686540925
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Kallisto","1.5k-2k",29.3629449428725
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Kallisto","2k-2.5k",27.9020477082193
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Kallisto","2.5k-3k",26.8155875182837
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Kallisto","3k-3.5k",26.9097951157964
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Kallisto","3.5k-4k",25.7026907852366
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Kallisto","4k-4.5k",25.9196426423375
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Kallisto","4.5k-5k",25.5782301275815
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Kallisto","5k+",25.778081686291902
+"LongBench","LUAD","Downward Trend","ONT cDNA","Oarfish","0k-0.5k",22.7416869077611
+"LongBench","LUAD","Downward Trend","ONT cDNA","Oarfish","0.5k-1k",24.7684725447032
+"LongBench","LUAD","Downward Trend","ONT cDNA","Oarfish","1k-1.5k",22.3530141244472
+"LongBench","LUAD","Downward Trend","ONT cDNA","Oarfish","1.5k-2k",21.069308212516
+"LongBench","LUAD","Downward Trend","ONT cDNA","Oarfish","2k-2.5k",19.9547444126792
+"LongBench","LUAD","Downward Trend","ONT cDNA","Oarfish","2.5k-3k",19.7065770410709
+"LongBench","LUAD","Downward Trend","ONT cDNA","Oarfish","3k-3.5k",18.3859902563588
+"LongBench","LUAD","Downward Trend","ONT cDNA","Oarfish","3.5k-4k",19.1567805765545
+"LongBench","LUAD","Downward Trend","ONT cDNA","Oarfish","4k-4.5k",18.4693964934021
+"LongBench","LUAD","Downward Trend","ONT cDNA","Oarfish","4.5k-5k",18.1913465662377
+"LongBench","LUAD","Downward Trend","ONT cDNA","Oarfish","5k+",16.3107787407616
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Oarfish","0k-0.5k",23.641029525324
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Oarfish","0.5k-1k",24.2811236358579
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Oarfish","1k-1.5k",22.7305343424919
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Oarfish","1.5k-2k",20.4953991519681
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Oarfish","2k-2.5k",18.8833658661568
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Oarfish","2.5k-3k",16.9388815693067
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Oarfish","3k-3.5k",16.6701510453302
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Oarfish","3.5k-4k",16.2241121069615
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Oarfish","4k-4.5k",15.4472840804007
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Oarfish","4.5k-5k",15.3205643881906
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","Oarfish","5k+",15.9441350285158
+"LongBench","LUAD","Downward Trend","ONT cDNA","FLAIR","0k-0.5k",11.3390269232986
+"LongBench","LUAD","Downward Trend","ONT cDNA","FLAIR","0.5k-1k",12.2222833736852
+"LongBench","LUAD","Downward Trend","ONT cDNA","FLAIR","1k-1.5k",11.8906765503744
+"LongBench","LUAD","Downward Trend","ONT cDNA","FLAIR","1.5k-2k",11.87769410646
+"LongBench","LUAD","Downward Trend","ONT cDNA","FLAIR","2k-2.5k",11.7457946438823
+"LongBench","LUAD","Downward Trend","ONT cDNA","FLAIR","2.5k-3k",12.8824322449297
+"LongBench","LUAD","Downward Trend","ONT cDNA","FLAIR","3k-3.5k",12.2956746861985
+"LongBench","LUAD","Downward Trend","ONT cDNA","FLAIR","3.5k-4k",12.6688838910192
+"LongBench","LUAD","Downward Trend","ONT cDNA","FLAIR","4k-4.5k",12.9488802600162
+"LongBench","LUAD","Downward Trend","ONT cDNA","FLAIR","4.5k-5k",13.9380057989635
+"LongBench","LUAD","Downward Trend","ONT cDNA","FLAIR","5k+",13.1909081734011
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","FLAIR","0k-0.5k",11.115308594651
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","FLAIR","0.5k-1k",10.6619762426156
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","FLAIR","1k-1.5k",10.6519720254385
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","FLAIR","1.5k-2k",10.5588463506728
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","FLAIR","2k-2.5k",10.6974017608611
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","FLAIR","2.5k-3k",11.3308224379225
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","FLAIR","3k-3.5k",11.1908899060364
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","FLAIR","3.5k-4k",10.8122976499658
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","FLAIR","4k-4.5k",11.0542607220449
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","FLAIR","4.5k-5k",11.498179097709
+"LongBench","SCLC_A","Upward Trend","ONT cDNA","FLAIR","5k+",11.9472424179228
+"LongBench","LUAD","Downward Trend","ONT dRNA","IsoQuant","0k-0.5k",34.4262011623769
+"LongBench","LUAD","Downward Trend","ONT dRNA","IsoQuant","0.5k-1k",31.280253160923
+"LongBench","LUAD","Downward Trend","ONT dRNA","IsoQuant","1k-1.5k",28.4647496903123
+"LongBench","LUAD","Downward Trend","ONT dRNA","IsoQuant","1.5k-2k",28.532180340976
+"LongBench","LUAD","Downward Trend","ONT dRNA","IsoQuant","2k-2.5k",27.484509848299
+"LongBench","LUAD","Downward Trend","ONT dRNA","IsoQuant","2.5k-3k",26.839448380633
+"LongBench","LUAD","Downward Trend","ONT dRNA","IsoQuant","3k-3.5k",26.722466362061
+"LongBench","LUAD","Downward Trend","ONT dRNA","IsoQuant","3.5k-4k",25.8652010786782
+"LongBench","LUAD","Downward Trend","ONT dRNA","IsoQuant","4k-4.5k",26.6647406240379
+"LongBench","LUAD","Downward Trend","ONT dRNA","IsoQuant","4.5k-5k",26.6283258953674
+"LongBench","LUAD","Downward Trend","ONT dRNA","IsoQuant","5k+",26.3195762990305
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","IsoQuant","0k-0.5k",29.4114003502325
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","IsoQuant","0.5k-1k",27.3807071984713
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","IsoQuant","1k-1.5k",26.3244307626473
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","IsoQuant","1.5k-2k",27.0471101152212
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","IsoQuant","2k-2.5k",26.1485636377151
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","IsoQuant","2.5k-3k",25.950207463032
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","IsoQuant","3k-3.5k",26.7635699079275
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","IsoQuant","3.5k-4k",27.3280898540672
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","IsoQuant","4k-4.5k",26.687534248879
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","IsoQuant","4.5k-5k",27.2942030122584
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","IsoQuant","5k+",29.1693831806059
+"LongBench","LUAD","Downward Trend","ONT dRNA","Bambu","0k-0.5k",22.8037211841668
+"LongBench","LUAD","Downward Trend","ONT dRNA","Bambu","0.5k-1k",23.6226506253441
+"LongBench","LUAD","Downward Trend","ONT dRNA","Bambu","1k-1.5k",21.5002836141722
+"LongBench","LUAD","Downward Trend","ONT dRNA","Bambu","1.5k-2k",21.6301479392707
+"LongBench","LUAD","Downward Trend","ONT dRNA","Bambu","2k-2.5k",20.4261431038185
+"LongBench","LUAD","Downward Trend","ONT dRNA","Bambu","2.5k-3k",20.0768872774762
+"LongBench","LUAD","Downward Trend","ONT dRNA","Bambu","3k-3.5k",19.8037739563092
+"LongBench","LUAD","Downward Trend","ONT dRNA","Bambu","3.5k-4k",18.9849708678691
+"LongBench","LUAD","Downward Trend","ONT dRNA","Bambu","4k-4.5k",19.6772363735927
+"LongBench","LUAD","Downward Trend","ONT dRNA","Bambu","4.5k-5k",19.6383759272754
+"LongBench","LUAD","Downward Trend","ONT dRNA","Bambu","5k+",19.0165703583712
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Bambu","0k-0.5k",22.1730259507396
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Bambu","0.5k-1k",20.2530567621177
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Bambu","1k-1.5k",19.4757034556503
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Bambu","1.5k-2k",19.8813188446505
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Bambu","2k-2.5k",19.7286361415777
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Bambu","2.5k-3k",19.0419710915258
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Bambu","3k-3.5k",19.9675333960591
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Bambu","3.5k-4k",19.9320828764058
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Bambu","4k-4.5k",20.0272945790696
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Bambu","4.5k-5k",20.1338008583178
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Bambu","5k+",21.3215162658602
+"LongBench","LUAD","Downward Trend","ONT dRNA","Kallisto","0k-0.5k",27.8270647995268
+"LongBench","LUAD","Downward Trend","ONT dRNA","Kallisto","0.5k-1k",27.3595534565292
+"LongBench","LUAD","Downward Trend","ONT dRNA","Kallisto","1k-1.5k",25.7152441692445
+"LongBench","LUAD","Downward Trend","ONT dRNA","Kallisto","1.5k-2k",26.0146311049431
+"LongBench","LUAD","Downward Trend","ONT dRNA","Kallisto","2k-2.5k",24.7520831003155
+"LongBench","LUAD","Downward Trend","ONT dRNA","Kallisto","2.5k-3k",24.7727174828603
+"LongBench","LUAD","Downward Trend","ONT dRNA","Kallisto","3k-3.5k",23.9025241475249
+"LongBench","LUAD","Downward Trend","ONT dRNA","Kallisto","3.5k-4k",23.5582982315717
+"LongBench","LUAD","Downward Trend","ONT dRNA","Kallisto","4k-4.5k",24.280299957048
+"LongBench","LUAD","Downward Trend","ONT dRNA","Kallisto","4.5k-5k",23.992842004656602
+"LongBench","LUAD","Downward Trend","ONT dRNA","Kallisto","5k+",23.2057629069357
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Kallisto","0k-0.5k",24.2630178474704
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Kallisto","0.5k-1k",24.505251962601
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Kallisto","1k-1.5k",23.4392843840504
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Kallisto","1.5k-2k",24.028446286849
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Kallisto","2k-2.5k",23.8417098254742
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Kallisto","2.5k-3k",23.0373478859019
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Kallisto","3k-3.5k",24.2826607248856
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Kallisto","3.5k-4k",24.4117535578954
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Kallisto","4k-4.5k",24.057874419014
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Kallisto","4.5k-5k",24.260969736505
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Kallisto","5k+",25.8140758874724
+"LongBench","LUAD","Downward Trend","ONT dRNA","Oarfish","0k-0.5k",18.1599344615909
+"LongBench","LUAD","Downward Trend","ONT dRNA","Oarfish","0.5k-1k",18.2359289485846
+"LongBench","LUAD","Downward Trend","ONT dRNA","Oarfish","1k-1.5k",16.8685417811881
+"LongBench","LUAD","Downward Trend","ONT dRNA","Oarfish","1.5k-2k",16.4923191845586
+"LongBench","LUAD","Downward Trend","ONT dRNA","Oarfish","2k-2.5k",15.703648460163
+"LongBench","LUAD","Downward Trend","ONT dRNA","Oarfish","2.5k-3k",15.3090382492961
+"LongBench","LUAD","Downward Trend","ONT dRNA","Oarfish","3k-3.5k",14.8451390041385
+"LongBench","LUAD","Downward Trend","ONT dRNA","Oarfish","3.5k-4k",14.696201774842
+"LongBench","LUAD","Downward Trend","ONT dRNA","Oarfish","4k-4.5k",15.0027365179882
+"LongBench","LUAD","Downward Trend","ONT dRNA","Oarfish","4.5k-5k",14.6211028122384
+"LongBench","LUAD","Downward Trend","ONT dRNA","Oarfish","5k+",13.6367712309409
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Oarfish","0k-0.5k",16.0507639043909
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Oarfish","0.5k-1k",15.0687625326831
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Oarfish","1k-1.5k",14.9161807832491
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Oarfish","1.5k-2k",14.9910351358146
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Oarfish","2k-2.5k",14.7998516515125
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Oarfish","2.5k-3k",14.3360684827658
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Oarfish","3k-3.5k",14.6098079078075
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Oarfish","3.5k-4k",14.810755328878
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Oarfish","4k-4.5k",14.6306864406722
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Oarfish","4.5k-5k",14.7323438951884
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","Oarfish","5k+",15.5371859125505
+"LongBench","LUAD","Downward Trend","ONT dRNA","FLAIR","0k-0.5k",8.15487018978206
+"LongBench","LUAD","Downward Trend","ONT dRNA","FLAIR","0.5k-1k",8.12200862121573
+"LongBench","LUAD","Downward Trend","ONT dRNA","FLAIR","1k-1.5k",8.08903091176273
+"LongBench","LUAD","Downward Trend","ONT dRNA","FLAIR","1.5k-2k",8.38675290397738
+"LongBench","LUAD","Downward Trend","ONT dRNA","FLAIR","2k-2.5k",8.26271431513304
+"LongBench","LUAD","Downward Trend","ONT dRNA","FLAIR","2.5k-3k",8.45947390339535
+"LongBench","LUAD","Downward Trend","ONT dRNA","FLAIR","3k-3.5k",8.31168487499933
+"LongBench","LUAD","Downward Trend","ONT dRNA","FLAIR","3.5k-4k",8.48670211768752
+"LongBench","LUAD","Downward Trend","ONT dRNA","FLAIR","4k-4.5k",8.36974765641056
+"LongBench","LUAD","Downward Trend","ONT dRNA","FLAIR","4.5k-5k",8.50588222495811
+"LongBench","LUAD","Downward Trend","ONT dRNA","FLAIR","5k+",8.34853778673324
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","FLAIR","0k-0.5k",7.38817496937527
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","FLAIR","0.5k-1k",6.57612807500854
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","FLAIR","1k-1.5k",6.71925797683817
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","FLAIR","1.5k-2k",7.0375662807712
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","FLAIR","2k-2.5k",7.16383425746159
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","FLAIR","2.5k-3k",7.34149180018228
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","FLAIR","3k-3.5k",7.5751507903226
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","FLAIR","3.5k-4k",7.70009185955076
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","FLAIR","4k-4.5k",7.65223921698777
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","FLAIR","4.5k-5k",7.67607881315765
+"LongBench","SCLC_A","Upward Trend","ONT dRNA","FLAIR","5k+",8.1159641044674
+"LongBench","LUAD","Downward Trend","Kinnex","IsoQuant","0k-0.5k",19.262870606938
+"LongBench","LUAD","Downward Trend","Kinnex","IsoQuant","0.5k-1k",20.8862344225444
+"LongBench","LUAD","Downward Trend","Kinnex","IsoQuant","1k-1.5k",18.1298884149339
+"LongBench","LUAD","Downward Trend","Kinnex","IsoQuant","1.5k-2k",17.1216622993364
+"LongBench","LUAD","Downward Trend","Kinnex","IsoQuant","2k-2.5k",15.5746560842986
+"LongBench","LUAD","Downward Trend","Kinnex","IsoQuant","2.5k-3k",14.9441677178056
+"LongBench","LUAD","Downward Trend","Kinnex","IsoQuant","3k-3.5k",14.7282361048368
+"LongBench","LUAD","Downward Trend","Kinnex","IsoQuant","3.5k-4k",14.8444126413146
+"LongBench","LUAD","Downward Trend","Kinnex","IsoQuant","4k-4.5k",15.4025791242513
+"LongBench","LUAD","Downward Trend","Kinnex","IsoQuant","4.5k-5k",16.3246211526907
+"LongBench","LUAD","Downward Trend","Kinnex","IsoQuant","5k+",18.5786485661932
+"LongBench","SCLC_A","Upward Trend","Kinnex","IsoQuant","0k-0.5k",6.62682687836402
+"LongBench","SCLC_A","Upward Trend","Kinnex","IsoQuant","0.5k-1k",7.7865379267545
+"LongBench","SCLC_A","Upward Trend","Kinnex","IsoQuant","1k-1.5k",10.9057415699746
+"LongBench","SCLC_A","Upward Trend","Kinnex","IsoQuant","1.5k-2k",12.5589753064475
+"LongBench","SCLC_A","Upward Trend","Kinnex","IsoQuant","2k-2.5k",12.6872970513956
+"LongBench","SCLC_A","Upward Trend","Kinnex","IsoQuant","2.5k-3k",12.4855534772325
+"LongBench","SCLC_A","Upward Trend","Kinnex","IsoQuant","3k-3.5k",12.7407533186267
+"LongBench","SCLC_A","Upward Trend","Kinnex","IsoQuant","3.5k-4k",13.1938274972704
+"LongBench","SCLC_A","Upward Trend","Kinnex","IsoQuant","4k-4.5k",13.8578385685175
+"LongBench","SCLC_A","Upward Trend","Kinnex","IsoQuant","4.5k-5k",14.7930855738893
+"LongBench","SCLC_A","Upward Trend","Kinnex","IsoQuant","5k+",18.0758240536179
+"LongBench","LUAD","Downward Trend","Kinnex","Bambu","0k-0.5k",13.1250314758809
+"LongBench","LUAD","Downward Trend","Kinnex","Bambu","0.5k-1k",20.6872838426639
+"LongBench","LUAD","Downward Trend","Kinnex","Bambu","1k-1.5k",20.316638452798
+"LongBench","LUAD","Downward Trend","Kinnex","Bambu","1.5k-2k",18.4048310267595
+"LongBench","LUAD","Downward Trend","Kinnex","Bambu","2k-2.5k",16.9330600132662
+"LongBench","LUAD","Downward Trend","Kinnex","Bambu","2.5k-3k",16.0379390858538
+"LongBench","LUAD","Downward Trend","Kinnex","Bambu","3k-3.5k",15.7153305208765
+"LongBench","LUAD","Downward Trend","Kinnex","Bambu","3.5k-4k",15.2188767118066
+"LongBench","LUAD","Downward Trend","Kinnex","Bambu","4k-4.5k",15.9203738299656
+"LongBench","LUAD","Downward Trend","Kinnex","Bambu","4.5k-5k",15.1803569580391
+"LongBench","LUAD","Downward Trend","Kinnex","Bambu","5k+",14.7326546798644
+"LongBench","SCLC_A","Upward Trend","Kinnex","Bambu","0k-0.5k",10.6256149206732
+"LongBench","SCLC_A","Upward Trend","Kinnex","Bambu","0.5k-1k",11.2985271737701
+"LongBench","SCLC_A","Upward Trend","Kinnex","Bambu","1k-1.5k",13.7595912279316
+"LongBench","SCLC_A","Upward Trend","Kinnex","Bambu","1.5k-2k",15.5493627765419
+"LongBench","SCLC_A","Upward Trend","Kinnex","Bambu","2k-2.5k",15.3719766641176
+"LongBench","SCLC_A","Upward Trend","Kinnex","Bambu","2.5k-3k",14.8966393613549
+"LongBench","SCLC_A","Upward Trend","Kinnex","Bambu","3k-3.5k",15.1954875350244
+"LongBench","SCLC_A","Upward Trend","Kinnex","Bambu","3.5k-4k",15.4278068833466
+"LongBench","SCLC_A","Upward Trend","Kinnex","Bambu","4k-4.5k",15.5607635995853
+"LongBench","SCLC_A","Upward Trend","Kinnex","Bambu","4.5k-5k",15.917687725401
+"LongBench","SCLC_A","Upward Trend","Kinnex","Bambu","5k+",18.8639954614638
+"LongBench","LUAD","Downward Trend","Kinnex","Kallisto","0k-0.5k",15.6046583307045
+"LongBench","LUAD","Downward Trend","Kinnex","Kallisto","0.5k-1k",24.455602571251
+"LongBench","LUAD","Downward Trend","Kinnex","Kallisto","1k-1.5k",21.7023804898165
+"LongBench","LUAD","Downward Trend","Kinnex","Kallisto","1.5k-2k",19.8567038897685
+"LongBench","LUAD","Downward Trend","Kinnex","Kallisto","2k-2.5k",18.4407603753467
+"LongBench","LUAD","Downward Trend","Kinnex","Kallisto","2.5k-3k",18.1910197790252
+"LongBench","LUAD","Downward Trend","Kinnex","Kallisto","3k-3.5k",17.7209775588034
+"LongBench","LUAD","Downward Trend","Kinnex","Kallisto","3.5k-4k",17.9156365613413
+"LongBench","LUAD","Downward Trend","Kinnex","Kallisto","4k-4.5k",18.1659909042156
+"LongBench","LUAD","Downward Trend","Kinnex","Kallisto","4.5k-5k",17.6596748094268
+"LongBench","LUAD","Downward Trend","Kinnex","Kallisto","5k+",16.682158250529
+"LongBench","SCLC_A","Upward Trend","Kinnex","Kallisto","0k-0.5k",10.7857640145217
+"LongBench","SCLC_A","Upward Trend","Kinnex","Kallisto","0.5k-1k",12.2039498547099
+"LongBench","SCLC_A","Upward Trend","Kinnex","Kallisto","1k-1.5k",14.577879396459
+"LongBench","SCLC_A","Upward Trend","Kinnex","Kallisto","1.5k-2k",16.8028244937645
+"LongBench","SCLC_A","Upward Trend","Kinnex","Kallisto","2k-2.5k",16.8460496672678
+"LongBench","SCLC_A","Upward Trend","Kinnex","Kallisto","2.5k-3k",17.0062533071063
+"LongBench","SCLC_A","Upward Trend","Kinnex","Kallisto","3k-3.5k",17.6538966238287
+"LongBench","SCLC_A","Upward Trend","Kinnex","Kallisto","3.5k-4k",18.0583060756181
+"LongBench","SCLC_A","Upward Trend","Kinnex","Kallisto","4k-4.5k",18.2571439689086
+"LongBench","SCLC_A","Upward Trend","Kinnex","Kallisto","4.5k-5k",18.8121452676928
+"LongBench","SCLC_A","Upward Trend","Kinnex","Kallisto","5k+",21.422743992078
+"LongBench","LUAD","Downward Trend","Kinnex","Oarfish","0k-0.5k",7.39247327515222
+"LongBench","LUAD","Downward Trend","Kinnex","Oarfish","0.5k-1k",12.9286809601123
+"LongBench","LUAD","Downward Trend","Kinnex","Oarfish","1k-1.5k",14.1568779702416
+"LongBench","LUAD","Downward Trend","Kinnex","Oarfish","1.5k-2k",13.6154912052863
+"LongBench","LUAD","Downward Trend","Kinnex","Oarfish","2k-2.5k",12.6637025065433
+"LongBench","LUAD","Downward Trend","Kinnex","Oarfish","2.5k-3k",12.0629396873586
+"LongBench","LUAD","Downward Trend","Kinnex","Oarfish","3k-3.5k",11.7294597311805
+"LongBench","LUAD","Downward Trend","Kinnex","Oarfish","3.5k-4k",11.4262157054987
+"LongBench","LUAD","Downward Trend","Kinnex","Oarfish","4k-4.5k",11.7924972845604
+"LongBench","LUAD","Downward Trend","Kinnex","Oarfish","4.5k-5k",11.2592146652408
+"LongBench","LUAD","Downward Trend","Kinnex","Oarfish","5k+",10.6269691181692
+"LongBench","SCLC_A","Upward Trend","Kinnex","Oarfish","0k-0.5k",8.41878370413377
+"LongBench","SCLC_A","Upward Trend","Kinnex","Oarfish","0.5k-1k",8.56886257352821
+"LongBench","SCLC_A","Upward Trend","Kinnex","Oarfish","1k-1.5k",10.2880525500551
+"LongBench","SCLC_A","Upward Trend","Kinnex","Oarfish","1.5k-2k",11.5837495928993
+"LongBench","SCLC_A","Upward Trend","Kinnex","Oarfish","2k-2.5k",11.3888965733675
+"LongBench","SCLC_A","Upward Trend","Kinnex","Oarfish","2.5k-3k",11.2267649427461
+"LongBench","SCLC_A","Upward Trend","Kinnex","Oarfish","3k-3.5k",11.4131772758573
+"LongBench","SCLC_A","Upward Trend","Kinnex","Oarfish","3.5k-4k",11.2656557030276
+"LongBench","SCLC_A","Upward Trend","Kinnex","Oarfish","4k-4.5k",11.4877264847471
+"LongBench","SCLC_A","Upward Trend","Kinnex","Oarfish","4.5k-5k",11.7664040950861
+"LongBench","SCLC_A","Upward Trend","Kinnex","Oarfish","5k+",13.1495907280922
+"LongBench","LUAD","Downward Trend","Kinnex","FLAIR","0k-0.5k",3.07369740326547
+"LongBench","LUAD","Downward Trend","Kinnex","FLAIR","0.5k-1k",2.56838061906154
+"LongBench","LUAD","Downward Trend","Kinnex","FLAIR","1k-1.5k",2.45747612810135
+"LongBench","LUAD","Downward Trend","Kinnex","FLAIR","1.5k-2k",2.73647456780091
+"LongBench","LUAD","Downward Trend","Kinnex","FLAIR","2k-2.5k",3.04059072564965
+"LongBench","LUAD","Downward Trend","Kinnex","FLAIR","2.5k-3k",3.286348072257
+"LongBench","LUAD","Downward Trend","Kinnex","FLAIR","3k-3.5k",3.52193727854064
+"LongBench","LUAD","Downward Trend","Kinnex","FLAIR","3.5k-4k",3.84745954266836
+"LongBench","LUAD","Downward Trend","Kinnex","FLAIR","4k-4.5k",4.08978952407672
+"LongBench","LUAD","Downward Trend","Kinnex","FLAIR","4.5k-5k",4.33838762760835
+"LongBench","LUAD","Downward Trend","Kinnex","FLAIR","5k+",4.82990049249486
+"LongBench","SCLC_A","Upward Trend","Kinnex","FLAIR","0k-0.5k",1.78064408809519
+"LongBench","SCLC_A","Upward Trend","Kinnex","FLAIR","0.5k-1k",1.6880614655882
+"LongBench","SCLC_A","Upward Trend","Kinnex","FLAIR","1k-1.5k",1.97738458448175
+"LongBench","SCLC_A","Upward Trend","Kinnex","FLAIR","1.5k-2k",2.34724330999634
+"LongBench","SCLC_A","Upward Trend","Kinnex","FLAIR","2k-2.5k",2.60364225078282
+"LongBench","SCLC_A","Upward Trend","Kinnex","FLAIR","2.5k-3k",2.80499761739207
+"LongBench","SCLC_A","Upward Trend","Kinnex","FLAIR","3k-3.5k",3.04612063681981
+"LongBench","SCLC_A","Upward Trend","Kinnex","FLAIR","3.5k-4k",3.20600422941301
+"LongBench","SCLC_A","Upward Trend","Kinnex","FLAIR","4k-4.5k",3.44090352653859
+"LongBench","SCLC_A","Upward Trend","Kinnex","FLAIR","4.5k-5k",3.55789461199343
+"LongBench","SCLC_A","Upward Trend","Kinnex","FLAIR","5k+",3.96543856911587

@@ -1,0 +1,16 @@
+﻿"Dataset","Set","Number of UJCs"
+"LongBench","Kinnex Bambu",51689
+"LongBench","Kinnex FLAIR",179053
+"LongBench","Kinnex IsoQuant",41423
+"LongBench","Kinnex Kallisto",46633
+"LongBench","Kinnex Oarfish",73255
+"LongBench","ONT cDNA Bambu",30347
+"LongBench","ONT cDNA FLAIR",71779
+"LongBench","ONT cDNA IsoQuant",28225
+"LongBench","ONT cDNA Kallisto",28721
+"LongBench","ONT cDNA Oarfish",43460
+"LongBench","ONT dRNA Bambu",42174
+"LongBench","ONT dRNA FLAIR",118115
+"LongBench","ONT dRNA IsoQuant",35811
+"LongBench","ONT dRNA Kallisto",34947
+"LongBench","ONT dRNA Oarfish",58015

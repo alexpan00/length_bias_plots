@@ -1,0 +1,16 @@
+﻿"Dataset","Set","Number of UJCs"
+"Mouse","ONT cDNA Bambu",16878
+"Mouse","ONT cDNA FLAIR",26409
+"Mouse","ONT cDNA IsoQuant",15716
+"Mouse","ONT cDNA Kallisto",13779
+"Mouse","ONT cDNA Oarfish",19365
+"Mouse","Kinnex Bambu",50424
+"Mouse","Kinnex FLAIR",137662
+"Mouse","Kinnex IsoQuant",56226
+"Mouse","Kinnex Kallisto",48715
+"Mouse","Kinnex Oarfish",61810
+"Mouse","Iso-Seq Bambu",25457
+"Mouse","Iso-Seq FLAIR",42782
+"Mouse","Iso-Seq IsoQuant",25153
+"Mouse","Iso-Seq Kallisto",23706
+"Mouse","Iso-Seq Oarfish",28869

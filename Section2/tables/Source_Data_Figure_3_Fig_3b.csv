@@ -1,0 +1,826 @@
+﻿"Dataset","Condition","Platform","Tool","Normalization","Length bin","Mean normalized expression"
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CPM","0k-0.5k",20.2735974972675
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CPM","0.5k-1k",24.0875392740927
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CPM","1k-1.5k",11.2368279314197
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CPM","1.5k-2k",8.1153132707072
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CPM","2k-2.5k",6.39320169642706
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CPM","2.5k-3k",5.46391627538944
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CPM","3k-3.5k",4.57669026310477
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CPM","3.5k-4k",4.17449961432119
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CPM","4k-4.5k",4.96340647769124
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CPM","4.5k-5k",4.64796569332465
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CPM","5k+",4.01682742063382
+"LongBench","SCLC_A","ONT cDNA","Bambu","CPM","0k-0.5k",40.3787116241631
+"LongBench","SCLC_A","ONT cDNA","Bambu","CPM","0.5k-1k",39.2116357589614
+"LongBench","SCLC_A","ONT cDNA","Bambu","CPM","1k-1.5k",14.8484693117326
+"LongBench","SCLC_A","ONT cDNA","Bambu","CPM","1.5k-2k",8.52579066577111
+"LongBench","SCLC_A","ONT cDNA","Bambu","CPM","2k-2.5k",6.30077984089078
+"LongBench","SCLC_A","ONT cDNA","Bambu","CPM","2.5k-3k",4.52630233764934
+"LongBench","SCLC_A","ONT cDNA","Bambu","CPM","3k-3.5k",3.56036527685663
+"LongBench","SCLC_A","ONT cDNA","Bambu","CPM","3.5k-4k",2.86219773717662
+"LongBench","SCLC_A","ONT cDNA","Bambu","CPM","4k-4.5k",3.18964211584548
+"LongBench","SCLC_A","ONT cDNA","Bambu","CPM","4.5k-5k",2.72615095304524
+"LongBench","SCLC_A","ONT cDNA","Bambu","CPM","5k+",2.24741490598386
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CPM","0k-0.5k",59.354282218265
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CPM","0.5k-1k",44.9460788953174
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CPM","1k-1.5k",17.6175389131
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CPM","1.5k-2k",10.2680202733538
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CPM","2k-2.5k",7.6617352582415
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CPM","2.5k-3k",5.89830436385306
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CPM","3k-3.5k",4.98096969978173
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CPM","3.5k-4k",3.97453113781611
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CPM","4k-4.5k",4.65526542652641
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CPM","4.5k-5k",3.86530484624554
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CPM","5k+",3.24283528681036
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CPM","0k-0.5k",37.8466656171327
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CPM","0.5k-1k",32.4837497150358
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CPM","1k-1.5k",11.799583985383
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CPM","1.5k-2k",6.51288817446844
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CPM","2k-2.5k",4.27300230455088
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CPM","2.5k-3k",3.12445797756623
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CPM","3k-3.5k",2.52387020955629
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CPM","3.5k-4k",2.18342817188703
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CPM","4k-4.5k",2.24927658803617
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CPM","4.5k-5k",1.89771568237694
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CPM","5k+",1.65013157497179
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CPM","0k-0.5k",2.43892082713481
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CPM","0.5k-1k",3.33049125152157
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CPM","1k-1.5k",2.41186058439712
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CPM","1.5k-2k",2.24545085705165
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CPM","2k-2.5k",2.16542363947421
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CPM","2.5k-3k",2.36892738755563
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CPM","3k-3.5k",2.61864108828162
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CPM","3.5k-4k",2.45405593609233
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CPM","4k-4.5k",3.03998312815696
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CPM","4.5k-5k",3.01175664979263
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CPM","5k+",2.82337056745299
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","TPM","0k-0.5k",42.4275406371079
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","TPM","0.5k-1k",21.188173622129298
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","TPM","1k-1.5k",5.92030533902171
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","TPM","1.5k-2k",3.0415222581279
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","TPM","2k-2.5k",1.84595283080965
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","TPM","2.5k-3k",1.29634342583211
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","TPM","3k-3.5k",0.909303007652207
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","TPM","3.5k-4k",0.718315064603739
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","TPM","4k-4.5k",0.752067866853166
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","TPM","4.5k-5k",0.627909223883101
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","TPM","5k+",0.377506534015252
+"LongBench","SCLC_A","ONT cDNA","Bambu","TPM","0k-0.5k",110.088215387614
+"LongBench","SCLC_A","ONT cDNA","Bambu","TPM","0.5k-1k",47.4097439973625
+"LongBench","SCLC_A","ONT cDNA","Bambu","TPM","1k-1.5k",10.6355916308733
+"LongBench","SCLC_A","ONT cDNA","Bambu","TPM","1.5k-2k",4.3366846900375
+"LongBench","SCLC_A","ONT cDNA","Bambu","TPM","2k-2.5k",2.48326468696486
+"LongBench","SCLC_A","ONT cDNA","Bambu","TPM","2.5k-3k",1.46107943391051
+"LongBench","SCLC_A","ONT cDNA","Bambu","TPM","3k-3.5k",0.965172226936717
+"LongBench","SCLC_A","ONT cDNA","Bambu","TPM","3.5k-4k",0.672863956107508
+"LongBench","SCLC_A","ONT cDNA","Bambu","TPM","4k-4.5k",0.660483849050433
+"LongBench","SCLC_A","ONT cDNA","Bambu","TPM","4.5k-5k",0.504675483207538
+"LongBench","SCLC_A","ONT cDNA","Bambu","TPM","5k+",0.274510112833108
+"LongBench","SCLC_A","ONT cDNA","Kallisto","TPM","0k-0.5k",163.211702880427
+"LongBench","SCLC_A","ONT cDNA","Kallisto","TPM","0.5k-1k",54.9769789137637
+"LongBench","SCLC_A","ONT cDNA","Kallisto","TPM","1k-1.5k",12.891197892462
+"LongBench","SCLC_A","ONT cDNA","Kallisto","TPM","1.5k-2k",5.34957373172477
+"LongBench","SCLC_A","ONT cDNA","Kallisto","TPM","2k-2.5k",3.09490715729143
+"LongBench","SCLC_A","ONT cDNA","Kallisto","TPM","2.5k-3k",1.94844406568834
+"LongBench","SCLC_A","ONT cDNA","Kallisto","TPM","3k-3.5k",1.38450301525514
+"LongBench","SCLC_A","ONT cDNA","Kallisto","TPM","3.5k-4k",0.959493510612304
+"LongBench","SCLC_A","ONT cDNA","Kallisto","TPM","4k-4.5k",0.98773164968066
+"LongBench","SCLC_A","ONT cDNA","Kallisto","TPM","4.5k-5k",0.735978810820185
+"LongBench","SCLC_A","ONT cDNA","Kallisto","TPM","5k+",0.40511555090073
+"LongBench","SCLC_A","ONT cDNA","Oarfish","TPM","0k-0.5k",116.334868921637
+"LongBench","SCLC_A","ONT cDNA","Oarfish","TPM","0.5k-1k",35.1395312722301
+"LongBench","SCLC_A","ONT cDNA","Oarfish","TPM","1k-1.5k",7.63619524179056
+"LongBench","SCLC_A","ONT cDNA","Oarfish","TPM","1.5k-2k",2.99802945671554
+"LongBench","SCLC_A","ONT cDNA","Oarfish","TPM","2k-2.5k",1.52734594206621
+"LongBench","SCLC_A","ONT cDNA","Oarfish","TPM","2.5k-3k",0.914006989934286
+"LongBench","SCLC_A","ONT cDNA","Oarfish","TPM","3k-3.5k",0.621846295335439
+"LongBench","SCLC_A","ONT cDNA","Oarfish","TPM","3.5k-4k",0.465091600349336
+"LongBench","SCLC_A","ONT cDNA","Oarfish","TPM","4k-4.5k",0.42264450498323
+"LongBench","SCLC_A","ONT cDNA","Oarfish","TPM","4.5k-5k",0.318971298618595
+"LongBench","SCLC_A","ONT cDNA","Oarfish","TPM","5k+",0.176594772553705
+"LongBench","SCLC_A","ONT cDNA","FLAIR","TPM","0k-0.5k",5.6758602320786
+"LongBench","SCLC_A","ONT cDNA","FLAIR","TPM","0.5k-1k",3.06019004694686
+"LongBench","SCLC_A","ONT cDNA","FLAIR","TPM","1k-1.5k",1.32869880493156
+"LongBench","SCLC_A","ONT cDNA","FLAIR","TPM","1.5k-2k",0.883557484117819
+"LongBench","SCLC_A","ONT cDNA","FLAIR","TPM","2k-2.5k",0.66158880344038
+"LongBench","SCLC_A","ONT cDNA","FLAIR","TPM","2.5k-3k",0.592698349099928
+"LongBench","SCLC_A","ONT cDNA","FLAIR","TPM","3k-3.5k",0.552635636028708
+"LongBench","SCLC_A","ONT cDNA","FLAIR","TPM","3.5k-4k",0.446014385160761
+"LongBench","SCLC_A","ONT cDNA","FLAIR","TPM","4k-4.5k",0.486364776428653
+"LongBench","SCLC_A","ONT cDNA","FLAIR","TPM","4.5k-5k",0.430675133086587
+"LongBench","SCLC_A","ONT cDNA","FLAIR","TPM","5k+",0.276392337854283
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","EDASeq","0k-0.5k",21.1255797845243
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","EDASeq","0.5k-1k",22.1059929993438
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","EDASeq","1k-1.5k",11.0683395498997
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","EDASeq","1.5k-2k",8.87017441985082
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","EDASeq","2k-2.5k",7.53011023952082
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","EDASeq","2.5k-3k",6.78705717750807
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","EDASeq","3k-3.5k",5.90156911709548
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","EDASeq","3.5k-4k",5.49361526443769
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","EDASeq","4k-4.5k",6.58621555564877
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","EDASeq","4.5k-5k",6.2161869900735
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","EDASeq","5k+",5.59324275295169
+"LongBench","SCLC_A","ONT cDNA","Bambu","EDASeq","0k-0.5k",28.6272214408624
+"LongBench","SCLC_A","ONT cDNA","Bambu","EDASeq","0.5k-1k",27.3355427823038
+"LongBench","SCLC_A","ONT cDNA","Bambu","EDASeq","1k-1.5k",12.7426612946404
+"LongBench","SCLC_A","ONT cDNA","Bambu","EDASeq","1.5k-2k",9.28027013307412
+"LongBench","SCLC_A","ONT cDNA","Bambu","EDASeq","2k-2.5k",8.32639890574376
+"LongBench","SCLC_A","ONT cDNA","Bambu","EDASeq","2.5k-3k",6.91857186854827
+"LongBench","SCLC_A","ONT cDNA","Bambu","EDASeq","3k-3.5k",6.03557215454619
+"LongBench","SCLC_A","ONT cDNA","Bambu","EDASeq","3.5k-4k",5.1880504536872
+"LongBench","SCLC_A","ONT cDNA","Bambu","EDASeq","4k-4.5k",6.05775406807678
+"LongBench","SCLC_A","ONT cDNA","Bambu","EDASeq","4.5k-5k",5.36239322627514
+"LongBench","SCLC_A","ONT cDNA","Bambu","EDASeq","5k+",4.83893593369599
+"LongBench","SCLC_A","ONT cDNA","Kallisto","EDASeq","0k-0.5k",47.2289281902302
+"LongBench","SCLC_A","ONT cDNA","Kallisto","EDASeq","0.5k-1k",33.8883838697655
+"LongBench","SCLC_A","ONT cDNA","Kallisto","EDASeq","1k-1.5k",15.2876311856162
+"LongBench","SCLC_A","ONT cDNA","Kallisto","EDASeq","1.5k-2k",10.7478995818902
+"LongBench","SCLC_A","ONT cDNA","Kallisto","EDASeq","2k-2.5k",9.26141301590798
+"LongBench","SCLC_A","ONT cDNA","Kallisto","EDASeq","2.5k-3k",7.89356659439365
+"LongBench","SCLC_A","ONT cDNA","Kallisto","EDASeq","3k-3.5k",7.1244265607472
+"LongBench","SCLC_A","ONT cDNA","Kallisto","EDASeq","3.5k-4k",5.97898084599156
+"LongBench","SCLC_A","ONT cDNA","Kallisto","EDASeq","4k-4.5k",7.32573611524421
+"LongBench","SCLC_A","ONT cDNA","Kallisto","EDASeq","4.5k-5k",6.30976121643033
+"LongBench","SCLC_A","ONT cDNA","Kallisto","EDASeq","5k+",6.00288046469624
+"LongBench","SCLC_A","ONT cDNA","Oarfish","EDASeq","0k-0.5k",31.5029072968521
+"LongBench","SCLC_A","ONT cDNA","Oarfish","EDASeq","0.5k-1k",22.9025963548052
+"LongBench","SCLC_A","ONT cDNA","Oarfish","EDASeq","1k-1.5k",9.86499140285677
+"LongBench","SCLC_A","ONT cDNA","Oarfish","EDASeq","1.5k-2k",6.91905711366211
+"LongBench","SCLC_A","ONT cDNA","Oarfish","EDASeq","2k-2.5k",5.57565704054162
+"LongBench","SCLC_A","ONT cDNA","Oarfish","EDASeq","2.5k-3k",4.71194528894667
+"LongBench","SCLC_A","ONT cDNA","Oarfish","EDASeq","3k-3.5k",4.20613310154621
+"LongBench","SCLC_A","ONT cDNA","Oarfish","EDASeq","3.5k-4k",3.88404819068289
+"LongBench","SCLC_A","ONT cDNA","Oarfish","EDASeq","4k-4.5k",4.2020596480046
+"LongBench","SCLC_A","ONT cDNA","Oarfish","EDASeq","4.5k-5k",3.67327737459666
+"LongBench","SCLC_A","ONT cDNA","Oarfish","EDASeq","5k+",3.3777268803178
+"LongBench","SCLC_A","ONT cDNA","FLAIR","EDASeq","0k-0.5k",2.64597321293143
+"LongBench","SCLC_A","ONT cDNA","FLAIR","EDASeq","0.5k-1k",3.26464025634926
+"LongBench","SCLC_A","ONT cDNA","FLAIR","EDASeq","1k-1.5k",2.40008650347386
+"LongBench","SCLC_A","ONT cDNA","FLAIR","EDASeq","1.5k-2k",2.19507033288496
+"LongBench","SCLC_A","ONT cDNA","FLAIR","EDASeq","2k-2.5k",1.98619972137739
+"LongBench","SCLC_A","ONT cDNA","FLAIR","EDASeq","2.5k-3k",2.0214273870339
+"LongBench","SCLC_A","ONT cDNA","FLAIR","EDASeq","3k-3.5k",2.11105394312363
+"LongBench","SCLC_A","ONT cDNA","FLAIR","EDASeq","3.5k-4k",1.88238632509863
+"LongBench","SCLC_A","ONT cDNA","FLAIR","EDASeq","4k-4.5k",2.2479222921344
+"LongBench","SCLC_A","ONT cDNA","FLAIR","EDASeq","4.5k-5k",2.13776150488546
+"LongBench","SCLC_A","ONT cDNA","FLAIR","EDASeq","5k+",1.80795646632004
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CQN","0k-0.5k",10.6395972728169
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CQN","0.5k-1k",12.7122117969278
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CQN","1k-1.5k",6.58650678156247
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CQN","1.5k-2k",5.76618039864211
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CQN","2k-2.5k",5.18806109659796
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CQN","2.5k-3k",4.99795179379654
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CQN","3k-3.5k",4.72249603646428
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CQN","3.5k-4k",4.45089086488744
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CQN","4k-4.5k",5.22684529138207
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CQN","4.5k-5k",4.92281004365792
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","CQN","5k+",4.83473875490015
+"LongBench","SCLC_A","ONT cDNA","Bambu","CQN","0k-0.5k",28.0305743722476
+"LongBench","SCLC_A","ONT cDNA","Bambu","CQN","0.5k-1k",24.7389602621432
+"LongBench","SCLC_A","ONT cDNA","Bambu","CQN","1k-1.5k",10.0813766455955
+"LongBench","SCLC_A","ONT cDNA","Bambu","CQN","1.5k-2k",7.19995274409609
+"LongBench","SCLC_A","ONT cDNA","Bambu","CQN","2k-2.5k",6.50346058014723
+"LongBench","SCLC_A","ONT cDNA","Bambu","CQN","2.5k-3k",5.75648287318534
+"LongBench","SCLC_A","ONT cDNA","Bambu","CQN","3k-3.5k",5.25551807375748
+"LongBench","SCLC_A","ONT cDNA","Bambu","CQN","3.5k-4k",4.65616107755585
+"LongBench","SCLC_A","ONT cDNA","Bambu","CQN","4k-4.5k",5.44929473381836
+"LongBench","SCLC_A","ONT cDNA","Bambu","CQN","4.5k-5k",4.96952112037655
+"LongBench","SCLC_A","ONT cDNA","Bambu","CQN","5k+",4.26028821722636
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CQN","0k-0.5k",32.2736700757378
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CQN","0.5k-1k",28.5440003627123
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CQN","1k-1.5k",13.6009443987875
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CQN","1.5k-2k",9.95107040698825
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CQN","2k-2.5k",8.92393048293602
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CQN","2.5k-3k",8.15072896426922
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CQN","3k-3.5k",7.74963515190405
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CQN","3.5k-4k",6.684714764935
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CQN","4k-4.5k",8.11477227035592
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CQN","4.5k-5k",7.18125719708426
+"LongBench","SCLC_A","ONT cDNA","Kallisto","CQN","5k+",6.37792569096087
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CQN","0k-0.5k",29.4370236098877
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CQN","0.5k-1k",22.7659432398942
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CQN","1k-1.5k",10.1693878691084
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CQN","1.5k-2k",6.96869739861157
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CQN","2k-2.5k",5.32448914507462
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CQN","2.5k-3k",4.50055060887219
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CQN","3k-3.5k",4.00903617846663
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CQN","3.5k-4k",3.71980816950011
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CQN","4k-4.5k",3.96549024559517
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CQN","4.5k-5k",3.56629719707849
+"LongBench","SCLC_A","ONT cDNA","Oarfish","CQN","5k+",3.13039231662369
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CQN","0k-0.5k",2.08477774950799
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CQN","0.5k-1k",2.38450734052837
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CQN","1k-1.5k",1.98890049027983
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CQN","1.5k-2k",1.93131660048094
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CQN","2k-2.5k",1.95555360541388
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CQN","2.5k-3k",2.1911490625782
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CQN","3k-3.5k",2.67853563857578
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CQN","3.5k-4k",2.56980971164662
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CQN","4k-4.5k",3.15251869874427
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CQN","4.5k-5k",3.0838010301706
+"LongBench","SCLC_A","ONT cDNA","FLAIR","CQN","5k+",3.00049958980472
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","SMR","0k-0.5k",35.8213424715154
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","SMR","0.5k-1k",37.3057523317274
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","SMR","1k-1.5k",34.460921430947
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","SMR","1.5k-2k",32.9310799184306
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","SMR","2k-2.5k",31.0415397205536
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","SMR","2.5k-3k",29.3314933735012
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","SMR","3k-3.5k",29.7740083190091
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","SMR","3.5k-4k",29.7811997009138
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","SMR","4k-4.5k",29.8303769825843
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","SMR","4.5k-5k",32.5476519158225
+"LongBench","SCLC_A","ONT cDNA","IsoQuant","SMR","5k+",31.9193942225658
+"LongBench","SCLC_A","ONT cDNA","Bambu","SMR","0k-0.5k",38.8525100010941
+"LongBench","SCLC_A","ONT cDNA","Bambu","SMR","0.5k-1k",34.497403173326
+"LongBench","SCLC_A","ONT cDNA","Bambu","SMR","1k-1.5k",30.2915564703969
+"LongBench","SCLC_A","ONT cDNA","Bambu","SMR","1.5k-2k",27.0947667003835
+"LongBench","SCLC_A","ONT cDNA","Bambu","SMR","2k-2.5k",24.9641225083241
+"LongBench","SCLC_A","ONT cDNA","Bambu","SMR","2.5k-3k",23.0903137847251
+"LongBench","SCLC_A","ONT cDNA","Bambu","SMR","3k-3.5k",22.8614378841908
+"LongBench","SCLC_A","ONT cDNA","Bambu","SMR","3.5k-4k",21.7522996325615
+"LongBench","SCLC_A","ONT cDNA","Bambu","SMR","4k-4.5k",21.5795476792136
+"LongBench","SCLC_A","ONT cDNA","Bambu","SMR","4.5k-5k",21.6293479980453
+"LongBench","SCLC_A","ONT cDNA","Bambu","SMR","5k+",21.6637635915226
+"LongBench","SCLC_A","ONT cDNA","Kallisto","SMR","0k-0.5k",33.0217869192245
+"LongBench","SCLC_A","ONT cDNA","Kallisto","SMR","0.5k-1k",32.8035703659722
+"LongBench","SCLC_A","ONT cDNA","Kallisto","SMR","1k-1.5k",30.9570686540925
+"LongBench","SCLC_A","ONT cDNA","Kallisto","SMR","1.5k-2k",29.3629449428725
+"LongBench","SCLC_A","ONT cDNA","Kallisto","SMR","2k-2.5k",27.9020477082193
+"LongBench","SCLC_A","ONT cDNA","Kallisto","SMR","2.5k-3k",26.8155875182837
+"LongBench","SCLC_A","ONT cDNA","Kallisto","SMR","3k-3.5k",26.9097951157964
+"LongBench","SCLC_A","ONT cDNA","Kallisto","SMR","3.5k-4k",25.7026907852366
+"LongBench","SCLC_A","ONT cDNA","Kallisto","SMR","4k-4.5k",25.9196426423375
+"LongBench","SCLC_A","ONT cDNA","Kallisto","SMR","4.5k-5k",25.5782301275815
+"LongBench","SCLC_A","ONT cDNA","Kallisto","SMR","5k+",25.778081686291902
+"LongBench","SCLC_A","ONT cDNA","Oarfish","SMR","0k-0.5k",23.641029525324
+"LongBench","SCLC_A","ONT cDNA","Oarfish","SMR","0.5k-1k",24.2811236358579
+"LongBench","SCLC_A","ONT cDNA","Oarfish","SMR","1k-1.5k",22.7305343424919
+"LongBench","SCLC_A","ONT cDNA","Oarfish","SMR","1.5k-2k",20.4953991519681
+"LongBench","SCLC_A","ONT cDNA","Oarfish","SMR","2k-2.5k",18.8833658661568
+"LongBench","SCLC_A","ONT cDNA","Oarfish","SMR","2.5k-3k",16.9388815693067
+"LongBench","SCLC_A","ONT cDNA","Oarfish","SMR","3k-3.5k",16.6701510453302
+"LongBench","SCLC_A","ONT cDNA","Oarfish","SMR","3.5k-4k",16.2241121069615
+"LongBench","SCLC_A","ONT cDNA","Oarfish","SMR","4k-4.5k",15.4472840804007
+"LongBench","SCLC_A","ONT cDNA","Oarfish","SMR","4.5k-5k",15.3205643881906
+"LongBench","SCLC_A","ONT cDNA","Oarfish","SMR","5k+",15.9441350285158
+"LongBench","SCLC_A","ONT cDNA","FLAIR","SMR","0k-0.5k",11.115308594651
+"LongBench","SCLC_A","ONT cDNA","FLAIR","SMR","0.5k-1k",10.6619762426156
+"LongBench","SCLC_A","ONT cDNA","FLAIR","SMR","1k-1.5k",10.6519720254385
+"LongBench","SCLC_A","ONT cDNA","FLAIR","SMR","1.5k-2k",10.5588463506728
+"LongBench","SCLC_A","ONT cDNA","FLAIR","SMR","2k-2.5k",10.6974017608611
+"LongBench","SCLC_A","ONT cDNA","FLAIR","SMR","2.5k-3k",11.3308224379225
+"LongBench","SCLC_A","ONT cDNA","FLAIR","SMR","3k-3.5k",11.1908899060364
+"LongBench","SCLC_A","ONT cDNA","FLAIR","SMR","3.5k-4k",10.8122976499658
+"LongBench","SCLC_A","ONT cDNA","FLAIR","SMR","4k-4.5k",11.0542607220449
+"LongBench","SCLC_A","ONT cDNA","FLAIR","SMR","4.5k-5k",11.498179097709
+"LongBench","SCLC_A","ONT cDNA","FLAIR","SMR","5k+",11.9472424179228
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CPM","0k-0.5k",60.7631426195646
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CPM","0.5k-1k",34.6505296226307
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CPM","1k-1.5k",19.3306232771617
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CPM","1.5k-2k",16.170802176117
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CPM","2k-2.5k",14.0377468007026
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CPM","2.5k-3k",12.0452283495859
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CPM","3k-3.5k",10.6616711428995
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CPM","3.5k-4k",10.1322554987071
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CPM","4k-4.5k",9.68863186661356
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CPM","4.5k-5k",8.59010438815037
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CPM","5k+",7.88135290272615
+"LongBench","SCLC_A","ONT dRNA","Bambu","CPM","0k-0.5k",30.0363392415479
+"LongBench","SCLC_A","ONT dRNA","Bambu","CPM","0.5k-1k",25.567530478701
+"LongBench","SCLC_A","ONT dRNA","Bambu","CPM","1k-1.5k",14.420229356399
+"LongBench","SCLC_A","ONT dRNA","Bambu","CPM","1.5k-2k",12.1750435768001
+"LongBench","SCLC_A","ONT dRNA","Bambu","CPM","2k-2.5k",10.8419869781647
+"LongBench","SCLC_A","ONT dRNA","Bambu","CPM","2.5k-3k",9.22468709604957
+"LongBench","SCLC_A","ONT dRNA","Bambu","CPM","3k-3.5k",8.72189672953425
+"LongBench","SCLC_A","ONT dRNA","Bambu","CPM","3.5k-4k",7.96785562045132
+"LongBench","SCLC_A","ONT dRNA","Bambu","CPM","4k-4.5k",8.14487353453344
+"LongBench","SCLC_A","ONT dRNA","Bambu","CPM","4.5k-5k",7.5806022174495
+"LongBench","SCLC_A","ONT dRNA","Bambu","CPM","5k+",7.22276941959628
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CPM","0k-0.5k",38.0549069363412
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CPM","0.5k-1k",37.0130276504878
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CPM","1k-1.5k",19.5415183682085
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CPM","1.5k-2k",15.7818772570429
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CPM","2k-2.5k",13.4816184402177
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CPM","2.5k-3k",11.7369935890786
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CPM","3k-3.5k",10.7127697981875
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CPM","3.5k-4k",9.83519254692866
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CPM","4k-4.5k",9.99361222329023
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CPM","4.5k-5k",9.16745733688618
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CPM","5k+",8.68462973635684
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CPM","0k-0.5k",24.8716935354587
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CPM","0.5k-1k",20.9080648586299
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CPM","1k-1.5k",11.3573939793216
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CPM","1.5k-2k",9.28256568094621
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CPM","2k-2.5k",7.89125277415065
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CPM","2.5k-3k",6.53713309135609
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CPM","3k-3.5k",6.17353057531805
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CPM","3.5k-4k",5.76066636373413
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CPM","4k-4.5k",5.74200716257645
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CPM","4.5k-5k",5.32091451972749
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CPM","5k+",4.75131974269221
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CPM","0k-0.5k",7.17256016792546
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CPM","0.5k-1k",5.82145132142573
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CPM","1k-1.5k",3.60327107925047
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CPM","1.5k-2k",3.43704395328384
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CPM","2k-2.5k",3.02185889383867
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CPM","2.5k-3k",2.83487629679098
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CPM","3k-3.5k",2.68704106346702
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CPM","3.5k-4k",2.6769761595294
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CPM","4k-4.5k",2.66386484974931
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CPM","4.5k-5k",2.50405696378058
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CPM","5k+",2.46962205254643
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","TPM","0k-0.5k",218.890378990718
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","TPM","0.5k-1k",54.300797337363
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","TPM","1k-1.5k",18.0285591963887
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","TPM","1.5k-2k",10.7358552945712
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","TPM","2k-2.5k",7.20235731817658
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","TPM","2.5k-3k",5.07225746683964
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","TPM","3k-3.5k",3.7868138850827
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","TPM","3.5k-4k",3.11431386274352
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","TPM","4k-4.5k",2.62978237614705
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","TPM","4.5k-5k",2.08738086850394
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","TPM","5k+",1.29020361752591
+"LongBench","SCLC_A","ONT dRNA","Bambu","TPM","0k-0.5k",91.0420819409929
+"LongBench","SCLC_A","ONT dRNA","Bambu","TPM","0.5k-1k",33.9393659873637
+"LongBench","SCLC_A","ONT dRNA","Bambu","TPM","1k-1.5k",11.437903049913
+"LongBench","SCLC_A","ONT dRNA","Bambu","TPM","1.5k-2k",6.86746965488508
+"LongBench","SCLC_A","ONT dRNA","Bambu","TPM","2k-2.5k",4.73565679282473
+"LongBench","SCLC_A","ONT dRNA","Bambu","TPM","2.5k-3k",3.30617803155299
+"LongBench","SCLC_A","ONT dRNA","Bambu","TPM","3k-3.5k",2.64400899957696
+"LongBench","SCLC_A","ONT dRNA","Bambu","TPM","3.5k-4k",2.09011808973484
+"LongBench","SCLC_A","ONT dRNA","Bambu","TPM","4k-4.5k",1.88635465613302
+"LongBench","SCLC_A","ONT dRNA","Bambu","TPM","4.5k-5k",1.57340321525307
+"LongBench","SCLC_A","ONT dRNA","Bambu","TPM","5k+",0.989088881456054
+"LongBench","SCLC_A","ONT dRNA","Kallisto","TPM","0k-0.5k",160.912011242366
+"LongBench","SCLC_A","ONT dRNA","Kallisto","TPM","0.5k-1k",66.9468971293918
+"LongBench","SCLC_A","ONT dRNA","Kallisto","TPM","1k-1.5k",21.1830474726577
+"LongBench","SCLC_A","ONT dRNA","Kallisto","TPM","1.5k-2k",12.1540150183677
+"LongBench","SCLC_A","ONT dRNA","Kallisto","TPM","2k-2.5k",8.031525084022
+"LongBench","SCLC_A","ONT dRNA","Kallisto","TPM","2.5k-3k",5.73600034929949
+"LongBench","SCLC_A","ONT dRNA","Kallisto","TPM","3k-3.5k",4.42822838393639
+"LongBench","SCLC_A","ONT dRNA","Kallisto","TPM","3.5k-4k",3.52074658707335
+"LongBench","SCLC_A","ONT dRNA","Kallisto","TPM","4k-4.5k",3.14872616836937
+"LongBench","SCLC_A","ONT dRNA","Kallisto","TPM","4.5k-5k",2.58954105465392
+"LongBench","SCLC_A","ONT dRNA","Kallisto","TPM","5k+",1.62363514152695
+"LongBench","SCLC_A","ONT dRNA","Oarfish","TPM","0k-0.5k",124.540852082589
+"LongBench","SCLC_A","ONT dRNA","Oarfish","TPM","0.5k-1k",33.0326186151616
+"LongBench","SCLC_A","ONT dRNA","Oarfish","TPM","1k-1.5k",10.7847181501538
+"LongBench","SCLC_A","ONT dRNA","Oarfish","TPM","1.5k-2k",6.27201349763226
+"LongBench","SCLC_A","ONT dRNA","Oarfish","TPM","2k-2.5k",4.13034797832877
+"LongBench","SCLC_A","ONT dRNA","Oarfish","TPM","2.5k-3k",2.80971896682513
+"LongBench","SCLC_A","ONT dRNA","Oarfish","TPM","3k-3.5k",2.24061113150667
+"LongBench","SCLC_A","ONT dRNA","Oarfish","TPM","3.5k-4k",1.81017031760647
+"LongBench","SCLC_A","ONT dRNA","Oarfish","TPM","4k-4.5k",1.58932882945114
+"LongBench","SCLC_A","ONT dRNA","Oarfish","TPM","4.5k-5k",1.32081958159305
+"LongBench","SCLC_A","ONT dRNA","Oarfish","TPM","5k+",0.764760482570319
+"LongBench","SCLC_A","ONT dRNA","FLAIR","TPM","0k-0.5k",24.9668147233412
+"LongBench","SCLC_A","ONT dRNA","FLAIR","TPM","0.5k-1k",7.21865914446367
+"LongBench","SCLC_A","ONT dRNA","FLAIR","TPM","1k-1.5k",2.69565524657147
+"LongBench","SCLC_A","ONT dRNA","FLAIR","TPM","1.5k-2k",1.83511094840128
+"LongBench","SCLC_A","ONT dRNA","FLAIR","TPM","2k-2.5k",1.25166281232786
+"LongBench","SCLC_A","ONT dRNA","FLAIR","TPM","2.5k-3k",0.960647021094747
+"LongBench","SCLC_A","ONT dRNA","FLAIR","TPM","3k-3.5k",0.769735124527007
+"LongBench","SCLC_A","ONT dRNA","FLAIR","TPM","3.5k-4k",0.664705805664203
+"LongBench","SCLC_A","ONT dRNA","FLAIR","TPM","4k-4.5k",0.583410654973847
+"LongBench","SCLC_A","ONT dRNA","FLAIR","TPM","4.5k-5k",0.490751488315587
+"LongBench","SCLC_A","ONT dRNA","FLAIR","TPM","5k+",0.331800504180828
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","EDASeq","0k-0.5k",46.3917004295786
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","EDASeq","0.5k-1k",29.5353818247661
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","EDASeq","1k-1.5k",18.1505660952305
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","EDASeq","1.5k-2k",16.3145572530918
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","EDASeq","2k-2.5k",14.8503101074283
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","EDASeq","2.5k-3k",13.2585867708313
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","EDASeq","3k-3.5k",12.1016110192982
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","EDASeq","3.5k-4k",11.8192084606266
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","EDASeq","4k-4.5k",11.6114988150411
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","EDASeq","4.5k-5k",10.5200295949331
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","EDASeq","5k+",9.87863684112592
+"LongBench","SCLC_A","ONT dRNA","Bambu","EDASeq","0k-0.5k",27.544098746108
+"LongBench","SCLC_A","ONT dRNA","Bambu","EDASeq","0.5k-1k",21.685942726755
+"LongBench","SCLC_A","ONT dRNA","Bambu","EDASeq","1k-1.5k",13.0000556738026
+"LongBench","SCLC_A","ONT dRNA","Bambu","EDASeq","1.5k-2k",11.8277404553933
+"LongBench","SCLC_A","ONT dRNA","Bambu","EDASeq","2k-2.5k",11.0965835841074
+"LongBench","SCLC_A","ONT dRNA","Bambu","EDASeq","2.5k-3k",9.78470710343263
+"LongBench","SCLC_A","ONT dRNA","Bambu","EDASeq","3k-3.5k",9.4335740984908
+"LongBench","SCLC_A","ONT dRNA","Bambu","EDASeq","3.5k-4k",8.69275388937932
+"LongBench","SCLC_A","ONT dRNA","Bambu","EDASeq","4k-4.5k",8.91828109403243
+"LongBench","SCLC_A","ONT dRNA","Bambu","EDASeq","4.5k-5k",8.32273874094558
+"LongBench","SCLC_A","ONT dRNA","Bambu","EDASeq","5k+",8.27979006862221
+"LongBench","SCLC_A","ONT dRNA","Kallisto","EDASeq","0k-0.5k",34.0651153778623
+"LongBench","SCLC_A","ONT dRNA","Kallisto","EDASeq","0.5k-1k",30.9230451605369
+"LongBench","SCLC_A","ONT dRNA","Kallisto","EDASeq","1k-1.5k",17.8406189476214
+"LongBench","SCLC_A","ONT dRNA","Kallisto","EDASeq","1.5k-2k",15.8736059526963
+"LongBench","SCLC_A","ONT dRNA","Kallisto","EDASeq","2k-2.5k",14.3957996775669
+"LongBench","SCLC_A","ONT dRNA","Kallisto","EDASeq","2.5k-3k",12.9136142817512
+"LongBench","SCLC_A","ONT dRNA","Kallisto","EDASeq","3k-3.5k",11.8514969954257
+"LongBench","SCLC_A","ONT dRNA","Kallisto","EDASeq","3.5k-4k",10.9081574125523
+"LongBench","SCLC_A","ONT dRNA","Kallisto","EDASeq","4k-4.5k",11.115340469524
+"LongBench","SCLC_A","ONT dRNA","Kallisto","EDASeq","4.5k-5k",10.257286261493
+"LongBench","SCLC_A","ONT dRNA","Kallisto","EDASeq","5k+",9.98229174403831
+"LongBench","SCLC_A","ONT dRNA","Oarfish","EDASeq","0k-0.5k",24.3831329353827
+"LongBench","SCLC_A","ONT dRNA","Oarfish","EDASeq","0.5k-1k",18.1205422360159
+"LongBench","SCLC_A","ONT dRNA","Oarfish","EDASeq","1k-1.5k",10.3761993557827
+"LongBench","SCLC_A","ONT dRNA","Oarfish","EDASeq","1.5k-2k",9.07588275664059
+"LongBench","SCLC_A","ONT dRNA","Oarfish","EDASeq","2k-2.5k",8.17086970902399
+"LongBench","SCLC_A","ONT dRNA","Oarfish","EDASeq","2.5k-3k",7.04672635001223
+"LongBench","SCLC_A","ONT dRNA","Oarfish","EDASeq","3k-3.5k",6.77803473633415
+"LongBench","SCLC_A","ONT dRNA","Oarfish","EDASeq","3.5k-4k",6.3820791966756
+"LongBench","SCLC_A","ONT dRNA","Oarfish","EDASeq","4k-4.5k",6.3982064991081
+"LongBench","SCLC_A","ONT dRNA","Oarfish","EDASeq","4.5k-5k",5.95588056611586
+"LongBench","SCLC_A","ONT dRNA","Oarfish","EDASeq","5k+",5.39211939228039
+"LongBench","SCLC_A","ONT dRNA","FLAIR","EDASeq","0k-0.5k",7.26970573926865
+"LongBench","SCLC_A","ONT dRNA","FLAIR","EDASeq","0.5k-1k",5.97000073718331
+"LongBench","SCLC_A","ONT dRNA","FLAIR","EDASeq","1k-1.5k",3.68048642408403
+"LongBench","SCLC_A","ONT dRNA","FLAIR","EDASeq","1.5k-2k",3.44572663412177
+"LongBench","SCLC_A","ONT dRNA","FLAIR","EDASeq","2k-2.5k",2.98108435708239
+"LongBench","SCLC_A","ONT dRNA","FLAIR","EDASeq","2.5k-3k",2.76422455653627
+"LongBench","SCLC_A","ONT dRNA","FLAIR","EDASeq","3k-3.5k",2.5935084248919
+"LongBench","SCLC_A","ONT dRNA","FLAIR","EDASeq","3.5k-4k",2.56421826181995
+"LongBench","SCLC_A","ONT dRNA","FLAIR","EDASeq","4k-4.5k",2.53893911659115
+"LongBench","SCLC_A","ONT dRNA","FLAIR","EDASeq","4.5k-5k",2.38163083117273
+"LongBench","SCLC_A","ONT dRNA","FLAIR","EDASeq","5k+",2.36086303034684
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CQN","0k-0.5k",41.672559355363
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CQN","0.5k-1k",23.1733588438673
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CQN","1k-1.5k",16.0602359832998
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CQN","1.5k-2k",14.4908359180438
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CQN","2k-2.5k",12.4842162128783
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CQN","2.5k-3k",11.0250076684534
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CQN","3k-3.5k",10.3960228408715
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CQN","3.5k-4k",10.5912397102103
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CQN","4k-4.5k",10.1558107041744
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CQN","4.5k-5k",9.34418873792552
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","CQN","5k+",8.77009794794958
+"LongBench","SCLC_A","ONT dRNA","Bambu","CQN","0k-0.5k",36.6384944618584
+"LongBench","SCLC_A","ONT dRNA","Bambu","CQN","0.5k-1k",22.0505599127085
+"LongBench","SCLC_A","ONT dRNA","Bambu","CQN","1k-1.5k",14.5860956948281
+"LongBench","SCLC_A","ONT dRNA","Bambu","CQN","1.5k-2k",13.9239037420295
+"LongBench","SCLC_A","ONT dRNA","Bambu","CQN","2k-2.5k",13.007558671991
+"LongBench","SCLC_A","ONT dRNA","Bambu","CQN","2.5k-3k",11.2162943705813
+"LongBench","SCLC_A","ONT dRNA","Bambu","CQN","3k-3.5k",10.606695268036
+"LongBench","SCLC_A","ONT dRNA","Bambu","CQN","3.5k-4k",9.9603316043279
+"LongBench","SCLC_A","ONT dRNA","Bambu","CQN","4k-4.5k",10.328368652547
+"LongBench","SCLC_A","ONT dRNA","Bambu","CQN","4.5k-5k",9.9648225338662
+"LongBench","SCLC_A","ONT dRNA","Bambu","CQN","5k+",9.55173726009392
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CQN","0k-0.5k",39.8913197568061
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CQN","0.5k-1k",28.4505830339286
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CQN","1k-1.5k",17.5168995640181
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CQN","1.5k-2k",16.3443909882805
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CQN","2k-2.5k",14.8615094942441
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CQN","2.5k-3k",13.5299545390949
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CQN","3k-3.5k",12.6110029694044
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CQN","3.5k-4k",11.8741079452853
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CQN","4k-4.5k",12.4078826597185
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CQN","4.5k-5k",11.8676305751037
+"LongBench","SCLC_A","ONT dRNA","Kallisto","CQN","5k+",11.1618542039851
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CQN","0k-0.5k",28.2866082679838
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CQN","0.5k-1k",21.2815246289457
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CQN","1k-1.5k",13.1423370821316
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CQN","1.5k-2k",11.8598351462614
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CQN","2k-2.5k",10.6434561063474
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CQN","2.5k-3k",9.13406563886439
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CQN","3k-3.5k",8.71608834023582
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CQN","3.5k-4k",8.2245659502181
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CQN","4k-4.5k",8.38009046343036
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CQN","4.5k-5k",7.94014917639461
+"LongBench","SCLC_A","ONT dRNA","Oarfish","CQN","5k+",7.37768421285339
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CQN","0k-0.5k",4.96817021012629
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CQN","0.5k-1k",4.21410788150212
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CQN","1k-1.5k",2.77087413268644
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CQN","1.5k-2k",2.78997766404333
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CQN","2k-2.5k",2.51817840863323
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CQN","2.5k-3k",2.39020378361348
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CQN","3k-3.5k",2.35319090893768
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CQN","3.5k-4k",2.37373569465675
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CQN","4k-4.5k",2.38999865819231
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CQN","4.5k-5k",2.25780734192206
+"LongBench","SCLC_A","ONT dRNA","FLAIR","CQN","5k+",2.15030909396112
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","SMR","0k-0.5k",29.4114003502325
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","SMR","0.5k-1k",27.3807071984713
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","SMR","1k-1.5k",26.3244307626473
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","SMR","1.5k-2k",27.0471101152212
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","SMR","2k-2.5k",26.1485636377151
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","SMR","2.5k-3k",25.950207463032
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","SMR","3k-3.5k",26.7635699079275
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","SMR","3.5k-4k",27.3280898540672
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","SMR","4k-4.5k",26.687534248879
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","SMR","4.5k-5k",27.2942030122584
+"LongBench","SCLC_A","ONT dRNA","IsoQuant","SMR","5k+",29.1693831806059
+"LongBench","SCLC_A","ONT dRNA","Bambu","SMR","0k-0.5k",22.1730259507396
+"LongBench","SCLC_A","ONT dRNA","Bambu","SMR","0.5k-1k",20.2530567621177
+"LongBench","SCLC_A","ONT dRNA","Bambu","SMR","1k-1.5k",19.4757034556503
+"LongBench","SCLC_A","ONT dRNA","Bambu","SMR","1.5k-2k",19.8813188446505
+"LongBench","SCLC_A","ONT dRNA","Bambu","SMR","2k-2.5k",19.7286361415777
+"LongBench","SCLC_A","ONT dRNA","Bambu","SMR","2.5k-3k",19.0419710915258
+"LongBench","SCLC_A","ONT dRNA","Bambu","SMR","3k-3.5k",19.9675333960591
+"LongBench","SCLC_A","ONT dRNA","Bambu","SMR","3.5k-4k",19.9320828764058
+"LongBench","SCLC_A","ONT dRNA","Bambu","SMR","4k-4.5k",20.0272945790696
+"LongBench","SCLC_A","ONT dRNA","Bambu","SMR","4.5k-5k",20.1338008583178
+"LongBench","SCLC_A","ONT dRNA","Bambu","SMR","5k+",21.3215162658602
+"LongBench","SCLC_A","ONT dRNA","Kallisto","SMR","0k-0.5k",24.2630178474704
+"LongBench","SCLC_A","ONT dRNA","Kallisto","SMR","0.5k-1k",24.505251962601
+"LongBench","SCLC_A","ONT dRNA","Kallisto","SMR","1k-1.5k",23.4392843840504
+"LongBench","SCLC_A","ONT dRNA","Kallisto","SMR","1.5k-2k",24.028446286849
+"LongBench","SCLC_A","ONT dRNA","Kallisto","SMR","2k-2.5k",23.8417098254742
+"LongBench","SCLC_A","ONT dRNA","Kallisto","SMR","2.5k-3k",23.0373478859019
+"LongBench","SCLC_A","ONT dRNA","Kallisto","SMR","3k-3.5k",24.2826607248856
+"LongBench","SCLC_A","ONT dRNA","Kallisto","SMR","3.5k-4k",24.4117535578954
+"LongBench","SCLC_A","ONT dRNA","Kallisto","SMR","4k-4.5k",24.057874419014
+"LongBench","SCLC_A","ONT dRNA","Kallisto","SMR","4.5k-5k",24.260969736505
+"LongBench","SCLC_A","ONT dRNA","Kallisto","SMR","5k+",25.8140758874724
+"LongBench","SCLC_A","ONT dRNA","Oarfish","SMR","0k-0.5k",16.0507639043909
+"LongBench","SCLC_A","ONT dRNA","Oarfish","SMR","0.5k-1k",15.0687625326831
+"LongBench","SCLC_A","ONT dRNA","Oarfish","SMR","1k-1.5k",14.9161807832491
+"LongBench","SCLC_A","ONT dRNA","Oarfish","SMR","1.5k-2k",14.9910351358146
+"LongBench","SCLC_A","ONT dRNA","Oarfish","SMR","2k-2.5k",14.7998516515125
+"LongBench","SCLC_A","ONT dRNA","Oarfish","SMR","2.5k-3k",14.3360684827658
+"LongBench","SCLC_A","ONT dRNA","Oarfish","SMR","3k-3.5k",14.6098079078075
+"LongBench","SCLC_A","ONT dRNA","Oarfish","SMR","3.5k-4k",14.810755328878
+"LongBench","SCLC_A","ONT dRNA","Oarfish","SMR","4k-4.5k",14.6306864406722
+"LongBench","SCLC_A","ONT dRNA","Oarfish","SMR","4.5k-5k",14.7323438951884
+"LongBench","SCLC_A","ONT dRNA","Oarfish","SMR","5k+",15.5371859125505
+"LongBench","SCLC_A","ONT dRNA","FLAIR","SMR","0k-0.5k",7.38817496937527
+"LongBench","SCLC_A","ONT dRNA","FLAIR","SMR","0.5k-1k",6.57612807500854
+"LongBench","SCLC_A","ONT dRNA","FLAIR","SMR","1k-1.5k",6.71925797683817
+"LongBench","SCLC_A","ONT dRNA","FLAIR","SMR","1.5k-2k",7.0375662807712
+"LongBench","SCLC_A","ONT dRNA","FLAIR","SMR","2k-2.5k",7.16383425746159
+"LongBench","SCLC_A","ONT dRNA","FLAIR","SMR","2.5k-3k",7.34149180018228
+"LongBench","SCLC_A","ONT dRNA","FLAIR","SMR","3k-3.5k",7.5751507903226
+"LongBench","SCLC_A","ONT dRNA","FLAIR","SMR","3.5k-4k",7.70009185955076
+"LongBench","SCLC_A","ONT dRNA","FLAIR","SMR","4k-4.5k",7.65223921698777
+"LongBench","SCLC_A","ONT dRNA","FLAIR","SMR","4.5k-5k",7.67607881315765
+"LongBench","SCLC_A","ONT dRNA","FLAIR","SMR","5k+",8.1159641044674
+"LongBench","SCLC_A","Kinnex","IsoQuant","CPM","0k-0.5k",3.51937006479159
+"LongBench","SCLC_A","Kinnex","IsoQuant","CPM","0.5k-1k",12.48374479756
+"LongBench","SCLC_A","Kinnex","IsoQuant","CPM","1k-1.5k",15.2236906063829
+"LongBench","SCLC_A","Kinnex","IsoQuant","CPM","1.5k-2k",13.8655937166537
+"LongBench","SCLC_A","Kinnex","IsoQuant","CPM","2k-2.5k",9.15058654749937
+"LongBench","SCLC_A","Kinnex","IsoQuant","CPM","2.5k-3k",5.77459346331813
+"LongBench","SCLC_A","Kinnex","IsoQuant","CPM","3k-3.5k",4.44665126406185
+"LongBench","SCLC_A","Kinnex","IsoQuant","CPM","3.5k-4k",3.92572908731816
+"LongBench","SCLC_A","Kinnex","IsoQuant","CPM","4k-4.5k",3.6395966077626
+"LongBench","SCLC_A","Kinnex","IsoQuant","CPM","4.5k-5k",3.34377077406925
+"LongBench","SCLC_A","Kinnex","IsoQuant","CPM","5k+",4.6192598842423
+"LongBench","SCLC_A","Kinnex","Bambu","CPM","0k-0.5k",2.37071260347932
+"LongBench","SCLC_A","Kinnex","Bambu","CPM","0.5k-1k",5.57661406417973
+"LongBench","SCLC_A","Kinnex","Bambu","CPM","1k-1.5k",14.0551235855897
+"LongBench","SCLC_A","Kinnex","Bambu","CPM","1.5k-2k",16.4012607216115
+"LongBench","SCLC_A","Kinnex","Bambu","CPM","2k-2.5k",12.9610814974945
+"LongBench","SCLC_A","Kinnex","Bambu","CPM","2.5k-3k",9.92103259090829
+"LongBench","SCLC_A","Kinnex","Bambu","CPM","3k-3.5k",8.84333178403859
+"LongBench","SCLC_A","Kinnex","Bambu","CPM","3.5k-4k",8.37362602622176
+"LongBench","SCLC_A","Kinnex","Bambu","CPM","4k-4.5k",8.57220930984179
+"LongBench","SCLC_A","Kinnex","Bambu","CPM","4.5k-5k",8.0982301005856
+"LongBench","SCLC_A","Kinnex","Bambu","CPM","5k+",8.43149179060382
+"LongBench","SCLC_A","Kinnex","Kallisto","CPM","0k-0.5k",1.83922964868151
+"LongBench","SCLC_A","Kinnex","Kallisto","CPM","0.5k-1k",5.9877187995762
+"LongBench","SCLC_A","Kinnex","Kallisto","CPM","1k-1.5k",15.0846380866891
+"LongBench","SCLC_A","Kinnex","Kallisto","CPM","1.5k-2k",17.2670778042384
+"LongBench","SCLC_A","Kinnex","Kallisto","CPM","2k-2.5k",13.3147499264813
+"LongBench","SCLC_A","Kinnex","Kallisto","CPM","2.5k-3k",11.035351405538
+"LongBench","SCLC_A","Kinnex","Kallisto","CPM","3k-3.5k",10.0498782779609
+"LongBench","SCLC_A","Kinnex","Kallisto","CPM","3.5k-4k",9.92252241516443
+"LongBench","SCLC_A","Kinnex","Kallisto","CPM","4k-4.5k",10.590894925363
+"LongBench","SCLC_A","Kinnex","Kallisto","CPM","4.5k-5k",10.2726594335836
+"LongBench","SCLC_A","Kinnex","Kallisto","CPM","5k+",10.0528074216689
+"LongBench","SCLC_A","Kinnex","Oarfish","CPM","0k-0.5k",1.57501478167757
+"LongBench","SCLC_A","Kinnex","Oarfish","CPM","0.5k-1k",3.24075810178242
+"LongBench","SCLC_A","Kinnex","Oarfish","CPM","1k-1.5k",9.55807520855231
+"LongBench","SCLC_A","Kinnex","Oarfish","CPM","1.5k-2k",11.3823176853659
+"LongBench","SCLC_A","Kinnex","Oarfish","CPM","2k-2.5k",8.58993272382947
+"LongBench","SCLC_A","Kinnex","Oarfish","CPM","2.5k-3k",6.80280995446445
+"LongBench","SCLC_A","Kinnex","Oarfish","CPM","3k-3.5k",6.01036851181382
+"LongBench","SCLC_A","Kinnex","Oarfish","CPM","3.5k-4k",5.58024909262677
+"LongBench","SCLC_A","Kinnex","Oarfish","CPM","4k-4.5k",5.73315716476583
+"LongBench","SCLC_A","Kinnex","Oarfish","CPM","4.5k-5k",5.3595988999902
+"LongBench","SCLC_A","Kinnex","Oarfish","CPM","5k+",5.31889139844012
+"LongBench","SCLC_A","Kinnex","FLAIR","CPM","0k-0.5k",0.837560651413491
+"LongBench","SCLC_A","Kinnex","FLAIR","CPM","0.5k-1k",0.767809205691982
+"LongBench","SCLC_A","Kinnex","FLAIR","CPM","1k-1.5k",0.720518284761636
+"LongBench","SCLC_A","Kinnex","FLAIR","CPM","1.5k-2k",0.928770993288009
+"LongBench","SCLC_A","Kinnex","FLAIR","CPM","2k-2.5k",1.09033769138377
+"LongBench","SCLC_A","Kinnex","FLAIR","CPM","2.5k-3k",1.18485833181434
+"LongBench","SCLC_A","Kinnex","FLAIR","CPM","3k-3.5k",1.33280778763518
+"LongBench","SCLC_A","Kinnex","FLAIR","CPM","3.5k-4k",1.47835373921767
+"LongBench","SCLC_A","Kinnex","FLAIR","CPM","4k-4.5k",1.73401473714976
+"LongBench","SCLC_A","Kinnex","FLAIR","CPM","4.5k-5k",1.83354643655354
+"LongBench","SCLC_A","Kinnex","FLAIR","CPM","5k+",3.16937325814808
+"LongBench","SCLC_A","Kinnex","IsoQuant","TPM","0k-0.5k",16.5726797708576
+"LongBench","SCLC_A","Kinnex","IsoQuant","TPM","0.5k-1k",29.8451441489208
+"LongBench","SCLC_A","Kinnex","IsoQuant","TPM","1k-1.5k",24.0902874673989
+"LongBench","SCLC_A","Kinnex","IsoQuant","TPM","1.5k-2k",15.8935593520835
+"LongBench","SCLC_A","Kinnex","IsoQuant","TPM","2k-2.5k",8.17215371678886
+"LongBench","SCLC_A","Kinnex","IsoQuant","TPM","2.5k-3k",4.2293698663895
+"LongBench","SCLC_A","Kinnex","IsoQuant","TPM","3k-3.5k",2.74692527540045
+"LongBench","SCLC_A","Kinnex","IsoQuant","TPM","3.5k-4k",2.10198592074619
+"LongBench","SCLC_A","Kinnex","IsoQuant","TPM","4k-4.5k",1.71502613822369
+"LongBench","SCLC_A","Kinnex","IsoQuant","TPM","4.5k-5k",1.4115541916609
+"LongBench","SCLC_A","Kinnex","IsoQuant","TPM","5k+",1.50850488886591
+"LongBench","SCLC_A","Kinnex","Bambu","TPM","0k-0.5k",19.225255352843
+"LongBench","SCLC_A","Kinnex","Bambu","TPM","0.5k-1k",14.5034213976145
+"LongBench","SCLC_A","Kinnex","Bambu","TPM","1k-1.5k",23.2991514385882
+"LongBench","SCLC_A","Kinnex","Bambu","TPM","1.5k-2k",19.5973547483411
+"LongBench","SCLC_A","Kinnex","Bambu","TPM","2k-2.5k",12.0038224648403
+"LongBench","SCLC_A","Kinnex","Bambu","TPM","2.5k-3k",7.55793228640488
+"LongBench","SCLC_A","Kinnex","Bambu","TPM","3k-3.5k",5.69971107330762
+"LongBench","SCLC_A","Kinnex","Bambu","TPM","3.5k-4k",4.67386643278842
+"LongBench","SCLC_A","Kinnex","Bambu","TPM","4k-4.5k",4.21879287202338
+"LongBench","SCLC_A","Kinnex","Bambu","TPM","4.5k-5k",3.57786031142698
+"LongBench","SCLC_A","Kinnex","Bambu","TPM","5k+",2.2971720942205
+"LongBench","SCLC_A","Kinnex","Kallisto","TPM","0k-0.5k",11.6245649849549
+"LongBench","SCLC_A","Kinnex","Kallisto","TPM","0.5k-1k",17.8404572904622
+"LongBench","SCLC_A","Kinnex","Kallisto","TPM","1k-1.5k",29.2208121731081
+"LongBench","SCLC_A","Kinnex","Kallisto","TPM","1.5k-2k",24.1603901002913
+"LongBench","SCLC_A","Kinnex","Kallisto","TPM","2k-2.5k",14.5210552968439
+"LongBench","SCLC_A","Kinnex","Kallisto","TPM","2.5k-3k",9.85486612715825
+"LongBench","SCLC_A","Kinnex","Kallisto","TPM","3k-3.5k",7.58902697605968
+"LongBench","SCLC_A","Kinnex","Kallisto","TPM","3.5k-4k",6.47774502588559
+"LongBench","SCLC_A","Kinnex","Kallisto","TPM","4k-4.5k",6.09789714116792
+"LongBench","SCLC_A","Kinnex","Kallisto","TPM","4.5k-5k",5.30214187265104
+"LongBench","SCLC_A","Kinnex","Kallisto","TPM","5k+",3.27196407006043
+"LongBench","SCLC_A","Kinnex","Oarfish","TPM","0k-0.5k",8.91603461652824
+"LongBench","SCLC_A","Kinnex","Oarfish","TPM","0.5k-1k",9.64312228959184
+"LongBench","SCLC_A","Kinnex","Oarfish","TPM","1k-1.5k",17.8522150689598
+"LongBench","SCLC_A","Kinnex","Oarfish","TPM","1.5k-2k",15.3626196758246
+"LongBench","SCLC_A","Kinnex","Oarfish","TPM","2k-2.5k",9.01221668868123
+"LongBench","SCLC_A","Kinnex","Oarfish","TPM","2.5k-3k",5.85579798940322
+"LongBench","SCLC_A","Kinnex","Oarfish","TPM","3k-3.5k",4.37106461616478
+"LongBench","SCLC_A","Kinnex","Oarfish","TPM","3.5k-4k",3.50861728008536
+"LongBench","SCLC_A","Kinnex","Oarfish","TPM","4k-4.5k",3.18248085377697
+"LongBench","SCLC_A","Kinnex","Oarfish","TPM","4.5k-5k",2.66369298281528
+"LongBench","SCLC_A","Kinnex","Oarfish","TPM","5k+",1.63244565668715
+"LongBench","SCLC_A","Kinnex","FLAIR","TPM","0k-0.5k",5.48594508870829
+"LongBench","SCLC_A","Kinnex","FLAIR","TPM","0.5k-1k",1.95639308525522
+"LongBench","SCLC_A","Kinnex","FLAIR","TPM","1k-1.5k",1.19805390790812
+"LongBench","SCLC_A","Kinnex","FLAIR","TPM","1.5k-2k",1.13666575301102
+"LongBench","SCLC_A","Kinnex","FLAIR","TPM","2k-2.5k",1.03899997366045
+"LongBench","SCLC_A","Kinnex","FLAIR","TPM","2.5k-3k",0.923976077639674
+"LongBench","SCLC_A","Kinnex","FLAIR","TPM","3k-3.5k",0.878041224060625
+"LongBench","SCLC_A","Kinnex","FLAIR","TPM","3.5k-4k",0.844159483056665
+"LongBench","SCLC_A","Kinnex","FLAIR","TPM","4k-4.5k",0.87255985634659
+"LongBench","SCLC_A","Kinnex","FLAIR","TPM","4.5k-5k",0.826255228193691
+"LongBench","SCLC_A","Kinnex","FLAIR","TPM","5k+",1.00729300492683
+"LongBench","SCLC_A","Kinnex","IsoQuant","EDASeq","0k-0.5k",3.78048594739236
+"LongBench","SCLC_A","Kinnex","IsoQuant","EDASeq","0.5k-1k",10.9605844941844
+"LongBench","SCLC_A","Kinnex","IsoQuant","EDASeq","1k-1.5k",13.1855078776831
+"LongBench","SCLC_A","Kinnex","IsoQuant","EDASeq","1.5k-2k",12.6338897154183
+"LongBench","SCLC_A","Kinnex","IsoQuant","EDASeq","2k-2.5k",9.2226357645384
+"LongBench","SCLC_A","Kinnex","IsoQuant","EDASeq","2.5k-3k",6.47833784694402
+"LongBench","SCLC_A","Kinnex","IsoQuant","EDASeq","3k-3.5k",5.37185735927953
+"LongBench","SCLC_A","Kinnex","IsoQuant","EDASeq","3.5k-4k",4.88764103331755
+"LongBench","SCLC_A","Kinnex","IsoQuant","EDASeq","4k-4.5k",4.46859429870624
+"LongBench","SCLC_A","Kinnex","IsoQuant","EDASeq","4.5k-5k",3.9041580755819
+"LongBench","SCLC_A","Kinnex","IsoQuant","EDASeq","5k+",4.42628619919931
+"LongBench","SCLC_A","Kinnex","Bambu","EDASeq","0k-0.5k",3.95483771042029
+"LongBench","SCLC_A","Kinnex","Bambu","EDASeq","0.5k-1k",5.93670274591734
+"LongBench","SCLC_A","Kinnex","Bambu","EDASeq","1k-1.5k",13.3586022912802
+"LongBench","SCLC_A","Kinnex","Bambu","EDASeq","1.5k-2k",15.0162835501099
+"LongBench","SCLC_A","Kinnex","Bambu","EDASeq","2k-2.5k",12.4761495658994
+"LongBench","SCLC_A","Kinnex","Bambu","EDASeq","2.5k-3k",10.2388986927265
+"LongBench","SCLC_A","Kinnex","Bambu","EDASeq","3k-3.5k",9.37239115752134
+"LongBench","SCLC_A","Kinnex","Bambu","EDASeq","3.5k-4k",8.89973653739017
+"LongBench","SCLC_A","Kinnex","Bambu","EDASeq","4k-4.5k",9.01356292507344
+"LongBench","SCLC_A","Kinnex","Bambu","EDASeq","4.5k-5k",8.44067771205405
+"LongBench","SCLC_A","Kinnex","Bambu","EDASeq","5k+",8.04598265807055
+"LongBench","SCLC_A","Kinnex","Kallisto","EDASeq","0k-0.5k",5.67214941327278
+"LongBench","SCLC_A","Kinnex","Kallisto","EDASeq","0.5k-1k",7.95643084248315
+"LongBench","SCLC_A","Kinnex","Kallisto","EDASeq","1k-1.5k",15.990433798017
+"LongBench","SCLC_A","Kinnex","Kallisto","EDASeq","1.5k-2k",17.0598744020269
+"LongBench","SCLC_A","Kinnex","Kallisto","EDASeq","2k-2.5k",13.3632487189131
+"LongBench","SCLC_A","Kinnex","Kallisto","EDASeq","2.5k-3k",11.3480419836875
+"LongBench","SCLC_A","Kinnex","Kallisto","EDASeq","3k-3.5k",10.2378413582459
+"LongBench","SCLC_A","Kinnex","Kallisto","EDASeq","3.5k-4k",9.9582508605741
+"LongBench","SCLC_A","Kinnex","Kallisto","EDASeq","4k-4.5k",10.4882634589037
+"LongBench","SCLC_A","Kinnex","Kallisto","EDASeq","4.5k-5k",10.0880819851136
+"LongBench","SCLC_A","Kinnex","Kallisto","EDASeq","5k+",9.36503069794695
+"LongBench","SCLC_A","Kinnex","Oarfish","EDASeq","0k-0.5k",4.2534200905259
+"LongBench","SCLC_A","Kinnex","Oarfish","EDASeq","0.5k-1k",4.62561148212931
+"LongBench","SCLC_A","Kinnex","Oarfish","EDASeq","1k-1.5k",10.2593232240716
+"LongBench","SCLC_A","Kinnex","Oarfish","EDASeq","1.5k-2k",11.0860266115222
+"LongBench","SCLC_A","Kinnex","Oarfish","EDASeq","2k-2.5k",8.41389906811294
+"LongBench","SCLC_A","Kinnex","Oarfish","EDASeq","2.5k-3k",6.89608780684597
+"LongBench","SCLC_A","Kinnex","Oarfish","EDASeq","3k-3.5k",6.17627609960777
+"LongBench","SCLC_A","Kinnex","Oarfish","EDASeq","3.5k-4k",5.72445540990143
+"LongBench","SCLC_A","Kinnex","Oarfish","EDASeq","4k-4.5k",5.84868327284062
+"LongBench","SCLC_A","Kinnex","Oarfish","EDASeq","4.5k-5k",5.41755967727819
+"LongBench","SCLC_A","Kinnex","Oarfish","EDASeq","5k+",4.80078859523794
+"LongBench","SCLC_A","Kinnex","FLAIR","EDASeq","0k-0.5k",1.2676143355626
+"LongBench","SCLC_A","Kinnex","FLAIR","EDASeq","0.5k-1k",1.18681749580848
+"LongBench","SCLC_A","Kinnex","FLAIR","EDASeq","1k-1.5k",0.969182152240624
+"LongBench","SCLC_A","Kinnex","FLAIR","EDASeq","1.5k-2k",1.07062707975382
+"LongBench","SCLC_A","Kinnex","FLAIR","EDASeq","2k-2.5k",1.10851583616436
+"LongBench","SCLC_A","Kinnex","FLAIR","EDASeq","2.5k-3k",1.09305732406451
+"LongBench","SCLC_A","Kinnex","FLAIR","EDASeq","3k-3.5k",1.12412998285956
+"LongBench","SCLC_A","Kinnex","FLAIR","EDASeq","3.5k-4k",1.14844163717506
+"LongBench","SCLC_A","Kinnex","FLAIR","EDASeq","4k-4.5k",1.24152562065589
+"LongBench","SCLC_A","Kinnex","FLAIR","EDASeq","4.5k-5k",1.21969297850635
+"LongBench","SCLC_A","Kinnex","FLAIR","EDASeq","5k+",1.65473826763397
+"LongBench","SCLC_A","Kinnex","IsoQuant","CQN","0k-0.5k",5.95060189910171
+"LongBench","SCLC_A","Kinnex","IsoQuant","CQN","0.5k-1k",12.9994784557541
+"LongBench","SCLC_A","Kinnex","IsoQuant","CQN","1k-1.5k",11.3117032631659
+"LongBench","SCLC_A","Kinnex","IsoQuant","CQN","1.5k-2k",9.12492278588978
+"LongBench","SCLC_A","Kinnex","IsoQuant","CQN","2k-2.5k",5.55271559874327
+"LongBench","SCLC_A","Kinnex","IsoQuant","CQN","2.5k-3k",3.37320915170856
+"LongBench","SCLC_A","Kinnex","IsoQuant","CQN","3k-3.5k",2.62997043919555
+"LongBench","SCLC_A","Kinnex","IsoQuant","CQN","3.5k-4k",2.37396741435892
+"LongBench","SCLC_A","Kinnex","IsoQuant","CQN","4k-4.5k",2.13492361875479
+"LongBench","SCLC_A","Kinnex","IsoQuant","CQN","4.5k-5k",1.94465895592069
+"LongBench","SCLC_A","Kinnex","IsoQuant","CQN","5k+",2.67349797221715
+"LongBench","SCLC_A","Kinnex","Bambu","CQN","0k-0.5k",3.73993949637104
+"LongBench","SCLC_A","Kinnex","Bambu","CQN","0.5k-1k",7.21320121210709
+"LongBench","SCLC_A","Kinnex","Bambu","CQN","1k-1.5k",14.9725020001738
+"LongBench","SCLC_A","Kinnex","Bambu","CQN","1.5k-2k",15.8829712812975
+"LongBench","SCLC_A","Kinnex","Bambu","CQN","2k-2.5k",12.2542646886862
+"LongBench","SCLC_A","Kinnex","Bambu","CQN","2.5k-3k",9.96752958000961
+"LongBench","SCLC_A","Kinnex","Bambu","CQN","3k-3.5k",9.17962961844758
+"LongBench","SCLC_A","Kinnex","Bambu","CQN","3.5k-4k",8.79303102246451
+"LongBench","SCLC_A","Kinnex","Bambu","CQN","4k-4.5k",8.90033663335218
+"LongBench","SCLC_A","Kinnex","Bambu","CQN","4.5k-5k",8.32157198920163
+"LongBench","SCLC_A","Kinnex","Bambu","CQN","5k+",8.2289238522622
+"LongBench","SCLC_A","Kinnex","Kallisto","CQN","0k-0.5k",6.19976826668417
+"LongBench","SCLC_A","Kinnex","Kallisto","CQN","0.5k-1k",9.36400550998705
+"LongBench","SCLC_A","Kinnex","Kallisto","CQN","1k-1.5k",17.2292494185698
+"LongBench","SCLC_A","Kinnex","Kallisto","CQN","1.5k-2k",17.2780377529971
+"LongBench","SCLC_A","Kinnex","Kallisto","CQN","2k-2.5k",12.8828343782666
+"LongBench","SCLC_A","Kinnex","Kallisto","CQN","2.5k-3k",11.1495870315505
+"LongBench","SCLC_A","Kinnex","Kallisto","CQN","3k-3.5k",10.3248944240398
+"LongBench","SCLC_A","Kinnex","Kallisto","CQN","3.5k-4k",10.016262036272
+"LongBench","SCLC_A","Kinnex","Kallisto","CQN","4k-4.5k",10.5846734299861
+"LongBench","SCLC_A","Kinnex","Kallisto","CQN","4.5k-5k",10.1960915993596
+"LongBench","SCLC_A","Kinnex","Kallisto","CQN","5k+",9.90876314088206
+"LongBench","SCLC_A","Kinnex","Oarfish","CQN","0k-0.5k",2.51132041618733
+"LongBench","SCLC_A","Kinnex","Oarfish","CQN","0.5k-1k",3.96345587507995
+"LongBench","SCLC_A","Kinnex","Oarfish","CQN","1k-1.5k",10.0550150850079
+"LongBench","SCLC_A","Kinnex","Oarfish","CQN","1.5k-2k",11.0331756710494
+"LongBench","SCLC_A","Kinnex","Oarfish","CQN","2k-2.5k",8.11845268046058
+"LongBench","SCLC_A","Kinnex","Oarfish","CQN","2.5k-3k",6.70002881468468
+"LongBench","SCLC_A","Kinnex","Oarfish","CQN","3k-3.5k",6.15900275122188
+"LongBench","SCLC_A","Kinnex","Oarfish","CQN","3.5k-4k",5.94560810714466
+"LongBench","SCLC_A","Kinnex","Oarfish","CQN","4k-4.5k",6.1700559077741
+"LongBench","SCLC_A","Kinnex","Oarfish","CQN","4.5k-5k",5.86615923659805
+"LongBench","SCLC_A","Kinnex","Oarfish","CQN","5k+",5.41169372834434
+"LongBench","SCLC_A","Kinnex","FLAIR","CQN","0k-0.5k",0.660685284532329
+"LongBench","SCLC_A","Kinnex","FLAIR","CQN","0.5k-1k",0.489464960188976
+"LongBench","SCLC_A","Kinnex","FLAIR","CQN","1k-1.5k",0.440640059442147
+"LongBench","SCLC_A","Kinnex","FLAIR","CQN","1.5k-2k",0.540109020860733
+"LongBench","SCLC_A","Kinnex","FLAIR","CQN","2k-2.5k",0.633914452816621
+"LongBench","SCLC_A","Kinnex","FLAIR","CQN","2.5k-3k",0.716451293888142
+"LongBench","SCLC_A","Kinnex","FLAIR","CQN","3k-3.5k",0.825848780201983
+"LongBench","SCLC_A","Kinnex","FLAIR","CQN","3.5k-4k",0.925890741359439
+"LongBench","SCLC_A","Kinnex","FLAIR","CQN","4k-4.5k",1.07720792065658
+"LongBench","SCLC_A","Kinnex","FLAIR","CQN","4.5k-5k",1.1252724660334401
+"LongBench","SCLC_A","Kinnex","FLAIR","CQN","5k+",1.82955451271647
+"LongBench","SCLC_A","Kinnex","IsoQuant","SMR","0k-0.5k",6.62682687836402
+"LongBench","SCLC_A","Kinnex","IsoQuant","SMR","0.5k-1k",7.7865379267545
+"LongBench","SCLC_A","Kinnex","IsoQuant","SMR","1k-1.5k",10.9057415699746
+"LongBench","SCLC_A","Kinnex","IsoQuant","SMR","1.5k-2k",12.5589753064475
+"LongBench","SCLC_A","Kinnex","IsoQuant","SMR","2k-2.5k",12.6872970513956
+"LongBench","SCLC_A","Kinnex","IsoQuant","SMR","2.5k-3k",12.4855534772325
+"LongBench","SCLC_A","Kinnex","IsoQuant","SMR","3k-3.5k",12.7407533186267
+"LongBench","SCLC_A","Kinnex","IsoQuant","SMR","3.5k-4k",13.1938274972704
+"LongBench","SCLC_A","Kinnex","IsoQuant","SMR","4k-4.5k",13.8578385685175
+"LongBench","SCLC_A","Kinnex","IsoQuant","SMR","4.5k-5k",14.7930855738893
+"LongBench","SCLC_A","Kinnex","IsoQuant","SMR","5k+",18.0758240536179
+"LongBench","SCLC_A","Kinnex","Bambu","SMR","0k-0.5k",10.6256149206732
+"LongBench","SCLC_A","Kinnex","Bambu","SMR","0.5k-1k",11.2985271737701
+"LongBench","SCLC_A","Kinnex","Bambu","SMR","1k-1.5k",13.7595912279316
+"LongBench","SCLC_A","Kinnex","Bambu","SMR","1.5k-2k",15.5493627765419
+"LongBench","SCLC_A","Kinnex","Bambu","SMR","2k-2.5k",15.3719766641176
+"LongBench","SCLC_A","Kinnex","Bambu","SMR","2.5k-3k",14.8966393613549
+"LongBench","SCLC_A","Kinnex","Bambu","SMR","3k-3.5k",15.1954875350244
+"LongBench","SCLC_A","Kinnex","Bambu","SMR","3.5k-4k",15.4278068833466
+"LongBench","SCLC_A","Kinnex","Bambu","SMR","4k-4.5k",15.5607635995853
+"LongBench","SCLC_A","Kinnex","Bambu","SMR","4.5k-5k",15.917687725401
+"LongBench","SCLC_A","Kinnex","Bambu","SMR","5k+",18.8639954614638
+"LongBench","SCLC_A","Kinnex","Kallisto","SMR","0k-0.5k",10.7857640145217
+"LongBench","SCLC_A","Kinnex","Kallisto","SMR","0.5k-1k",12.2039498547099
+"LongBench","SCLC_A","Kinnex","Kallisto","SMR","1k-1.5k",14.577879396459
+"LongBench","SCLC_A","Kinnex","Kallisto","SMR","1.5k-2k",16.8028244937645
+"LongBench","SCLC_A","Kinnex","Kallisto","SMR","2k-2.5k",16.8460496672678
+"LongBench","SCLC_A","Kinnex","Kallisto","SMR","2.5k-3k",17.0062533071063
+"LongBench","SCLC_A","Kinnex","Kallisto","SMR","3k-3.5k",17.6538966238287
+"LongBench","SCLC_A","Kinnex","Kallisto","SMR","3.5k-4k",18.0583060756181
+"LongBench","SCLC_A","Kinnex","Kallisto","SMR","4k-4.5k",18.2571439689086
+"LongBench","SCLC_A","Kinnex","Kallisto","SMR","4.5k-5k",18.8121452676928
+"LongBench","SCLC_A","Kinnex","Kallisto","SMR","5k+",21.422743992078
+"LongBench","SCLC_A","Kinnex","Oarfish","SMR","0k-0.5k",8.41878370413377
+"LongBench","SCLC_A","Kinnex","Oarfish","SMR","0.5k-1k",8.56886257352821
+"LongBench","SCLC_A","Kinnex","Oarfish","SMR","1k-1.5k",10.2880525500551
+"LongBench","SCLC_A","Kinnex","Oarfish","SMR","1.5k-2k",11.5837495928993
+"LongBench","SCLC_A","Kinnex","Oarfish","SMR","2k-2.5k",11.3888965733675
+"LongBench","SCLC_A","Kinnex","Oarfish","SMR","2.5k-3k",11.2267649427461
+"LongBench","SCLC_A","Kinnex","Oarfish","SMR","3k-3.5k",11.4131772758573
+"LongBench","SCLC_A","Kinnex","Oarfish","SMR","3.5k-4k",11.2656557030276
+"LongBench","SCLC_A","Kinnex","Oarfish","SMR","4k-4.5k",11.4877264847471
+"LongBench","SCLC_A","Kinnex","Oarfish","SMR","4.5k-5k",11.7664040950861
+"LongBench","SCLC_A","Kinnex","Oarfish","SMR","5k+",13.1495907280922
+"LongBench","SCLC_A","Kinnex","FLAIR","SMR","0k-0.5k",1.78064408809519
+"LongBench","SCLC_A","Kinnex","FLAIR","SMR","0.5k-1k",1.6880614655882
+"LongBench","SCLC_A","Kinnex","FLAIR","SMR","1k-1.5k",1.97738458448175
+"LongBench","SCLC_A","Kinnex","FLAIR","SMR","1.5k-2k",2.34724330999634
+"LongBench","SCLC_A","Kinnex","FLAIR","SMR","2k-2.5k",2.60364225078282
+"LongBench","SCLC_A","Kinnex","FLAIR","SMR","2.5k-3k",2.80499761739207
+"LongBench","SCLC_A","Kinnex","FLAIR","SMR","3k-3.5k",3.04612063681981
+"LongBench","SCLC_A","Kinnex","FLAIR","SMR","3.5k-4k",3.20600422941301
+"LongBench","SCLC_A","Kinnex","FLAIR","SMR","4k-4.5k",3.44090352653859
+"LongBench","SCLC_A","Kinnex","FLAIR","SMR","4.5k-5k",3.55789461199343
+"LongBench","SCLC_A","Kinnex","FLAIR","SMR","5k+",3.96543856911587

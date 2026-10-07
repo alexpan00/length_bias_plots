@@ -190,3 +190,16 @@ save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 220, dpi = 60
 
 save_pub_r(fig4, "plots/Figure_5", height_mm = 260)
 ```
+
+```{r source_data}
+source("../source_data_utils.R")
+
+fig5_source <- combined_data %>%
+  transmute(Dataset = relabel_dataset(dataset), Level = level, Platform = technology, Tool,
+            Normalization = relabel_norm(Normalization), Condition, Sample,
+            `Spearman correlation` = Correlation) %>%
+  arrange(Dataset, Level, Platform, Tool, Normalization, Sample)
+write_source_data(
+  split_panels(fig5_source, c(`Fig 5a` = "Mouse", `Fig 5b` = "LongBench", `Fig 5c` = "iNeuron")),
+  "Figure_5")
+```

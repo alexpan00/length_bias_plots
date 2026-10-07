@@ -1,0 +1,826 @@
+﻿"Dataset","Condition","Platform","Tool","Normalization","Length bin","Mean normalized expression"
+"Mouse","Kidney","Iso-Seq","Kallisto","CPM","0k-0.5k",16.288489365115
+"Mouse","Kidney","Iso-Seq","Kallisto","CPM","0.5k-1k",22.8573441688228
+"Mouse","Kidney","Iso-Seq","Kallisto","CPM","1k-1.5k",29.7745173593986
+"Mouse","Kidney","Iso-Seq","Kallisto","CPM","1.5k-2k",37.2787618393913
+"Mouse","Kidney","Iso-Seq","Kallisto","CPM","2k-2.5k",38.3085899867897
+"Mouse","Kidney","Iso-Seq","Kallisto","CPM","2.5k-3k",30.4084128831357
+"Mouse","Kidney","Iso-Seq","Kallisto","CPM","3k-3.5k",24.3582974122721
+"Mouse","Kidney","Iso-Seq","Kallisto","CPM","3.5k-4k",19.8877226631
+"Mouse","Kidney","Iso-Seq","Kallisto","CPM","4k-4.5k",18.1646383619993
+"Mouse","Kidney","Iso-Seq","Kallisto","CPM","4.5k-5k",14.1656433500755
+"Mouse","Kidney","Iso-Seq","Kallisto","CPM","5k+",8.59806470889474
+"Mouse","Kidney","Iso-Seq","Bambu","CPM","0k-0.5k",15.6386550875019
+"Mouse","Kidney","Iso-Seq","Bambu","CPM","0.5k-1k",22.0639300117757
+"Mouse","Kidney","Iso-Seq","Bambu","CPM","1k-1.5k",30.9263779257402
+"Mouse","Kidney","Iso-Seq","Bambu","CPM","1.5k-2k",37.6506201233169
+"Mouse","Kidney","Iso-Seq","Bambu","CPM","2k-2.5k",36.642682780506
+"Mouse","Kidney","Iso-Seq","Bambu","CPM","2.5k-3k",29.8780581304732
+"Mouse","Kidney","Iso-Seq","Bambu","CPM","3k-3.5k",24.653668437197
+"Mouse","Kidney","Iso-Seq","Bambu","CPM","3.5k-4k",19.7210975554897
+"Mouse","Kidney","Iso-Seq","Bambu","CPM","4k-4.5k",16.4494668687005
+"Mouse","Kidney","Iso-Seq","Bambu","CPM","4.5k-5k",13.4851007419733
+"Mouse","Kidney","Iso-Seq","Bambu","CPM","5k+",7.57643450859449
+"Mouse","Kidney","Iso-Seq","FLAIR","CPM","0k-0.5k",12.4930142416581
+"Mouse","Kidney","Iso-Seq","FLAIR","CPM","0.5k-1k",16.990635423604
+"Mouse","Kidney","Iso-Seq","FLAIR","CPM","1k-1.5k",21.0407386395424
+"Mouse","Kidney","Iso-Seq","FLAIR","CPM","1.5k-2k",21.310963243539
+"Mouse","Kidney","Iso-Seq","FLAIR","CPM","2k-2.5k",19.201888900110202
+"Mouse","Kidney","Iso-Seq","FLAIR","CPM","2.5k-3k",15.5666970167709
+"Mouse","Kidney","Iso-Seq","FLAIR","CPM","3k-3.5k",14.6075488013671
+"Mouse","Kidney","Iso-Seq","FLAIR","CPM","3.5k-4k",12.2888627485587
+"Mouse","Kidney","Iso-Seq","FLAIR","CPM","4k-4.5k",11.842466915134
+"Mouse","Kidney","Iso-Seq","FLAIR","CPM","4.5k-5k",9.92728662686328
+"Mouse","Kidney","Iso-Seq","FLAIR","CPM","5k+",7.70484097030586
+"Mouse","Kidney","Iso-Seq","Oarfish","CPM","0k-0.5k",13.7318909506161
+"Mouse","Kidney","Iso-Seq","Oarfish","CPM","0.5k-1k",20.0802131682529
+"Mouse","Kidney","Iso-Seq","Oarfish","CPM","1k-1.5k",27.2276945894717
+"Mouse","Kidney","Iso-Seq","Oarfish","CPM","1.5k-2k",32.8233207677281
+"Mouse","Kidney","Iso-Seq","Oarfish","CPM","2k-2.5k",31.4365716889921
+"Mouse","Kidney","Iso-Seq","Oarfish","CPM","2.5k-3k",25.5253778896616
+"Mouse","Kidney","Iso-Seq","Oarfish","CPM","3k-3.5k",21.2166081218598
+"Mouse","Kidney","Iso-Seq","Oarfish","CPM","3.5k-4k",16.2980257752946
+"Mouse","Kidney","Iso-Seq","Oarfish","CPM","4k-4.5k",14.3866546463769
+"Mouse","Kidney","Iso-Seq","Oarfish","CPM","4.5k-5k",11.1402352639671
+"Mouse","Kidney","Iso-Seq","Oarfish","CPM","5k+",6.18663855435823
+"Mouse","Kidney","Iso-Seq","IsoQuant","CPM","0k-0.5k",23.2855307404698
+"Mouse","Kidney","Iso-Seq","IsoQuant","CPM","0.5k-1k",26.0267046113742
+"Mouse","Kidney","Iso-Seq","IsoQuant","CPM","1k-1.5k",37.9986265314088
+"Mouse","Kidney","Iso-Seq","IsoQuant","CPM","1.5k-2k",43.6021856162081
+"Mouse","Kidney","Iso-Seq","IsoQuant","CPM","2k-2.5k",42.1357329882454
+"Mouse","Kidney","Iso-Seq","IsoQuant","CPM","2.5k-3k",34.1433877852045
+"Mouse","Kidney","Iso-Seq","IsoQuant","CPM","3k-3.5k",28.5884960666433
+"Mouse","Kidney","Iso-Seq","IsoQuant","CPM","3.5k-4k",22.8775325736462
+"Mouse","Kidney","Iso-Seq","IsoQuant","CPM","4k-4.5k",20.6695201299385
+"Mouse","Kidney","Iso-Seq","IsoQuant","CPM","4.5k-5k",16.4004486349153
+"Mouse","Kidney","Iso-Seq","IsoQuant","CPM","5k+",10.0569226236596
+"Mouse","Kidney","Iso-Seq","Kallisto","TPM","0k-0.5k",80.6779825586174
+"Mouse","Kidney","Iso-Seq","Kallisto","TPM","0.5k-1k",63.6456406603196
+"Mouse","Kidney","Iso-Seq","Kallisto","TPM","1k-1.5k",49.9683803069614
+"Mouse","Kidney","Iso-Seq","Kallisto","TPM","1.5k-2k",45.2477678536315
+"Mouse","Kidney","Iso-Seq","Kallisto","TPM","2k-2.5k",37.1197195788709
+"Mouse","Kidney","Iso-Seq","Kallisto","TPM","2.5k-3k",24.436493338082
+"Mouse","Kidney","Iso-Seq","Kallisto","TPM","3k-3.5k",16.7798275107338
+"Mouse","Kidney","Iso-Seq","Kallisto","TPM","3.5k-4k",11.9624493690166
+"Mouse","Kidney","Iso-Seq","Kallisto","TPM","4k-4.5k",9.61226064703822
+"Mouse","Kidney","Iso-Seq","Kallisto","TPM","4.5k-5k",6.72216231983568
+"Mouse","Kidney","Iso-Seq","Kallisto","TPM","5k+",2.96652280198948
+"Mouse","Kidney","Iso-Seq","Bambu","TPM","0k-0.5k",79.9191017403864
+"Mouse","Kidney","Iso-Seq","Bambu","TPM","0.5k-1k",61.576955233555
+"Mouse","Kidney","Iso-Seq","Bambu","TPM","1k-1.5k",51.4883344435083
+"Mouse","Kidney","Iso-Seq","Bambu","TPM","1.5k-2k",45.8651157024823
+"Mouse","Kidney","Iso-Seq","Bambu","TPM","2k-2.5k",35.4344270208075
+"Mouse","Kidney","Iso-Seq","Bambu","TPM","2.5k-3k",24.037736554951
+"Mouse","Kidney","Iso-Seq","Bambu","TPM","3k-3.5k",16.9977118818714
+"Mouse","Kidney","Iso-Seq","Bambu","TPM","3.5k-4k",11.8463904596455
+"Mouse","Kidney","Iso-Seq","Bambu","TPM","4k-4.5k",8.70134560318367
+"Mouse","Kidney","Iso-Seq","Bambu","TPM","4.5k-5k",6.38584445559346
+"Mouse","Kidney","Iso-Seq","Bambu","TPM","5k+",2.56071392865025
+"Mouse","Kidney","Iso-Seq","FLAIR","TPM","0k-0.5k",63.4029542332095
+"Mouse","Kidney","Iso-Seq","FLAIR","TPM","0.5k-1k",46.1718048504099
+"Mouse","Kidney","Iso-Seq","FLAIR","TPM","1k-1.5k",34.0554819791122
+"Mouse","Kidney","Iso-Seq","FLAIR","TPM","1.5k-2k",25.1143841308515
+"Mouse","Kidney","Iso-Seq","FLAIR","TPM","2k-2.5k",18.0673758073459
+"Mouse","Kidney","Iso-Seq","FLAIR","TPM","2.5k-3k",12.2112607758682
+"Mouse","Kidney","Iso-Seq","FLAIR","TPM","3k-3.5k",9.8101685530741
+"Mouse","Kidney","Iso-Seq","FLAIR","TPM","3.5k-4k",7.19696281700419
+"Mouse","Kidney","Iso-Seq","FLAIR","TPM","4k-4.5k",6.12580192439731
+"Mouse","Kidney","Iso-Seq","FLAIR","TPM","4.5k-5k",4.59124025712162
+"Mouse","Kidney","Iso-Seq","FLAIR","TPM","5k+",2.65969168769314
+"Mouse","Kidney","Iso-Seq","Oarfish","TPM","0k-0.5k",69.5990039530331
+"Mouse","Kidney","Iso-Seq","Oarfish","TPM","0.5k-1k",55.6260533065614
+"Mouse","Kidney","Iso-Seq","Oarfish","TPM","1k-1.5k",45.1670587915528
+"Mouse","Kidney","Iso-Seq","Oarfish","TPM","1.5k-2k",39.7511092186903
+"Mouse","Kidney","Iso-Seq","Oarfish","TPM","2k-2.5k",30.2735260317493
+"Mouse","Kidney","Iso-Seq","Oarfish","TPM","2.5k-3k",20.4750571339769
+"Mouse","Kidney","Iso-Seq","Oarfish","TPM","3k-3.5k",14.5799818953124
+"Mouse","Kidney","Iso-Seq","Oarfish","TPM","3.5k-4k",9.77934180263603
+"Mouse","Kidney","Iso-Seq","Oarfish","TPM","4k-4.5k",7.59701979616822
+"Mouse","Kidney","Iso-Seq","Oarfish","TPM","4.5k-5k",5.26910368178808
+"Mouse","Kidney","Iso-Seq","Oarfish","TPM","5k+",2.07005085444513
+"Mouse","Kidney","Iso-Seq","IsoQuant","TPM","0k-0.5k",114.83593405502
+"Mouse","Kidney","Iso-Seq","IsoQuant","TPM","0.5k-1k",71.3250127228348
+"Mouse","Kidney","Iso-Seq","IsoQuant","TPM","1k-1.5k",62.6334962539802
+"Mouse","Kidney","Iso-Seq","IsoQuant","TPM","1.5k-2k",52.3866529956539
+"Mouse","Kidney","Iso-Seq","IsoQuant","TPM","2k-2.5k",40.3705350375793
+"Mouse","Kidney","Iso-Seq","IsoQuant","TPM","2.5k-3k",27.1608050512384
+"Mouse","Kidney","Iso-Seq","IsoQuant","TPM","3k-3.5k",19.4903933601694
+"Mouse","Kidney","Iso-Seq","IsoQuant","TPM","3.5k-4k",13.6116013199343
+"Mouse","Kidney","Iso-Seq","IsoQuant","TPM","4k-4.5k",10.7860399598515
+"Mouse","Kidney","Iso-Seq","IsoQuant","TPM","4.5k-5k",7.68388887087368
+"Mouse","Kidney","Iso-Seq","IsoQuant","TPM","5k+",3.53282068117063
+"Mouse","Kidney","Iso-Seq","Kallisto","EDASeq","0k-0.5k",15.2210337002007
+"Mouse","Kidney","Iso-Seq","Kallisto","EDASeq","0.5k-1k",17.5616171867664
+"Mouse","Kidney","Iso-Seq","Kallisto","EDASeq","1k-1.5k",21.1450248138781
+"Mouse","Kidney","Iso-Seq","Kallisto","EDASeq","1.5k-2k",27.5147822027702
+"Mouse","Kidney","Iso-Seq","Kallisto","EDASeq","2k-2.5k",31.913115441951
+"Mouse","Kidney","Iso-Seq","Kallisto","EDASeq","2.5k-3k",29.3508991258018
+"Mouse","Kidney","Iso-Seq","Kallisto","EDASeq","3k-3.5k",26.8261505283047
+"Mouse","Kidney","Iso-Seq","Kallisto","EDASeq","3.5k-4k",24.6944729863774
+"Mouse","Kidney","Iso-Seq","Kallisto","EDASeq","4k-4.5k",25.5045929750013
+"Mouse","Kidney","Iso-Seq","Kallisto","EDASeq","4.5k-5k",22.0431452155062
+"Mouse","Kidney","Iso-Seq","Kallisto","EDASeq","5k+",18.1186021790615
+"Mouse","Kidney","Iso-Seq","Bambu","EDASeq","0k-0.5k",14.2848590269078
+"Mouse","Kidney","Iso-Seq","Bambu","EDASeq","0.5k-1k",16.8753059175982
+"Mouse","Kidney","Iso-Seq","Bambu","EDASeq","1k-1.5k",22.3063709312473
+"Mouse","Kidney","Iso-Seq","Bambu","EDASeq","1.5k-2k",28.7547921384108
+"Mouse","Kidney","Iso-Seq","Bambu","EDASeq","2k-2.5k",31.7859311017961
+"Mouse","Kidney","Iso-Seq","Bambu","EDASeq","2.5k-3k",29.1582081851344
+"Mouse","Kidney","Iso-Seq","Bambu","EDASeq","3k-3.5k",26.6314489697419
+"Mouse","Kidney","Iso-Seq","Bambu","EDASeq","3.5k-4k",23.6624318359472
+"Mouse","Kidney","Iso-Seq","Bambu","EDASeq","4k-4.5k",22.157878621676
+"Mouse","Kidney","Iso-Seq","Bambu","EDASeq","4.5k-5k",20.0327324542385
+"Mouse","Kidney","Iso-Seq","Bambu","EDASeq","5k+",15.6636863689024
+"Mouse","Kidney","Iso-Seq","FLAIR","EDASeq","0k-0.5k",10.7181421106936
+"Mouse","Kidney","Iso-Seq","FLAIR","EDASeq","0.5k-1k",13.5611863554981
+"Mouse","Kidney","Iso-Seq","FLAIR","EDASeq","1k-1.5k",17.0397873458963
+"Mouse","Kidney","Iso-Seq","FLAIR","EDASeq","1.5k-2k",19.0476713914534
+"Mouse","Kidney","Iso-Seq","FLAIR","EDASeq","2k-2.5k",19.2634073587029
+"Mouse","Kidney","Iso-Seq","FLAIR","EDASeq","2.5k-3k",16.4438162263697
+"Mouse","Kidney","Iso-Seq","FLAIR","EDASeq","3k-3.5k",15.8225190186162
+"Mouse","Kidney","Iso-Seq","FLAIR","EDASeq","3.5k-4k",13.5803847119712
+"Mouse","Kidney","Iso-Seq","FLAIR","EDASeq","4k-4.5k",13.4985988792226
+"Mouse","Kidney","Iso-Seq","FLAIR","EDASeq","4.5k-5k",11.7822858828485
+"Mouse","Kidney","Iso-Seq","FLAIR","EDASeq","5k+",9.88746053712768
+"Mouse","Kidney","Iso-Seq","Oarfish","EDASeq","0k-0.5k",12.5068099896398
+"Mouse","Kidney","Iso-Seq","Oarfish","EDASeq","0.5k-1k",15.4458523461645
+"Mouse","Kidney","Iso-Seq","Oarfish","EDASeq","1k-1.5k",19.872992918796
+"Mouse","Kidney","Iso-Seq","Oarfish","EDASeq","1.5k-2k",25.3996440066024
+"Mouse","Kidney","Iso-Seq","Oarfish","EDASeq","2k-2.5k",27.4703165150291
+"Mouse","Kidney","Iso-Seq","Oarfish","EDASeq","2.5k-3k",25.0115770063775
+"Mouse","Kidney","Iso-Seq","Oarfish","EDASeq","3k-3.5k",22.9561216455968
+"Mouse","Kidney","Iso-Seq","Oarfish","EDASeq","3.5k-4k",19.5180347333399
+"Mouse","Kidney","Iso-Seq","Oarfish","EDASeq","4k-4.5k",19.2347688978877
+"Mouse","Kidney","Iso-Seq","Oarfish","EDASeq","4.5k-5k",16.461768607851
+"Mouse","Kidney","Iso-Seq","Oarfish","EDASeq","5k+",12.1057945370996
+"Mouse","Kidney","Iso-Seq","IsoQuant","EDASeq","0k-0.5k",19.8144605325698
+"Mouse","Kidney","Iso-Seq","IsoQuant","EDASeq","0.5k-1k",19.941581174615
+"Mouse","Kidney","Iso-Seq","IsoQuant","EDASeq","1k-1.5k",28.1205655357313
+"Mouse","Kidney","Iso-Seq","IsoQuant","EDASeq","1.5k-2k",34.4623219896614
+"Mouse","Kidney","Iso-Seq","IsoQuant","EDASeq","2k-2.5k",38.1564963720325
+"Mouse","Kidney","Iso-Seq","IsoQuant","EDASeq","2.5k-3k",34.6049364326711
+"Mouse","Kidney","Iso-Seq","IsoQuant","EDASeq","3k-3.5k",31.7577989382194
+"Mouse","Kidney","Iso-Seq","IsoQuant","EDASeq","3.5k-4k",27.8597040208247
+"Mouse","Kidney","Iso-Seq","IsoQuant","EDASeq","4k-4.5k",28.3610311391961
+"Mouse","Kidney","Iso-Seq","IsoQuant","EDASeq","4.5k-5k",24.3607621923376
+"Mouse","Kidney","Iso-Seq","IsoQuant","EDASeq","5k+",18.5077904669434
+"Mouse","Kidney","Iso-Seq","Kallisto","CQN","0k-0.5k",21.1197542295876
+"Mouse","Kidney","Iso-Seq","Kallisto","CQN","0.5k-1k",25.88748137362
+"Mouse","Kidney","Iso-Seq","Kallisto","CQN","1k-1.5k",27.8390882114933
+"Mouse","Kidney","Iso-Seq","Kallisto","CQN","1.5k-2k",32.1988178202
+"Mouse","Kidney","Iso-Seq","Kallisto","CQN","2k-2.5k",32.9020924190623
+"Mouse","Kidney","Iso-Seq","Kallisto","CQN","2.5k-3k",29.0890237761046
+"Mouse","Kidney","Iso-Seq","Kallisto","CQN","3k-3.5k",28.1226979728075
+"Mouse","Kidney","Iso-Seq","Kallisto","CQN","3.5k-4k",26.3048077685976
+"Mouse","Kidney","Iso-Seq","Kallisto","CQN","4k-4.5k",27.6274322203313
+"Mouse","Kidney","Iso-Seq","Kallisto","CQN","4.5k-5k",25.1343019283314
+"Mouse","Kidney","Iso-Seq","Kallisto","CQN","5k+",22.6253173672724
+"Mouse","Kidney","Iso-Seq","Bambu","CQN","0k-0.5k",22.091999451661
+"Mouse","Kidney","Iso-Seq","Bambu","CQN","0.5k-1k",25.6122381347395
+"Mouse","Kidney","Iso-Seq","Bambu","CQN","1k-1.5k",27.469594802607
+"Mouse","Kidney","Iso-Seq","Bambu","CQN","1.5k-2k",29.8771831652135
+"Mouse","Kidney","Iso-Seq","Bambu","CQN","2k-2.5k",29.7108989804332
+"Mouse","Kidney","Iso-Seq","Bambu","CQN","2.5k-3k",27.2416768152015
+"Mouse","Kidney","Iso-Seq","Bambu","CQN","3k-3.5k",27.4921210999477
+"Mouse","Kidney","Iso-Seq","Bambu","CQN","3.5k-4k",25.1869705264609
+"Mouse","Kidney","Iso-Seq","Bambu","CQN","4k-4.5k",25.7196735462903
+"Mouse","Kidney","Iso-Seq","Bambu","CQN","4.5k-5k",24.5691677951832
+"Mouse","Kidney","Iso-Seq","Bambu","CQN","5k+",21.5624645080165
+"Mouse","Kidney","Iso-Seq","FLAIR","CQN","0k-0.5k",14.5275007878488
+"Mouse","Kidney","Iso-Seq","FLAIR","CQN","0.5k-1k",15.2378545206705
+"Mouse","Kidney","Iso-Seq","FLAIR","CQN","1k-1.5k",14.6189780515686
+"Mouse","Kidney","Iso-Seq","FLAIR","CQN","1.5k-2k",13.2564186131196
+"Mouse","Kidney","Iso-Seq","FLAIR","CQN","2k-2.5k",11.8582490536191
+"Mouse","Kidney","Iso-Seq","FLAIR","CQN","2.5k-3k",10.476564014877
+"Mouse","Kidney","Iso-Seq","FLAIR","CQN","3k-3.5k",10.5673970990872
+"Mouse","Kidney","Iso-Seq","FLAIR","CQN","3.5k-4k",9.77843793728645
+"Mouse","Kidney","Iso-Seq","FLAIR","CQN","4k-4.5k",10.7637716052621
+"Mouse","Kidney","Iso-Seq","FLAIR","CQN","4.5k-5k",10.955599393657799
+"Mouse","Kidney","Iso-Seq","FLAIR","CQN","5k+",11.0910167427758
+"Mouse","Kidney","Iso-Seq","Oarfish","CQN","0k-0.5k",17.7850449166588
+"Mouse","Kidney","Iso-Seq","Oarfish","CQN","0.5k-1k",22.8563237933182
+"Mouse","Kidney","Iso-Seq","Oarfish","CQN","1k-1.5k",24.179955569773
+"Mouse","Kidney","Iso-Seq","Oarfish","CQN","1.5k-2k",26.3749278038598
+"Mouse","Kidney","Iso-Seq","Oarfish","CQN","2k-2.5k",26.7045857322525
+"Mouse","Kidney","Iso-Seq","Oarfish","CQN","2.5k-3k",25.1094298971831
+"Mouse","Kidney","Iso-Seq","Oarfish","CQN","3k-3.5k",24.8196695617391
+"Mouse","Kidney","Iso-Seq","Oarfish","CQN","3.5k-4k",22.1669432101114
+"Mouse","Kidney","Iso-Seq","Oarfish","CQN","4k-4.5k",22.7183421837077
+"Mouse","Kidney","Iso-Seq","Oarfish","CQN","4.5k-5k",21.5298294077213
+"Mouse","Kidney","Iso-Seq","Oarfish","CQN","5k+",17.8613355108525
+"Mouse","Kidney","Iso-Seq","IsoQuant","CQN","0k-0.5k",23.5415236144424
+"Mouse","Kidney","Iso-Seq","IsoQuant","CQN","0.5k-1k",25.122105325427
+"Mouse","Kidney","Iso-Seq","IsoQuant","CQN","1k-1.5k",27.7701409331189
+"Mouse","Kidney","Iso-Seq","IsoQuant","CQN","1.5k-2k",28.4318579386052
+"Mouse","Kidney","Iso-Seq","IsoQuant","CQN","2k-2.5k",26.0472601059323
+"Mouse","Kidney","Iso-Seq","IsoQuant","CQN","2.5k-3k",22.3426203504689
+"Mouse","Kidney","Iso-Seq","IsoQuant","CQN","3k-3.5k",21.9243297413932
+"Mouse","Kidney","Iso-Seq","IsoQuant","CQN","3.5k-4k",19.8096840298356
+"Mouse","Kidney","Iso-Seq","IsoQuant","CQN","4k-4.5k",21.2847629908457
+"Mouse","Kidney","Iso-Seq","IsoQuant","CQN","4.5k-5k",18.5888339543044
+"Mouse","Kidney","Iso-Seq","IsoQuant","CQN","5k+",17.2211205726064
+"Mouse","Kidney","Iso-Seq","Kallisto","SMR","0k-0.5k",57.2831347048504
+"Mouse","Kidney","Iso-Seq","Kallisto","SMR","0.5k-1k",59.7987480487612
+"Mouse","Kidney","Iso-Seq","Kallisto","SMR","1k-1.5k",57.8019644287581
+"Mouse","Kidney","Iso-Seq","Kallisto","SMR","1.5k-2k",51.9947192142797
+"Mouse","Kidney","Iso-Seq","Kallisto","SMR","2k-2.5k",45.7814288676512
+"Mouse","Kidney","Iso-Seq","Kallisto","SMR","2.5k-3k",43.7769081453196
+"Mouse","Kidney","Iso-Seq","Kallisto","SMR","3k-3.5k",42.0951063486543
+"Mouse","Kidney","Iso-Seq","Kallisto","SMR","3.5k-4k",38.8045729687556
+"Mouse","Kidney","Iso-Seq","Kallisto","SMR","4k-4.5k",37.6287956007261
+"Mouse","Kidney","Iso-Seq","Kallisto","SMR","4.5k-5k",38.1916598289496
+"Mouse","Kidney","Iso-Seq","Kallisto","SMR","5k+",35.2957072876933
+"Mouse","Kidney","Iso-Seq","Bambu","SMR","0k-0.5k",52.6059590277661
+"Mouse","Kidney","Iso-Seq","Bambu","SMR","0.5k-1k",53.0735911356565
+"Mouse","Kidney","Iso-Seq","Bambu","SMR","1k-1.5k",51.2993032619406
+"Mouse","Kidney","Iso-Seq","Bambu","SMR","1.5k-2k",46.3614593472644
+"Mouse","Kidney","Iso-Seq","Bambu","SMR","2k-2.5k",40.9559762175555
+"Mouse","Kidney","Iso-Seq","Bambu","SMR","2.5k-3k",39.365877156482
+"Mouse","Kidney","Iso-Seq","Bambu","SMR","3k-3.5k",38.1625215859375
+"Mouse","Kidney","Iso-Seq","Bambu","SMR","3.5k-4k",34.4320046840037
+"Mouse","Kidney","Iso-Seq","Bambu","SMR","4k-4.5k",32.7040300597026
+"Mouse","Kidney","Iso-Seq","Bambu","SMR","4.5k-5k",34.2261786282777
+"Mouse","Kidney","Iso-Seq","Bambu","SMR","5k+",30.3339537192045
+"Mouse","Kidney","Iso-Seq","FLAIR","SMR","0k-0.5k",19.2240238444398
+"Mouse","Kidney","Iso-Seq","FLAIR","SMR","0.5k-1k",17.0223695001907
+"Mouse","Kidney","Iso-Seq","FLAIR","SMR","1k-1.5k",18.102048956506
+"Mouse","Kidney","Iso-Seq","FLAIR","SMR","1.5k-2k",17.3314866236569
+"Mouse","Kidney","Iso-Seq","FLAIR","SMR","2k-2.5k",17.4306136774945
+"Mouse","Kidney","Iso-Seq","FLAIR","SMR","2.5k-3k",18.507693150137
+"Mouse","Kidney","Iso-Seq","FLAIR","SMR","3k-3.5k",18.0929793944017
+"Mouse","Kidney","Iso-Seq","FLAIR","SMR","3.5k-4k",18.2189973529582
+"Mouse","Kidney","Iso-Seq","FLAIR","SMR","4k-4.5k",16.4119134199233
+"Mouse","Kidney","Iso-Seq","FLAIR","SMR","4.5k-5k",16.6961680036367
+"Mouse","Kidney","Iso-Seq","FLAIR","SMR","5k+",14.6766293477711
+"Mouse","Kidney","Iso-Seq","Oarfish","SMR","0k-0.5k",53.8274335707539
+"Mouse","Kidney","Iso-Seq","Oarfish","SMR","0.5k-1k",51.251393678421
+"Mouse","Kidney","Iso-Seq","Oarfish","SMR","1k-1.5k",48.4005424324874
+"Mouse","Kidney","Iso-Seq","Oarfish","SMR","1.5k-2k",43.9646757290348
+"Mouse","Kidney","Iso-Seq","Oarfish","SMR","2k-2.5k",38.8104709145052
+"Mouse","Kidney","Iso-Seq","Oarfish","SMR","2.5k-3k",37.0627131180514
+"Mouse","Kidney","Iso-Seq","Oarfish","SMR","3k-3.5k",35.2681088583188
+"Mouse","Kidney","Iso-Seq","Oarfish","SMR","3.5k-4k",32.2494242345031
+"Mouse","Kidney","Iso-Seq","Oarfish","SMR","4k-4.5k",31.5707914753179
+"Mouse","Kidney","Iso-Seq","Oarfish","SMR","4.5k-5k",31.4782967254271
+"Mouse","Kidney","Iso-Seq","Oarfish","SMR","5k+",28.0842968742302
+"Mouse","Kidney","Iso-Seq","IsoQuant","SMR","0k-0.5k",26.5360460897733
+"Mouse","Kidney","Iso-Seq","IsoQuant","SMR","0.5k-1k",24.7578835420878
+"Mouse","Kidney","Iso-Seq","IsoQuant","SMR","1k-1.5k",24.9167362295086
+"Mouse","Kidney","Iso-Seq","IsoQuant","SMR","1.5k-2k",23.4163530674107
+"Mouse","Kidney","Iso-Seq","IsoQuant","SMR","2k-2.5k",22.8716153681215
+"Mouse","Kidney","Iso-Seq","IsoQuant","SMR","2.5k-3k",24.8049896678913
+"Mouse","Kidney","Iso-Seq","IsoQuant","SMR","3k-3.5k",25.5649444334774
+"Mouse","Kidney","Iso-Seq","IsoQuant","SMR","3.5k-4k",27.5917244644128
+"Mouse","Kidney","Iso-Seq","IsoQuant","SMR","4k-4.5k",28.8602400101246
+"Mouse","Kidney","Iso-Seq","IsoQuant","SMR","4.5k-5k",27.5603125784338
+"Mouse","Kidney","Iso-Seq","IsoQuant","SMR","5k+",33.2949439774986
+"Mouse","Kidney","Kinnex","Kallisto","CPM","0k-0.5k",3.84492042391962
+"Mouse","Kidney","Kinnex","Kallisto","CPM","0.5k-1k",15.6287336061332
+"Mouse","Kidney","Kinnex","Kallisto","CPM","1k-1.5k",20.9317931024448
+"Mouse","Kidney","Kinnex","Kallisto","CPM","1.5k-2k",17.4449017687885
+"Mouse","Kidney","Kinnex","Kallisto","CPM","2k-2.5k",12.4046823544311
+"Mouse","Kidney","Kinnex","Kallisto","CPM","2.5k-3k",8.57564779657616
+"Mouse","Kidney","Kinnex","Kallisto","CPM","3k-3.5k",7.1144734232515
+"Mouse","Kidney","Kinnex","Kallisto","CPM","3.5k-4k",5.2914896280945
+"Mouse","Kidney","Kinnex","Kallisto","CPM","4k-4.5k",4.91778542869788
+"Mouse","Kidney","Kinnex","Kallisto","CPM","4.5k-5k",4.10852771989337
+"Mouse","Kidney","Kinnex","Kallisto","CPM","5k+",2.53969032230753
+"Mouse","Kidney","Kinnex","Bambu","CPM","0k-0.5k",3.87049129320183
+"Mouse","Kidney","Kinnex","Bambu","CPM","0.5k-1k",13.3320948723683
+"Mouse","Kidney","Kinnex","Bambu","CPM","1k-1.5k",19.946202127799
+"Mouse","Kidney","Kinnex","Bambu","CPM","1.5k-2k",17.0322688861315
+"Mouse","Kidney","Kinnex","Bambu","CPM","2k-2.5k",11.753301064413
+"Mouse","Kidney","Kinnex","Bambu","CPM","2.5k-3k",7.86865728096785
+"Mouse","Kidney","Kinnex","Bambu","CPM","3k-3.5k",6.14399451169877
+"Mouse","Kidney","Kinnex","Bambu","CPM","3.5k-4k",4.37653095987193
+"Mouse","Kidney","Kinnex","Bambu","CPM","4k-4.5k",3.94153420833538
+"Mouse","Kidney","Kinnex","Bambu","CPM","4.5k-5k",3.25919917488874
+"Mouse","Kidney","Kinnex","Bambu","CPM","5k+",1.97810886492293
+"Mouse","Kidney","Kinnex","FLAIR","CPM","0k-0.5k",1.94792752018095
+"Mouse","Kidney","Kinnex","FLAIR","CPM","0.5k-1k",3.14566829168217
+"Mouse","Kidney","Kinnex","FLAIR","CPM","1k-1.5k",2.04659244918764
+"Mouse","Kidney","Kinnex","FLAIR","CPM","1.5k-2k",2.15778773840108
+"Mouse","Kidney","Kinnex","FLAIR","CPM","2k-2.5k",2.27876591280761
+"Mouse","Kidney","Kinnex","FLAIR","CPM","2.5k-3k",2.25660669456147
+"Mouse","Kidney","Kinnex","FLAIR","CPM","3k-3.5k",2.44084946484831
+"Mouse","Kidney","Kinnex","FLAIR","CPM","3.5k-4k",2.29207711748678
+"Mouse","Kidney","Kinnex","FLAIR","CPM","4k-4.5k",2.57470029938327
+"Mouse","Kidney","Kinnex","FLAIR","CPM","4.5k-5k",2.47575866658346
+"Mouse","Kidney","Kinnex","FLAIR","CPM","5k+",2.45516211159447
+"Mouse","Kidney","Kinnex","Oarfish","CPM","0k-0.5k",2.7540960349504102
+"Mouse","Kidney","Kinnex","Oarfish","CPM","0.5k-1k",9.34641765396752
+"Mouse","Kidney","Kinnex","Oarfish","CPM","1k-1.5k",15.8384219397919
+"Mouse","Kidney","Kinnex","Oarfish","CPM","1.5k-2k",13.4328160869186
+"Mouse","Kidney","Kinnex","Oarfish","CPM","2k-2.5k",9.13426822783225
+"Mouse","Kidney","Kinnex","Oarfish","CPM","2.5k-3k",6.00706912714243
+"Mouse","Kidney","Kinnex","Oarfish","CPM","3k-3.5k",4.75924705831784
+"Mouse","Kidney","Kinnex","Oarfish","CPM","3.5k-4k",3.37492106087713
+"Mouse","Kidney","Kinnex","Oarfish","CPM","4k-4.5k",3.02562742458213
+"Mouse","Kidney","Kinnex","Oarfish","CPM","4.5k-5k",2.56263759445616
+"Mouse","Kidney","Kinnex","Oarfish","CPM","5k+",1.38258322606808
+"Mouse","Kidney","Kinnex","IsoQuant","CPM","0k-0.5k",6.41995159591076
+"Mouse","Kidney","Kinnex","IsoQuant","CPM","0.5k-1k",16.5907814896073
+"Mouse","Kidney","Kinnex","IsoQuant","CPM","1k-1.5k",19.3243341865468
+"Mouse","Kidney","Kinnex","IsoQuant","CPM","1.5k-2k",14.4962286075319
+"Mouse","Kidney","Kinnex","IsoQuant","CPM","2k-2.5k",10.2787167487943
+"Mouse","Kidney","Kinnex","IsoQuant","CPM","2.5k-3k",7.40969093253516
+"Mouse","Kidney","Kinnex","IsoQuant","CPM","3k-3.5k",6.15927400768533
+"Mouse","Kidney","Kinnex","IsoQuant","CPM","3.5k-4k",4.92823901876215
+"Mouse","Kidney","Kinnex","IsoQuant","CPM","4k-4.5k",4.25594245656392
+"Mouse","Kidney","Kinnex","IsoQuant","CPM","4.5k-5k",3.52440013866534
+"Mouse","Kidney","Kinnex","IsoQuant","CPM","5k+",2.9814998040318
+"Mouse","Kidney","Kinnex","Kallisto","TPM","0k-0.5k",15.4031188581351
+"Mouse","Kidney","Kinnex","Kallisto","TPM","0.5k-1k",33.3668366140777
+"Mouse","Kidney","Kinnex","Kallisto","TPM","1k-1.5k",29.0816872172597
+"Mouse","Kidney","Kinnex","Kallisto","TPM","1.5k-2k",17.7909096483503
+"Mouse","Kidney","Kinnex","Kallisto","TPM","2k-2.5k",9.90787624274394
+"Mouse","Kidney","Kinnex","Kallisto","TPM","2.5k-3k",5.59713269055659
+"Mouse","Kidney","Kinnex","Kallisto","TPM","3k-3.5k",3.92920534597041
+"Mouse","Kidney","Kinnex","Kallisto","TPM","3.5k-4k",2.5390861032282
+"Mouse","Kidney","Kinnex","Kallisto","TPM","4k-4.5k",2.07588017665354
+"Mouse","Kidney","Kinnex","Kallisto","TPM","4.5k-5k",1.55132666892041
+"Mouse","Kidney","Kinnex","Kallisto","TPM","5k+",0.655449008643708
+"Mouse","Kidney","Kinnex","Bambu","TPM","0k-0.5k",15.6344744686233
+"Mouse","Kidney","Kinnex","Bambu","TPM","0.5k-1k",27.3909681693046
+"Mouse","Kidney","Kinnex","Bambu","TPM","1k-1.5k",26.6489342577047
+"Mouse","Kidney","Kinnex","Bambu","TPM","1.5k-2k",16.7700181707612
+"Mouse","Kidney","Kinnex","Bambu","TPM","2k-2.5k",9.01826928707358
+"Mouse","Kidney","Kinnex","Bambu","TPM","2.5k-3k",4.93912698983905
+"Mouse","Kidney","Kinnex","Bambu","TPM","3k-3.5k",3.26492059936351
+"Mouse","Kidney","Kinnex","Bambu","TPM","3.5k-4k",2.01879370115318
+"Mouse","Kidney","Kinnex","Bambu","TPM","4k-4.5k",1.59719282646183
+"Mouse","Kidney","Kinnex","Bambu","TPM","4.5k-5k",1.18164923369887
+"Mouse","Kidney","Kinnex","Bambu","TPM","5k+",0.482062914096093
+"Mouse","Kidney","Kinnex","FLAIR","TPM","0k-0.5k",7.45109490652728
+"Mouse","Kidney","Kinnex","FLAIR","TPM","0.5k-1k",6.13412515446646
+"Mouse","Kidney","Kinnex","FLAIR","TPM","1k-1.5k",2.54708765159157
+"Mouse","Kidney","Kinnex","FLAIR","TPM","1.5k-2k",1.97308601477382
+"Mouse","Kidney","Kinnex","FLAIR","TPM","2k-2.5k",1.6384664237084
+"Mouse","Kidney","Kinnex","FLAIR","TPM","2.5k-3k",1.33235092812753
+"Mouse","Kidney","Kinnex","FLAIR","TPM","3k-3.5k",1.2210614622722
+"Mouse","Kidney","Kinnex","FLAIR","TPM","3.5k-4k",0.994395301466255
+"Mouse","Kidney","Kinnex","FLAIR","TPM","4k-4.5k",0.983643229876576
+"Mouse","Kidney","Kinnex","FLAIR","TPM","4.5k-5k",0.845816050469547
+"Mouse","Kidney","Kinnex","FLAIR","TPM","5k+",0.617777433123213
+"Mouse","Kidney","Kinnex","Oarfish","TPM","0k-0.5k",10.6148202926544
+"Mouse","Kidney","Kinnex","Oarfish","TPM","0.5k-1k",19.0346819941229
+"Mouse","Kidney","Kinnex","Oarfish","TPM","1k-1.5k",20.8289776002721
+"Mouse","Kidney","Kinnex","Oarfish","TPM","1.5k-2k",12.9823133707903
+"Mouse","Kidney","Kinnex","Oarfish","TPM","2k-2.5k",6.91451379947704
+"Mouse","Kidney","Kinnex","Oarfish","TPM","2.5k-3k",3.71755329742095
+"Mouse","Kidney","Kinnex","Oarfish","TPM","3k-3.5k",2.4932157218849
+"Mouse","Kidney","Kinnex","Oarfish","TPM","3.5k-4k",1.53325101121697
+"Mouse","Kidney","Kinnex","Oarfish","TPM","4k-4.5k",1.20778079719695
+"Mouse","Kidney","Kinnex","Oarfish","TPM","4.5k-5k",0.916208284107771
+"Mouse","Kidney","Kinnex","Oarfish","TPM","5k+",0.328964082537982
+"Mouse","Kidney","Kinnex","IsoQuant","TPM","0k-0.5k",24.1367063426358
+"Mouse","Kidney","Kinnex","IsoQuant","TPM","0.5k-1k",33.5835082451148
+"Mouse","Kidney","Kinnex","IsoQuant","TPM","1k-1.5k",25.7149018218456
+"Mouse","Kidney","Kinnex","IsoQuant","TPM","1.5k-2k",14.1118041831402
+"Mouse","Kidney","Kinnex","IsoQuant","TPM","2k-2.5k",7.84481565500402
+"Mouse","Kidney","Kinnex","IsoQuant","TPM","2.5k-3k",4.62396389237971
+"Mouse","Kidney","Kinnex","IsoQuant","TPM","3k-3.5k",3.25532645468701
+"Mouse","Kidney","Kinnex","IsoQuant","TPM","3.5k-4k",2.25624942268395
+"Mouse","Kidney","Kinnex","IsoQuant","TPM","4k-4.5k",1.71141962238581
+"Mouse","Kidney","Kinnex","IsoQuant","TPM","4.5k-5k",1.27024879851682
+"Mouse","Kidney","Kinnex","IsoQuant","TPM","5k+",0.77576820985817
+"Mouse","Kidney","Kinnex","Kallisto","EDASeq","0k-0.5k",3.66685186907047
+"Mouse","Kidney","Kinnex","Kallisto","EDASeq","0.5k-1k",10.1494125210787
+"Mouse","Kidney","Kinnex","Kallisto","EDASeq","1k-1.5k",14.0217035616198
+"Mouse","Kidney","Kinnex","Kallisto","EDASeq","1.5k-2k",13.6853859457158
+"Mouse","Kidney","Kinnex","Kallisto","EDASeq","2k-2.5k",11.6226187763824
+"Mouse","Kidney","Kinnex","Kallisto","EDASeq","2.5k-3k",9.52818889639618
+"Mouse","Kidney","Kinnex","Kallisto","EDASeq","3k-3.5k",9.18340392418776
+"Mouse","Kidney","Kinnex","Kallisto","EDASeq","3.5k-4k",7.81172476824791
+"Mouse","Kidney","Kinnex","Kallisto","EDASeq","4k-4.5k",8.12325350542659
+"Mouse","Kidney","Kinnex","Kallisto","EDASeq","4.5k-5k",7.43728854345775
+"Mouse","Kidney","Kinnex","Kallisto","EDASeq","5k+",6.70169968096899
+"Mouse","Kidney","Kinnex","Bambu","EDASeq","0k-0.5k",3.78030670190825
+"Mouse","Kidney","Kinnex","Bambu","EDASeq","0.5k-1k",9.01685828129788
+"Mouse","Kidney","Kinnex","Bambu","EDASeq","1k-1.5k",13.9813104471248
+"Mouse","Kidney","Kinnex","Bambu","EDASeq","1.5k-2k",13.7181775246476
+"Mouse","Kidney","Kinnex","Bambu","EDASeq","2k-2.5k",11.341961953138
+"Mouse","Kidney","Kinnex","Bambu","EDASeq","2.5k-3k",9.12949602486255
+"Mouse","Kidney","Kinnex","Bambu","EDASeq","3k-3.5k",8.32882989602515
+"Mouse","Kidney","Kinnex","Bambu","EDASeq","3.5k-4k",6.69550023587114
+"Mouse","Kidney","Kinnex","Bambu","EDASeq","4k-4.5k",6.72358219452065
+"Mouse","Kidney","Kinnex","Bambu","EDASeq","4.5k-5k",6.08087838507593
+"Mouse","Kidney","Kinnex","Bambu","EDASeq","5k+",5.35281124537534
+"Mouse","Kidney","Kinnex","FLAIR","EDASeq","0k-0.5k",2.20404928440057
+"Mouse","Kidney","Kinnex","FLAIR","EDASeq","0.5k-1k",3.48266943094247
+"Mouse","Kidney","Kinnex","FLAIR","EDASeq","1k-1.5k",2.31111916748494
+"Mouse","Kidney","Kinnex","FLAIR","EDASeq","1.5k-2k",2.2704362060964
+"Mouse","Kidney","Kinnex","FLAIR","EDASeq","2k-2.5k",2.11558814880837
+"Mouse","Kidney","Kinnex","FLAIR","EDASeq","2.5k-3k",1.86195531864786
+"Mouse","Kidney","Kinnex","FLAIR","EDASeq","3k-3.5k",1.82069477060654
+"Mouse","Kidney","Kinnex","FLAIR","EDASeq","3.5k-4k",1.5704835544954
+"Mouse","Kidney","Kinnex","FLAIR","EDASeq","4k-4.5k",1.65767943537707
+"Mouse","Kidney","Kinnex","FLAIR","EDASeq","4.5k-5k",1.51929659207638
+"Mouse","Kidney","Kinnex","FLAIR","EDASeq","5k+",1.41002939889029
+"Mouse","Kidney","Kinnex","Oarfish","EDASeq","0k-0.5k",4.26458590017621
+"Mouse","Kidney","Kinnex","Oarfish","EDASeq","0.5k-1k",8.3640710444877
+"Mouse","Kidney","Kinnex","Oarfish","EDASeq","1k-1.5k",12.6990471758031
+"Mouse","Kidney","Kinnex","Oarfish","EDASeq","1.5k-2k",11.4939376178716
+"Mouse","Kidney","Kinnex","Oarfish","EDASeq","2k-2.5k",8.86317200979945
+"Mouse","Kidney","Kinnex","Oarfish","EDASeq","2.5k-3k",6.66077941969491
+"Mouse","Kidney","Kinnex","Oarfish","EDASeq","3k-3.5k",5.84447364545872
+"Mouse","Kidney","Kinnex","Oarfish","EDASeq","3.5k-4k",4.50207564724959
+"Mouse","Kidney","Kinnex","Oarfish","EDASeq","4k-4.5k",4.35591755527534
+"Mouse","Kidney","Kinnex","Oarfish","EDASeq","4.5k-5k",3.96176608388531
+"Mouse","Kidney","Kinnex","Oarfish","EDASeq","5k+",2.80399405513339
+"Mouse","Kidney","Kinnex","IsoQuant","EDASeq","0k-0.5k",3.7096714994508
+"Mouse","Kidney","Kinnex","IsoQuant","EDASeq","0.5k-1k",11.5492744635482
+"Mouse","Kidney","Kinnex","IsoQuant","EDASeq","1k-1.5k",16.1529480484572
+"Mouse","Kidney","Kinnex","IsoQuant","EDASeq","1.5k-2k",14.0393004627324
+"Mouse","Kidney","Kinnex","IsoQuant","EDASeq","2k-2.5k",10.8676101965612
+"Mouse","Kidney","Kinnex","IsoQuant","EDASeq","2.5k-3k",8.44235847407065
+"Mouse","Kidney","Kinnex","IsoQuant","EDASeq","3k-3.5k",7.59745751382941
+"Mouse","Kidney","Kinnex","IsoQuant","EDASeq","3.5k-4k",6.61455701708943
+"Mouse","Kidney","Kinnex","IsoQuant","EDASeq","4k-4.5k",6.07597560936618
+"Mouse","Kidney","Kinnex","IsoQuant","EDASeq","4.5k-5k",5.20997660491001
+"Mouse","Kidney","Kinnex","IsoQuant","EDASeq","5k+",4.79543121903069
+"Mouse","Kidney","Kinnex","Kallisto","CQN","0k-0.5k",5.42271312256071
+"Mouse","Kidney","Kinnex","Kallisto","CQN","0.5k-1k",9.93535933134957
+"Mouse","Kidney","Kinnex","Kallisto","CQN","1k-1.5k",13.1569550416494
+"Mouse","Kidney","Kinnex","Kallisto","CQN","1.5k-2k",13.7738736494261
+"Mouse","Kidney","Kinnex","Kallisto","CQN","2k-2.5k",12.2388760814962
+"Mouse","Kidney","Kinnex","Kallisto","CQN","2.5k-3k",10.695247311379
+"Mouse","Kidney","Kinnex","Kallisto","CQN","3k-3.5k",10.5162603862756
+"Mouse","Kidney","Kinnex","Kallisto","CQN","3.5k-4k",8.82359597526893
+"Mouse","Kidney","Kinnex","Kallisto","CQN","4k-4.5k",8.60949970223442
+"Mouse","Kidney","Kinnex","Kallisto","CQN","4.5k-5k",7.86173177995809
+"Mouse","Kidney","Kinnex","Kallisto","CQN","5k+",7.00980053291962
+"Mouse","Kidney","Kinnex","Bambu","CQN","0k-0.5k",4.73775379833124
+"Mouse","Kidney","Kinnex","Bambu","CQN","0.5k-1k",8.74148635695262
+"Mouse","Kidney","Kinnex","Bambu","CQN","1k-1.5k",13.1249881536617
+"Mouse","Kidney","Kinnex","Bambu","CQN","1.5k-2k",14.0401568757621
+"Mouse","Kidney","Kinnex","Bambu","CQN","2k-2.5k",12.259150687102
+"Mouse","Kidney","Kinnex","Bambu","CQN","2.5k-3k",10.5205627184387
+"Mouse","Kidney","Kinnex","Bambu","CQN","3k-3.5k",10.2273798470779
+"Mouse","Kidney","Kinnex","Bambu","CQN","3.5k-4k",8.47641965690465
+"Mouse","Kidney","Kinnex","Bambu","CQN","4k-4.5k",8.35329964482196
+"Mouse","Kidney","Kinnex","Bambu","CQN","4.5k-5k",7.62698312183038
+"Mouse","Kidney","Kinnex","Bambu","CQN","5k+",6.48217564436842
+"Mouse","Kidney","Kinnex","FLAIR","CQN","0k-0.5k",1.29963478734322
+"Mouse","Kidney","Kinnex","FLAIR","CQN","0.5k-1k",1.4355894620994
+"Mouse","Kidney","Kinnex","FLAIR","CQN","1k-1.5k",0.986266658228936
+"Mouse","Kidney","Kinnex","FLAIR","CQN","1.5k-2k",0.940805422906883
+"Mouse","Kidney","Kinnex","FLAIR","CQN","2k-2.5k",0.971939164505743
+"Mouse","Kidney","Kinnex","FLAIR","CQN","2.5k-3k",1.01417025374882
+"Mouse","Kidney","Kinnex","FLAIR","CQN","3k-3.5k",1.15328158767841
+"Mouse","Kidney","Kinnex","FLAIR","CQN","3.5k-4k",1.23956350685264
+"Mouse","Kidney","Kinnex","FLAIR","CQN","4k-4.5k",1.48892063215184
+"Mouse","Kidney","Kinnex","FLAIR","CQN","4.5k-5k",1.71337156417283
+"Mouse","Kidney","Kinnex","FLAIR","CQN","5k+",2.39126888493279
+"Mouse","Kidney","Kinnex","Oarfish","CQN","0k-0.5k",3.65036356035344
+"Mouse","Kidney","Kinnex","Oarfish","CQN","0.5k-1k",7.18618195114427
+"Mouse","Kidney","Kinnex","Oarfish","CQN","1k-1.5k",12.4194546727714
+"Mouse","Kidney","Kinnex","Oarfish","CQN","1.5k-2k",13.6079475264568
+"Mouse","Kidney","Kinnex","Oarfish","CQN","2k-2.5k",11.7433551040143
+"Mouse","Kidney","Kinnex","Oarfish","CQN","2.5k-3k",9.89810741537352
+"Mouse","Kidney","Kinnex","Oarfish","CQN","3k-3.5k",9.61320056927706
+"Mouse","Kidney","Kinnex","Oarfish","CQN","3.5k-4k",7.93477576191853
+"Mouse","Kidney","Kinnex","Oarfish","CQN","4k-4.5k",7.84404090117821
+"Mouse","Kidney","Kinnex","Oarfish","CQN","4.5k-5k",7.23949607042493
+"Mouse","Kidney","Kinnex","Oarfish","CQN","5k+",5.6054689901781
+"Mouse","Kidney","Kinnex","IsoQuant","CQN","0k-0.5k",6.38501508914386
+"Mouse","Kidney","Kinnex","IsoQuant","CQN","0.5k-1k",7.2591060174709
+"Mouse","Kidney","Kinnex","IsoQuant","CQN","1k-1.5k",7.24399689823329
+"Mouse","Kidney","Kinnex","IsoQuant","CQN","1.5k-2k",6.81686801772416
+"Mouse","Kidney","Kinnex","IsoQuant","CQN","2k-2.5k",5.8429587610084
+"Mouse","Kidney","Kinnex","IsoQuant","CQN","2.5k-3k",5.1618022528914
+"Mouse","Kidney","Kinnex","IsoQuant","CQN","3k-3.5k",5.1659822200479
+"Mouse","Kidney","Kinnex","IsoQuant","CQN","3.5k-4k",4.76349255327048
+"Mouse","Kidney","Kinnex","IsoQuant","CQN","4k-4.5k",5.3027060981925
+"Mouse","Kidney","Kinnex","IsoQuant","CQN","4.5k-5k",5.36122395204762
+"Mouse","Kidney","Kinnex","IsoQuant","CQN","5k+",10.1438003052356
+"Mouse","Kidney","Kinnex","Kallisto","SMR","0k-0.5k",26.5481983108334
+"Mouse","Kidney","Kinnex","Kallisto","SMR","0.5k-1k",28.6476569313433
+"Mouse","Kidney","Kinnex","Kallisto","SMR","1k-1.5k",24.0899236553925
+"Mouse","Kidney","Kinnex","Kallisto","SMR","1.5k-2k",20.7160260556743
+"Mouse","Kidney","Kinnex","Kallisto","SMR","2k-2.5k",18.719945638762
+"Mouse","Kidney","Kinnex","Kallisto","SMR","2.5k-3k",17.9279261984638
+"Mouse","Kidney","Kinnex","Kallisto","SMR","3k-3.5k",16.9778550810127
+"Mouse","Kidney","Kinnex","Kallisto","SMR","3.5k-4k",15.7913359678367
+"Mouse","Kidney","Kinnex","Kallisto","SMR","4k-4.5k",15.6779461231777
+"Mouse","Kidney","Kinnex","Kallisto","SMR","4.5k-5k",15.9016863948429
+"Mouse","Kidney","Kinnex","Kallisto","SMR","5k+",13.6083224653771
+"Mouse","Kidney","Kinnex","Bambu","SMR","0k-0.5k",29.977759316851
+"Mouse","Kidney","Kinnex","Bambu","SMR","0.5k-1k",30.4946557813637
+"Mouse","Kidney","Kinnex","Bambu","SMR","1k-1.5k",26.5067158434531
+"Mouse","Kidney","Kinnex","Bambu","SMR","1.5k-2k",24.1197381389434
+"Mouse","Kidney","Kinnex","Bambu","SMR","2k-2.5k",22.1452526286763
+"Mouse","Kidney","Kinnex","Bambu","SMR","2.5k-3k",20.9028615826758
+"Mouse","Kidney","Kinnex","Bambu","SMR","3k-3.5k",19.9545409622014
+"Mouse","Kidney","Kinnex","Bambu","SMR","3.5k-4k",18.6949478284743
+"Mouse","Kidney","Kinnex","Bambu","SMR","4k-4.5k",18.6490133464002
+"Mouse","Kidney","Kinnex","Bambu","SMR","4.5k-5k",18.4375638671007
+"Mouse","Kidney","Kinnex","Bambu","SMR","5k+",16.4862404722202
+"Mouse","Kidney","Kinnex","FLAIR","SMR","0k-0.5k",5.26382669475616
+"Mouse","Kidney","Kinnex","FLAIR","SMR","0.5k-1k",4.97886955445331
+"Mouse","Kidney","Kinnex","FLAIR","SMR","1k-1.5k",4.37423628144237
+"Mouse","Kidney","Kinnex","FLAIR","SMR","1.5k-2k",4.73748346960625
+"Mouse","Kidney","Kinnex","FLAIR","SMR","2k-2.5k",5.1789273938512
+"Mouse","Kidney","Kinnex","FLAIR","SMR","2.5k-3k",5.30651431470422
+"Mouse","Kidney","Kinnex","FLAIR","SMR","3k-3.5k",5.66324451019793
+"Mouse","Kidney","Kinnex","FLAIR","SMR","3.5k-4k",5.62574692890005
+"Mouse","Kidney","Kinnex","FLAIR","SMR","4k-4.5k",5.77197620770902
+"Mouse","Kidney","Kinnex","FLAIR","SMR","4.5k-5k",5.6201152479062
+"Mouse","Kidney","Kinnex","FLAIR","SMR","5k+",5.44835639312166
+"Mouse","Kidney","Kinnex","Oarfish","SMR","0k-0.5k",22.0088105881833
+"Mouse","Kidney","Kinnex","Oarfish","SMR","0.5k-1k",23.0392953947059
+"Mouse","Kidney","Kinnex","Oarfish","SMR","1k-1.5k",21.8592399173026
+"Mouse","Kidney","Kinnex","Oarfish","SMR","1.5k-2k",20.1359381236753
+"Mouse","Kidney","Kinnex","Oarfish","SMR","2k-2.5k",18.6407314951552
+"Mouse","Kidney","Kinnex","Oarfish","SMR","2.5k-3k",17.5963562090053
+"Mouse","Kidney","Kinnex","Oarfish","SMR","3k-3.5k",16.6009224603111
+"Mouse","Kidney","Kinnex","Oarfish","SMR","3.5k-4k",15.5638962193345
+"Mouse","Kidney","Kinnex","Oarfish","SMR","4k-4.5k",15.6983701370051
+"Mouse","Kidney","Kinnex","Oarfish","SMR","4.5k-5k",15.5719866282399
+"Mouse","Kidney","Kinnex","Oarfish","SMR","5k+",13.0808354244629
+"Mouse","Kidney","Kinnex","IsoQuant","SMR","0k-0.5k",17.1521678826927
+"Mouse","Kidney","Kinnex","IsoQuant","SMR","0.5k-1k",13.8000189946941
+"Mouse","Kidney","Kinnex","IsoQuant","SMR","1k-1.5k",11.5588724297025
+"Mouse","Kidney","Kinnex","IsoQuant","SMR","1.5k-2k",11.5147902415305
+"Mouse","Kidney","Kinnex","IsoQuant","SMR","2k-2.5k",11.5213135351312
+"Mouse","Kidney","Kinnex","IsoQuant","SMR","2.5k-3k",11.6465533277146
+"Mouse","Kidney","Kinnex","IsoQuant","SMR","3k-3.5k",10.8918681148574
+"Mouse","Kidney","Kinnex","IsoQuant","SMR","3.5k-4k",11.8195749576356
+"Mouse","Kidney","Kinnex","IsoQuant","SMR","4k-4.5k",11.5758730098112
+"Mouse","Kidney","Kinnex","IsoQuant","SMR","4.5k-5k",12.3685633572337
+"Mouse","Kidney","Kinnex","IsoQuant","SMR","5k+",14.3502604328924
+"Mouse","Kidney","ONT cDNA","Kallisto","CPM","0k-0.5k",188.404864355111
+"Mouse","Kidney","ONT cDNA","Kallisto","CPM","0.5k-1k",128.929437921833
+"Mouse","Kidney","ONT cDNA","Kallisto","CPM","1k-1.5k",41.9623261384315
+"Mouse","Kidney","ONT cDNA","Kallisto","CPM","1.5k-2k",22.2260270221976
+"Mouse","Kidney","ONT cDNA","Kallisto","CPM","2k-2.5k",16.4798020051887
+"Mouse","Kidney","ONT cDNA","Kallisto","CPM","2.5k-3k",12.653174498071
+"Mouse","Kidney","ONT cDNA","Kallisto","CPM","3k-3.5k",10.5527187876248
+"Mouse","Kidney","ONT cDNA","Kallisto","CPM","3.5k-4k",8.36806908351822
+"Mouse","Kidney","ONT cDNA","Kallisto","CPM","4k-4.5k",6.89759036156368
+"Mouse","Kidney","ONT cDNA","Kallisto","CPM","4.5k-5k",6.38105457240264
+"Mouse","Kidney","ONT cDNA","Kallisto","CPM","5k+",4.03113400886535
+"Mouse","Kidney","ONT cDNA","Bambu","CPM","0k-0.5k",131.617108170742
+"Mouse","Kidney","ONT cDNA","Bambu","CPM","0.5k-1k",102.654603776659
+"Mouse","Kidney","ONT cDNA","Bambu","CPM","1k-1.5k",36.1611057633099
+"Mouse","Kidney","ONT cDNA","Bambu","CPM","1.5k-2k",17.6724429068619
+"Mouse","Kidney","ONT cDNA","Bambu","CPM","2k-2.5k",13.152704371508
+"Mouse","Kidney","ONT cDNA","Bambu","CPM","2.5k-3k",10.2544689584774
+"Mouse","Kidney","ONT cDNA","Bambu","CPM","3k-3.5k",7.72961393750779
+"Mouse","Kidney","ONT cDNA","Bambu","CPM","3.5k-4k",6.21774090932886
+"Mouse","Kidney","ONT cDNA","Bambu","CPM","4k-4.5k",5.49581945245461
+"Mouse","Kidney","ONT cDNA","Bambu","CPM","4.5k-5k",4.37046765222716
+"Mouse","Kidney","ONT cDNA","Bambu","CPM","5k+",2.90295352142875
+"Mouse","Kidney","ONT cDNA","FLAIR","CPM","0k-0.5k",5.82537134170955
+"Mouse","Kidney","ONT cDNA","FLAIR","CPM","0.5k-1k",28.6040333036676
+"Mouse","Kidney","ONT cDNA","FLAIR","CPM","1k-1.5k",15.632882143041
+"Mouse","Kidney","ONT cDNA","FLAIR","CPM","1.5k-2k",12.2241439254313
+"Mouse","Kidney","ONT cDNA","FLAIR","CPM","2k-2.5k",11.8115886840183
+"Mouse","Kidney","ONT cDNA","FLAIR","CPM","2.5k-3k",9.69374511679548
+"Mouse","Kidney","ONT cDNA","FLAIR","CPM","3k-3.5k",10.3414377841635
+"Mouse","Kidney","ONT cDNA","FLAIR","CPM","3.5k-4k",9.72714382246633
+"Mouse","Kidney","ONT cDNA","FLAIR","CPM","4k-4.5k",9.83973272975504
+"Mouse","Kidney","ONT cDNA","FLAIR","CPM","4.5k-5k",11.8561045895824
+"Mouse","Kidney","ONT cDNA","FLAIR","CPM","5k+",7.71410063397469
+"Mouse","Kidney","ONT cDNA","Oarfish","CPM","0k-0.5k",226.01282091713
+"Mouse","Kidney","ONT cDNA","Oarfish","CPM","0.5k-1k",115.117247604929
+"Mouse","Kidney","ONT cDNA","Oarfish","CPM","1k-1.5k",28.9897187121818
+"Mouse","Kidney","ONT cDNA","Oarfish","CPM","1.5k-2k",14.6851207201002
+"Mouse","Kidney","ONT cDNA","Oarfish","CPM","2k-2.5k",10.6357779697141
+"Mouse","Kidney","ONT cDNA","Oarfish","CPM","2.5k-3k",8.53376334458033
+"Mouse","Kidney","ONT cDNA","Oarfish","CPM","3k-3.5k",6.58226009096735
+"Mouse","Kidney","ONT cDNA","Oarfish","CPM","3.5k-4k",4.91649943812375
+"Mouse","Kidney","ONT cDNA","Oarfish","CPM","4k-4.5k",4.84455822512724
+"Mouse","Kidney","ONT cDNA","Oarfish","CPM","4.5k-5k",3.90118013063213
+"Mouse","Kidney","ONT cDNA","Oarfish","CPM","5k+",3.64744248218292
+"Mouse","Kidney","ONT cDNA","IsoQuant","CPM","0k-0.5k",146.751187496135
+"Mouse","Kidney","ONT cDNA","IsoQuant","CPM","0.5k-1k",80.6111409510252
+"Mouse","Kidney","ONT cDNA","IsoQuant","CPM","1k-1.5k",27.4549231964545
+"Mouse","Kidney","ONT cDNA","IsoQuant","CPM","1.5k-2k",17.0273764159183
+"Mouse","Kidney","ONT cDNA","IsoQuant","CPM","2k-2.5k",10.9853354582034
+"Mouse","Kidney","ONT cDNA","IsoQuant","CPM","2.5k-3k",9.79270018458046
+"Mouse","Kidney","ONT cDNA","IsoQuant","CPM","3k-3.5k",7.65081172050667
+"Mouse","Kidney","ONT cDNA","IsoQuant","CPM","3.5k-4k",7.50403038556651
+"Mouse","Kidney","ONT cDNA","IsoQuant","CPM","4k-4.5k",6.98982386200001
+"Mouse","Kidney","ONT cDNA","IsoQuant","CPM","4.5k-5k",7.19941237505637
+"Mouse","Kidney","ONT cDNA","IsoQuant","CPM","5k+",6.00954479964903
+"Mouse","Kidney","ONT cDNA","Kallisto","TPM","0k-0.5k",374.04778482796
+"Mouse","Kidney","ONT cDNA","Kallisto","TPM","0.5k-1k",150.930687508074
+"Mouse","Kidney","ONT cDNA","Kallisto","TPM","1k-1.5k",28.3958736462672
+"Mouse","Kidney","ONT cDNA","Kallisto","TPM","1.5k-2k",10.7450657455783
+"Mouse","Kidney","ONT cDNA","Kallisto","TPM","2k-2.5k",6.21103936578789
+"Mouse","Kidney","ONT cDNA","Kallisto","TPM","2.5k-3k",3.86839071248458
+"Mouse","Kidney","ONT cDNA","Kallisto","TPM","3k-3.5k",2.73758755701397
+"Mouse","Kidney","ONT cDNA","Kallisto","TPM","3.5k-4k",1.87781077371948
+"Mouse","Kidney","ONT cDNA","Kallisto","TPM","4k-4.5k",1.36048621365631
+"Mouse","Kidney","ONT cDNA","Kallisto","TPM","4.5k-5k",1.12106933094001
+"Mouse","Kidney","ONT cDNA","Kallisto","TPM","5k+",0.445930310445572
+"Mouse","Kidney","ONT cDNA","Bambu","TPM","0k-0.5k",256.283257094533
+"Mouse","Kidney","ONT cDNA","Bambu","TPM","0.5k-1k",114.28567141823
+"Mouse","Kidney","ONT cDNA","Bambu","TPM","1k-1.5k",22.9533491251045
+"Mouse","Kidney","ONT cDNA","Bambu","TPM","1.5k-2k",8.0323613778571
+"Mouse","Kidney","ONT cDNA","Bambu","TPM","2k-2.5k",4.6496839329165
+"Mouse","Kidney","ONT cDNA","Bambu","TPM","2.5k-3k",2.94532179780295
+"Mouse","Kidney","ONT cDNA","Bambu","TPM","3k-3.5k",1.87973725696259
+"Mouse","Kidney","ONT cDNA","Bambu","TPM","3.5k-4k",1.31133661606834
+"Mouse","Kidney","ONT cDNA","Bambu","TPM","4k-4.5k",1.01844502626474
+"Mouse","Kidney","ONT cDNA","Bambu","TPM","4.5k-5k",0.723639372279161
+"Mouse","Kidney","ONT cDNA","Bambu","TPM","5k+",0.324504989325359
+"Mouse","Kidney","ONT cDNA","FLAIR","TPM","0k-0.5k",15.4906676275696
+"Mouse","Kidney","ONT cDNA","FLAIR","TPM","0.5k-1k",26.2086565647685
+"Mouse","Kidney","ONT cDNA","FLAIR","TPM","1k-1.5k",8.4254322398786
+"Mouse","Kidney","ONT cDNA","FLAIR","TPM","1.5k-2k",4.63877299722071
+"Mouse","Kidney","ONT cDNA","FLAIR","TPM","2k-2.5k",3.4782391073803
+"Mouse","Kidney","ONT cDNA","FLAIR","TPM","2.5k-3k",2.31564910536549
+"Mouse","Kidney","ONT cDNA","FLAIR","TPM","3k-3.5k",2.09389347455767
+"Mouse","Kidney","ONT cDNA","FLAIR","TPM","3.5k-4k",1.70984677932083
+"Mouse","Kidney","ONT cDNA","FLAIR","TPM","4k-4.5k",1.51437870957113
+"Mouse","Kidney","ONT cDNA","FLAIR","TPM","4.5k-5k",1.62886747710646
+"Mouse","Kidney","ONT cDNA","FLAIR","TPM","5k+",0.811684497255127
+"Mouse","Kidney","ONT cDNA","Oarfish","TPM","0k-0.5k",452.610680216481
+"Mouse","Kidney","ONT cDNA","Oarfish","TPM","0.5k-1k",129.893710260851
+"Mouse","Kidney","ONT cDNA","Oarfish","TPM","1k-1.5k",18.6125768133149
+"Mouse","Kidney","ONT cDNA","Oarfish","TPM","1.5k-2k",6.75875030388537
+"Mouse","Kidney","ONT cDNA","Oarfish","TPM","2k-2.5k",3.80078236656365
+"Mouse","Kidney","ONT cDNA","Oarfish","TPM","2.5k-3k",2.47705767222887
+"Mouse","Kidney","ONT cDNA","Oarfish","TPM","3k-3.5k",1.62000971516375
+"Mouse","Kidney","ONT cDNA","Oarfish","TPM","3.5k-4k",1.04717215702553
+"Mouse","Kidney","ONT cDNA","Oarfish","TPM","4k-4.5k",0.904997936957606
+"Mouse","Kidney","ONT cDNA","Oarfish","TPM","4.5k-5k",0.653594219782209
+"Mouse","Kidney","ONT cDNA","Oarfish","TPM","5k+",0.381269946890392
+"Mouse","Kidney","ONT cDNA","IsoQuant","TPM","0k-0.5k",246.56524945396
+"Mouse","Kidney","ONT cDNA","IsoQuant","TPM","0.5k-1k",79.2135688513319
+"Mouse","Kidney","ONT cDNA","IsoQuant","TPM","1k-1.5k",15.3699136020597
+"Mouse","Kidney","ONT cDNA","IsoQuant","TPM","1.5k-2k",6.72327235816935
+"Mouse","Kidney","ONT cDNA","IsoQuant","TPM","2k-2.5k",3.37432072307629
+"Mouse","Kidney","ONT cDNA","IsoQuant","TPM","2.5k-3k",2.42838710977819
+"Mouse","Kidney","ONT cDNA","IsoQuant","TPM","3k-3.5k",1.61499167832391
+"Mouse","Kidney","ONT cDNA","IsoQuant","TPM","3.5k-4k",1.37206774439397
+"Mouse","Kidney","ONT cDNA","IsoQuant","TPM","4k-4.5k",1.12271828809071
+"Mouse","Kidney","ONT cDNA","IsoQuant","TPM","4.5k-5k",1.03682879221923
+"Mouse","Kidney","ONT cDNA","IsoQuant","TPM","5k+",0.64157954719299
+"Mouse","Kidney","ONT cDNA","Kallisto","EDASeq","0k-0.5k",133.128222758997
+"Mouse","Kidney","ONT cDNA","Kallisto","EDASeq","0.5k-1k",84.4483461733447
+"Mouse","Kidney","ONT cDNA","Kallisto","EDASeq","1k-1.5k",36.3965962642601
+"Mouse","Kidney","ONT cDNA","Kallisto","EDASeq","1.5k-2k",26.6229985655739
+"Mouse","Kidney","ONT cDNA","Kallisto","EDASeq","2k-2.5k",25.3309234361356
+"Mouse","Kidney","ONT cDNA","Kallisto","EDASeq","2.5k-3k",24.5083400751029
+"Mouse","Kidney","ONT cDNA","Kallisto","EDASeq","3k-3.5k",24.6717594592164
+"Mouse","Kidney","ONT cDNA","Kallisto","EDASeq","3.5k-4k",23.1496367726444
+"Mouse","Kidney","ONT cDNA","Kallisto","EDASeq","4k-4.5k",21.9747691375538
+"Mouse","Kidney","ONT cDNA","Kallisto","EDASeq","4.5k-5k",22.9856211437321
+"Mouse","Kidney","ONT cDNA","Kallisto","EDASeq","5k+",19.9242505018098
+"Mouse","Kidney","ONT cDNA","Bambu","EDASeq","0k-0.5k",87.0391336229447
+"Mouse","Kidney","ONT cDNA","Bambu","EDASeq","0.5k-1k",67.7991354129091
+"Mouse","Kidney","ONT cDNA","Bambu","EDASeq","1k-1.5k",33.5699380575928
+"Mouse","Kidney","ONT cDNA","Bambu","EDASeq","1.5k-2k",22.385022375987
+"Mouse","Kidney","ONT cDNA","Bambu","EDASeq","2k-2.5k",21.5905115306787
+"Mouse","Kidney","ONT cDNA","Bambu","EDASeq","2.5k-3k",21.0838196463581
+"Mouse","Kidney","ONT cDNA","Bambu","EDASeq","3k-3.5k",19.1140061746417
+"Mouse","Kidney","ONT cDNA","Bambu","EDASeq","3.5k-4k",18.0639033174675
+"Mouse","Kidney","ONT cDNA","Bambu","EDASeq","4k-4.5k",18.3676290914466
+"Mouse","Kidney","ONT cDNA","Bambu","EDASeq","4.5k-5k",16.4014874077527
+"Mouse","Kidney","ONT cDNA","Bambu","EDASeq","5k+",15.1084300716534
+"Mouse","Kidney","ONT cDNA","FLAIR","EDASeq","0k-0.5k",11.4625839242793
+"Mouse","Kidney","ONT cDNA","FLAIR","EDASeq","0.5k-1k",24.9317196993858
+"Mouse","Kidney","ONT cDNA","FLAIR","EDASeq","1k-1.5k",13.0740467451561
+"Mouse","Kidney","ONT cDNA","FLAIR","EDASeq","1.5k-2k",10.306625777823
+"Mouse","Kidney","ONT cDNA","FLAIR","EDASeq","2k-2.5k",10.0822231533754
+"Mouse","Kidney","ONT cDNA","FLAIR","EDASeq","2.5k-3k",8.439161934877
+"Mouse","Kidney","ONT cDNA","FLAIR","EDASeq","3k-3.5k",9.20658075866376
+"Mouse","Kidney","ONT cDNA","FLAIR","EDASeq","3.5k-4k",8.86408839481333
+"Mouse","Kidney","ONT cDNA","FLAIR","EDASeq","4k-4.5k",9.22222012332915
+"Mouse","Kidney","ONT cDNA","FLAIR","EDASeq","4.5k-5k",11.3817601849273
+"Mouse","Kidney","ONT cDNA","FLAIR","EDASeq","5k+",8.02003531436652
+"Mouse","Kidney","ONT cDNA","Oarfish","EDASeq","0k-0.5k",131.812120310412
+"Mouse","Kidney","ONT cDNA","Oarfish","EDASeq","0.5k-1k",79.0695728316523
+"Mouse","Kidney","ONT cDNA","Oarfish","EDASeq","1k-1.5k",29.4765299138015
+"Mouse","Kidney","ONT cDNA","Oarfish","EDASeq","1.5k-2k",20.1119691151641
+"Mouse","Kidney","ONT cDNA","Oarfish","EDASeq","2k-2.5k",18.0970511106699
+"Mouse","Kidney","ONT cDNA","Oarfish","EDASeq","2.5k-3k",17.3416460731197
+"Mouse","Kidney","ONT cDNA","Oarfish","EDASeq","3k-3.5k",15.3387252652356
+"Mouse","Kidney","ONT cDNA","Oarfish","EDASeq","3.5k-4k",12.7934722458479
+"Mouse","Kidney","ONT cDNA","Oarfish","EDASeq","4k-4.5k",13.8157698873489
+"Mouse","Kidney","ONT cDNA","Oarfish","EDASeq","4.5k-5k",11.9570637937847
+"Mouse","Kidney","ONT cDNA","Oarfish","EDASeq","5k+",13.179211592184
+"Mouse","Kidney","ONT cDNA","IsoQuant","EDASeq","0k-0.5k",123.386960580908
+"Mouse","Kidney","ONT cDNA","IsoQuant","EDASeq","0.5k-1k",68.4870345796762
+"Mouse","Kidney","ONT cDNA","IsoQuant","EDASeq","1k-1.5k",31.0420072877837
+"Mouse","Kidney","ONT cDNA","IsoQuant","EDASeq","1.5k-2k",25.4609263834776
+"Mouse","Kidney","ONT cDNA","IsoQuant","EDASeq","2k-2.5k",20.247708044262
+"Mouse","Kidney","ONT cDNA","IsoQuant","EDASeq","2.5k-3k",20.796813903413
+"Mouse","Kidney","ONT cDNA","IsoQuant","EDASeq","3k-3.5k",17.6895858316372
+"Mouse","Kidney","ONT cDNA","IsoQuant","EDASeq","3.5k-4k",18.5636594766677
+"Mouse","Kidney","ONT cDNA","IsoQuant","EDASeq","4k-4.5k",18.2544066268393
+"Mouse","Kidney","ONT cDNA","IsoQuant","EDASeq","4.5k-5k",19.5617799807072
+"Mouse","Kidney","ONT cDNA","IsoQuant","EDASeq","5k+",17.6563008098007
+"Mouse","Kidney","ONT cDNA","Kallisto","CQN","0k-0.5k",79.1886505405719
+"Mouse","Kidney","ONT cDNA","Kallisto","CQN","0.5k-1k",78.2410906732644
+"Mouse","Kidney","ONT cDNA","Kallisto","CQN","1k-1.5k",51.1414071421391
+"Mouse","Kidney","ONT cDNA","Kallisto","CQN","1.5k-2k",38.0296593900532
+"Mouse","Kidney","ONT cDNA","Kallisto","CQN","2k-2.5k",33.8752315770147
+"Mouse","Kidney","ONT cDNA","Kallisto","CQN","2.5k-3k",30.5150774847924
+"Mouse","Kidney","ONT cDNA","Kallisto","CQN","3k-3.5k",29.6139122809239
+"Mouse","Kidney","ONT cDNA","Kallisto","CQN","3.5k-4k",26.3951409722754
+"Mouse","Kidney","ONT cDNA","Kallisto","CQN","4k-4.5k",24.462536976585
+"Mouse","Kidney","ONT cDNA","Kallisto","CQN","4.5k-5k",24.3284235082938
+"Mouse","Kidney","ONT cDNA","Kallisto","CQN","5k+",21.0075858022643
+"Mouse","Kidney","ONT cDNA","Bambu","CQN","0k-0.5k",57.5113010985975
+"Mouse","Kidney","ONT cDNA","Bambu","CQN","0.5k-1k",58.3041408507281
+"Mouse","Kidney","ONT cDNA","Bambu","CQN","1k-1.5k",39.2167923615025
+"Mouse","Kidney","ONT cDNA","Bambu","CQN","1.5k-2k",30.0563545227136
+"Mouse","Kidney","ONT cDNA","Bambu","CQN","2k-2.5k",27.7045018822689
+"Mouse","Kidney","ONT cDNA","Bambu","CQN","2.5k-3k",24.4474789787494
+"Mouse","Kidney","ONT cDNA","Bambu","CQN","3k-3.5k",21.633500324576
+"Mouse","Kidney","ONT cDNA","Bambu","CQN","3.5k-4k",20.1261209835222
+"Mouse","Kidney","ONT cDNA","Bambu","CQN","4k-4.5k",20.2956129481143
+"Mouse","Kidney","ONT cDNA","Bambu","CQN","4.5k-5k",17.9255561826882
+"Mouse","Kidney","ONT cDNA","Bambu","CQN","5k+",18.1241640076138
+"Mouse","Kidney","ONT cDNA","FLAIR","CQN","0k-0.5k",7.70113628334591
+"Mouse","Kidney","ONT cDNA","FLAIR","CQN","0.5k-1k",7.59797982320218
+"Mouse","Kidney","ONT cDNA","FLAIR","CQN","1k-1.5k",6.45702410325362
+"Mouse","Kidney","ONT cDNA","FLAIR","CQN","1.5k-2k",6.91159519203278
+"Mouse","Kidney","ONT cDNA","FLAIR","CQN","2k-2.5k",8.2781700612846
+"Mouse","Kidney","ONT cDNA","FLAIR","CQN","2.5k-3k",8.9233999295336
+"Mouse","Kidney","ONT cDNA","FLAIR","CQN","3k-3.5k",10.1021176353932
+"Mouse","Kidney","ONT cDNA","FLAIR","CQN","3.5k-4k",10.0713653582983
+"Mouse","Kidney","ONT cDNA","FLAIR","CQN","4k-4.5k",10.400884544963
+"Mouse","Kidney","ONT cDNA","FLAIR","CQN","4.5k-5k",11.2572270242186
+"Mouse","Kidney","ONT cDNA","FLAIR","CQN","5k+",10.2919211163625
+"Mouse","Kidney","ONT cDNA","Oarfish","CQN","0k-0.5k",71.1461650861464
+"Mouse","Kidney","ONT cDNA","Oarfish","CQN","0.5k-1k",64.2421844226935
+"Mouse","Kidney","ONT cDNA","Oarfish","CQN","1k-1.5k",36.4292436388854
+"Mouse","Kidney","ONT cDNA","Oarfish","CQN","1.5k-2k",26.6569829203588
+"Mouse","Kidney","ONT cDNA","Oarfish","CQN","2k-2.5k",23.2413214626847
+"Mouse","Kidney","ONT cDNA","Oarfish","CQN","2.5k-3k",21.7739303805999
+"Mouse","Kidney","ONT cDNA","Oarfish","CQN","3k-3.5k",20.1108808862472
+"Mouse","Kidney","ONT cDNA","Oarfish","CQN","3.5k-4k",17.4064182027212
+"Mouse","Kidney","ONT cDNA","Oarfish","CQN","4k-4.5k",18.6561010405055
+"Mouse","Kidney","ONT cDNA","Oarfish","CQN","4.5k-5k",17.0611102143367
+"Mouse","Kidney","ONT cDNA","Oarfish","CQN","5k+",18.5356871533101
+"Mouse","Kidney","ONT cDNA","IsoQuant","CQN","0k-0.5k",41.2044366953091
+"Mouse","Kidney","ONT cDNA","IsoQuant","CQN","0.5k-1k",29.2141445912984
+"Mouse","Kidney","ONT cDNA","IsoQuant","CQN","1k-1.5k",22.7450623071347
+"Mouse","Kidney","ONT cDNA","IsoQuant","CQN","1.5k-2k",21.0155079177681
+"Mouse","Kidney","ONT cDNA","IsoQuant","CQN","2k-2.5k",17.1155296323745
+"Mouse","Kidney","ONT cDNA","IsoQuant","CQN","2.5k-3k",16.7749392851764
+"Mouse","Kidney","ONT cDNA","IsoQuant","CQN","3k-3.5k",16.153217646574
+"Mouse","Kidney","ONT cDNA","IsoQuant","CQN","3.5k-4k",15.9326509620823
+"Mouse","Kidney","ONT cDNA","IsoQuant","CQN","4k-4.5k",15.6528745751003
+"Mouse","Kidney","ONT cDNA","IsoQuant","CQN","4.5k-5k",18.2047766106613
+"Mouse","Kidney","ONT cDNA","IsoQuant","CQN","5k+",41.32578118571
+"Mouse","Kidney","ONT cDNA","Kallisto","SMR","0k-0.5k",72.9552576634148
+"Mouse","Kidney","ONT cDNA","Kallisto","SMR","0.5k-1k",84.2471518491192
+"Mouse","Kidney","ONT cDNA","Kallisto","SMR","1k-1.5k",82.5365807723323
+"Mouse","Kidney","ONT cDNA","Kallisto","SMR","1.5k-2k",77.4807635034104
+"Mouse","Kidney","ONT cDNA","Kallisto","SMR","2k-2.5k",74.1976022283001
+"Mouse","Kidney","ONT cDNA","Kallisto","SMR","2.5k-3k",66.0444947528363
+"Mouse","Kidney","ONT cDNA","Kallisto","SMR","3k-3.5k",62.9248974078737
+"Mouse","Kidney","ONT cDNA","Kallisto","SMR","3.5k-4k",61.1180994726209
+"Mouse","Kidney","ONT cDNA","Kallisto","SMR","4k-4.5k",55.8197741160267
+"Mouse","Kidney","ONT cDNA","Kallisto","SMR","4.5k-5k",56.4555701702409
+"Mouse","Kidney","ONT cDNA","Kallisto","SMR","5k+",46.8544990751496
+"Mouse","Kidney","ONT cDNA","Bambu","SMR","0k-0.5k",74.5615484988033
+"Mouse","Kidney","ONT cDNA","Bambu","SMR","0.5k-1k",69.0199855721849
+"Mouse","Kidney","ONT cDNA","Bambu","SMR","1k-1.5k",63.0185731072639
+"Mouse","Kidney","ONT cDNA","Bambu","SMR","1.5k-2k",58.1270676360584
+"Mouse","Kidney","ONT cDNA","Bambu","SMR","2k-2.5k",54.6927880429491
+"Mouse","Kidney","ONT cDNA","Bambu","SMR","2.5k-3k",49.4176129541496
+"Mouse","Kidney","ONT cDNA","Bambu","SMR","3k-3.5k",46.1526640341366
+"Mouse","Kidney","ONT cDNA","Bambu","SMR","3.5k-4k",45.4274777028259
+"Mouse","Kidney","ONT cDNA","Bambu","SMR","4k-4.5k",40.7207465270047
+"Mouse","Kidney","ONT cDNA","Bambu","SMR","4.5k-5k",40.7261134877908
+"Mouse","Kidney","ONT cDNA","Bambu","SMR","5k+",33.8057265841038
+"Mouse","Kidney","ONT cDNA","FLAIR","SMR","0k-0.5k",13.3933609061291
+"Mouse","Kidney","ONT cDNA","FLAIR","SMR","0.5k-1k",27.7438615200583
+"Mouse","Kidney","ONT cDNA","FLAIR","SMR","1k-1.5k",31.1902795205671
+"Mouse","Kidney","ONT cDNA","FLAIR","SMR","1.5k-2k",32.3353022480652
+"Mouse","Kidney","ONT cDNA","FLAIR","SMR","2k-2.5k",30.7839585604488
+"Mouse","Kidney","ONT cDNA","FLAIR","SMR","2.5k-3k",25.8146487737585
+"Mouse","Kidney","ONT cDNA","FLAIR","SMR","3k-3.5k",25.3931591048908
+"Mouse","Kidney","ONT cDNA","FLAIR","SMR","3.5k-4k",22.7134460899925
+"Mouse","Kidney","ONT cDNA","FLAIR","SMR","4k-4.5k",21.0606584130397
+"Mouse","Kidney","ONT cDNA","FLAIR","SMR","4.5k-5k",21.7080724075289
+"Mouse","Kidney","ONT cDNA","FLAIR","SMR","5k+",22.3757551554539
+"Mouse","Kidney","ONT cDNA","Oarfish","SMR","0k-0.5k",59.8135312760837
+"Mouse","Kidney","ONT cDNA","Oarfish","SMR","0.5k-1k",65.1763278875464
+"Mouse","Kidney","ONT cDNA","Oarfish","SMR","1k-1.5k",61.1796944811477
+"Mouse","Kidney","ONT cDNA","Oarfish","SMR","1.5k-2k",56.2049213858504
+"Mouse","Kidney","ONT cDNA","Oarfish","SMR","2k-2.5k",53.0137505434519
+"Mouse","Kidney","ONT cDNA","Oarfish","SMR","2.5k-3k",48.4777446025935
+"Mouse","Kidney","ONT cDNA","Oarfish","SMR","3k-3.5k",46.3578358346087
+"Mouse","Kidney","ONT cDNA","Oarfish","SMR","3.5k-4k",42.4051217150594
+"Mouse","Kidney","ONT cDNA","Oarfish","SMR","4k-4.5k",40.0155103167936
+"Mouse","Kidney","ONT cDNA","Oarfish","SMR","4.5k-5k",39.3969191603853
+"Mouse","Kidney","ONT cDNA","Oarfish","SMR","5k+",34.4007589502416
+"Mouse","Kidney","ONT cDNA","IsoQuant","SMR","0k-0.5k",50.1152819521981
+"Mouse","Kidney","ONT cDNA","IsoQuant","SMR","0.5k-1k",42.192191816877
+"Mouse","Kidney","ONT cDNA","IsoQuant","SMR","1k-1.5k",38.9202875750074
+"Mouse","Kidney","ONT cDNA","IsoQuant","SMR","1.5k-2k",33.6538201254967
+"Mouse","Kidney","ONT cDNA","IsoQuant","SMR","2k-2.5k",29.8711077901991
+"Mouse","Kidney","ONT cDNA","IsoQuant","SMR","2.5k-3k",28.1628252423964
+"Mouse","Kidney","ONT cDNA","IsoQuant","SMR","3k-3.5k",29.0361687595055
+"Mouse","Kidney","ONT cDNA","IsoQuant","SMR","3.5k-4k",38.5387697171278
+"Mouse","Kidney","ONT cDNA","IsoQuant","SMR","4k-4.5k",34.1356237214573
+"Mouse","Kidney","ONT cDNA","IsoQuant","SMR","4.5k-5k",43.5690206216985
+"Mouse","Kidney","ONT cDNA","IsoQuant","SMR","5k+",39.1304090466516

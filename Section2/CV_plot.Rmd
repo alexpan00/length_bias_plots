@@ -94,9 +94,9 @@ all_data$dataset[all_data$dataset == "Neuron"] <- "iNeuron"
 # Update datasets for plotting
 datasets <- c("Mouse", "LongBench", "iNeuron")
 
-# Pick one condition per dataset (matching fig3.Rmd exactly)
+# Pick one condition per dataset (same as Figure 3, fig2.Rmd)
 all_data <- all_data %>%
-  filter(Condition %in% c("Brain", "LUAD", "E3"))
+  filter(Condition %in% c("Brain", "SCLC_A", "isoB11"))
 ```
 
 ```{r compute_cv}
@@ -217,4 +217,21 @@ write.csv(platform_cv_summary, "plots/length_bias_platform_cv_summary.csv", row.
 write.csv(cv_results, "plots/length_bias_cv_results.csv", row.names = FALSE)
 
 print(as.data.frame(platform_cv_summary))
+```
+
+```{r source_data}
+source("../source_data_utils.R")
+
+# CV of the mean normalized expression across length bins
+supp7_source <- cv_results %>%
+  transmute(Dataset = dataset, Platform = technology, Tool,
+            Normalization = relabel_norm(Normalization),
+            `Mean across length bins` = mean_expression,
+            `SD across length bins` = sd_expression, CV = cv)
+supp7_sheets <- split_panels(supp7_source, c(`Supp Fig 7a` = "Mouse", `Supp Fig 7b` = "LongBench",
+                                             `Supp Fig 7c` = "iNeuron"))
+supp7_sheets$`Platform CV summary` <- platform_cv_summary %>%
+  transmute(Platform = platform_type, Normalization = relabel_norm(Normalization),
+            `Mean CV` = Mean_CV, `Median CV` = Median_CV)
+write_source_data(supp7_sheets, "Supplementary_Figure_7")
 ```

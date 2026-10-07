@@ -1,0 +1,112 @@
+﻿"Dataset","Platform","Sample","Mean mapped read length (bp)"
+"Mouse","Kinnex","K31",1393.5
+"Mouse","Kinnex","B32",2056.24
+"Mouse","Kinnex","B20K80_1",1583.36
+"Mouse","Kinnex","B33",1713.02
+"Mouse","Kinnex","B20K80_3",1501.44
+"Mouse","Kinnex","B31",1931.42
+"Mouse","Kinnex","B20K80_2",1676.81
+"Mouse","Kinnex","K33",1563.42
+"Mouse","Kinnex","K32",1683.78
+"Mouse","ONT cDNA","K31",531.93
+"Mouse","ONT cDNA","B32",541.56
+"Mouse","ONT cDNA","BK80204",508.63
+"Mouse","ONT cDNA","BK20803",527.31
+"Mouse","ONT cDNA","B33",509.15
+"Mouse","ONT cDNA","BK80201",515.81
+"Mouse","ONT cDNA","BK80202",554.29
+"Mouse","ONT cDNA","K34",630.51
+"Mouse","ONT cDNA","B35",522.06
+"Mouse","ONT cDNA","BK20805",509.17
+"Mouse","ONT cDNA","BK20802",588.43
+"Mouse","ONT cDNA","B31",469.51
+"Mouse","ONT cDNA","BK80203",545.24
+"Mouse","ONT cDNA","K33",558.11
+"Mouse","ONT cDNA","BK80205",499.28
+"Mouse","ONT cDNA","K32",618.99
+"Mouse","ONT cDNA","B34",481.21
+"Mouse","ONT cDNA","K35",548.47
+"Mouse","ONT cDNA","BK20804",533.01
+"Mouse","ONT cDNA","BK20801",499.35
+"Mouse","Iso-Seq","B20K80_5",1950.78
+"Mouse","Iso-Seq","K31",2298.4
+"Mouse","Iso-Seq","B32",2901.96
+"Mouse","Iso-Seq","B20K80_1",2158.87
+"Mouse","Iso-Seq","B33",2897.65
+"Mouse","Iso-Seq","B20K80_4",1994.82
+"Mouse","Iso-Seq","K34",1929.05
+"Mouse","Iso-Seq","B35",2493.59
+"Mouse","Iso-Seq","B80K20_2",2827.97
+"Mouse","Iso-Seq","B80K20_5",2216.75
+"Mouse","Iso-Seq","B20K80_3",2157.17
+"Mouse","Iso-Seq","B31",2979.87
+"Mouse","Iso-Seq","B20K80_2",2415.59
+"Mouse","Iso-Seq","K33",2250.23
+"Mouse","Iso-Seq","B80K20_4",2381.54
+"Mouse","Iso-Seq","B80K20_1",2377.96
+"Mouse","Iso-Seq","B80K20_3",2202.43
+"Mouse","Iso-Seq","K32",2484.25
+"Mouse","Iso-Seq","B34",2432.45
+"Mouse","Iso-Seq","K35",1851.14
+"Mouse","Illumina","K33_EKRN230014697-1A_HFHGVDSX7_L4Aligned.sortedByCoord.out",149.48
+"Mouse","Illumina","K31_EKRN230014695-1A_HFHGVDSX7_L4Aligned.sortedByCoord.out",149.47
+"Mouse","Illumina","B31_EKRN230014690-1A_HFHGVDSX7_L4Aligned.sortedByCoord.out",149.31
+"Mouse","Illumina","BK80_20_4_EKRN230014712-1A_HFHGVDSX7_L3Aligned.sortedByCoord.out",149.28
+"Mouse","Illumina","B34_EKRN230014693-1A_HFHGVDSX7_L4Aligned.sortedByCoord.out",149.31
+"Mouse","Illumina","BK20_80_5_EKRN230014708-1A_HFHGVDSX7_L3Aligned.sortedByCoord.out",149.45
+"Mouse","Illumina","K34_EKRN230014698-1A_HFHGVDSX7_L4Aligned.sortedByCoord.out",149.45
+"Mouse","Illumina","BK80_20_5_EKRN230014713-1A_HFHGVDSX7_L3Aligned.sortedByCoord.out",149.36
+"Mouse","Illumina","BK80_20_1_EKRN230014709-1A_HFHGVDSX7_L3Aligned.sortedByCoord.out",149.39
+"Mouse","Illumina","BK20_80_4_EKRN230014707-1A_HFHGVDSX7_L3Aligned.sortedByCoord.out",149.46
+"Mouse","Illumina","BK20_80_2_EKRN230014705-1A_HFHGVDSX7_L3Aligned.sortedByCoord.out",149.42
+"Mouse","Illumina","B35_EKRN230014694-1A_HFHGVDSX7_L4Aligned.sortedByCoord.out",149.36
+"Mouse","Illumina","BK80_20_2_EKRN230014710-1A_HFHGVDSX7_L3Aligned.sortedByCoord.out",149.35
+"Mouse","Illumina","K32_EKRN230014696-1A_HFHGVDSX7_L4Aligned.sortedByCoord.out",149.43
+"Mouse","Illumina","K35_EKRN230014699-1A_HFHGVDSX7_L4Aligned.sortedByCoord.out",149.41
+"Mouse","Illumina","BK20_80_3_EKRN230014706-1A_HFHGVDSX7_L3Aligned.sortedByCoord.out",149.44
+"Mouse","Illumina","B33_EKRN230014692-1A_HFHGVDSX7_L4Aligned.sortedByCoord.out",149.33
+"Mouse","Illumina","BK20_80_1_EKRN230014704-1A_HFHGVDSX7_L3Aligned.sortedByCoord.out",149.44
+"Mouse","Illumina","B32_EKRN230014691-1A_HFHGVDSX7_L4Aligned.sortedByCoord.out",149.37
+"Mouse","Illumina","BK80_20_3_EKRN230014711-1A_HFHGVDSX7_L3Aligned.sortedByCoord.out",149.34
+"iNeuron","Kinnex","isoB111",2140.04
+"iNeuron","Kinnex","E32",2062.18
+"iNeuron","Kinnex","E31",2099.89
+"iNeuron","Kinnex","isoB113",2133
+"iNeuron","Kinnex","isoB112",2142.93
+"iNeuron","Kinnex","E33",2160.31
+"iNeuron","ONT cDNA","isoB111",932.89
+"iNeuron","ONT cDNA","E32",928.47
+"iNeuron","ONT cDNA","E31",935.59
+"iNeuron","ONT cDNA","isoB113",906.87
+"iNeuron","ONT cDNA","isoB112",893.68
+"iNeuron","ONT cDNA","E33",902.84
+"iNeuron","Illumina","illumina_bulk_E3-3Aligned.sortedByCoord.out",141.42
+"iNeuron","Illumina","illumina_bulk_E3-1Aligned.sortedByCoord.out",141.06
+"iNeuron","Illumina","illumina_bulk_isoB11-3Aligned.sortedByCoord.out",140.75
+"iNeuron","Illumina","illumina_bulk_E3-2Aligned.sortedByCoord.out",140.08
+"iNeuron","Illumina","illumina_bulk_isoB11-2Aligned.sortedByCoord.out",141.48
+"iNeuron","Illumina","illumina_bulk_isoB11-1Aligned.sortedByCoord.out",141.02
+"LongBench","ONT cDNA","SRR30947471",709.85
+"LongBench","ONT cDNA","SRR30947505",708.22
+"LongBench","ONT cDNA","SRR30947470",667.26
+"LongBench","ONT cDNA","SRR30947503",755.34
+"LongBench","ONT cDNA","SRR30947502",747.27
+"LongBench","ONT cDNA","SRR30947504",693.12
+"LongBench","Kinnex","SRR30947496",1847.58
+"LongBench","Kinnex","SRR30947494",1812.58
+"LongBench","Kinnex","SRR30947498",1666.68
+"LongBench","Kinnex","SRR30947491",1892.44
+"LongBench","Kinnex","SRR30947497",1896.36
+"LongBench","Kinnex","SRR30947499",1674.86
+"LongBench","Illumina","SRR30947483Aligned.sortedByCoord.out",100.57
+"LongBench","Illumina","SRR30947506Aligned.sortedByCoord.out",100.57
+"LongBench","Illumina","SRR30947495Aligned.sortedByCoord.out",100.58
+"LongBench","Illumina","SRR30947507Aligned.sortedByCoord.out",100.55
+"LongBench","Illumina","SRR30947472Aligned.sortedByCoord.out",100.57
+"LongBench","Illumina","SRR30947474Aligned.sortedByCoord.out",100.53
+"LongBench","ONT dRNA","NCI_H146",1635.99
+"LongBench","ONT dRNA","NCI_H69",1471.23
+"LongBench","ONT dRNA","HCC827",1332.17
+"LongBench","ONT dRNA","NCI_H1975",1418.47
+"LongBench","ONT dRNA","NCI_H2228",1482.55
+"LongBench","ONT dRNA","SHP_77",1553.99

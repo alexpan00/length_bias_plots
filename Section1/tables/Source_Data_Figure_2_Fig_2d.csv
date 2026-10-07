@@ -1,0 +1,81 @@
+﻿"Dataset","Platform","Tool","Status","Number of transcripts"
+"Mouse","Iso-Seq","FLAIR","Filtered out",136630
+"Mouse","Iso-Seq","FLAIR","Passed filter",53093
+"Mouse","Kinnex","FLAIR","Filtered out",302571
+"Mouse","Kinnex","FLAIR","Passed filter",259445
+"Mouse","ONT cDNA","FLAIR","Filtered out",87725
+"Mouse","ONT cDNA","FLAIR","Passed filter",49735
+"Mouse","Iso-Seq","Oarfish","Filtered out",72047
+"Mouse","Iso-Seq","Oarfish","Passed filter",29387
+"Mouse","Kinnex","Oarfish","Filtered out",46426
+"Mouse","Kinnex","Oarfish","Passed filter",63184
+"Mouse","ONT cDNA","Oarfish","Filtered out",82602
+"Mouse","ONT cDNA","Oarfish","Passed filter",20135
+"Mouse","Iso-Seq","Bambu","Filtered out",67931
+"Mouse","Iso-Seq","Bambu","Passed filter",25913
+"Mouse","Kinnex","Bambu","Filtered out",50246
+"Mouse","Kinnex","Bambu","Passed filter",51268
+"Mouse","ONT cDNA","Bambu","Filtered out",76923
+"Mouse","ONT cDNA","Bambu","Passed filter",18081
+"Mouse","Iso-Seq","Kallisto","Filtered out",63388
+"Mouse","Iso-Seq","Kallisto","Passed filter",24144
+"Mouse","Kinnex","Kallisto","Filtered out",48507
+"Mouse","Kinnex","Kallisto","Passed filter",49700
+"Mouse","ONT cDNA","Kallisto","Filtered out",88530
+"Mouse","ONT cDNA","Kallisto","Passed filter",14541
+"Mouse","Iso-Seq","IsoQuant","Filtered out",82215
+"Mouse","Iso-Seq","IsoQuant","Passed filter",27043
+"Mouse","Kinnex","IsoQuant","Filtered out",70383
+"Mouse","Kinnex","IsoQuant","Passed filter",61444
+"Mouse","ONT cDNA","IsoQuant","Filtered out",41205
+"Mouse","ONT cDNA","IsoQuant","Passed filter",17071
+"LongBench","Kinnex","FLAIR","Filtered out",920048
+"LongBench","Kinnex","FLAIR","Passed filter",481731
+"LongBench","ONT cDNA","FLAIR","Filtered out",239534
+"LongBench","ONT cDNA","FLAIR","Passed filter",105942
+"LongBench","ONT dRNA","FLAIR","Filtered out",156368
+"LongBench","ONT dRNA","FLAIR","Passed filter",160467
+"LongBench","Kinnex","Oarfish","Filtered out",86752
+"LongBench","Kinnex","Oarfish","Passed filter",74887
+"LongBench","ONT cDNA","Oarfish","Filtered out",109569
+"LongBench","ONT cDNA","Oarfish","Passed filter",44826
+"LongBench","ONT dRNA","Oarfish","Filtered out",98160
+"LongBench","ONT dRNA","Oarfish","Passed filter",59423
+"LongBench","Kinnex","Bambu","Filtered out",96351
+"LongBench","Kinnex","Bambu","Passed filter",52577
+"LongBench","ONT cDNA","Bambu","Filtered out",100423
+"LongBench","ONT cDNA","Bambu","Passed filter",31731
+"LongBench","ONT dRNA","Bambu","Filtered out",98238
+"LongBench","ONT dRNA","Bambu","Passed filter",43451
+"LongBench","Kinnex","Kallisto","Filtered out",92345
+"LongBench","Kinnex","Kallisto","Passed filter",47631
+"LongBench","ONT cDNA","Kallisto","Filtered out",106838
+"LongBench","ONT cDNA","Kallisto","Passed filter",29783
+"LongBench","ONT dRNA","Kallisto","Filtered out",98348
+"LongBench","ONT dRNA","Kallisto","Passed filter",35812
+"LongBench","Kinnex","IsoQuant","Filtered out",308638
+"LongBench","Kinnex","IsoQuant","Passed filter",92245
+"LongBench","ONT cDNA","IsoQuant","Filtered out",58067
+"LongBench","ONT cDNA","IsoQuant","Passed filter",29903
+"LongBench","ONT dRNA","IsoQuant","Filtered out",67303
+"LongBench","ONT dRNA","IsoQuant","Passed filter",37715
+"iNeuron","Kinnex","FLAIR","Filtered out",319222
+"iNeuron","Kinnex","FLAIR","Passed filter",269589
+"iNeuron","ONT cDNA","FLAIR","Filtered out",139795
+"iNeuron","ONT cDNA","FLAIR","Passed filter",142216
+"iNeuron","Kinnex","Oarfish","Filtered out",74653
+"iNeuron","Kinnex","Oarfish","Passed filter",60225
+"iNeuron","ONT cDNA","Oarfish","Filtered out",83830
+"iNeuron","ONT cDNA","Oarfish","Passed filter",53474
+"iNeuron","Kinnex","Bambu","Filtered out",75509
+"iNeuron","Kinnex","Bambu","Passed filter",43513
+"iNeuron","ONT cDNA","Bambu","Filtered out",75415
+"iNeuron","ONT cDNA","Bambu","Passed filter",39426
+"iNeuron","Kinnex","Kallisto","Filtered out",69956
+"iNeuron","Kinnex","Kallisto","Passed filter",39344
+"iNeuron","ONT cDNA","Kallisto","Filtered out",84870
+"iNeuron","ONT cDNA","Kallisto","Passed filter",38884
+"iNeuron","Kinnex","IsoQuant","Filtered out",56635
+"iNeuron","Kinnex","IsoQuant","Passed filter",46903
+"iNeuron","ONT cDNA","IsoQuant","Filtered out",49386
+"iNeuron","ONT cDNA","IsoQuant","Passed filter",41842

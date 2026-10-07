@@ -199,3 +199,15 @@ save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 220, dpi = 60
 
 save_pub_r(fig2_ratio, "plots/Supplementary_Figure_8", height_mm = 220)
 ```
+
+```{r source_data}
+source("../source_data_utils.R")
+
+supp8_source <- ratio_data %>%
+  transmute(Dataset = dataset, Condition, Direction, Platform = technology, Tool,
+            `Length bin` = Length_bins, `SMR expression` = mean_exp)
+write_source_data(
+  split_panels(supp8_source, c(`Supp Fig 8a` = "Mouse", `Supp Fig 8b` = "LongBench",
+                               `Supp Fig 8c` = "iNeuron")),
+  "Supplementary_Figure_8")
+```

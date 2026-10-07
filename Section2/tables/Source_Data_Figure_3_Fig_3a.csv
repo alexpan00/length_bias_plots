@@ -1,0 +1,826 @@
+﻿"Dataset","Condition","Platform","Tool","Normalization","Length bin","Mean normalized expression"
+"Mouse","Brain","Iso-Seq","Kallisto","CPM","0k-0.5k",10.782306059836
+"Mouse","Brain","Iso-Seq","Kallisto","CPM","0.5k-1k",14.3434203183851
+"Mouse","Brain","Iso-Seq","Kallisto","CPM","1k-1.5k",17.5499465311743
+"Mouse","Brain","Iso-Seq","Kallisto","CPM","1.5k-2k",25.7883955644886
+"Mouse","Brain","Iso-Seq","Kallisto","CPM","2k-2.5k",32.3661858089329
+"Mouse","Brain","Iso-Seq","Kallisto","CPM","2.5k-3k",33.0035822158789
+"Mouse","Brain","Iso-Seq","Kallisto","CPM","3k-3.5k",32.4780388185528
+"Mouse","Brain","Iso-Seq","Kallisto","CPM","3.5k-4k",30.0399958699158
+"Mouse","Brain","Iso-Seq","Kallisto","CPM","4k-4.5k",34.1249910533424
+"Mouse","Brain","Iso-Seq","Kallisto","CPM","4.5k-5k",26.6405211348566
+"Mouse","Brain","Iso-Seq","Kallisto","CPM","5k+",18.468183953617
+"Mouse","Brain","Iso-Seq","Bambu","CPM","0k-0.5k",9.55529257284515
+"Mouse","Brain","Iso-Seq","Bambu","CPM","0.5k-1k",15.1610330393432
+"Mouse","Brain","Iso-Seq","Bambu","CPM","1k-1.5k",18.251416831048
+"Mouse","Brain","Iso-Seq","Bambu","CPM","1.5k-2k",26.6277772165559
+"Mouse","Brain","Iso-Seq","Bambu","CPM","2k-2.5k",31.2124260121259
+"Mouse","Brain","Iso-Seq","Bambu","CPM","2.5k-3k",32.3158053104227
+"Mouse","Brain","Iso-Seq","Bambu","CPM","3k-3.5k",32.4850881218556
+"Mouse","Brain","Iso-Seq","Bambu","CPM","3.5k-4k",30.7581192088457
+"Mouse","Brain","Iso-Seq","Bambu","CPM","4k-4.5k",31.7119123266767
+"Mouse","Brain","Iso-Seq","Bambu","CPM","4.5k-5k",26.5748797088419
+"Mouse","Brain","Iso-Seq","Bambu","CPM","5k+",16.6114579762792
+"Mouse","Brain","Iso-Seq","FLAIR","CPM","0k-0.5k",8.66757287379505
+"Mouse","Brain","Iso-Seq","FLAIR","CPM","0.5k-1k",11.2376024996476
+"Mouse","Brain","Iso-Seq","FLAIR","CPM","1k-1.5k",13.5179864212625
+"Mouse","Brain","Iso-Seq","FLAIR","CPM","1.5k-2k",16.2915023820356
+"Mouse","Brain","Iso-Seq","FLAIR","CPM","2k-2.5k",16.5277344455481
+"Mouse","Brain","Iso-Seq","FLAIR","CPM","2.5k-3k",16.0555355013796
+"Mouse","Brain","Iso-Seq","FLAIR","CPM","3k-3.5k",16.3032198060428
+"Mouse","Brain","Iso-Seq","FLAIR","CPM","3.5k-4k",15.0674137603358
+"Mouse","Brain","Iso-Seq","FLAIR","CPM","4k-4.5k",15.9772651931711
+"Mouse","Brain","Iso-Seq","FLAIR","CPM","4.5k-5k",14.551678753477301
+"Mouse","Brain","Iso-Seq","FLAIR","CPM","5k+",11.1253073385679
+"Mouse","Brain","Iso-Seq","Oarfish","CPM","0k-0.5k",8.05108338199398
+"Mouse","Brain","Iso-Seq","Oarfish","CPM","0.5k-1k",13.3178377143466
+"Mouse","Brain","Iso-Seq","Oarfish","CPM","1k-1.5k",16.1071762488486
+"Mouse","Brain","Iso-Seq","Oarfish","CPM","1.5k-2k",22.8892744773277
+"Mouse","Brain","Iso-Seq","Oarfish","CPM","2k-2.5k",26.6509856710438
+"Mouse","Brain","Iso-Seq","Oarfish","CPM","2.5k-3k",28.173091592834002
+"Mouse","Brain","Iso-Seq","Oarfish","CPM","3k-3.5k",28.1451138258493
+"Mouse","Brain","Iso-Seq","Oarfish","CPM","3.5k-4k",25.8183355403658
+"Mouse","Brain","Iso-Seq","Oarfish","CPM","4k-4.5k",27.5332131242636
+"Mouse","Brain","Iso-Seq","Oarfish","CPM","4.5k-5k",22.4679167941195
+"Mouse","Brain","Iso-Seq","Oarfish","CPM","5k+",13.746754316673
+"Mouse","Brain","Iso-Seq","IsoQuant","CPM","0k-0.5k",12.4321207388273
+"Mouse","Brain","Iso-Seq","IsoQuant","CPM","0.5k-1k",16.3269602950927
+"Mouse","Brain","Iso-Seq","IsoQuant","CPM","1k-1.5k",21.9549402130444
+"Mouse","Brain","Iso-Seq","IsoQuant","CPM","1.5k-2k",32.537365389658
+"Mouse","Brain","Iso-Seq","IsoQuant","CPM","2k-2.5k",38.3219111697084
+"Mouse","Brain","Iso-Seq","IsoQuant","CPM","2.5k-3k",36.9129381184508
+"Mouse","Brain","Iso-Seq","IsoQuant","CPM","3k-3.5k",37.7165001091421
+"Mouse","Brain","Iso-Seq","IsoQuant","CPM","3.5k-4k",35.1912304960246
+"Mouse","Brain","Iso-Seq","IsoQuant","CPM","4k-4.5k",36.9449034658347
+"Mouse","Brain","Iso-Seq","IsoQuant","CPM","4.5k-5k",29.8198484514503
+"Mouse","Brain","Iso-Seq","IsoQuant","CPM","5k+",18.6744569484372
+"Mouse","Brain","Iso-Seq","Kallisto","TPM","0k-0.5k",66.2546699792604
+"Mouse","Brain","Iso-Seq","Kallisto","TPM","0.5k-1k",49.8532270403593
+"Mouse","Brain","Iso-Seq","Kallisto","TPM","1k-1.5k",37.220262246305
+"Mouse","Brain","Iso-Seq","Kallisto","TPM","1.5k-2k",39.1055914655006
+"Mouse","Brain","Iso-Seq","Kallisto","TPM","2k-2.5k",38.1576747432822
+"Mouse","Brain","Iso-Seq","Kallisto","TPM","2.5k-3k",32.1875448867132
+"Mouse","Brain","Iso-Seq","Kallisto","TPM","3k-3.5k",26.9669579251205
+"Mouse","Brain","Iso-Seq","Kallisto","TPM","3.5k-4k",21.7732267598401
+"Mouse","Brain","Iso-Seq","Kallisto","TPM","4k-4.5k",21.8846803853073
+"Mouse","Brain","Iso-Seq","Kallisto","TPM","4.5k-5k",15.3269970979951
+"Mouse","Brain","Iso-Seq","Kallisto","TPM","5k+",7.54373433493637
+"Mouse","Brain","Iso-Seq","Bambu","TPM","0k-0.5k",59.379981731982
+"Mouse","Brain","Iso-Seq","Bambu","TPM","0.5k-1k",52.6541665713158
+"Mouse","Brain","Iso-Seq","Bambu","TPM","1k-1.5k",38.5334542891433
+"Mouse","Brain","Iso-Seq","Bambu","TPM","1.5k-2k",40.1803586590903
+"Mouse","Brain","Iso-Seq","Bambu","TPM","2k-2.5k",36.6481352788916
+"Mouse","Brain","Iso-Seq","Bambu","TPM","2.5k-3k",31.4169138471927
+"Mouse","Brain","Iso-Seq","Bambu","TPM","3k-3.5k",26.9000978220246
+"Mouse","Brain","Iso-Seq","Bambu","TPM","3.5k-4k",22.2367711726795
+"Mouse","Brain","Iso-Seq","Bambu","TPM","4k-4.5k",20.2847119223789
+"Mouse","Brain","Iso-Seq","Bambu","TPM","4.5k-5k",15.2541227312002
+"Mouse","Brain","Iso-Seq","Bambu","TPM","5k+",6.6708982590545
+"Mouse","Brain","Iso-Seq","FLAIR","TPM","0k-0.5k",58.6031577019714
+"Mouse","Brain","Iso-Seq","FLAIR","TPM","0.5k-1k",38.0598147057486
+"Mouse","Brain","Iso-Seq","FLAIR","TPM","1k-1.5k",27.6949675956798
+"Mouse","Brain","Iso-Seq","FLAIR","TPM","1.5k-2k",23.8845447913899
+"Mouse","Brain","Iso-Seq","FLAIR","TPM","2k-2.5k",19.0143976754211
+"Mouse","Brain","Iso-Seq","FLAIR","TPM","2.5k-3k",15.2101931568521
+"Mouse","Brain","Iso-Seq","FLAIR","TPM","3k-3.5k",13.1442314227702
+"Mouse","Brain","Iso-Seq","FLAIR","TPM","3.5k-4k",10.6237797938293
+"Mouse","Brain","Iso-Seq","FLAIR","TPM","4k-4.5k",9.95896367642199
+"Mouse","Brain","Iso-Seq","FLAIR","TPM","4.5k-5k",8.15298374730312
+"Mouse","Brain","Iso-Seq","FLAIR","TPM","5k+",4.5499126749399
+"Mouse","Brain","Iso-Seq","Oarfish","TPM","0k-0.5k",49.7719305889961
+"Mouse","Brain","Iso-Seq","Oarfish","TPM","0.5k-1k",46.2617150277372
+"Mouse","Brain","Iso-Seq","Oarfish","TPM","1k-1.5k",34.0686111736062
+"Mouse","Brain","Iso-Seq","Oarfish","TPM","1.5k-2k",34.5196110132358
+"Mouse","Brain","Iso-Seq","Oarfish","TPM","2k-2.5k",31.3202560794456
+"Mouse","Brain","Iso-Seq","Oarfish","TPM","2.5k-3k",27.3888058153559
+"Mouse","Brain","Iso-Seq","Oarfish","TPM","3k-3.5k",23.3261198845358
+"Mouse","Brain","Iso-Seq","Oarfish","TPM","3.5k-4k",18.6934738180647
+"Mouse","Brain","Iso-Seq","Oarfish","TPM","4k-4.5k",17.6326036645538
+"Mouse","Brain","Iso-Seq","Oarfish","TPM","4.5k-5k",12.9338011539476
+"Mouse","Brain","Iso-Seq","Oarfish","TPM","5k+",5.47968916047823
+"Mouse","Brain","Iso-Seq","IsoQuant","TPM","0k-0.5k",77.2023937923348
+"Mouse","Brain","Iso-Seq","IsoQuant","TPM","0.5k-1k",55.9933290040099
+"Mouse","Brain","Iso-Seq","IsoQuant","TPM","1k-1.5k",45.7750368116986
+"Mouse","Brain","Iso-Seq","IsoQuant","TPM","1.5k-2k",48.4980435810447
+"Mouse","Brain","Iso-Seq","IsoQuant","TPM","2k-2.5k",44.5648882305697
+"Mouse","Brain","Iso-Seq","IsoQuant","TPM","2.5k-3k",35.5316287471352
+"Mouse","Brain","Iso-Seq","IsoQuant","TPM","3k-3.5k",30.8830323846098
+"Mouse","Brain","Iso-Seq","IsoQuant","TPM","3.5k-4k",25.1850769896054
+"Mouse","Brain","Iso-Seq","IsoQuant","TPM","4k-4.5k",23.3919523424473
+"Mouse","Brain","Iso-Seq","IsoQuant","TPM","4.5k-5k",16.9252453728865
+"Mouse","Brain","Iso-Seq","IsoQuant","TPM","5k+",7.82079962896571
+"Mouse","Brain","Iso-Seq","Kallisto","EDASeq","0k-0.5k",14.1663122450736
+"Mouse","Brain","Iso-Seq","Kallisto","EDASeq","0.5k-1k",20.2503685399399
+"Mouse","Brain","Iso-Seq","Kallisto","EDASeq","1k-1.5k",23.5332258864858
+"Mouse","Brain","Iso-Seq","Kallisto","EDASeq","1.5k-2k",30.482536859053
+"Mouse","Brain","Iso-Seq","Kallisto","EDASeq","2k-2.5k",33.9113294177038
+"Mouse","Brain","Iso-Seq","Kallisto","EDASeq","2.5k-3k",31.9824175472673
+"Mouse","Brain","Iso-Seq","Kallisto","EDASeq","3k-3.5k",29.4120389711039
+"Mouse","Brain","Iso-Seq","Kallisto","EDASeq","3.5k-4k",26.1504809252971
+"Mouse","Brain","Iso-Seq","Kallisto","EDASeq","4k-4.5k",29.5572841446235
+"Mouse","Brain","Iso-Seq","Kallisto","EDASeq","4.5k-5k",23.4404052080974
+"Mouse","Brain","Iso-Seq","Kallisto","EDASeq","5k+",18.8785612605323
+"Mouse","Brain","Iso-Seq","Bambu","EDASeq","0k-0.5k",14.5488625629491
+"Mouse","Brain","Iso-Seq","Bambu","EDASeq","0.5k-1k",21.4814525192712
+"Mouse","Brain","Iso-Seq","Bambu","EDASeq","1k-1.5k",23.5446005715479
+"Mouse","Brain","Iso-Seq","Bambu","EDASeq","1.5k-2k",30.8703390847233
+"Mouse","Brain","Iso-Seq","Bambu","EDASeq","2k-2.5k",32.693284128314
+"Mouse","Brain","Iso-Seq","Bambu","EDASeq","2.5k-3k",31.1716348193818
+"Mouse","Brain","Iso-Seq","Bambu","EDASeq","3k-3.5k",29.0949106242668
+"Mouse","Brain","Iso-Seq","Bambu","EDASeq","3.5k-4k",26.5203677796227
+"Mouse","Brain","Iso-Seq","Bambu","EDASeq","4k-4.5k",27.3751154066342
+"Mouse","Brain","Iso-Seq","Bambu","EDASeq","4.5k-5k",23.4612110393134
+"Mouse","Brain","Iso-Seq","Bambu","EDASeq","5k+",17.7017647516893
+"Mouse","Brain","Iso-Seq","FLAIR","EDASeq","0k-0.5k",10.3669675734986
+"Mouse","Brain","Iso-Seq","FLAIR","EDASeq","0.5k-1k",13.3421763024753
+"Mouse","Brain","Iso-Seq","FLAIR","EDASeq","1k-1.5k",15.8450720858935
+"Mouse","Brain","Iso-Seq","FLAIR","EDASeq","1.5k-2k",18.4733391669074
+"Mouse","Brain","Iso-Seq","FLAIR","EDASeq","2k-2.5k",17.9870440714024
+"Mouse","Brain","Iso-Seq","FLAIR","EDASeq","2.5k-3k",16.5953148198412
+"Mouse","Brain","Iso-Seq","FLAIR","EDASeq","3k-3.5k",15.7454303276151
+"Mouse","Brain","Iso-Seq","FLAIR","EDASeq","3.5k-4k",13.6485685418909
+"Mouse","Brain","Iso-Seq","FLAIR","EDASeq","4k-4.5k",14.0014780677731
+"Mouse","Brain","Iso-Seq","FLAIR","EDASeq","4.5k-5k",12.5555843365776
+"Mouse","Brain","Iso-Seq","FLAIR","EDASeq","5k+",9.81578521425454
+"Mouse","Brain","Iso-Seq","Oarfish","EDASeq","0k-0.5k",11.254998642255
+"Mouse","Brain","Iso-Seq","Oarfish","EDASeq","0.5k-1k",18.2698626144874
+"Mouse","Brain","Iso-Seq","Oarfish","EDASeq","1k-1.5k",20.5197273943787
+"Mouse","Brain","Iso-Seq","Oarfish","EDASeq","1.5k-2k",26.1192926114678
+"Mouse","Brain","Iso-Seq","Oarfish","EDASeq","2k-2.5k",27.4115823784707
+"Mouse","Brain","Iso-Seq","Oarfish","EDASeq","2.5k-3k",26.7128195642963
+"Mouse","Brain","Iso-Seq","Oarfish","EDASeq","3k-3.5k",24.8843358965378
+"Mouse","Brain","Iso-Seq","Oarfish","EDASeq","3.5k-4k",22.0012591148993
+"Mouse","Brain","Iso-Seq","Oarfish","EDASeq","4k-4.5k",23.5387896976986
+"Mouse","Brain","Iso-Seq","Oarfish","EDASeq","4.5k-5k",19.7782753048128
+"Mouse","Brain","Iso-Seq","Oarfish","EDASeq","5k+",14.671904942542
+"Mouse","Brain","Iso-Seq","IsoQuant","EDASeq","0k-0.5k",17.7274809542537
+"Mouse","Brain","Iso-Seq","IsoQuant","EDASeq","0.5k-1k",22.2585018752004
+"Mouse","Brain","Iso-Seq","IsoQuant","EDASeq","1k-1.5k",27.5787512514969
+"Mouse","Brain","Iso-Seq","IsoQuant","EDASeq","1.5k-2k",36.6216139999516
+"Mouse","Brain","Iso-Seq","IsoQuant","EDASeq","2k-2.5k",39.5907107642878
+"Mouse","Brain","Iso-Seq","IsoQuant","EDASeq","2.5k-3k",35.9430811754476
+"Mouse","Brain","Iso-Seq","IsoQuant","EDASeq","3k-3.5k",34.7238044715902
+"Mouse","Brain","Iso-Seq","IsoQuant","EDASeq","3.5k-4k",31.0621902441313
+"Mouse","Brain","Iso-Seq","IsoQuant","EDASeq","4k-4.5k",32.6238935672819
+"Mouse","Brain","Iso-Seq","IsoQuant","EDASeq","4.5k-5k",27.0673647689848
+"Mouse","Brain","Iso-Seq","IsoQuant","EDASeq","5k+",20.096289296485
+"Mouse","Brain","Iso-Seq","Kallisto","CQN","0k-0.5k",19.523265083246
+"Mouse","Brain","Iso-Seq","Kallisto","CQN","0.5k-1k",23.9506903890534
+"Mouse","Brain","Iso-Seq","Kallisto","CQN","1k-1.5k",27.2992811633155
+"Mouse","Brain","Iso-Seq","Kallisto","CQN","1.5k-2k",34.0934699877554
+"Mouse","Brain","Iso-Seq","Kallisto","CQN","2k-2.5k",34.5191871575918
+"Mouse","Brain","Iso-Seq","Kallisto","CQN","2.5k-3k",30.0036645896182
+"Mouse","Brain","Iso-Seq","Kallisto","CQN","3k-3.5k",27.3310234179113
+"Mouse","Brain","Iso-Seq","Kallisto","CQN","3.5k-4k",24.9281640941214
+"Mouse","Brain","Iso-Seq","Kallisto","CQN","4k-4.5k",27.7753690960774
+"Mouse","Brain","Iso-Seq","Kallisto","CQN","4.5k-5k",22.2045095151842
+"Mouse","Brain","Iso-Seq","Kallisto","CQN","5k+",17.7210418956992
+"Mouse","Brain","Iso-Seq","Bambu","CQN","0k-0.5k",17.9071075676957
+"Mouse","Brain","Iso-Seq","Bambu","CQN","0.5k-1k",23.7404203629788
+"Mouse","Brain","Iso-Seq","Bambu","CQN","1k-1.5k",26.3111838915988
+"Mouse","Brain","Iso-Seq","Bambu","CQN","1.5k-2k",32.4968447367968
+"Mouse","Brain","Iso-Seq","Bambu","CQN","2k-2.5k",31.0177513534734
+"Mouse","Brain","Iso-Seq","Bambu","CQN","2.5k-3k",27.765451274983
+"Mouse","Brain","Iso-Seq","Bambu","CQN","3k-3.5k",26.4186364282305
+"Mouse","Brain","Iso-Seq","Bambu","CQN","3.5k-4k",24.4947391695151
+"Mouse","Brain","Iso-Seq","Bambu","CQN","4k-4.5k",25.6964880018772
+"Mouse","Brain","Iso-Seq","Bambu","CQN","4.5k-5k",22.3427852439045
+"Mouse","Brain","Iso-Seq","Bambu","CQN","5k+",17.1152724786422
+"Mouse","Brain","Iso-Seq","FLAIR","CQN","0k-0.5k",13.2297040636962
+"Mouse","Brain","Iso-Seq","FLAIR","CQN","0.5k-1k",14.0632544923432
+"Mouse","Brain","Iso-Seq","FLAIR","CQN","1k-1.5k",13.9119036218599
+"Mouse","Brain","Iso-Seq","FLAIR","CQN","1.5k-2k",14.0028747475455
+"Mouse","Brain","Iso-Seq","FLAIR","CQN","2k-2.5k",11.5349693384611
+"Mouse","Brain","Iso-Seq","FLAIR","CQN","2.5k-3k",10.1550594878587
+"Mouse","Brain","Iso-Seq","FLAIR","CQN","3k-3.5k",9.96033981599897
+"Mouse","Brain","Iso-Seq","FLAIR","CQN","3.5k-4k",9.09645581870746
+"Mouse","Brain","Iso-Seq","FLAIR","CQN","4k-4.5k",10.1048525053809
+"Mouse","Brain","Iso-Seq","FLAIR","CQN","4.5k-5k",9.70835937229949
+"Mouse","Brain","Iso-Seq","FLAIR","CQN","5k+",9.53244566074097
+"Mouse","Brain","Iso-Seq","Oarfish","CQN","0k-0.5k",14.9955176495864
+"Mouse","Brain","Iso-Seq","Oarfish","CQN","0.5k-1k",21.2551094058167
+"Mouse","Brain","Iso-Seq","Oarfish","CQN","1k-1.5k",23.5089730930009
+"Mouse","Brain","Iso-Seq","Oarfish","CQN","1.5k-2k",28.6598386373014
+"Mouse","Brain","Iso-Seq","Oarfish","CQN","2k-2.5k",27.5201395879457
+"Mouse","Brain","Iso-Seq","Oarfish","CQN","2.5k-3k",25.5031282235576
+"Mouse","Brain","Iso-Seq","Oarfish","CQN","3k-3.5k",23.8431125568606
+"Mouse","Brain","Iso-Seq","Oarfish","CQN","3.5k-4k",21.3377130986835
+"Mouse","Brain","Iso-Seq","Oarfish","CQN","4k-4.5k",22.6973015841843
+"Mouse","Brain","Iso-Seq","Oarfish","CQN","4.5k-5k",19.0426007183861
+"Mouse","Brain","Iso-Seq","Oarfish","CQN","5k+",14.2018645808285
+"Mouse","Brain","Iso-Seq","IsoQuant","CQN","0k-0.5k",21.8956460363301
+"Mouse","Brain","Iso-Seq","IsoQuant","CQN","0.5k-1k",24.6650798581654
+"Mouse","Brain","Iso-Seq","IsoQuant","CQN","1k-1.5k",28.5533529108372
+"Mouse","Brain","Iso-Seq","IsoQuant","CQN","1.5k-2k",31.7352526080032
+"Mouse","Brain","Iso-Seq","IsoQuant","CQN","2k-2.5k",28.3743352097556
+"Mouse","Brain","Iso-Seq","IsoQuant","CQN","2.5k-3k",23.239382517017
+"Mouse","Brain","Iso-Seq","IsoQuant","CQN","3k-3.5k",21.1972222860916
+"Mouse","Brain","Iso-Seq","IsoQuant","CQN","3.5k-4k",18.3623736573999
+"Mouse","Brain","Iso-Seq","IsoQuant","CQN","4k-4.5k",18.0644883099505
+"Mouse","Brain","Iso-Seq","IsoQuant","CQN","4.5k-5k",15.9187152324396
+"Mouse","Brain","Iso-Seq","IsoQuant","CQN","5k+",12.044041576173
+"Mouse","Brain","Iso-Seq","Kallisto","SMR","0k-0.5k",31.0645284284702
+"Mouse","Brain","Iso-Seq","Kallisto","SMR","0.5k-1k",28.1149747216896
+"Mouse","Brain","Iso-Seq","Kallisto","SMR","1k-1.5k",25.8465793857468
+"Mouse","Brain","Iso-Seq","Kallisto","SMR","1.5k-2k",26.339144814296
+"Mouse","Brain","Iso-Seq","Kallisto","SMR","2k-2.5k",30.3092795456593
+"Mouse","Brain","Iso-Seq","Kallisto","SMR","2.5k-3k",34.6958641565905
+"Mouse","Brain","Iso-Seq","Kallisto","SMR","3k-3.5k",40.5969974480709
+"Mouse","Brain","Iso-Seq","Kallisto","SMR","3.5k-4k",47.7621595135046
+"Mouse","Brain","Iso-Seq","Kallisto","SMR","4k-4.5k",53.1933027010664
+"Mouse","Brain","Iso-Seq","Kallisto","SMR","4.5k-5k",55.809882979762
+"Mouse","Brain","Iso-Seq","Kallisto","SMR","5k+",56.1641754825057
+"Mouse","Brain","Iso-Seq","Bambu","SMR","0k-0.5k",24.9228689199488
+"Mouse","Brain","Iso-Seq","Bambu","SMR","0.5k-1k",24.6140525539689
+"Mouse","Brain","Iso-Seq","Bambu","SMR","1k-1.5k",22.6813696278969
+"Mouse","Brain","Iso-Seq","Bambu","SMR","1.5k-2k",22.9471536157103
+"Mouse","Brain","Iso-Seq","Bambu","SMR","2k-2.5k",26.2004214661614
+"Mouse","Brain","Iso-Seq","Bambu","SMR","2.5k-3k",30.5522810128117
+"Mouse","Brain","Iso-Seq","Bambu","SMR","3k-3.5k",35.9046340685799
+"Mouse","Brain","Iso-Seq","Bambu","SMR","3.5k-4k",41.7976503497155
+"Mouse","Brain","Iso-Seq","Bambu","SMR","4k-4.5k",44.804075396569
+"Mouse","Brain","Iso-Seq","Bambu","SMR","4.5k-5k",46.6175764615624
+"Mouse","Brain","Iso-Seq","Bambu","SMR","5k+",45.9774081138487
+"Mouse","Brain","Iso-Seq","FLAIR","SMR","0k-0.5k",10.8776519404213
+"Mouse","Brain","Iso-Seq","FLAIR","SMR","0.5k-1k",10.003740911695
+"Mouse","Brain","Iso-Seq","FLAIR","SMR","1k-1.5k",9.468177935959
+"Mouse","Brain","Iso-Seq","FLAIR","SMR","1.5k-2k",10.0275978766712
+"Mouse","Brain","Iso-Seq","FLAIR","SMR","2k-2.5k",12.0726082013699
+"Mouse","Brain","Iso-Seq","FLAIR","SMR","2.5k-3k",15.2488644689529
+"Mouse","Brain","Iso-Seq","FLAIR","SMR","3k-3.5k",18.6815027456799
+"Mouse","Brain","Iso-Seq","FLAIR","SMR","3.5k-4k",22.1998805268882
+"Mouse","Brain","Iso-Seq","FLAIR","SMR","4k-4.5k",24.0489047848351
+"Mouse","Brain","Iso-Seq","FLAIR","SMR","4.5k-5k",23.962448984529
+"Mouse","Brain","Iso-Seq","FLAIR","SMR","5k+",25.4883296084338
+"Mouse","Brain","Iso-Seq","Oarfish","SMR","0k-0.5k",23.778265762233602
+"Mouse","Brain","Iso-Seq","Oarfish","SMR","0.5k-1k",23.7482613286018
+"Mouse","Brain","Iso-Seq","Oarfish","SMR","1k-1.5k",22.3837995107382
+"Mouse","Brain","Iso-Seq","Oarfish","SMR","1.5k-2k",22.7402760207088
+"Mouse","Brain","Iso-Seq","Oarfish","SMR","2k-2.5k",25.8865166877528
+"Mouse","Brain","Iso-Seq","Oarfish","SMR","2.5k-3k",29.3130153480808
+"Mouse","Brain","Iso-Seq","Oarfish","SMR","3k-3.5k",34.0579702099411
+"Mouse","Brain","Iso-Seq","Oarfish","SMR","3.5k-4k",39.157656304571
+"Mouse","Brain","Iso-Seq","Oarfish","SMR","4k-4.5k",42.7691853393696
+"Mouse","Brain","Iso-Seq","Oarfish","SMR","4.5k-5k",43.4858087661019
+"Mouse","Brain","Iso-Seq","Oarfish","SMR","5k+",43.8907485626747
+"Mouse","Brain","Iso-Seq","IsoQuant","SMR","0k-0.5k",12.3766636233123
+"Mouse","Brain","Iso-Seq","IsoQuant","SMR","0.5k-1k",12.2259286976499
+"Mouse","Brain","Iso-Seq","IsoQuant","SMR","1k-1.5k",11.6602564123864
+"Mouse","Brain","Iso-Seq","IsoQuant","SMR","1.5k-2k",12.0447170318819
+"Mouse","Brain","Iso-Seq","IsoQuant","SMR","2k-2.5k",15.1409097093842
+"Mouse","Brain","Iso-Seq","IsoQuant","SMR","2.5k-3k",18.3107117064296
+"Mouse","Brain","Iso-Seq","IsoQuant","SMR","3k-3.5k",24.1196975418132
+"Mouse","Brain","Iso-Seq","IsoQuant","SMR","3.5k-4k",29.3305943140749
+"Mouse","Brain","Iso-Seq","IsoQuant","SMR","4k-4.5k",36.5062446133338
+"Mouse","Brain","Iso-Seq","IsoQuant","SMR","4.5k-5k",45.2149224818079
+"Mouse","Brain","Iso-Seq","IsoQuant","SMR","5k+",53.280171219963
+"Mouse","Brain","Kinnex","Kallisto","CPM","0k-0.5k",2.18735043169473
+"Mouse","Brain","Kinnex","Kallisto","CPM","0.5k-1k",8.75119360253843
+"Mouse","Brain","Kinnex","Kallisto","CPM","1k-1.5k",14.0405618020501
+"Mouse","Brain","Kinnex","Kallisto","CPM","1.5k-2k",16.3421598098504
+"Mouse","Brain","Kinnex","Kallisto","CPM","2k-2.5k",13.9907649670673
+"Mouse","Brain","Kinnex","Kallisto","CPM","2.5k-3k",11.2582613204366
+"Mouse","Brain","Kinnex","Kallisto","CPM","3k-3.5k",10.2368019105993
+"Mouse","Brain","Kinnex","Kallisto","CPM","3.5k-4k",8.32618007808015
+"Mouse","Brain","Kinnex","Kallisto","CPM","4k-4.5k",8.33902359531253
+"Mouse","Brain","Kinnex","Kallisto","CPM","4.5k-5k",6.71171526524724
+"Mouse","Brain","Kinnex","Kallisto","CPM","5k+",4.77336347383317
+"Mouse","Brain","Kinnex","Bambu","CPM","0k-0.5k",2.15652634501242
+"Mouse","Brain","Kinnex","Bambu","CPM","0.5k-1k",8.87703196698182
+"Mouse","Brain","Kinnex","Bambu","CPM","1k-1.5k",14.9719838302478
+"Mouse","Brain","Kinnex","Bambu","CPM","1.5k-2k",17.8841451332208
+"Mouse","Brain","Kinnex","Bambu","CPM","2k-2.5k",14.8258671066634
+"Mouse","Brain","Kinnex","Bambu","CPM","2.5k-3k",11.5315287108324
+"Mouse","Brain","Kinnex","Bambu","CPM","3k-3.5k",10.3564050634449
+"Mouse","Brain","Kinnex","Bambu","CPM","3.5k-4k",7.90541959922537
+"Mouse","Brain","Kinnex","Bambu","CPM","4k-4.5k",7.7605752478744
+"Mouse","Brain","Kinnex","Bambu","CPM","4.5k-5k",6.23659672946973
+"Mouse","Brain","Kinnex","Bambu","CPM","5k+",4.18686805180532
+"Mouse","Brain","Kinnex","FLAIR","CPM","0k-0.5k",1.12553696541801
+"Mouse","Brain","Kinnex","FLAIR","CPM","0.5k-1k",2.32929845033342
+"Mouse","Brain","Kinnex","FLAIR","CPM","1k-1.5k",1.59342608033034
+"Mouse","Brain","Kinnex","FLAIR","CPM","1.5k-2k",1.55933793576772
+"Mouse","Brain","Kinnex","FLAIR","CPM","2k-2.5k",1.63100231803979
+"Mouse","Brain","Kinnex","FLAIR","CPM","2.5k-3k",1.79251491197038
+"Mouse","Brain","Kinnex","FLAIR","CPM","3k-3.5k",1.92908958111735
+"Mouse","Brain","Kinnex","FLAIR","CPM","3.5k-4k",1.98775304081602
+"Mouse","Brain","Kinnex","FLAIR","CPM","4k-4.5k",2.13341306757997
+"Mouse","Brain","Kinnex","FLAIR","CPM","4.5k-5k",2.21878755441694
+"Mouse","Brain","Kinnex","FLAIR","CPM","5k+",2.46413334745924
+"Mouse","Brain","Kinnex","Oarfish","CPM","0k-0.5k",1.59015188331654
+"Mouse","Brain","Kinnex","Oarfish","CPM","0.5k-1k",6.15946598380776
+"Mouse","Brain","Kinnex","Oarfish","CPM","1k-1.5k",11.6583661913674
+"Mouse","Brain","Kinnex","Oarfish","CPM","1.5k-2k",14.3620614059404
+"Mouse","Brain","Kinnex","Oarfish","CPM","2k-2.5k",11.6737696505288
+"Mouse","Brain","Kinnex","Oarfish","CPM","2.5k-3k",9.15787892947142
+"Mouse","Brain","Kinnex","Oarfish","CPM","3k-3.5k",8.05142271471417
+"Mouse","Brain","Kinnex","Oarfish","CPM","3.5k-4k",6.35926397338082
+"Mouse","Brain","Kinnex","Oarfish","CPM","4k-4.5k",6.12016217062359
+"Mouse","Brain","Kinnex","Oarfish","CPM","4.5k-5k",5.03189736891119
+"Mouse","Brain","Kinnex","Oarfish","CPM","5k+",3.11173503551254
+"Mouse","Brain","Kinnex","IsoQuant","CPM","0k-0.5k",3.39957397666616
+"Mouse","Brain","Kinnex","IsoQuant","CPM","0.5k-1k",11.5835320988276
+"Mouse","Brain","Kinnex","IsoQuant","CPM","1k-1.5k",16.4736930544421
+"Mouse","Brain","Kinnex","IsoQuant","CPM","1.5k-2k",15.9674406681833
+"Mouse","Brain","Kinnex","IsoQuant","CPM","2k-2.5k",13.0447674026645
+"Mouse","Brain","Kinnex","IsoQuant","CPM","2.5k-3k",10.2864505877064
+"Mouse","Brain","Kinnex","IsoQuant","CPM","3k-3.5k",9.05574832531932
+"Mouse","Brain","Kinnex","IsoQuant","CPM","3.5k-4k",7.17529908948599
+"Mouse","Brain","Kinnex","IsoQuant","CPM","4k-4.5k",6.9729600254451
+"Mouse","Brain","Kinnex","IsoQuant","CPM","4.5k-5k",5.48590436445143
+"Mouse","Brain","Kinnex","IsoQuant","CPM","5k+",4.57072257450746
+"Mouse","Brain","Kinnex","Kallisto","TPM","0k-0.5k",10.4888378698653
+"Mouse","Brain","Kinnex","Kallisto","TPM","0.5k-1k",21.4844645624251
+"Mouse","Brain","Kinnex","Kallisto","TPM","1k-1.5k",22.6333341470328
+"Mouse","Brain","Kinnex","Kallisto","TPM","1.5k-2k",19.4292949765782
+"Mouse","Brain","Kinnex","Kallisto","TPM","2k-2.5k",13.1304273311194
+"Mouse","Brain","Kinnex","Kallisto","TPM","2.5k-3k",8.67542799287088
+"Mouse","Brain","Kinnex","Kallisto","TPM","3k-3.5k",6.66168935578216
+"Mouse","Brain","Kinnex","Kallisto","TPM","3.5k-4k",4.71314938152336
+"Mouse","Brain","Kinnex","Kallisto","TPM","4k-4.5k",4.15586297210511
+"Mouse","Brain","Kinnex","Kallisto","TPM","4.5k-5k",2.99439283807682
+"Mouse","Brain","Kinnex","Kallisto","TPM","5k+",1.42378895731688
+"Mouse","Brain","Kinnex","Bambu","TPM","0k-0.5k",10.4978597068963
+"Mouse","Brain","Kinnex","Bambu","TPM","0.5k-1k",21.7778596918771
+"Mouse","Brain","Kinnex","Bambu","TPM","1k-1.5k",23.7758038385971
+"Mouse","Brain","Kinnex","Bambu","TPM","1.5k-2k",20.9822143898854
+"Mouse","Brain","Kinnex","Bambu","TPM","2k-2.5k",13.7043669947467
+"Mouse","Brain","Kinnex","Bambu","TPM","2.5k-3k",8.74779675201639
+"Mouse","Brain","Kinnex","Bambu","TPM","3k-3.5k",6.63208107985387
+"Mouse","Brain","Kinnex","Bambu","TPM","3.5k-4k",4.39760597751518
+"Mouse","Brain","Kinnex","Bambu","TPM","4k-4.5k",3.80711402098672
+"Mouse","Brain","Kinnex","Bambu","TPM","4.5k-5k",2.73886007400464
+"Mouse","Brain","Kinnex","Bambu","TPM","5k+",1.20486234062585
+"Mouse","Brain","Kinnex","FLAIR","TPM","0k-0.5k",6.26278618484435
+"Mouse","Brain","Kinnex","FLAIR","TPM","0.5k-1k",5.61030260312437
+"Mouse","Brain","Kinnex","FLAIR","TPM","1k-1.5k",2.44371152486415
+"Mouse","Brain","Kinnex","FLAIR","TPM","1.5k-2k",1.76549079680679
+"Mouse","Brain","Kinnex","FLAIR","TPM","2k-2.5k",1.45366169011812
+"Mouse","Brain","Kinnex","FLAIR","TPM","2.5k-3k",1.31131380953046
+"Mouse","Brain","Kinnex","FLAIR","TPM","3k-3.5k",1.19618715445142
+"Mouse","Brain","Kinnex","FLAIR","TPM","3.5k-4k",1.06917788136901
+"Mouse","Brain","Kinnex","FLAIR","TPM","4k-4.5k",1.01354993306721
+"Mouse","Brain","Kinnex","FLAIR","TPM","4.5k-5k",0.944401073593102
+"Mouse","Brain","Kinnex","FLAIR","TPM","5k+",0.757165638756712
+"Mouse","Brain","Kinnex","Oarfish","TPM","0k-0.5k",7.25496690245703
+"Mouse","Brain","Kinnex","Oarfish","TPM","0.5k-1k",15.083004682422
+"Mouse","Brain","Kinnex","Oarfish","TPM","1k-1.5k",18.3509837886048
+"Mouse","Brain","Kinnex","Oarfish","TPM","1.5k-2k",16.6548440586022
+"Mouse","Brain","Kinnex","Oarfish","TPM","2k-2.5k",10.6754110795924
+"Mouse","Brain","Kinnex","Oarfish","TPM","2.5k-3k",6.87325019904897
+"Mouse","Brain","Kinnex","Oarfish","TPM","3k-3.5k",5.10484064766532
+"Mouse","Brain","Kinnex","Oarfish","TPM","3.5k-4k",3.50352718949529
+"Mouse","Brain","Kinnex","Oarfish","TPM","4k-4.5k",2.97320219487236
+"Mouse","Brain","Kinnex","Oarfish","TPM","4.5k-5k",2.18935171146883
+"Mouse","Brain","Kinnex","Oarfish","TPM","5k+",0.875938506210327
+"Mouse","Brain","Kinnex","IsoQuant","TPM","0k-0.5k",14.9359211351927
+"Mouse","Brain","Kinnex","IsoQuant","TPM","0.5k-1k",27.1180433823002
+"Mouse","Brain","Kinnex","IsoQuant","TPM","1k-1.5k",25.5016554320548
+"Mouse","Brain","Kinnex","IsoQuant","TPM","1.5k-2k",18.200923989644
+"Mouse","Brain","Kinnex","IsoQuant","TPM","2k-2.5k",11.7542200639382
+"Mouse","Brain","Kinnex","IsoQuant","TPM","2.5k-3k",7.60437743781977
+"Mouse","Brain","Kinnex","IsoQuant","TPM","3k-3.5k",5.65113691079776
+"Mouse","Brain","Kinnex","IsoQuant","TPM","3.5k-4k",3.89542809967029
+"Mouse","Brain","Kinnex","IsoQuant","TPM","4k-4.5k",3.33364448424154
+"Mouse","Brain","Kinnex","IsoQuant","TPM","4.5k-5k",2.34680972333564
+"Mouse","Brain","Kinnex","IsoQuant","TPM","5k+",1.42780090857748
+"Mouse","Brain","Kinnex","Kallisto","EDASeq","0k-0.5k",3.80092591758024
+"Mouse","Brain","Kinnex","Kallisto","EDASeq","0.5k-1k",9.84866114397746
+"Mouse","Brain","Kinnex","Kallisto","EDASeq","1k-1.5k",14.3105333438491
+"Mouse","Brain","Kinnex","Kallisto","EDASeq","1.5k-2k",15.838709134016
+"Mouse","Brain","Kinnex","Kallisto","EDASeq","2k-2.5k",13.0813424265687
+"Mouse","Brain","Kinnex","Kallisto","EDASeq","2.5k-3k",10.3182587077866
+"Mouse","Brain","Kinnex","Kallisto","EDASeq","3k-3.5k",9.42035625981797
+"Mouse","Brain","Kinnex","Kallisto","EDASeq","3.5k-4k",7.90349874925633
+"Mouse","Brain","Kinnex","Kallisto","EDASeq","4k-4.5k",8.26467361207304
+"Mouse","Brain","Kinnex","Kallisto","EDASeq","4.5k-5k",6.95876364457629
+"Mouse","Brain","Kinnex","Kallisto","EDASeq","5k+",6.04588852271626
+"Mouse","Brain","Kinnex","Bambu","EDASeq","0k-0.5k",4.24595381895481
+"Mouse","Brain","Kinnex","Bambu","EDASeq","0.5k-1k",9.87677486639505
+"Mouse","Brain","Kinnex","Bambu","EDASeq","1k-1.5k",14.3650840823276
+"Mouse","Brain","Kinnex","Bambu","EDASeq","1.5k-2k",16.2983039554741
+"Mouse","Brain","Kinnex","Bambu","EDASeq","2k-2.5k",13.3068459740388
+"Mouse","Brain","Kinnex","Bambu","EDASeq","2.5k-3k",10.5861061473673
+"Mouse","Brain","Kinnex","Bambu","EDASeq","3k-3.5k",9.95756858740362
+"Mouse","Brain","Kinnex","Bambu","EDASeq","3.5k-4k",8.0418879394374
+"Mouse","Brain","Kinnex","Bambu","EDASeq","4k-4.5k",8.41572085586631
+"Mouse","Brain","Kinnex","Bambu","EDASeq","4.5k-5k",7.18572660741918
+"Mouse","Brain","Kinnex","Bambu","EDASeq","5k+",5.95875349513755
+"Mouse","Brain","Kinnex","FLAIR","EDASeq","0k-0.5k",1.50223460832022
+"Mouse","Brain","Kinnex","FLAIR","EDASeq","0.5k-1k",2.8831798279347
+"Mouse","Brain","Kinnex","FLAIR","EDASeq","1k-1.5k",1.96458338184424
+"Mouse","Brain","Kinnex","FLAIR","EDASeq","1.5k-2k",1.78885993344512
+"Mouse","Brain","Kinnex","FLAIR","EDASeq","2k-2.5k",1.6491262774739
+"Mouse","Brain","Kinnex","FLAIR","EDASeq","2.5k-3k",1.59715381078475
+"Mouse","Brain","Kinnex","FLAIR","EDASeq","3k-3.5k",1.53889433512782
+"Mouse","Brain","Kinnex","FLAIR","EDASeq","3.5k-4k",1.44915688288505
+"Mouse","Brain","Kinnex","FLAIR","EDASeq","4k-4.5k",1.44381800218876
+"Mouse","Brain","Kinnex","FLAIR","EDASeq","4.5k-5k",1.405361923124
+"Mouse","Brain","Kinnex","FLAIR","EDASeq","5k+",1.31527420825457
+"Mouse","Brain","Kinnex","Oarfish","EDASeq","0k-0.5k",4.024997908239
+"Mouse","Brain","Kinnex","Oarfish","EDASeq","0.5k-1k",7.88539378575855
+"Mouse","Brain","Kinnex","Oarfish","EDASeq","1k-1.5k",11.4039855360592
+"Mouse","Brain","Kinnex","Oarfish","EDASeq","1.5k-2k",12.6207987896176
+"Mouse","Brain","Kinnex","Oarfish","EDASeq","2k-2.5k",9.85265294581542
+"Mouse","Brain","Kinnex","Oarfish","EDASeq","2.5k-3k",7.70218463954269
+"Mouse","Brain","Kinnex","Oarfish","EDASeq","3k-3.5k",6.89208305678082
+"Mouse","Brain","Kinnex","Oarfish","EDASeq","3.5k-4k",5.63292175339881
+"Mouse","Brain","Kinnex","Oarfish","EDASeq","4k-4.5k",5.69816569882496
+"Mouse","Brain","Kinnex","Oarfish","EDASeq","4.5k-5k",4.92427039251983
+"Mouse","Brain","Kinnex","Oarfish","EDASeq","5k+",3.61542319617547
+"Mouse","Brain","Kinnex","IsoQuant","EDASeq","0k-0.5k",3.93578459546237
+"Mouse","Brain","Kinnex","IsoQuant","EDASeq","0.5k-1k",10.8555084835531
+"Mouse","Brain","Kinnex","IsoQuant","EDASeq","1k-1.5k",15.9555544129801
+"Mouse","Brain","Kinnex","IsoQuant","EDASeq","1.5k-2k",15.8748320253861
+"Mouse","Brain","Kinnex","IsoQuant","EDASeq","2k-2.5k",12.8870494101927
+"Mouse","Brain","Kinnex","IsoQuant","EDASeq","2.5k-3k",10.0134471423342
+"Mouse","Brain","Kinnex","IsoQuant","EDASeq","3k-3.5k",8.85558731572517
+"Mouse","Brain","Kinnex","IsoQuant","EDASeq","3.5k-4k",7.24010255886454
+"Mouse","Brain","Kinnex","IsoQuant","EDASeq","4k-4.5k",7.32546098697731
+"Mouse","Brain","Kinnex","IsoQuant","EDASeq","4.5k-5k",5.94114223200583
+"Mouse","Brain","Kinnex","IsoQuant","EDASeq","5k+",5.27232760696118
+"Mouse","Brain","Kinnex","Kallisto","CQN","0k-0.5k",4.34817119135038
+"Mouse","Brain","Kinnex","Kallisto","CQN","0.5k-1k",10.2815390840354
+"Mouse","Brain","Kinnex","Kallisto","CQN","1k-1.5k",14.5236234694828
+"Mouse","Brain","Kinnex","Kallisto","CQN","1.5k-2k",15.7732050229358
+"Mouse","Brain","Kinnex","Kallisto","CQN","2k-2.5k",12.9528036074415
+"Mouse","Brain","Kinnex","Kallisto","CQN","2.5k-3k",10.5393987754586
+"Mouse","Brain","Kinnex","Kallisto","CQN","3k-3.5k",9.82762136467682
+"Mouse","Brain","Kinnex","Kallisto","CQN","3.5k-4k",8.31879842024874
+"Mouse","Brain","Kinnex","Kallisto","CQN","4k-4.5k",8.75117981901731
+"Mouse","Brain","Kinnex","Kallisto","CQN","4.5k-5k",7.30660845242112
+"Mouse","Brain","Kinnex","Kallisto","CQN","5k+",6.00086197956796
+"Mouse","Brain","Kinnex","Bambu","CQN","0k-0.5k",4.66023568283538
+"Mouse","Brain","Kinnex","Bambu","CQN","0.5k-1k",9.13319951670653
+"Mouse","Brain","Kinnex","Bambu","CQN","1k-1.5k",13.71735678679
+"Mouse","Brain","Kinnex","Bambu","CQN","1.5k-2k",16.0830251273085
+"Mouse","Brain","Kinnex","Bambu","CQN","2k-2.5k",12.924829644087
+"Mouse","Brain","Kinnex","Bambu","CQN","2.5k-3k",10.1966666834191
+"Mouse","Brain","Kinnex","Bambu","CQN","3k-3.5k",9.46585892371533
+"Mouse","Brain","Kinnex","Bambu","CQN","3.5k-4k",7.7493501729416
+"Mouse","Brain","Kinnex","Bambu","CQN","4k-4.5k",8.34724405818259
+"Mouse","Brain","Kinnex","Bambu","CQN","4.5k-5k",7.21273505647952
+"Mouse","Brain","Kinnex","Bambu","CQN","5k+",5.80682369260243
+"Mouse","Brain","Kinnex","FLAIR","CQN","0k-0.5k",0.844794627790338
+"Mouse","Brain","Kinnex","FLAIR","CQN","0.5k-1k",1.57728057256547
+"Mouse","Brain","Kinnex","FLAIR","CQN","1k-1.5k",1.05690804322043
+"Mouse","Brain","Kinnex","FLAIR","CQN","1.5k-2k",1.03225800340164
+"Mouse","Brain","Kinnex","FLAIR","CQN","2k-2.5k",0.939232484996663
+"Mouse","Brain","Kinnex","FLAIR","CQN","2.5k-3k",0.937143811198721
+"Mouse","Brain","Kinnex","FLAIR","CQN","3k-3.5k",1.00969906149979
+"Mouse","Brain","Kinnex","FLAIR","CQN","3.5k-4k",1.0938848798585
+"Mouse","Brain","Kinnex","FLAIR","CQN","4k-4.5k",1.14682932333544
+"Mouse","Brain","Kinnex","FLAIR","CQN","4.5k-5k",1.20358910021755
+"Mouse","Brain","Kinnex","FLAIR","CQN","5k+",1.37164059203223
+"Mouse","Brain","Kinnex","Oarfish","CQN","0k-0.5k",3.1306833584894602
+"Mouse","Brain","Kinnex","Oarfish","CQN","0.5k-1k",7.36950983101339
+"Mouse","Brain","Kinnex","Oarfish","CQN","1k-1.5k",12.7008053722748
+"Mouse","Brain","Kinnex","Oarfish","CQN","1.5k-2k",15.4949988296915
+"Mouse","Brain","Kinnex","Oarfish","CQN","2k-2.5k",12.5042142076083
+"Mouse","Brain","Kinnex","Oarfish","CQN","2.5k-3k",9.90095317317441
+"Mouse","Brain","Kinnex","Oarfish","CQN","3k-3.5k",8.98469231235979
+"Mouse","Brain","Kinnex","Oarfish","CQN","3.5k-4k",7.42626786699947
+"Mouse","Brain","Kinnex","Oarfish","CQN","4k-4.5k",7.66301255079105
+"Mouse","Brain","Kinnex","Oarfish","CQN","4.5k-5k",6.6756506937525
+"Mouse","Brain","Kinnex","Oarfish","CQN","5k+",4.96382220093775
+"Mouse","Brain","Kinnex","IsoQuant","CQN","0k-0.5k",6.511003073062
+"Mouse","Brain","Kinnex","IsoQuant","CQN","0.5k-1k",9.28490662449049
+"Mouse","Brain","Kinnex","IsoQuant","CQN","1k-1.5k",9.8772662608404609
+"Mouse","Brain","Kinnex","IsoQuant","CQN","1.5k-2k",9.23972331903118
+"Mouse","Brain","Kinnex","IsoQuant","CQN","2k-2.5k",7.38370579857443
+"Mouse","Brain","Kinnex","IsoQuant","CQN","2.5k-3k",5.8410525284911
+"Mouse","Brain","Kinnex","IsoQuant","CQN","3k-3.5k",5.47916203930181
+"Mouse","Brain","Kinnex","IsoQuant","CQN","3.5k-4k",4.62598140430472
+"Mouse","Brain","Kinnex","IsoQuant","CQN","4k-4.5k",4.8293699802633
+"Mouse","Brain","Kinnex","IsoQuant","CQN","4.5k-5k",4.03151761131348
+"Mouse","Brain","Kinnex","IsoQuant","CQN","5k+",3.90135206461353
+"Mouse","Brain","Kinnex","Kallisto","SMR","0k-0.5k",6.6594149952016
+"Mouse","Brain","Kinnex","Kallisto","SMR","0.5k-1k",7.95747707038302
+"Mouse","Brain","Kinnex","Kallisto","SMR","1k-1.5k",8.79700872490825
+"Mouse","Brain","Kinnex","Kallisto","SMR","1.5k-2k",10.8428137832672
+"Mouse","Brain","Kinnex","Kallisto","SMR","2k-2.5k",12.7092475984399
+"Mouse","Brain","Kinnex","Kallisto","SMR","2.5k-3k",13.3439592029012
+"Mouse","Brain","Kinnex","Kallisto","SMR","3k-3.5k",14.5841700491921
+"Mouse","Brain","Kinnex","Kallisto","SMR","3.5k-4k",14.5177926706617
+"Mouse","Brain","Kinnex","Kallisto","SMR","4k-4.5k",14.6513249660554
+"Mouse","Brain","Kinnex","Kallisto","SMR","4.5k-5k",14.4775253641741
+"Mouse","Brain","Kinnex","Kallisto","SMR","5k+",14.028870438531
+"Mouse","Brain","Kinnex","Bambu","SMR","0k-0.5k",9.4712729177141
+"Mouse","Brain","Kinnex","Bambu","SMR","0.5k-1k",12.1083147606778
+"Mouse","Brain","Kinnex","Bambu","SMR","1k-1.5k",13.6628756105215
+"Mouse","Brain","Kinnex","Bambu","SMR","1.5k-2k",16.7373035943413
+"Mouse","Brain","Kinnex","Bambu","SMR","2k-2.5k",18.5719545961426
+"Mouse","Brain","Kinnex","Bambu","SMR","2.5k-3k",18.6767339247867
+"Mouse","Brain","Kinnex","Bambu","SMR","3k-3.5k",19.9911125362371
+"Mouse","Brain","Kinnex","Bambu","SMR","3.5k-4k",19.2499851202461
+"Mouse","Brain","Kinnex","Bambu","SMR","4k-4.5k",19.2802969328056
+"Mouse","Brain","Kinnex","Bambu","SMR","4.5k-5k",18.9589585362513
+"Mouse","Brain","Kinnex","Bambu","SMR","5k+",18.1073595601938
+"Mouse","Brain","Kinnex","FLAIR","SMR","0k-0.5k",1.92687188469804
+"Mouse","Brain","Kinnex","FLAIR","SMR","0.5k-1k",2.28567250016534
+"Mouse","Brain","Kinnex","FLAIR","SMR","1k-1.5k",2.31216672199506
+"Mouse","Brain","Kinnex","FLAIR","SMR","1.5k-2k",2.7288889482692
+"Mouse","Brain","Kinnex","FLAIR","SMR","2k-2.5k",3.20823775707834
+"Mouse","Brain","Kinnex","FLAIR","SMR","2.5k-3k",3.65653011279754
+"Mouse","Brain","Kinnex","FLAIR","SMR","3k-3.5k",3.98012259496053
+"Mouse","Brain","Kinnex","FLAIR","SMR","3.5k-4k",4.38432409593182
+"Mouse","Brain","Kinnex","FLAIR","SMR","4k-4.5k",4.57053716981714
+"Mouse","Brain","Kinnex","FLAIR","SMR","4.5k-5k",4.69331207153895
+"Mouse","Brain","Kinnex","FLAIR","SMR","5k+",5.17199841703369
+"Mouse","Brain","Kinnex","Oarfish","SMR","0k-0.5k",7.29738811243268
+"Mouse","Brain","Kinnex","Oarfish","SMR","0.5k-1k",9.8027264597494
+"Mouse","Brain","Kinnex","Oarfish","SMR","1k-1.5k",11.6052260329047
+"Mouse","Brain","Kinnex","Oarfish","SMR","1.5k-2k",14.0643352980873
+"Mouse","Brain","Kinnex","Oarfish","SMR","2k-2.5k",15.8050857350701
+"Mouse","Brain","Kinnex","Oarfish","SMR","2.5k-3k",15.8765660265742
+"Mouse","Brain","Kinnex","Oarfish","SMR","3k-3.5k",16.979160934989
+"Mouse","Brain","Kinnex","Oarfish","SMR","3.5k-4k",16.5644044854543
+"Mouse","Brain","Kinnex","Oarfish","SMR","4k-4.5k",16.7337502627168
+"Mouse","Brain","Kinnex","Oarfish","SMR","4.5k-5k",16.098379767717
+"Mouse","Brain","Kinnex","Oarfish","SMR","5k+",14.9705280645155
+"Mouse","Brain","Kinnex","IsoQuant","SMR","0k-0.5k",6.24851351046452
+"Mouse","Brain","Kinnex","IsoQuant","SMR","0.5k-1k",7.24722496914948
+"Mouse","Brain","Kinnex","IsoQuant","SMR","1k-1.5k",8.41335981443733
+"Mouse","Brain","Kinnex","IsoQuant","SMR","1.5k-2k",10.1707092332255
+"Mouse","Brain","Kinnex","IsoQuant","SMR","2k-2.5k",12.2845135683112
+"Mouse","Brain","Kinnex","IsoQuant","SMR","2.5k-3k",12.8650910764016
+"Mouse","Brain","Kinnex","IsoQuant","SMR","3k-3.5k",13.5984802645289
+"Mouse","Brain","Kinnex","IsoQuant","SMR","3.5k-4k",13.8710823328677
+"Mouse","Brain","Kinnex","IsoQuant","SMR","4k-4.5k",14.4689462448454
+"Mouse","Brain","Kinnex","IsoQuant","SMR","4.5k-5k",14.623254965804
+"Mouse","Brain","Kinnex","IsoQuant","SMR","5k+",17.2898233227931
+"Mouse","Brain","ONT cDNA","Kallisto","CPM","0k-0.5k",190.071405754552
+"Mouse","Brain","ONT cDNA","Kallisto","CPM","0.5k-1k",116.502343231858
+"Mouse","Brain","ONT cDNA","Kallisto","CPM","1k-1.5k",38.9924630209589
+"Mouse","Brain","ONT cDNA","Kallisto","CPM","1.5k-2k",25.5636651300912
+"Mouse","Brain","ONT cDNA","Kallisto","CPM","2k-2.5k",21.0583922669381
+"Mouse","Brain","ONT cDNA","Kallisto","CPM","2.5k-3k",18.4868176579869
+"Mouse","Brain","ONT cDNA","Kallisto","CPM","3k-3.5k",14.7751553172663
+"Mouse","Brain","ONT cDNA","Kallisto","CPM","3.5k-4k",14.1462463375861
+"Mouse","Brain","ONT cDNA","Kallisto","CPM","4k-4.5k",12.932683913863
+"Mouse","Brain","ONT cDNA","Kallisto","CPM","4.5k-5k",12.4862822731697
+"Mouse","Brain","ONT cDNA","Kallisto","CPM","5k+",10.5615592142679
+"Mouse","Brain","ONT cDNA","Bambu","CPM","0k-0.5k",176.316351658132
+"Mouse","Brain","ONT cDNA","Bambu","CPM","0.5k-1k",102.1262257661
+"Mouse","Brain","ONT cDNA","Bambu","CPM","1k-1.5k",35.7637365258847
+"Mouse","Brain","ONT cDNA","Bambu","CPM","1.5k-2k",21.6274307588587
+"Mouse","Brain","ONT cDNA","Bambu","CPM","2k-2.5k",16.5211334458568
+"Mouse","Brain","ONT cDNA","Bambu","CPM","2.5k-3k",15.0147510557026
+"Mouse","Brain","ONT cDNA","Bambu","CPM","3k-3.5k",11.5386155525573
+"Mouse","Brain","ONT cDNA","Bambu","CPM","3.5k-4k",10.6627901354803
+"Mouse","Brain","ONT cDNA","Bambu","CPM","4k-4.5k",11.0129180215716
+"Mouse","Brain","ONT cDNA","Bambu","CPM","4.5k-5k",9.52482132278979
+"Mouse","Brain","ONT cDNA","Bambu","CPM","5k+",7.60507093471721
+"Mouse","Brain","ONT cDNA","FLAIR","CPM","0k-0.5k",9.38742374886611
+"Mouse","Brain","ONT cDNA","FLAIR","CPM","0.5k-1k",21.8881061096674
+"Mouse","Brain","ONT cDNA","FLAIR","CPM","1k-1.5k",12.2485052999981
+"Mouse","Brain","ONT cDNA","FLAIR","CPM","1.5k-2k",11.6500063739228
+"Mouse","Brain","ONT cDNA","FLAIR","CPM","2k-2.5k",10.9274119123912
+"Mouse","Brain","ONT cDNA","FLAIR","CPM","2.5k-3k",10.8175119802026
+"Mouse","Brain","ONT cDNA","FLAIR","CPM","3k-3.5k",11.0060541437542
+"Mouse","Brain","ONT cDNA","FLAIR","CPM","3.5k-4k",11.8836122756659
+"Mouse","Brain","ONT cDNA","FLAIR","CPM","4k-4.5k",11.5693984007168
+"Mouse","Brain","ONT cDNA","FLAIR","CPM","4.5k-5k",12.3392156587685
+"Mouse","Brain","ONT cDNA","FLAIR","CPM","5k+",9.50624680771492
+"Mouse","Brain","ONT cDNA","Oarfish","CPM","0k-0.5k",264.026599015511
+"Mouse","Brain","ONT cDNA","Oarfish","CPM","0.5k-1k",89.9871843340398
+"Mouse","Brain","ONT cDNA","Oarfish","CPM","1k-1.5k",24.7476130682754
+"Mouse","Brain","ONT cDNA","Oarfish","CPM","1.5k-2k",15.2895089414246
+"Mouse","Brain","ONT cDNA","Oarfish","CPM","2k-2.5k",12.0396765956136
+"Mouse","Brain","ONT cDNA","Oarfish","CPM","2.5k-3k",10.612378875018
+"Mouse","Brain","ONT cDNA","Oarfish","CPM","3k-3.5k",8.89598685879502
+"Mouse","Brain","ONT cDNA","Oarfish","CPM","3.5k-4k",7.88239366171922
+"Mouse","Brain","ONT cDNA","Oarfish","CPM","4k-4.5k",7.9062048282185
+"Mouse","Brain","ONT cDNA","Oarfish","CPM","4.5k-5k",7.14699750238062
+"Mouse","Brain","ONT cDNA","Oarfish","CPM","5k+",8.45358636529675
+"Mouse","Brain","ONT cDNA","IsoQuant","CPM","0k-0.5k",205.051811888103
+"Mouse","Brain","ONT cDNA","IsoQuant","CPM","0.5k-1k",92.840523941333
+"Mouse","Brain","ONT cDNA","IsoQuant","CPM","1k-1.5k",32.9572153196973
+"Mouse","Brain","ONT cDNA","IsoQuant","CPM","1.5k-2k",23.262520328611
+"Mouse","Brain","ONT cDNA","IsoQuant","CPM","2k-2.5k",15.9218294647184
+"Mouse","Brain","ONT cDNA","IsoQuant","CPM","2.5k-3k",13.5416587177123
+"Mouse","Brain","ONT cDNA","IsoQuant","CPM","3k-3.5k",11.8161858772939
+"Mouse","Brain","ONT cDNA","IsoQuant","CPM","3.5k-4k",11.9629031462467
+"Mouse","Brain","ONT cDNA","IsoQuant","CPM","4k-4.5k",12.5988218245393
+"Mouse","Brain","ONT cDNA","IsoQuant","CPM","4.5k-5k",12.8479769960078
+"Mouse","Brain","ONT cDNA","IsoQuant","CPM","5k+",13.4006724373831
+"Mouse","Brain","ONT cDNA","Kallisto","TPM","0k-0.5k",454.480456096735
+"Mouse","Brain","ONT cDNA","Kallisto","TPM","0.5k-1k",148.939984037676
+"Mouse","Brain","ONT cDNA","Kallisto","TPM","1k-1.5k",28.6806584216355
+"Mouse","Brain","ONT cDNA","Kallisto","TPM","1.5k-2k",13.3604814366952
+"Mouse","Brain","ONT cDNA","Kallisto","TPM","2k-2.5k",8.54203462788024
+"Mouse","Brain","ONT cDNA","Kallisto","TPM","2.5k-3k",6.14335281274522
+"Mouse","Brain","ONT cDNA","Kallisto","TPM","3k-3.5k",4.1392143498479
+"Mouse","Brain","ONT cDNA","Kallisto","TPM","3.5k-4k",3.44529454530183
+"Mouse","Brain","ONT cDNA","Kallisto","TPM","4k-4.5k",2.76766659202822
+"Mouse","Brain","ONT cDNA","Kallisto","TPM","4.5k-5k",2.38675601660383
+"Mouse","Brain","ONT cDNA","Kallisto","TPM","5k+",1.21614915708572
+"Mouse","Brain","ONT cDNA","Bambu","TPM","0k-0.5k",358.834315823091
+"Mouse","Brain","ONT cDNA","Bambu","TPM","0.5k-1k",120.652484186463
+"Mouse","Brain","ONT cDNA","Bambu","TPM","1k-1.5k",23.8849956611296
+"Mouse","Brain","ONT cDNA","Bambu","TPM","1.5k-2k",10.268993357291
+"Mouse","Brain","ONT cDNA","Bambu","TPM","2k-2.5k",6.06319311448547
+"Mouse","Brain","ONT cDNA","Bambu","TPM","2.5k-3k",4.51283149195572
+"Mouse","Brain","ONT cDNA","Bambu","TPM","3k-3.5k",2.9298310682728
+"Mouse","Brain","ONT cDNA","Bambu","TPM","3.5k-4k",2.34707865898844
+"Mouse","Brain","ONT cDNA","Bambu","TPM","4k-4.5k",2.13580578855911
+"Mouse","Brain","ONT cDNA","Bambu","TPM","4.5k-5k",1.65442431085315
+"Mouse","Brain","ONT cDNA","Bambu","TPM","5k+",0.861243175457327
+"Mouse","Brain","ONT cDNA","FLAIR","TPM","0k-0.5k",17.6172427138967
+"Mouse","Brain","ONT cDNA","FLAIR","TPM","0.5k-1k",12.6279146307675
+"Mouse","Brain","ONT cDNA","FLAIR","TPM","1k-1.5k",4.14067584830137
+"Mouse","Brain","ONT cDNA","FLAIR","TPM","1.5k-2k",2.79617211764337
+"Mouse","Brain","ONT cDNA","FLAIR","TPM","2k-2.5k",2.05433747685142
+"Mouse","Brain","ONT cDNA","FLAIR","TPM","2.5k-3k",1.65228908622011
+"Mouse","Brain","ONT cDNA","FLAIR","TPM","3k-3.5k",1.41692045334548
+"Mouse","Brain","ONT cDNA","FLAIR","TPM","3.5k-4k",1.32895265902812
+"Mouse","Brain","ONT cDNA","FLAIR","TPM","4k-4.5k",1.14119742323359
+"Mouse","Brain","ONT cDNA","FLAIR","TPM","4.5k-5k",1.08774843464405
+"Mouse","Brain","ONT cDNA","FLAIR","TPM","5k+",0.619398449408251
+"Mouse","Brain","ONT cDNA","Oarfish","TPM","0k-0.5k",660.751430166264
+"Mouse","Brain","ONT cDNA","Oarfish","TPM","0.5k-1k",77.9662550789159
+"Mouse","Brain","ONT cDNA","Oarfish","TPM","1k-1.5k",12.1509694352463
+"Mouse","Brain","ONT cDNA","Oarfish","TPM","1.5k-2k",5.36760304607724
+"Mouse","Brain","ONT cDNA","Oarfish","TPM","2k-2.5k",3.27954318333806
+"Mouse","Brain","ONT cDNA","Oarfish","TPM","2.5k-3k",2.36209771453503
+"Mouse","Brain","ONT cDNA","Oarfish","TPM","3k-3.5k",1.67553292978733
+"Mouse","Brain","ONT cDNA","Oarfish","TPM","3.5k-4k",1.28663626759206
+"Mouse","Brain","ONT cDNA","Oarfish","TPM","4k-4.5k",1.13413208945707
+"Mouse","Brain","ONT cDNA","Oarfish","TPM","4.5k-5k",0.918225642271673
+"Mouse","Brain","ONT cDNA","Oarfish","TPM","5k+",0.629198118416842
+"Mouse","Brain","ONT cDNA","IsoQuant","TPM","0k-0.5k",348.010070143893
+"Mouse","Brain","ONT cDNA","IsoQuant","TPM","0.5k-1k",91.4663397488749
+"Mouse","Brain","ONT cDNA","IsoQuant","TPM","1k-1.5k",18.1757292789324
+"Mouse","Brain","ONT cDNA","IsoQuant","TPM","1.5k-2k",9.11484110868273
+"Mouse","Brain","ONT cDNA","IsoQuant","TPM","2k-2.5k",4.83779543775377
+"Mouse","Brain","ONT cDNA","IsoQuant","TPM","2.5k-3k",3.36790377320682
+"Mouse","Brain","ONT cDNA","IsoQuant","TPM","3k-3.5k",2.46014042132606
+"Mouse","Brain","ONT cDNA","IsoQuant","TPM","3.5k-4k",2.17200833954206
+"Mouse","Brain","ONT cDNA","IsoQuant","TPM","4k-4.5k",2.01303359938918
+"Mouse","Brain","ONT cDNA","IsoQuant","TPM","4.5k-5k",1.83465679746528
+"Mouse","Brain","ONT cDNA","IsoQuant","TPM","5k+",1.40325538756464
+"Mouse","Brain","ONT cDNA","Kallisto","EDASeq","0k-0.5k",130.429027173088
+"Mouse","Brain","ONT cDNA","Kallisto","EDASeq","0.5k-1k",86.9746708881825
+"Mouse","Brain","ONT cDNA","Kallisto","EDASeq","1k-1.5k",35.9844058442587
+"Mouse","Brain","ONT cDNA","Kallisto","EDASeq","1.5k-2k",29.032060170045
+"Mouse","Brain","ONT cDNA","Kallisto","EDASeq","2k-2.5k",26.9499816579603
+"Mouse","Brain","ONT cDNA","Kallisto","EDASeq","2.5k-3k",25.9343106430167
+"Mouse","Brain","ONT cDNA","Kallisto","EDASeq","3k-3.5k",22.7683115897092
+"Mouse","Brain","ONT cDNA","Kallisto","EDASeq","3.5k-4k",23.953722149828
+"Mouse","Brain","ONT cDNA","Kallisto","EDASeq","4k-4.5k",23.7899798478222
+"Mouse","Brain","ONT cDNA","Kallisto","EDASeq","4.5k-5k",24.5754298314597
+"Mouse","Brain","ONT cDNA","Kallisto","EDASeq","5k+",23.5511833663735
+"Mouse","Brain","ONT cDNA","Bambu","EDASeq","0k-0.5k",129.683069963753
+"Mouse","Brain","ONT cDNA","Bambu","EDASeq","0.5k-1k",73.5844402979038
+"Mouse","Brain","ONT cDNA","Bambu","EDASeq","1k-1.5k",33.1404238171172
+"Mouse","Brain","ONT cDNA","Bambu","EDASeq","1.5k-2k",24.6540756033511
+"Mouse","Brain","ONT cDNA","Bambu","EDASeq","2k-2.5k",21.5344928734174
+"Mouse","Brain","ONT cDNA","Bambu","EDASeq","2.5k-3k",21.5800083720709
+"Mouse","Brain","ONT cDNA","Bambu","EDASeq","3k-3.5k",18.0480135557242
+"Mouse","Brain","ONT cDNA","Bambu","EDASeq","3.5k-4k",17.9658582533218
+"Mouse","Brain","ONT cDNA","Bambu","EDASeq","4k-4.5k",19.7244968530097
+"Mouse","Brain","ONT cDNA","Bambu","EDASeq","4.5k-5k",17.8832037486883
+"Mouse","Brain","ONT cDNA","Bambu","EDASeq","5k+",15.8578671280874
+"Mouse","Brain","ONT cDNA","FLAIR","EDASeq","0k-0.5k",9.27773657512248
+"Mouse","Brain","ONT cDNA","FLAIR","EDASeq","0.5k-1k",15.594569391486
+"Mouse","Brain","ONT cDNA","FLAIR","EDASeq","1k-1.5k",8.51053539837315
+"Mouse","Brain","ONT cDNA","FLAIR","EDASeq","1.5k-2k",7.83115408583967
+"Mouse","Brain","ONT cDNA","FLAIR","EDASeq","2k-2.5k",7.11151265193529
+"Mouse","Brain","ONT cDNA","FLAIR","EDASeq","2.5k-3k",6.8553129120041
+"Mouse","Brain","ONT cDNA","FLAIR","EDASeq","3k-3.5k",6.85442725399002
+"Mouse","Brain","ONT cDNA","FLAIR","EDASeq","3.5k-4k",7.31243116114097
+"Mouse","Brain","ONT cDNA","FLAIR","EDASeq","4k-4.5k",7.0643234403852
+"Mouse","Brain","ONT cDNA","FLAIR","EDASeq","4.5k-5k",7.4855835642304
+"Mouse","Brain","ONT cDNA","FLAIR","EDASeq","5k+",5.76119590973548
+"Mouse","Brain","ONT cDNA","Oarfish","EDASeq","0k-0.5k",159.584797624375
+"Mouse","Brain","ONT cDNA","Oarfish","EDASeq","0.5k-1k",53.6422795428684
+"Mouse","Brain","ONT cDNA","Oarfish","EDASeq","1k-1.5k",19.482736902684
+"Mouse","Brain","ONT cDNA","Oarfish","EDASeq","1.5k-2k",14.6869683569677
+"Mouse","Brain","ONT cDNA","Oarfish","EDASeq","2k-2.5k",13.0194532568845
+"Mouse","Brain","ONT cDNA","Oarfish","EDASeq","2.5k-3k",12.4697566255392
+"Mouse","Brain","ONT cDNA","Oarfish","EDASeq","3k-3.5k",11.0477845353164
+"Mouse","Brain","ONT cDNA","Oarfish","EDASeq","3.5k-4k",10.1451441571888
+"Mouse","Brain","ONT cDNA","Oarfish","EDASeq","4k-4.5k",10.4424354571822
+"Mouse","Brain","ONT cDNA","Oarfish","EDASeq","4.5k-5k",9.61375867117341
+"Mouse","Brain","ONT cDNA","Oarfish","EDASeq","5k+",10.8131288866244
+"Mouse","Brain","ONT cDNA","IsoQuant","EDASeq","0k-0.5k",162.32611789975
+"Mouse","Brain","ONT cDNA","IsoQuant","EDASeq","0.5k-1k",80.5940937637363
+"Mouse","Brain","ONT cDNA","IsoQuant","EDASeq","1k-1.5k",36.1518709031651
+"Mouse","Brain","ONT cDNA","IsoQuant","EDASeq","1.5k-2k",31.494790255254
+"Mouse","Brain","ONT cDNA","IsoQuant","EDASeq","2k-2.5k",25.5148358745644
+"Mouse","Brain","ONT cDNA","IsoQuant","EDASeq","2.5k-3k",23.9875610369906
+"Mouse","Brain","ONT cDNA","IsoQuant","EDASeq","3k-3.5k",21.6832130468678
+"Mouse","Brain","ONT cDNA","IsoQuant","EDASeq","3.5k-4k",22.0330880778423
+"Mouse","Brain","ONT cDNA","IsoQuant","EDASeq","4k-4.5k",23.0756712576809
+"Mouse","Brain","ONT cDNA","IsoQuant","EDASeq","4.5k-5k",23.3978779068995
+"Mouse","Brain","ONT cDNA","IsoQuant","EDASeq","5k+",23.4734890575044
+"Mouse","Brain","ONT cDNA","Kallisto","CQN","0k-0.5k",87.5989364396818
+"Mouse","Brain","ONT cDNA","Kallisto","CQN","0.5k-1k",81.8835453079836
+"Mouse","Brain","ONT cDNA","Kallisto","CQN","1k-1.5k",49.8647137229242
+"Mouse","Brain","ONT cDNA","Kallisto","CQN","1.5k-2k",41.4891806505711
+"Mouse","Brain","ONT cDNA","Kallisto","CQN","2k-2.5k",37.0449673216407
+"Mouse","Brain","ONT cDNA","Kallisto","CQN","2.5k-3k",32.7373175959722
+"Mouse","Brain","ONT cDNA","Kallisto","CQN","3k-3.5k",26.4433755977091
+"Mouse","Brain","ONT cDNA","Kallisto","CQN","3.5k-4k",25.011813897087
+"Mouse","Brain","ONT cDNA","Kallisto","CQN","4k-4.5k",23.3991794185486
+"Mouse","Brain","ONT cDNA","Kallisto","CQN","4.5k-5k",22.5143250065231
+"Mouse","Brain","ONT cDNA","Kallisto","CQN","5k+",19.3176360832118
+"Mouse","Brain","ONT cDNA","Bambu","CQN","0k-0.5k",53.9263981407936
+"Mouse","Brain","ONT cDNA","Bambu","CQN","0.5k-1k",57.1800206372718
+"Mouse","Brain","ONT cDNA","Bambu","CQN","1k-1.5k",41.8661664387247
+"Mouse","Brain","ONT cDNA","Bambu","CQN","1.5k-2k",33.7516026964524
+"Mouse","Brain","ONT cDNA","Bambu","CQN","2k-2.5k",28.8649911711405
+"Mouse","Brain","ONT cDNA","Bambu","CQN","2.5k-3k",26.693522307768
+"Mouse","Brain","ONT cDNA","Bambu","CQN","3k-3.5k",21.2564580255266
+"Mouse","Brain","ONT cDNA","Bambu","CQN","3.5k-4k",19.9409494573618
+"Mouse","Brain","ONT cDNA","Bambu","CQN","4k-4.5k",20.5935819529285
+"Mouse","Brain","ONT cDNA","Bambu","CQN","4.5k-5k",18.1665187709683
+"Mouse","Brain","ONT cDNA","Bambu","CQN","5k+",15.7482632504106
+"Mouse","Brain","ONT cDNA","FLAIR","CQN","0k-0.5k",6.507609361466
+"Mouse","Brain","ONT cDNA","FLAIR","CQN","0.5k-1k",8.80457524336772
+"Mouse","Brain","ONT cDNA","FLAIR","CQN","1k-1.5k",7.91450197546325
+"Mouse","Brain","ONT cDNA","FLAIR","CQN","1.5k-2k",8.31097841913456
+"Mouse","Brain","ONT cDNA","FLAIR","CQN","2k-2.5k",8.41089222894622
+"Mouse","Brain","ONT cDNA","FLAIR","CQN","2.5k-3k",9.09106025785832
+"Mouse","Brain","ONT cDNA","FLAIR","CQN","3k-3.5k",9.7897996434379
+"Mouse","Brain","ONT cDNA","FLAIR","CQN","3.5k-4k",10.2094304849432
+"Mouse","Brain","ONT cDNA","FLAIR","CQN","4k-4.5k",10.0531775460136
+"Mouse","Brain","ONT cDNA","FLAIR","CQN","4.5k-5k",10.7468040037649
+"Mouse","Brain","ONT cDNA","FLAIR","CQN","5k+",7.68291063593659
+"Mouse","Brain","ONT cDNA","Oarfish","CQN","0k-0.5k",72.0496110646072
+"Mouse","Brain","ONT cDNA","Oarfish","CQN","0.5k-1k",65.3858160315983
+"Mouse","Brain","ONT cDNA","Oarfish","CQN","1k-1.5k",35.8274019964373
+"Mouse","Brain","ONT cDNA","Oarfish","CQN","1.5k-2k",27.9901669108319
+"Mouse","Brain","ONT cDNA","Oarfish","CQN","2k-2.5k",24.6574794122587
+"Mouse","Brain","ONT cDNA","Oarfish","CQN","2.5k-3k",23.1100968749396
+"Mouse","Brain","ONT cDNA","Oarfish","CQN","3k-3.5k",19.9981663333733
+"Mouse","Brain","ONT cDNA","Oarfish","CQN","3.5k-4k",18.0534002259656
+"Mouse","Brain","ONT cDNA","Oarfish","CQN","4k-4.5k",17.9461062021889
+"Mouse","Brain","ONT cDNA","Oarfish","CQN","4.5k-5k",16.2661960897217
+"Mouse","Brain","ONT cDNA","Oarfish","CQN","5k+",16.2916295149402
+"Mouse","Brain","ONT cDNA","IsoQuant","CQN","0k-0.5k",46.7721983547779
+"Mouse","Brain","ONT cDNA","IsoQuant","CQN","0.5k-1k",32.5194830844237
+"Mouse","Brain","ONT cDNA","IsoQuant","CQN","1k-1.5k",26.4104549786869
+"Mouse","Brain","ONT cDNA","IsoQuant","CQN","1.5k-2k",25.5539396127165
+"Mouse","Brain","ONT cDNA","IsoQuant","CQN","2k-2.5k",21.1728390324773
+"Mouse","Brain","ONT cDNA","IsoQuant","CQN","2.5k-3k",19.9528729692167
+"Mouse","Brain","ONT cDNA","IsoQuant","CQN","3k-3.5k",18.3563058662829
+"Mouse","Brain","ONT cDNA","IsoQuant","CQN","3.5k-4k",17.6486377339237
+"Mouse","Brain","ONT cDNA","IsoQuant","CQN","4k-4.5k",17.7069818597024
+"Mouse","Brain","ONT cDNA","IsoQuant","CQN","4.5k-5k",17.4396515123758
+"Mouse","Brain","ONT cDNA","IsoQuant","CQN","5k+",14.0585633090709
+"Mouse","Brain","ONT cDNA","Kallisto","SMR","0k-0.5k",48.7366564319731
+"Mouse","Brain","ONT cDNA","Kallisto","SMR","0.5k-1k",50.9742934966901
+"Mouse","Brain","ONT cDNA","Kallisto","SMR","1k-1.5k",56.5942869130329
+"Mouse","Brain","ONT cDNA","Kallisto","SMR","1.5k-2k",62.1832135779839
+"Mouse","Brain","ONT cDNA","Kallisto","SMR","2k-2.5k",62.4728653302297
+"Mouse","Brain","ONT cDNA","Kallisto","SMR","2.5k-3k",68.06070775193
+"Mouse","Brain","ONT cDNA","Kallisto","SMR","3k-3.5k",71.2507102548013
+"Mouse","Brain","ONT cDNA","Kallisto","SMR","3.5k-4k",74.1430328398094
+"Mouse","Brain","ONT cDNA","Kallisto","SMR","4k-4.5k",77.7496755391293
+"Mouse","Brain","ONT cDNA","Kallisto","SMR","4.5k-5k",75.4913564801012
+"Mouse","Brain","ONT cDNA","Kallisto","SMR","5k+",80.8725410037995
+"Mouse","Brain","ONT cDNA","Bambu","SMR","0k-0.5k",41.0568053798622
+"Mouse","Brain","ONT cDNA","Bambu","SMR","0.5k-1k",44.2275886124171
+"Mouse","Brain","ONT cDNA","Bambu","SMR","1k-1.5k",47.4417891707142
+"Mouse","Brain","ONT cDNA","Bambu","SMR","1.5k-2k",52.9269506858983
+"Mouse","Brain","ONT cDNA","Bambu","SMR","2k-2.5k",52.520766167304
+"Mouse","Brain","ONT cDNA","Bambu","SMR","2.5k-3k",55.9796266453743
+"Mouse","Brain","ONT cDNA","Bambu","SMR","3k-3.5k",57.9332267836005
+"Mouse","Brain","ONT cDNA","Bambu","SMR","3.5k-4k",57.9281200521726
+"Mouse","Brain","ONT cDNA","Bambu","SMR","4k-4.5k",61.9339992237391
+"Mouse","Brain","ONT cDNA","Bambu","SMR","4.5k-5k",58.2851890535485
+"Mouse","Brain","ONT cDNA","Bambu","SMR","5k+",61.5766736423673
+"Mouse","Brain","ONT cDNA","FLAIR","SMR","0k-0.5k",15.8536315998016
+"Mouse","Brain","ONT cDNA","FLAIR","SMR","0.5k-1k",19.7323240380633
+"Mouse","Brain","ONT cDNA","FLAIR","SMR","1k-1.5k",23.989124736696
+"Mouse","Brain","ONT cDNA","FLAIR","SMR","1.5k-2k",28.9760501219754
+"Mouse","Brain","ONT cDNA","FLAIR","SMR","2k-2.5k",29.3859472983188
+"Mouse","Brain","ONT cDNA","FLAIR","SMR","2.5k-3k",25.9532188333249
+"Mouse","Brain","ONT cDNA","FLAIR","SMR","3k-3.5k",24.2043289862158
+"Mouse","Brain","ONT cDNA","FLAIR","SMR","3.5k-4k",28.391336314376
+"Mouse","Brain","ONT cDNA","FLAIR","SMR","4k-4.5k",25.6636218217516
+"Mouse","Brain","ONT cDNA","FLAIR","SMR","4.5k-5k",22.0541537407118
+"Mouse","Brain","ONT cDNA","FLAIR","SMR","5k+",26.4911835679176
+"Mouse","Brain","ONT cDNA","Oarfish","SMR","0k-0.5k",38.3183178554289
+"Mouse","Brain","ONT cDNA","Oarfish","SMR","0.5k-1k",39.4528766611656
+"Mouse","Brain","ONT cDNA","Oarfish","SMR","1k-1.5k",42.8939277358062
+"Mouse","Brain","ONT cDNA","Oarfish","SMR","1.5k-2k",45.7547743147348
+"Mouse","Brain","ONT cDNA","Oarfish","SMR","2k-2.5k",46.7827791728871
+"Mouse","Brain","ONT cDNA","Oarfish","SMR","2.5k-3k",49.6553528858668
+"Mouse","Brain","ONT cDNA","Oarfish","SMR","3k-3.5k",51.0359234326793
+"Mouse","Brain","ONT cDNA","Oarfish","SMR","3.5k-4k",52.8904460393968
+"Mouse","Brain","ONT cDNA","Oarfish","SMR","4k-4.5k",54.5261653166989
+"Mouse","Brain","ONT cDNA","Oarfish","SMR","4.5k-5k",51.9853734066779
+"Mouse","Brain","ONT cDNA","Oarfish","SMR","5k+",57.1904003652166
+"Mouse","Brain","ONT cDNA","IsoQuant","SMR","0k-0.5k",65.4943023366161
+"Mouse","Brain","ONT cDNA","IsoQuant","SMR","0.5k-1k",38.6179508383752
+"Mouse","Brain","ONT cDNA","IsoQuant","SMR","1k-1.5k",35.3792136347476
+"Mouse","Brain","ONT cDNA","IsoQuant","SMR","1.5k-2k",30.8832924161286
+"Mouse","Brain","ONT cDNA","IsoQuant","SMR","2k-2.5k",30.5966932037798
+"Mouse","Brain","ONT cDNA","IsoQuant","SMR","2.5k-3k",31.429907232053
+"Mouse","Brain","ONT cDNA","IsoQuant","SMR","3k-3.5k",36.0453620873049
+"Mouse","Brain","ONT cDNA","IsoQuant","SMR","3.5k-4k",41.3943363912714
+"Mouse","Brain","ONT cDNA","IsoQuant","SMR","4k-4.5k",60.8051215951683
+"Mouse","Brain","ONT cDNA","IsoQuant","SMR","4.5k-5k",65.2967232707135
+"Mouse","Brain","ONT cDNA","IsoQuant","SMR","5k+",80.2877351366457

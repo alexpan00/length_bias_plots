@@ -1,0 +1,1226 @@
+﻿"Dataset","Platform","Tool","Normalization","Condition","Sample","RMSE"
+"Mouse","Iso-Seq","Bambu","CPM","B20K80","B20K80_1",5.00538039341577
+"Mouse","Iso-Seq","Bambu","CPM","B20K80","B20K80_2",4.87148811963669
+"Mouse","Iso-Seq","Bambu","CPM","B20K80","B20K80_3",4.97596832045947
+"Mouse","Iso-Seq","Bambu","CPM","B20K80","B20K80_4",4.82293550077428
+"Mouse","Iso-Seq","Bambu","CPM","B20K80","B20K80_5",4.80700928652362
+"Mouse","Iso-Seq","Bambu","CPM","Brain","B31",4.9582899031739
+"Mouse","Iso-Seq","Bambu","CPM","Brain","B32",4.8637217368846
+"Mouse","Iso-Seq","Bambu","CPM","Brain","B33",4.98915897640297
+"Mouse","Iso-Seq","Bambu","CPM","Brain","B34",5.11594067358854
+"Mouse","Iso-Seq","Bambu","CPM","Brain","B35",5.15555434939486
+"Mouse","Iso-Seq","Bambu","CPM","B80K20","B80K20_1",5.1616822520029
+"Mouse","Iso-Seq","Bambu","CPM","B80K20","B80K20_2",4.96851771032189
+"Mouse","Iso-Seq","Bambu","CPM","B80K20","B80K20_3",4.96556832635791
+"Mouse","Iso-Seq","Bambu","CPM","B80K20","B80K20_4",5.11518308730563
+"Mouse","Iso-Seq","Bambu","CPM","B80K20","B80K20_5",4.97376481726698
+"Mouse","Iso-Seq","Bambu","CPM","Kidney","K31",5.05491166817029
+"Mouse","Iso-Seq","Bambu","CPM","Kidney","K32",5.00914580112884
+"Mouse","Iso-Seq","Bambu","CPM","Kidney","K33",4.99065842669801
+"Mouse","Iso-Seq","Bambu","CPM","Kidney","K34",4.97054396257257
+"Mouse","Iso-Seq","Bambu","CPM","Kidney","K35",4.93856147654372
+"Mouse","Iso-Seq","Bambu","CQN","B20K80","B20K80_1",4.94768365392593
+"Mouse","Iso-Seq","Bambu","CQN","B20K80","B20K80_2",4.68310733113435
+"Mouse","Iso-Seq","Bambu","CQN","B20K80","B20K80_3",4.71819965610394
+"Mouse","Iso-Seq","Bambu","CQN","B20K80","B20K80_4",4.56305351604871
+"Mouse","Iso-Seq","Bambu","CQN","B20K80","B20K80_5",4.81613952349429
+"Mouse","Iso-Seq","Bambu","CQN","Brain","B31",4.85501832865838
+"Mouse","Iso-Seq","Bambu","CQN","Brain","B32",4.76965072242161
+"Mouse","Iso-Seq","Bambu","CQN","Brain","B33",4.83508687569705
+"Mouse","Iso-Seq","Bambu","CQN","Brain","B34",4.81520586580261
+"Mouse","Iso-Seq","Bambu","CQN","Brain","B35",4.86636081984354
+"Mouse","Iso-Seq","Bambu","CQN","B80K20","B80K20_1",5.22777783120577
+"Mouse","Iso-Seq","Bambu","CQN","B80K20","B80K20_2",5.05002017677697
+"Mouse","Iso-Seq","Bambu","CQN","B80K20","B80K20_3",4.84266681566053
+"Mouse","Iso-Seq","Bambu","CQN","B80K20","B80K20_4",5.12245047727546
+"Mouse","Iso-Seq","Bambu","CQN","B80K20","B80K20_5",4.94538760407364
+"Mouse","Iso-Seq","Bambu","CQN","Kidney","K31",4.70625835557524
+"Mouse","Iso-Seq","Bambu","CQN","Kidney","K32",4.57280490645588
+"Mouse","Iso-Seq","Bambu","CQN","Kidney","K33",4.60839009847026
+"Mouse","Iso-Seq","Bambu","CQN","Kidney","K34",4.5327163866174
+"Mouse","Iso-Seq","Bambu","CQN","Kidney","K35",4.58150500302533
+"Mouse","Iso-Seq","Bambu","EDASeq","B20K80","B20K80_1",4.9853079653227
+"Mouse","Iso-Seq","Bambu","EDASeq","B20K80","B20K80_2",4.84029009038413
+"Mouse","Iso-Seq","Bambu","EDASeq","B20K80","B20K80_3",4.83912904839088
+"Mouse","Iso-Seq","Bambu","EDASeq","B20K80","B20K80_4",4.7570324019965
+"Mouse","Iso-Seq","Bambu","EDASeq","B20K80","B20K80_5",4.80355515459374
+"Mouse","Iso-Seq","Bambu","EDASeq","Brain","B31",4.95785699931212
+"Mouse","Iso-Seq","Bambu","EDASeq","Brain","B32",4.83262976598099
+"Mouse","Iso-Seq","Bambu","EDASeq","Brain","B33",4.92261570144891
+"Mouse","Iso-Seq","Bambu","EDASeq","Brain","B34",4.92936714931471
+"Mouse","Iso-Seq","Bambu","EDASeq","Brain","B35",5.0621224792535
+"Mouse","Iso-Seq","Bambu","EDASeq","B80K20","B80K20_1",5.03162534406345
+"Mouse","Iso-Seq","Bambu","EDASeq","B80K20","B80K20_2",4.87907172483188
+"Mouse","Iso-Seq","Bambu","EDASeq","B80K20","B80K20_3",4.79647448073755
+"Mouse","Iso-Seq","Bambu","EDASeq","B80K20","B80K20_4",4.94154469076728
+"Mouse","Iso-Seq","Bambu","EDASeq","B80K20","B80K20_5",4.88300557112965
+"Mouse","Iso-Seq","Bambu","EDASeq","Kidney","K31",5.17863054149076
+"Mouse","Iso-Seq","Bambu","EDASeq","Kidney","K32",4.94055131764321
+"Mouse","Iso-Seq","Bambu","EDASeq","Kidney","K33",4.94754657456301
+"Mouse","Iso-Seq","Bambu","EDASeq","Kidney","K34",4.91960129683572
+"Mouse","Iso-Seq","Bambu","EDASeq","Kidney","K35",4.98724140082295
+"Mouse","Iso-Seq","Bambu","SMR","B20K80","B20K80_1",4.57856514279145
+"Mouse","Iso-Seq","Bambu","SMR","B20K80","B20K80_2",4.55707930399446
+"Mouse","Iso-Seq","Bambu","SMR","B20K80","B20K80_3",4.5230053141335
+"Mouse","Iso-Seq","Bambu","SMR","B20K80","B20K80_4",4.45710443951945
+"Mouse","Iso-Seq","Bambu","SMR","B20K80","B20K80_5",4.4006560705871
+"Mouse","Iso-Seq","Bambu","SMR","Brain","B31",4.50072686607169
+"Mouse","Iso-Seq","Bambu","SMR","Brain","B32",4.50214264123924
+"Mouse","Iso-Seq","Bambu","SMR","Brain","B33",4.4969826034984
+"Mouse","Iso-Seq","Bambu","SMR","Brain","B34",4.49962614761424
+"Mouse","Iso-Seq","Bambu","SMR","Brain","B35",4.64192452935685
+"Mouse","Iso-Seq","Bambu","SMR","B80K20","B80K20_1",4.50647937270266
+"Mouse","Iso-Seq","Bambu","SMR","B80K20","B80K20_2",4.4989667262511
+"Mouse","Iso-Seq","Bambu","SMR","B80K20","B80K20_3",4.49771472070132
+"Mouse","Iso-Seq","Bambu","SMR","B80K20","B80K20_4",4.49863315421403
+"Mouse","Iso-Seq","Bambu","SMR","B80K20","B80K20_5",4.49679738860269
+"Mouse","Iso-Seq","Bambu","SMR","Kidney","K31",4.36221382437214
+"Mouse","Iso-Seq","Bambu","SMR","Kidney","K32",4.35689099004753
+"Mouse","Iso-Seq","Bambu","SMR","Kidney","K33",4.35679435713818
+"Mouse","Iso-Seq","Bambu","SMR","Kidney","K34",4.36483145663136
+"Mouse","Iso-Seq","Bambu","SMR","Kidney","K35",4.35842057365156
+"Mouse","Iso-Seq","Bambu","TPM","B20K80","B20K80_1",4.79200653333483
+"Mouse","Iso-Seq","Bambu","TPM","B20K80","B20K80_2",4.69130284831983
+"Mouse","Iso-Seq","Bambu","TPM","B20K80","B20K80_3",4.74989043798835
+"Mouse","Iso-Seq","Bambu","TPM","B20K80","B20K80_4",4.62812874246593
+"Mouse","Iso-Seq","Bambu","TPM","B20K80","B20K80_5",4.59144219811853
+"Mouse","Iso-Seq","Bambu","TPM","Brain","B31",4.71208014943186
+"Mouse","Iso-Seq","Bambu","TPM","Brain","B32",4.65204712230977
+"Mouse","Iso-Seq","Bambu","TPM","Brain","B33",4.72819238740923
+"Mouse","Iso-Seq","Bambu","TPM","Brain","B34",4.8170366320714
+"Mouse","Iso-Seq","Bambu","TPM","Brain","B35",4.8924825779082
+"Mouse","Iso-Seq","Bambu","TPM","B80K20","B80K20_1",4.85427360395298
+"Mouse","Iso-Seq","Bambu","TPM","B80K20","B80K20_2",4.71253093369874
+"Mouse","Iso-Seq","Bambu","TPM","B80K20","B80K20_3",4.72375456539375
+"Mouse","Iso-Seq","Bambu","TPM","B80K20","B80K20_4",4.81760643333137
+"Mouse","Iso-Seq","Bambu","TPM","B80K20","B80K20_5",4.72372711181402
+"Mouse","Iso-Seq","Bambu","TPM","Kidney","K31",4.71591492812892
+"Mouse","Iso-Seq","Bambu","TPM","Kidney","K32",4.68494186283526
+"Mouse","Iso-Seq","Bambu","TPM","Kidney","K33",4.67487370975884
+"Mouse","Iso-Seq","Bambu","TPM","Kidney","K34",4.68245246197407
+"Mouse","Iso-Seq","Bambu","TPM","Kidney","K35",4.65410567150851
+"Mouse","Iso-Seq","FLAIR","CPM","B20K80","B20K80_1",4.58584056175621
+"Mouse","Iso-Seq","FLAIR","CPM","B20K80","B20K80_2",4.4947338713738
+"Mouse","Iso-Seq","FLAIR","CPM","B20K80","B20K80_3",4.68748773775972
+"Mouse","Iso-Seq","FLAIR","CPM","B20K80","B20K80_4",4.39333164504335
+"Mouse","Iso-Seq","FLAIR","CPM","B20K80","B20K80_5",4.47924797823496
+"Mouse","Iso-Seq","FLAIR","CPM","Brain","B31",4.60521210446167
+"Mouse","Iso-Seq","FLAIR","CPM","Brain","B32",4.49551511272807
+"Mouse","Iso-Seq","FLAIR","CPM","Brain","B33",4.64857921424699
+"Mouse","Iso-Seq","FLAIR","CPM","Brain","B34",4.84242842021467
+"Mouse","Iso-Seq","FLAIR","CPM","Brain","B35",4.85643983724542
+"Mouse","Iso-Seq","FLAIR","CPM","B80K20","B80K20_1",4.87715034172096
+"Mouse","Iso-Seq","FLAIR","CPM","B80K20","B80K20_2",4.63637082622302
+"Mouse","Iso-Seq","FLAIR","CPM","B80K20","B80K20_3",4.64088902753929
+"Mouse","Iso-Seq","FLAIR","CPM","B80K20","B80K20_4",4.81928322796712
+"Mouse","Iso-Seq","FLAIR","CPM","B80K20","B80K20_5",4.65256879197776
+"Mouse","Iso-Seq","FLAIR","CPM","Kidney","K31",4.7549680533
+"Mouse","Iso-Seq","FLAIR","CPM","Kidney","K32",4.69885739244522
+"Mouse","Iso-Seq","FLAIR","CPM","Kidney","K33",4.69232753437544
+"Mouse","Iso-Seq","FLAIR","CPM","Kidney","K34",4.6787299770725
+"Mouse","Iso-Seq","FLAIR","CPM","Kidney","K35",4.66045242958994
+"Mouse","Iso-Seq","FLAIR","CQN","B20K80","B20K80_1",4.48953377863104
+"Mouse","Iso-Seq","FLAIR","CQN","B20K80","B20K80_2",4.23078669135803
+"Mouse","Iso-Seq","FLAIR","CQN","B20K80","B20K80_3",4.2956738300629
+"Mouse","Iso-Seq","FLAIR","CQN","B20K80","B20K80_4",4.16342287003764
+"Mouse","Iso-Seq","FLAIR","CQN","B20K80","B20K80_5",4.4665519838352
+"Mouse","Iso-Seq","FLAIR","CQN","Brain","B31",4.53128403693561
+"Mouse","Iso-Seq","FLAIR","CQN","Brain","B32",4.43032954725916
+"Mouse","Iso-Seq","FLAIR","CQN","Brain","B33",4.50983030871083
+"Mouse","Iso-Seq","FLAIR","CQN","Brain","B34",4.47080982058891
+"Mouse","Iso-Seq","FLAIR","CQN","Brain","B35",4.53296994583387
+"Mouse","Iso-Seq","FLAIR","CQN","B80K20","B80K20_1",4.96227597473466
+"Mouse","Iso-Seq","FLAIR","CQN","B80K20","B80K20_2",4.76712423887296
+"Mouse","Iso-Seq","FLAIR","CQN","B80K20","B80K20_3",4.56087426465786
+"Mouse","Iso-Seq","FLAIR","CQN","B80K20","B80K20_4",4.8602485791657
+"Mouse","Iso-Seq","FLAIR","CQN","B80K20","B80K20_5",4.69174271543703
+"Mouse","Iso-Seq","FLAIR","CQN","Kidney","K31",4.44607913451093
+"Mouse","Iso-Seq","FLAIR","CQN","Kidney","K32",4.24919413666674
+"Mouse","Iso-Seq","FLAIR","CQN","Kidney","K33",4.29164527181627
+"Mouse","Iso-Seq","FLAIR","CQN","Kidney","K34",4.2205749057418
+"Mouse","Iso-Seq","FLAIR","CQN","Kidney","K35",4.31710174493643
+"Mouse","Iso-Seq","FLAIR","EDASeq","B20K80","B20K80_1",4.63966374719874
+"Mouse","Iso-Seq","FLAIR","EDASeq","B20K80","B20K80_2",4.50324311596406
+"Mouse","Iso-Seq","FLAIR","EDASeq","B20K80","B20K80_3",4.62712868048207
+"Mouse","Iso-Seq","FLAIR","EDASeq","B20K80","B20K80_4",4.41605728225511
+"Mouse","Iso-Seq","FLAIR","EDASeq","B20K80","B20K80_5",4.56835184492047
+"Mouse","Iso-Seq","FLAIR","EDASeq","Brain","B31",4.65086047385686
+"Mouse","Iso-Seq","FLAIR","EDASeq","Brain","B32",4.50728605745217
+"Mouse","Iso-Seq","FLAIR","EDASeq","Brain","B33",4.64666015257697
+"Mouse","Iso-Seq","FLAIR","EDASeq","Brain","B34",4.70480790311552
+"Mouse","Iso-Seq","FLAIR","EDASeq","Brain","B35",4.81323252499085
+"Mouse","Iso-Seq","FLAIR","EDASeq","B80K20","B80K20_1",4.83792080769469
+"Mouse","Iso-Seq","FLAIR","EDASeq","B80K20","B80K20_2",4.58265067192276
+"Mouse","Iso-Seq","FLAIR","EDASeq","B80K20","B80K20_3",4.57411628006872
+"Mouse","Iso-Seq","FLAIR","EDASeq","B80K20","B80K20_4",4.6884503573988
+"Mouse","Iso-Seq","FLAIR","EDASeq","B80K20","B80K20_5",4.63634961818622
+"Mouse","Iso-Seq","FLAIR","EDASeq","Kidney","K31",4.90997707466857
+"Mouse","Iso-Seq","FLAIR","EDASeq","Kidney","K32",4.67686920503369
+"Mouse","Iso-Seq","FLAIR","EDASeq","Kidney","K33",4.68821580988412
+"Mouse","Iso-Seq","FLAIR","EDASeq","Kidney","K34",4.69690875370132
+"Mouse","Iso-Seq","FLAIR","EDASeq","Kidney","K35",4.77776573113399
+"Mouse","Iso-Seq","FLAIR","SMR","B20K80","B20K80_1",4.04973396410058
+"Mouse","Iso-Seq","FLAIR","SMR","B20K80","B20K80_2",4.10414962196814
+"Mouse","Iso-Seq","FLAIR","SMR","B20K80","B20K80_3",4.17484080510956
+"Mouse","Iso-Seq","FLAIR","SMR","B20K80","B20K80_4",3.90605305487144
+"Mouse","Iso-Seq","FLAIR","SMR","B20K80","B20K80_5",3.97569353357788
+"Mouse","Iso-Seq","FLAIR","SMR","Brain","B31",4.03158283307956
+"Mouse","Iso-Seq","FLAIR","SMR","Brain","B32",4.03331793971719
+"Mouse","Iso-Seq","FLAIR","SMR","Brain","B33",4.02710640005257
+"Mouse","Iso-Seq","FLAIR","SMR","Brain","B34",4.03392773042966
+"Mouse","Iso-Seq","FLAIR","SMR","Brain","B35",4.18919945299416
+"Mouse","Iso-Seq","FLAIR","SMR","B80K20","B80K20_1",4.04038478796987
+"Mouse","Iso-Seq","FLAIR","SMR","B80K20","B80K20_2",4.0292655500437
+"Mouse","Iso-Seq","FLAIR","SMR","B80K20","B80K20_3",4.02846759541497
+"Mouse","Iso-Seq","FLAIR","SMR","B80K20","B80K20_4",4.03013904859888
+"Mouse","Iso-Seq","FLAIR","SMR","B80K20","B80K20_5",4.02774009349368
+"Mouse","Iso-Seq","FLAIR","SMR","Kidney","K31",3.91811184967427
+"Mouse","Iso-Seq","FLAIR","SMR","Kidney","K32",3.91060230807232
+"Mouse","Iso-Seq","FLAIR","SMR","Kidney","K33",3.91200203218554
+"Mouse","Iso-Seq","FLAIR","SMR","Kidney","K34",3.92123909459027
+"Mouse","Iso-Seq","FLAIR","SMR","Kidney","K35",3.91656939637956
+"Mouse","Iso-Seq","FLAIR","TPM","B20K80","B20K80_1",4.31977350000702
+"Mouse","Iso-Seq","FLAIR","TPM","B20K80","B20K80_2",4.28665070374462
+"Mouse","Iso-Seq","FLAIR","TPM","B20K80","B20K80_3",4.43746862214817
+"Mouse","Iso-Seq","FLAIR","TPM","B20K80","B20K80_4",4.14199508980503
+"Mouse","Iso-Seq","FLAIR","TPM","B20K80","B20K80_5",4.22764517124041
+"Mouse","Iso-Seq","FLAIR","TPM","Brain","B31",4.30117876881528
+"Mouse","Iso-Seq","FLAIR","TPM","Brain","B32",4.23025480723326
+"Mouse","Iso-Seq","FLAIR","TPM","Brain","B33",4.3257964995718
+"Mouse","Iso-Seq","FLAIR","TPM","Brain","B34",4.46896050603292
+"Mouse","Iso-Seq","FLAIR","TPM","Brain","B35",4.52745573799852
+"Mouse","Iso-Seq","FLAIR","TPM","B80K20","B80K20_1",4.4972474172141
+"Mouse","Iso-Seq","FLAIR","TPM","B80K20","B80K20_2",4.31537081995923
+"Mouse","Iso-Seq","FLAIR","TPM","B80K20","B80K20_3",4.33618421675212
+"Mouse","Iso-Seq","FLAIR","TPM","B80K20","B80K20_4",4.45104575565033
+"Mouse","Iso-Seq","FLAIR","TPM","B80K20","B80K20_5",4.33783029711285
+"Mouse","Iso-Seq","FLAIR","TPM","Kidney","K31",4.34952557270741
+"Mouse","Iso-Seq","FLAIR","TPM","Kidney","K32",4.31082604763395
+"Mouse","Iso-Seq","FLAIR","TPM","Kidney","K33",4.31029887981154
+"Mouse","Iso-Seq","FLAIR","TPM","Kidney","K34",4.32697438526363
+"Mouse","Iso-Seq","FLAIR","TPM","Kidney","K35",4.30945701528041
+"Mouse","Iso-Seq","IsoQuant","CPM","B20K80","B20K80_1",5.12316406412799
+"Mouse","Iso-Seq","IsoQuant","CPM","B20K80","B20K80_2",4.99137536860745
+"Mouse","Iso-Seq","IsoQuant","CPM","B20K80","B20K80_3",5.11026843773037
+"Mouse","Iso-Seq","IsoQuant","CPM","B20K80","B20K80_4",4.96577918979013
+"Mouse","Iso-Seq","IsoQuant","CPM","B20K80","B20K80_5",4.95706531687334
+"Mouse","Iso-Seq","IsoQuant","CPM","Brain","B31",5.44274402171354
+"Mouse","Iso-Seq","IsoQuant","CPM","Brain","B32",5.36394033010482
+"Mouse","Iso-Seq","IsoQuant","CPM","Brain","B33",5.46280775322591
+"Mouse","Iso-Seq","IsoQuant","CPM","Brain","B34",5.5837432921023
+"Mouse","Iso-Seq","IsoQuant","CPM","Brain","B35",5.62769369020536
+"Mouse","Iso-Seq","IsoQuant","CPM","B80K20","B80K20_1",5.60946519539466
+"Mouse","Iso-Seq","IsoQuant","CPM","B80K20","B80K20_2",5.44645201964539
+"Mouse","Iso-Seq","IsoQuant","CPM","B80K20","B80K20_3",5.45912257122186
+"Mouse","Iso-Seq","IsoQuant","CPM","B80K20","B80K20_4",5.61379496271423
+"Mouse","Iso-Seq","IsoQuant","CPM","B80K20","B80K20_5",5.46570349788271
+"Mouse","Iso-Seq","IsoQuant","CPM","Kidney","K31",5.4870725715539
+"Mouse","Iso-Seq","IsoQuant","CPM","Kidney","K32",5.45054028399395
+"Mouse","Iso-Seq","IsoQuant","CPM","Kidney","K33",5.43277065842551
+"Mouse","Iso-Seq","IsoQuant","CPM","Kidney","K34",5.43843818913801
+"Mouse","Iso-Seq","IsoQuant","CPM","Kidney","K35",5.40320334491276
+"Mouse","Iso-Seq","IsoQuant","CQN","B20K80","B20K80_1",5.13759876766576
+"Mouse","Iso-Seq","IsoQuant","CQN","B20K80","B20K80_2",4.85625386944507
+"Mouse","Iso-Seq","IsoQuant","CQN","B20K80","B20K80_3",4.89740699456516
+"Mouse","Iso-Seq","IsoQuant","CQN","B20K80","B20K80_4",4.79572513564981
+"Mouse","Iso-Seq","IsoQuant","CQN","B20K80","B20K80_5",5.04648224693018
+"Mouse","Iso-Seq","IsoQuant","CQN","Brain","B31",5.38364066107571
+"Mouse","Iso-Seq","IsoQuant","CQN","Brain","B32",5.31676339351818
+"Mouse","Iso-Seq","IsoQuant","CQN","Brain","B33",5.356592080145
+"Mouse","Iso-Seq","IsoQuant","CQN","Brain","B34",5.32107617339763
+"Mouse","Iso-Seq","IsoQuant","CQN","Brain","B35",5.3686644740233
+"Mouse","Iso-Seq","IsoQuant","CQN","B80K20","B80K20_1",5.61793656709454
+"Mouse","Iso-Seq","IsoQuant","CQN","B80K20","B80K20_2",5.53923680220949
+"Mouse","Iso-Seq","IsoQuant","CQN","B80K20","B80K20_3",5.35548147834287
+"Mouse","Iso-Seq","IsoQuant","CQN","B80K20","B80K20_4",5.59075392816677
+"Mouse","Iso-Seq","IsoQuant","CQN","B80K20","B80K20_5",5.43865492110214
+"Mouse","Iso-Seq","IsoQuant","CQN","Kidney","K31",5.26525106181055
+"Mouse","Iso-Seq","IsoQuant","CQN","Kidney","K32",5.11425796915713
+"Mouse","Iso-Seq","IsoQuant","CQN","Kidney","K33",5.15263927517556
+"Mouse","Iso-Seq","IsoQuant","CQN","Kidney","K34",5.10195196955206
+"Mouse","Iso-Seq","IsoQuant","CQN","Kidney","K35",5.1559419875577
+"Mouse","Iso-Seq","IsoQuant","EDASeq","B20K80","B20K80_1",5.12967602623002
+"Mouse","Iso-Seq","IsoQuant","EDASeq","B20K80","B20K80_2",4.99166801654577
+"Mouse","Iso-Seq","IsoQuant","EDASeq","B20K80","B20K80_3",4.98367210166277
+"Mouse","Iso-Seq","IsoQuant","EDASeq","B20K80","B20K80_4",4.90431937420487
+"Mouse","Iso-Seq","IsoQuant","EDASeq","B20K80","B20K80_5",4.9679324353168
+"Mouse","Iso-Seq","IsoQuant","EDASeq","Brain","B31",5.46268680463745
+"Mouse","Iso-Seq","IsoQuant","EDASeq","Brain","B32",5.35520744072314
+"Mouse","Iso-Seq","IsoQuant","EDASeq","Brain","B33",5.42500423809347
+"Mouse","Iso-Seq","IsoQuant","EDASeq","Brain","B34",5.39681632952855
+"Mouse","Iso-Seq","IsoQuant","EDASeq","Brain","B35",5.54294949534842
+"Mouse","Iso-Seq","IsoQuant","EDASeq","B80K20","B80K20_1",5.51679138447173
+"Mouse","Iso-Seq","IsoQuant","EDASeq","B80K20","B80K20_2",5.40276149413558
+"Mouse","Iso-Seq","IsoQuant","EDASeq","B80K20","B80K20_3",5.30933914874344
+"Mouse","Iso-Seq","IsoQuant","EDASeq","B80K20","B80K20_4",5.47261170540049
+"Mouse","Iso-Seq","IsoQuant","EDASeq","B80K20","B80K20_5",5.40056455623751
+"Mouse","Iso-Seq","IsoQuant","EDASeq","Kidney","K31",5.63821811050603
+"Mouse","Iso-Seq","IsoQuant","EDASeq","Kidney","K32",5.42022245224009
+"Mouse","Iso-Seq","IsoQuant","EDASeq","Kidney","K33",5.41819364275326
+"Mouse","Iso-Seq","IsoQuant","EDASeq","Kidney","K34",5.38326257649666
+"Mouse","Iso-Seq","IsoQuant","EDASeq","Kidney","K35",5.44231923518494
+"Mouse","Iso-Seq","IsoQuant","SMR","B20K80","B20K80_1",4.77794454267272
+"Mouse","Iso-Seq","IsoQuant","SMR","B20K80","B20K80_2",4.72159563222101
+"Mouse","Iso-Seq","IsoQuant","SMR","B20K80","B20K80_3",4.72255089073938
+"Mouse","Iso-Seq","IsoQuant","SMR","B20K80","B20K80_4",4.66179857172021
+"Mouse","Iso-Seq","IsoQuant","SMR","B20K80","B20K80_5",4.60707426069699
+"Mouse","Iso-Seq","IsoQuant","SMR","Brain","B31",5.07410125612737
+"Mouse","Iso-Seq","IsoQuant","SMR","Brain","B32",5.07451249420014
+"Mouse","Iso-Seq","IsoQuant","SMR","Brain","B33",5.07094599603303
+"Mouse","Iso-Seq","IsoQuant","SMR","Brain","B34",5.07277204700121
+"Mouse","Iso-Seq","IsoQuant","SMR","Brain","B35",5.20039290016616
+"Mouse","Iso-Seq","IsoQuant","SMR","B80K20","B80K20_1",5.07681407796689
+"Mouse","Iso-Seq","IsoQuant","SMR","B80K20","B80K20_2",5.07247479247171
+"Mouse","Iso-Seq","IsoQuant","SMR","B80K20","B80K20_3",5.07132985663521
+"Mouse","Iso-Seq","IsoQuant","SMR","B80K20","B80K20_4",5.07881848899279
+"Mouse","Iso-Seq","IsoQuant","SMR","B80K20","B80K20_5",5.0709196689213
+"Mouse","Iso-Seq","IsoQuant","SMR","Kidney","K31",4.95284692109553
+"Mouse","Iso-Seq","IsoQuant","SMR","Kidney","K32",4.94841284723408
+"Mouse","Iso-Seq","IsoQuant","SMR","Kidney","K33",4.94914419501783
+"Mouse","Iso-Seq","IsoQuant","SMR","Kidney","K34",4.95826008625403
+"Mouse","Iso-Seq","IsoQuant","SMR","Kidney","K35",4.95306231319287
+"Mouse","Iso-Seq","IsoQuant","TPM","B20K80","B20K80_1",4.93405511578832
+"Mouse","Iso-Seq","IsoQuant","TPM","B20K80","B20K80_2",4.82573845971066
+"Mouse","Iso-Seq","IsoQuant","TPM","B20K80","B20K80_3",4.90368924898446
+"Mouse","Iso-Seq","IsoQuant","TPM","B20K80","B20K80_4",4.78937565973818
+"Mouse","Iso-Seq","IsoQuant","TPM","B20K80","B20K80_5",4.75851874306634
+"Mouse","Iso-Seq","IsoQuant","TPM","Brain","B31",5.23737011945934
+"Mouse","Iso-Seq","IsoQuant","TPM","Brain","B32",5.18735412372389
+"Mouse","Iso-Seq","IsoQuant","TPM","Brain","B33",5.24435990257481
+"Mouse","Iso-Seq","IsoQuant","TPM","Brain","B34",5.32833481894199
+"Mouse","Iso-Seq","IsoQuant","TPM","Brain","B35",5.40288474301063
+"Mouse","Iso-Seq","IsoQuant","TPM","B80K20","B80K20_1",5.3496851925518
+"Mouse","Iso-Seq","IsoQuant","TPM","B80K20","B80K20_2",5.23332691931343
+"Mouse","Iso-Seq","IsoQuant","TPM","B80K20","B80K20_3",5.25475776088532
+"Mouse","Iso-Seq","IsoQuant","TPM","B80K20","B80K20_4",5.35645328075461
+"Mouse","Iso-Seq","IsoQuant","TPM","B80K20","B80K20_5",5.25387884935624
+"Mouse","Iso-Seq","IsoQuant","TPM","Kidney","K31",5.20427979184035
+"Mouse","Iso-Seq","IsoQuant","TPM","Kidney","K32",5.18133501828738
+"Mouse","Iso-Seq","IsoQuant","TPM","Kidney","K33",5.1722080321944
+"Mouse","Iso-Seq","IsoQuant","TPM","Kidney","K34",5.19858938682017
+"Mouse","Iso-Seq","IsoQuant","TPM","Kidney","K35",5.16927161994104
+"Mouse","Iso-Seq","Kallisto","CPM","B20K80","B20K80_1",4.44688867529368
+"Mouse","Iso-Seq","Kallisto","CPM","B20K80","B20K80_2",4.29605624592469
+"Mouse","Iso-Seq","Kallisto","CPM","B20K80","B20K80_3",4.48614592333737
+"Mouse","Iso-Seq","Kallisto","CPM","B20K80","B20K80_4",4.240159648127
+"Mouse","Iso-Seq","Kallisto","CPM","B20K80","B20K80_5",4.31259247529896
+"Mouse","Iso-Seq","Kallisto","CPM","Brain","B31",4.59434049830253
+"Mouse","Iso-Seq","Kallisto","CPM","Brain","B32",4.46449724571249
+"Mouse","Iso-Seq","Kallisto","CPM","Brain","B33",4.61829364788525
+"Mouse","Iso-Seq","Kallisto","CPM","Brain","B34",4.81397767592761
+"Mouse","Iso-Seq","Kallisto","CPM","Brain","B35",4.81575754895843
+"Mouse","Iso-Seq","Kallisto","CPM","B80K20","B80K20_1",4.91661961148972
+"Mouse","Iso-Seq","Kallisto","CPM","B80K20","B80K20_2",4.61283067319824
+"Mouse","Iso-Seq","Kallisto","CPM","B80K20","B80K20_3",4.63932337520949
+"Mouse","Iso-Seq","Kallisto","CPM","B80K20","B80K20_4",4.80329989655679
+"Mouse","Iso-Seq","Kallisto","CPM","B80K20","B80K20_5",4.64734655705684
+"Mouse","Iso-Seq","Kallisto","CPM","Kidney","K31",4.73660439490665
+"Mouse","Iso-Seq","Kallisto","CPM","Kidney","K32",4.67486498033822
+"Mouse","Iso-Seq","Kallisto","CPM","Kidney","K33",4.67861934203732
+"Mouse","Iso-Seq","Kallisto","CPM","Kidney","K34",4.65971529835008
+"Mouse","Iso-Seq","Kallisto","CPM","Kidney","K35",4.6397337044376
+"Mouse","Iso-Seq","Kallisto","CQN","B20K80","B20K80_1",4.52479939379644
+"Mouse","Iso-Seq","Kallisto","CQN","B20K80","B20K80_2",4.23351510277157
+"Mouse","Iso-Seq","Kallisto","CQN","B20K80","B20K80_3",4.25708569284272
+"Mouse","Iso-Seq","Kallisto","CQN","B20K80","B20K80_4",4.07227794831694
+"Mouse","Iso-Seq","Kallisto","CQN","B20K80","B20K80_5",4.41180820858607
+"Mouse","Iso-Seq","Kallisto","CQN","Brain","B31",4.46000809994772
+"Mouse","Iso-Seq","Kallisto","CQN","Brain","B32",4.34391487090547
+"Mouse","Iso-Seq","Kallisto","CQN","Brain","B33",4.41973069981076
+"Mouse","Iso-Seq","Kallisto","CQN","Brain","B34",4.40801405966335
+"Mouse","Iso-Seq","Kallisto","CQN","Brain","B35",4.4698055098394
+"Mouse","Iso-Seq","Kallisto","CQN","B80K20","B80K20_1",4.89964069951474
+"Mouse","Iso-Seq","Kallisto","CQN","B80K20","B80K20_2",4.7203831192706
+"Mouse","Iso-Seq","Kallisto","CQN","B80K20","B80K20_3",4.47085578656749
+"Mouse","Iso-Seq","Kallisto","CQN","B80K20","B80K20_4",4.8042064194172
+"Mouse","Iso-Seq","Kallisto","CQN","B80K20","B80K20_5",4.59253383468409
+"Mouse","Iso-Seq","Kallisto","CQN","Kidney","K31",4.3792160743694
+"Mouse","Iso-Seq","Kallisto","CQN","Kidney","K32",4.17677273469841
+"Mouse","Iso-Seq","Kallisto","CQN","Kidney","K33",4.23665596323127
+"Mouse","Iso-Seq","Kallisto","CQN","Kidney","K34",4.1551108645568
+"Mouse","Iso-Seq","Kallisto","CQN","Kidney","K35",4.22390961364256
+"Mouse","Iso-Seq","Kallisto","EDASeq","B20K80","B20K80_1",4.41874718493099
+"Mouse","Iso-Seq","Kallisto","EDASeq","B20K80","B20K80_2",4.25927207427014
+"Mouse","Iso-Seq","Kallisto","EDASeq","B20K80","B20K80_3",4.28608283417601
+"Mouse","Iso-Seq","Kallisto","EDASeq","B20K80","B20K80_4",4.11985097854762
+"Mouse","Iso-Seq","Kallisto","EDASeq","B20K80","B20K80_5",4.29241073457082
+"Mouse","Iso-Seq","Kallisto","EDASeq","Brain","B31",4.62408356181743
+"Mouse","Iso-Seq","Kallisto","EDASeq","Brain","B32",4.45965574883746
+"Mouse","Iso-Seq","Kallisto","EDASeq","Brain","B33",4.57201194853342
+"Mouse","Iso-Seq","Kallisto","EDASeq","Brain","B34",4.58091064064198
+"Mouse","Iso-Seq","Kallisto","EDASeq","Brain","B35",4.70935140000134
+"Mouse","Iso-Seq","Kallisto","EDASeq","B80K20","B80K20_1",4.79721897009688
+"Mouse","Iso-Seq","Kallisto","EDASeq","B80K20","B80K20_2",4.52802322010977
+"Mouse","Iso-Seq","Kallisto","EDASeq","B80K20","B80K20_3",4.4189028057467
+"Mouse","Iso-Seq","Kallisto","EDASeq","B80K20","B80K20_4",4.59287328099354
+"Mouse","Iso-Seq","Kallisto","EDASeq","B80K20","B80K20_5",4.54484191338226
+"Mouse","Iso-Seq","Kallisto","EDASeq","Kidney","K31",4.88882901671234
+"Mouse","Iso-Seq","Kallisto","EDASeq","Kidney","K32",4.60166444925405
+"Mouse","Iso-Seq","Kallisto","EDASeq","Kidney","K33",4.60360335515707
+"Mouse","Iso-Seq","Kallisto","EDASeq","Kidney","K34",4.55002271245104
+"Mouse","Iso-Seq","Kallisto","EDASeq","Kidney","K35",4.64893458076546
+"Mouse","Iso-Seq","Kallisto","SMR","B20K80","B20K80_1",3.87743582436916
+"Mouse","Iso-Seq","Kallisto","SMR","B20K80","B20K80_2",3.87134953371561
+"Mouse","Iso-Seq","Kallisto","SMR","B20K80","B20K80_3",3.87800629511458
+"Mouse","Iso-Seq","Kallisto","SMR","B20K80","B20K80_4",3.72851758777449
+"Mouse","Iso-Seq","Kallisto","SMR","B20K80","B20K80_5",3.79769128442677
+"Mouse","Iso-Seq","Kallisto","SMR","Brain","B31",4.03370924849458
+"Mouse","Iso-Seq","Kallisto","SMR","Brain","B32",4.03380286474544
+"Mouse","Iso-Seq","Kallisto","SMR","Brain","B33",4.02636492709978
+"Mouse","Iso-Seq","Kallisto","SMR","Brain","B34",4.03262585698109
+"Mouse","Iso-Seq","Kallisto","SMR","Brain","B35",4.18792535205339
+"Mouse","Iso-Seq","Kallisto","SMR","B80K20","B80K20_1",4.1960571753117
+"Mouse","Iso-Seq","Kallisto","SMR","B80K20","B80K20_2",4.02960248232438
+"Mouse","Iso-Seq","Kallisto","SMR","B80K20","B80K20_3",4.0322664212475
+"Mouse","Iso-Seq","Kallisto","SMR","B80K20","B80K20_4",4.0346686977819
+"Mouse","Iso-Seq","Kallisto","SMR","B80K20","B80K20_5",4.0299896732242
+"Mouse","Iso-Seq","Kallisto","SMR","Kidney","K31",3.94406189513982
+"Mouse","Iso-Seq","Kallisto","SMR","Kidney","K32",3.93670855540424
+"Mouse","Iso-Seq","Kallisto","SMR","Kidney","K33",3.93969509941411
+"Mouse","Iso-Seq","Kallisto","SMR","Kidney","K34",3.94570887672896
+"Mouse","Iso-Seq","Kallisto","SMR","Kidney","K35",3.93979106864151
+"Mouse","Iso-Seq","Kallisto","TPM","B20K80","B20K80_1",4.1653905190062
+"Mouse","Iso-Seq","Kallisto","TPM","B20K80","B20K80_2",4.06036149158327
+"Mouse","Iso-Seq","Kallisto","TPM","B20K80","B20K80_3",4.1959396680943
+"Mouse","Iso-Seq","Kallisto","TPM","B20K80","B20K80_4",3.97420196914066
+"Mouse","Iso-Seq","Kallisto","TPM","B20K80","B20K80_5",4.04927319497462
+"Mouse","Iso-Seq","Kallisto","TPM","Brain","B31",4.29573515076563
+"Mouse","Iso-Seq","Kallisto","TPM","Brain","B32",4.20880124717805
+"Mouse","Iso-Seq","Kallisto","TPM","Brain","B33",4.30531044680144
+"Mouse","Iso-Seq","Kallisto","TPM","Brain","B34",4.45094900061456
+"Mouse","Iso-Seq","Kallisto","TPM","Brain","B35",4.50147188836942
+"Mouse","Iso-Seq","Kallisto","TPM","B80K20","B80K20_1",4.57702384596148
+"Mouse","Iso-Seq","Kallisto","TPM","B80K20","B80K20_2",4.30079412028764
+"Mouse","Iso-Seq","Kallisto","TPM","B80K20","B80K20_3",4.34032489103281
+"Mouse","Iso-Seq","Kallisto","TPM","B80K20","B80K20_4",4.44606153556456
+"Mouse","Iso-Seq","Kallisto","TPM","B80K20","B80K20_5",4.33871968891798
+"Mouse","Iso-Seq","Kallisto","TPM","Kidney","K31",4.34423812976485
+"Mouse","Iso-Seq","Kallisto","TPM","Kidney","K32",4.30068234365544
+"Mouse","Iso-Seq","Kallisto","TPM","Kidney","K33",4.30882064511899
+"Mouse","Iso-Seq","Kallisto","TPM","Kidney","K34",4.32006623934757
+"Mouse","Iso-Seq","Kallisto","TPM","Kidney","K35",4.30100703717998
+"Mouse","Iso-Seq","Oarfish","CPM","B20K80","B20K80_1",4.69559632191919
+"Mouse","Iso-Seq","Oarfish","CPM","B20K80","B20K80_2",4.5255711629169
+"Mouse","Iso-Seq","Oarfish","CPM","B20K80","B20K80_3",4.676470299492
+"Mouse","Iso-Seq","Oarfish","CPM","B20K80","B20K80_4",4.50024202044073
+"Mouse","Iso-Seq","Oarfish","CPM","B20K80","B20K80_5",4.48976995221161
+"Mouse","Iso-Seq","Oarfish","CPM","Brain","B31",4.75229225955761
+"Mouse","Iso-Seq","Oarfish","CPM","Brain","B32",4.63176414741611
+"Mouse","Iso-Seq","Oarfish","CPM","Brain","B33",4.77562268549182
+"Mouse","Iso-Seq","Oarfish","CPM","Brain","B34",4.95437529058737
+"Mouse","Iso-Seq","Oarfish","CPM","Brain","B35",4.96688330242279
+"Mouse","Iso-Seq","Oarfish","CPM","B80K20","B80K20_1",4.99279998219059
+"Mouse","Iso-Seq","Oarfish","CPM","B80K20","B80K20_2",4.77127180486492
+"Mouse","Iso-Seq","Oarfish","CPM","B80K20","B80K20_3",4.78528417623622
+"Mouse","Iso-Seq","Oarfish","CPM","B80K20","B80K20_4",5.03205564701949
+"Mouse","Iso-Seq","Oarfish","CPM","B80K20","B80K20_5",4.80961417927017
+"Mouse","Iso-Seq","Oarfish","CPM","Kidney","K31",4.89042012216761
+"Mouse","Iso-Seq","Oarfish","CPM","Kidney","K32",4.8442520271598
+"Mouse","Iso-Seq","Oarfish","CPM","Kidney","K33",4.82078369119793
+"Mouse","Iso-Seq","Oarfish","CPM","Kidney","K34",4.79640559698234
+"Mouse","Iso-Seq","Oarfish","CPM","Kidney","K35",4.76399572225644
+"Mouse","Iso-Seq","Oarfish","CQN","B20K80","B20K80_1",4.69542073352451
+"Mouse","Iso-Seq","Oarfish","CQN","B20K80","B20K80_2",4.37731900834151
+"Mouse","Iso-Seq","Oarfish","CQN","B20K80","B20K80_3",4.494754322053
+"Mouse","Iso-Seq","Oarfish","CQN","B20K80","B20K80_4",4.26967629953205
+"Mouse","Iso-Seq","Oarfish","CQN","B20K80","B20K80_5",4.53399285310639
+"Mouse","Iso-Seq","Oarfish","CQN","Brain","B31",4.61607370223387
+"Mouse","Iso-Seq","Oarfish","CQN","Brain","B32",4.51426129363744
+"Mouse","Iso-Seq","Oarfish","CQN","Brain","B33",4.59108046808224
+"Mouse","Iso-Seq","Oarfish","CQN","Brain","B34",4.59213919912225
+"Mouse","Iso-Seq","Oarfish","CQN","Brain","B35",4.63562604886065
+"Mouse","Iso-Seq","Oarfish","CQN","B80K20","B80K20_1",5.08631249378302
+"Mouse","Iso-Seq","Oarfish","CQN","B80K20","B80K20_2",4.90337930373616
+"Mouse","Iso-Seq","Oarfish","CQN","B80K20","B80K20_3",4.69622813453969
+"Mouse","Iso-Seq","Oarfish","CQN","B80K20","B80K20_4",4.98951333211203
+"Mouse","Iso-Seq","Oarfish","CQN","B80K20","B80K20_5",4.82027471287869
+"Mouse","Iso-Seq","Oarfish","CQN","Kidney","K31",4.51166451888583
+"Mouse","Iso-Seq","Oarfish","CQN","Kidney","K32",4.34263618715849
+"Mouse","Iso-Seq","Oarfish","CQN","Kidney","K33",4.38425540616346
+"Mouse","Iso-Seq","Oarfish","CQN","Kidney","K34",4.29388824888124
+"Mouse","Iso-Seq","Oarfish","CQN","Kidney","K35",4.34785054059417
+"Mouse","Iso-Seq","Oarfish","EDASeq","B20K80","B20K80_1",4.66313718667123
+"Mouse","Iso-Seq","Oarfish","EDASeq","B20K80","B20K80_2",4.49071771726597
+"Mouse","Iso-Seq","Oarfish","EDASeq","B20K80","B20K80_3",4.50768886577096
+"Mouse","Iso-Seq","Oarfish","EDASeq","B20K80","B20K80_4",4.40392294689597
+"Mouse","Iso-Seq","Oarfish","EDASeq","B20K80","B20K80_5",4.4674182891726
+"Mouse","Iso-Seq","Oarfish","EDASeq","Brain","B31",4.75210537630022
+"Mouse","Iso-Seq","Oarfish","EDASeq","Brain","B32",4.6186998557334
+"Mouse","Iso-Seq","Oarfish","EDASeq","Brain","B33",4.72032305841593
+"Mouse","Iso-Seq","Oarfish","EDASeq","Brain","B34",4.74860857960209
+"Mouse","Iso-Seq","Oarfish","EDASeq","Brain","B35",4.85787522207619
+"Mouse","Iso-Seq","Oarfish","EDASeq","B80K20","B80K20_1",4.84473194983764
+"Mouse","Iso-Seq","Oarfish","EDASeq","B80K20","B80K20_2",4.66086765942722
+"Mouse","Iso-Seq","Oarfish","EDASeq","B80K20","B80K20_3",4.58183679168148
+"Mouse","Iso-Seq","Oarfish","EDASeq","B80K20","B80K20_4",4.83299577603424
+"Mouse","Iso-Seq","Oarfish","EDASeq","B80K20","B80K20_5",4.69545645255008
+"Mouse","Iso-Seq","Oarfish","EDASeq","Kidney","K31",5.03403852602216
+"Mouse","Iso-Seq","Oarfish","EDASeq","Kidney","K32",4.78341643403689
+"Mouse","Iso-Seq","Oarfish","EDASeq","Kidney","K33",4.78762648114895
+"Mouse","Iso-Seq","Oarfish","EDASeq","Kidney","K34",4.73517433423609
+"Mouse","Iso-Seq","Oarfish","EDASeq","Kidney","K35",4.80645572470353
+"Mouse","Iso-Seq","Oarfish","SMR","B20K80","B20K80_1",4.20204592451404
+"Mouse","Iso-Seq","Oarfish","SMR","B20K80","B20K80_2",4.13421810090858
+"Mouse","Iso-Seq","Oarfish","SMR","B20K80","B20K80_3",4.13639037571479
+"Mouse","Iso-Seq","Oarfish","SMR","B20K80","B20K80_4",4.06429850173228
+"Mouse","Iso-Seq","Oarfish","SMR","B20K80","B20K80_5",4.00018901121682
+"Mouse","Iso-Seq","Oarfish","SMR","Brain","B31",4.21652245653079
+"Mouse","Iso-Seq","Oarfish","SMR","Brain","B32",4.20640926994145
+"Mouse","Iso-Seq","Oarfish","SMR","Brain","B33",4.20746555300052
+"Mouse","Iso-Seq","Oarfish","SMR","Brain","B34",4.24604472425825
+"Mouse","Iso-Seq","Oarfish","SMR","Brain","B35",4.36441814920114
+"Mouse","Iso-Seq","Oarfish","SMR","B80K20","B80K20_1",4.24878931888464
+"Mouse","Iso-Seq","Oarfish","SMR","B80K20","B80K20_2",4.22911896115569
+"Mouse","Iso-Seq","Oarfish","SMR","B80K20","B80K20_3",4.24903369342766
+"Mouse","Iso-Seq","Oarfish","SMR","B80K20","B80K20_4",4.3689950940976
+"Mouse","Iso-Seq","Oarfish","SMR","B80K20","B80K20_5",4.26502274675563
+"Mouse","Iso-Seq","Oarfish","SMR","Kidney","K31",4.09752339713957
+"Mouse","Iso-Seq","Oarfish","SMR","Kidney","K32",4.09086333797837
+"Mouse","Iso-Seq","Oarfish","SMR","Kidney","K33",4.08977677743841
+"Mouse","Iso-Seq","Oarfish","SMR","Kidney","K34",4.09762819643934
+"Mouse","Iso-Seq","Oarfish","SMR","Kidney","K35",4.09103943646936
+"Mouse","Iso-Seq","Oarfish","TPM","B20K80","B20K80_1",4.4458222049073
+"Mouse","Iso-Seq","Oarfish","TPM","B20K80","B20K80_2",4.3046478777543
+"Mouse","Iso-Seq","Oarfish","TPM","B20K80","B20K80_3",4.40823760796032
+"Mouse","Iso-Seq","Oarfish","TPM","B20K80","B20K80_4",4.2675886017257
+"Mouse","Iso-Seq","Oarfish","TPM","B20K80","B20K80_5",4.2318981140339
+"Mouse","Iso-Seq","Oarfish","TPM","Brain","B31",4.47049344759926
+"Mouse","Iso-Seq","Oarfish","TPM","Brain","B32",4.38701715003682
+"Mouse","Iso-Seq","Oarfish","TPM","Brain","B33",4.47815525938201
+"Mouse","Iso-Seq","Oarfish","TPM","Brain","B34",4.61944898790561
+"Mouse","Iso-Seq","Oarfish","TPM","Brain","B35",4.6672822549881
+"Mouse","Iso-Seq","Oarfish","TPM","B80K20","B80K20_1",4.64904694272273
+"Mouse","Iso-Seq","Oarfish","TPM","B80K20","B80K20_2",4.48062983484281
+"Mouse","Iso-Seq","Oarfish","TPM","B80K20","B80K20_3",4.51388675222903
+"Mouse","Iso-Seq","Oarfish","TPM","B80K20","B80K20_4",4.71590655951005
+"Mouse","Iso-Seq","Oarfish","TPM","B80K20","B80K20_5",4.52990263741263
+"Mouse","Iso-Seq","Oarfish","TPM","Kidney","K31",4.50978089404964
+"Mouse","Iso-Seq","Oarfish","TPM","Kidney","K32",4.47842702204033
+"Mouse","Iso-Seq","Oarfish","TPM","Kidney","K33",4.46442846637242
+"Mouse","Iso-Seq","Oarfish","TPM","Kidney","K34",4.47157792393888
+"Mouse","Iso-Seq","Oarfish","TPM","Kidney","K35",4.44253772442542
+"Mouse","Kinnex","Bambu","CPM","B20K80","B20K80_1",4.07057757394028
+"Mouse","Kinnex","Bambu","CPM","B20K80","B20K80_2",3.9047383616
+"Mouse","Kinnex","Bambu","CPM","B20K80","B20K80_3",3.95644805104224
+"Mouse","Kinnex","Bambu","CPM","Brain","B31",4.34780519937968
+"Mouse","Kinnex","Bambu","CPM","Brain","B32",4.23840305794849
+"Mouse","Kinnex","Bambu","CPM","Brain","B33",3.97128751105643
+"Mouse","Kinnex","Bambu","CPM","Kidney","K31",4.09919372741528
+"Mouse","Kinnex","Bambu","CPM","Kidney","K32",4.20848012260277
+"Mouse","Kinnex","Bambu","CPM","Kidney","K33",4.22111149226883
+"Mouse","Kinnex","Bambu","CQN","B20K80","B20K80_1",4.23031698177306
+"Mouse","Kinnex","Bambu","CQN","B20K80","B20K80_2",4.04003820969969
+"Mouse","Kinnex","Bambu","CQN","B20K80","B20K80_3",4.11855496875878
+"Mouse","Kinnex","Bambu","CQN","Brain","B31",3.95719055431552
+"Mouse","Kinnex","Bambu","CQN","Brain","B32",3.88023961548572
+"Mouse","Kinnex","Bambu","CQN","Brain","B33",3.8998896705016
+"Mouse","Kinnex","Bambu","CQN","Kidney","K31",4.05570833726839
+"Mouse","Kinnex","Bambu","CQN","Kidney","K32",3.82767326894669
+"Mouse","Kinnex","Bambu","CQN","Kidney","K33",3.96299926461285
+"Mouse","Kinnex","Bambu","EDASeq","B20K80","B20K80_1",3.94838084766909
+"Mouse","Kinnex","Bambu","EDASeq","B20K80","B20K80_2",3.7845465687794
+"Mouse","Kinnex","Bambu","EDASeq","B20K80","B20K80_3",3.8873475052546
+"Mouse","Kinnex","Bambu","EDASeq","Brain","B31",4.03916203276963
+"Mouse","Kinnex","Bambu","EDASeq","Brain","B32",3.91578924809957
+"Mouse","Kinnex","Bambu","EDASeq","Brain","B33",3.90102299474453
+"Mouse","Kinnex","Bambu","EDASeq","Kidney","K31",4.23773016448864
+"Mouse","Kinnex","Bambu","EDASeq","Kidney","K32",4.09282233877202
+"Mouse","Kinnex","Bambu","EDASeq","Kidney","K33",4.2051155497301
+"Mouse","Kinnex","Bambu","SMR","B20K80","B20K80_1",3.0197254209771
+"Mouse","Kinnex","Bambu","SMR","B20K80","B20K80_2",3.01784092563593
+"Mouse","Kinnex","Bambu","SMR","B20K80","B20K80_3",3.03265556203947
+"Mouse","Kinnex","Bambu","SMR","Brain","B31",2.88504179108714
+"Mouse","Kinnex","Bambu","SMR","Brain","B32",2.86722269972976
+"Mouse","Kinnex","Bambu","SMR","Brain","B33",3.0928164506941
+"Mouse","Kinnex","Bambu","SMR","Kidney","K31",3.20137641160315
+"Mouse","Kinnex","Bambu","SMR","Kidney","K32",3.00265510405956
+"Mouse","Kinnex","Bambu","SMR","Kidney","K33",3.20403173115728
+"Mouse","Kinnex","Bambu","TPM","B20K80","B20K80_1",3.69581593295058
+"Mouse","Kinnex","Bambu","TPM","B20K80","B20K80_2",3.5562417086597
+"Mouse","Kinnex","Bambu","TPM","B20K80","B20K80_3",3.63648143343293
+"Mouse","Kinnex","Bambu","TPM","Brain","B31",3.87312454545535
+"Mouse","Kinnex","Bambu","TPM","Brain","B32",3.75743782078524
+"Mouse","Kinnex","Bambu","TPM","Brain","B33",3.63929573662797
+"Mouse","Kinnex","Bambu","TPM","Kidney","K31",3.755595559471
+"Mouse","Kinnex","Bambu","TPM","Kidney","K32",3.77641618098395
+"Mouse","Kinnex","Bambu","TPM","Kidney","K33",3.83778689565183
+"Mouse","Kinnex","FLAIR","CPM","B20K80","B20K80_1",3.51213797852557
+"Mouse","Kinnex","FLAIR","CPM","B20K80","B20K80_2",3.3216807168167
+"Mouse","Kinnex","FLAIR","CPM","B20K80","B20K80_3",3.37525061409096
+"Mouse","Kinnex","FLAIR","CPM","Brain","B31",3.99279877189605
+"Mouse","Kinnex","FLAIR","CPM","Brain","B32",3.88604852151616
+"Mouse","Kinnex","FLAIR","CPM","Brain","B33",3.3363947712739
+"Mouse","Kinnex","FLAIR","CPM","Kidney","K31",3.44460810551391
+"Mouse","Kinnex","FLAIR","CPM","Kidney","K32",3.6061761881802
+"Mouse","Kinnex","FLAIR","CPM","Kidney","K33",3.59522897443523
+"Mouse","Kinnex","FLAIR","CQN","B20K80","B20K80_1",3.88493932115443
+"Mouse","Kinnex","FLAIR","CQN","B20K80","B20K80_2",3.70719376468324
+"Mouse","Kinnex","FLAIR","CQN","B20K80","B20K80_3",3.76873866052687
+"Mouse","Kinnex","FLAIR","CQN","Brain","B31",3.67867063007702
+"Mouse","Kinnex","FLAIR","CQN","Brain","B32",3.63823528083809
+"Mouse","Kinnex","FLAIR","CQN","Brain","B33",3.57886782982271
+"Mouse","Kinnex","FLAIR","CQN","Kidney","K31",3.66721190471691
+"Mouse","Kinnex","FLAIR","CQN","Kidney","K32",3.46986946701274
+"Mouse","Kinnex","FLAIR","CQN","Kidney","K33",3.55632868783494
+"Mouse","Kinnex","FLAIR","EDASeq","B20K80","B20K80_1",3.41549722379973
+"Mouse","Kinnex","FLAIR","EDASeq","B20K80","B20K80_2",3.1963769912813502
+"Mouse","Kinnex","FLAIR","EDASeq","B20K80","B20K80_3",3.33991024596106
+"Mouse","Kinnex","FLAIR","EDASeq","Brain","B31",3.80021131105651
+"Mouse","Kinnex","FLAIR","EDASeq","Brain","B32",3.60571406888978
+"Mouse","Kinnex","FLAIR","EDASeq","Brain","B33",3.39680201698877
+"Mouse","Kinnex","FLAIR","EDASeq","Kidney","K31",3.52482312826496
+"Mouse","Kinnex","FLAIR","EDASeq","Kidney","K32",3.40127239489487
+"Mouse","Kinnex","FLAIR","EDASeq","Kidney","K33",3.48969557781075
+"Mouse","Kinnex","FLAIR","SMR","B20K80","B20K80_1",1.9562381645693
+"Mouse","Kinnex","FLAIR","SMR","B20K80","B20K80_2",1.97530895320618
+"Mouse","Kinnex","FLAIR","SMR","B20K80","B20K80_3",1.9820379473322
+"Mouse","Kinnex","FLAIR","SMR","Brain","B31",2.08240053684127
+"Mouse","Kinnex","FLAIR","SMR","Brain","B32",2.07288181916522
+"Mouse","Kinnex","FLAIR","SMR","Brain","B33",2.09309647055639
+"Mouse","Kinnex","FLAIR","SMR","Kidney","K31",2.00899569351507
+"Mouse","Kinnex","FLAIR","SMR","Kidney","K32",1.98054241095908
+"Mouse","Kinnex","FLAIR","SMR","Kidney","K33",2.00170225342585
+"Mouse","Kinnex","FLAIR","TPM","B20K80","B20K80_1",2.97905008150619
+"Mouse","Kinnex","FLAIR","TPM","B20K80","B20K80_2",2.82075299237013
+"Mouse","Kinnex","FLAIR","TPM","B20K80","B20K80_3",2.90272367680781
+"Mouse","Kinnex","FLAIR","TPM","Brain","B31",3.36137100193474
+"Mouse","Kinnex","FLAIR","TPM","Brain","B32",3.24979888203144
+"Mouse","Kinnex","FLAIR","TPM","Brain","B33",2.84792661459499
+"Mouse","Kinnex","FLAIR","TPM","Kidney","K31",2.91857059325697
+"Mouse","Kinnex","FLAIR","TPM","Kidney","K32",3.00292845219113
+"Mouse","Kinnex","FLAIR","TPM","Kidney","K33",3.01331264409632
+"Mouse","Kinnex","IsoQuant","CPM","B20K80","B20K80_1",4.04361064544158
+"Mouse","Kinnex","IsoQuant","CPM","B20K80","B20K80_2",3.87713814215756
+"Mouse","Kinnex","IsoQuant","CPM","B20K80","B20K80_3",3.9305895275001
+"Mouse","Kinnex","IsoQuant","CPM","Brain","B31",4.78485452125009
+"Mouse","Kinnex","IsoQuant","CPM","Brain","B32",4.71128446324225
+"Mouse","Kinnex","IsoQuant","CPM","Brain","B33",4.36393431855252
+"Mouse","Kinnex","IsoQuant","CPM","Kidney","K31",4.18024339372357
+"Mouse","Kinnex","IsoQuant","CPM","Kidney","K32",4.30682332914616
+"Mouse","Kinnex","IsoQuant","CPM","Kidney","K33",4.28124090029465
+"Mouse","Kinnex","IsoQuant","CQN","B20K80","B20K80_1",4.07740256666479
+"Mouse","Kinnex","IsoQuant","CQN","B20K80","B20K80_2",3.74161871603234
+"Mouse","Kinnex","IsoQuant","CQN","B20K80","B20K80_3",3.80046208139799
+"Mouse","Kinnex","IsoQuant","CQN","Brain","B31",4.27002817491575
+"Mouse","Kinnex","IsoQuant","CQN","Brain","B32",4.17339194192522
+"Mouse","Kinnex","IsoQuant","CQN","Brain","B33",4.22962985225182
+"Mouse","Kinnex","IsoQuant","CQN","Kidney","K31",4.11514803637504
+"Mouse","Kinnex","IsoQuant","CQN","Kidney","K32",3.94356543356316
+"Mouse","Kinnex","IsoQuant","CQN","Kidney","K33",4.00861035146582
+"Mouse","Kinnex","IsoQuant","EDASeq","B20K80","B20K80_1",4.09156148093847
+"Mouse","Kinnex","IsoQuant","EDASeq","B20K80","B20K80_2",3.88208781105147
+"Mouse","Kinnex","IsoQuant","EDASeq","B20K80","B20K80_3",3.94205302871567
+"Mouse","Kinnex","IsoQuant","EDASeq","Brain","B31",4.57040699908073
+"Mouse","Kinnex","IsoQuant","EDASeq","Brain","B32",4.52876841412277
+"Mouse","Kinnex","IsoQuant","EDASeq","Brain","B33",4.47255681977989
+"Mouse","Kinnex","IsoQuant","EDASeq","Kidney","K31",4.49869842011631
+"Mouse","Kinnex","IsoQuant","EDASeq","Kidney","K32",4.30335965850122
+"Mouse","Kinnex","IsoQuant","EDASeq","Kidney","K33",4.39001816945798
+"Mouse","Kinnex","IsoQuant","SMR","B20K80","B20K80_1",3.79751832492938
+"Mouse","Kinnex","IsoQuant","SMR","B20K80","B20K80_2",3.68585418967758
+"Mouse","Kinnex","IsoQuant","SMR","B20K80","B20K80_3",3.67920813239574
+"Mouse","Kinnex","IsoQuant","SMR","Brain","B31",3.68955529904735
+"Mouse","Kinnex","IsoQuant","SMR","Brain","B32",3.6910948515056
+"Mouse","Kinnex","IsoQuant","SMR","Brain","B33",3.7036159307266
+"Mouse","Kinnex","IsoQuant","SMR","Kidney","K31",4.67845753123929
+"Mouse","Kinnex","IsoQuant","SMR","Kidney","K32",4.89605244141234
+"Mouse","Kinnex","IsoQuant","SMR","Kidney","K33",4.82797754076566
+"Mouse","Kinnex","IsoQuant","TPM","B20K80","B20K80_1",3.67028207991234
+"Mouse","Kinnex","IsoQuant","TPM","B20K80","B20K80_2",3.5352941633481
+"Mouse","Kinnex","IsoQuant","TPM","B20K80","B20K80_3",3.60515675770286
+"Mouse","Kinnex","IsoQuant","TPM","Brain","B31",4.36955590400707
+"Mouse","Kinnex","IsoQuant","TPM","Brain","B32",4.30211911354368
+"Mouse","Kinnex","IsoQuant","TPM","Brain","B33",4.0761728221841
+"Mouse","Kinnex","IsoQuant","TPM","Kidney","K31",3.85340867231164
+"Mouse","Kinnex","IsoQuant","TPM","Kidney","K32",3.9173693601283
+"Mouse","Kinnex","IsoQuant","TPM","Kidney","K33",3.90538798876347
+"Mouse","Kinnex","Kallisto","CPM","B20K80","B20K80_1",3.52971159087424
+"Mouse","Kinnex","Kallisto","CPM","B20K80","B20K80_2",3.33435337760201
+"Mouse","Kinnex","Kallisto","CPM","B20K80","B20K80_3",3.3932868065331
+"Mouse","Kinnex","Kallisto","CPM","Brain","B31",4.03286049195258
+"Mouse","Kinnex","Kallisto","CPM","Brain","B32",3.94304606645958
+"Mouse","Kinnex","Kallisto","CPM","Brain","B33",3.46168019803172
+"Mouse","Kinnex","Kallisto","CPM","Kidney","K31",3.44965193438174
+"Mouse","Kinnex","Kallisto","CPM","Kidney","K32",3.60971379411212
+"Mouse","Kinnex","Kallisto","CPM","Kidney","K33",3.57691019388325
+"Mouse","Kinnex","Kallisto","CQN","B20K80","B20K80_1",3.76845318791126
+"Mouse","Kinnex","Kallisto","CQN","B20K80","B20K80_2",3.5621300064493
+"Mouse","Kinnex","Kallisto","CQN","B20K80","B20K80_3",3.56692643330622
+"Mouse","Kinnex","Kallisto","CQN","Brain","B31",3.52028880903448
+"Mouse","Kinnex","Kallisto","CQN","Brain","B32",3.46655879538179
+"Mouse","Kinnex","Kallisto","CQN","Brain","B33",3.41698363393618
+"Mouse","Kinnex","Kallisto","CQN","Kidney","K31",3.45537252547103
+"Mouse","Kinnex","Kallisto","CQN","Kidney","K32",3.2315997664386
+"Mouse","Kinnex","Kallisto","CQN","Kidney","K33",3.32395325440254
+"Mouse","Kinnex","Kallisto","EDASeq","B20K80","B20K80_1",3.39815417060656
+"Mouse","Kinnex","Kallisto","EDASeq","B20K80","B20K80_2",3.17624951278674
+"Mouse","Kinnex","Kallisto","EDASeq","B20K80","B20K80_3",3.28563133200508
+"Mouse","Kinnex","Kallisto","EDASeq","Brain","B31",3.71417926948967
+"Mouse","Kinnex","Kallisto","EDASeq","Brain","B32",3.61501819373726
+"Mouse","Kinnex","Kallisto","EDASeq","Brain","B33",3.4422167918068
+"Mouse","Kinnex","Kallisto","EDASeq","Kidney","K31",3.61926321601626
+"Mouse","Kinnex","Kallisto","EDASeq","Kidney","K32",3.45267895481177
+"Mouse","Kinnex","Kallisto","EDASeq","Kidney","K33",3.53372128801259
+"Mouse","Kinnex","Kallisto","SMR","B20K80","B20K80_1",2.3209582843935
+"Mouse","Kinnex","Kallisto","SMR","B20K80","B20K80_2",2.32644595641538
+"Mouse","Kinnex","Kallisto","SMR","B20K80","B20K80_3",2.3316707957054
+"Mouse","Kinnex","Kallisto","SMR","Brain","B31",2.58178298406335
+"Mouse","Kinnex","Kallisto","SMR","Brain","B32",2.58158803247019
+"Mouse","Kinnex","Kallisto","SMR","Brain","B33",2.60042608098584
+"Mouse","Kinnex","Kallisto","SMR","Kidney","K31",2.28565259831902
+"Mouse","Kinnex","Kallisto","SMR","Kidney","K32",2.26957451418377
+"Mouse","Kinnex","Kallisto","SMR","Kidney","K33",2.27194145166238
+"Mouse","Kinnex","Kallisto","TPM","B20K80","B20K80_1",3.09274176117963
+"Mouse","Kinnex","Kallisto","TPM","B20K80","B20K80_2",2.92680169454258
+"Mouse","Kinnex","Kallisto","TPM","B20K80","B20K80_3",3.01044157743671
+"Mouse","Kinnex","Kallisto","TPM","Brain","B31",3.5272673115651
+"Mouse","Kinnex","Kallisto","TPM","Brain","B32",3.43965976604306
+"Mouse","Kinnex","Kallisto","TPM","Brain","B33",3.10711490629772
+"Mouse","Kinnex","Kallisto","TPM","Kidney","K31",3.00621303579983
+"Mouse","Kinnex","Kallisto","TPM","Kidney","K32",3.0935595310602
+"Mouse","Kinnex","Kallisto","TPM","Kidney","K33",3.07686152324239
+"Mouse","Kinnex","Oarfish","CPM","B20K80","B20K80_1",3.88755938495472
+"Mouse","Kinnex","Oarfish","CPM","B20K80","B20K80_2",3.70253309255419
+"Mouse","Kinnex","Oarfish","CPM","B20K80","B20K80_3",3.78136702790106
+"Mouse","Kinnex","Oarfish","CPM","Brain","B31",4.2615965397218
+"Mouse","Kinnex","Oarfish","CPM","Brain","B32",4.1647935965746
+"Mouse","Kinnex","Oarfish","CPM","Brain","B33",3.7065510146155
+"Mouse","Kinnex","Oarfish","CPM","Kidney","K31",3.6532980958472
+"Mouse","Kinnex","Oarfish","CPM","Kidney","K32",3.80502881757887
+"Mouse","Kinnex","Oarfish","CPM","Kidney","K33",3.77792358067905
+"Mouse","Kinnex","Oarfish","CQN","B20K80","B20K80_1",4.00559850906032
+"Mouse","Kinnex","Oarfish","CQN","B20K80","B20K80_2",3.86889236619041
+"Mouse","Kinnex","Oarfish","CQN","B20K80","B20K80_3",3.87996562222861
+"Mouse","Kinnex","Oarfish","CQN","Brain","B31",3.65570463328886
+"Mouse","Kinnex","Oarfish","CQN","Brain","B32",3.6228621562371
+"Mouse","Kinnex","Oarfish","CQN","Brain","B33",3.46422870839687
+"Mouse","Kinnex","Oarfish","CQN","Kidney","K31",3.40047357874754
+"Mouse","Kinnex","Oarfish","CQN","Kidney","K32",3.3127848464774
+"Mouse","Kinnex","Oarfish","CQN","Kidney","K33",3.3527808357685
+"Mouse","Kinnex","Oarfish","EDASeq","B20K80","B20K80_1",3.58358517232477
+"Mouse","Kinnex","Oarfish","EDASeq","B20K80","B20K80_2",3.4256600614161
+"Mouse","Kinnex","Oarfish","EDASeq","B20K80","B20K80_3",3.52900469891534
+"Mouse","Kinnex","Oarfish","EDASeq","Brain","B31",3.79192382507949
+"Mouse","Kinnex","Oarfish","EDASeq","Brain","B32",3.76082870641069
+"Mouse","Kinnex","Oarfish","EDASeq","Brain","B33",3.52675202952389
+"Mouse","Kinnex","Oarfish","EDASeq","Kidney","K31",3.6237876693104
+"Mouse","Kinnex","Oarfish","EDASeq","Kidney","K32",3.56154698133385
+"Mouse","Kinnex","Oarfish","EDASeq","Kidney","K33",3.5721236248384
+"Mouse","Kinnex","Oarfish","SMR","B20K80","B20K80_1",2.78931638107847
+"Mouse","Kinnex","Oarfish","SMR","B20K80","B20K80_2",2.78598635401042
+"Mouse","Kinnex","Oarfish","SMR","B20K80","B20K80_3",2.81553665280832
+"Mouse","Kinnex","Oarfish","SMR","Brain","B31",2.8745117364809
+"Mouse","Kinnex","Oarfish","SMR","Brain","B32",2.86703857362539
+"Mouse","Kinnex","Oarfish","SMR","Brain","B33",2.8720603157303
+"Mouse","Kinnex","Oarfish","SMR","Kidney","K31",3.0898929203231
+"Mouse","Kinnex","Oarfish","SMR","Kidney","K32",3.21047224197363
+"Mouse","Kinnex","Oarfish","SMR","Kidney","K33",3.18111174495193
+"Mouse","Kinnex","Oarfish","TPM","B20K80","B20K80_1",3.47370516429617
+"Mouse","Kinnex","Oarfish","TPM","B20K80","B20K80_2",3.31446279414744
+"Mouse","Kinnex","Oarfish","TPM","B20K80","B20K80_3",3.42727459805247
+"Mouse","Kinnex","Oarfish","TPM","Brain","B31",3.77235761981445
+"Mouse","Kinnex","Oarfish","TPM","Brain","B32",3.6751608661058
+"Mouse","Kinnex","Oarfish","TPM","Brain","B33",3.3554459487731
+"Mouse","Kinnex","Oarfish","TPM","Kidney","K31",3.23872603545972
+"Mouse","Kinnex","Oarfish","TPM","Kidney","K32",3.32002865603182
+"Mouse","Kinnex","Oarfish","TPM","Kidney","K33",3.310943468623
+"Mouse","ONT cDNA","Bambu","CPM","Brain","B31",2.87968262032264
+"Mouse","ONT cDNA","Bambu","CPM","Brain","B32",2.83213348616558
+"Mouse","ONT cDNA","Bambu","CPM","Brain","B33",2.86787807835081
+"Mouse","ONT cDNA","Bambu","CPM","Brain","B34",2.86250361342997
+"Mouse","ONT cDNA","Bambu","CPM","Brain","B35",2.86106965368272
+"Mouse","ONT cDNA","Bambu","CPM","B20K80","BK20801",2.69490531018021
+"Mouse","ONT cDNA","Bambu","CPM","B20K80","BK20802",2.96511864325947
+"Mouse","ONT cDNA","Bambu","CPM","B20K80","BK20803",2.89653615835573
+"Mouse","ONT cDNA","Bambu","CPM","B20K80","BK20804",2.78466171369117
+"Mouse","ONT cDNA","Bambu","CPM","B20K80","BK20805",3.04707615142083
+"Mouse","ONT cDNA","Bambu","CPM","B80K20","BK80201",2.90483165279941
+"Mouse","ONT cDNA","Bambu","CPM","B80K20","BK80202",2.90764570231873
+"Mouse","ONT cDNA","Bambu","CPM","B80K20","BK80203",2.88825786767608
+"Mouse","ONT cDNA","Bambu","CPM","B80K20","BK80204",2.88664882223238
+"Mouse","ONT cDNA","Bambu","CPM","B80K20","BK80205",2.91426836672213
+"Mouse","ONT cDNA","Bambu","CPM","Kidney","K31",2.75297335702854
+"Mouse","ONT cDNA","Bambu","CPM","Kidney","K32",2.76057518025157
+"Mouse","ONT cDNA","Bambu","CPM","Kidney","K33",2.7599804291298
+"Mouse","ONT cDNA","Bambu","CPM","Kidney","K34",2.71097805184496
+"Mouse","ONT cDNA","Bambu","CPM","Kidney","K35",2.73843673416148
+"Mouse","ONT cDNA","Bambu","CQN","Brain","B31",2.70575722063841
+"Mouse","ONT cDNA","Bambu","CQN","Brain","B32",2.64663356467731
+"Mouse","ONT cDNA","Bambu","CQN","Brain","B33",2.67264760792676
+"Mouse","ONT cDNA","Bambu","CQN","Brain","B34",2.68182968303084
+"Mouse","ONT cDNA","Bambu","CQN","Brain","B35",2.66715678007039
+"Mouse","ONT cDNA","Bambu","CQN","B20K80","BK20801",2.68986901219585
+"Mouse","ONT cDNA","Bambu","CQN","B20K80","BK20802",2.83445070608916
+"Mouse","ONT cDNA","Bambu","CQN","B20K80","BK20803",2.84176929801007
+"Mouse","ONT cDNA","Bambu","CQN","B20K80","BK20804",2.72467647692754
+"Mouse","ONT cDNA","Bambu","CQN","B20K80","BK20805",2.84666627992924
+"Mouse","ONT cDNA","Bambu","CQN","B80K20","BK80201",2.83678353096826
+"Mouse","ONT cDNA","Bambu","CQN","B80K20","BK80202",2.80242065033036
+"Mouse","ONT cDNA","Bambu","CQN","B80K20","BK80203",2.81596153629938
+"Mouse","ONT cDNA","Bambu","CQN","B80K20","BK80204",2.80677992865159
+"Mouse","ONT cDNA","Bambu","CQN","B80K20","BK80205",2.83262991669659
+"Mouse","ONT cDNA","Bambu","CQN","Kidney","K31",2.57049246282441
+"Mouse","ONT cDNA","Bambu","CQN","Kidney","K32",2.5131611446636
+"Mouse","ONT cDNA","Bambu","CQN","Kidney","K33",2.50896677737875
+"Mouse","ONT cDNA","Bambu","CQN","Kidney","K34",2.4774611015374
+"Mouse","ONT cDNA","Bambu","CQN","Kidney","K35",2.53902274602551
+"Mouse","ONT cDNA","Bambu","EDASeq","Brain","B31",2.8228177092918
+"Mouse","ONT cDNA","Bambu","EDASeq","Brain","B32",2.790802965419
+"Mouse","ONT cDNA","Bambu","EDASeq","Brain","B33",2.81846961852
+"Mouse","ONT cDNA","Bambu","EDASeq","Brain","B34",2.81338469560518
+"Mouse","ONT cDNA","Bambu","EDASeq","Brain","B35",2.81034970772557
+"Mouse","ONT cDNA","Bambu","EDASeq","B20K80","BK20801",2.62272380965012
+"Mouse","ONT cDNA","Bambu","EDASeq","B20K80","BK20802",2.89809532336982
+"Mouse","ONT cDNA","Bambu","EDASeq","B20K80","BK20803",2.81916738913068
+"Mouse","ONT cDNA","Bambu","EDASeq","B20K80","BK20804",2.69121593275496
+"Mouse","ONT cDNA","Bambu","EDASeq","B20K80","BK20805",2.98794610691528
+"Mouse","ONT cDNA","Bambu","EDASeq","B80K20","BK80201",2.84333943107542
+"Mouse","ONT cDNA","Bambu","EDASeq","B80K20","BK80202",2.85759022159022
+"Mouse","ONT cDNA","Bambu","EDASeq","B80K20","BK80203",2.83654356012089
+"Mouse","ONT cDNA","Bambu","EDASeq","B80K20","BK80204",2.8205843996495
+"Mouse","ONT cDNA","Bambu","EDASeq","B80K20","BK80205",2.84755057173895
+"Mouse","ONT cDNA","Bambu","EDASeq","Kidney","K31",2.67708865207234
+"Mouse","ONT cDNA","Bambu","EDASeq","Kidney","K32",2.69123544981881
+"Mouse","ONT cDNA","Bambu","EDASeq","Kidney","K33",2.69269647994548
+"Mouse","ONT cDNA","Bambu","EDASeq","Kidney","K34",2.65157018419794
+"Mouse","ONT cDNA","Bambu","EDASeq","Kidney","K35",2.68534470051931
+"Mouse","ONT cDNA","Bambu","SMR","Brain","B31",2.55362370120385
+"Mouse","ONT cDNA","Bambu","SMR","Brain","B32",2.59368182847732
+"Mouse","ONT cDNA","Bambu","SMR","Brain","B33",2.57470924544212
+"Mouse","ONT cDNA","Bambu","SMR","Brain","B34",2.55376194452725
+"Mouse","ONT cDNA","Bambu","SMR","Brain","B35",2.55981057201932
+"Mouse","ONT cDNA","Bambu","SMR","B20K80","BK20801",2.62187584552054
+"Mouse","ONT cDNA","Bambu","SMR","B20K80","BK20802",2.87024344031959
+"Mouse","ONT cDNA","Bambu","SMR","B20K80","BK20803",2.80675823605037
+"Mouse","ONT cDNA","Bambu","SMR","B20K80","BK20804",2.58884907570274
+"Mouse","ONT cDNA","Bambu","SMR","B20K80","BK20805",2.88024549425185
+"Mouse","ONT cDNA","Bambu","SMR","B80K20","BK80201",2.57533976156394
+"Mouse","ONT cDNA","Bambu","SMR","B80K20","BK80202",2.57447050619467
+"Mouse","ONT cDNA","Bambu","SMR","B80K20","BK80203",2.56330483972997
+"Mouse","ONT cDNA","Bambu","SMR","B80K20","BK80204",2.57479852947552
+"Mouse","ONT cDNA","Bambu","SMR","B80K20","BK80205",2.55684805591218
+"Mouse","ONT cDNA","Bambu","SMR","Kidney","K31",2.45950715541168
+"Mouse","ONT cDNA","Bambu","SMR","Kidney","K32",2.45988639682413
+"Mouse","ONT cDNA","Bambu","SMR","Kidney","K33",2.46433422182868
+"Mouse","ONT cDNA","Bambu","SMR","Kidney","K34",2.46664601708979
+"Mouse","ONT cDNA","Bambu","SMR","Kidney","K35",2.46631046385521
+"Mouse","ONT cDNA","Bambu","TPM","Brain","B31",3.10601577978441
+"Mouse","ONT cDNA","Bambu","TPM","Brain","B32",3.06952578830516
+"Mouse","ONT cDNA","Bambu","TPM","Brain","B33",3.08497790264928
+"Mouse","ONT cDNA","Bambu","TPM","Brain","B34",3.07665518937884
+"Mouse","ONT cDNA","Bambu","TPM","Brain","B35",3.08214069897674
+"Mouse","ONT cDNA","Bambu","TPM","B20K80","BK20801",2.93395657716491
+"Mouse","ONT cDNA","Bambu","TPM","B20K80","BK20802",3.17534619192778
+"Mouse","ONT cDNA","Bambu","TPM","B20K80","BK20803",3.12662537402476
+"Mouse","ONT cDNA","Bambu","TPM","B20K80","BK20804",3.02824994827721
+"Mouse","ONT cDNA","Bambu","TPM","B20K80","BK20805",3.22647820928405
+"Mouse","ONT cDNA","Bambu","TPM","B80K20","BK80201",3.15082145643083
+"Mouse","ONT cDNA","Bambu","TPM","B80K20","BK80202",3.15780026609238
+"Mouse","ONT cDNA","Bambu","TPM","B80K20","BK80203",3.12314804557828
+"Mouse","ONT cDNA","Bambu","TPM","B80K20","BK80204",3.13500565014603
+"Mouse","ONT cDNA","Bambu","TPM","B80K20","BK80205",3.16419290293125
+"Mouse","ONT cDNA","Bambu","TPM","Kidney","K31",3.00494200046004
+"Mouse","ONT cDNA","Bambu","TPM","Kidney","K32",3.01242094213423
+"Mouse","ONT cDNA","Bambu","TPM","Kidney","K33",3.00155134394999
+"Mouse","ONT cDNA","Bambu","TPM","Kidney","K34",2.94525290237868
+"Mouse","ONT cDNA","Bambu","TPM","Kidney","K35",2.95062237150493
+"Mouse","ONT cDNA","FLAIR","CPM","Brain","B31",1.8162651564368
+"Mouse","ONT cDNA","FLAIR","CPM","Brain","B32",1.78017561644221
+"Mouse","ONT cDNA","FLAIR","CPM","Brain","B33",1.76654520609236
+"Mouse","ONT cDNA","FLAIR","CPM","Brain","B34",1.77631164658446
+"Mouse","ONT cDNA","FLAIR","CPM","Brain","B35",1.80949577017997
+"Mouse","ONT cDNA","FLAIR","CPM","B20K80","BK20801",2.03661225483963
+"Mouse","ONT cDNA","FLAIR","CPM","B20K80","BK20802",2.07398883635489
+"Mouse","ONT cDNA","FLAIR","CPM","B20K80","BK20803",2.06168836919319
+"Mouse","ONT cDNA","FLAIR","CPM","B20K80","BK20804",2.07741225296018
+"Mouse","ONT cDNA","FLAIR","CPM","B20K80","BK20805",2.0592746568363
+"Mouse","ONT cDNA","FLAIR","CPM","B80K20","BK80201",1.8802928235021
+"Mouse","ONT cDNA","FLAIR","CPM","B80K20","BK80202",1.88577304239683
+"Mouse","ONT cDNA","FLAIR","CPM","B80K20","BK80203",1.87712755408967
+"Mouse","ONT cDNA","FLAIR","CPM","B80K20","BK80204",1.87007192448756
+"Mouse","ONT cDNA","FLAIR","CPM","B80K20","BK80205",1.87595459525486
+"Mouse","ONT cDNA","FLAIR","CPM","Kidney","K31",1.82259584438967
+"Mouse","ONT cDNA","FLAIR","CPM","Kidney","K32",1.82173955998776
+"Mouse","ONT cDNA","FLAIR","CPM","Kidney","K33",1.81372851630017
+"Mouse","ONT cDNA","FLAIR","CPM","Kidney","K34",1.75789832920862
+"Mouse","ONT cDNA","FLAIR","CPM","Kidney","K35",1.76746181120373
+"Mouse","ONT cDNA","FLAIR","CQN","Brain","B31",1.75610533255343
+"Mouse","ONT cDNA","FLAIR","CQN","Brain","B32",1.78034173199679
+"Mouse","ONT cDNA","FLAIR","CQN","Brain","B33",1.7256073430121
+"Mouse","ONT cDNA","FLAIR","CQN","Brain","B34",1.71560749190288
+"Mouse","ONT cDNA","FLAIR","CQN","Brain","B35",1.72875648079152
+"Mouse","ONT cDNA","FLAIR","CQN","B20K80","BK20801",1.96805433586515
+"Mouse","ONT cDNA","FLAIR","CQN","B20K80","BK20802",2.054540952798
+"Mouse","ONT cDNA","FLAIR","CQN","B20K80","BK20803",2.03083074046425
+"Mouse","ONT cDNA","FLAIR","CQN","B20K80","BK20804",1.98884191175993
+"Mouse","ONT cDNA","FLAIR","CQN","B20K80","BK20805",1.95316279016779
+"Mouse","ONT cDNA","FLAIR","CQN","B80K20","BK80201",1.81704332757071
+"Mouse","ONT cDNA","FLAIR","CQN","B80K20","BK80202",1.85331956373247
+"Mouse","ONT cDNA","FLAIR","CQN","B80K20","BK80203",1.86905394283307
+"Mouse","ONT cDNA","FLAIR","CQN","B80K20","BK80204",1.81830325161956
+"Mouse","ONT cDNA","FLAIR","CQN","B80K20","BK80205",1.79530075284208
+"Mouse","ONT cDNA","FLAIR","CQN","Kidney","K31",1.55030797134444
+"Mouse","ONT cDNA","FLAIR","CQN","Kidney","K32",1.58580201012915
+"Mouse","ONT cDNA","FLAIR","CQN","Kidney","K33",1.5611092742638
+"Mouse","ONT cDNA","FLAIR","CQN","Kidney","K34",1.52336246268029
+"Mouse","ONT cDNA","FLAIR","CQN","Kidney","K35",1.51281084440995
+"Mouse","ONT cDNA","FLAIR","EDASeq","Brain","B31",1.81072219533284
+"Mouse","ONT cDNA","FLAIR","EDASeq","Brain","B32",1.82266953640637
+"Mouse","ONT cDNA","FLAIR","EDASeq","Brain","B33",1.78750697746012
+"Mouse","ONT cDNA","FLAIR","EDASeq","Brain","B34",1.77744720381917
+"Mouse","ONT cDNA","FLAIR","EDASeq","Brain","B35",1.81643468941369
+"Mouse","ONT cDNA","FLAIR","EDASeq","B20K80","BK20801",2.00075446165786
+"Mouse","ONT cDNA","FLAIR","EDASeq","B20K80","BK20802",2.08455332708321
+"Mouse","ONT cDNA","FLAIR","EDASeq","B20K80","BK20803",2.04210484559085
+"Mouse","ONT cDNA","FLAIR","EDASeq","B20K80","BK20804",2.04458455916881
+"Mouse","ONT cDNA","FLAIR","EDASeq","B20K80","BK20805",2.00959981795366
+"Mouse","ONT cDNA","FLAIR","EDASeq","B80K20","BK80201",1.86456414451633
+"Mouse","ONT cDNA","FLAIR","EDASeq","B80K20","BK80202",1.89962392686888
+"Mouse","ONT cDNA","FLAIR","EDASeq","B80K20","BK80203",1.88393955611748
+"Mouse","ONT cDNA","FLAIR","EDASeq","B80K20","BK80204",1.84670106570801
+"Mouse","ONT cDNA","FLAIR","EDASeq","B80K20","BK80205",1.84307736648134
+"Mouse","ONT cDNA","FLAIR","EDASeq","Kidney","K31",1.78621449210063
+"Mouse","ONT cDNA","FLAIR","EDASeq","Kidney","K32",1.86538830393755
+"Mouse","ONT cDNA","FLAIR","EDASeq","Kidney","K33",1.80969745621586
+"Mouse","ONT cDNA","FLAIR","EDASeq","Kidney","K34",1.76618822541535
+"Mouse","ONT cDNA","FLAIR","EDASeq","Kidney","K35",1.72139246238793
+"Mouse","ONT cDNA","FLAIR","SMR","Brain","B31",1.16822775905187
+"Mouse","ONT cDNA","FLAIR","SMR","Brain","B32",1.15734849368691
+"Mouse","ONT cDNA","FLAIR","SMR","Brain","B33",1.15979126152569
+"Mouse","ONT cDNA","FLAIR","SMR","Brain","B34",1.1616354537219
+"Mouse","ONT cDNA","FLAIR","SMR","Brain","B35",1.16369451455152
+"Mouse","ONT cDNA","FLAIR","SMR","B20K80","BK20801",1.583856783459
+"Mouse","ONT cDNA","FLAIR","SMR","B20K80","BK20802",1.5616798838825
+"Mouse","ONT cDNA","FLAIR","SMR","B20K80","BK20803",1.57376763273542
+"Mouse","ONT cDNA","FLAIR","SMR","B20K80","BK20804",1.57110764915569
+"Mouse","ONT cDNA","FLAIR","SMR","B20K80","BK20805",1.572196514938
+"Mouse","ONT cDNA","FLAIR","SMR","B80K20","BK80201",1.17693135039632
+"Mouse","ONT cDNA","FLAIR","SMR","B80K20","BK80202",1.17783685734952
+"Mouse","ONT cDNA","FLAIR","SMR","B80K20","BK80203",1.18314683843544
+"Mouse","ONT cDNA","FLAIR","SMR","B80K20","BK80204",1.1739987748486
+"Mouse","ONT cDNA","FLAIR","SMR","B80K20","BK80205",1.18093219672636
+"Mouse","ONT cDNA","FLAIR","SMR","Kidney","K31",1.19514574360078
+"Mouse","ONT cDNA","FLAIR","SMR","Kidney","K32",1.19425910353314
+"Mouse","ONT cDNA","FLAIR","SMR","Kidney","K33",1.19472712597332
+"Mouse","ONT cDNA","FLAIR","SMR","Kidney","K34",1.20148140229226
+"Mouse","ONT cDNA","FLAIR","SMR","Kidney","K35",1.1969490547724
+"Mouse","ONT cDNA","FLAIR","TPM","Brain","B31",2.22666957628434
+"Mouse","ONT cDNA","FLAIR","TPM","Brain","B32",2.16936288553345
+"Mouse","ONT cDNA","FLAIR","TPM","Brain","B33",2.14929916085299
+"Mouse","ONT cDNA","FLAIR","TPM","Brain","B34",2.16063132666004
+"Mouse","ONT cDNA","FLAIR","TPM","Brain","B35",2.17558236536214
+"Mouse","ONT cDNA","FLAIR","TPM","B20K80","BK20801",2.32749706211011
+"Mouse","ONT cDNA","FLAIR","TPM","B20K80","BK20802",2.38268312071182
+"Mouse","ONT cDNA","FLAIR","TPM","B20K80","BK20803",2.37125359336948
+"Mouse","ONT cDNA","FLAIR","TPM","B20K80","BK20804",2.37006676049797
+"Mouse","ONT cDNA","FLAIR","TPM","B20K80","BK20805",2.36248017776912
+"Mouse","ONT cDNA","FLAIR","TPM","B80K20","BK80201",2.2676693982775
+"Mouse","ONT cDNA","FLAIR","TPM","B80K20","BK80202",2.2768149002267
+"Mouse","ONT cDNA","FLAIR","TPM","B80K20","BK80203",2.26417218771457
+"Mouse","ONT cDNA","FLAIR","TPM","B80K20","BK80204",2.27530471803748
+"Mouse","ONT cDNA","FLAIR","TPM","B80K20","BK80205",2.27040208199332
+"Mouse","ONT cDNA","FLAIR","TPM","Kidney","K31",2.22606720040715
+"Mouse","ONT cDNA","FLAIR","TPM","Kidney","K32",2.22458256069108
+"Mouse","ONT cDNA","FLAIR","TPM","Kidney","K33",2.21940664536081
+"Mouse","ONT cDNA","FLAIR","TPM","Kidney","K34",2.10955100487893
+"Mouse","ONT cDNA","FLAIR","TPM","Kidney","K35",2.13118530354753
+"Mouse","ONT cDNA","IsoQuant","CPM","Brain","B31",2.5004044937757
+"Mouse","ONT cDNA","IsoQuant","CPM","Brain","B32",2.46276668643932
+"Mouse","ONT cDNA","IsoQuant","CPM","Brain","B33",2.4568089931108
+"Mouse","ONT cDNA","IsoQuant","CPM","Brain","B34",2.46968274443185
+"Mouse","ONT cDNA","IsoQuant","CPM","Brain","B35",2.45743703561453
+"Mouse","ONT cDNA","IsoQuant","CPM","B20K80","BK20801",2.51196927439219
+"Mouse","ONT cDNA","IsoQuant","CPM","B20K80","BK20802",2.58303126100238
+"Mouse","ONT cDNA","IsoQuant","CPM","B20K80","BK20803",2.64797965105629
+"Mouse","ONT cDNA","IsoQuant","CPM","B20K80","BK20804",2.55238124215237
+"Mouse","ONT cDNA","IsoQuant","CPM","B20K80","BK20805",2.62240207820122
+"Mouse","ONT cDNA","IsoQuant","CPM","B80K20","BK80201",2.22183091765001
+"Mouse","ONT cDNA","IsoQuant","CPM","B80K20","BK80202",2.21802456037918
+"Mouse","ONT cDNA","IsoQuant","CPM","B80K20","BK80203",2.18193166346148
+"Mouse","ONT cDNA","IsoQuant","CPM","B80K20","BK80204",2.2124802222597
+"Mouse","ONT cDNA","IsoQuant","CPM","B80K20","BK80205",2.21674774860509
+"Mouse","ONT cDNA","IsoQuant","CPM","Kidney","K31",2.19784827320387
+"Mouse","ONT cDNA","IsoQuant","CPM","Kidney","K32",2.19342761569322
+"Mouse","ONT cDNA","IsoQuant","CPM","Kidney","K33",2.21053765487595
+"Mouse","ONT cDNA","IsoQuant","CPM","Kidney","K34",2.14387366161886
+"Mouse","ONT cDNA","IsoQuant","CPM","Kidney","K35",2.13808610073094
+"Mouse","ONT cDNA","IsoQuant","CQN","Brain","B31",2.32497147032401
+"Mouse","ONT cDNA","IsoQuant","CQN","Brain","B32",2.36004476320924
+"Mouse","ONT cDNA","IsoQuant","CQN","Brain","B33",2.33079644046926
+"Mouse","ONT cDNA","IsoQuant","CQN","Brain","B34",2.31850279974552
+"Mouse","ONT cDNA","IsoQuant","CQN","Brain","B35",2.29395611998964
+"Mouse","ONT cDNA","IsoQuant","CQN","B20K80","BK20801",2.28609553417065
+"Mouse","ONT cDNA","IsoQuant","CQN","B20K80","BK20802",2.33252899243413
+"Mouse","ONT cDNA","IsoQuant","CQN","B20K80","BK20803",2.3131681727303
+"Mouse","ONT cDNA","IsoQuant","CQN","B20K80","BK20804",2.2428858745659
+"Mouse","ONT cDNA","IsoQuant","CQN","B20K80","BK20805",2.24195607792771
+"Mouse","ONT cDNA","IsoQuant","CQN","B80K20","BK80201",2.06323939331793
+"Mouse","ONT cDNA","IsoQuant","CQN","B80K20","BK80202",2.1175000918027
+"Mouse","ONT cDNA","IsoQuant","CQN","B80K20","BK80203",2.05355477082714
+"Mouse","ONT cDNA","IsoQuant","CQN","B80K20","BK80204",2.04596561515831
+"Mouse","ONT cDNA","IsoQuant","CQN","B80K20","BK80205",2.06399513646931
+"Mouse","ONT cDNA","IsoQuant","CQN","Kidney","K31",1.90704583066722
+"Mouse","ONT cDNA","IsoQuant","CQN","Kidney","K32",1.9638891952153399
+"Mouse","ONT cDNA","IsoQuant","CQN","Kidney","K33",1.9436473098511
+"Mouse","ONT cDNA","IsoQuant","CQN","Kidney","K34",1.93550180637305
+"Mouse","ONT cDNA","IsoQuant","CQN","Kidney","K35",1.88846578059347
+"Mouse","ONT cDNA","IsoQuant","EDASeq","Brain","B31",2.35940975376054
+"Mouse","ONT cDNA","IsoQuant","EDASeq","Brain","B32",2.37953297208005
+"Mouse","ONT cDNA","IsoQuant","EDASeq","Brain","B33",2.3541250372
+"Mouse","ONT cDNA","IsoQuant","EDASeq","Brain","B34",2.34544154677264
+"Mouse","ONT cDNA","IsoQuant","EDASeq","Brain","B35",2.34990135615005
+"Mouse","ONT cDNA","IsoQuant","EDASeq","B20K80","BK20801",2.35044596991123
+"Mouse","ONT cDNA","IsoQuant","EDASeq","B20K80","BK20802",2.45849685748556
+"Mouse","ONT cDNA","IsoQuant","EDASeq","B20K80","BK20803",2.50596025675913
+"Mouse","ONT cDNA","IsoQuant","EDASeq","B20K80","BK20804",2.38964595865202
+"Mouse","ONT cDNA","IsoQuant","EDASeq","B20K80","BK20805",2.45720758757062
+"Mouse","ONT cDNA","IsoQuant","EDASeq","B80K20","BK80201",2.10208918390096
+"Mouse","ONT cDNA","IsoQuant","EDASeq","B80K20","BK80202",2.13975402340599
+"Mouse","ONT cDNA","IsoQuant","EDASeq","B80K20","BK80203",2.08948439036507
+"Mouse","ONT cDNA","IsoQuant","EDASeq","B80K20","BK80204",2.08107066518736
+"Mouse","ONT cDNA","IsoQuant","EDASeq","B80K20","BK80205",2.08411590819128
+"Mouse","ONT cDNA","IsoQuant","EDASeq","Kidney","K31",1.98417830613061
+"Mouse","ONT cDNA","IsoQuant","EDASeq","Kidney","K32",2.05069907600549
+"Mouse","ONT cDNA","IsoQuant","EDASeq","Kidney","K33",2.03833077493828
+"Mouse","ONT cDNA","IsoQuant","EDASeq","Kidney","K34",2.02848651709122
+"Mouse","ONT cDNA","IsoQuant","EDASeq","Kidney","K35",1.95637137920621
+"Mouse","ONT cDNA","IsoQuant","SMR","Brain","B31",2.01104488235427
+"Mouse","ONT cDNA","IsoQuant","SMR","Brain","B32",2.00787693297644
+"Mouse","ONT cDNA","IsoQuant","SMR","Brain","B33",2.00736517727352
+"Mouse","ONT cDNA","IsoQuant","SMR","Brain","B34",2.00722537843453
+"Mouse","ONT cDNA","IsoQuant","SMR","Brain","B35",2.00741360747591
+"Mouse","ONT cDNA","IsoQuant","SMR","B20K80","BK20801",1.97820859196705
+"Mouse","ONT cDNA","IsoQuant","SMR","B20K80","BK20802",1.98471409711352
+"Mouse","ONT cDNA","IsoQuant","SMR","B20K80","BK20803",2.11319700032483
+"Mouse","ONT cDNA","IsoQuant","SMR","B20K80","BK20804",1.97419681103458
+"Mouse","ONT cDNA","IsoQuant","SMR","B20K80","BK20805",2.11023957259222
+"Mouse","ONT cDNA","IsoQuant","SMR","B80K20","BK80201",1.67412857156999
+"Mouse","ONT cDNA","IsoQuant","SMR","B80K20","BK80202",1.67546610473826
+"Mouse","ONT cDNA","IsoQuant","SMR","B80K20","BK80203",1.67974552543005
+"Mouse","ONT cDNA","IsoQuant","SMR","B80K20","BK80204",1.67451502010943
+"Mouse","ONT cDNA","IsoQuant","SMR","B80K20","BK80205",1.6771692322034
+"Mouse","ONT cDNA","IsoQuant","SMR","Kidney","K31",1.61853918842407
+"Mouse","ONT cDNA","IsoQuant","SMR","Kidney","K32",1.61903803608492
+"Mouse","ONT cDNA","IsoQuant","SMR","Kidney","K33",1.62128457512382
+"Mouse","ONT cDNA","IsoQuant","SMR","Kidney","K34",1.63589021876126
+"Mouse","ONT cDNA","IsoQuant","SMR","Kidney","K35",1.62468596164677
+"Mouse","ONT cDNA","IsoQuant","TPM","Brain","B31",2.9175685100019
+"Mouse","ONT cDNA","IsoQuant","TPM","Brain","B32",2.85635201278283
+"Mouse","ONT cDNA","IsoQuant","TPM","Brain","B33",2.84556505408234
+"Mouse","ONT cDNA","IsoQuant","TPM","Brain","B34",2.86628797362813
+"Mouse","ONT cDNA","IsoQuant","TPM","Brain","B35",2.83902032285284
+"Mouse","ONT cDNA","IsoQuant","TPM","B20K80","BK20801",2.91593362487864
+"Mouse","ONT cDNA","IsoQuant","TPM","B20K80","BK20802",2.99222655812447
+"Mouse","ONT cDNA","IsoQuant","TPM","B20K80","BK20803",3.03336613099039
+"Mouse","ONT cDNA","IsoQuant","TPM","B20K80","BK20804",2.95745776467222
+"Mouse","ONT cDNA","IsoQuant","TPM","B20K80","BK20805",2.9937096549765
+"Mouse","ONT cDNA","IsoQuant","TPM","B80K20","BK80201",2.65947245090158
+"Mouse","ONT cDNA","IsoQuant","TPM","B80K20","BK80202",2.65882259331309
+"Mouse","ONT cDNA","IsoQuant","TPM","B80K20","BK80203",2.6157360412784
+"Mouse","ONT cDNA","IsoQuant","TPM","B80K20","BK80204",2.65903859180368
+"Mouse","ONT cDNA","IsoQuant","TPM","B80K20","BK80205",2.65639130315066
+"Mouse","ONT cDNA","IsoQuant","TPM","Kidney","K31",2.68770449680365
+"Mouse","ONT cDNA","IsoQuant","TPM","Kidney","K32",2.67521645633501
+"Mouse","ONT cDNA","IsoQuant","TPM","Kidney","K33",2.69212259970655
+"Mouse","ONT cDNA","IsoQuant","TPM","Kidney","K34",2.56820163319953
+"Mouse","ONT cDNA","IsoQuant","TPM","Kidney","K35",2.58387833489536
+"Mouse","ONT cDNA","Kallisto","CPM","Brain","B31",3.01950297179831
+"Mouse","ONT cDNA","Kallisto","CPM","Brain","B32",3.01749874319867
+"Mouse","ONT cDNA","Kallisto","CPM","Brain","B33",3.01936775785061
+"Mouse","ONT cDNA","Kallisto","CPM","Brain","B34",3.01572606895773
+"Mouse","ONT cDNA","Kallisto","CPM","Brain","B35",3.0171149387401
+"Mouse","ONT cDNA","Kallisto","CPM","B20K80","BK20801",2.77249154235297
+"Mouse","ONT cDNA","Kallisto","CPM","B20K80","BK20802",2.78240643968907
+"Mouse","ONT cDNA","Kallisto","CPM","B20K80","BK20803",2.9220279065873
+"Mouse","ONT cDNA","Kallisto","CPM","B20K80","BK20804",2.87618519489647
+"Mouse","ONT cDNA","Kallisto","CPM","B20K80","BK20805",2.87331721424992
+"Mouse","ONT cDNA","Kallisto","CPM","B80K20","BK80201",3.03088291824333
+"Mouse","ONT cDNA","Kallisto","CPM","B80K20","BK80202",3.03601914601292
+"Mouse","ONT cDNA","Kallisto","CPM","B80K20","BK80203",3.01702391489075
+"Mouse","ONT cDNA","Kallisto","CPM","B80K20","BK80204",3.02226364964797
+"Mouse","ONT cDNA","Kallisto","CPM","B80K20","BK80205",3.04268387343764
+"Mouse","ONT cDNA","Kallisto","CPM","Kidney","K31",2.98564589622021
+"Mouse","ONT cDNA","Kallisto","CPM","Kidney","K32",3.00802007943788
+"Mouse","ONT cDNA","Kallisto","CPM","Kidney","K33",2.99381915781647
+"Mouse","ONT cDNA","Kallisto","CPM","Kidney","K34",3.01060713343737
+"Mouse","ONT cDNA","Kallisto","CPM","Kidney","K35",2.99246706854621
+"Mouse","ONT cDNA","Kallisto","CQN","Brain","B31",3.03306737864742
+"Mouse","ONT cDNA","Kallisto","CQN","Brain","B32",3.02908937225025
+"Mouse","ONT cDNA","Kallisto","CQN","Brain","B33",3.03916185808399
+"Mouse","ONT cDNA","Kallisto","CQN","Brain","B34",3.03345699156177
+"Mouse","ONT cDNA","Kallisto","CQN","Brain","B35",3.03898471904638
+"Mouse","ONT cDNA","Kallisto","CQN","B20K80","BK20801",2.89922322867621
+"Mouse","ONT cDNA","Kallisto","CQN","B20K80","BK20802",2.88271066597538
+"Mouse","ONT cDNA","Kallisto","CQN","B20K80","BK20803",2.90924236966331
+"Mouse","ONT cDNA","Kallisto","CQN","B20K80","BK20804",2.91620308511381
+"Mouse","ONT cDNA","Kallisto","CQN","B20K80","BK20805",2.934999495819
+"Mouse","ONT cDNA","Kallisto","CQN","B80K20","BK80201",3.06022271697465
+"Mouse","ONT cDNA","Kallisto","CQN","B80K20","BK80202",3.07394975885554
+"Mouse","ONT cDNA","Kallisto","CQN","B80K20","BK80203",3.07247234153308
+"Mouse","ONT cDNA","Kallisto","CQN","B80K20","BK80204",3.07960768131342
+"Mouse","ONT cDNA","Kallisto","CQN","B80K20","BK80205",3.09309233979728
+"Mouse","ONT cDNA","Kallisto","CQN","Kidney","K31",3.02033504019252
+"Mouse","ONT cDNA","Kallisto","CQN","Kidney","K32",2.98432852040054
+"Mouse","ONT cDNA","Kallisto","CQN","Kidney","K33",2.98847996101944
+"Mouse","ONT cDNA","Kallisto","CQN","Kidney","K34",2.98193633151162
+"Mouse","ONT cDNA","Kallisto","CQN","Kidney","K35",3.00757343978435
+"Mouse","ONT cDNA","Kallisto","EDASeq","Brain","B31",3.00469510652551
+"Mouse","ONT cDNA","Kallisto","EDASeq","Brain","B32",3.00469113092844
+"Mouse","ONT cDNA","Kallisto","EDASeq","Brain","B33",3.00673390966002
+"Mouse","ONT cDNA","Kallisto","EDASeq","Brain","B34",3.00375295650691
+"Mouse","ONT cDNA","Kallisto","EDASeq","Brain","B35",3.0043237303526
+"Mouse","ONT cDNA","Kallisto","EDASeq","B20K80","BK20801",2.75331423710745
+"Mouse","ONT cDNA","Kallisto","EDASeq","B20K80","BK20802",2.7531052859944
+"Mouse","ONT cDNA","Kallisto","EDASeq","B20K80","BK20803",2.90439153424122
+"Mouse","ONT cDNA","Kallisto","EDASeq","B20K80","BK20804",2.84989911930021
+"Mouse","ONT cDNA","Kallisto","EDASeq","B20K80","BK20805",2.84820892845589
+"Mouse","ONT cDNA","Kallisto","EDASeq","B80K20","BK80201",3.00983907855027
+"Mouse","ONT cDNA","Kallisto","EDASeq","B80K20","BK80202",3.01717436807802
+"Mouse","ONT cDNA","Kallisto","EDASeq","B80K20","BK80203",3.00073992131018
+"Mouse","ONT cDNA","Kallisto","EDASeq","B80K20","BK80204",2.99922185629281
+"Mouse","ONT cDNA","Kallisto","EDASeq","B80K20","BK80205",3.02217894077295
+"Mouse","ONT cDNA","Kallisto","EDASeq","Kidney","K31",2.97533328003197
+"Mouse","ONT cDNA","Kallisto","EDASeq","Kidney","K32",2.98833799741287
+"Mouse","ONT cDNA","Kallisto","EDASeq","Kidney","K33",2.97900698644883
+"Mouse","ONT cDNA","Kallisto","EDASeq","Kidney","K34",2.99727784382113
+"Mouse","ONT cDNA","Kallisto","EDASeq","Kidney","K35",2.99249822664129
+"Mouse","ONT cDNA","Kallisto","SMR","Brain","B31",2.83158422700445
+"Mouse","ONT cDNA","Kallisto","SMR","Brain","B32",2.83134396403911
+"Mouse","ONT cDNA","Kallisto","SMR","Brain","B33",2.83131610736797
+"Mouse","ONT cDNA","Kallisto","SMR","Brain","B34",2.83191424229152
+"Mouse","ONT cDNA","Kallisto","SMR","Brain","B35",2.83153923567947
+"Mouse","ONT cDNA","Kallisto","SMR","B20K80","BK20801",2.58590782647543
+"Mouse","ONT cDNA","Kallisto","SMR","B20K80","BK20802",2.58625654534925
+"Mouse","ONT cDNA","Kallisto","SMR","B20K80","BK20803",2.77095030155472
+"Mouse","ONT cDNA","Kallisto","SMR","B20K80","BK20804",2.67275768757876
+"Mouse","ONT cDNA","Kallisto","SMR","B20K80","BK20805",2.67474836238547
+"Mouse","ONT cDNA","Kallisto","SMR","B80K20","BK80201",2.83106097862395
+"Mouse","ONT cDNA","Kallisto","SMR","B80K20","BK80202",2.83102806215949
+"Mouse","ONT cDNA","Kallisto","SMR","B80K20","BK80203",2.83435400830634
+"Mouse","ONT cDNA","Kallisto","SMR","B80K20","BK80204",2.83110399954874
+"Mouse","ONT cDNA","Kallisto","SMR","B80K20","BK80205",2.83085334358973
+"Mouse","ONT cDNA","Kallisto","SMR","Kidney","K31",2.81595945961648
+"Mouse","ONT cDNA","Kallisto","SMR","Kidney","K32",2.81995021226044
+"Mouse","ONT cDNA","Kallisto","SMR","Kidney","K33",2.81469250396991
+"Mouse","ONT cDNA","Kallisto","SMR","Kidney","K34",2.8235436666259
+"Mouse","ONT cDNA","Kallisto","SMR","Kidney","K35",2.81862033061135
+"Mouse","ONT cDNA","Kallisto","TPM","Brain","B31",3.15663251757677
+"Mouse","ONT cDNA","Kallisto","TPM","Brain","B32",3.15223342095121
+"Mouse","ONT cDNA","Kallisto","TPM","Brain","B33",3.15024668369818
+"Mouse","ONT cDNA","Kallisto","TPM","Brain","B34",3.1469162789265
+"Mouse","ONT cDNA","Kallisto","TPM","Brain","B35",3.14651433955142
+"Mouse","ONT cDNA","Kallisto","TPM","B20K80","BK20801",2.92169587646485
+"Mouse","ONT cDNA","Kallisto","TPM","B20K80","BK20802",2.95118728424315
+"Mouse","ONT cDNA","Kallisto","TPM","B20K80","BK20803",3.05478937439904
+"Mouse","ONT cDNA","Kallisto","TPM","B20K80","BK20804",3.02491499873266
+"Mouse","ONT cDNA","Kallisto","TPM","B20K80","BK20805",3.02266015958167
+"Mouse","ONT cDNA","Kallisto","TPM","B80K20","BK80201",3.18281348594559
+"Mouse","ONT cDNA","Kallisto","TPM","B80K20","BK80202",3.18739302191177
+"Mouse","ONT cDNA","Kallisto","TPM","B80K20","BK80203",3.15964318128483
+"Mouse","ONT cDNA","Kallisto","TPM","B80K20","BK80204",3.17708660005807
+"Mouse","ONT cDNA","Kallisto","TPM","B80K20","BK80205",3.19492740639339
+"Mouse","ONT cDNA","Kallisto","TPM","Kidney","K31",3.1166431808343402
+"Mouse","ONT cDNA","Kallisto","TPM","Kidney","K32",3.13900132388035
+"Mouse","ONT cDNA","Kallisto","TPM","Kidney","K33",3.11801177323366
+"Mouse","ONT cDNA","Kallisto","TPM","Kidney","K34",3.11688458011576
+"Mouse","ONT cDNA","Kallisto","TPM","Kidney","K35",3.09338288342928
+"Mouse","ONT cDNA","Oarfish","CPM","Brain","B31",3.05543716337085
+"Mouse","ONT cDNA","Oarfish","CPM","Brain","B32",3.06021980385227
+"Mouse","ONT cDNA","Oarfish","CPM","Brain","B33",3.04887973615904
+"Mouse","ONT cDNA","Oarfish","CPM","Brain","B34",3.04544413960042
+"Mouse","ONT cDNA","Oarfish","CPM","Brain","B35",3.05282636138069
+"Mouse","ONT cDNA","Oarfish","CPM","B20K80","BK20801",2.87178437892172
+"Mouse","ONT cDNA","Oarfish","CPM","B20K80","BK20802",2.91041779610702
+"Mouse","ONT cDNA","Oarfish","CPM","B20K80","BK20803",2.84752884683135
+"Mouse","ONT cDNA","Oarfish","CPM","B20K80","BK20804",2.83063671694535
+"Mouse","ONT cDNA","Oarfish","CPM","B20K80","BK20805",2.95814686736033
+"Mouse","ONT cDNA","Oarfish","CPM","B80K20","BK80201",3.08681836268189
+"Mouse","ONT cDNA","Oarfish","CPM","B80K20","BK80202",3.08211275085254
+"Mouse","ONT cDNA","Oarfish","CPM","B80K20","BK80203",3.04100309256194
+"Mouse","ONT cDNA","Oarfish","CPM","B80K20","BK80204",3.06971811389021
+"Mouse","ONT cDNA","Oarfish","CPM","B80K20","BK80205",3.0844452151331
+"Mouse","ONT cDNA","Oarfish","CPM","Kidney","K31",2.95890733135165
+"Mouse","ONT cDNA","Oarfish","CPM","Kidney","K32",2.96448080815825
+"Mouse","ONT cDNA","Oarfish","CPM","Kidney","K33",2.9608931072226
+"Mouse","ONT cDNA","Oarfish","CPM","Kidney","K34",2.96739979039908
+"Mouse","ONT cDNA","Oarfish","CPM","Kidney","K35",2.94224336282059
+"Mouse","ONT cDNA","Oarfish","CQN","Brain","B31",2.78040914412311
+"Mouse","ONT cDNA","Oarfish","CQN","Brain","B32",2.75547666660854
+"Mouse","ONT cDNA","Oarfish","CQN","Brain","B33",2.76100376282676
+"Mouse","ONT cDNA","Oarfish","CQN","Brain","B34",2.76240255681543
+"Mouse","ONT cDNA","Oarfish","CQN","Brain","B35",2.74942439401617
+"Mouse","ONT cDNA","Oarfish","CQN","B20K80","BK20801",2.75497217845149
+"Mouse","ONT cDNA","Oarfish","CQN","B20K80","BK20802",2.73134846040259
+"Mouse","ONT cDNA","Oarfish","CQN","B20K80","BK20803",2.67995803256527
+"Mouse","ONT cDNA","Oarfish","CQN","B20K80","BK20804",2.70176874474723
+"Mouse","ONT cDNA","Oarfish","CQN","B20K80","BK20805",2.7267033928383
+"Mouse","ONT cDNA","Oarfish","CQN","B80K20","BK80201",2.91672133291929
+"Mouse","ONT cDNA","Oarfish","CQN","B80K20","BK80202",2.91679417103413
+"Mouse","ONT cDNA","Oarfish","CQN","B80K20","BK80203",2.83517701004453
+"Mouse","ONT cDNA","Oarfish","CQN","B80K20","BK80204",2.92354244867922
+"Mouse","ONT cDNA","Oarfish","CQN","B80K20","BK80205",2.92044911946094
+"Mouse","ONT cDNA","Oarfish","CQN","Kidney","K31",2.64067495729112
+"Mouse","ONT cDNA","Oarfish","CQN","Kidney","K32",2.57832100960654
+"Mouse","ONT cDNA","Oarfish","CQN","Kidney","K33",2.60416477416797
+"Mouse","ONT cDNA","Oarfish","CQN","Kidney","K34",2.56150737426678
+"Mouse","ONT cDNA","Oarfish","CQN","Kidney","K35",2.59796465993197
+"Mouse","ONT cDNA","Oarfish","EDASeq","Brain","B31",3.01796876226819
+"Mouse","ONT cDNA","Oarfish","EDASeq","Brain","B32",3.02939370266593
+"Mouse","ONT cDNA","Oarfish","EDASeq","Brain","B33",3.01537313606365
+"Mouse","ONT cDNA","Oarfish","EDASeq","Brain","B34",3.01146191898359
+"Mouse","ONT cDNA","Oarfish","EDASeq","Brain","B35",3.01865309022976
+"Mouse","ONT cDNA","Oarfish","EDASeq","B20K80","BK20801",2.80845003273379
+"Mouse","ONT cDNA","Oarfish","EDASeq","B20K80","BK20802",2.8342960500334198
+"Mouse","ONT cDNA","Oarfish","EDASeq","B20K80","BK20803",2.78738888807828
+"Mouse","ONT cDNA","Oarfish","EDASeq","B20K80","BK20804",2.75359617029183
+"Mouse","ONT cDNA","Oarfish","EDASeq","B20K80","BK20805",2.89421149725991
+"Mouse","ONT cDNA","Oarfish","EDASeq","B80K20","BK80201",3.04509291057772
+"Mouse","ONT cDNA","Oarfish","EDASeq","B80K20","BK80202",3.04271332699584
+"Mouse","ONT cDNA","Oarfish","EDASeq","B80K20","BK80203",3.0003073078157
+"Mouse","ONT cDNA","Oarfish","EDASeq","B80K20","BK80204",3.02329226198606
+"Mouse","ONT cDNA","Oarfish","EDASeq","B80K20","BK80205",3.03865346578406
+"Mouse","ONT cDNA","Oarfish","EDASeq","Kidney","K31",2.89250857775633
+"Mouse","ONT cDNA","Oarfish","EDASeq","Kidney","K32",2.90225175190267
+"Mouse","ONT cDNA","Oarfish","EDASeq","Kidney","K33",2.90100449731322
+"Mouse","ONT cDNA","Oarfish","EDASeq","Kidney","K34",2.91861757892834
+"Mouse","ONT cDNA","Oarfish","EDASeq","Kidney","K35",2.89832914841155
+"Mouse","ONT cDNA","Oarfish","SMR","Brain","B31",2.82018340864724
+"Mouse","ONT cDNA","Oarfish","SMR","Brain","B32",2.81838480615325
+"Mouse","ONT cDNA","Oarfish","SMR","Brain","B33",2.82027575726873
+"Mouse","ONT cDNA","Oarfish","SMR","Brain","B34",2.82274762115753
+"Mouse","ONT cDNA","Oarfish","SMR","Brain","B35",2.81825209659686
+"Mouse","ONT cDNA","Oarfish","SMR","B20K80","BK20801",2.68479060948829
+"Mouse","ONT cDNA","Oarfish","SMR","B20K80","BK20802",2.72814057115997
+"Mouse","ONT cDNA","Oarfish","SMR","B20K80","BK20803",2.70744843262521
+"Mouse","ONT cDNA","Oarfish","SMR","B20K80","BK20804",2.61128161318836
+"Mouse","ONT cDNA","Oarfish","SMR","B20K80","BK20805",2.78526832235289
+"Mouse","ONT cDNA","Oarfish","SMR","B80K20","BK80201",2.81633008454184
+"Mouse","ONT cDNA","Oarfish","SMR","B80K20","BK80202",2.81688538109702
+"Mouse","ONT cDNA","Oarfish","SMR","B80K20","BK80203",2.82915634490603
+"Mouse","ONT cDNA","Oarfish","SMR","B80K20","BK80204",2.81770642632801
+"Mouse","ONT cDNA","Oarfish","SMR","B80K20","BK80205",2.81934050636344
+"Mouse","ONT cDNA","Oarfish","SMR","Kidney","K31",3.46611536917175
+"Mouse","ONT cDNA","Oarfish","SMR","Kidney","K32",3.46854057486032
+"Mouse","ONT cDNA","Oarfish","SMR","Kidney","K33",3.43865272693554
+"Mouse","ONT cDNA","Oarfish","SMR","Kidney","K34",3.42090304724654
+"Mouse","ONT cDNA","Oarfish","SMR","Kidney","K35",3.3912236919883
+"Mouse","ONT cDNA","Oarfish","TPM","Brain","B31",3.24555339242938
+"Mouse","ONT cDNA","Oarfish","TPM","Brain","B32",3.24702147256767
+"Mouse","ONT cDNA","Oarfish","TPM","Brain","B33",3.23241796531898
+"Mouse","ONT cDNA","Oarfish","TPM","Brain","B34",3.22952787829202
+"Mouse","ONT cDNA","Oarfish","TPM","Brain","B35",3.23895171003943
+"Mouse","ONT cDNA","Oarfish","TPM","B20K80","BK20801",3.10569087572757
+"Mouse","ONT cDNA","Oarfish","TPM","B20K80","BK20802",3.1673225778487
+"Mouse","ONT cDNA","Oarfish","TPM","B20K80","BK20803",3.07860636653641
+"Mouse","ONT cDNA","Oarfish","TPM","B20K80","BK20804",3.08578406237553
+"Mouse","ONT cDNA","Oarfish","TPM","B20K80","BK20805",3.18311260396925
+"Mouse","ONT cDNA","Oarfish","TPM","B80K20","BK80201",3.28891319112381
+"Mouse","ONT cDNA","Oarfish","TPM","B80K20","BK80202",3.29123661337302
+"Mouse","ONT cDNA","Oarfish","TPM","B80K20","BK80203",3.24792282233008
+"Mouse","ONT cDNA","Oarfish","TPM","B80K20","BK80204",3.27845945831916
+"Mouse","ONT cDNA","Oarfish","TPM","B80K20","BK80205",3.29291715321456
+"Mouse","ONT cDNA","Oarfish","TPM","Kidney","K31",3.19769686412192
+"Mouse","ONT cDNA","Oarfish","TPM","Kidney","K32",3.20782296562339
+"Mouse","ONT cDNA","Oarfish","TPM","Kidney","K33",3.1969370604875
+"Mouse","ONT cDNA","Oarfish","TPM","Kidney","K34",3.18170868375751
+"Mouse","ONT cDNA","Oarfish","TPM","Kidney","K35",3.14692904800187

@@ -118,6 +118,9 @@ reference_lengths <- bind_rows(
     transmute(length_bp = .data$length,
               dataset = "Reference", technology = "GCF_000001405.40"),
   read_tsv("data/lengths/mouse_stats.tsv", skip = 1, col_names = c("id", "length", "GC")) |>
+    # The mouse annotation has the Ig/TCR loci as single-exon placeholders that
+    # span the whole locus (up to 3.2 Mb, e.g. Igk); they are not transcripts
+    filter(!sub("\\..*$", "", .data$id) %in% c("Igk", "Igh", "Igl", "Tcra", "Tcrb", "Tcrd")) |>
     transmute(length_bp = .data$length,
               dataset = "Reference", technology = "GCF_000001635.27")
 )
@@ -225,3 +228,31 @@ save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 120, dpi = 60
 save_pub_r(p, "plots/Supplementary_Figure_10", width_mm = 150, height_mm = 80)
 ```
 
+
+```{r source_data}
+source("../source_data_utils.R")
+
+# Box-plot statistics as drawn by ggplot2 (computed on the log10 scale of the
+# y axis, then back-transformed to bp). The raw sampled read lengths are in
+# data/lengths/.
+box_stats <- function(x) {
+  lx <- log10(x)
+  q  <- quantile(lx, c(0.25, 0.5, 0.75), names = FALSE)
+  iqr <- q[3] - q[1]
+  inside <- lx[lx >= q[1] - 1.5 * iqr & lx <= q[3] + 1.5 * iqr]
+  tibble(n = length(x), Minimum = min(x),
+         `Lower whisker` = 10^min(inside), Q1 = 10^q[1], Median = 10^q[2], Q3 = 10^q[3],
+         `Upper whisker` = 10^max(inside), Maximum = max(x), Mean = mean(x),
+         `Number of outliers` = sum(lx < min(inside) | lx > max(inside)))
+}
+
+supp10_source <- all_lengths %>%
+  group_by(Panel = dataset, Group = technology) %>%
+  reframe(box_stats(length_bp)) %>%
+  mutate(across(c(`Lower whisker`, Q1, Median, Q3, `Upper whisker`, Mean), ~ round(.x, 1)),
+         Panel = as.character(Panel), Group = as.character(Group),
+         Group = recode(Group, GCF_000001405.40 = "GCF_000001405.40 (human, GRCh38)",
+                               GCF_000001635.27 = "GCF_000001635.27 (mouse, GRCm39)")) %>%
+  arrange(factor(Panel, levels = levels(all_lengths$dataset)))
+write_source_data(list(`Supp Fig 10` = supp10_source), "Supplementary_Figure_10")
+```

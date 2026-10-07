@@ -123,6 +123,7 @@ theme_set(theme_nature())
 
 ```{r generate_plots}
 l_plots <- list()
+supp11_data <- list()
 for (my_dataset in datasets){
   ds_data <- combined_binned %>% filter(dataset == my_dataset)
   
@@ -135,6 +136,7 @@ for (my_dataset in datasets){
     length_labels <- c("191-575", "575-813", "813-1597", "1597-2528")
   }
   ds_data$LengthQuantile <- factor(ds_data$LengthQuantile, levels = length_levels, labels = length_labels)
+  supp11_data[[my_dataset]] <- ds_data
   
   l_plots[[my_dataset]] <- ds_data %>% 
     ggplot(aes(x = Tool, y = RMSE, color = Normalization, fill = Normalization)) +
@@ -192,4 +194,17 @@ save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 220, dpi = 60
 }
 
 save_pub_r(fig3_supp, "plots/Supplementary_Figure_11", height_mm = 260)
+```
+
+```{r source_data}
+source("../source_data_utils.R")
+
+supp11_source <- bind_rows(lapply(supp11_data, function(d) mutate(d, LengthQuantile = as.character(LengthQuantile)))) %>%
+  transmute(Dataset = dataset, Platform = technology, `Transcript length bin (bp)` = LengthQuantile,
+            Tool, Normalization = relabel_norm(Normalization), Condition, Sample, RMSE) %>%
+  arrange(Dataset, Platform, Tool, Normalization, Sample)
+write_source_data(
+  split_panels(supp11_source, c(`Supp Fig 11a` = "Mouse", `Supp Fig 11b` = "LongBench",
+                                `Supp Fig 11c` = "iNeuron")),
+  "Supplementary_Figure_11")
 ```

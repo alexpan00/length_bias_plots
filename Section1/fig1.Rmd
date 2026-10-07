@@ -493,3 +493,52 @@ save_pub_r(p_supp, "plots/Supplementary_Figure_4", height_mm = 130)
 ```
 
 
+
+```{r source_data}
+source("../source_data_utils.R")
+
+length_group_labels <- c("0-1000" = "<= 1 kb", "1000-2000" = "(1 kb, 2 kb]",
+                         "2000-3000" = "(2 kb, 3 kb]", "3000-6000" = "(3 kb, 6 kb]",
+                         ">=6000" = "> 6 kb")
+
+sqanti_composition <- function(filtered) {
+  full_df %>%
+    filter(Tool %in% c("FLAIR", "Bambu", "IsoQuant") & Filtered == filtered) %>%
+    group_by(Dataset, LibType, Tool) %>%
+    mutate(Percentage = n_trans / sum(n_trans) * 100) %>%
+    ungroup() %>%
+    transmute(Dataset, Platform = LibType, Tool,
+              `SQANTI3 category` = gsub("\n", " ", Biotype),
+              `Number of transcripts` = n_trans,
+              `Percentage (%)` = round(Percentage, 3)) %>%
+    arrange(Dataset, Platform, Tool)
+}
+
+fig2_source <- list(
+  `Fig 2a` = summary_reads %>%
+    transmute(Dataset, Platform = Technology, Sample = sub("\\.bam$", "", Sample),
+              `Number of reads` = Total_Reads,
+              Note = if_else(Technology == "Illumina", "Fragments (read pairs)", "Reads")),
+  `Fig 2b` = summary_reads %>%
+    transmute(Dataset, Platform = Technology, Sample = sub("\\.bam$", "", Sample),
+              `Mean mapped read length (bp)` = Average_Mapped_Read_Length),
+  # Normalized coverage at each transcript percentile (bin_1 = 5' end, bin_100 = 3' end)
+  `Fig 2c` = combined_cov %>%
+    filter(technology != "Illumina") %>%
+    mutate(length_bin = factor(length_group_labels[length_bin], levels = length_group_labels)) %>%
+    arrange(factor(dataset, levels = levels(combined_cov_long$dataset)), technology, length_bin) %>%
+    select(Dataset = dataset, Platform = technology, `Length group` = length_bin,
+           `Number of samples` = n_samples, `Mean number of transcripts` = mean_n_transcripts,
+           starts_with("bin_")),
+  `Fig 2d` = plot_df_mod %>%
+    transmute(Dataset, Platform = LibType, Tool,
+              Status = if_else(Filtered == "TRUE", "Passed filter", "Filtered out"),
+              `Number of transcripts` = Count) %>%
+    arrange(Dataset, Tool, Platform, Status),
+  `Fig 2e` = sqanti_composition(TRUE)
+)
+write_source_data(fig2_source, "Figure_2")
+
+write_source_data(list(`Supp Fig 4` = sqanti_composition(FALSE)),
+                  "Supplementary_Figure_4")
+```

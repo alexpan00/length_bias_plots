@@ -1,0 +1,121 @@
+﻿"Dataset","Platform","Spike-in","Tool","Sample","Detected spike-ins","Sensitivity"
+"iNeuron","Kinnex","ERCC","Bambu","E31",34,0.369565217391304
+"iNeuron","Kinnex","ERCC","Bambu","E32",34,0.369565217391304
+"iNeuron","Kinnex","ERCC","Bambu","E33",34,0.369565217391304
+"iNeuron","Kinnex","ERCC","Bambu","isoB111",34,0.369565217391304
+"iNeuron","Kinnex","ERCC","Bambu","isoB112",33,0.358695652173913
+"iNeuron","Kinnex","ERCC","Bambu","isoB113",34,0.369565217391304
+"iNeuron","Kinnex","ERCC","FLAIR","E31",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","FLAIR","E32",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","FLAIR","E33",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","FLAIR","isoB111",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","FLAIR","isoB112",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","FLAIR","isoB113",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","IsoQuant","E31",12,0.130434782608696
+"iNeuron","Kinnex","ERCC","IsoQuant","E32",12,0.130434782608696
+"iNeuron","Kinnex","ERCC","IsoQuant","E33",12,0.130434782608696
+"iNeuron","Kinnex","ERCC","IsoQuant","isoB111",10,0.108695652173913
+"iNeuron","Kinnex","ERCC","IsoQuant","isoB112",10,0.108695652173913
+"iNeuron","Kinnex","ERCC","IsoQuant","isoB113",10,0.108695652173913
+"iNeuron","Kinnex","ERCC","Kallisto","E31",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","Kallisto","E32",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","Kallisto","E33",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","Kallisto","isoB111",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","Kallisto","isoB112",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","Kallisto","isoB113",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","Oarfish","E31",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","Oarfish","E32",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","Oarfish","E33",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","Oarfish","isoB111",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","Oarfish","isoB112",37,0.402173913043478
+"iNeuron","Kinnex","ERCC","Oarfish","isoB113",37,0.402173913043478
+"iNeuron","Kinnex","SIRV","Bambu","E31",44,0.63768115942029
+"iNeuron","Kinnex","SIRV","Bambu","E32",46,0.666666666666667
+"iNeuron","Kinnex","SIRV","Bambu","E33",48,0.695652173913043
+"iNeuron","Kinnex","SIRV","Bambu","isoB111",54,0.782608695652174
+"iNeuron","Kinnex","SIRV","Bambu","isoB112",54,0.782608695652174
+"iNeuron","Kinnex","SIRV","Bambu","isoB113",54,0.782608695652174
+"iNeuron","Kinnex","SIRV","FLAIR","E31",46,0.666666666666667
+"iNeuron","Kinnex","SIRV","FLAIR","E32",47,0.681159420289855
+"iNeuron","Kinnex","SIRV","FLAIR","E33",47,0.681159420289855
+"iNeuron","Kinnex","SIRV","FLAIR","isoB111",55,0.797101449275362
+"iNeuron","Kinnex","SIRV","FLAIR","isoB112",56,0.811594202898551
+"iNeuron","Kinnex","SIRV","FLAIR","isoB113",56,0.811594202898551
+"iNeuron","Kinnex","SIRV","IsoQuant","E31",41,0.594202898550725
+"iNeuron","Kinnex","SIRV","IsoQuant","E32",43,0.623188405797101
+"iNeuron","Kinnex","SIRV","IsoQuant","E33",44,0.63768115942029
+"iNeuron","Kinnex","SIRV","IsoQuant","isoB111",52,0.753623188405797
+"iNeuron","Kinnex","SIRV","IsoQuant","isoB112",53,0.768115942028985
+"iNeuron","Kinnex","SIRV","IsoQuant","isoB113",53,0.768115942028985
+"iNeuron","Kinnex","SIRV","Kallisto","E31",48,0.695652173913043
+"iNeuron","Kinnex","SIRV","Kallisto","E32",49,0.710144927536232
+"iNeuron","Kinnex","SIRV","Kallisto","E33",51,0.739130434782609
+"iNeuron","Kinnex","SIRV","Kallisto","isoB111",57,0.826086956521739
+"iNeuron","Kinnex","SIRV","Kallisto","isoB112",57,0.826086956521739
+"iNeuron","Kinnex","SIRV","Kallisto","isoB113",57,0.826086956521739
+"iNeuron","Kinnex","SIRV","Oarfish","E31",45,0.652173913043478
+"iNeuron","Kinnex","SIRV","Oarfish","E32",47,0.681159420289855
+"iNeuron","Kinnex","SIRV","Oarfish","E33",49,0.710144927536232
+"iNeuron","Kinnex","SIRV","Oarfish","isoB111",55,0.797101449275362
+"iNeuron","Kinnex","SIRV","Oarfish","isoB112",56,0.811594202898551
+"iNeuron","Kinnex","SIRV","Oarfish","isoB113",56,0.811594202898551
+"iNeuron","ONT cDNA","ERCC","Bambu","E31",36,0.391304347826087
+"iNeuron","ONT cDNA","ERCC","Bambu","E32",36,0.391304347826087
+"iNeuron","ONT cDNA","ERCC","Bambu","E33",36,0.391304347826087
+"iNeuron","ONT cDNA","ERCC","Bambu","isoB111",35,0.380434782608696
+"iNeuron","ONT cDNA","ERCC","Bambu","isoB112",36,0.391304347826087
+"iNeuron","ONT cDNA","ERCC","Bambu","isoB113",36,0.391304347826087
+"iNeuron","ONT cDNA","ERCC","FLAIR","E31",0,0
+"iNeuron","ONT cDNA","ERCC","FLAIR","E32",0,0
+"iNeuron","ONT cDNA","ERCC","FLAIR","E33",0,0
+"iNeuron","ONT cDNA","ERCC","FLAIR","isoB111",0,0
+"iNeuron","ONT cDNA","ERCC","FLAIR","isoB112",0,0
+"iNeuron","ONT cDNA","ERCC","FLAIR","isoB113",0,0
+"iNeuron","ONT cDNA","ERCC","IsoQuant","E31",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","IsoQuant","E32",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","IsoQuant","E33",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","IsoQuant","isoB111",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","IsoQuant","isoB112",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","IsoQuant","isoB113",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","Kallisto","E31",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","Kallisto","E32",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","Kallisto","E33",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","Kallisto","isoB111",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","Kallisto","isoB112",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","Kallisto","isoB113",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","Oarfish","E31",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","Oarfish","E32",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","Oarfish","E33",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","Oarfish","isoB111",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","Oarfish","isoB112",43,0.467391304347826
+"iNeuron","ONT cDNA","ERCC","Oarfish","isoB113",43,0.467391304347826
+"iNeuron","ONT cDNA","SIRV","Bambu","E31",65,0.942028985507246
+"iNeuron","ONT cDNA","SIRV","Bambu","E32",64,0.927536231884058
+"iNeuron","ONT cDNA","SIRV","Bambu","E33",64,0.927536231884058
+"iNeuron","ONT cDNA","SIRV","Bambu","isoB111",66,0.956521739130435
+"iNeuron","ONT cDNA","SIRV","Bambu","isoB112",66,0.956521739130435
+"iNeuron","ONT cDNA","SIRV","Bambu","isoB113",67,0.971014492753623
+"iNeuron","ONT cDNA","SIRV","FLAIR","E31",66,0.956521739130435
+"iNeuron","ONT cDNA","SIRV","FLAIR","E32",66,0.956521739130435
+"iNeuron","ONT cDNA","SIRV","FLAIR","E33",67,0.971014492753623
+"iNeuron","ONT cDNA","SIRV","FLAIR","isoB111",68,0.985507246376812
+"iNeuron","ONT cDNA","SIRV","FLAIR","isoB112",68,0.985507246376812
+"iNeuron","ONT cDNA","SIRV","FLAIR","isoB113",68,0.985507246376812
+"iNeuron","ONT cDNA","SIRV","IsoQuant","E31",66,0.956521739130435
+"iNeuron","ONT cDNA","SIRV","IsoQuant","E32",65,0.942028985507246
+"iNeuron","ONT cDNA","SIRV","IsoQuant","E33",65,0.942028985507246
+"iNeuron","ONT cDNA","SIRV","IsoQuant","isoB111",67,0.971014492753623
+"iNeuron","ONT cDNA","SIRV","IsoQuant","isoB112",67,0.971014492753623
+"iNeuron","ONT cDNA","SIRV","IsoQuant","isoB113",67,0.971014492753623
+"iNeuron","ONT cDNA","SIRV","Kallisto","E31",63,0.91304347826087
+"iNeuron","ONT cDNA","SIRV","Kallisto","E32",62,0.898550724637681
+"iNeuron","ONT cDNA","SIRV","Kallisto","E33",63,0.91304347826087
+"iNeuron","ONT cDNA","SIRV","Kallisto","isoB111",63,0.91304347826087
+"iNeuron","ONT cDNA","SIRV","Kallisto","isoB112",63,0.91304347826087
+"iNeuron","ONT cDNA","SIRV","Kallisto","isoB113",63,0.91304347826087
+"iNeuron","ONT cDNA","SIRV","Oarfish","E31",63,0.91304347826087
+"iNeuron","ONT cDNA","SIRV","Oarfish","E32",61,0.884057971014493
+"iNeuron","ONT cDNA","SIRV","Oarfish","E33",63,0.91304347826087
+"iNeuron","ONT cDNA","SIRV","Oarfish","isoB111",63,0.91304347826087
+"iNeuron","ONT cDNA","SIRV","Oarfish","isoB112",63,0.91304347826087
+"iNeuron","ONT cDNA","SIRV","Oarfish","isoB113",63,0.91304347826087

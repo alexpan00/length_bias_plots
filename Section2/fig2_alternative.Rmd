@@ -178,3 +178,16 @@ save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 220, dpi = 60
 
 save_pub_r(fig2_kidney, "plots/Supplementary_Figure_9", height_mm = 220)
 ```
+
+```{r source_data}
+source("../source_data_utils.R")
+
+supp9_source <- all_data %>%
+  transmute(Dataset = relabel_dataset(dataset), Condition, Platform = technology, Tool,
+            Normalization = relabel_norm(Normalization), `Length bin` = Length_bins,
+            `Mean normalized expression` = mean_exp)
+write_source_data(
+  split_panels(supp9_source, c(`Supp Fig 9a` = "Mouse", `Supp Fig 9b` = "LongBench",
+                               `Supp Fig 9c` = "iNeuron")),
+  "Supplementary_Figure_9")
+```

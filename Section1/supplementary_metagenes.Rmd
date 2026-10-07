@@ -167,7 +167,9 @@ process_technology <- function(fld_path, dataset_title, tech_title, show_y_label
     heatmap_data_list[[g]] <- group_df
   }
 
-  heatmap_data <- bind_rows(heatmap_data_list) %>%
+  heatmap_matrix <- bind_rows(heatmap_data_list)
+
+  heatmap_data <- heatmap_matrix %>%
     pivot_longer(
       cols = starts_with("bin_"),
       names_to = "Percentile",
@@ -230,7 +232,8 @@ process_technology <- function(fld_path, dataset_title, tech_title, show_y_label
     p_heatmap <- p_heatmap + theme(axis.title.y = element_blank())
   }
 
-  return(list(line = p_line, heatmap = p_heatmap))
+  return(list(line = p_line, heatmap = p_heatmap,
+              profile = metagene_profile, counts = counts, matrix = heatmap_matrix))
 }
 ```
 
@@ -291,4 +294,40 @@ fig_longbench <- (col1_lb | col2_lb | col3_lb) +
 
 save_publication_figure(fig_longbench, file.path(out_dir, "Supplementary_Figure_3"), width_mm = 135, height_mm = 128)
 message("Saved LongBench figure.")
+```
+
+```{r source_data}
+source("../source_data_utils.R")
+
+# Top panels: mean normalized coverage per length group (one row per group,
+# bin_1 = 5' end, bin_100 = 3' end). Bottom heatmaps: one row per transcript
+# (coverage averaged across samples) in the plotted order; these matrices are
+# large, so they are written as gzipped CSVs instead of xlsx sheets.
+metagene_source <- function(panels, figure) {
+  profiles <- lapply(panels, function(r) {
+    r$profile %>%
+      mutate(Percentile = paste0("bin_", Percentile)) %>%
+      pivot_wider(names_from = Percentile, values_from = Coverage) %>%
+      left_join(r$counts, by = "LengthGroup") %>%
+      select(`Length group` = LengthGroup, `Number of transcripts` = n, starts_with("bin_"))
+  })
+  names(profiles) <- paste(names(panels), "profile")
+  write_source_data(profiles, figure)
+
+  for (p in names(panels)) {
+    out <- panels[[p]]$matrix %>%
+      select(`Length group` = LengthGroup, `Row (top to bottom)` = RowIndex,
+             transcript_id, length, starts_with("bin_")) %>%
+      mutate(across(starts_with("bin_"), ~ round(.x, 4)))
+    csv_name <- paste0("Source_Data_", figure, "_", gsub("[^A-Za-z0-9]+", "_", p), "_heatmap.csv.gz")
+    data.table::fwrite(out, file.path("tables", csv_name))
+  }
+}
+
+metagene_source(list(`Supp Fig 1a` = res_isoseq, `Supp Fig 1b` = res_kinnex,
+                     `Supp Fig 1c` = res_ont), "Supplementary_Figure_1")
+metagene_source(list(`Supp Fig 2a` = res_kinnex_neu, `Supp Fig 2b` = res_ont_neu),
+                "Supplementary_Figure_2")
+metagene_source(list(`Supp Fig 3a` = res_kinnex_lb, `Supp Fig 3b` = res_ont_lb,
+                     `Supp Fig 3c` = res_drna_lb), "Supplementary_Figure_3")
 ```

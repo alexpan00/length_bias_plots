@@ -1,0 +1,44 @@
+﻿"Dataset","Number of sets","Intersection","Intersection size"
+"LongBench",1,"Kinnex FLAIR",84272
+"LongBench",1,"ONT dRNA FLAIR",29908
+"LongBench",2,"Kinnex FLAIR & ONT dRNA FLAIR",22291
+"LongBench",1,"ONT cDNA FLAIR",20747
+"LongBench",1,"Kinnex IsoQuant",9904
+"LongBench",3,"Kinnex FLAIR & ONT cDNA FLAIR & ONT dRNA FLAIR",9319
+"LongBench",1,"Kinnex Oarfish",8540
+"LongBench",15,"Kinnex Bambu & Kinnex FLAIR & Kinnex IsoQuant & Kinnex Kallisto & Kinnex Oarfish & ONT cDNA Bambu & ONT cDNA FLAIR & ONT cDNA IsoQuant & ONT cDNA Kallisto & ONT cDNA Oarfish & ONT dRNA Bambu & ONT dRNA FLAIR & ONT dRNA IsoQuant & ONT dRNA Kallisto & ONT dRNA Oarfish",8214
+"LongBench",1,"ONT cDNA IsoQuant",7649
+"LongBench",2,"Kinnex FLAIR & ONT cDNA FLAIR",5706
+"LongBench",2,"ONT cDNA FLAIR & ONT dRNA FLAIR",5075
+"LongBench",2,"Kinnex FLAIR & Kinnex IsoQuant",3182
+"LongBench",1,"ONT dRNA IsoQuant",3122
+"LongBench",2,"Kinnex Oarfish & ONT dRNA Oarfish",3087
+"LongBench",1,"ONT dRNA Oarfish",1825
+"LongBench",3,"Kinnex Oarfish & ONT cDNA Oarfish & ONT dRNA Oarfish",1556
+"LongBench",14,"Kinnex Bambu & Kinnex FLAIR & Kinnex IsoQuant & Kinnex Kallisto & Kinnex Oarfish & ONT cDNA Bambu & ONT cDNA FLAIR & ONT cDNA Kallisto & ONT cDNA Oarfish & ONT dRNA Bambu & ONT dRNA FLAIR & ONT dRNA IsoQuant & ONT dRNA Kallisto & ONT dRNA Oarfish",1533
+"LongBench",1,"ONT cDNA Oarfish",1393
+"LongBench",1,"Kinnex Kallisto",1350
+"LongBench",2,"Kinnex Bambu & Kinnex Oarfish",1285
+"LongBench",13,"Kinnex Bambu & Kinnex FLAIR & Kinnex Kallisto & Kinnex Oarfish & ONT cDNA Bambu & ONT cDNA FLAIR & ONT cDNA Kallisto & ONT cDNA Oarfish & ONT dRNA Bambu & ONT dRNA FLAIR & ONT dRNA IsoQuant & ONT dRNA Kallisto & ONT dRNA Oarfish",1186
+"LongBench",12,"Kinnex Bambu & Kinnex FLAIR & Kinnex Kallisto & Kinnex Oarfish & ONT cDNA Bambu & ONT cDNA FLAIR & ONT cDNA Kallisto & ONT cDNA Oarfish & ONT dRNA Bambu & ONT dRNA FLAIR & ONT dRNA Kallisto & ONT dRNA Oarfish",1176
+"LongBench",14,"Kinnex Bambu & Kinnex FLAIR & Kinnex Kallisto & Kinnex Oarfish & ONT cDNA Bambu & ONT cDNA FLAIR & ONT cDNA IsoQuant & ONT cDNA Kallisto & ONT cDNA Oarfish & ONT dRNA Bambu & ONT dRNA FLAIR & ONT dRNA IsoQuant & ONT dRNA Kallisto & ONT dRNA Oarfish",1165
+"LongBench",1,"Kinnex Bambu",1147
+"LongBench",3,"Kinnex FLAIR & ONT dRNA FLAIR & ONT dRNA IsoQuant",1035
+"LongBench",2,"Kinnex FLAIR & Kinnex Oarfish",1015
+"LongBench",3,"Kinnex FLAIR & Kinnex IsoQuant & ONT dRNA FLAIR",963
+"LongBench",2,"ONT dRNA FLAIR & ONT dRNA IsoQuant",939
+"LongBench",13,"Kinnex Bambu & Kinnex FLAIR & Kinnex IsoQuant & Kinnex Kallisto & Kinnex Oarfish & ONT cDNA Bambu & ONT cDNA Kallisto & ONT cDNA Oarfish & ONT dRNA Bambu & ONT dRNA FLAIR & ONT dRNA IsoQuant & ONT dRNA Kallisto & ONT dRNA Oarfish",875
+"LongBench",2,"Kinnex Oarfish & ONT cDNA Oarfish",780
+"LongBench",2,"Kinnex Kallisto & Kinnex Oarfish",764
+"LongBench",2,"Kinnex IsoQuant & ONT dRNA IsoQuant",715
+"LongBench",8,"Kinnex Bambu & Kinnex FLAIR & Kinnex Kallisto & Kinnex Oarfish & ONT dRNA Bambu & ONT dRNA FLAIR & ONT dRNA Kallisto & ONT dRNA Oarfish",698
+"LongBench",10,"Kinnex Bambu & Kinnex FLAIR & Kinnex IsoQuant & Kinnex Kallisto & Kinnex Oarfish & ONT dRNA Bambu & ONT dRNA FLAIR & ONT dRNA IsoQuant & ONT dRNA Kallisto & ONT dRNA Oarfish",677
+"LongBench",3,"Kinnex Bambu & Kinnex Kallisto & Kinnex Oarfish",671
+"LongBench",4,"Kinnex FLAIR & ONT cDNA FLAIR & ONT cDNA IsoQuant & ONT dRNA FLAIR",662
+"LongBench",2,"ONT cDNA Oarfish & ONT dRNA Oarfish",636
+"LongBench",4,"Kinnex FLAIR & Kinnex IsoQuant & ONT dRNA FLAIR & ONT dRNA IsoQuant",612
+"LongBench",3,"Kinnex Bambu & Kinnex Oarfish & ONT dRNA Oarfish",598
+"LongBench",1,"ONT cDNA Bambu",592
+"LongBench",4,"Kinnex FLAIR & Kinnex IsoQuant & ONT cDNA FLAIR & ONT dRNA FLAIR",553
+"LongBench",2,"ONT cDNA IsoQuant & ONT dRNA IsoQuant",547
+"LongBench",3,"Kinnex Bambu & Kinnex FLAIR & Kinnex Oarfish",511

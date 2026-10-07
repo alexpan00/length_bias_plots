@@ -1,0 +1,1201 @@
+﻿"Dataset","Platform","Transcript length bin","Tool","Normalization","Condition","Sample","Spearman correlation"
+"iNeuron","Kinnex","0-1.5k","Bambu","CPM","E3","E31",0.581816656248872
+"iNeuron","Kinnex","0-1.5k","Bambu","CPM","E3","E32",0.570898714565069
+"iNeuron","Kinnex","0-1.5k","Bambu","CPM","E3","E33",0.554522859352486
+"iNeuron","Kinnex","0-1.5k","Bambu","CPM","isoB11","isoB111",0.551488942663546
+"iNeuron","Kinnex","0-1.5k","Bambu","CPM","isoB11","isoB112",0.570001913696907
+"iNeuron","Kinnex","0-1.5k","Bambu","CPM","isoB11","isoB113",0.561836275074478
+"iNeuron","Kinnex","0-1.5k","Bambu","CQN","E3","E31",0.652548992293937
+"iNeuron","Kinnex","0-1.5k","Bambu","CQN","E3","E32",0.654853104947546
+"iNeuron","Kinnex","0-1.5k","Bambu","CQN","E3","E33",0.628818262157604
+"iNeuron","Kinnex","0-1.5k","Bambu","CQN","isoB11","isoB111",0.625719137907758
+"iNeuron","Kinnex","0-1.5k","Bambu","CQN","isoB11","isoB112",0.651044744563387
+"iNeuron","Kinnex","0-1.5k","Bambu","CQN","isoB11","isoB113",0.640031206443752
+"iNeuron","Kinnex","0-1.5k","Bambu","EDASeq","E3","E31",0.611568789879081
+"iNeuron","Kinnex","0-1.5k","Bambu","EDASeq","E3","E32",0.597405281378103
+"iNeuron","Kinnex","0-1.5k","Bambu","EDASeq","E3","E33",0.591852253634744
+"iNeuron","Kinnex","0-1.5k","Bambu","EDASeq","isoB11","isoB111",0.588812584586344
+"iNeuron","Kinnex","0-1.5k","Bambu","EDASeq","isoB11","isoB112",0.608460988378442
+"iNeuron","Kinnex","0-1.5k","Bambu","EDASeq","isoB11","isoB113",0.598271310789421
+"iNeuron","Kinnex","0-1.5k","Bambu","SMR","E3","E31",0.559181215984989
+"iNeuron","Kinnex","0-1.5k","Bambu","SMR","E3","E32",0.54942139865378
+"iNeuron","Kinnex","0-1.5k","Bambu","SMR","E3","E33",0.491276424503716
+"iNeuron","Kinnex","0-1.5k","Bambu","SMR","isoB11","isoB111",0.425448907296891
+"iNeuron","Kinnex","0-1.5k","Bambu","SMR","isoB11","isoB112",0.535317966489891
+"iNeuron","Kinnex","0-1.5k","Bambu","SMR","isoB11","isoB113",0.542740250892374
+"iNeuron","Kinnex","0-1.5k","Bambu","TPM","E3","E31",0.661129428094687
+"iNeuron","Kinnex","0-1.5k","Bambu","TPM","E3","E32",0.654381335810889
+"iNeuron","Kinnex","0-1.5k","Bambu","TPM","E3","E33",0.633613572646769
+"iNeuron","Kinnex","0-1.5k","Bambu","TPM","isoB11","isoB111",0.628190433950112
+"iNeuron","Kinnex","0-1.5k","Bambu","TPM","isoB11","isoB112",0.649740788111155
+"iNeuron","Kinnex","0-1.5k","Bambu","TPM","isoB11","isoB113",0.640210473128509
+"iNeuron","Kinnex","0-1.5k","FLAIR","CPM","E3","E31",0.5571336098276
+"iNeuron","Kinnex","0-1.5k","FLAIR","CPM","E3","E32",0.56150884773352
+"iNeuron","Kinnex","0-1.5k","FLAIR","CPM","E3","E33",0.532929273087685
+"iNeuron","Kinnex","0-1.5k","FLAIR","CPM","isoB11","isoB111",0.523130862159273
+"iNeuron","Kinnex","0-1.5k","FLAIR","CPM","isoB11","isoB112",0.547508916491693
+"iNeuron","Kinnex","0-1.5k","FLAIR","CPM","isoB11","isoB113",0.541957063051857
+"iNeuron","Kinnex","0-1.5k","FLAIR","CQN","E3","E31",0.575318340369804
+"iNeuron","Kinnex","0-1.5k","FLAIR","CQN","E3","E32",0.565156757504636
+"iNeuron","Kinnex","0-1.5k","FLAIR","CQN","E3","E33",0.563408297725005
+"iNeuron","Kinnex","0-1.5k","FLAIR","CQN","isoB11","isoB111",0.582936741618836
+"iNeuron","Kinnex","0-1.5k","FLAIR","CQN","isoB11","isoB112",0.582881450289503
+"iNeuron","Kinnex","0-1.5k","FLAIR","CQN","isoB11","isoB113",0.578165770398319
+"iNeuron","Kinnex","0-1.5k","FLAIR","EDASeq","E3","E31",0.56590059526035
+"iNeuron","Kinnex","0-1.5k","FLAIR","EDASeq","E3","E32",0.55959330688719
+"iNeuron","Kinnex","0-1.5k","FLAIR","EDASeq","E3","E33",0.553074133132851
+"iNeuron","Kinnex","0-1.5k","FLAIR","EDASeq","isoB11","isoB111",0.537539606389034
+"iNeuron","Kinnex","0-1.5k","FLAIR","EDASeq","isoB11","isoB112",0.555772776452266
+"iNeuron","Kinnex","0-1.5k","FLAIR","EDASeq","isoB11","isoB113",0.547025582331637
+"iNeuron","Kinnex","0-1.5k","FLAIR","SMR","E3","E31",0.540119404272422
+"iNeuron","Kinnex","0-1.5k","FLAIR","SMR","E3","E32",0.554830920351013
+"iNeuron","Kinnex","0-1.5k","FLAIR","SMR","E3","E33",0.4798499930731
+"iNeuron","Kinnex","0-1.5k","FLAIR","SMR","isoB11","isoB111",0.414269037818304
+"iNeuron","Kinnex","0-1.5k","FLAIR","SMR","isoB11","isoB112",0.528538090052065
+"iNeuron","Kinnex","0-1.5k","FLAIR","SMR","isoB11","isoB113",0.532153591770376
+"iNeuron","Kinnex","0-1.5k","FLAIR","TPM","E3","E31",0.641318749367604
+"iNeuron","Kinnex","0-1.5k","FLAIR","TPM","E3","E32",0.644992014205738
+"iNeuron","Kinnex","0-1.5k","FLAIR","TPM","E3","E33",0.615899632668751
+"iNeuron","Kinnex","0-1.5k","FLAIR","TPM","isoB11","isoB111",0.607399950564095
+"iNeuron","Kinnex","0-1.5k","FLAIR","TPM","isoB11","isoB112",0.631959470786747
+"iNeuron","Kinnex","0-1.5k","FLAIR","TPM","isoB11","isoB113",0.623509187541116
+"iNeuron","Kinnex","0-1.5k","IsoQuant","CPM","E3","E31",0.520620933683964
+"iNeuron","Kinnex","0-1.5k","IsoQuant","CPM","E3","E32",0.513439062333283
+"iNeuron","Kinnex","0-1.5k","IsoQuant","CPM","E3","E33",0.505588407611871
+"iNeuron","Kinnex","0-1.5k","IsoQuant","CPM","isoB11","isoB111",0.478203315035153
+"iNeuron","Kinnex","0-1.5k","IsoQuant","CPM","isoB11","isoB112",0.499106663220641
+"iNeuron","Kinnex","0-1.5k","IsoQuant","CPM","isoB11","isoB113",0.497780944395702
+"iNeuron","Kinnex","0-1.5k","IsoQuant","CQN","E3","E31",0.615407016219512
+"iNeuron","Kinnex","0-1.5k","IsoQuant","CQN","E3","E32",0.623287508446044
+"iNeuron","Kinnex","0-1.5k","IsoQuant","CQN","E3","E33",0.614149659897685
+"iNeuron","Kinnex","0-1.5k","IsoQuant","CQN","isoB11","isoB111",0.598214044983911
+"iNeuron","Kinnex","0-1.5k","IsoQuant","CQN","isoB11","isoB112",0.610979359732233
+"iNeuron","Kinnex","0-1.5k","IsoQuant","CQN","isoB11","isoB113",0.612270170064237
+"iNeuron","Kinnex","0-1.5k","IsoQuant","EDASeq","E3","E31",0.581883263595957
+"iNeuron","Kinnex","0-1.5k","IsoQuant","EDASeq","E3","E32",0.575741257750462
+"iNeuron","Kinnex","0-1.5k","IsoQuant","EDASeq","E3","E33",0.58685958854223
+"iNeuron","Kinnex","0-1.5k","IsoQuant","EDASeq","isoB11","isoB111",0.577849477175383
+"iNeuron","Kinnex","0-1.5k","IsoQuant","EDASeq","isoB11","isoB112",0.591621052450684
+"iNeuron","Kinnex","0-1.5k","IsoQuant","EDASeq","isoB11","isoB113",0.581520176823426
+"iNeuron","Kinnex","0-1.5k","IsoQuant","SMR","E3","E31",0.495007956428209
+"iNeuron","Kinnex","0-1.5k","IsoQuant","SMR","E3","E32",0.507691902794346
+"iNeuron","Kinnex","0-1.5k","IsoQuant","SMR","E3","E33",0.453921140391143
+"iNeuron","Kinnex","0-1.5k","IsoQuant","SMR","isoB11","isoB111",0.366405226140363
+"iNeuron","Kinnex","0-1.5k","IsoQuant","SMR","isoB11","isoB112",0.478410454530242
+"iNeuron","Kinnex","0-1.5k","IsoQuant","SMR","isoB11","isoB113",0.499980201518345
+"iNeuron","Kinnex","0-1.5k","IsoQuant","TPM","E3","E31",0.624945107170466
+"iNeuron","Kinnex","0-1.5k","IsoQuant","TPM","E3","E32",0.61988071160607106
+"iNeuron","Kinnex","0-1.5k","IsoQuant","TPM","E3","E33",0.608268060939713
+"iNeuron","Kinnex","0-1.5k","IsoQuant","TPM","isoB11","isoB111",0.585235410571237
+"iNeuron","Kinnex","0-1.5k","IsoQuant","TPM","isoB11","isoB112",0.606895916356652
+"iNeuron","Kinnex","0-1.5k","IsoQuant","TPM","isoB11","isoB113",0.601820432621002
+"iNeuron","Kinnex","0-1.5k","Kallisto","CPM","E3","E31",0.513270493442976
+"iNeuron","Kinnex","0-1.5k","Kallisto","CPM","E3","E32",0.506927733222832
+"iNeuron","Kinnex","0-1.5k","Kallisto","CPM","E3","E33",0.487144437806045
+"iNeuron","Kinnex","0-1.5k","Kallisto","CPM","isoB11","isoB111",0.470368318694501
+"iNeuron","Kinnex","0-1.5k","Kallisto","CPM","isoB11","isoB112",0.488535746072972
+"iNeuron","Kinnex","0-1.5k","Kallisto","CPM","isoB11","isoB113",0.483088163557383
+"iNeuron","Kinnex","0-1.5k","Kallisto","CQN","E3","E31",0.619840006143745
+"iNeuron","Kinnex","0-1.5k","Kallisto","CQN","E3","E32",0.618894035373663
+"iNeuron","Kinnex","0-1.5k","Kallisto","CQN","E3","E33",0.598398889800724
+"iNeuron","Kinnex","0-1.5k","Kallisto","CQN","isoB11","isoB111",0.598688753390813
+"iNeuron","Kinnex","0-1.5k","Kallisto","CQN","isoB11","isoB112",0.60858954982502
+"iNeuron","Kinnex","0-1.5k","Kallisto","CQN","isoB11","isoB113",0.60353734225948
+"iNeuron","Kinnex","0-1.5k","Kallisto","EDASeq","E3","E31",0.576764674314795
+"iNeuron","Kinnex","0-1.5k","Kallisto","EDASeq","E3","E32",0.563300988355052
+"iNeuron","Kinnex","0-1.5k","Kallisto","EDASeq","E3","E33",0.5520262131217
+"iNeuron","Kinnex","0-1.5k","Kallisto","EDASeq","isoB11","isoB111",0.540933176675923
+"iNeuron","Kinnex","0-1.5k","Kallisto","EDASeq","isoB11","isoB112",0.560488804187491
+"iNeuron","Kinnex","0-1.5k","Kallisto","EDASeq","isoB11","isoB113",0.549929793590807
+"iNeuron","Kinnex","0-1.5k","Kallisto","SMR","E3","E31",0.505092962156977
+"iNeuron","Kinnex","0-1.5k","Kallisto","SMR","E3","E32",0.50797090257449
+"iNeuron","Kinnex","0-1.5k","Kallisto","SMR","E3","E33",0.424141970237398
+"iNeuron","Kinnex","0-1.5k","Kallisto","SMR","isoB11","isoB111",0.366947342191564
+"iNeuron","Kinnex","0-1.5k","Kallisto","SMR","isoB11","isoB112",0.462063957682247
+"iNeuron","Kinnex","0-1.5k","Kallisto","SMR","isoB11","isoB113",0.488671020441523
+"iNeuron","Kinnex","0-1.5k","Kallisto","TPM","E3","E31",0.60773888113208
+"iNeuron","Kinnex","0-1.5k","Kallisto","TPM","E3","E32",0.602236398169662
+"iNeuron","Kinnex","0-1.5k","Kallisto","TPM","E3","E33",0.577922621343212
+"iNeuron","Kinnex","0-1.5k","Kallisto","TPM","isoB11","isoB111",0.56430220808187
+"iNeuron","Kinnex","0-1.5k","Kallisto","TPM","isoB11","isoB112",0.582469955059574
+"iNeuron","Kinnex","0-1.5k","Kallisto","TPM","isoB11","isoB113",0.575016575096784
+"iNeuron","Kinnex","0-1.5k","Oarfish","CPM","E3","E31",0.615450777672842
+"iNeuron","Kinnex","0-1.5k","Oarfish","CPM","E3","E32",0.614541402029634
+"iNeuron","Kinnex","0-1.5k","Oarfish","CPM","E3","E33",0.564176581468829
+"iNeuron","Kinnex","0-1.5k","Oarfish","CPM","isoB11","isoB111",0.554415000244207
+"iNeuron","Kinnex","0-1.5k","Oarfish","CPM","isoB11","isoB112",0.584963800949088
+"iNeuron","Kinnex","0-1.5k","Oarfish","CPM","isoB11","isoB113",0.576726428389697
+"iNeuron","Kinnex","0-1.5k","Oarfish","CQN","E3","E31",0.671995462357125
+"iNeuron","Kinnex","0-1.5k","Oarfish","CQN","E3","E32",0.674155715775391
+"iNeuron","Kinnex","0-1.5k","Oarfish","CQN","E3","E33",0.627134602786408
+"iNeuron","Kinnex","0-1.5k","Oarfish","CQN","isoB11","isoB111",0.61132451597074
+"iNeuron","Kinnex","0-1.5k","Oarfish","CQN","isoB11","isoB112",0.642020746528818
+"iNeuron","Kinnex","0-1.5k","Oarfish","CQN","isoB11","isoB113",0.6413791680137
+"iNeuron","Kinnex","0-1.5k","Oarfish","EDASeq","E3","E31",0.671188390016488
+"iNeuron","Kinnex","0-1.5k","Oarfish","EDASeq","E3","E32",0.668662234282976
+"iNeuron","Kinnex","0-1.5k","Oarfish","EDASeq","E3","E33",0.612969992044135
+"iNeuron","Kinnex","0-1.5k","Oarfish","EDASeq","isoB11","isoB111",0.599218301973682
+"iNeuron","Kinnex","0-1.5k","Oarfish","EDASeq","isoB11","isoB112",0.635346130710519
+"iNeuron","Kinnex","0-1.5k","Oarfish","EDASeq","isoB11","isoB113",0.624962473584885
+"iNeuron","Kinnex","0-1.5k","Oarfish","SMR","E3","E31",0.606894984675981
+"iNeuron","Kinnex","0-1.5k","Oarfish","SMR","E3","E32",0.609661566719442
+"iNeuron","Kinnex","0-1.5k","Oarfish","SMR","E3","E33",0.495052875280328
+"iNeuron","Kinnex","0-1.5k","Oarfish","SMR","isoB11","isoB111",0.411202203227973
+"iNeuron","Kinnex","0-1.5k","Oarfish","SMR","isoB11","isoB112",0.534778569535817
+"iNeuron","Kinnex","0-1.5k","Oarfish","SMR","isoB11","isoB113",0.538514695980192
+"iNeuron","Kinnex","0-1.5k","Oarfish","TPM","E3","E31",0.674073859494638
+"iNeuron","Kinnex","0-1.5k","Oarfish","TPM","E3","E32",0.674786623895772
+"iNeuron","Kinnex","0-1.5k","Oarfish","TPM","E3","E33",0.620384079465739
+"iNeuron","Kinnex","0-1.5k","Oarfish","TPM","isoB11","isoB111",0.611479885098531
+"iNeuron","Kinnex","0-1.5k","Oarfish","TPM","isoB11","isoB112",0.643292379469138
+"iNeuron","Kinnex","0-1.5k","Oarfish","TPM","isoB11","isoB113",0.633910588126751
+"iNeuron","Kinnex","1.5k-3k","Bambu","CPM","E3","E31",0.715993398808777
+"iNeuron","Kinnex","1.5k-3k","Bambu","CPM","E3","E32",0.720383648933937
+"iNeuron","Kinnex","1.5k-3k","Bambu","CPM","E3","E33",0.701290131098777
+"iNeuron","Kinnex","1.5k-3k","Bambu","CPM","isoB11","isoB111",0.692474824732519
+"iNeuron","Kinnex","1.5k-3k","Bambu","CPM","isoB11","isoB112",0.709814895742776
+"iNeuron","Kinnex","1.5k-3k","Bambu","CPM","isoB11","isoB113",0.701880435320484
+"iNeuron","Kinnex","1.5k-3k","Bambu","CQN","E3","E31",0.723294029655621
+"iNeuron","Kinnex","1.5k-3k","Bambu","CQN","E3","E32",0.724939322878592
+"iNeuron","Kinnex","1.5k-3k","Bambu","CQN","E3","E33",0.714752486787755
+"iNeuron","Kinnex","1.5k-3k","Bambu","CQN","isoB11","isoB111",0.70825897998707
+"iNeuron","Kinnex","1.5k-3k","Bambu","CQN","isoB11","isoB112",0.720421016568903
+"iNeuron","Kinnex","1.5k-3k","Bambu","CQN","isoB11","isoB113",0.716985385811387
+"iNeuron","Kinnex","1.5k-3k","Bambu","EDASeq","E3","E31",0.714746282896403
+"iNeuron","Kinnex","1.5k-3k","Bambu","EDASeq","E3","E32",0.718665949353851
+"iNeuron","Kinnex","1.5k-3k","Bambu","EDASeq","E3","E33",0.701108214418947
+"iNeuron","Kinnex","1.5k-3k","Bambu","EDASeq","isoB11","isoB111",0.693249769866173
+"iNeuron","Kinnex","1.5k-3k","Bambu","EDASeq","isoB11","isoB112",0.709926140751841
+"iNeuron","Kinnex","1.5k-3k","Bambu","EDASeq","isoB11","isoB113",0.70195215770768
+"iNeuron","Kinnex","1.5k-3k","Bambu","SMR","E3","E31",0.553926599727262
+"iNeuron","Kinnex","1.5k-3k","Bambu","SMR","E3","E32",0.584858441820701
+"iNeuron","Kinnex","1.5k-3k","Bambu","SMR","E3","E33",0.530769126304389
+"iNeuron","Kinnex","1.5k-3k","Bambu","SMR","isoB11","isoB111",0.430780204977291
+"iNeuron","Kinnex","1.5k-3k","Bambu","SMR","isoB11","isoB112",0.520683248925679
+"iNeuron","Kinnex","1.5k-3k","Bambu","SMR","isoB11","isoB113",0.526277180019291
+"iNeuron","Kinnex","1.5k-3k","Bambu","TPM","E3","E31",0.717531201045725
+"iNeuron","Kinnex","1.5k-3k","Bambu","TPM","E3","E32",0.721142368032067
+"iNeuron","Kinnex","1.5k-3k","Bambu","TPM","E3","E33",0.704448047536044
+"iNeuron","Kinnex","1.5k-3k","Bambu","TPM","isoB11","isoB111",0.695951043346656
+"iNeuron","Kinnex","1.5k-3k","Bambu","TPM","isoB11","isoB112",0.712680584632499
+"iNeuron","Kinnex","1.5k-3k","Bambu","TPM","isoB11","isoB113",0.704754416292513
+"iNeuron","Kinnex","1.5k-3k","FLAIR","CPM","E3","E31",0.684606605837193
+"iNeuron","Kinnex","1.5k-3k","FLAIR","CPM","E3","E32",0.690720006384467
+"iNeuron","Kinnex","1.5k-3k","FLAIR","CPM","E3","E33",0.670892969212952
+"iNeuron","Kinnex","1.5k-3k","FLAIR","CPM","isoB11","isoB111",0.661635351645986
+"iNeuron","Kinnex","1.5k-3k","FLAIR","CPM","isoB11","isoB112",0.686112859019283
+"iNeuron","Kinnex","1.5k-3k","FLAIR","CPM","isoB11","isoB113",0.670358251746389
+"iNeuron","Kinnex","1.5k-3k","FLAIR","CQN","E3","E31",0.669917243201148
+"iNeuron","Kinnex","1.5k-3k","FLAIR","CQN","E3","E32",0.669482160000598
+"iNeuron","Kinnex","1.5k-3k","FLAIR","CQN","E3","E33",0.661645048212851
+"iNeuron","Kinnex","1.5k-3k","FLAIR","CQN","isoB11","isoB111",0.659863393809446
+"iNeuron","Kinnex","1.5k-3k","FLAIR","CQN","isoB11","isoB112",0.672721864915408
+"iNeuron","Kinnex","1.5k-3k","FLAIR","CQN","isoB11","isoB113",0.665531696018399
+"iNeuron","Kinnex","1.5k-3k","FLAIR","EDASeq","E3","E31",0.686829821043712
+"iNeuron","Kinnex","1.5k-3k","FLAIR","EDASeq","E3","E32",0.69231381482652
+"iNeuron","Kinnex","1.5k-3k","FLAIR","EDASeq","E3","E33",0.674564344903874
+"iNeuron","Kinnex","1.5k-3k","FLAIR","EDASeq","isoB11","isoB111",0.664667681172422
+"iNeuron","Kinnex","1.5k-3k","FLAIR","EDASeq","isoB11","isoB112",0.689272921499616
+"iNeuron","Kinnex","1.5k-3k","FLAIR","EDASeq","isoB11","isoB113",0.672925945499389
+"iNeuron","Kinnex","1.5k-3k","FLAIR","SMR","E3","E31",0.518191884042821
+"iNeuron","Kinnex","1.5k-3k","FLAIR","SMR","E3","E32",0.564753932327084
+"iNeuron","Kinnex","1.5k-3k","FLAIR","SMR","E3","E33",0.518129232405016
+"iNeuron","Kinnex","1.5k-3k","FLAIR","SMR","isoB11","isoB111",0.42667255335827
+"iNeuron","Kinnex","1.5k-3k","FLAIR","SMR","isoB11","isoB112",0.523748367728256
+"iNeuron","Kinnex","1.5k-3k","FLAIR","SMR","isoB11","isoB113",0.501106986252852
+"iNeuron","Kinnex","1.5k-3k","FLAIR","TPM","E3","E31",0.686706035953898
+"iNeuron","Kinnex","1.5k-3k","FLAIR","TPM","E3","E32",0.69222949855997
+"iNeuron","Kinnex","1.5k-3k","FLAIR","TPM","E3","E33",0.675032252630419
+"iNeuron","Kinnex","1.5k-3k","FLAIR","TPM","isoB11","isoB111",0.665535399798975
+"iNeuron","Kinnex","1.5k-3k","FLAIR","TPM","isoB11","isoB112",0.689778971038881
+"iNeuron","Kinnex","1.5k-3k","FLAIR","TPM","isoB11","isoB113",0.673547196969818
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","CPM","E3","E31",0.718887240227455
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","CPM","E3","E32",0.722973591872237
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","CPM","E3","E33",0.710870189341751
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","CPM","isoB11","isoB111",0.699925760984177
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","CPM","isoB11","isoB112",0.722959371140171
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","CPM","isoB11","isoB113",0.702609369745337
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","CQN","E3","E31",0.684254942469639
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","CQN","E3","E32",0.687706160063494
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","CQN","E3","E33",0.682474698116392
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","CQN","isoB11","isoB111",0.677490111575684
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","CQN","isoB11","isoB112",0.693852974881578
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","CQN","isoB11","isoB113",0.678486803266192
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","EDASeq","E3","E31",0.717502840591533
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","EDASeq","E3","E32",0.721294299526113
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","EDASeq","E3","E33",0.710645401339578
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","EDASeq","isoB11","isoB111",0.699618256282343
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","EDASeq","isoB11","isoB112",0.722002763917886
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","EDASeq","isoB11","isoB113",0.701429856346886
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","SMR","E3","E31",0.48987818101492
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","SMR","E3","E32",0.540886777387169
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","SMR","E3","E33",0.509229324080833
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","SMR","isoB11","isoB111",0.411969961490362
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","SMR","isoB11","isoB112",0.503631690533643
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","SMR","isoB11","isoB113",0.476749730863398
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","TPM","E3","E31",0.718813391128714
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","TPM","E3","E32",0.721990313638697
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","TPM","E3","E33",0.71214740692688006
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","TPM","isoB11","isoB111",0.701986145886162
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","TPM","isoB11","isoB112",0.724115286823307
+"iNeuron","Kinnex","1.5k-3k","IsoQuant","TPM","isoB11","isoB113",0.703587970511491
+"iNeuron","Kinnex","1.5k-3k","Kallisto","CPM","E3","E31",0.700487500824035
+"iNeuron","Kinnex","1.5k-3k","Kallisto","CPM","E3","E32",0.699540186070606
+"iNeuron","Kinnex","1.5k-3k","Kallisto","CPM","E3","E33",0.679587611515017
+"iNeuron","Kinnex","1.5k-3k","Kallisto","CPM","isoB11","isoB111",0.674906443136927
+"iNeuron","Kinnex","1.5k-3k","Kallisto","CPM","isoB11","isoB112",0.691171998569877
+"iNeuron","Kinnex","1.5k-3k","Kallisto","CPM","isoB11","isoB113",0.68433846313405
+"iNeuron","Kinnex","1.5k-3k","Kallisto","CQN","E3","E31",0.709527700678625
+"iNeuron","Kinnex","1.5k-3k","Kallisto","CQN","E3","E32",0.705294601772045
+"iNeuron","Kinnex","1.5k-3k","Kallisto","CQN","E3","E33",0.694781918241103
+"iNeuron","Kinnex","1.5k-3k","Kallisto","CQN","isoB11","isoB111",0.695240787963817
+"iNeuron","Kinnex","1.5k-3k","Kallisto","CQN","isoB11","isoB112",0.702025977552198
+"iNeuron","Kinnex","1.5k-3k","Kallisto","CQN","isoB11","isoB113",0.698939781698116
+"iNeuron","Kinnex","1.5k-3k","Kallisto","EDASeq","E3","E31",0.699674039050466
+"iNeuron","Kinnex","1.5k-3k","Kallisto","EDASeq","E3","E32",0.697884204310903
+"iNeuron","Kinnex","1.5k-3k","Kallisto","EDASeq","E3","E33",0.680377076985079
+"iNeuron","Kinnex","1.5k-3k","Kallisto","EDASeq","isoB11","isoB111",0.676331013330453
+"iNeuron","Kinnex","1.5k-3k","Kallisto","EDASeq","isoB11","isoB112",0.691872827306209
+"iNeuron","Kinnex","1.5k-3k","Kallisto","EDASeq","isoB11","isoB113",0.684986919105657
+"iNeuron","Kinnex","1.5k-3k","Kallisto","SMR","E3","E31",0.520194304080163
+"iNeuron","Kinnex","1.5k-3k","Kallisto","SMR","E3","E32",0.549118437105224
+"iNeuron","Kinnex","1.5k-3k","Kallisto","SMR","E3","E33",0.506086796831764
+"iNeuron","Kinnex","1.5k-3k","Kallisto","SMR","isoB11","isoB111",0.418722506261698
+"iNeuron","Kinnex","1.5k-3k","Kallisto","SMR","isoB11","isoB112",0.498104119530626
+"iNeuron","Kinnex","1.5k-3k","Kallisto","SMR","isoB11","isoB113",0.505091511020057
+"iNeuron","Kinnex","1.5k-3k","Kallisto","TPM","E3","E31",0.702820684754826
+"iNeuron","Kinnex","1.5k-3k","Kallisto","TPM","E3","E32",0.701483720205284
+"iNeuron","Kinnex","1.5k-3k","Kallisto","TPM","E3","E33",0.684025176938869
+"iNeuron","Kinnex","1.5k-3k","Kallisto","TPM","isoB11","isoB111",0.679480495642875
+"iNeuron","Kinnex","1.5k-3k","Kallisto","TPM","isoB11","isoB112",0.695201750685685
+"iNeuron","Kinnex","1.5k-3k","Kallisto","TPM","isoB11","isoB113",0.688660664995706
+"iNeuron","Kinnex","1.5k-3k","Oarfish","CPM","E3","E31",0.725226660386403
+"iNeuron","Kinnex","1.5k-3k","Oarfish","CPM","E3","E32",0.724426475934978
+"iNeuron","Kinnex","1.5k-3k","Oarfish","CPM","E3","E33",0.702302606746671
+"iNeuron","Kinnex","1.5k-3k","Oarfish","CPM","isoB11","isoB111",0.690248439455566
+"iNeuron","Kinnex","1.5k-3k","Oarfish","CPM","isoB11","isoB112",0.714866925904816
+"iNeuron","Kinnex","1.5k-3k","Oarfish","CPM","isoB11","isoB113",0.703190460465529
+"iNeuron","Kinnex","1.5k-3k","Oarfish","CQN","E3","E31",0.725496359531728
+"iNeuron","Kinnex","1.5k-3k","Oarfish","CQN","E3","E32",0.724248972299993
+"iNeuron","Kinnex","1.5k-3k","Oarfish","CQN","E3","E33",0.710494240332452
+"iNeuron","Kinnex","1.5k-3k","Oarfish","CQN","isoB11","isoB111",0.702849666780059
+"iNeuron","Kinnex","1.5k-3k","Oarfish","CQN","isoB11","isoB112",0.718998389028203
+"iNeuron","Kinnex","1.5k-3k","Oarfish","CQN","isoB11","isoB113",0.716015796662528
+"iNeuron","Kinnex","1.5k-3k","Oarfish","EDASeq","E3","E31",0.725229206766975
+"iNeuron","Kinnex","1.5k-3k","Oarfish","EDASeq","E3","E32",0.723557702470146
+"iNeuron","Kinnex","1.5k-3k","Oarfish","EDASeq","E3","E33",0.702896635438291
+"iNeuron","Kinnex","1.5k-3k","Oarfish","EDASeq","isoB11","isoB111",0.691341372174946
+"iNeuron","Kinnex","1.5k-3k","Oarfish","EDASeq","isoB11","isoB112",0.715444113042621
+"iNeuron","Kinnex","1.5k-3k","Oarfish","EDASeq","isoB11","isoB113",0.703775867759035
+"iNeuron","Kinnex","1.5k-3k","Oarfish","SMR","E3","E31",0.586857322751771
+"iNeuron","Kinnex","1.5k-3k","Oarfish","SMR","E3","E32",0.614081345853572
+"iNeuron","Kinnex","1.5k-3k","Oarfish","SMR","E3","E33",0.556739389318132
+"iNeuron","Kinnex","1.5k-3k","Oarfish","SMR","isoB11","isoB111",0.45470310568837
+"iNeuron","Kinnex","1.5k-3k","Oarfish","SMR","isoB11","isoB112",0.55833787069325
+"iNeuron","Kinnex","1.5k-3k","Oarfish","SMR","isoB11","isoB113",0.551103578666698
+"iNeuron","Kinnex","1.5k-3k","Oarfish","TPM","E3","E31",0.726775870352854
+"iNeuron","Kinnex","1.5k-3k","Oarfish","TPM","E3","E32",0.725298830495101
+"iNeuron","Kinnex","1.5k-3k","Oarfish","TPM","E3","E33",0.705123058436307
+"iNeuron","Kinnex","1.5k-3k","Oarfish","TPM","isoB11","isoB111",0.693720743454459
+"iNeuron","Kinnex","1.5k-3k","Oarfish","TPM","isoB11","isoB112",0.717443124415707
+"iNeuron","Kinnex","1.5k-3k","Oarfish","TPM","isoB11","isoB113",0.705810356176826
+"iNeuron","Kinnex","3k-4.5k","Bambu","CPM","E3","E31",0.706283936349329
+"iNeuron","Kinnex","3k-4.5k","Bambu","CPM","E3","E32",0.711409024236924
+"iNeuron","Kinnex","3k-4.5k","Bambu","CPM","E3","E33",0.704064728150524
+"iNeuron","Kinnex","3k-4.5k","Bambu","CPM","isoB11","isoB111",0.678941406737009
+"iNeuron","Kinnex","3k-4.5k","Bambu","CPM","isoB11","isoB112",0.70254296245869
+"iNeuron","Kinnex","3k-4.5k","Bambu","CPM","isoB11","isoB113",0.697036952635613
+"iNeuron","Kinnex","3k-4.5k","Bambu","CQN","E3","E31",0.712629902973513
+"iNeuron","Kinnex","3k-4.5k","Bambu","CQN","E3","E32",0.713749981303738
+"iNeuron","Kinnex","3k-4.5k","Bambu","CQN","E3","E33",0.715408915126481
+"iNeuron","Kinnex","3k-4.5k","Bambu","CQN","isoB11","isoB111",0.691320718373523
+"iNeuron","Kinnex","3k-4.5k","Bambu","CQN","isoB11","isoB112",0.710382060765255
+"iNeuron","Kinnex","3k-4.5k","Bambu","CQN","isoB11","isoB113",0.711294077474807
+"iNeuron","Kinnex","3k-4.5k","Bambu","EDASeq","E3","E31",0.706088334087266
+"iNeuron","Kinnex","3k-4.5k","Bambu","EDASeq","E3","E32",0.711024098792977
+"iNeuron","Kinnex","3k-4.5k","Bambu","EDASeq","E3","E33",0.703829539614244
+"iNeuron","Kinnex","3k-4.5k","Bambu","EDASeq","isoB11","isoB111",0.678925784389653
+"iNeuron","Kinnex","3k-4.5k","Bambu","EDASeq","isoB11","isoB112",0.702279927914153
+"iNeuron","Kinnex","3k-4.5k","Bambu","EDASeq","isoB11","isoB113",0.696985490593506
+"iNeuron","Kinnex","3k-4.5k","Bambu","SMR","E3","E31",0.486289615652367
+"iNeuron","Kinnex","3k-4.5k","Bambu","SMR","E3","E32",0.524903017762054
+"iNeuron","Kinnex","3k-4.5k","Bambu","SMR","E3","E33",0.48511707055305
+"iNeuron","Kinnex","3k-4.5k","Bambu","SMR","isoB11","isoB111",0.361052885738327
+"iNeuron","Kinnex","3k-4.5k","Bambu","SMR","isoB11","isoB112",0.452788145661142
+"iNeuron","Kinnex","3k-4.5k","Bambu","SMR","isoB11","isoB113",0.462611897557187
+"iNeuron","Kinnex","3k-4.5k","Bambu","TPM","E3","E31",0.706340127899633
+"iNeuron","Kinnex","3k-4.5k","Bambu","TPM","E3","E32",0.710920283519088
+"iNeuron","Kinnex","3k-4.5k","Bambu","TPM","E3","E33",0.704174176466443
+"iNeuron","Kinnex","3k-4.5k","Bambu","TPM","isoB11","isoB111",0.679299443392769
+"iNeuron","Kinnex","3k-4.5k","Bambu","TPM","isoB11","isoB112",0.702834319931203
+"iNeuron","Kinnex","3k-4.5k","Bambu","TPM","isoB11","isoB113",0.69709907227979
+"iNeuron","Kinnex","3k-4.5k","FLAIR","CPM","E3","E31",0.658313539489272
+"iNeuron","Kinnex","3k-4.5k","FLAIR","CPM","E3","E32",0.660956545565138
+"iNeuron","Kinnex","3k-4.5k","FLAIR","CPM","E3","E33",0.653003292530515
+"iNeuron","Kinnex","3k-4.5k","FLAIR","CPM","isoB11","isoB111",0.629679618466167
+"iNeuron","Kinnex","3k-4.5k","FLAIR","CPM","isoB11","isoB112",0.662404872482877
+"iNeuron","Kinnex","3k-4.5k","FLAIR","CPM","isoB11","isoB113",0.640383917247754
+"iNeuron","Kinnex","3k-4.5k","FLAIR","CQN","E3","E31",0.633378215128126
+"iNeuron","Kinnex","3k-4.5k","FLAIR","CQN","E3","E32",0.633974047375666
+"iNeuron","Kinnex","3k-4.5k","FLAIR","CQN","E3","E33",0.635815981327601
+"iNeuron","Kinnex","3k-4.5k","FLAIR","CQN","isoB11","isoB111",0.632855126938581
+"iNeuron","Kinnex","3k-4.5k","FLAIR","CQN","isoB11","isoB112",0.651686608358331
+"iNeuron","Kinnex","3k-4.5k","FLAIR","CQN","isoB11","isoB113",0.639461075946908
+"iNeuron","Kinnex","3k-4.5k","FLAIR","EDASeq","E3","E31",0.655927413665958
+"iNeuron","Kinnex","3k-4.5k","FLAIR","EDASeq","E3","E32",0.659105815390467
+"iNeuron","Kinnex","3k-4.5k","FLAIR","EDASeq","E3","E33",0.651683869988542
+"iNeuron","Kinnex","3k-4.5k","FLAIR","EDASeq","isoB11","isoB111",0.628212796211129
+"iNeuron","Kinnex","3k-4.5k","FLAIR","EDASeq","isoB11","isoB112",0.660529943241254
+"iNeuron","Kinnex","3k-4.5k","FLAIR","EDASeq","isoB11","isoB113",0.638327490175737
+"iNeuron","Kinnex","3k-4.5k","FLAIR","SMR","E3","E31",0.442112894278868
+"iNeuron","Kinnex","3k-4.5k","FLAIR","SMR","E3","E32",0.481408504701206
+"iNeuron","Kinnex","3k-4.5k","FLAIR","SMR","E3","E33",0.435245774539546
+"iNeuron","Kinnex","3k-4.5k","FLAIR","SMR","isoB11","isoB111",0.330024894733801
+"iNeuron","Kinnex","3k-4.5k","FLAIR","SMR","isoB11","isoB112",0.450859301856783
+"iNeuron","Kinnex","3k-4.5k","FLAIR","SMR","isoB11","isoB113",0.421385117148542
+"iNeuron","Kinnex","3k-4.5k","FLAIR","TPM","E3","E31",0.655608312329024
+"iNeuron","Kinnex","3k-4.5k","FLAIR","TPM","E3","E32",0.657921928823122
+"iNeuron","Kinnex","3k-4.5k","FLAIR","TPM","E3","E33",0.650570003446146
+"iNeuron","Kinnex","3k-4.5k","FLAIR","TPM","isoB11","isoB111",0.627294646420394
+"iNeuron","Kinnex","3k-4.5k","FLAIR","TPM","isoB11","isoB112",0.66029473467005
+"iNeuron","Kinnex","3k-4.5k","FLAIR","TPM","isoB11","isoB113",0.638014642055373
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","CPM","E3","E31",0.706666222790738
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","CPM","E3","E32",0.712207438921312
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","CPM","E3","E33",0.697824321351066
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","CPM","isoB11","isoB111",0.687435663423795
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","CPM","isoB11","isoB112",0.714380881766547
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","CPM","isoB11","isoB113",0.69633472414961906
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","CQN","E3","E31",0.661896940864068
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","CQN","E3","E32",0.666442264032501
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","CQN","E3","E33",0.657364755249331
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","CQN","isoB11","isoB111",0.660270746192308
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","CQN","isoB11","isoB112",0.67530092223854
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","CQN","isoB11","isoB113",0.670835724750825
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","EDASeq","E3","E31",0.706366677499525
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","EDASeq","E3","E32",0.711914138544692
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","EDASeq","E3","E33",0.697706061838897
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","EDASeq","isoB11","isoB111",0.687304559820883
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","EDASeq","isoB11","isoB112",0.714292970953007
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","EDASeq","isoB11","isoB113",0.696295364795417
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","SMR","E3","E31",0.415675509256194
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","SMR","E3","E32",0.468179133725541
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","SMR","E3","E33",0.408158122968306
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","SMR","isoB11","isoB111",0.323440940951552
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","SMR","isoB11","isoB112",0.417827178511751
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","SMR","isoB11","isoB113",0.424188433837483
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","TPM","E3","E31",0.70452223667586
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","TPM","E3","E32",0.709805217333578
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","TPM","E3","E33",0.696282019559351
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","TPM","isoB11","isoB111",0.685927263519762
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","TPM","isoB11","isoB112",0.713148328542548
+"iNeuron","Kinnex","3k-4.5k","IsoQuant","TPM","isoB11","isoB113",0.695062435378922
+"iNeuron","Kinnex","3k-4.5k","Kallisto","CPM","E3","E31",0.684983356319043
+"iNeuron","Kinnex","3k-4.5k","Kallisto","CPM","E3","E32",0.679124015753584
+"iNeuron","Kinnex","3k-4.5k","Kallisto","CPM","E3","E33",0.669510115837676
+"iNeuron","Kinnex","3k-4.5k","Kallisto","CPM","isoB11","isoB111",0.655142451438792
+"iNeuron","Kinnex","3k-4.5k","Kallisto","CPM","isoB11","isoB112",0.681996262553918
+"iNeuron","Kinnex","3k-4.5k","Kallisto","CPM","isoB11","isoB113",0.672959598536185
+"iNeuron","Kinnex","3k-4.5k","Kallisto","CQN","E3","E31",0.697812042762191
+"iNeuron","Kinnex","3k-4.5k","Kallisto","CQN","E3","E32",0.693125993675128
+"iNeuron","Kinnex","3k-4.5k","Kallisto","CQN","E3","E33",0.689345919026079
+"iNeuron","Kinnex","3k-4.5k","Kallisto","CQN","isoB11","isoB111",0.675707529257536
+"iNeuron","Kinnex","3k-4.5k","Kallisto","CQN","isoB11","isoB112",0.694479940456637
+"iNeuron","Kinnex","3k-4.5k","Kallisto","CQN","isoB11","isoB113",0.692389598969053
+"iNeuron","Kinnex","3k-4.5k","Kallisto","EDASeq","E3","E31",0.685011515042561
+"iNeuron","Kinnex","3k-4.5k","Kallisto","EDASeq","E3","E32",0.679162091385644
+"iNeuron","Kinnex","3k-4.5k","Kallisto","EDASeq","E3","E33",0.669497842693383
+"iNeuron","Kinnex","3k-4.5k","Kallisto","EDASeq","isoB11","isoB111",0.655244841730807
+"iNeuron","Kinnex","3k-4.5k","Kallisto","EDASeq","isoB11","isoB112",0.682157075493476
+"iNeuron","Kinnex","3k-4.5k","Kallisto","EDASeq","isoB11","isoB113",0.673085354169577
+"iNeuron","Kinnex","3k-4.5k","Kallisto","SMR","E3","E31",0.446469198977952
+"iNeuron","Kinnex","3k-4.5k","Kallisto","SMR","E3","E32",0.471927002626467
+"iNeuron","Kinnex","3k-4.5k","Kallisto","SMR","E3","E33",0.421201902198389
+"iNeuron","Kinnex","3k-4.5k","Kallisto","SMR","isoB11","isoB111",0.323896651501995
+"iNeuron","Kinnex","3k-4.5k","Kallisto","SMR","isoB11","isoB112",0.424649448524767
+"iNeuron","Kinnex","3k-4.5k","Kallisto","SMR","isoB11","isoB113",0.424720177728392
+"iNeuron","Kinnex","3k-4.5k","Kallisto","TPM","E3","E31",0.684402373260032
+"iNeuron","Kinnex","3k-4.5k","Kallisto","TPM","E3","E32",0.678488698491098
+"iNeuron","Kinnex","3k-4.5k","Kallisto","TPM","E3","E33",0.669013740920134
+"iNeuron","Kinnex","3k-4.5k","Kallisto","TPM","isoB11","isoB111",0.654798574389244
+"iNeuron","Kinnex","3k-4.5k","Kallisto","TPM","isoB11","isoB112",0.682023761048772
+"iNeuron","Kinnex","3k-4.5k","Kallisto","TPM","isoB11","isoB113",0.672636929619045
+"iNeuron","Kinnex","3k-4.5k","Oarfish","CPM","E3","E31",0.717282697324821
+"iNeuron","Kinnex","3k-4.5k","Oarfish","CPM","E3","E32",0.717783125723896
+"iNeuron","Kinnex","3k-4.5k","Oarfish","CPM","E3","E33",0.699807983281156
+"iNeuron","Kinnex","3k-4.5k","Oarfish","CPM","isoB11","isoB111",0.68270810527381
+"iNeuron","Kinnex","3k-4.5k","Oarfish","CPM","isoB11","isoB112",0.705559577963943
+"iNeuron","Kinnex","3k-4.5k","Oarfish","CPM","isoB11","isoB113",0.70095574075274
+"iNeuron","Kinnex","3k-4.5k","Oarfish","CQN","E3","E31",0.722536561803849
+"iNeuron","Kinnex","3k-4.5k","Oarfish","CQN","E3","E32",0.721346295410821
+"iNeuron","Kinnex","3k-4.5k","Oarfish","CQN","E3","E33",0.70734832319269
+"iNeuron","Kinnex","3k-4.5k","Oarfish","CQN","isoB11","isoB111",0.694381656202138
+"iNeuron","Kinnex","3k-4.5k","Oarfish","CQN","isoB11","isoB112",0.710402570200319
+"iNeuron","Kinnex","3k-4.5k","Oarfish","CQN","isoB11","isoB113",0.712422327540457
+"iNeuron","Kinnex","3k-4.5k","Oarfish","EDASeq","E3","E31",0.717168919148226
+"iNeuron","Kinnex","3k-4.5k","Oarfish","EDASeq","E3","E32",0.717566380947495
+"iNeuron","Kinnex","3k-4.5k","Oarfish","EDASeq","E3","E33",0.699667741834171
+"iNeuron","Kinnex","3k-4.5k","Oarfish","EDASeq","isoB11","isoB111",0.682683865903292
+"iNeuron","Kinnex","3k-4.5k","Oarfish","EDASeq","isoB11","isoB112",0.705403573541069
+"iNeuron","Kinnex","3k-4.5k","Oarfish","EDASeq","isoB11","isoB113",0.700919223143557
+"iNeuron","Kinnex","3k-4.5k","Oarfish","SMR","E3","E31",0.536139802703943
+"iNeuron","Kinnex","3k-4.5k","Oarfish","SMR","E3","E32",0.567491188391726
+"iNeuron","Kinnex","3k-4.5k","Oarfish","SMR","E3","E33",0.50680577050542
+"iNeuron","Kinnex","3k-4.5k","Oarfish","SMR","isoB11","isoB111",0.400193923652047
+"iNeuron","Kinnex","3k-4.5k","Oarfish","SMR","isoB11","isoB112",0.496750582720198
+"iNeuron","Kinnex","3k-4.5k","Oarfish","SMR","isoB11","isoB113",0.501362446444817
+"iNeuron","Kinnex","3k-4.5k","Oarfish","TPM","E3","E31",0.716447122574336
+"iNeuron","Kinnex","3k-4.5k","Oarfish","TPM","E3","E32",0.716605724878278
+"iNeuron","Kinnex","3k-4.5k","Oarfish","TPM","E3","E33",0.69921532049673
+"iNeuron","Kinnex","3k-4.5k","Oarfish","TPM","isoB11","isoB111",0.682201270732629
+"iNeuron","Kinnex","3k-4.5k","Oarfish","TPM","isoB11","isoB112",0.705111384217098
+"iNeuron","Kinnex","3k-4.5k","Oarfish","TPM","isoB11","isoB113",0.700125698598293
+"iNeuron","Kinnex",">4.5k","Bambu","CPM","E3","E31",0.632520019611059
+"iNeuron","Kinnex",">4.5k","Bambu","CPM","E3","E32",0.608477796108602
+"iNeuron","Kinnex",">4.5k","Bambu","CPM","E3","E33",0.596834638952579
+"iNeuron","Kinnex",">4.5k","Bambu","CPM","isoB11","isoB111",0.554776761371467
+"iNeuron","Kinnex",">4.5k","Bambu","CPM","isoB11","isoB112",0.585575802818376
+"iNeuron","Kinnex",">4.5k","Bambu","CPM","isoB11","isoB113",0.584300855679302
+"iNeuron","Kinnex",">4.5k","Bambu","CQN","E3","E31",0.622455310874715
+"iNeuron","Kinnex",">4.5k","Bambu","CQN","E3","E32",0.601916208338549
+"iNeuron","Kinnex",">4.5k","Bambu","CQN","E3","E33",0.60158793871733
+"iNeuron","Kinnex",">4.5k","Bambu","CQN","isoB11","isoB111",0.57367123448784
+"iNeuron","Kinnex",">4.5k","Bambu","CQN","isoB11","isoB112",0.589235124816886
+"iNeuron","Kinnex",">4.5k","Bambu","CQN","isoB11","isoB113",0.594775813364991
+"iNeuron","Kinnex",">4.5k","Bambu","EDASeq","E3","E31",0.616190659441299
+"iNeuron","Kinnex",">4.5k","Bambu","EDASeq","E3","E32",0.604464892228758
+"iNeuron","Kinnex",">4.5k","Bambu","EDASeq","E3","E33",0.595724698038329
+"iNeuron","Kinnex",">4.5k","Bambu","EDASeq","isoB11","isoB111",0.567021196712835
+"iNeuron","Kinnex",">4.5k","Bambu","EDASeq","isoB11","isoB112",0.587027307864061
+"iNeuron","Kinnex",">4.5k","Bambu","EDASeq","isoB11","isoB113",0.587982776341234
+"iNeuron","Kinnex",">4.5k","Bambu","SMR","E3","E31",0.414234999502237
+"iNeuron","Kinnex",">4.5k","Bambu","SMR","E3","E32",0.40899369719237
+"iNeuron","Kinnex",">4.5k","Bambu","SMR","E3","E33",0.351091695298941
+"iNeuron","Kinnex",">4.5k","Bambu","SMR","isoB11","isoB111",0.218157846184247
+"iNeuron","Kinnex",">4.5k","Bambu","SMR","isoB11","isoB112",0.333656523339486
+"iNeuron","Kinnex",">4.5k","Bambu","SMR","isoB11","isoB113",0.338167680211772
+"iNeuron","Kinnex",">4.5k","Bambu","TPM","E3","E31",0.671162503170234
+"iNeuron","Kinnex",">4.5k","Bambu","TPM","E3","E32",0.659539950278218
+"iNeuron","Kinnex",">4.5k","Bambu","TPM","E3","E33",0.650183722166384
+"iNeuron","Kinnex",">4.5k","Bambu","TPM","isoB11","isoB111",0.614618912796176
+"iNeuron","Kinnex",">4.5k","Bambu","TPM","isoB11","isoB112",0.642736050312941
+"iNeuron","Kinnex",">4.5k","Bambu","TPM","isoB11","isoB113",0.639391575256226
+"iNeuron","Kinnex",">4.5k","FLAIR","CPM","E3","E31",0.541603067853049
+"iNeuron","Kinnex",">4.5k","FLAIR","CPM","E3","E32",0.530834689348599
+"iNeuron","Kinnex",">4.5k","FLAIR","CPM","E3","E33",0.528177660896559
+"iNeuron","Kinnex",">4.5k","FLAIR","CPM","isoB11","isoB111",0.506977284202393
+"iNeuron","Kinnex",">4.5k","FLAIR","CPM","isoB11","isoB112",0.537763329764222
+"iNeuron","Kinnex",">4.5k","FLAIR","CPM","isoB11","isoB113",0.519474223710611
+"iNeuron","Kinnex",">4.5k","FLAIR","CQN","E3","E31",0.526569228644371
+"iNeuron","Kinnex",">4.5k","FLAIR","CQN","E3","E32",0.518653431607492
+"iNeuron","Kinnex",">4.5k","FLAIR","CQN","E3","E33",0.526607834958653
+"iNeuron","Kinnex",">4.5k","FLAIR","CQN","isoB11","isoB111",0.521515341299391
+"iNeuron","Kinnex",">4.5k","FLAIR","CQN","isoB11","isoB112",0.537123796902434
+"iNeuron","Kinnex",">4.5k","FLAIR","CQN","isoB11","isoB113",0.527476531679563
+"iNeuron","Kinnex",">4.5k","FLAIR","EDASeq","E3","E31",0.552708695860826
+"iNeuron","Kinnex",">4.5k","FLAIR","EDASeq","E3","E32",0.544225300654092
+"iNeuron","Kinnex",">4.5k","FLAIR","EDASeq","E3","E33",0.541801162513997
+"iNeuron","Kinnex",">4.5k","FLAIR","EDASeq","isoB11","isoB111",0.521323114541322
+"iNeuron","Kinnex",">4.5k","FLAIR","EDASeq","isoB11","isoB112",0.55297867291638
+"iNeuron","Kinnex",">4.5k","FLAIR","EDASeq","isoB11","isoB113",0.53385553662473
+"iNeuron","Kinnex",">4.5k","FLAIR","SMR","E3","E31",0.315159250057144
+"iNeuron","Kinnex",">4.5k","FLAIR","SMR","E3","E32",0.310008282026265
+"iNeuron","Kinnex",">4.5k","FLAIR","SMR","E3","E33",0.280701594309317
+"iNeuron","Kinnex",">4.5k","FLAIR","SMR","isoB11","isoB111",0.213687456589963
+"iNeuron","Kinnex",">4.5k","FLAIR","SMR","isoB11","isoB112",0.301352611635213
+"iNeuron","Kinnex",">4.5k","FLAIR","SMR","isoB11","isoB113",0.282710043986961
+"iNeuron","Kinnex",">4.5k","FLAIR","TPM","E3","E31",0.563123616767755
+"iNeuron","Kinnex",">4.5k","FLAIR","TPM","E3","E32",0.553727422192205
+"iNeuron","Kinnex",">4.5k","FLAIR","TPM","E3","E33",0.552471510027539
+"iNeuron","Kinnex",">4.5k","FLAIR","TPM","isoB11","isoB111",0.530871143515814
+"iNeuron","Kinnex",">4.5k","FLAIR","TPM","isoB11","isoB112",0.562358576733912
+"iNeuron","Kinnex",">4.5k","FLAIR","TPM","isoB11","isoB113",0.542665390977108
+"iNeuron","Kinnex",">4.5k","IsoQuant","CPM","E3","E31",0.600830175385167
+"iNeuron","Kinnex",">4.5k","IsoQuant","CPM","E3","E32",0.595974978875551
+"iNeuron","Kinnex",">4.5k","IsoQuant","CPM","E3","E33",0.599000632903653
+"iNeuron","Kinnex",">4.5k","IsoQuant","CPM","isoB11","isoB111",0.557202557827824
+"iNeuron","Kinnex",">4.5k","IsoQuant","CPM","isoB11","isoB112",0.578052451825066
+"iNeuron","Kinnex",">4.5k","IsoQuant","CPM","isoB11","isoB113",0.571217091627134
+"iNeuron","Kinnex",">4.5k","IsoQuant","CQN","E3","E31",0.52557493816479794
+"iNeuron","Kinnex",">4.5k","IsoQuant","CQN","E3","E32",0.525187134243111
+"iNeuron","Kinnex",">4.5k","IsoQuant","CQN","E3","E33",0.534371713894311
+"iNeuron","Kinnex",">4.5k","IsoQuant","CQN","isoB11","isoB111",0.508721304888467
+"iNeuron","Kinnex",">4.5k","IsoQuant","CQN","isoB11","isoB112",0.517268049014973
+"iNeuron","Kinnex",">4.5k","IsoQuant","CQN","isoB11","isoB113",0.518461712331879
+"iNeuron","Kinnex",">4.5k","IsoQuant","EDASeq","E3","E31",0.60557219374004
+"iNeuron","Kinnex",">4.5k","IsoQuant","EDASeq","E3","E32",0.601942324327076
+"iNeuron","Kinnex",">4.5k","IsoQuant","EDASeq","E3","E33",0.606339354095483
+"iNeuron","Kinnex",">4.5k","IsoQuant","EDASeq","isoB11","isoB111",0.57137823973883906
+"iNeuron","Kinnex",">4.5k","IsoQuant","EDASeq","isoB11","isoB112",0.5903765560709
+"iNeuron","Kinnex",">4.5k","IsoQuant","EDASeq","isoB11","isoB113",0.583227436914536
+"iNeuron","Kinnex",">4.5k","IsoQuant","SMR","E3","E31",0.287376550342042
+"iNeuron","Kinnex",">4.5k","IsoQuant","SMR","E3","E32",0.28313461408665
+"iNeuron","Kinnex",">4.5k","IsoQuant","SMR","E3","E33",0.273514992713053
+"iNeuron","Kinnex",">4.5k","IsoQuant","SMR","isoB11","isoB111",0.19590113204179
+"iNeuron","Kinnex",">4.5k","IsoQuant","SMR","isoB11","isoB112",0.259375311114065
+"iNeuron","Kinnex",">4.5k","IsoQuant","SMR","isoB11","isoB113",0.264544402124777
+"iNeuron","Kinnex",">4.5k","IsoQuant","TPM","E3","E31",0.614663414400891
+"iNeuron","Kinnex",">4.5k","IsoQuant","TPM","E3","E32",0.611693624276533
+"iNeuron","Kinnex",">4.5k","IsoQuant","TPM","E3","E33",0.614699390488956
+"iNeuron","Kinnex",">4.5k","IsoQuant","TPM","isoB11","isoB111",0.580647037312558
+"iNeuron","Kinnex",">4.5k","IsoQuant","TPM","isoB11","isoB112",0.600780882780665
+"iNeuron","Kinnex",">4.5k","IsoQuant","TPM","isoB11","isoB113",0.592781763456077
+"iNeuron","Kinnex",">4.5k","Kallisto","CPM","E3","E31",0.633646283080384
+"iNeuron","Kinnex",">4.5k","Kallisto","CPM","E3","E32",0.590754961655532
+"iNeuron","Kinnex",">4.5k","Kallisto","CPM","E3","E33",0.586529512540501
+"iNeuron","Kinnex",">4.5k","Kallisto","CPM","isoB11","isoB111",0.557019358137952
+"iNeuron","Kinnex",">4.5k","Kallisto","CPM","isoB11","isoB112",0.590873750862316
+"iNeuron","Kinnex",">4.5k","Kallisto","CPM","isoB11","isoB113",0.579115011917256
+"iNeuron","Kinnex",">4.5k","Kallisto","CQN","E3","E31",0.624431841594728
+"iNeuron","Kinnex",">4.5k","Kallisto","CQN","E3","E32",0.583295998473273
+"iNeuron","Kinnex",">4.5k","Kallisto","CQN","E3","E33",0.588649013023761
+"iNeuron","Kinnex",">4.5k","Kallisto","CQN","isoB11","isoB111",0.5710878807155
+"iNeuron","Kinnex",">4.5k","Kallisto","CQN","isoB11","isoB112",0.590406114654689
+"iNeuron","Kinnex",">4.5k","Kallisto","CQN","isoB11","isoB113",0.585284097296588
+"iNeuron","Kinnex",">4.5k","Kallisto","EDASeq","E3","E31",0.614640026796473
+"iNeuron","Kinnex",">4.5k","Kallisto","EDASeq","E3","E32",0.579957449440809
+"iNeuron","Kinnex",">4.5k","Kallisto","EDASeq","E3","E33",0.582077686390985
+"iNeuron","Kinnex",">4.5k","Kallisto","EDASeq","isoB11","isoB111",0.562148768614039
+"iNeuron","Kinnex",">4.5k","Kallisto","EDASeq","isoB11","isoB112",0.584561118891604
+"iNeuron","Kinnex",">4.5k","Kallisto","EDASeq","isoB11","isoB113",0.576333060766247
+"iNeuron","Kinnex",">4.5k","Kallisto","SMR","E3","E31",0.416185765256083
+"iNeuron","Kinnex",">4.5k","Kallisto","SMR","E3","E32",0.381913990145838
+"iNeuron","Kinnex",">4.5k","Kallisto","SMR","E3","E33",0.320073887257129
+"iNeuron","Kinnex",">4.5k","Kallisto","SMR","isoB11","isoB111",0.220456082695173
+"iNeuron","Kinnex",">4.5k","Kallisto","SMR","isoB11","isoB112",0.328889880455113
+"iNeuron","Kinnex",">4.5k","Kallisto","SMR","isoB11","isoB113",0.324891703935164
+"iNeuron","Kinnex",">4.5k","Kallisto","TPM","E3","E31",0.666942010052336
+"iNeuron","Kinnex",">4.5k","Kallisto","TPM","E3","E32",0.636557177501121
+"iNeuron","Kinnex",">4.5k","Kallisto","TPM","E3","E33",0.634784724112592
+"iNeuron","Kinnex",">4.5k","Kallisto","TPM","isoB11","isoB111",0.611648693706021
+"iNeuron","Kinnex",">4.5k","Kallisto","TPM","isoB11","isoB112",0.64127640691723
+"iNeuron","Kinnex",">4.5k","Kallisto","TPM","isoB11","isoB113",0.628292422702507
+"iNeuron","Kinnex",">4.5k","Oarfish","CPM","E3","E31",0.660502500067636
+"iNeuron","Kinnex",">4.5k","Oarfish","CPM","E3","E32",0.633703387684336
+"iNeuron","Kinnex",">4.5k","Oarfish","CPM","E3","E33",0.616122914494818
+"iNeuron","Kinnex",">4.5k","Oarfish","CPM","isoB11","isoB111",0.575865668338129
+"iNeuron","Kinnex",">4.5k","Oarfish","CPM","isoB11","isoB112",0.616101205503322
+"iNeuron","Kinnex",">4.5k","Oarfish","CPM","isoB11","isoB113",0.614079059966098
+"iNeuron","Kinnex",">4.5k","Oarfish","CQN","E3","E31",0.643837618141722
+"iNeuron","Kinnex",">4.5k","Oarfish","CQN","E3","E32",0.616666635275971
+"iNeuron","Kinnex",">4.5k","Oarfish","CQN","E3","E33",0.608928298310224
+"iNeuron","Kinnex",">4.5k","Oarfish","CQN","isoB11","isoB111",0.58931676101377
+"iNeuron","Kinnex",">4.5k","Oarfish","CQN","isoB11","isoB112",0.611450259067961
+"iNeuron","Kinnex",">4.5k","Oarfish","CQN","isoB11","isoB113",0.616719468837745
+"iNeuron","Kinnex",">4.5k","Oarfish","EDASeq","E3","E31",0.647214960085127
+"iNeuron","Kinnex",">4.5k","Oarfish","EDASeq","E3","E32",0.628723766513935
+"iNeuron","Kinnex",">4.5k","Oarfish","EDASeq","E3","E33",0.61596924021878
+"iNeuron","Kinnex",">4.5k","Oarfish","EDASeq","isoB11","isoB111",0.585351322034784
+"iNeuron","Kinnex",">4.5k","Oarfish","EDASeq","isoB11","isoB112",0.617122069810257
+"iNeuron","Kinnex",">4.5k","Oarfish","EDASeq","isoB11","isoB113",0.616640723483063
+"iNeuron","Kinnex",">4.5k","Oarfish","SMR","E3","E31",0.467580491781651
+"iNeuron","Kinnex",">4.5k","Oarfish","SMR","E3","E32",0.461394021606327
+"iNeuron","Kinnex",">4.5k","Oarfish","SMR","E3","E33",0.403114153441387
+"iNeuron","Kinnex",">4.5k","Oarfish","SMR","isoB11","isoB111",0.257842664544148
+"iNeuron","Kinnex",">4.5k","Oarfish","SMR","isoB11","isoB112",0.386559884353423
+"iNeuron","Kinnex",">4.5k","Oarfish","SMR","isoB11","isoB113",0.397717619078086
+"iNeuron","Kinnex",">4.5k","Oarfish","TPM","E3","E31",0.696532610477831
+"iNeuron","Kinnex",">4.5k","Oarfish","TPM","E3","E32",0.680504878487284
+"iNeuron","Kinnex",">4.5k","Oarfish","TPM","E3","E33",0.6656915422882
+"iNeuron","Kinnex",">4.5k","Oarfish","TPM","isoB11","isoB111",0.633504982007468
+"iNeuron","Kinnex",">4.5k","Oarfish","TPM","isoB11","isoB112",0.668962039367262
+"iNeuron","Kinnex",">4.5k","Oarfish","TPM","isoB11","isoB113",0.664635136320897
+"iNeuron","ONT cDNA","0-1.5k","Bambu","CPM","E3","E31",0.753583894117238
+"iNeuron","ONT cDNA","0-1.5k","Bambu","CPM","E3","E32",0.755170991801058
+"iNeuron","ONT cDNA","0-1.5k","Bambu","CPM","E3","E33",0.751057408337943
+"iNeuron","ONT cDNA","0-1.5k","Bambu","CPM","isoB11","isoB111",0.732112182572817
+"iNeuron","ONT cDNA","0-1.5k","Bambu","CPM","isoB11","isoB112",0.755679179685882
+"iNeuron","ONT cDNA","0-1.5k","Bambu","CPM","isoB11","isoB113",0.744529687590951
+"iNeuron","ONT cDNA","0-1.5k","Bambu","CQN","E3","E31",0.755361517193805
+"iNeuron","ONT cDNA","0-1.5k","Bambu","CQN","E3","E32",0.759019779415644
+"iNeuron","ONT cDNA","0-1.5k","Bambu","CQN","E3","E33",0.754000651165684
+"iNeuron","ONT cDNA","0-1.5k","Bambu","CQN","isoB11","isoB111",0.737290166415547
+"iNeuron","ONT cDNA","0-1.5k","Bambu","CQN","isoB11","isoB112",0.761032147523124
+"iNeuron","ONT cDNA","0-1.5k","Bambu","CQN","isoB11","isoB113",0.747827470686949
+"iNeuron","ONT cDNA","0-1.5k","Bambu","EDASeq","E3","E31",0.755991009152831
+"iNeuron","ONT cDNA","0-1.5k","Bambu","EDASeq","E3","E32",0.75746674810566506
+"iNeuron","ONT cDNA","0-1.5k","Bambu","EDASeq","E3","E33",0.753714024443504
+"iNeuron","ONT cDNA","0-1.5k","Bambu","EDASeq","isoB11","isoB111",0.736162753697548
+"iNeuron","ONT cDNA","0-1.5k","Bambu","EDASeq","isoB11","isoB112",0.759013550010404
+"iNeuron","ONT cDNA","0-1.5k","Bambu","EDASeq","isoB11","isoB113",0.747736641406412
+"iNeuron","ONT cDNA","0-1.5k","Bambu","SMR","E3","E31",0.652491925535361
+"iNeuron","ONT cDNA","0-1.5k","Bambu","SMR","E3","E32",0.668870632556199
+"iNeuron","ONT cDNA","0-1.5k","Bambu","SMR","E3","E33",0.647408994281416
+"iNeuron","ONT cDNA","0-1.5k","Bambu","SMR","isoB11","isoB111",0.562437123268954
+"iNeuron","ONT cDNA","0-1.5k","Bambu","SMR","isoB11","isoB112",0.612372459923045
+"iNeuron","ONT cDNA","0-1.5k","Bambu","SMR","isoB11","isoB113",0.609194650920827
+"iNeuron","ONT cDNA","0-1.5k","Bambu","TPM","E3","E31",0.741071959246001
+"iNeuron","ONT cDNA","0-1.5k","Bambu","TPM","E3","E32",0.743981428510513
+"iNeuron","ONT cDNA","0-1.5k","Bambu","TPM","E3","E33",0.738653636891536
+"iNeuron","ONT cDNA","0-1.5k","Bambu","TPM","isoB11","isoB111",0.720332847917869
+"iNeuron","ONT cDNA","0-1.5k","Bambu","TPM","isoB11","isoB112",0.742214844423215
+"iNeuron","ONT cDNA","0-1.5k","Bambu","TPM","isoB11","isoB113",0.729731093430316
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","CPM","E3","E31",0.69459824710879
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","CPM","E3","E32",0.69569242960417
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","CPM","E3","E33",0.688663872162808
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","CPM","isoB11","isoB111",0.676302046166795
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","CPM","isoB11","isoB112",0.696212881746157
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","CPM","isoB11","isoB113",0.691153511457088
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","CQN","E3","E31",0.690132233029107
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","CQN","E3","E32",0.691354176279576
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","CQN","E3","E33",0.683731956940887
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","CQN","isoB11","isoB111",0.66503974832476
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","CQN","isoB11","isoB112",0.686794847473499
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","CQN","isoB11","isoB113",0.681918218214952
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","EDASeq","E3","E31",0.69527308759773
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","EDASeq","E3","E32",0.696283018527565
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","EDASeq","E3","E33",0.689194067900383
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","EDASeq","isoB11","isoB111",0.67713103683021
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","EDASeq","isoB11","isoB112",0.696553072291979
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","EDASeq","isoB11","isoB113",0.69152983986851
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","SMR","E3","E31",0.590584894754724
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","SMR","E3","E32",0.603539065090673
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","SMR","E3","E33",0.572330645942717
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","SMR","isoB11","isoB111",0.510329605616044
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","SMR","isoB11","isoB112",0.554984391644703
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","SMR","isoB11","isoB113",0.561848045209533
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","TPM","E3","E31",0.687621068193658
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","TPM","E3","E32",0.689841556115423
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","TPM","E3","E33",0.681665038822032
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","TPM","isoB11","isoB111",0.670232421841852
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","TPM","isoB11","isoB112",0.687504578256616
+"iNeuron","ONT cDNA","0-1.5k","FLAIR","TPM","isoB11","isoB113",0.68151734782082
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","CPM","E3","E31",0.727312758356139
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","CPM","E3","E32",0.732128425277976
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","CPM","E3","E33",0.727767492506159
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","CPM","isoB11","isoB111",0.71558572960682
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","CPM","isoB11","isoB112",0.734957571261943
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","CPM","isoB11","isoB113",0.728984607566402
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","CQN","E3","E31",0.710862943884101
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","CQN","E3","E32",0.719115508585939
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","CQN","E3","E33",0.713978306192943
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","CQN","isoB11","isoB111",0.696025175178369
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","CQN","isoB11","isoB112",0.714199869587279
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","CQN","isoB11","isoB113",0.704286542419861
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","EDASeq","E3","E31",0.72749929772763
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","EDASeq","E3","E32",0.732447461106947
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","EDASeq","E3","E33",0.728785586023906
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","EDASeq","isoB11","isoB111",0.716857012541759
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","EDASeq","isoB11","isoB112",0.736736970219806
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","EDASeq","isoB11","isoB113",0.729958061964553
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","SMR","E3","E31",0.566475936766516
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","SMR","E3","E32",0.582841261239449
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","SMR","E3","E33",0.554364415882037
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","SMR","isoB11","isoB111",0.474213266768337
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","SMR","isoB11","isoB112",0.503557743066068
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","SMR","isoB11","isoB113",0.523392056069514
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","TPM","E3","E31",0.707630144037065
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","TPM","E3","E32",0.712229849974502
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","TPM","E3","E33",0.707019623499563
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","TPM","isoB11","isoB111",0.697922940690037
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","TPM","isoB11","isoB112",0.714009529572971
+"iNeuron","ONT cDNA","0-1.5k","IsoQuant","TPM","isoB11","isoB113",0.706939256220442
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","CPM","E3","E31",0.771655583492896
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","CPM","E3","E32",0.772604756598933
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","CPM","E3","E33",0.765998374435431
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","CPM","isoB11","isoB111",0.750748969637581
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","CPM","isoB11","isoB112",0.765900399239573
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","CPM","isoB11","isoB113",0.756599850362565
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","CQN","E3","E31",0.776282893853997
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","CQN","E3","E32",0.777900542358137
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","CQN","E3","E33",0.770705379033025
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","CQN","isoB11","isoB111",0.756484730182142
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","CQN","isoB11","isoB112",0.770167779157239
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","CQN","isoB11","isoB113",0.761688891006197
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","EDASeq","E3","E31",0.775623716114673
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","EDASeq","E3","E32",0.776101137012075
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","EDASeq","E3","E33",0.769047415742772
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","EDASeq","isoB11","isoB111",0.75677128710343
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","EDASeq","isoB11","isoB112",0.769304884783662
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","EDASeq","isoB11","isoB113",0.760573957577451
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","SMR","E3","E31",0.686478340019325
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","SMR","E3","E32",0.691705077805757
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","SMR","E3","E33",0.66621506865572
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","SMR","isoB11","isoB111",0.594762127807889
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","SMR","isoB11","isoB112",0.636607966846581
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","SMR","isoB11","isoB113",0.633621074521177
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","TPM","E3","E31",0.764971730838556
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","TPM","E3","E32",0.765996459597516
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","TPM","E3","E33",0.75727628899288
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","TPM","isoB11","isoB111",0.744244579168714
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","TPM","isoB11","isoB112",0.755953887696572
+"iNeuron","ONT cDNA","0-1.5k","Kallisto","TPM","isoB11","isoB113",0.74754215559455806
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","CPM","E3","E31",0.760634831078954
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","CPM","E3","E32",0.768327900806973
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","CPM","E3","E33",0.760834059097452
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","CPM","isoB11","isoB111",0.738444798687617
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","CPM","isoB11","isoB112",0.75742629077314
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","CPM","isoB11","isoB113",0.752071347516483
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","CQN","E3","E31",0.763388594970915
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","CQN","E3","E32",0.770336254937011
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","CQN","E3","E33",0.762493255772741
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","CQN","isoB11","isoB111",0.742518061546126
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","CQN","isoB11","isoB112",0.760116594890862
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","CQN","isoB11","isoB113",0.754125118781933
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","EDASeq","E3","E31",0.763789734090889
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","EDASeq","E3","E32",0.770849895635857
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","EDASeq","E3","E33",0.763617861001422
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","EDASeq","isoB11","isoB111",0.742978873024281
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","EDASeq","isoB11","isoB112",0.760585269671691
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","EDASeq","isoB11","isoB113",0.755076784156501
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","SMR","E3","E31",0.663837511094128
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","SMR","E3","E32",0.686167839517636
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","SMR","E3","E33",0.652659494643219
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","SMR","isoB11","isoB111",0.571286831044306
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","SMR","isoB11","isoB112",0.620403890041231
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","SMR","isoB11","isoB113",0.626274744548256
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","TPM","E3","E31",0.753304416591034
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","TPM","E3","E32",0.760308241198861
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","TPM","E3","E33",0.752120666606682
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","TPM","isoB11","isoB111",0.73211015237408
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","TPM","isoB11","isoB112",0.748205955864563
+"iNeuron","ONT cDNA","0-1.5k","Oarfish","TPM","isoB11","isoB113",0.742689559606497
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","CPM","E3","E31",0.715251060529181
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","CPM","E3","E32",0.711165314422583
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","CPM","E3","E33",0.706869704603568
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","CPM","isoB11","isoB111",0.697264089570376
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","CPM","isoB11","isoB112",0.701990573579677
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","CPM","isoB11","isoB113",0.7050010035736
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","CQN","E3","E31",0.723916993172724
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","CQN","E3","E32",0.723096192951053
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","CQN","E3","E33",0.719289398118823
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","CQN","isoB11","isoB111",0.70513060918932
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","CQN","isoB11","isoB112",0.711632880908154
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","CQN","isoB11","isoB113",0.715419369837032
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","EDASeq","E3","E31",0.71826209268609
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","EDASeq","E3","E32",0.713965212977044
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","EDASeq","E3","E33",0.710017775743536
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","EDASeq","isoB11","isoB111",0.700498948257664
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","EDASeq","isoB11","isoB112",0.705110802731231
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","EDASeq","isoB11","isoB113",0.708439503712015
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","SMR","E3","E31",0.584538614220979
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","SMR","E3","E32",0.597548844523252
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","SMR","E3","E33",0.559615487092729
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","SMR","isoB11","isoB111",0.461743103164006
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","SMR","isoB11","isoB112",0.519902515658443
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","SMR","isoB11","isoB113",0.545468684247983
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","TPM","E3","E31",0.704734475012875
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","TPM","E3","E32",0.700864249920255
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","TPM","E3","E33",0.696243412019597
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","TPM","isoB11","isoB111",0.686594226948521
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","TPM","isoB11","isoB112",0.691379773254603
+"iNeuron","ONT cDNA","1.5k-3k","Bambu","TPM","isoB11","isoB113",0.693923757293884
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","CPM","E3","E31",0.666354717119318
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","CPM","E3","E32",0.665033279104096
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","CPM","E3","E33",0.659213106261291
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","CPM","isoB11","isoB111",0.660173810996026
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","CPM","isoB11","isoB112",0.659090747655189
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","CPM","isoB11","isoB113",0.660683911114603
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","CQN","E3","E31",0.661720336108539
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","CQN","E3","E32",0.661065306079189
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","CQN","E3","E33",0.656973969364621
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","CQN","isoB11","isoB111",0.643916456565343
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","CQN","isoB11","isoB112",0.649573728484232
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","CQN","isoB11","isoB113",0.652456125709042
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","EDASeq","E3","E31",0.664873559778911
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","EDASeq","E3","E32",0.663682103550024
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","EDASeq","E3","E33",0.658156462553223
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","EDASeq","isoB11","isoB111",0.65864916055362
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","EDASeq","isoB11","isoB112",0.658081358722376
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","EDASeq","isoB11","isoB113",0.659572699187515
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","SMR","E3","E31",0.524406048549897
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","SMR","E3","E32",0.541891763866955
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","SMR","E3","E33",0.502974751295117
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","SMR","isoB11","isoB111",0.441037618098848
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","SMR","isoB11","isoB112",0.473961064846785
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","SMR","isoB11","isoB113",0.497496535591941
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","TPM","E3","E31",0.655167404983478
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","TPM","E3","E32",0.654341792122025
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","TPM","E3","E33",0.647772056922917
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","TPM","isoB11","isoB111",0.648533156506383
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","TPM","isoB11","isoB112",0.647072204954701
+"iNeuron","ONT cDNA","1.5k-3k","FLAIR","TPM","isoB11","isoB113",0.648099433027569
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","CPM","E3","E31",0.702768780415262
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","CPM","E3","E32",0.697835168824285
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","CPM","E3","E33",0.698116766509921
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","CPM","isoB11","isoB111",0.68524970055175
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","CPM","isoB11","isoB112",0.687708420803285
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","CPM","isoB11","isoB113",0.685717119533299
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","CQN","E3","E31",0.688607388237619
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","CQN","E3","E32",0.685999311175405
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","CQN","E3","E33",0.686568201114168
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","CQN","isoB11","isoB111",0.668413533038558
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","CQN","isoB11","isoB112",0.675358498581135
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","CQN","isoB11","isoB113",0.67408890732729
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","EDASeq","E3","E31",0.708626553806207
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","EDASeq","E3","E32",0.703208249889104
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","EDASeq","E3","E33",0.705330870207789
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","EDASeq","isoB11","isoB111",0.690791313492351
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","EDASeq","isoB11","isoB112",0.69426021077308
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","EDASeq","isoB11","isoB113",0.692675928804502
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","SMR","E3","E31",0.522478250120486
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","SMR","E3","E32",0.535082403803393
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","SMR","E3","E33",0.501670021900275
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","SMR","isoB11","isoB111",0.403127261190323
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","SMR","isoB11","isoB112",0.457619485651562
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","SMR","isoB11","isoB113",0.467841127836183
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","TPM","E3","E31",0.683859820318803
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","TPM","E3","E32",0.679434534156812
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","TPM","E3","E33",0.677737552158277
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","TPM","isoB11","isoB111",0.667462093473049
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","TPM","isoB11","isoB112",0.669116910216302
+"iNeuron","ONT cDNA","1.5k-3k","IsoQuant","TPM","isoB11","isoB113",0.666459737520068
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","CPM","E3","E31",0.72801862181954
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","CPM","E3","E32",0.726684791034497
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","CPM","E3","E33",0.725045127656134
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","CPM","isoB11","isoB111",0.704084493157362
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","CPM","isoB11","isoB112",0.718178699657961
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","CPM","isoB11","isoB113",0.720518210749101
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","CQN","E3","E31",0.735552601858785
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","CQN","E3","E32",0.734442824355202
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","CQN","E3","E33",0.73243899153734
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","CQN","isoB11","isoB111",0.709134871693613
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","CQN","isoB11","isoB112",0.724744080625573
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","CQN","isoB11","isoB113",0.726369413920832
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","EDASeq","E3","E31",0.730481103817971
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","EDASeq","E3","E32",0.728981692285979
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","EDASeq","E3","E33",0.727674518119129
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","EDASeq","isoB11","isoB111",0.70664276681735
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","EDASeq","isoB11","isoB112",0.720973387102836
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","EDASeq","isoB11","isoB113",0.723609832025582
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","SMR","E3","E31",0.600556420376244
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","SMR","E3","E32",0.622481375593726
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","SMR","E3","E33",0.591634205812288
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","SMR","isoB11","isoB111",0.47455864395033
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","SMR","isoB11","isoB112",0.539101277994222
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","SMR","isoB11","isoB113",0.561990113282784
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","TPM","E3","E31",0.717315168150301
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","TPM","E3","E32",0.716268322458273
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","TPM","E3","E33",0.714180891740309
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","TPM","isoB11","isoB111",0.693473470599906
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","TPM","isoB11","isoB112",0.707200295742424
+"iNeuron","ONT cDNA","1.5k-3k","Kallisto","TPM","isoB11","isoB113",0.709063055628618
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","CPM","E3","E31",0.716464847079917
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","CPM","E3","E32",0.715025850162549
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","CPM","E3","E33",0.710239980779354
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","CPM","isoB11","isoB111",0.695801007845147
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","CPM","isoB11","isoB112",0.706496729184738
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","CPM","isoB11","isoB113",0.706928418839905
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","CQN","E3","E31",0.725036331044606
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","CQN","E3","E32",0.724483568666966
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","CQN","E3","E33",0.720312797159943
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","CQN","isoB11","isoB111",0.701706152545501
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","CQN","isoB11","isoB112",0.714143984386062
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","CQN","isoB11","isoB113",0.714605306147937
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","EDASeq","E3","E31",0.719166739169213
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","EDASeq","E3","E32",0.717464915926924
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","EDASeq","E3","E33",0.713130132997785
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","EDASeq","isoB11","isoB111",0.69853169573844
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","EDASeq","isoB11","isoB112",0.709390971947899
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","EDASeq","isoB11","isoB113",0.709974996213761
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","SMR","E3","E31",0.597667593921718
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","SMR","E3","E32",0.621066433662331
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","SMR","E3","E33",0.585598220517388
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","SMR","isoB11","isoB111",0.486266595648327
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","SMR","isoB11","isoB112",0.549130439542948
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","SMR","isoB11","isoB113",0.567265376921723
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","TPM","E3","E31",0.70564487669082
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","TPM","E3","E32",0.704496746576552
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","TPM","E3","E33",0.699108663360776
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","TPM","isoB11","isoB111",0.685100812827029
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","TPM","isoB11","isoB112",0.695456819495893
+"iNeuron","ONT cDNA","1.5k-3k","Oarfish","TPM","isoB11","isoB113",0.695755664538223
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","CPM","E3","E31",0.643014164955422
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","CPM","E3","E32",0.64382118488084
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","CPM","E3","E33",0.646890970931594
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","CPM","isoB11","isoB111",0.632697045235358
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","CPM","isoB11","isoB112",0.639999889205389
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","CPM","isoB11","isoB113",0.638612941925479
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","CQN","E3","E31",0.64929201672609
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","CQN","E3","E32",0.653860851748172
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","CQN","E3","E33",0.656330145071908
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","CQN","isoB11","isoB111",0.636473044501497
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","CQN","isoB11","isoB112",0.64617027195713606
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","CQN","isoB11","isoB113",0.644955230374852
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","EDASeq","E3","E31",0.643241549950448
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","EDASeq","E3","E32",0.644363973896135
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","EDASeq","E3","E33",0.647139647360585
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","EDASeq","isoB11","isoB111",0.633155118854877
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","EDASeq","isoB11","isoB112",0.640056343840243
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","EDASeq","isoB11","isoB113",0.638840402342771
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","SMR","E3","E31",0.44533013740752
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","SMR","E3","E32",0.476166585516158
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","SMR","E3","E33",0.450707745682631
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","SMR","isoB11","isoB111",0.334497205699736
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","SMR","isoB11","isoB112",0.40936696655258
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","SMR","isoB11","isoB113",0.427244639862281
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","TPM","E3","E31",0.639706498996608
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","TPM","E3","E32",0.639859754586396
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","TPM","E3","E33",0.643679031817491
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","TPM","isoB11","isoB111",0.629057723358814
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","TPM","isoB11","isoB112",0.637189042451666
+"iNeuron","ONT cDNA","3k-4.5k","Bambu","TPM","isoB11","isoB113",0.635364656242875
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","CPM","E3","E31",0.555107545636409
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","CPM","E3","E32",0.554040508431713
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","CPM","E3","E33",0.53274429534992
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","CPM","isoB11","isoB111",0.55287848644317406
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","CPM","isoB11","isoB112",0.534514456676004
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","CPM","isoB11","isoB113",0.533702169492696
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","CQN","E3","E31",0.54353650888848
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","CQN","E3","E32",0.540471699295168
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","CQN","E3","E33",0.524705061837542
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","CQN","isoB11","isoB111",0.534635016804917
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","CQN","isoB11","isoB112",0.532202677631193
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","CQN","isoB11","isoB113",0.531001319793102
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","EDASeq","E3","E31",0.553357416043865
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","EDASeq","E3","E32",0.55226261698151
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","EDASeq","E3","E33",0.53112786355869
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","EDASeq","isoB11","isoB111",0.55133580419647
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","EDASeq","isoB11","isoB112",0.533157870364681
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","EDASeq","isoB11","isoB113",0.532122281653886
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","SMR","E3","E31",0.362368267728009
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","SMR","E3","E32",0.367647158400989
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","SMR","E3","E33",0.317329968664717
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","SMR","isoB11","isoB111",0.289778876834557
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","SMR","isoB11","isoB112",0.318003441579608
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","SMR","isoB11","isoB113",0.33558819393347
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","TPM","E3","E31",0.548855369831893
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","TPM","E3","E32",0.547774147966897
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","TPM","E3","E33",0.526861873141559
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","TPM","isoB11","isoB111",0.546674355343225
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","TPM","isoB11","isoB112",0.529116224166416
+"iNeuron","ONT cDNA","3k-4.5k","FLAIR","TPM","isoB11","isoB113",0.52753255375919
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","CPM","E3","E31",0.621749125117789
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","CPM","E3","E32",0.626580274779867
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","CPM","E3","E33",0.614122644940706
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","CPM","isoB11","isoB111",0.616801840246658
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","CPM","isoB11","isoB112",0.615128587744243
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","CPM","isoB11","isoB113",0.608279040972148
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","CQN","E3","E31",0.598565593893066
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","CQN","E3","E32",0.604940936285479
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","CQN","E3","E33",0.59358362720652
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","CQN","isoB11","isoB111",0.597673606602451
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","CQN","isoB11","isoB112",0.599046520283932
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","CQN","isoB11","isoB113",0.595415490713948
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","EDASeq","E3","E31",0.623285116520437
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","EDASeq","E3","E32",0.62784601451856
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","EDASeq","E3","E33",0.615816003082353
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","EDASeq","isoB11","isoB111",0.61745690333121
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","EDASeq","isoB11","isoB112",0.616122893463268
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","EDASeq","isoB11","isoB113",0.609356458379009
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","SMR","E3","E31",0.340823568023976
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","SMR","E3","E32",0.371268379444683
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","SMR","E3","E33",0.329689968179896
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","SMR","isoB11","isoB111",0.253425429836525
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","SMR","isoB11","isoB112",0.316220022172887
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","SMR","isoB11","isoB113",0.324478246887196
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","TPM","E3","E31",0.611463621599282
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","TPM","E3","E32",0.617267991380057
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","TPM","E3","E33",0.604421416060507
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","TPM","isoB11","isoB111",0.608329147578234
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","TPM","isoB11","isoB112",0.607358188903077
+"iNeuron","ONT cDNA","3k-4.5k","IsoQuant","TPM","isoB11","isoB113",0.599523242403433
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","CPM","E3","E31",0.697087568295044
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","CPM","E3","E32",0.695730210074406
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","CPM","E3","E33",0.698611112169173
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","CPM","isoB11","isoB111",0.686162317547665
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","CPM","isoB11","isoB112",0.690120791460663
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","CPM","isoB11","isoB113",0.692204581198189
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","CQN","E3","E31",0.701189276001482
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","CQN","E3","E32",0.701106563593652
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","CQN","E3","E33",0.704192307465766
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","CQN","isoB11","isoB111",0.682143747688792
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","CQN","isoB11","isoB112",0.688186772716394
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","CQN","isoB11","isoB113",0.687166607534407
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","EDASeq","E3","E31",0.697378916367291
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","EDASeq","E3","E32",0.696081309021251
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","EDASeq","E3","E33",0.698830564643134
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","EDASeq","isoB11","isoB111",0.68637519811273
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","EDASeq","isoB11","isoB112",0.690150797770061
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","EDASeq","isoB11","isoB113",0.692398925826221
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","SMR","E3","E31",0.485777643921542
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","SMR","E3","E32",0.51437969822859
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","SMR","E3","E33",0.49893614556825
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","SMR","isoB11","isoB111",0.393661412207791
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","SMR","isoB11","isoB112",0.449708819554518
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","SMR","isoB11","isoB113",0.480955143932961
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","TPM","E3","E31",0.693524558718086
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","TPM","E3","E32",0.69158544264157
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","TPM","E3","E33",0.695136699223211
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","TPM","isoB11","isoB111",0.682869925931328
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","TPM","isoB11","isoB112",0.68738332318383
+"iNeuron","ONT cDNA","3k-4.5k","Kallisto","TPM","isoB11","isoB113",0.689135742629032
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","CPM","E3","E31",0.660830767279506
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","CPM","E3","E32",0.659824790397616
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","CPM","E3","E33",0.654683564298553
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","CPM","isoB11","isoB111",0.646621030075796
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","CPM","isoB11","isoB112",0.650221242734972
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","CPM","isoB11","isoB113",0.64705947470643
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","CQN","E3","E31",0.667362014582649
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","CQN","E3","E32",0.668057607734978
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","CQN","E3","E33",0.660942389097413
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","CQN","isoB11","isoB111",0.64601989535314
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","CQN","isoB11","isoB112",0.654633016155009
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","CQN","isoB11","isoB113",0.649450940734934
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","EDASeq","E3","E31",0.661849079121882
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","EDASeq","E3","E32",0.660752601495276
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","EDASeq","E3","E33",0.655538289915941
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","EDASeq","isoB11","isoB111",0.647165760862289
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","EDASeq","isoB11","isoB112",0.650718725515257
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","EDASeq","isoB11","isoB113",0.647934790243812
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","SMR","E3","E31",0.495473334790385
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","SMR","E3","E32",0.519261300009138
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","SMR","E3","E33",0.482615751797031
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","SMR","isoB11","isoB111",0.394222696134555
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","SMR","isoB11","isoB112",0.451535169190863
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","SMR","isoB11","isoB113",0.466836394778757
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","TPM","E3","E31",0.655850684149031
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","TPM","E3","E32",0.654762606257048
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","TPM","E3","E33",0.649936480089486
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","TPM","isoB11","isoB111",0.642510273252056
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","TPM","isoB11","isoB112",0.646394728067663
+"iNeuron","ONT cDNA","3k-4.5k","Oarfish","TPM","isoB11","isoB113",0.642181007341102
+"iNeuron","ONT cDNA",">4.5k","Bambu","CPM","E3","E31",0.563284604636829
+"iNeuron","ONT cDNA",">4.5k","Bambu","CPM","E3","E32",0.566118957211505
+"iNeuron","ONT cDNA",">4.5k","Bambu","CPM","E3","E33",0.553097226825263
+"iNeuron","ONT cDNA",">4.5k","Bambu","CPM","isoB11","isoB111",0.548923657710993
+"iNeuron","ONT cDNA",">4.5k","Bambu","CPM","isoB11","isoB112",0.545346205532362
+"iNeuron","ONT cDNA",">4.5k","Bambu","CPM","isoB11","isoB113",0.5433129523828
+"iNeuron","ONT cDNA",">4.5k","Bambu","CQN","E3","E31",0.558348621291843
+"iNeuron","ONT cDNA",">4.5k","Bambu","CQN","E3","E32",0.556708043815821
+"iNeuron","ONT cDNA",">4.5k","Bambu","CQN","E3","E33",0.547572388855767
+"iNeuron","ONT cDNA",">4.5k","Bambu","CQN","isoB11","isoB111",0.537578958420552
+"iNeuron","ONT cDNA",">4.5k","Bambu","CQN","isoB11","isoB112",0.540668060870666
+"iNeuron","ONT cDNA",">4.5k","Bambu","CQN","isoB11","isoB113",0.535362035076676
+"iNeuron","ONT cDNA",">4.5k","Bambu","EDASeq","E3","E31",0.546844972586905
+"iNeuron","ONT cDNA",">4.5k","Bambu","EDASeq","E3","E32",0.551712343259067
+"iNeuron","ONT cDNA",">4.5k","Bambu","EDASeq","E3","E33",0.54275589700496
+"iNeuron","ONT cDNA",">4.5k","Bambu","EDASeq","isoB11","isoB111",0.5374753441413
+"iNeuron","ONT cDNA",">4.5k","Bambu","EDASeq","isoB11","isoB112",0.530457700297034
+"iNeuron","ONT cDNA",">4.5k","Bambu","EDASeq","isoB11","isoB113",0.529552788235213
+"iNeuron","ONT cDNA",">4.5k","Bambu","SMR","E3","E31",0.317782159216513
+"iNeuron","ONT cDNA",">4.5k","Bambu","SMR","E3","E32",0.35679806285183
+"iNeuron","ONT cDNA",">4.5k","Bambu","SMR","E3","E33",0.320428817552145
+"iNeuron","ONT cDNA",">4.5k","Bambu","SMR","isoB11","isoB111",0.265131825426331
+"iNeuron","ONT cDNA",">4.5k","Bambu","SMR","isoB11","isoB112",0.311460837695285
+"iNeuron","ONT cDNA",">4.5k","Bambu","SMR","isoB11","isoB113",0.315036483276259
+"iNeuron","ONT cDNA",">4.5k","Bambu","TPM","E3","E31",0.586796022899434
+"iNeuron","ONT cDNA",">4.5k","Bambu","TPM","E3","E32",0.595170649397787
+"iNeuron","ONT cDNA",">4.5k","Bambu","TPM","E3","E33",0.585754691307369
+"iNeuron","ONT cDNA",">4.5k","Bambu","TPM","isoB11","isoB111",0.578676885780279
+"iNeuron","ONT cDNA",">4.5k","Bambu","TPM","isoB11","isoB112",0.575131448059407
+"iNeuron","ONT cDNA",">4.5k","Bambu","TPM","isoB11","isoB113",0.571646021685581
+"iNeuron","ONT cDNA",">4.5k","FLAIR","CPM","E3","E31",0.495740853297248
+"iNeuron","ONT cDNA",">4.5k","FLAIR","CPM","E3","E32",0.50296571869798
+"iNeuron","ONT cDNA",">4.5k","FLAIR","CPM","E3","E33",0.477483460489874
+"iNeuron","ONT cDNA",">4.5k","FLAIR","CPM","isoB11","isoB111",0.4916178303699
+"iNeuron","ONT cDNA",">4.5k","FLAIR","CPM","isoB11","isoB112",0.479232807485785
+"iNeuron","ONT cDNA",">4.5k","FLAIR","CPM","isoB11","isoB113",0.477229658287426
+"iNeuron","ONT cDNA",">4.5k","FLAIR","CQN","E3","E31",0.46950407083521
+"iNeuron","ONT cDNA",">4.5k","FLAIR","CQN","E3","E32",0.470302935073852
+"iNeuron","ONT cDNA",">4.5k","FLAIR","CQN","E3","E33",0.454744302869273
+"iNeuron","ONT cDNA",">4.5k","FLAIR","CQN","isoB11","isoB111",0.439943337753655
+"iNeuron","ONT cDNA",">4.5k","FLAIR","CQN","isoB11","isoB112",0.447073311121103
+"iNeuron","ONT cDNA",">4.5k","FLAIR","CQN","isoB11","isoB113",0.442086143571509
+"iNeuron","ONT cDNA",">4.5k","FLAIR","EDASeq","E3","E31",0.50507595372315
+"iNeuron","ONT cDNA",">4.5k","FLAIR","EDASeq","E3","E32",0.513871278067376
+"iNeuron","ONT cDNA",">4.5k","FLAIR","EDASeq","E3","E33",0.489326930701547
+"iNeuron","ONT cDNA",">4.5k","FLAIR","EDASeq","isoB11","isoB111",0.503995117007771
+"iNeuron","ONT cDNA",">4.5k","FLAIR","EDASeq","isoB11","isoB112",0.491177302494519
+"iNeuron","ONT cDNA",">4.5k","FLAIR","EDASeq","isoB11","isoB113",0.490235565566314
+"iNeuron","ONT cDNA",">4.5k","FLAIR","SMR","E3","E31",0.273242940938429
+"iNeuron","ONT cDNA",">4.5k","FLAIR","SMR","E3","E32",0.310732066298603
+"iNeuron","ONT cDNA",">4.5k","FLAIR","SMR","E3","E33",0.264576673730896
+"iNeuron","ONT cDNA",">4.5k","FLAIR","SMR","isoB11","isoB111",0.254045175876184
+"iNeuron","ONT cDNA",">4.5k","FLAIR","SMR","isoB11","isoB112",0.290279762759555
+"iNeuron","ONT cDNA",">4.5k","FLAIR","SMR","isoB11","isoB113",0.288089463701017
+"iNeuron","ONT cDNA",">4.5k","FLAIR","TPM","E3","E31",0.52984713298576
+"iNeuron","ONT cDNA",">4.5k","FLAIR","TPM","E3","E32",0.539721381928071
+"iNeuron","ONT cDNA",">4.5k","FLAIR","TPM","E3","E33",0.514142579925179
+"iNeuron","ONT cDNA",">4.5k","FLAIR","TPM","isoB11","isoB111",0.529132430400716
+"iNeuron","ONT cDNA",">4.5k","FLAIR","TPM","isoB11","isoB112",0.51579799687954
+"iNeuron","ONT cDNA",">4.5k","FLAIR","TPM","isoB11","isoB113",0.513885934522391
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","CPM","E3","E31",0.474914357038065
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","CPM","E3","E32",0.486412343151571
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","CPM","E3","E33",0.454288091124289
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","CPM","isoB11","isoB111",0.460820319159178
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","CPM","isoB11","isoB112",0.440676321825509
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","CPM","isoB11","isoB113",0.440959272722217
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","CQN","E3","E31",0.446477350113429
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","CQN","E3","E32",0.449269622407864
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","CQN","E3","E33",0.439904288968958
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","CQN","isoB11","isoB111",0.365716152647534
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","CQN","isoB11","isoB112",0.360254624864534
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","CQN","isoB11","isoB113",0.358493451079702
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","EDASeq","E3","E31",0.483983194700607
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","EDASeq","E3","E32",0.496630715226359
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","EDASeq","E3","E33",0.467353961550107
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","EDASeq","isoB11","isoB111",0.467674387330904
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","EDASeq","isoB11","isoB112",0.450284653259478
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","EDASeq","isoB11","isoB113",0.449405376625059
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","SMR","E3","E31",0.206128140835851
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","SMR","E3","E32",0.255919235544711
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","SMR","E3","E33",0.223150205964421
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","SMR","isoB11","isoB111",0.165607329537689
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","SMR","isoB11","isoB112",0.152686616746422
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","SMR","isoB11","isoB113",0.183158493236858
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","TPM","E3","E31",0.51335498269939706
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","TPM","E3","E32",0.528990749246923
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","TPM","E3","E33",0.497821446629195
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","TPM","isoB11","isoB111",0.496148146003599
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","TPM","isoB11","isoB112",0.475786859950054
+"iNeuron","ONT cDNA",">4.5k","IsoQuant","TPM","isoB11","isoB113",0.475919854851218
+"iNeuron","ONT cDNA",">4.5k","Kallisto","CPM","E3","E31",0.632008304623684
+"iNeuron","ONT cDNA",">4.5k","Kallisto","CPM","E3","E32",0.628790348017393
+"iNeuron","ONT cDNA",">4.5k","Kallisto","CPM","E3","E33",0.623189003381793
+"iNeuron","ONT cDNA",">4.5k","Kallisto","CPM","isoB11","isoB111",0.607442437417849
+"iNeuron","ONT cDNA",">4.5k","Kallisto","CPM","isoB11","isoB112",0.612531543462998
+"iNeuron","ONT cDNA",">4.5k","Kallisto","CPM","isoB11","isoB113",0.61202121306659
+"iNeuron","ONT cDNA",">4.5k","Kallisto","CQN","E3","E31",0.619418368856181
+"iNeuron","ONT cDNA",">4.5k","Kallisto","CQN","E3","E32",0.614669170945862
+"iNeuron","ONT cDNA",">4.5k","Kallisto","CQN","E3","E33",0.611439362559208
+"iNeuron","ONT cDNA",">4.5k","Kallisto","CQN","isoB11","isoB111",0.590497830754204
+"iNeuron","ONT cDNA",">4.5k","Kallisto","CQN","isoB11","isoB112",0.595283148036591
+"iNeuron","ONT cDNA",">4.5k","Kallisto","CQN","isoB11","isoB113",0.591867057490277
+"iNeuron","ONT cDNA",">4.5k","Kallisto","EDASeq","E3","E31",0.611952737512683
+"iNeuron","ONT cDNA",">4.5k","Kallisto","EDASeq","E3","E32",0.610631701932636
+"iNeuron","ONT cDNA",">4.5k","Kallisto","EDASeq","E3","E33",0.609661337507745
+"iNeuron","ONT cDNA",">4.5k","Kallisto","EDASeq","isoB11","isoB111",0.591969921182145
+"iNeuron","ONT cDNA",">4.5k","Kallisto","EDASeq","isoB11","isoB112",0.587649085452429
+"iNeuron","ONT cDNA",">4.5k","Kallisto","EDASeq","isoB11","isoB113",0.595831631827079
+"iNeuron","ONT cDNA",">4.5k","Kallisto","SMR","E3","E31",0.364513502255714
+"iNeuron","ONT cDNA",">4.5k","Kallisto","SMR","E3","E32",0.421437813455735
+"iNeuron","ONT cDNA",">4.5k","Kallisto","SMR","E3","E33",0.380820460626928
+"iNeuron","ONT cDNA",">4.5k","Kallisto","SMR","isoB11","isoB111",0.292247955408947
+"iNeuron","ONT cDNA",">4.5k","Kallisto","SMR","isoB11","isoB112",0.346215892760645
+"iNeuron","ONT cDNA",">4.5k","Kallisto","SMR","isoB11","isoB113",0.362542978991771
+"iNeuron","ONT cDNA",">4.5k","Kallisto","TPM","E3","E31",0.658821652822502
+"iNeuron","ONT cDNA",">4.5k","Kallisto","TPM","E3","E32",0.661827865096296
+"iNeuron","ONT cDNA",">4.5k","Kallisto","TPM","E3","E33",0.657605029849097
+"iNeuron","ONT cDNA",">4.5k","Kallisto","TPM","isoB11","isoB111",0.642446806558339
+"iNeuron","ONT cDNA",">4.5k","Kallisto","TPM","isoB11","isoB112",0.646515466374555
+"iNeuron","ONT cDNA",">4.5k","Kallisto","TPM","isoB11","isoB113",0.644065063352316
+"iNeuron","ONT cDNA",">4.5k","Oarfish","CPM","E3","E31",0.571396759749354
+"iNeuron","ONT cDNA",">4.5k","Oarfish","CPM","E3","E32",0.569439914432618
+"iNeuron","ONT cDNA",">4.5k","Oarfish","CPM","E3","E33",0.552984111045852
+"iNeuron","ONT cDNA",">4.5k","Oarfish","CPM","isoB11","isoB111",0.537226502609671
+"iNeuron","ONT cDNA",">4.5k","Oarfish","CPM","isoB11","isoB112",0.54801448369199
+"iNeuron","ONT cDNA",">4.5k","Oarfish","CPM","isoB11","isoB113",0.548556506547602
+"iNeuron","ONT cDNA",">4.5k","Oarfish","CQN","E3","E31",0.559096194435908
+"iNeuron","ONT cDNA",">4.5k","Oarfish","CQN","E3","E32",0.560028290339269
+"iNeuron","ONT cDNA",">4.5k","Oarfish","CQN","E3","E33",0.541770247661314
+"iNeuron","ONT cDNA",">4.5k","Oarfish","CQN","isoB11","isoB111",0.530190154183885
+"iNeuron","ONT cDNA",">4.5k","Oarfish","CQN","isoB11","isoB112",0.538708438738125
+"iNeuron","ONT cDNA",">4.5k","Oarfish","CQN","isoB11","isoB113",0.530826058529993
+"iNeuron","ONT cDNA",">4.5k","Oarfish","EDASeq","E3","E31",0.552192675880267
+"iNeuron","ONT cDNA",">4.5k","Oarfish","EDASeq","E3","E32",0.552632508340642
+"iNeuron","ONT cDNA",">4.5k","Oarfish","EDASeq","E3","E33",0.538638078195347
+"iNeuron","ONT cDNA",">4.5k","Oarfish","EDASeq","isoB11","isoB111",0.526155210900136
+"iNeuron","ONT cDNA",">4.5k","Oarfish","EDASeq","isoB11","isoB112",0.530666633346549
+"iNeuron","ONT cDNA",">4.5k","Oarfish","EDASeq","isoB11","isoB113",0.531370599783139
+"iNeuron","ONT cDNA",">4.5k","Oarfish","SMR","E3","E31",0.375241973070061
+"iNeuron","ONT cDNA",">4.5k","Oarfish","SMR","E3","E32",0.419970493541565
+"iNeuron","ONT cDNA",">4.5k","Oarfish","SMR","E3","E33",0.373102019851373
+"iNeuron","ONT cDNA",">4.5k","Oarfish","SMR","isoB11","isoB111",0.294099312025461
+"iNeuron","ONT cDNA",">4.5k","Oarfish","SMR","isoB11","isoB112",0.35336592889961
+"iNeuron","ONT cDNA",">4.5k","Oarfish","SMR","isoB11","isoB113",0.356284394209583
+"iNeuron","ONT cDNA",">4.5k","Oarfish","TPM","E3","E31",0.605612532629221
+"iNeuron","ONT cDNA",">4.5k","Oarfish","TPM","E3","E32",0.609826900972728
+"iNeuron","ONT cDNA",">4.5k","Oarfish","TPM","E3","E33",0.595664932478653
+"iNeuron","ONT cDNA",">4.5k","Oarfish","TPM","isoB11","isoB111",0.583035969561075
+"iNeuron","ONT cDNA",">4.5k","Oarfish","TPM","isoB11","isoB112",0.588587413003988
+"iNeuron","ONT cDNA",">4.5k","Oarfish","TPM","isoB11","isoB113",0.588823776912659

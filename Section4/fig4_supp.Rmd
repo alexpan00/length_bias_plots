@@ -177,3 +177,19 @@ save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 220, dpi = 60
 
 save_pub_r(fig4_supp, "plots/Supplementary_Figure_17", height_mm = 260)
 ```
+
+```{r source_data}
+source("../source_data_utils.R")
+
+# Transcript-level correlations per transcript length bin
+supp17_source <- combined_binned %>%
+  transmute(Dataset = relabel_dataset(dataset), Platform = technology,
+            `Transcript length bin` = LengthQuantile, Tool,
+            Normalization = relabel_norm(Normalization), Condition, Sample,
+            `Spearman correlation` = Correlation) %>%
+  arrange(Dataset, Platform, `Transcript length bin`, Tool, Normalization, Sample)
+write_source_data(
+  split_panels(supp17_source, c(`Supp Fig 17a` = "Mouse", `Supp Fig 17b` = "LongBench",
+                                `Supp Fig 17c` = "iNeuron")),
+  "Supplementary_Figure_17")
+```

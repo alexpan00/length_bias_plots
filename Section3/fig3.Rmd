@@ -185,3 +185,15 @@ save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 220, dpi = 60
 # Double-column page width, scaled height for 3 datasets stacked
 save_pub_r(fig3, "plots/Figure_4", width_mm = 180, height_mm = 240)
 ```
+
+```{r source_data}
+source("../source_data_utils.R")
+
+fig4_source <- all_trans %>%
+  transmute(Dataset = relabel_dataset(dataset), Platform = technology, Tool,
+            Normalization = relabel_norm(Normalization), Condition, Sample, RMSE) %>%
+  arrange(Dataset, Platform, Tool, Normalization, Sample)
+write_source_data(
+  split_panels(fig4_source, c(`Fig 4a` = "Mouse", `Fig 4b` = "LongBench", `Fig 4c` = "iNeuron")),
+  "Figure_4")
+```

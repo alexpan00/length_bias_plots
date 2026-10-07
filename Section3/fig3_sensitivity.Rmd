@@ -186,3 +186,25 @@ save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 240, dpi = 60
 
 save_pub_r(fig3_sensitivity, "plots/Supplementary_Figure_13", width_mm = 135, height_mm = 190)
 ```
+
+```{r source_data}
+source("../source_data_utils.R")
+
+# Per-sample sensitivity (bars = mean, error bars = SD clipped to [0, 1])
+supp13_samples <- combined_sensitivity %>%
+  filter(Sample != "dummy") %>%
+  transmute(Dataset = dataset, Platform = technology, `Spike-in` = spike_in,
+            Tool = relabel_tool(Tool), Sample,
+            `Detected spike-ins` = Detected_SIRVs, Sensitivity) %>%
+  arrange(Dataset, Platform, `Spike-in`, Tool, Sample)
+supp13_sheets <- split_panels(supp13_samples, c(`Supp Fig 13a` = "Mouse", `Supp Fig 13b` = "LongBench",
+                                                `Supp Fig 13c` = "iNeuron"))
+supp13_sheets$`Mean and SD` <- sensitivity_summary %>%
+  filter(!is.na(mean_sens)) %>%
+  transmute(Dataset = dataset, Platform = technology, `Spike-in` = spike_in, Tool,
+            `Mean sensitivity` = mean_sens, `SD` = sd_sens,
+            `Error bar lower` = pmax(0, mean_sens - sd_sens),
+            `Error bar upper` = pmin(1, mean_sens + sd_sens)) %>%
+  arrange(factor(Dataset, levels = c("Mouse", "LongBench", "iNeuron")), Platform, `Spike-in`, Tool)
+write_source_data(supp13_sheets, "Supplementary_Figure_13")
+```

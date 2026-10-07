@@ -131,6 +131,26 @@ get_upset_queries <- function(group_metadata, color_palette) {
   })
 }
 
+# Source data: set sizes and exclusive intersection sizes (ComplexUpset's
+# default mode), keeping only the intersections shown (>= min_size)
+upset_tables <- list(sets = list(), intersections = list())
+set_label <- function(set) {
+  set <- sub("^cDNA_ONT", "ONT cDNA", sub("^dRNA_ONT", "ONT dRNA", set))
+  sub("_", " ", set, fixed = TRUE)
+}
+upset_source <- function(presence, groups, dataset, min_size = 500) {
+  m <- as.matrix(presence[, groups])
+  upset_tables$sets[[dataset]] <<- tibble(
+    Dataset = dataset, Set = set_label(groups), `Number of UJCs` = colSums(m))
+  pattern <- apply(m, 1, function(r) paste(set_label(groups[r]), collapse = " & "))
+  upset_tables$intersections[[dataset]] <<- tibble(Intersection = pattern) %>%
+    count(Intersection, name = "Intersection size") %>%
+    filter(`Intersection size` >= min_size) %>%
+    mutate(Dataset = dataset, .before = 1,
+           `Number of sets` = lengths(strsplit(Intersection, " & ", fixed = TRUE))) %>%
+    arrange(desc(`Intersection size`))
+}
+
 # Set-size axis ticks in scientific notation (e.g. 5e+04) to avoid overlapping labels
 set_size_scientific <- upset_set_size()
 set_size_scientific$scales$scales <- list(scale_y_reverse(labels = scales::label_scientific()))
@@ -147,6 +167,7 @@ res <- read_dataset(manifest_file, mapping_rules)
 presence <- res$presence
 group_metadata <- res$group_metadata
 groups <- group_metadata$set
+upset_source(presence, groups, "Mouse")
 
 p_nih <- ComplexUpset::upset(
   presence,
@@ -198,6 +219,7 @@ res <- read_dataset(manifest_file, mapping_rules)
 presence <- res$presence
 group_metadata <- res$group_metadata
 groups <- group_metadata$set
+upset_source(presence, groups, "iNeuron")
 
 p_neuron <- ComplexUpset::upset(
   presence,
@@ -250,6 +272,7 @@ res <- read_dataset(manifest_file, mapping_rules)
 presence <- res$presence
 group_metadata <- res$group_metadata
 groups <- group_metadata$set
+upset_source(presence, groups, "LongBench")
 
 p_longbench <- ComplexUpset::upset(
   presence,
@@ -332,3 +355,16 @@ save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 240, dpi = 60
 save_pub_r(fig_upset, "plots/Supplementary_Figure_6", height_mm = 360)
 ```
 
+```{r source_data}
+source("../source_data_utils.R")
+
+panel_order <- c("Mouse", "LongBench", "iNeuron")   # panels a-c
+supp6_source <- list()
+for (i in seq_along(panel_order)) {
+  ds  <- panel_order[i]
+  tag <- paste0("Supp Fig 6", letters[i])
+  supp6_source[[paste(tag, "intersections")]] <- upset_tables$intersections[[ds]]
+  supp6_source[[paste(tag, "set sizes")]]     <- upset_tables$sets[[ds]]
+}
+write_source_data(supp6_source, "Supplementary_Figure_6")
+```

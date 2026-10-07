@@ -252,3 +252,27 @@ save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 130, dpi = 60
 save_pub_r(p_delta, "plots/Supplementary_Figure_5", width_mm = 180, height_mm = 130)
 message("Delta comparison plot generated successfully.")
 ```
+
+```{r source_data}
+source("../source_data_utils.R")
+
+# p-values that underflow to 0 are below the double-precision floor
+fmt_p <- function(p) {
+  ifelse(p < .Machine$double.xmin, "< 2.2e-308", formatC(p, format = "g", digits = 3))
+}
+
+# -log10(adj. p) is capped at 300, as in the figure.
+# Chi-squared test on the passed/failed counts of known (FSM) vs novel
+# transcripts; Bonferroni-adjusted across all dataset x platform x tool cells
+supp5_source <- plot_data %>%
+  arrange(Dataset, LibType, Tool) %>%
+  transmute(Dataset, Platform = LibType, Tool,
+            `% known (FSM) before filtering` = round(Before, 3),
+            `% known (FSM) after filtering`  = round(After, 3),
+            `Delta (after - before)`         = round(Delta, 3),
+            `Chi-squared p`                  = fmt_p(p_value),
+            `Bonferroni adj. p`              = fmt_p(pmin(p_value_adj, 1)),
+            `-log10(adj. p)`                 = round(log_p, 3),
+            Significance                     = label)
+write_source_data(list(`Supp Fig 5` = supp5_source), "Supplementary_Figure_5")
+```

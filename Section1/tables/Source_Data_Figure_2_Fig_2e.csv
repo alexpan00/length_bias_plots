@@ -1,0 +1,209 @@
+﻿"Dataset","Platform","Tool","SQANTI3 category","Number of transcripts","Percentage (%)"
+"Mouse","Iso-Seq","FLAIR","FSM",32272,60.784
+"Mouse","Iso-Seq","FLAIR","ISM",7531,14.185
+"Mouse","Iso-Seq","FLAIR","NIC",10428,19.641
+"Mouse","Iso-Seq","FLAIR","NNC",9,0.017
+"Mouse","Iso-Seq","FLAIR","Genic Genomic",1227,2.311
+"Mouse","Iso-Seq","FLAIR","Antisense",359,0.676
+"Mouse","Iso-Seq","FLAIR","Fusion",252,0.475
+"Mouse","Iso-Seq","FLAIR","Intergenic",489,0.921
+"Mouse","Iso-Seq","FLAIR","Genic Intron",526,0.991
+"Mouse","Iso-Seq","Bambu","FSM",24844,95.875
+"Mouse","Iso-Seq","Bambu","NIC",331,1.277
+"Mouse","Iso-Seq","Bambu","NNC",548,2.115
+"Mouse","Iso-Seq","Bambu","Genic Genomic",40,0.154
+"Mouse","Iso-Seq","Bambu","Antisense",56,0.216
+"Mouse","Iso-Seq","Bambu","Fusion",54,0.208
+"Mouse","Iso-Seq","Bambu","Intergenic",36,0.139
+"Mouse","Iso-Seq","Bambu","Genic Intron",4,0.015
+"Mouse","Iso-Seq","IsoQuant","FSM",19228,71.102
+"Mouse","Iso-Seq","IsoQuant","ISM",1716,6.345
+"Mouse","Iso-Seq","IsoQuant","NIC",2061,7.621
+"Mouse","Iso-Seq","IsoQuant","NNC",3416,12.632
+"Mouse","Iso-Seq","IsoQuant","Genic Genomic",158,0.584
+"Mouse","Iso-Seq","IsoQuant","Antisense",92,0.34
+"Mouse","Iso-Seq","IsoQuant","Fusion",291,1.076
+"Mouse","Iso-Seq","IsoQuant","Intergenic",76,0.281
+"Mouse","Iso-Seq","IsoQuant","Genic Intron",5,0.018
+"Mouse","Kinnex","FLAIR","FSM",62771,24.194
+"Mouse","Kinnex","FLAIR","ISM",50883,19.612
+"Mouse","Kinnex","FLAIR","NIC",64177,24.736
+"Mouse","Kinnex","FLAIR","NNC",126,0.049
+"Mouse","Kinnex","FLAIR","Genic Genomic",21211,8.176
+"Mouse","Kinnex","FLAIR","Antisense",6027,2.323
+"Mouse","Kinnex","FLAIR","Fusion",1423,0.548
+"Mouse","Kinnex","FLAIR","Intergenic",7580,2.922
+"Mouse","Kinnex","FLAIR","Genic Intron",45247,17.44
+"Mouse","Kinnex","Bambu","FSM",50774,99.036
+"Mouse","Kinnex","Bambu","NIC",70,0.137
+"Mouse","Kinnex","Bambu","NNC",195,0.38
+"Mouse","Kinnex","Bambu","Genic Genomic",28,0.055
+"Mouse","Kinnex","Bambu","Antisense",118,0.23
+"Mouse","Kinnex","Bambu","Fusion",24,0.047
+"Mouse","Kinnex","Bambu","Intergenic",56,0.109
+"Mouse","Kinnex","Bambu","Genic Intron",3,0.006
+"Mouse","Kinnex","IsoQuant","FSM",33561,54.62
+"Mouse","Kinnex","IsoQuant","ISM",6383,10.388
+"Mouse","Kinnex","IsoQuant","NIC",5363,8.728
+"Mouse","Kinnex","IsoQuant","NNC",12441,20.248
+"Mouse","Kinnex","IsoQuant","Genic Genomic",704,1.146
+"Mouse","Kinnex","IsoQuant","Antisense",1253,2.039
+"Mouse","Kinnex","IsoQuant","Fusion",816,1.328
+"Mouse","Kinnex","IsoQuant","Intergenic",604,0.983
+"Mouse","Kinnex","IsoQuant","Genic Intron",319,0.519
+"Mouse","ONT cDNA","FLAIR","FSM",17986,36.164
+"Mouse","ONT cDNA","FLAIR","ISM",18129,36.451
+"Mouse","ONT cDNA","FLAIR","NIC",5549,11.157
+"Mouse","ONT cDNA","FLAIR","NNC",54,0.109
+"Mouse","ONT cDNA","FLAIR","Genic Genomic",1199,2.411
+"Mouse","ONT cDNA","FLAIR","Antisense",470,0.945
+"Mouse","ONT cDNA","FLAIR","Fusion",84,0.169
+"Mouse","ONT cDNA","FLAIR","Intergenic",2929,5.889
+"Mouse","ONT cDNA","FLAIR","Genic Intron",3335,6.706
+"Mouse","ONT cDNA","Bambu","FSM",17327,95.83
+"Mouse","ONT cDNA","Bambu","NIC",108,0.597
+"Mouse","ONT cDNA","Bambu","NNC",347,1.919
+"Mouse","ONT cDNA","Bambu","Genic Genomic",18,0.1
+"Mouse","ONT cDNA","Bambu","Antisense",144,0.796
+"Mouse","ONT cDNA","Bambu","Fusion",13,0.072
+"Mouse","ONT cDNA","Bambu","Intergenic",110,0.608
+"Mouse","ONT cDNA","Bambu","Genic Intron",14,0.077
+"Mouse","ONT cDNA","IsoQuant","FSM",11309,66.247
+"Mouse","ONT cDNA","IsoQuant","ISM",1266,7.416
+"Mouse","ONT cDNA","IsoQuant","NIC",719,4.212
+"Mouse","ONT cDNA","IsoQuant","NNC",3316,19.425
+"Mouse","ONT cDNA","IsoQuant","Genic Genomic",142,0.832
+"Mouse","ONT cDNA","IsoQuant","Antisense",158,0.926
+"Mouse","ONT cDNA","IsoQuant","Fusion",23,0.135
+"Mouse","ONT cDNA","IsoQuant","Intergenic",127,0.744
+"Mouse","ONT cDNA","IsoQuant","Genic Intron",11,0.064
+"LongBench","Kinnex","FLAIR","FSM",61387,12.743
+"LongBench","Kinnex","FLAIR","ISM",65893,13.678
+"LongBench","Kinnex","FLAIR","NIC",107987,22.416
+"LongBench","Kinnex","FLAIR","NNC",122,0.025
+"LongBench","Kinnex","FLAIR","Genic Genomic",51679,10.728
+"LongBench","Kinnex","FLAIR","Antisense",12702,2.637
+"LongBench","Kinnex","FLAIR","Fusion",1070,0.222
+"LongBench","Kinnex","FLAIR","Intergenic",19159,3.977
+"LongBench","Kinnex","FLAIR","Genic Intron",161732,33.573
+"LongBench","Kinnex","Bambu","FSM",51892,98.697
+"LongBench","Kinnex","Bambu","NIC",196,0.373
+"LongBench","Kinnex","Bambu","NNC",348,0.662
+"LongBench","Kinnex","Bambu","Genic Genomic",20,0.038
+"LongBench","Kinnex","Bambu","Antisense",49,0.093
+"LongBench","Kinnex","Bambu","Fusion",32,0.061
+"LongBench","Kinnex","Bambu","Intergenic",38,0.072
+"LongBench","Kinnex","Bambu","Genic Intron",2,0.004
+"LongBench","Kinnex","IsoQuant","FSM",23743,25.739
+"LongBench","Kinnex","IsoQuant","ISM",6790,7.361
+"LongBench","Kinnex","IsoQuant","NIC",8970,9.724
+"LongBench","Kinnex","IsoQuant","NNC",7487,8.116
+"LongBench","Kinnex","IsoQuant","Genic Genomic",10383,11.256
+"LongBench","Kinnex","IsoQuant","Antisense",3231,3.503
+"LongBench","Kinnex","IsoQuant","Fusion",255,0.276
+"LongBench","Kinnex","IsoQuant","Intergenic",3149,3.414
+"LongBench","Kinnex","IsoQuant","Genic Intron",28237,30.611
+"LongBench","ONT cDNA","FLAIR","FSM",33241,31.377
+"LongBench","ONT cDNA","FLAIR","ISM",25317,23.897
+"LongBench","ONT cDNA","FLAIR","NIC",27712,26.158
+"LongBench","ONT cDNA","FLAIR","NNC",350,0.33
+"LongBench","ONT cDNA","FLAIR","Genic Genomic",2803,2.646
+"LongBench","ONT cDNA","FLAIR","Antisense",5780,5.456
+"LongBench","ONT cDNA","FLAIR","Fusion",477,0.45
+"LongBench","ONT cDNA","FLAIR","Intergenic",4036,3.81
+"LongBench","ONT cDNA","FLAIR","Genic Intron",6226,5.877
+"LongBench","ONT cDNA","Bambu","FSM",30277,95.418
+"LongBench","ONT cDNA","Bambu","NIC",262,0.826
+"LongBench","ONT cDNA","Bambu","NNC",800,2.521
+"LongBench","ONT cDNA","Bambu","Genic Genomic",58,0.183
+"LongBench","ONT cDNA","Bambu","Antisense",166,0.523
+"LongBench","ONT cDNA","Bambu","Fusion",37,0.117
+"LongBench","ONT cDNA","Bambu","Intergenic",119,0.375
+"LongBench","ONT cDNA","Bambu","Genic Intron",12,0.038
+"LongBench","ONT cDNA","IsoQuant","FSM",16260,54.376
+"LongBench","ONT cDNA","IsoQuant","ISM",2320,7.758
+"LongBench","ONT cDNA","IsoQuant","NIC",1753,5.862
+"LongBench","ONT cDNA","IsoQuant","NNC",8268,27.649
+"LongBench","ONT cDNA","IsoQuant","Genic Genomic",242,0.809
+"LongBench","ONT cDNA","IsoQuant","Antisense",686,2.294
+"LongBench","ONT cDNA","IsoQuant","Fusion",94,0.314
+"LongBench","ONT cDNA","IsoQuant","Intergenic",225,0.752
+"LongBench","ONT cDNA","IsoQuant","Genic Intron",55,0.184
+"LongBench","ONT dRNA","FLAIR","FSM",56694,35.331
+"LongBench","ONT dRNA","FLAIR","ISM",21164,13.189
+"LongBench","ONT dRNA","FLAIR","NIC",65496,40.816
+"LongBench","ONT dRNA","FLAIR","NNC",99,0.062
+"LongBench","ONT dRNA","FLAIR","Genic Genomic",7254,4.521
+"LongBench","ONT dRNA","FLAIR","Antisense",1964,1.224
+"LongBench","ONT dRNA","FLAIR","Fusion",815,0.508
+"LongBench","ONT dRNA","FLAIR","Intergenic",3792,2.363
+"LongBench","ONT dRNA","FLAIR","Genic Intron",3189,1.987
+"LongBench","ONT dRNA","Bambu","FSM",42789,98.476
+"LongBench","ONT dRNA","Bambu","NIC",186,0.428
+"LongBench","ONT dRNA","Bambu","NNC",358,0.824
+"LongBench","ONT dRNA","Bambu","Genic Genomic",24,0.055
+"LongBench","ONT dRNA","Bambu","Antisense",38,0.087
+"LongBench","ONT dRNA","Bambu","Fusion",25,0.058
+"LongBench","ONT dRNA","Bambu","Intergenic",30,0.069
+"LongBench","ONT dRNA","Bambu","Genic Intron",1,0.002
+"LongBench","ONT dRNA","IsoQuant","FSM",26457,70.15
+"LongBench","ONT dRNA","IsoQuant","ISM",2213,5.868
+"LongBench","ONT dRNA","IsoQuant","NIC",3933,10.428
+"LongBench","ONT dRNA","IsoQuant","NNC",4368,11.582
+"LongBench","ONT dRNA","IsoQuant","Genic Genomic",222,0.589
+"LongBench","ONT dRNA","IsoQuant","Antisense",139,0.369
+"LongBench","ONT dRNA","IsoQuant","Fusion",264,0.7
+"LongBench","ONT dRNA","IsoQuant","Intergenic",111,0.294
+"LongBench","ONT dRNA","IsoQuant","Genic Intron",8,0.021
+"iNeuron","Kinnex","FLAIR","FSM",48547,18.008
+"iNeuron","Kinnex","FLAIR","ISM",39118,14.51
+"iNeuron","Kinnex","FLAIR","NIC",59463,22.057
+"iNeuron","Kinnex","FLAIR","NNC",77,0.029
+"iNeuron","Kinnex","FLAIR","Genic Genomic",20813,7.72
+"iNeuron","Kinnex","FLAIR","Antisense",6002,2.226
+"iNeuron","Kinnex","FLAIR","Fusion",1307,0.485
+"iNeuron","Kinnex","FLAIR","Intergenic",13984,5.187
+"iNeuron","Kinnex","FLAIR","Genic Intron",80278,29.778
+"iNeuron","Kinnex","Bambu","FSM",42923,98.644
+"iNeuron","Kinnex","Bambu","NIC",165,0.379
+"iNeuron","Kinnex","Bambu","NNC",257,0.591
+"iNeuron","Kinnex","Bambu","Genic Genomic",15,0.034
+"iNeuron","Kinnex","Bambu","Antisense",55,0.126
+"iNeuron","Kinnex","Bambu","Fusion",38,0.087
+"iNeuron","Kinnex","Bambu","Intergenic",45,0.103
+"iNeuron","Kinnex","Bambu","Genic Intron",15,0.034
+"iNeuron","Kinnex","IsoQuant","FSM",24974,53.246
+"iNeuron","Kinnex","IsoQuant","ISM",3669,7.823
+"iNeuron","Kinnex","IsoQuant","NIC",5153,10.987
+"iNeuron","Kinnex","IsoQuant","NNC",9912,21.133
+"iNeuron","Kinnex","IsoQuant","Genic Genomic",435,0.927
+"iNeuron","Kinnex","IsoQuant","Antisense",560,1.194
+"iNeuron","Kinnex","IsoQuant","Fusion",721,1.537
+"iNeuron","Kinnex","IsoQuant","Intergenic",461,0.983
+"iNeuron","Kinnex","IsoQuant","Genic Intron",1018,2.17
+"iNeuron","ONT cDNA","FLAIR","FSM",44509,31.297
+"iNeuron","ONT cDNA","FLAIR","ISM",27648,19.441
+"iNeuron","ONT cDNA","FLAIR","NIC",45649,32.098
+"iNeuron","ONT cDNA","FLAIR","NNC",388,0.273
+"iNeuron","ONT cDNA","FLAIR","Genic Genomic",4472,3.145
+"iNeuron","ONT cDNA","FLAIR","Antisense",6968,4.9
+"iNeuron","ONT cDNA","FLAIR","Fusion",1269,0.892
+"iNeuron","ONT cDNA","FLAIR","Intergenic",5511,3.875
+"iNeuron","ONT cDNA","FLAIR","Genic Intron",5802,4.08
+"iNeuron","ONT cDNA","Bambu","FSM",37892,96.109
+"iNeuron","ONT cDNA","Bambu","NIC",352,0.893
+"iNeuron","ONT cDNA","Bambu","NNC",791,2.006
+"iNeuron","ONT cDNA","Bambu","Genic Genomic",41,0.104
+"iNeuron","ONT cDNA","Bambu","Antisense",134,0.34
+"iNeuron","ONT cDNA","Bambu","Fusion",81,0.205
+"iNeuron","ONT cDNA","Bambu","Intergenic",124,0.315
+"iNeuron","ONT cDNA","Bambu","Genic Intron",11,0.028
+"iNeuron","ONT cDNA","IsoQuant","FSM",22046,52.689
+"iNeuron","ONT cDNA","IsoQuant","ISM",2939,7.024
+"iNeuron","ONT cDNA","IsoQuant","NIC",3395,8.114
+"iNeuron","ONT cDNA","IsoQuant","NNC",11072,26.461
+"iNeuron","ONT cDNA","IsoQuant","Genic Genomic",410,0.98
+"iNeuron","ONT cDNA","IsoQuant","Antisense",1089,2.603
+"iNeuron","ONT cDNA","IsoQuant","Fusion",344,0.822
+"iNeuron","ONT cDNA","IsoQuant","Intergenic",440,1.052
+"iNeuron","ONT cDNA","IsoQuant","Genic Intron",107,0.256

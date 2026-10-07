@@ -1,0 +1,36 @@
+﻿"Dataset","Number of sets","Intersection","Intersection size"
+"Mouse",1,"Kinnex FLAIR",68936
+"Mouse",1,"Kinnex IsoQuant",12127
+"Mouse",2,"Kinnex FLAIR & Iso-Seq FLAIR",8674
+"Mouse",1,"ONT cDNA FLAIR",8150
+"Mouse",1,"Kinnex Oarfish",6739
+"Mouse",15,"ONT cDNA Bambu & ONT cDNA FLAIR & ONT cDNA IsoQuant & ONT cDNA Kallisto & ONT cDNA Oarfish & Kinnex Bambu & Kinnex FLAIR & Kinnex IsoQuant & Kinnex Kallisto & Kinnex Oarfish & Iso-Seq Bambu & Iso-Seq FLAIR & Iso-Seq IsoQuant & Iso-Seq Kallisto & Iso-Seq Oarfish",5377
+"Mouse",2,"Kinnex FLAIR & Kinnex IsoQuant",4930
+"Mouse",5,"Kinnex Bambu & Kinnex FLAIR & Kinnex IsoQuant & Kinnex Kallisto & Kinnex Oarfish",4488
+"Mouse",10,"Kinnex Bambu & Kinnex FLAIR & Kinnex IsoQuant & Kinnex Kallisto & Kinnex Oarfish & Iso-Seq Bambu & Iso-Seq FLAIR & Iso-Seq IsoQuant & Iso-Seq Kallisto & Iso-Seq Oarfish",3912
+"Mouse",1,"ONT cDNA IsoQuant",2884
+"Mouse",2,"ONT cDNA FLAIR & Kinnex FLAIR",2535
+"Mouse",2,"Kinnex Bambu & Kinnex Oarfish",2417
+"Mouse",1,"Iso-Seq FLAIR",2215
+"Mouse",4,"Kinnex Bambu & Kinnex FLAIR & Kinnex Kallisto & Kinnex Oarfish",2102
+"Mouse",3,"Kinnex Bambu & Kinnex Kallisto & Kinnex Oarfish",1526
+"Mouse",2,"Kinnex FLAIR & Kinnex Oarfish",1492
+"Mouse",3,"Kinnex Bambu & Kinnex FLAIR & Kinnex Oarfish",1469
+"Mouse",1,"Kinnex Kallisto",1420
+"Mouse",1,"Iso-Seq IsoQuant",1385
+"Mouse",2,"Kinnex IsoQuant & Iso-Seq IsoQuant",1368
+"Mouse",1,"Kinnex Bambu",1277
+"Mouse",2,"Kinnex Kallisto & Kinnex Oarfish",1175
+"Mouse",4,"Kinnex FLAIR & Kinnex IsoQuant & Iso-Seq FLAIR & Iso-Seq IsoQuant",940
+"Mouse",14,"ONT cDNA Bambu & ONT cDNA FLAIR & ONT cDNA Kallisto & ONT cDNA Oarfish & Kinnex Bambu & Kinnex FLAIR & Kinnex IsoQuant & Kinnex Kallisto & Kinnex Oarfish & Iso-Seq Bambu & Iso-Seq FLAIR & Iso-Seq IsoQuant & Iso-Seq Kallisto & Iso-Seq Oarfish",903
+"Mouse",3,"ONT cDNA FLAIR & Kinnex FLAIR & Iso-Seq FLAIR",879
+"Mouse",3,"Kinnex FLAIR & Kinnex Kallisto & Kinnex Oarfish",797
+"Mouse",11,"ONT cDNA Oarfish & Kinnex Bambu & Kinnex FLAIR & Kinnex IsoQuant & Kinnex Kallisto & Kinnex Oarfish & Iso-Seq Bambu & Iso-Seq FLAIR & Iso-Seq IsoQuant & Iso-Seq Kallisto & Iso-Seq Oarfish",796
+"Mouse",3,"Kinnex FLAIR & Kinnex IsoQuant & Iso-Seq FLAIR",772
+"Mouse",4,"Kinnex Bambu & Kinnex FLAIR & Kinnex IsoQuant & Kinnex Oarfish",639
+"Mouse",6,"Kinnex Bambu & Kinnex FLAIR & Kinnex IsoQuant & Kinnex Kallisto & Kinnex Oarfish & Iso-Seq Oarfish",632
+"Mouse",14,"ONT cDNA Bambu & ONT cDNA IsoQuant & ONT cDNA Kallisto & ONT cDNA Oarfish & Kinnex Bambu & Kinnex FLAIR & Kinnex IsoQuant & Kinnex Kallisto & Kinnex Oarfish & Iso-Seq Bambu & Iso-Seq FLAIR & Iso-Seq IsoQuant & Iso-Seq Kallisto & Iso-Seq Oarfish",591
+"Mouse",8,"Kinnex Bambu & Kinnex FLAIR & Kinnex Kallisto & Kinnex Oarfish & Iso-Seq Bambu & Iso-Seq FLAIR & Iso-Seq Kallisto & Iso-Seq Oarfish",589
+"Mouse",1,"ONT cDNA Oarfish",559
+"Mouse",6,"Kinnex Bambu & Kinnex FLAIR & Kinnex IsoQuant & Kinnex Kallisto & Kinnex Oarfish & Iso-Seq FLAIR",553
+"Mouse",13,"ONT cDNA Bambu & ONT cDNA Kallisto & ONT cDNA Oarfish & Kinnex Bambu & Kinnex FLAIR & Kinnex IsoQuant & Kinnex Kallisto & Kinnex Oarfish & Iso-Seq Bambu & Iso-Seq FLAIR & Iso-Seq IsoQuant & Iso-Seq Kallisto & Iso-Seq Oarfish",530

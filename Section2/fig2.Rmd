@@ -177,3 +177,15 @@ save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 220, dpi = 60
 
 save_pub_r(fig2, "plots/Figure_3", height_mm = 220)
 ```
+
+```{r source_data}
+source("../source_data_utils.R")
+
+fig3_source <- all_data %>%
+  transmute(Dataset = relabel_dataset(dataset), Condition, Platform = technology, Tool,
+            Normalization = relabel_norm(Normalization), `Length bin` = Length_bins,
+            `Mean normalized expression` = mean_exp)
+write_source_data(
+  split_panels(fig3_source, c(`Fig 3a` = "Mouse", `Fig 3b` = "LongBench", `Fig 3c` = "iNeuron")),
+  "Figure_3")
+```

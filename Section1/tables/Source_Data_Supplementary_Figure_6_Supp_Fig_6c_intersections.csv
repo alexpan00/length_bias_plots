@@ -1,0 +1,39 @@
+﻿"Dataset","Number of sets","Intersection","Intersection size"
+"iNeuron",1,"Kinnex FLAIR",52080
+"iNeuron",1,"ONT cDNA FLAIR",38123
+"iNeuron",2,"Kinnex FLAIR & ONT cDNA FLAIR",17856
+"iNeuron",10,"Kinnex FLAIR & Kinnex Oarfish & Kinnex IsoQuant & Kinnex Bambu & Kinnex Kallisto & ONT cDNA FLAIR & ONT cDNA Oarfish & ONT cDNA IsoQuant & ONT cDNA Bambu & ONT cDNA Kallisto",12374
+"iNeuron",1,"ONT cDNA IsoQuant",10800
+"iNeuron",1,"Kinnex IsoQuant",10380
+"iNeuron",1,"Kinnex Oarfish",7178
+"iNeuron",1,"ONT cDNA Oarfish",3777
+"iNeuron",2,"Kinnex Oarfish & ONT cDNA Oarfish",3440
+"iNeuron",9,"Kinnex FLAIR & Kinnex Oarfish & Kinnex IsoQuant & Kinnex Bambu & Kinnex Kallisto & ONT cDNA FLAIR & ONT cDNA Oarfish & ONT cDNA Bambu & ONT cDNA Kallisto",2865
+"iNeuron",2,"Kinnex FLAIR & Kinnex IsoQuant",2498
+"iNeuron",8,"Kinnex FLAIR & Kinnex Oarfish & Kinnex Bambu & Kinnex Kallisto & ONT cDNA FLAIR & ONT cDNA Oarfish & ONT cDNA Bambu & ONT cDNA Kallisto",2292
+"iNeuron",3,"Kinnex FLAIR & Kinnex IsoQuant & ONT cDNA FLAIR",1916
+"iNeuron",2,"ONT cDNA FLAIR & ONT cDNA IsoQuant",1706
+"iNeuron",5,"ONT cDNA FLAIR & ONT cDNA Oarfish & ONT cDNA IsoQuant & ONT cDNA Bambu & ONT cDNA Kallisto",1653
+"iNeuron",3,"Kinnex FLAIR & ONT cDNA FLAIR & ONT cDNA IsoQuant",1500
+"iNeuron",1,"Kinnex Kallisto",1463
+"iNeuron",4,"Kinnex FLAIR & Kinnex IsoQuant & ONT cDNA FLAIR & ONT cDNA IsoQuant",1435
+"iNeuron",2,"Kinnex IsoQuant & ONT cDNA IsoQuant",1379
+"iNeuron",2,"Kinnex Oarfish & Kinnex Bambu",1304
+"iNeuron",1,"Kinnex Bambu",1283
+"iNeuron",9,"Kinnex FLAIR & Kinnex Oarfish & Kinnex Bambu & Kinnex Kallisto & ONT cDNA FLAIR & ONT cDNA Oarfish & ONT cDNA IsoQuant & ONT cDNA Bambu & ONT cDNA Kallisto",1114
+"iNeuron",1,"ONT cDNA Bambu",1087
+"iNeuron",2,"Kinnex FLAIR & Kinnex Oarfish",1070
+"iNeuron",3,"Kinnex Oarfish & Kinnex Bambu & Kinnex Kallisto",874
+"iNeuron",2,"Kinnex Oarfish & Kinnex Kallisto",835
+"iNeuron",3,"Kinnex Oarfish & ONT cDNA Oarfish & ONT cDNA Kallisto",748
+"iNeuron",8,"Kinnex FLAIR & Kinnex Oarfish & Kinnex IsoQuant & Kinnex Bambu & Kinnex Kallisto & ONT cDNA Oarfish & ONT cDNA Bambu & ONT cDNA Kallisto",730
+"iNeuron",6,"Kinnex Oarfish & Kinnex Bambu & Kinnex Kallisto & ONT cDNA Oarfish & ONT cDNA Bambu & ONT cDNA Kallisto",727
+"iNeuron",5,"Kinnex FLAIR & Kinnex Oarfish & Kinnex IsoQuant & Kinnex Bambu & Kinnex Kallisto",717
+"iNeuron",3,"Kinnex FLAIR & Kinnex Oarfish & Kinnex Bambu",689
+"iNeuron",1,"ONT cDNA Kallisto",649
+"iNeuron",3,"Kinnex Oarfish & Kinnex Bambu & ONT cDNA Oarfish",635
+"iNeuron",4,"Kinnex FLAIR & Kinnex Oarfish & Kinnex Bambu & Kinnex Kallisto",584
+"iNeuron",2,"ONT cDNA Oarfish & ONT cDNA Kallisto",562
+"iNeuron",6,"Kinnex FLAIR & Kinnex Oarfish & Kinnex IsoQuant & Kinnex Bambu & Kinnex Kallisto & ONT cDNA Oarfish",530
+"iNeuron",3,"Kinnex Oarfish & Kinnex Kallisto & ONT cDNA Oarfish",525
+"iNeuron",4,"ONT cDNA FLAIR & ONT cDNA Oarfish & ONT cDNA Bambu & ONT cDNA Kallisto",516

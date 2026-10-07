@@ -200,3 +200,15 @@ save_pub_r <- function(plot, filename, width_mm = 180, height_mm = 160, dpi = 60
 # Double-column page width, scaled height for 2 datasets stacked (width 180mm, height 160mm)
 save_pub_r(fig3_ercc, "plots/Supplementary_Figure_12", width_mm = 180, height_mm = 160)
 ```
+
+```{r source_data}
+source("../source_data_utils.R")
+
+supp12_source <- all_trans %>%
+  transmute(Dataset = relabel_dataset(dataset), Platform = technology, Tool,
+            Normalization = relabel_norm(Normalization), Condition, Sample, RMSE) %>%
+  arrange(Dataset, Platform, Tool, Normalization, Sample)
+write_source_data(
+  split_panels(supp12_source, c(`Supp Fig 12a` = "LongBench", `Supp Fig 12b` = "iNeuron")),
+  "Supplementary_Figure_12")
+```
